@@ -1,7 +1,16 @@
 ---
+import '@fontsource-variable/fraunces/wght.css';
+import '@fontsource-variable/inter/wght.css';
+import '@fontsource-variable/source-serif-4/wght.css';
+import '@fontsource/noto-serif-telugu/telugu-400.css';
+import '@fontsource/noto-serif-telugu/telugu-600.css';
+import '@fontsource/noto-serif-telugu/telugu-700.css';
+import '@fontsource/noto-sans-telugu/telugu-400.css';
+import '@fontsource/noto-sans-telugu/telugu-600.css';
 import '../styles/global.css';
 import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID } from '../config';
 import { sectionCounts } from '../lib/articles';
+import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 interface Props { todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
 const { todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
 const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
@@ -10,6 +19,8 @@ const counts = await sectionCounts();
 const nav = SECTIONS.filter((s) => s.always || counts.cat[s.id]);
 const section = SECTIONS.find((s) => s.id === active);
 const subnav = (active && SUBNAV[active]) || [];
+const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
+const snap = { tithi: `${_p.tithi[0].paksha} ${_p.tithi[0].name}`, nak: _p.nakshatra[0].name, rahu: `${fmtTime(_p.rahu.start, _ref)} to ${fmtTime(_p.rahu.end, _ref)}` };
 const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
 const orgLd = home ? [
   { '@context': 'https://schema.org', '@type': 'NewsMediaOrganization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png`, width: 512, height: 512 }, email: SITE.email, publishingPrinciples: `${SITE.url}/editorial-policy/` },
@@ -47,29 +58,42 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
   {GA_ID && <script is:inline define:vars={{ GA_ID }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',GA_ID);</script>}
 </head>
-<body>
-  <header class="mast"><div class="wrap">
-    <a class="logo" href="/">Southwala</a>
-    <div class="date"><span id="today">{SITE.tagline}</span><br />Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</div>
-  </div></header>
-  <nav class="main"><div class="wrap">
+<body data-sec={active}>
+  <div class="topbar"><div class="wrap">
+    <span id="today">{SITE.tagline}</span>
+    <span>Hyderabad today: {snap.tithi} &middot; {snap.nak} nakshatra &middot; Rahu Kalam {snap.rahu} &middot; <a href="/panchangam/hyderabad/">Panchangam</a></span>
+  </div></div>
+  <header class="mast">
+    <a class="logo" href="/" aria-label="Southwala home">Southwala<i>.</i></a>
+    <p class="tagline">Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</p>
+  </header>
+  <nav class="nav" aria-label="Sections"><div class="wrap">
     <a href="/" class={!active ? 'on' : ''}>Home</a>
-    {nav.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''}>{c.label}</a>)}
+    {nav.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''} style={`--navc:${c.accent}`}>{c.label}</a>)}
   </div></nav>
   {section && (
     <div class="brandbar"><div class="wrap">
       <a class="brand" href={section.href}>{section.brand}</a>
-      {subnav.length > 0 && <div class="subnav">{subnav.map((s) => <a href={s.href}>{s.label}</a>)}</div>}
+      {subnav.length > 0 ? <div class="subnav">{subnav.map((s) => <a href={s.href}>{s.label}</a>)}</div> : <span class="meta">{section.tag}</span>}
     </div></div>
   )}
   <script is:inline>try{document.getElementById('today').textContent=new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'})}catch(e){}</script>
-  {home ? <slot /> : <main class="wrap"><slot /></main>}
-  <footer>
-    <div class="wrap">
-      <p style="margin:0 0 10px"><b>{SITE.name}</b>: {SITE.description}</p>
-      <p style="margin:0 0 10px"><a href="/about/">About</a><a href="/team/">Our desks</a><a href="/editorial-policy/">Editorial policy</a><a href="/right-of-reply/">Right of reply</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/rss.xml">RSS</a></p>
-      <p style="margin:0">&copy; {new Date().getFullYear()} {SITE.name}. Opinion and analysis are labelled. Corrections: {SITE.email}</p>
+  <main><slot /></main>
+  <footer class="foot"><div class="wrap">
+    <div>
+      <a class="logo" href="/" style="display:inline-block;padding:0">Southwala<i>.</i></a>
+      <p style="margin-top:14px">{SITE.description}</p>
     </div>
-  </footer>
+    <div>
+      <h4>Sections</h4>
+      {nav.map((c) => <a href={c.href}>{c.brand}</a>)}
+      <a href="/temples/">Temples</a><a href="/bhagavad-gita/">Bhagavad Gita</a>
+    </div>
+    <div>
+      <h4>Trust</h4>
+      <a href="/about/">About</a><a href="/team/">Our desks</a><a href="/editorial-policy/">Editorial policy</a><a href="/right-of-reply/">Right of reply</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/rss.xml">RSS</a>
+    </div>
+    <div class="legal">&copy; {new Date().getFullYear()} {SITE.name}. Opinion and analysis are labelled. Bylines are AI-assisted desk voices. Corrections: {SITE.email}</div>
+  </div></footer>
 </body>
 </html>

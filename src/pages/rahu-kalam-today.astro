@@ -32,12 +32,12 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
       ))}</tbody>
     </table></div>
     <p class="sub">Traditionally avoided for starting new work, signing or beginning a journey. Calculated from local sunrise and sunset for each city.</p>
-    <div class="sechead" style="margin-top:26px"><h2>Rahu Kalam by weekday</h2></div>
+    <div class="sect" style="margin-top:26px"><h2>Rahu Kalam by weekday</h2></div>
     <table class="data">
       <thead><tr><th>Day</th><th>Which eighth of the day</th></tr></thead>
       <tbody>{WEEKDAYS.map((d, i) => <tr><td>{d}</td><td>{part[RAHU[i]]} part, counted from sunrise</td></tr>)}</tbody>
     </table>
-    <div class="sechead" style="margin-top:26px"><h2>Common questions</h2></div>
+    <div class="sect" style="margin-top:26px"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
     <div class="chips" style="margin-top:14px"><a href="/panchangam/hyderabad/">Full panchangam, Hyderabad</a><a href="/panchangam/">All cities</a></div>
     <p class="disc">Traditions vary by region and family. For rituals, weddings and muhurthams, confirm with your family priest or temple.</p>

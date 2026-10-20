@@ -17,20 +17,17 @@ export const GA_ID = '';
 
 // URL helpers: clean, keyword-friendly addresses.
 export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
-export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', trending: 'trending', news: 'news', sports: 'sports' };
+export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott' };
 export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
-export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/news/');
+export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/');
 
-// Sections. `always` sections have built-in content; the rest appear when they have published stories.
+// Sections. Each has its own accent colour. `always` sections have built-in content; others appear when they have stories.
 export const SECTIONS = [
-  { id: 'politics', label: 'Politics', brand: 'Southwala Politics', href: '/politics/', always: false },
-  { id: 'religion', label: 'Devotional', brand: 'Southwala Devotional', href: '/religion/', always: true },
-  { id: 'astrology', label: 'Astrology', brand: 'Southwala Astrology', href: '/rasi-phalalu/', always: true },
-  { id: 'movies', label: 'Cinema', brand: 'Southwala Cinema', href: '/movies/', always: false },
-  { id: 'ott', label: 'TV & OTT', brand: 'Southwala OTT', href: '/tv-ott/', always: false },
-  { id: 'trending', label: 'Trending', brand: 'Southwala Trending', href: '/trending/', always: false },
-  { id: 'news', label: 'News', brand: 'Southwala News', href: '/news/', always: false },
-  { id: 'sports', label: 'Sports', brand: 'Southwala Sports', href: '/sports/', always: false },
+  { id: 'politics', label: 'Politics', brand: 'Southwala Politics', href: '/politics/', always: false, accent: '#1f3a5f', tag: 'Receipts, records and what the numbers say' },
+  { id: 'religion', label: 'Devotional', brand: 'Southwala Devotional', href: '/religion/', always: true, accent: '#b4530a', tag: 'Panchangam, temples and the Bhagavad Gita' },
+  { id: 'astrology', label: 'Astrology', brand: 'Southwala Astrology', href: '/rasi-phalalu/', always: true, accent: '#3d3a8f', tag: 'Rasi phalalu from the real sky' },
+  { id: 'movies', label: 'Cinema', brand: 'Southwala Cinema', href: '/movies/', always: false, accent: '#a31650', tag: 'Box office, releases and the buzz' },
+  { id: 'ott', label: 'OTT', brand: 'Southwala OTT', href: '/tv-ott/', always: false, accent: '#0e7c7b', tag: 'What to watch, where' },
 ] as const;
 
 // Sub-navigation shown under the section brand.
@@ -48,11 +45,8 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
 
 export const CATEGORIES = [
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },
-  { id: 'movies', label: 'Movies', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },
-  { id: 'ott', label: 'TV & OTT', blurb: 'What to binge, what to skip, what everyone is arguing about.' },
-  { id: 'trending', label: 'Trending', blurb: 'The internet moment of the day, explained.' },
-  { id: 'news', label: 'News', blurb: 'Everything else South India woke up to today.' },
-  { id: 'sports', label: 'Sports', blurb: 'IPL, football, cricket and local legends.' },
+  { id: 'movies', label: 'Cinema', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },
+  { id: 'ott', label: 'OTT', blurb: 'What to binge, what to skip, what everyone is arguing about.' },
 ] as const;
 
 export const REGION_LABELS_NOTE = 'Region codes: ap, ts, ka, tn, kl, south';

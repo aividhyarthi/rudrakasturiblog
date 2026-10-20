@@ -1,54 +1,66 @@
 ---
 import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, todayIST, type CityId } from '../lib/panchang';
+import { RASHIS } from '../lib/astro';
 const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
 const p = panchangFor(ymd, city);
 const c = CITIES[city];
 const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
 const range = (r: { start: Date; end: Date }) => `${t(r.start)} to ${t(r.end)}`;
-const seg = (s: { paksha?: string; name: string; te?: string; endsAt: Date }, i: number, n: number) =>
-  `${s.paksha ? s.paksha + ' ' : ''}${s.name}${s.te ? ' (' + (s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : '') + s.te + ')' : ''}`;
+const seg = (s: { paksha?: string; name: string; te?: string }) =>
+  `${s.paksha ? s.paksha + ' ' : ''}${s.name}`;
+const segTe = (s: { paksha?: string; te?: string }) => (s.te ? `${s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : ''}${s.te}` : '');
 const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
 const tdy = todayIST();
 const offset = Math.round((Date.UTC(ymd.y, ymd.m - 1, ymd.d) - Date.UTC(tdy.y, tdy.m - 1, tdy.d)) / 86400000);
 const hasPrev = offset > -2, hasNext = offset < 45;
+// timeline (00:00 to 24:00 IST)
+const dayStart = Date.UTC(ymd.y, ymd.m - 1, ymd.d) - 5.5 * 3600 * 1000;
+const pos = (d: Date) => Math.max(0, Math.min(100, ((d.getTime() - dayStart) / 86400000) * 100));
+const seg2 = (r: { start: Date; end: Date }, color: string, label: string, lane: string) => ({ left: pos(r.start), width: Math.max(0.8, pos(r.end) - pos(r.start)), color, label, lane });
+const segs = [
+  seg2(p.brahma, '#5b8cff', 'Brahma Muhurtham', 'g'), seg2(p.abhijit, '#2fa866', 'Abhijit', 'g'),
+  seg2(p.rahu, '#d6382c', 'Rahu Kalam', 'b'), seg2(p.yama, '#f08a24', 'Yamagandam', 'b'), seg2(p.gulika, '#8a8a94', 'Gulika', 'b'),
+];
 ---
-<table class="data">
-  <tbody>
-    <tr><th>Sunrise</th><td>{t(p.sunrise)}</td></tr>
-    <tr><th>Sunset</th><td>{t(p.sunset)}</td></tr>
-    {p.moonrise && <tr><th>Moonrise</th><td>{t(p.moonrise)}</td></tr>}
-    {p.moonset && <tr><th>Moonset</th><td>{t(p.moonset)}</td></tr>}
-  </tbody>
-</table>
+<div class="pgrid">
+  <div class="pcard"><b>Sunrise</b><span>{t(p.sunrise)}</span></div>
+  <div class="pcard"><b>Sunset</b><span>{t(p.sunset)}</span></div>
+  {p.moonrise && <div class="pcard"><b>Moonrise</b><span>{t(p.moonrise)}</span></div>}
+  {p.moonset && <div class="pcard"><b>Moonset</b><span>{t(p.moonset)}</span></div>}
+</div>
 
-<div class="sechead"><h2>The five limbs (Panchangam)</h2></div>
-<table class="data">
-  <tbody>
-    <tr><th>Tithi</th><td>{p.tithi.map((s, i) => <div>{seg(s, i, p.tithi.length)} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
-    <tr><th>Nakshatra</th><td>{p.nakshatra.map((s, i) => <div>{seg(s, i, p.nakshatra.length)} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
-    <tr><th>Yoga</th><td>{p.yoga.map((s) => <div>{s.name} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
-    <tr><th>Karana</th><td>{p.karana.map((s) => <div>{s.name} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
-    <tr><th>Vara (weekday)</th><td>{WEEKDAYS[p.weekday]} <span class="te">({WEEKDAYS_TE[p.weekday]})</span></td></tr>
-  </tbody>
-</table>
+<div class="sect"><h2>Your day at a glance</h2></div>
+<div class="tl">
+  <div class="tl-bar" role="img" aria-label="Timeline of the day showing good and avoid periods">
+    <div class="tl-day" style={`left:${pos(p.sunrise)}%;width:${pos(p.sunset) - pos(p.sunrise)}%`}></div>
+    {segs.map((s) => <div class={`tl-seg ${s.lane}`} title={s.label} style={`left:${s.left}%;width:${s.width}%;background:${s.color}`}></div>)}
+  </div>
+  <div class="tl-ticks"><span>12 AM</span><span>6 AM</span><span>12 PM</span><span>6 PM</span><span>12 AM</span></div>
+  <div class="tl-legend">{segs.map((s) => <span><i style={`background:${s.color}`}></i>{s.label}</span>)}<span><i style="background:#fbd38d"></i>Daylight</span></div>
+</div>
 
-<div class="sechead"><h2>Good timings (Manchi samayam)</h2></div>
-<table class="data">
-  <tbody>
-    <tr><th>Abhijit Muhurtham</th><td>{range(p.abhijit)} <div class="sub">The midday window traditionally considered auspicious for starting work.</div></td></tr>
-    <tr><th>Brahma Muhurtham</th><td>{range(p.brahma)} <div class="sub">The pre-dawn window traditionally used for prayer, study and meditation.</div></td></tr>
-  </tbody>
-</table>
+<div class="timing">
+  <div class="good"><b>Good timings (manchi samayam)</b>
+    <span>{range(p.abhijit)}</span><small>Abhijit Muhurtham: traditionally auspicious for starting work.</small>
+    <span style="display:block;margin-top:14px">{range(p.brahma)}</span><small>Brahma Muhurtham: traditionally for prayer, study and meditation.</small>
+  </div>
+  <div class="bad"><b>Timings to avoid</b>
+    <span>{range(p.rahu)}</span><small>Rahu Kalam: avoid starting new work or travel.</small>
+    <span style="display:block;margin-top:14px;font-size:18px">Yamagandam {range(p.yama)}</span>
+    <span style="display:block;margin-top:8px;font-size:18px">Gulika {range(p.gulika)}</span>
+  </div>
+</div>
 
-<div class="sechead"><h2>Timings to avoid</h2></div>
-<table class="data">
-  <tbody>
-    <tr><th>Rahu Kalam</th><td>{range(p.rahu)} <div class="sub">Traditionally avoided for starting new work or travel.</div></td></tr>
-    <tr><th>Yamagandam</th><td>{range(p.yama)}</td></tr>
-    <tr><th>Gulika Kalam</th><td>{range(p.gulika)}</td></tr>
-  </tbody>
-</table>
+<div class="sect"><h2>The five limbs (Panchangam)</h2></div>
+<div class="limbs">
+  <div class="limb"><b>Tithi</b>{p.tithi.map((s) => <div class="v">{seg(s)} <span class="te">{segTe(s)}</span><small>until {t(s.endsAt)}</small></div>)}</div>
+  <div class="limb"><b>Nakshatra</b>{p.nakshatra.map((s) => <div class="v">{s.name} <span class="te">{s.te}</span><small>until {t(s.endsAt)}</small></div>)}</div>
+  <div class="limb"><b>Yoga</b>{p.yoga.map((s) => <div class="v">{s.name}<small>until {t(s.endsAt)}</small></div>)}</div>
+  <div class="limb"><b>Karana</b>{p.karana.map((s) => <div class="v">{s.name}<small>until {t(s.endsAt)}</small></div>)}</div>
+  <div class="limb"><b>Vara (weekday)</b><div class="v">{WEEKDAYS[p.weekday]} <span class="te">{WEEKDAYS_TE[p.weekday]}</span></div></div>
+  <div class="limb"><b>Moon sign today</b><div class="v">{RASHIS[p.moonSign].skt} <span class="te">{RASHIS[p.moonSign].te}</span><small>{RASHIS[p.moonSign].en}</small></div></div>
+</div>
 
 <p class="disc">Calculated for {c.name}, {c.state}, from astronomical positions of the Sun and Moon (Lahiri ayanamsa, local sunrise). Places a few hundred kilometres away differ by a few minutes. Traditions vary by region and family: for rituals, weddings and muhurthams, please confirm with your family priest or temple.</p>
 <div class="chips">{hasPrev && <a href={`/panchangam/${city}/${prev}/`}>&larr; Previous day</a>}{hasNext && <a href={`/panchangam/${city}/${next}/`}>Next day &rarr;</a>}</div>

@@ -78,7 +78,7 @@ export function classify(item) {
   const text = `${item.title} ${item.link}`;
   let category = item.category;
   if (category === 'auto') {
-    category = ['ott', 'movies', 'sports', 'politics'].find((c) => RX[c].test(text)) || 'news';
+    category = ['ott', 'movies', 'politics'].find((c) => RX[c].test(text)) || null;
   }
   let region = item.region;
   if (region === 'auto') {

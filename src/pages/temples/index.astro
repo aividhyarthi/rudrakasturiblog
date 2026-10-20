@@ -1,5 +1,6 @@
 ---
 import Hero from '../../components/Hero.astro';
+import { heroSrc } from '../../lib/heroes';
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { REGIONS } from '../../config';
@@ -9,31 +10,29 @@ const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
 const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Temples', href: '/temples/' }];
 ---
 <Base title="Temples of India: Jyotirlingas, Shakti Peethas, Char Dham" description="Complete lists of the key temples of India (12 Jyotirlingas, 18 Maha Shakti Peethas, Char Dham, Pancharama) plus guides with history and festivals." active="religion" breadcrumbs={crumbs} image="/covers/temples.png">
-  <div class="page" style="max-width:860px">
-    <div class="kicker"><a href="/religion/">Religion</a></div>
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
     <h1>Temples of India</h1>
+    <p class="dek" style="max-width:62ch">Complete lists of the temples every pilgrim asks about, and detailed guides to major temples, with history, festivals and what to check before you go.</p>
     <Hero name="temple-sunrise" alt="A South Indian temple gopuram at sunrise with a row of lit oil lamps" />
-    <p class="dek">Complete lists of the temples every pilgrim asks about, and detailed guides to major temples, with history, festivals and what to check before you go.</p>
-    <div class="chips" style="margin:6px 0 4px"><a href="/temples/god-temples/">God temples</a><a href="/temples/goddess-temples/">Goddess temples</a></div>
-    <div class="sechead" style="margin-top:24px"><h2>Complete lists</h2></div>
-    {LISTS.map((l) => (
-      <a class="item" href={`/temples/${l.slug}/`}><h3>{l.h1}</h3><p>{l.description}</p></a>
-    ))}
-    <div class="sechead" style="margin-top:24px"><h2>Temple guides</h2></div>
-    {states.map((s) => {
-      const list = temples.filter((t) => t.data.state === s);
-      return list.length ? (
-        <>
-          <div class="meta" style="margin:14px 0 4px;font-weight:700;text-transform:uppercase;letter-spacing:.8px">{REGIONS[s]}</div>
-          {list.map((t) => (
-            <a class="item" href={`/temples/${t.slug}/`}>
-              <h3>{t.data.name} <span class="te">{t.data.te}</span></h3>
-              <p>{t.data.summary}</p>
-              <div class="meta" style="margin-top:3px">{t.data.place}, {t.data.district}</div>
-            </a>
-          ))}
-        </>
-      ) : null;
-    })}
+    <div class="chips" style="margin:0 0 34px"><a href="/temples/god-temples/">God temples</a><a href="/temples/goddess-temples/">Goddess temples</a></div>
+    <div class="sect"><h2>Complete lists</h2></div>
+    <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+      {LISTS.map((l) => (
+        <a class="tile" href={`/temples/${l.slug}/`}><h3 style="margin-top:0;font-size:20px">{l.h1}</h3><div class="meta">{l.entries.length} entries &middot; {l.description.split('. ')[0].replace(/\.$/, '')}.</div></a>
+      ))}
+    </div>
+    <div class="sect"><h2>Temple guides</h2></div>
+    <div class="t-grid">
+      {temples.map((x) => (
+        <a class="card" href={`/temples/${x.slug}/`}>
+          <div class="imgwrap"><img class="art-img" src={heroSrc(x.data.hero ?? 'temple-sunrise')} alt={`Illustration of ${x.data.name}`} width="1600" height="900" loading="lazy" /></div>
+          <span class="kicker">{REGIONS[x.data.state]}</span>
+          <h3 style="font-size:20px">{x.data.name}</h3>
+          <p style="font-size:15.5px">{x.data.summary}</p>
+          <div class="meta">{x.data.place}</div>
+        </a>
+      ))}
+    </div>
   </div>
 </Base>

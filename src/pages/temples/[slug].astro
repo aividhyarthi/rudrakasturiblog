@@ -47,7 +47,7 @@ const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
 ---
 <Base title={title} description={description} jsonLd={jsonLd} active="religion" breadcrumbs={crumbs} image={`/covers/${imageSlug}.png`}>
   {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
-  <div class="page" style="max-width:820px">
+  <div class="page c-religion">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/temples/">Temples</a></div>
     <h1>{h1}</h1>
     <Hero name={heroName} alt={`Illustration for ${h1}`} />
@@ -61,7 +61,7 @@ const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
         <tr><th>Deity</th><td>{props.t.data.deity}</td></tr>
         {props.t.data.festivals.length > 0 && <tr><th>Major festivals</th><td>{props.t.data.festivals.join('; ')}</td></tr>}
       </tbody></table>
-      <div class="body"><Content /></div>
+      <div class="prose"><Content /></div>
       {props.t.data.sources.length > 0 && <div class="note"><h4>Sources</h4><ul>{props.t.data.sources.map((s: any) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a>, {s.publisher}</li>)}</ul></div>}
       <div class="note"><h4>Corrections</h4>Spotted something out of date? Write to {SITE.email} and we will fix it.</div>
     </>)}
@@ -80,16 +80,16 @@ const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
           ))}
         </tbody>
       </table>
-      {faq.length > 0 && (<><div class="sechead"><h2>Common questions</h2></div>{faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}</>)}
+      {faq.length > 0 && (<><div class="sect"><h2>Common questions</h2></div>{faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}</>)}
       <div class="chips" style="margin-top:18px"><a href="/temples/">All temple lists</a>{LISTS.filter((x) => x.slug !== slug).map((x) => <a href={`/temples/${x.slug}/`}>{x.h1}</a>)}</div>
       <p class="disc">Lists in this tradition are not fixed by any authority, and sources differ on some details. We give the most widely accepted version and flag disputed points. For timings and rules, check each temple's official channels.</p>
     </>)}
 
     {props.type === 'kind' && (<>
       <p class="dek" style="font-size:18px">{description}</p>
-      <div class="sechead"><h2>Lists</h2></div>
+      <div class="sect"><h2>Lists</h2></div>
       {lists.map((l) => <a class="item" href={`/temples/${l.slug}/`}><h3>{l.h1}</h3><p>{l.description}</p></a>)}
-      <div class="sechead" style="margin-top:20px"><h2>Temple guides</h2></div>
+      <div class="sect" style="margin-top:20px"><h2>Temple guides</h2></div>
       {guides.map((t) => <a class="item" href={`/temples/${t.slug}/`}><h3>{t.data.name}</h3><p>{t.data.summary}</p></a>)}
     </>)}
   </div>

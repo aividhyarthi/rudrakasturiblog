@@ -1,0 +1,17 @@
+---
+import { allArticles, categoryLabel, fmtDate } from '../lib/articles';
+const { exclude, limit = 5, title = 'Latest' } = Astro.props as { exclude?: string[]; limit?: number; title?: string };
+const items = (await allArticles()).filter((a) => !(exclude ?? []).includes(a.slug)).slice(0, limit);
+---
+{items.length > 0 && (
+  <aside>
+    <div class="sect"><h2>{title}</h2></div>
+    {items.map((a) => (
+      <a class={`latest-item c-${a.data.category}`} href={`/${a.slug}/`}>
+        <span class="kicker">{categoryLabel(a.data.category)}</span>
+        <h3>{a.data.title}</h3>
+        <div class="meta">{fmtDate(a.data.date)}</div>
+      </a>
+    ))}
+  </aside>
+)}

@@ -5,9 +5,9 @@ import { allArticles } from '../../lib/articles';
 const items = (await allArticles()).filter((a) => a.data.category === 'politics');
 ---
 <Base title="Politics" description="Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts." active="politics">
-  <div class="page" style="max-width:960px">
-    <div class="sechead"><h1>Southwala Politics</h1></div>
-    <div class="sechead"><h2>Political news and analysis</h2></div>
-    {items.length ? <div>{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No stories yet.</div>}
-  </div>
+  <section class="wrap c-politics" style="padding-top:36px">
+    <div class="sect"><h1>Southwala Politics</h1></div>
+    <p class="dek" style="margin-bottom:28px">Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts.</p>
+    {items.length ? <div class="three">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No stories yet.</div>}
+  </section>
 </Base>

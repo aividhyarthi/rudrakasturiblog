@@ -14,6 +14,7 @@ const d = reading(i, today, span);
 const range = span === 'daily' ? fd(today) : `${fd(today)} to ${fd(addDays(today, days))}`;
 const tomorrow = span === 'daily' ? reading(i, addDays(today, 1), 'daily') : null;
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const bandStars: Record<string, number> = { challenging: 2, mixed: 3, good: 4, excellent: 5 };
 const label = { daily: 'Today', weekly: 'This week', monthly: 'This month' }[span];
 const titles = {
   daily: `${r.skt} Rasi Phalalu Today (${r.en}): ${fd(today)}`,
@@ -24,31 +25,32 @@ const base = `/rasi-phalalu/${r.id}/`;
 const crumbs = [{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }, { name: r.skt, href: base }, ...(span === 'daily' ? [] : [{ name: label, href: `${base}${span}/` }])];
 ---
 <Base title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} rasi phalalu for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
-  <div class="page" style="max-width:860px">
+  <div class="page wide c-astrology">
     <div class="kicker"><a href="/rasi-phalalu/">Rasi Phalalu</a></div>
-    <h1><Glyph id={r.id} size={34} /> {r.skt} Rasi <span class="te">{r.te}</span> <span class="sub" style="font-weight:400">({r.en})</span></h1>
+    <h1 style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><Glyph id={r.id} size={44} /> <span>{r.skt} Rasi <span class="te" style="font-weight:600">{r.te}</span></span> <span class="sub" style="font-family:var(--sans);font-weight:500;font-size:18px;letter-spacing:0">{r.en}</span></h1>
     <Hero name={`rashi-${r.id}`} alt={`${r.skt} (${r.en}) rashi illustration with its zodiac symbol`} ratio="16/6" />
-    <div class="chips" style="margin:6px 0 10px">{RASHIS.map((x) => <a href={`/rasi-phalalu/${x.id}/${span === 'daily' ? '' : span + '/'}`} class={x.id === r.id ? 'on' : ''}>{x.skt}</a>)}</div>
-    <div class="chips" style="margin:0 0 6px">
+    <div class="chips" style="margin:0 0 10px">{RASHIS.map((x) => <a href={`/rasi-phalalu/${x.id}/${span === 'daily' ? '' : span + '/'}`} class={x.id === r.id ? 'on' : ''}>{x.skt}</a>)}</div>
+    <div class="chips" style="margin:0 0 26px">
       <a href={base} class={span === 'daily' ? 'on' : ''}>Daily</a><a href={`${base}weekly/`} class={span === 'weekly' ? 'on' : ''}>Weekly</a><a href={`${base}monthly/`} class={span === 'monthly' ? 'on' : ''}>Monthly</a>
     </div>
     <section class="reading">
-      <h2 style="margin:0 0 4px;font-size:24px">{label}: {range}</h2>
-      <div class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)} <span class="sub" style="letter-spacing:0">({d.band})</span></div>
-      <p style="font-size:18px;margin:8px 0">{d.summary}</p>
-      <dl class="dl">
-        {d.domains.map((x) => <><dt>{x.label}</dt><dd>{x.text}</dd></>)}
-        <dt>Lucky colour</dt><dd>{d.lucky.color}</dd>
-        <dt>Lucky number</dt><dd>{d.lucky.number}</dd>
-      </dl>
-      <div class="sub">Based on: {d.factors.join('; ')}.</div>
+      <div class="sect"><h2>{label}: {range}</h2></div>
+      <div class="rating-big"><span class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</span><small>{d.band}</small></div>
+      <p class="dek" style="margin:6px 0 4px">{d.summary}</p>
+      <div class="rgrid">
+        {d.domains.map((x) => <div class="rcard"><b>{x.label}<em>{star(bandStars[x.band])}</em></b><p>{x.text}</p></div>)}
+      </div>
+      <div class="lucky"><span>Lucky colour: <b>{d.lucky.color}</b></span><span>Lucky number: <b>{d.lucky.number}</b></span></div>
+      <p class="sub">Based on: {d.factors.join('; ')}.</p>
     </section>
     {tomorrow && (
       <section class="reading">
-        <h2 style="margin:0 0 4px;font-size:22px">Tomorrow: {fd(addDays(today, 1))}</h2>
-        <div class="stars">{star(tomorrow.rating)} <span class="sub" style="letter-spacing:0">({tomorrow.band})</span></div>
-        <p style="font-size:17px;margin:6px 0">{tomorrow.summary}</p>
-        <dl class="dl">{tomorrow.domains.map((x) => <><dt>{x.label}</dt><dd>{x.text}</dd></>)}</dl>
+        <div class="sect"><h2>Tomorrow: {fd(addDays(today, 1))}</h2></div>
+        <div class="rating-big"><span class="stars">{star(tomorrow.rating)}</span><small>{tomorrow.band}</small></div>
+        <p class="dek" style="margin:6px 0 4px">{tomorrow.summary}</p>
+        <div class="rgrid">
+          {tomorrow.domains.map((x) => <div class="rcard"><b>{x.label}<em>{star(bandStars[x.band])}</em></b><p>{x.text}</p></div>)}
+        </div>
       </section>
     )}
     <p class="disc">For entertainment and reflection only. These readings come from the day's planetary positions using traditional Vedic transit rules, the same for everyone born under {r.skt} rashi. They are not predictions about your life and not a substitute for medical, legal or financial advice. Your rashi is the sign of your Moon at birth.</p>

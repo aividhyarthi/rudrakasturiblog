@@ -1,9 +1,0 @@
----
-import Art from './Art.astro';
-// A picture for every story, drawn by us: line art on a soft tint. No photos, nothing to license.
-const { category, slug = '', ratio = '16/9' } = Astro.props as { category: string; slug?: string; ratio?: string };
-const ART: Record<string, any> = { politics: 'ballot', movies: 'film', ott: 'tv', trending: 'flame', news: 'newspaper', sports: 'trophy', religion: 'gopuram', astrology: 'stars' };
-let h = 0; for (const ch of slug) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-const tone = h % 4;
----
-<div class={`thumb t${tone}`} style={`aspect-ratio:${ratio}`} aria-hidden="true"><Art name={ART[category] ?? 'newspaper'} size={96} /></div>

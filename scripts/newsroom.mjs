@@ -116,7 +116,7 @@ function toMarkdown(c, a, who) {
 async function main() {
   const raw = (await Promise.all(CFG.feeds.map(fetchFeed))).flat();
   const cutoff = Date.now() - CFG.maxAgeHours * 3600 * 1000;
-  const fresh = raw.filter((i) => i.title && i.date.getTime() > cutoff && !seen.links.includes(i.link)).map(classify);
+  const fresh = raw.filter((i) => i.title && i.date.getTime() > cutoff && !seen.links.includes(i.link)).map(classify).filter((i) => ['politics', 'movies', 'ott'].includes(i.category));
   const seenTok = seen.titles.map(norm);
   const clusters = cluster(fresh)
     .filter((c) => !seenTok.some((t) => jaccard(t, c.tokens) > 0.4))

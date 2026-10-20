@@ -53,3 +53,10 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Section illustrations are drawn by us as vectors (scripts/make-heroes.mjs -> public/heroes/*.svg): temple-sunrise, jyotirlinga-dawn, goddess-temple, kurukshetra-dawn, panchangam, zodiac-wheel, moon-nakshatra.
 - Founder can override any of them with their own picture: drop a file named like the illustration into public/images/heroes/ (see README.txt there). The site prefers the founder's file automatically.
 - Images are drawn by us in code (scripts/make-heroes.mjs and make-heroes2.mjs): 12 rashi pictures, 6 individual temple scenes, Shiva/Vishnu/Devi symbol art, section scenes. No third-party image tools.
+
+## Update 2026-10-20 (design v4: editorial redesign)
+- Sections now: Politics, Devotional, Astrology, Cinema, OTT. News, Sports and Trending were removed on purpose (also removed from the newsroom: it only writes politics, cinema and OTT).
+- Design system (src/styles/global.css): white page, near-black type, one accent colour per section (Politics navy, Devotional saffron, Astrology indigo, Cinema magenta, OTT teal). Self-hosted fonts: Fraunces (headlines), Source Serif 4 (reading), Inter (interface), Noto Serif/Sans Telugu (Telugu text renders properly).
+- Every story gets its own vector scene (assembly hall, cinema hall, OTT screens) from src/lib/storyart.ts, served at /art/<slug>.svg. No stock photos, no faces.
+- Panchangam page: dashboard with a day timeline (good and avoid periods), cards for the five limbs, Telugu names.
+- Home page shows each story once (lead, latest, card row, then section columns for what is left).

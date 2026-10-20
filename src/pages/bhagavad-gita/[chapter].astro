@@ -10,12 +10,12 @@ const url = `https://southwala.com/bhagavad-gita/chapter-${n}/`;
 const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: `Bhagavad Gita Chapter ${n}: ${c.en}`, author: { '@type': 'Organization', name: 'Southwala' }, publisher: { '@type': 'Organization', name: 'Southwala', logo: { '@type': 'ImageObject', url: 'https://southwala.com/logo.png' } }, mainEntityOfPage: url, image: `https://southwala.com/covers/g-${n}.png`, dateModified: new Date().toISOString() };
 ---
 <Base title={`Bhagavad Gita Chapter ${n}: ${c.en}`} description={`Bhagavad Gita Chapter ${n} (${c.skt}): a plain-English summary, the key ideas and the verses most often quoted.`} jsonLd={jsonLd} active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Bhagavad Gita', href: '/bhagavad-gita/' }, { name: `Chapter ${n}`, href: `/bhagavad-gita/chapter-${n}/` }]} image={`/covers/g-${n}.png`}>
-  <div class="page" style="max-width:780px">
+  <div class="page c-religion">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/bhagavad-gita/">Bhagavad Gita</a></div>
     <h1>Bhagavad Gita Chapter {n}: {c.en}</h1>
     <Hero name="kurukshetra-dawn" alt="A chariot wheel, a bow and an open manuscript at dawn on the field of Kurukshetra" ratio="16/5" />
     <p class="meta" style="margin-top:0">{c.skt} &middot; {c.verses} verses</p>
-    <div class="body">
+    <div class="prose">
       {c.summary.map((p) => <p>{p}</p>)}
       <h2>Key ideas</h2>
       <ul>{c.ideas.map((i) => <li>{i}</li>)}</ul>
