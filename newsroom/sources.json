@@ -1,20 +1,19 @@
 {
-  "note": "Each feed is a Google News search (works for any outlet). Add or edit lines freely. category: politics|movies|ott|trending|news|sports. region: tn|kl|ka|ap|ts|south",
+  "note": "Each feed is a Google News search (works for any outlet). Add or edit lines freely. You can also add a direct feed like { \"category\": \"politics\", \"region\": \"ap\", \"url\": \"https://example.com/feed.xml\" }. category: politics|movies|ott|trending|news|sports. region: ap|ts|south",
   "maxArticlesPerRun": 4,
   "maxAgeHours": 30,
   "feeds": [
-    { "category": "politics", "region": "tn", "query": "Tamil Nadu politics DMK AIADMK TVK" },
-    { "category": "politics", "region": "kl", "query": "Kerala politics LDF UDF BJP" },
-    { "category": "politics", "region": "ka", "query": "Karnataka politics Congress BJP JDS" },
-    { "category": "politics", "region": "ap", "query": "Andhra Pradesh politics TDP YSRCP Jana Sena" },
-    { "category": "politics", "region": "ts", "query": "Telangana politics BRS Congress BJP" },
-    { "category": "movies", "region": "tn", "query": "Tamil cinema Kollywood box office" },
-    { "category": "movies", "region": "ts", "query": "Telugu cinema Tollywood box office" },
-    { "category": "movies", "region": "ka", "query": "Kannada cinema Sandalwood" },
-    { "category": "movies", "region": "kl", "query": "Malayalam cinema Mollywood" },
-    { "category": "ott", "region": "south", "query": "South Indian OTT release Netflix Prime Video Hotstar Tamil Telugu Malayalam series" },
-    { "category": "trending", "region": "south", "query": "South India viral trending social media" },
-    { "category": "news", "region": "south", "query": "Chennai Bengaluru Hyderabad Kochi news" },
-    { "category": "sports", "region": "south", "query": "CSK RCB SRH Kerala Blasters South India sports" }
+    { "category": "politics", "region": "ap", "query": "Andhra Pradesh politics TDP YSRCP Jana Sena BJP" },
+    { "category": "politics", "region": "ap", "query": "Chandrababu Naidu Pawan Kalyan Jagan Mohan Reddy" },
+    { "category": "politics", "region": "ap", "query": "Amaravati Polavaram Andhra Pradesh government scheme budget" },
+    { "category": "politics", "region": "ts", "query": "Telangana politics Congress BRS BJP" },
+    { "category": "politics", "region": "ts", "query": "Revanth Reddy KCR KTR Telangana government" },
+    { "category": "politics", "region": "ts", "query": "Hyderabad HYDRAA Musi Telangana government scheme budget" },
+    { "category": "movies", "region": "south", "query": "Tollywood Telugu cinema box office" },
+    { "category": "movies", "region": "south", "query": "Telugu star film release trailer controversy" },
+    { "category": "ott", "region": "south", "query": "Telugu OTT release Netflix Prime Video Aha Hotstar series" },
+    { "category": "trending", "region": "south", "query": "Telugu viral trending social media Hyderabad Vijayawada Visakhapatnam" },
+    { "category": "news", "region": "south", "query": "Hyderabad Vijayawada Visakhapatnam Amaravati news" },
+    { "category": "sports", "region": "south", "query": "SRH Hyderabad Telugu sports cricket" }
   ]
 }

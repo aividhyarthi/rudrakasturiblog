@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'Southwala',
   url: 'https://southwala.com',
-  tagline: 'South India, minus the boring parts.',
+  tagline: 'Andhra & Telangana, with the receipts.',
   description:
     'Politics, movies, OTT and the internet’s favourite drama from Tamil Nadu, Kerala, Karnataka, Andhra and Telangana. Fast, sharp, sourced.',
   email: 'hello@southwala.com',
