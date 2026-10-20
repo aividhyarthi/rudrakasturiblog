@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import { RASHIS, reading, dayOverall } from '../../lib/astro';
 import { panchangFor, todayIST, WEEKDAYS } from '../../lib/panchang';
@@ -12,6 +13,7 @@ const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 <Base title="Rasi Phalalu Today: Daily, Weekly, Monthly Horoscope for Every Rashi" description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
   <div class="page" style="max-width:960px">
     <div class="sechead"><h2>Rasi Phalalu</h2></div>
+    <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" />
     <h1>Today: {pretty}</h1>
     <p class="dek" style="font-size:18px">{o.headline}</p>
     <h3>Overall for the day</h3>

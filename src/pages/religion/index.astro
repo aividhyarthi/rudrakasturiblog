@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import Art from '../../components/Art.astro';
 import { CITIES, panchangFor, fmtTime, todayIST } from '../../lib/panchang';
@@ -10,7 +11,8 @@ const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
 ---
 <Base title="Religion: Panchangam, Temples and the Bhagavad Gita" description="Daily panchangam with Rahu Kalam and good timings, guides and lists of India's important temples, and the Bhagavad Gita explained chapter by chapter." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }]} image="/covers/temples.png">
   <div class="page" style="max-width:960px">
-    <div class="sechead"><h2>Religion</h2></div>
+    <div class="sechead"><h2>Devotional</h2></div>
+    <Hero name="temple-sunrise" alt="A South Indian temple gopuram at sunrise with a row of lit oil lamps" />
     <section class="tiles" style="margin-top:0;grid-template-columns:repeat(2,1fr)">
       <a class="tile" href="/panchangam/hyderabad/"><Art name="sun" /><h3>Panchangam today</h3><div class="meta">Tithi, nakshatra, Rahu Kalam and good timings for seven southern cities.</div></a>
       <a class="tile" href="/rahu-kalam-today/"><Art name="moon" /><h3>Rahu Kalam today</h3><div class="meta">Today's Rahu Kalam, Yamagandam and Gulika for every city, on one page.</div></a>

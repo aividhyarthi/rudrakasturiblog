@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import { CHAPTERS, GITA_FAQ } from '../../data/gita';
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: GITA_FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
@@ -8,6 +9,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
   <div class="page" style="max-width:820px">
     <div class="kicker"><a href="/religion/">Religion</a></div>
     <h1>Bhagavad Gita <span class="te">భగవద్గీత</span></h1>
+    <Hero name="kurukshetra-dawn" alt="A chariot wheel, a bow and an open manuscript at dawn on the field of Kurukshetra" />
     <p class="dek">The Gita is a conversation between Krishna and Arjuna on the battlefield of Kurukshetra, set inside the Mahabharata. In 18 chapters it asks how to act well, how to find calm in a divided mind, and what it means to live with devotion and wisdom.</p>
     <p>This guide explains each chapter in plain words. The summaries are our own. For the verse-by-verse text, please use a translation and commentary from a tradition or teacher you trust.</p>
     <div class="sechead" style="margin-top:22px"><h2>The three paths in the Gita</h2></div>

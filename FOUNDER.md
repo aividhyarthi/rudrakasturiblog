@@ -48,3 +48,8 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Look: white background, black text, black nav bar, one red accent for labels. News-portal layout: today bar (panchangam snapshot), lead story, top stories, latest, section panels.
 - Each section shows its own brand under the logo: Southwala Politics, Southwala Devotional, Southwala Astrology, Southwala Cinema, Southwala OTT (and Trending/News/Sports when they have stories). Sections with no published stories (Trending, News, Sports) and states with none (Karnataka) are hidden automatically and appear when the newsroom publishes into them.
 - Pictures: our own line drawings on soft tints for story thumbnails; headline cards (1200x675) for sharing. Real licensed photos still the upgrade path for Discover.
+
+## Update 2026-10-20 (images)
+- Section illustrations are drawn by us as vectors (scripts/make-heroes.mjs -> public/heroes/*.svg): temple-sunrise, jyotirlinga-dawn, goddess-temple, kurukshetra-dawn, panchangam, zodiac-wheel, moon-nakshatra.
+- Founder can override any of them with their own picture: drop a file named like the illustration into public/images/heroes/ (see README.txt there). The site prefers the founder's file automatically.
+- AI generation (Canva) works for 4 images at a time, then hits a quota, and only returns 199px thumbnails to us. Full-size AI images must be downloaded by the founder from the Canva links and dropped into public/images/heroes/.

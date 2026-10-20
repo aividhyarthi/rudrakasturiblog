@@ -1,0 +1,5 @@
+---
+import { heroSrc } from '../lib/heroes';
+const { name, alt, ratio = '16/6' } = Astro.props as { name: string; alt: string; ratio?: string };
+---
+<img class="hero" src={heroSrc(name)} alt={alt} width="1600" height="600" loading="eager" style={`aspect-ratio:${ratio}`} />

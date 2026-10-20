@@ -1,4 +1,5 @@
 ---
+import Hero from '../components/Hero.astro';
 import Base from '../layouts/Base.astro';
 import { CITIES, panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS } from '../lib/panchang';
 const ymd = todayIST();
@@ -23,6 +24,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
     <h1>Rahu Kalam Today</h1>
     <p class="meta" style="margin-top:0" id="when">{pretty}</p>
+    <Hero name="panchangam" alt="A sun, a lotus of five petals and a crescent moon above a palm-leaf manuscript" ratio="16/4" />
     <table class="data">
       <thead><tr><th>City</th><th>Rahu Kalam</th><th>Yamagandam</th><th>Gulika Kalam</th></tr></thead>
       <tbody>{rows.map(({ id, c, p }) => (

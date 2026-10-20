@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import { CHAPTERS } from '../../data/gita';
 export function getStaticPaths() { return Array.from({ length: 18 }, (_, i) => ({ params: { chapter: `chapter-${i + 1}` }, props: { n: i + 1 } })); }
@@ -12,6 +13,7 @@ const jsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline:
   <div class="page" style="max-width:780px">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/bhagavad-gita/">Bhagavad Gita</a></div>
     <h1>Bhagavad Gita Chapter {n}: {c.en}</h1>
+    <Hero name="kurukshetra-dawn" alt="A chariot wheel, a bow and an open manuscript at dawn on the field of Kurukshetra" ratio="16/5" />
     <p class="meta" style="margin-top:0">{c.skt} &middot; {c.verses} verses</p>
     <div class="body">
       {c.summary.map((p) => <p>{p}</p>)}

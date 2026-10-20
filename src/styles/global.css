@@ -131,3 +131,5 @@ footer a{margin-right:16px;text-decoration:underline;color:#fff}
 @media(max-width:1000px){.home{grid-template-columns:1fr 1fr}.home aside{grid-column:1/-1}.art{grid-template-columns:1fr}.tiles{grid-template-columns:1fr 1fr}.sign-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:640px){.home,.blocks,.twin,.tiles{grid-template-columns:1fr}.sign-grid{grid-template-columns:repeat(2,1fr)}.signs{grid-template-columns:repeat(3,1fr)}.logo{font-size:38px}.date{display:none}.lead h1{font-size:28px}.art h1{font-size:30px}.body{font-size:18.5px}.dl{grid-template-columns:1fr}.brand{font-size:20px}}
 @media(max-width:640px){.todaybar .wrap{gap:4px 14px}.todaybar span:nth-of-type(n+3){display:none}}
+.hero{width:100%;object-fit:cover;display:block;margin:12px 0 18px;border:1px solid #111;background:var(--soft)}
+.panel .hero{margin:0;border:0;border-bottom:1px solid #111}

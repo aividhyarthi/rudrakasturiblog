@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { REGIONS } from '../../config';
@@ -11,6 +12,7 @@ const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Temples', hre
   <div class="page" style="max-width:860px">
     <div class="kicker"><a href="/religion/">Religion</a></div>
     <h1>Temples of India</h1>
+    <Hero name="temple-sunrise" alt="A South Indian temple gopuram at sunrise with a row of lit oil lamps" />
     <p class="dek">Complete lists of the temples every pilgrim asks about, and detailed guides to major temples, with history, festivals and what to check before you go.</p>
     <div class="chips" style="margin:6px 0 4px"><a href="/temples/god-temples/">God temples</a><a href="/temples/goddess-temples/">Goddess temples</a></div>
     <div class="sechead" style="margin-top:24px"><h2>Complete lists</h2></div>

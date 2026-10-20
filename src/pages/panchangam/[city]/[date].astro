@@ -1,4 +1,5 @@
 ---
+import Hero from '../../../components/Hero.astro';
 import Base from '../../../layouts/Base.astro';
 import PanchangView from '../../../components/PanchangView.astro';
 import { CITIES, parseKey, WEEKDAYS, type CityId } from '../../../lib/panchang';
@@ -25,6 +26,7 @@ const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', 
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
     <h1>Panchangam {c.name}: {pretty}</h1>
     <p class="meta" style="margin-top:0">{c.name}, {c.state}</p>
+    <Hero name="panchangam" alt="A sun, a lotus of five petals and a crescent moon above a palm-leaf manuscript" ratio="16/4" />
     <div class="chips" style="margin:10px 0 22px">
       {Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/${date}/`} class={id === city ? 'on' : ''}>{x.name}</a>)}
     </div>

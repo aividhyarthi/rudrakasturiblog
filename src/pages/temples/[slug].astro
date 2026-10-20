@@ -1,4 +1,5 @@
 ---
+import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import { getCollection } from 'astro:content';
 import { REGIONS, SITE } from '../../config';
@@ -40,6 +41,8 @@ if (props.type === 'temple') {
 const lists = LISTS.filter((l) => (props.type === 'kind' ? (props.kind === 'goddess' ? l.kind === 'goddess' || l.kind === 'mixed' : l.kind === 'god' || l.kind === 'mixed') : false));
 const guides = props.type === 'kind' ? all.filter((t) => t.data.kind === props.kind || t.data.kind === 'both') : [];
 const faqLd = faq.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) } : null;
+const goddessy = (props.type === 'temple' && props.t.data.kind === 'goddess') || (props.type === 'list' && props.l.kind === 'goddess') || (props.type === 'kind' && props.kind === 'goddess');
+const heroName = slug === 'srisailam-mallikarjuna-temple' || slug === 'jyotirlingas' ? 'jyotirlinga-dawn' : goddessy ? 'goddess-temple' : 'temple-sunrise';
 const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
 ---
 <Base title={title} description={description} jsonLd={jsonLd} active="religion" breadcrumbs={crumbs} image={`/covers/${imageSlug}.png`}>
@@ -47,6 +50,7 @@ const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
   <div class="page" style="max-width:820px">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/temples/">Temples</a></div>
     <h1>{h1}</h1>
+    <Hero name={heroName} alt={`Illustration for ${h1}`} />
 
     {props.type === 'temple' && (<>
       <p class="te" style="margin:0">{props.t.data.te}</p>
