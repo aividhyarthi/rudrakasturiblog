@@ -29,10 +29,12 @@ const latest = rest.slice(5, 14);
           ))}
         </aside>
       </section>
-      <section class="sec">
-        <header><h2>Latest</h2></header>
-        <div class="grid">{latest.map((a) => <Card a={a} />)}</div>
-      </section>
+      {latest.length > 0 && (
+        <section class="sec">
+          <header><h2>Latest</h2></header>
+          <div class="grid">{latest.map((a) => <Card a={a} />)}</div>
+        </section>
+      )}
       {CATEGORIES.map((c) => {
         const items = all.filter((a) => a.data.category === c.id).slice(0, 3);
         return items.length ? (

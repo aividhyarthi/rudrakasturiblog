@@ -9,6 +9,7 @@ const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
 const CFG = JSON.parse(read('newsroom/sources.json'));
 const GUIDE = read('newsroom/editor-guide.md');
 const STATES = JSON.parse(read('newsroom/states.json'));
+const FACTS = read('newsroom/facts.md');
 const BYLINES = JSON.parse(read('newsroom/bylines.json'));
 const SEEN_FILE = path.join(ROOT, 'newsroom/seen.json');
 const OUT_DIR = path.join(ROOT, 'src/content/articles');
@@ -65,16 +66,21 @@ async function writeStory(c, who) {
     `Section: ${c.category}. State focus: ${st.label} (${c.region}).`,
     `State tone cards (apply the one for this story's state):\n${cards}`,
     `Today: ${new Date().toISOString().slice(0, 10)}`,
+    FACTS,
     `Some sources are in Telugu: understand them, then write natural English. Transliterate names consistently and never paste Telugu text unless translated.`,
     `SOURCE MATERIAL (several outlets covering the same story):\n${material.join('\n')}`,
     'Write the Southwala story now. JSON only.',
   ].join('\n\n');
-  const res = await fetch('https://api.anthropic.com/v1/messages', {
+  // The writer checks facts with web search. If web search is not enabled on the account, fall back to plain mode
+  // (the guide then makes it skip stories it cannot confirm from the material supplied).
+  const call = (tools) => fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
-    body: JSON.stringify({ model: MODEL, max_tokens: 2500, system: GUIDE, messages: [{ role: 'user', content: user }] }),
-    signal: AbortSignal.timeout(120000),
+    body: JSON.stringify({ model: MODEL, max_tokens: 4000, system: GUIDE, messages: [{ role: 'user', content: user }], ...(tools ? { tools } : {}) }),
+    signal: AbortSignal.timeout(240000),
   });
+  let res = await call([{ type: 'web_search_20250305', name: 'web_search', max_uses: 5 }]);
+  if (res.status === 400 && /web.?search/i.test(await res.clone().text())) { console.warn('web search unavailable, writing without it'); res = await call(null); }
   if (!res.ok) throw new Error(`Claude API ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const data = await res.json();
   const text = data.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
@@ -132,6 +138,7 @@ async function main() {
   }
   console.log(`${raw.length} items, ${fresh.length} fresh, ${clusters.length} new stories, writing ${picks.length}`);
 
+  if (process.env.DUMP) fs.writeFileSync(process.env.DUMP, JSON.stringify(picks.map((c) => ({ category: c.category, region: c.region, byline: pickByline(c, c.items[0].link).person, items: c.items.slice(0, 6).map(({ title, link, publisher, snippet, date }) => ({ title, link, publisher, snippet, date })) })), null, 1));
   if (DRY || !API_KEY) {
     for (const c of picks) {
       const w = pickByline(c, c.items[0].link);
