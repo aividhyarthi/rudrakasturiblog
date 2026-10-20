@@ -18,7 +18,7 @@ export const GA_ID = '';
 
 // URL helpers: clean, keyword-friendly addresses.
 export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
-export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott' };
+export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', devotional: 'devotional', spiritual: 'yoga-spiritual', gita: 'gita-teachings', astrology: 'horoscope' };
 export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
 export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/');
 
@@ -29,7 +29,7 @@ export const NEWS_ENABLED = false;
 export const SECTIONS = [
   { id: 'politics', label: 'Politics', brand: 'Southwala Politics', href: '/politics/', always: false, accent: '#1f3a5f', tag: 'Receipts, records and what the numbers say' },
   { id: 'religion', label: 'Devotional', brand: 'Southwala Devotional', href: '/religion/', always: true, accent: '#b4530a', tag: 'Panchangam, temples and the Bhagavad Gita' },
-  { id: 'astrology', label: 'Astrology', brand: 'Southwala Astrology', href: '/rasi-phalalu/', always: true, accent: '#3d3a8f', tag: 'Rasi phalalu from the real sky' },
+  { id: 'astrology', label: 'Astrology', brand: 'Southwala Astrology', href: '/rasi-phalalu/', always: true, accent: '#3d3a8f', tag: 'Daily, weekly and monthly rasi phalalu' },
   { id: 'temples', label: 'Temples', brand: 'Southwala Temples', href: '/temples/', always: true, accent: '#8a3b12', tag: 'Guides to the temples every pilgrim asks about' },
   { id: 'gita', label: 'Bhagavad Gita', brand: 'Southwala Gita', href: '/bhagavad-gita/', always: true, accent: '#7a5b00', tag: 'All 18 chapters, in plain words' },
   { id: 'movies', label: 'Cinema', brand: 'Southwala Cinema', href: '/movies/', always: false, accent: '#a31650', tag: 'Box office, releases and the buzz' },
@@ -57,10 +57,17 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
   ],
 };
 
+// Which menu section each article category belongs to, and which rail it uses.
+export const CAT_SECTION: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'gita', astrology: 'astrology' };
+export const CAT_RAIL: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'religion', astrology: 'astrology' };
+export const NEWS_CATS = ['politics', 'movies', 'ott'];
+
 export const CATEGORIES = [
+  { id: 'devotional', label: 'Devotional', blurb: 'Festivals, panchangam, vratams and the traditions behind them.' },
+  { id: 'astrology', label: 'Astrology', blurb: 'Rashis, planets and how to read your horoscope.' },
+  { id: 'gita', label: 'Bhagavad Gita', blurb: 'What the Gita says about work, anger, fear and peace of mind.' },
+  { id: 'spiritual', label: 'Yoga & Spiritual', blurb: 'Yoga, pranayama and simple practices for daily life.' },
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },
-  { id: 'temples', label: 'Temples', brand: 'Southwala Temples', href: '/temples/', always: true, accent: '#8a3b12', tag: 'Guides to the temples every pilgrim asks about' },
-  { id: 'gita', label: 'Bhagavad Gita', brand: 'Southwala Gita', href: '/bhagavad-gita/', always: true, accent: '#7a5b00', tag: 'All 18 chapters, in plain words' },
   { id: 'movies', label: 'Cinema', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },
   { id: 'ott', label: 'OTT', blurb: 'What to binge, what to skip, what everyone is arguing about.' },
 ] as const;

@@ -15,7 +15,7 @@ async function items(): Promise<Record<string, Item>> {
     temples: { kicker: 'Religion', title: 'Temples of India: Jyotirlingas, Shakti Peethas, Char Dham and more' },
     gita: { kicker: 'Bhagavad Gita', title: 'The Bhagavad Gita: all 18 chapters, explained simply' },
   };
-  for (const a of await allArticles()) out[a.slug] = { kicker: categoryLabel(a.data.category), title: a.data.title };
+  for (const a of await allArticles({ includeHidden: true })) out[a.slug] = { kicker: categoryLabel(a.data.category), title: a.data.title };
   for (const t of await getCollection('temples')) out[`t-${t.slug}`] = { kicker: 'Temples', title: t.data.name };
   RASHIS.forEach((r) => (out[`r-${r.id}`] = { kicker: 'Rasi Phalalu', title: `${r.skt} Rasi (${r.en}) Phalalu: today, this week, this month` }));
   CHAPTERS.forEach((c) => (out[`g-${c.n}`] = { kicker: 'Bhagavad Gita', title: `Bhagavad Gita Chapter ${c.n}: ${c.en}` }));

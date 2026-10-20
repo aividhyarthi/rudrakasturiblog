@@ -2,14 +2,14 @@
 import Glyph from './Glyph.astro';
 import { allArticles, categoryLabel, fmtDate, sectionCounts } from '../lib/articles';
 import { RASHIS } from '../lib/astro';
-import { REGIONS, stateHref, SECTIONS } from '../config';
+import { REGIONS, stateHref, SECTIONS, CAT_SECTION } from '../config';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 // Right-hand rail for section and story pages. Content depends on the section.
 const { section = 'general', exclude, noToday = false } = Astro.props as { section?: string; exclude?: string; noToday?: boolean };
 const all = await allArticles();
 const sec = SECTIONS.find((s) => s.id === section);
 const newsy = ['politics', 'movies', 'ott', 'general'].includes(section);
-let latest = all.filter((a) => a.slug !== exclude && (section === 'general' || a.data.category === section)).slice(0, 4);
+let latest = all.filter((a) => a.slug !== exclude && (section === 'general' || CAT_SECTION[a.data.category] === section)).slice(0, 4);
 if (latest.length === 0) latest = all.filter((a) => a.slug !== exclude).slice(0, 4);
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -24,7 +24,7 @@ const explore = [
 ];
 ---
 <aside class="rail" aria-label="More on Southwala">
-  {newsy && latest.length > 0 && (
+  {latest.length > 0 && (
     <div class="mod">
       <div class="sect"><h2>{section === 'general' ? 'Latest' : `Latest in ${sec?.label}`}</h2></div>
       {latest.map((a) => (

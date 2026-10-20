@@ -30,7 +30,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
 const dup = /-\d+-\d{4}$/.test(l.slug);
 const title = `${c.title} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Tithi Timings, Significance`;
 ---
-<Base rail="religion" title={title} description={`${c.title} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi begins ${dt(l.start)} and ends ${dt(l.end)} (IST), with the ${MONTHS[l.month]} month significance and what to do.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }, { name: label(l), href: `/${kind}/${l.slug}/` }]} image="/covers/panchangam.png">
+<Base rail="religion" title={title} description={`${c.title} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }, { name: label(l), href: `/${kind}/${l.slug}/` }]} image="/covers/panchangam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href={`/${kind}/`}>{c.title} <span class="te">{c.te}</span></a></div>

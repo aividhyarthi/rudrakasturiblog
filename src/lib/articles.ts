@@ -1,12 +1,13 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { CATEGORIES } from '../config';
+import { CATEGORIES, NEWS_ENABLED, NEWS_CATS } from '../config';
 
 export type Article = CollectionEntry<'articles'>;
 
 // Drafts are hidden from the live site. `npm run preview-drafts` shows them to you.
-export async function allArticles(): Promise<Article[]> {
+// News categories stay out of lists while NEWS_ENABLED is false. Pass { includeHidden: true } to build their pages anyway.
+export async function allArticles(opts: { includeHidden?: boolean } = {}): Promise<Article[]> {
   const showDrafts = process.env.SHOW_DRAFTS === '1';
-  const all = await getCollection('articles', ({ data }) => showDrafts || !data.draft);
+  const all = await getCollection('articles', ({ data }) => (showDrafts || !data.draft) && (opts.includeHidden || NEWS_ENABLED || !NEWS_CATS.includes(data.category)));
   return all.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 

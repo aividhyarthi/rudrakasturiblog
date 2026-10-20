@@ -1,45 +1,86 @@
 ---
 import Base from '../layouts/Base.astro';
-import LocalCard from '../components/LocalCard.astro';
+import Card from '../components/Card.astro';
+import Row from '../components/Row.astro';
+import StoryImg from '../components/StoryImg.astro';
+import LatestList from '../components/LatestList.astro';
 import Glyph from '../components/Glyph.astro';
 import { heroSrc } from '../lib/heroes';
+import { allArticles, categoryLabel, fmtDate, sectionCounts } from '../lib/articles';
+import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
-import { todayIST, ymdKey, WEEKDAYS } from '../lib/panchang';
-import { allLunations, EN_MONTH_NAMES } from '../lib/lunar';
+import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
+const all = await allArticles();
+const [lead, ...rest] = all;
 const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const signs = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
-const tk = ymdKey(ymd);
-const nextAm = allLunations('amavasya').find((x) => x.key >= tk);
-const nextPo = allLunations('pournami').find((x) => x.key >= tk);
-const nice = (x: { weekday: number; observed: { y: number; m: number; d: number } }) => `${WEEKDAYS[x.weekday].slice(0, 3)}, ${x.observed.d} ${EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} ${x.observed.y}`;
+const counts = await sectionCounts();
+// Each story appears once: lead, then the latest list, then a card row, then section columns for what is left.
+const latestN = rest.length <= 5 ? rest.length : 4;
+const shownTop = new Set([lead?.slug, ...rest.slice(0, latestN).map((a) => a.slug)]);
+// The card row only appears when it has at least two stories; otherwise they flow into the section columns.
+let grid = rest.slice(latestN, latestN + 3);
+if (grid.length < 2) grid = [];
+grid.forEach((a) => shownTop.add(a.slug));
+const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)).slice(0, 3) })).filter((x) => x.items.length);
+const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
 <Base home image="/covers/home.png">
-  <section class="wrap lead-grid">
-    <div>
-      <span class="kicker" style="color:#b4530a">Devotional</span>
-      <h1 style="font-size:clamp(30px,4vw,48px);line-height:1.06;letter-spacing:-.02em;margin:10px 0 12px">Today's panchangam, Rahu Kalam and rasi phalalu</h1>
-      <p class="dek" style="max-width:60ch;margin:0 0 22px">Timings worked out from the real sky, for your own location. Plus Amavasya and Pournami dates, temple guides and the Bhagavad Gita in plain words.</p>
-      <LocalCard />
-      <div class="chips"><a class="btn solid" href="/panchangam/">Full panchangam</a><a class="btn" href="/rahu-kalam-today/">Rahu Kalam today</a><a class="btn" href="/horoscope-tomorrow/">Horoscope tomorrow</a></div>
-    </div>
-    <aside>
-      <div class="sect"><h2>Coming up</h2></div>
-      <div class="rail-links">
-        {nextPo && <a href={`/pournami/${nextPo.slug}/`}><b>Next Pournami</b><br />{nice(nextPo)}<br /><small>{nextPo.occasion}</small></a>}
-        {nextAm && <a href={`/amavasya/${nextAm.slug}/`}><b>Next Amavasya</b><br />{nice(nextAm)}<br /><small>{nextAm.occasion}</small></a>}
-        <a href="/horoscope-tomorrow/"><b>Horoscope tomorrow</b><br /><small>All 12 rashis</small></a>
-        <a href="/bhagavad-gita/"><b>Bhagavad Gita</b><br /><small>All 18 chapters explained</small></a>
+  {!lead ? (
+    <div class="empty"><h1>First stories dropping soon.</h1></div>
+  ) : (
+    <section class="wrap lead-grid">
+      <a class={`lead c-${lead.data.category}`} href={`/${lead.slug}/`}>
+        <div class="imgwrap"><StoryImg slug={lead.slug} alt={lead.data.imageAlt ?? lead.data.title} eager /></div>
+        <span class="kicker">{categoryLabel(lead.data.category)}</span>
+        <h1>{lead.data.title}</h1>
+        <p>{lead.data.description}</p>
+        <div class="meta">{lead.data.author} · {fmtDate(lead.data.date)}</div>
+      </a>
+      <LatestList exclude={[lead.slug]} limit={latestN} title="Latest" />
+    </section>
+  )}
+  {grid.length > 0 && (
+    <section class="wrap" style="padding-bottom:56px">
+      <div class="sect"><h2>More stories</h2></div>
+      <div class="three" style={`grid-template-columns:repeat(${grid.length},1fr)`}>{grid.map((a) => <Card a={a} />)}</div>
+    </section>
+  )}
+
+  <section class="band band-dev c-religion">
+    <div class="wrap">
+      <div>
+        <span class="kicker">Devotional</span>
+        <h2>Today's Panchangam</h2>
+        <p class="lede">Tithi, nakshatra, Rahu Kalam and the good timings, calculated for your location. Plus guides to the temples every pilgrim asks about, and the Bhagavad Gita, chapter by chapter.</p>
+        <div class="facts">
+          <div class="fact"><b>Tithi</b><span data-local="tithi">{p.tithi[0].paksha} {p.tithi[0].name}</span><small>until {t(p.tithi[0].endsAt)}</small></div>
+          <div class="fact"><b>Nakshatra</b><span data-local="nakshatra">{p.nakshatra[0].name}</span><small>until {t(p.nakshatra[0].endsAt)}</small></div>
+          <div class="fact"><b>Rahu Kalam</b><span data-local="rahu">{t(p.rahu.start)} to {t(p.rahu.end)}</span><small data-local="name">Hyderabad</small></div>
+          <div class="fact"><b>Abhijit</b><span data-local="abhijit">{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Good time to begin</small></div>
+        </div>
+        <div class="chips">
+          <a class="btn solid" href="/panchangam/">Today's panchangam</a>
+          <a class="btn" href="/amavasya/">Amavasya</a>
+          <a class="btn" href="/pournami/">Pournami</a>
+          <a class="btn" href="/temples/">Temples</a>
+          <a class="btn" href="/bhagavad-gita/">Bhagavad Gita</a>
+        </div>
       </div>
-    </aside>
+      <div class="imgwrap"><img src={heroSrc('temple-sunrise')} alt="A South Indian temple at sunrise with a row of lit lamps" width="1600" height="900" loading="lazy" /></div>
+    </div>
   </section>
 
   <section class="band band-astro c-astrology">
     <div class="wrap" style="grid-template-columns:1fr">
       <div style="max-width:640px">
         <span class="kicker">Astrology</span>
-        <h2>Rasi phalalu, from the real sky</h2>
-        <p class="lede">Daily, weekly and monthly readings for every rashi, worked out from today's actual planetary positions using the classical transit rules.</p>
+        <h2>Rasi phalalu for every rashi</h2>
+        <p class="lede">Daily, weekly and monthly horoscopes for all twelve rashis, calculated from the day's planetary positions using the classical Vedic transit rules.</p>
       </div>
       <div class="sign-tiles">
         {signs.map(({ r, d }) => (
@@ -50,29 +91,16 @@ const nice = (x: { weekday: number; observed: { y: number; m: number; d: number 
     </div>
   </section>
 
-  <section class="band band-dev c-religion">
-    <div class="wrap">
-      <div>
-        <span class="kicker">Temples</span>
-        <h2>The temples every pilgrim asks about</h2>
-        <p class="lede">Complete lists of the 12 Jyotirlingas, 18 Maha Shakti Peethas, Char Dham and Pancharama Kshetralu, plus guides to major temples with history, festivals and what to check before you go.</p>
-        <div class="chips">
-          <a class="btn solid" href="/temples/">All temples</a>
-          <a class="btn" href="/temples/jyotirlingas/">Jyotirlingas</a>
-          <a class="btn" href="/temples/shakti-peethas/">Shakti Peethas</a>
-          <a class="btn" href="/temples/char-dham/">Char Dham</a>
-        </div>
+  {leftover >= 2 && (
+    <section class="wrap" style="padding-top:56px">
+      <div class="three" style={`grid-template-columns:repeat(${Math.min(cols.length, 3)},1fr)`}>
+        {cols.map(({ s, items }) => (
+          <div class={`c-${s.id}`}>
+            <div class="sect"><h2>{s.label}</h2><a href={s.href}>More</a></div>
+            {items.map((a) => <Row a={a} />)}
+          </div>
+        ))}
       </div>
-      <div class="imgwrap"><img src={heroSrc('temple-sunrise')} alt="A South Indian temple at sunrise with a row of lit lamps" width="1600" height="900" loading="lazy" /></div>
-    </div>
-  </section>
-
-  <section class="wrap" style="padding:48px 0 56px">
-    <div class="three" style="grid-template-columns:repeat(2,1fr)">
-      {nextPo && <a class="rcard c-religion" href="/pournami/" style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Pournami</small><b style="display:block;font-size:24px;margin:4px 0">{nice(nextPo)}</b><span>{nextPo.occasion}. All Pournami dates and tithi timings &rarr;</span></a>}
-      {nextAm && <a class="rcard c-religion" href="/amavasya/" style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Amavasya</small><b style="display:block;font-size:24px;margin:4px 0">{nice(nextAm)}</b><span>{nextAm.occasion}. All Amavasya dates and tithi timings &rarr;</span></a>}
-    </div>
-    <div class="sect" style="margin-top:36px"><h2>Bhagavad Gita, chapter by chapter</h2><a href="/bhagavad-gita/">All 18</a></div>
-    <div class="chips"><a href="/bhagavad-gita/chapter-1/">Chapter 1</a><a href="/bhagavad-gita/chapter-2/">Chapter 2: Sankhya Yoga</a><a href="/bhagavad-gita/chapter-12/">Chapter 12: Bhakti Yoga</a><a href="/bhagavad-gita/chapter-18/">Chapter 18</a></div>
-  </section>
+    </section>
+  )}
 </Base>

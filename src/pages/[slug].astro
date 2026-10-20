@@ -4,22 +4,23 @@ import Card from '../components/Card.astro';
 import StoryImg from '../components/StoryImg.astro';
 import LatestList from '../components/LatestList.astro';
 import { allArticles, categoryLabel, fmtDate, findAuthor, sectionCounts } from '../lib/articles';
-import { SITE, REGIONS, REGION_SLUG, CAT_SLUG, SECTIONS, catHref, stateHref } from '../config';
+import { SITE, REGIONS, REGION_SLUG, CAT_SLUG, CATEGORIES, CAT_SECTION, CAT_RAIL, NEWS_CATS, SECTIONS, catHref, stateHref } from '../config';
 
 // One route serves stories, plus section and state pages that exist only once they have stories.
 export async function getStaticPaths() {
-  const all = await allArticles();
+  const all = await allArticles({ includeHidden: true });
   const paths: any[] = all.map((a) => ({ params: { slug: a.slug }, props: { type: 'article', a, related: all.filter((x) => x.slug !== a.slug && x.data.category === a.data.category).slice(0, 3) } }));
-  const counts = await sectionCounts();
-  for (const s of SECTIONS) {
-    if (s.id === 'politics' || s.always) continue; // politics has its own hub page
-    if (counts.cat[s.id]) paths.push({ params: { slug: CAT_SLUG[s.id] }, props: { type: 'category', id: s.id } });
+  const counts = { cat: {} as Record<string, number>, region: {} as Record<string, number> };
+  for (const x of all) { counts.cat[x.data.category] = (counts.cat[x.data.category] ?? 0) + 1; counts.region[x.data.region] = (counts.region[x.data.region] ?? 0) + 1; }
+  for (const c of CATEGORIES) {
+    if (c.id === 'politics') continue; // politics has its own hub page
+    if (counts.cat[c.id]) paths.push({ params: { slug: CAT_SLUG[c.id] }, props: { type: 'category', id: c.id } });
   }
   for (const [code, slug] of Object.entries(REGION_SLUG)) if (counts.region[code]) paths.push({ params: { slug }, props: { type: 'state', code } });
   return paths;
 }
 const props = Astro.props as any;
-const all = await allArticles();
+const all = await allArticles({ includeHidden: true });
 const isArticle = props.type === 'article';
 
 // ---- article ----
@@ -45,16 +46,18 @@ if (isArticle) {
 }
 // ---- section / state list ----
 const isCat = props.type === 'category';
-const sec = isCat ? SECTIONS.find((s) => s.id === props.id)! : null;
-const listTitle = isCat ? sec!.brand : `${REGIONS[props.code as keyof typeof REGIONS]} news`;
+const cat = isCat ? CATEGORIES.find((c) => c.id === props.id)! : null;
+const sec = isCat ? SECTIONS.find((s) => s.id === CAT_SECTION[props.id])! : null;
+const isNews = isArticle ? NEWS_CATS.includes(d.category) : isCat ? NEWS_CATS.includes(props.id) : true;
+const listTitle = isCat ? `${cat!.label}: ${cat!.blurb}` : `${REGIONS[props.code as keyof typeof REGIONS]} news`;
 const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === props.id : x.data.region === props.code));
-const blurb = isCat ? sec!.tag : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
+const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={d.category} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/covers/${a.slug}.png`} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/covers/${a.slug}.png`} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
-      <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</span>
+      <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>
       <h1>{d.title}</h1>
       <p class="dek">{d.description}</p>
       <div class="by">
@@ -79,7 +82,7 @@ const blurb = isCat ? sec!.tag : `Politics, cinema and OTT from ${REGIONS[props.
     </div>
     <div class="notes">
       {d.sources.length > 0 && <details class="note" open><summary>Sources</summary><ul style="margin-top:12px">{d.sources.map((s: any) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a>, {s.publisher}</li>)}</ul></details>}
-      <div class="note"><h4>About this byline</h4>{d.author} is an AI-assisted Southwala desk byline{who ? ` for the ${who.desk}` : ''}. Stories are drafted from the cited sources with AI help and published under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">How our desks work</a>.</div>
+      <div class="note"><h4>About this byline</h4>{d.author} is an AI-assisted Southwala desk byline{who ? ` for the ${who.desk}` : ''}. Stories are written with AI help and published under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">How our desks work</a>.</div>
       <div class="note"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/">How it works</a>.</div>
     </div>
   </article>
@@ -88,10 +91,10 @@ const blurb = isCat ? sec!.tag : `Politics, cinema and OTT from ${REGIONS[props.
   )}
 </Base>
 ) : (
-<Base rail={isCat ? props.id : 'general'} title={isCat ? sec!.brand : listTitle} description={isCat ? `${blurb}. Latest ${sec!.label} stories from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources.` : blurb} active={isCat ? props.id : undefined} breadcrumbs={[{ name: isCat ? sec!.label : listTitle, href: isCat ? sec!.href : stateHref(props.code) }]}>
-  <div class={`page ${isCat ? `c-${props.id}` : ''}`}>
-    <h1>{isCat ? sec!.tag : listTitle}</h1>
-    <p class="dek" style="margin-bottom:30px;max-width:60ch">{isCat ? `Stories from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources on every one.` : blurb}</p>
+<Base rail={isCat ? CAT_RAIL[props.id] : 'general'} title={isCat ? `${cat!.label} Articles` : listTitle} description={isCat ? `${blurb} Articles from the Southwala ${cat!.label} desk.` : blurb} active={isCat ? CAT_SECTION[props.id] : undefined} breadcrumbs={[{ name: isCat ? cat!.label : listTitle, href: isCat ? catHref(props.id) : stateHref(props.code) }]}>
+  <div class={`page ${isCat ? `c-${CAT_SECTION[props.id]}` : ''}`}>
+    <h1>{isCat ? cat!.label : listTitle}</h1>
+    <p class="dek" style="margin-bottom:30px;max-width:60ch">{blurb}</p>
     <div class="three">{items.map((x: any) => <Card a={x} />)}</div>
   </div>
 </Base>

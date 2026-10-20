@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Card from '../../components/Card.astro';
 import { allArticles } from '../../lib/articles';
-const items = (await allArticles()).filter((a) => a.data.category === 'politics');
+const items = (await allArticles({ includeHidden: true })).filter((a) => a.data.category === 'politics');
 ---
 <Base rail="politics" title="Politics" description="Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts." active="politics" breadcrumbs={[{ name: 'Politics', href: '/politics/' }]}>
   <div class="page c-politics">
