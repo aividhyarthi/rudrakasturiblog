@@ -1,0 +1,27 @@
+name: Newsroom (auto-write stories)
+on:
+  schedule:
+    - cron: '30 */3 * * *'   # every 3 hours
+  workflow_dispatch:           # also lets you press "Run workflow" by hand
+permissions:
+  contents: write
+concurrency: newsroom
+jobs:
+  write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: Find and write stories
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          POLITICS_REVIEW: ${{ vars.POLITICS_REVIEW }}
+        run: node scripts/newsroom.mjs
+      - name: Save new stories
+        run: |
+          git config user.name "Southwala Newsroom"
+          git config user.email "newsroom@southwala.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Newsroom: new stories" && git push)

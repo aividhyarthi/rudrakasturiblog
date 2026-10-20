@@ -1,0 +1,20 @@
+{
+  "note": "Each feed is a Google News search (works for any outlet). Add or edit lines freely. category: politics|movies|ott|trending|news|sports. region: tn|kl|ka|ap|ts|south",
+  "maxArticlesPerRun": 4,
+  "maxAgeHours": 30,
+  "feeds": [
+    { "category": "politics", "region": "tn", "query": "Tamil Nadu politics DMK AIADMK TVK" },
+    { "category": "politics", "region": "kl", "query": "Kerala politics LDF UDF BJP" },
+    { "category": "politics", "region": "ka", "query": "Karnataka politics Congress BJP JDS" },
+    { "category": "politics", "region": "ap", "query": "Andhra Pradesh politics TDP YSRCP Jana Sena" },
+    { "category": "politics", "region": "ts", "query": "Telangana politics BRS Congress BJP" },
+    { "category": "movies", "region": "tn", "query": "Tamil cinema Kollywood box office" },
+    { "category": "movies", "region": "ts", "query": "Telugu cinema Tollywood box office" },
+    { "category": "movies", "region": "ka", "query": "Kannada cinema Sandalwood" },
+    { "category": "movies", "region": "kl", "query": "Malayalam cinema Mollywood" },
+    { "category": "ott", "region": "south", "query": "South Indian OTT release Netflix Prime Video Hotstar Tamil Telugu Malayalam series" },
+    { "category": "trending", "region": "south", "query": "South India viral trending social media" },
+    { "category": "news", "region": "south", "query": "Chennai Bengaluru Hyderabad Kochi news" },
+    { "category": "sports", "region": "south", "query": "CSK RCB SRH Kerala Blasters South India sports" }
+  ]
+}

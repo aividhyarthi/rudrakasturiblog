@@ -1,0 +1,22 @@
+name: Approve a draft
+on:
+  workflow_dispatch:
+    inputs:
+      article:
+        description: 'Article file name without .md (see the src/content/articles folder)'
+        required: true
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node scripts/publish.mjs "${{ github.event.inputs.article }}"
+      - run: |
+          git config user.name "Southwala Editor"
+          git config user.email "editor@southwala.com"
+          git add -A
+          git diff --cached --quiet || (git commit -m "Publish ${{ github.event.inputs.article }}" && git push)

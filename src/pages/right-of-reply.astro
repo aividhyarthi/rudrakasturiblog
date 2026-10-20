@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config';
+---
+<Base title="Right of reply" description="Named in a Southwala story? Here is how to respond.">
+  <div class="page">
+    <h1>Right of reply</h1>
+    <p>If a politician, party, studio, celebrity or anyone else is named in one of our stories, you can respond.</p>
+    <ol><li>Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> with the story link and your response.</li><li>We add your response to the story, in your words, along with an updated date.</li><li>If we got a fact wrong, we correct it and say so.</li></ol>
+    <p>We give every story a fair shot at your side. Sharp is fine. Unfair is not.</p>
+  </div>
+</Base>
