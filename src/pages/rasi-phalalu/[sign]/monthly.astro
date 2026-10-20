@@ -1,0 +1,7 @@
+---
+import ReadingView from '../../../components/ReadingView.astro';
+import { RASHIS } from '../../../lib/astro';
+export function getStaticPaths() { return ['mesha','vrishabha','mithuna','karkataka','simha','kanya','tula','vrischika','dhanu','makara','kumbha','meena'].map((id, i) => ({ params: { sign: id }, props: { i } })); }
+const { i } = Astro.props as { i: number };
+---
+<ReadingView i={i} span="monthly" />

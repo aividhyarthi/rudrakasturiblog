@@ -29,6 +29,7 @@ const temples = defineCollection({
     name: z.string(),
     te: z.string().optional(),
     state: z.enum(['ap', 'ts', 'ka', 'tn', 'kl']),
+    kind: z.enum(['god', 'goddess', 'both']).default('god'),
     district: z.string(),
     place: z.string(),
     deity: z.string(),

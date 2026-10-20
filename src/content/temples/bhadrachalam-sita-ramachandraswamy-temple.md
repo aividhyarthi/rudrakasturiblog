@@ -2,6 +2,7 @@
 name: "Bhadrachalam Sri Sita Ramachandraswamy Temple"
 te: "భద్రాచలం శ్రీ సీతారామచంద్రస్వామి ఆలయం"
 state: "ts"
+kind: "god"
 district: "Bhadradri Kothagudem district"
 place: "Bhadrachalam, on the Godavari"
 deity: "Rama, with Sita and Lakshmana"

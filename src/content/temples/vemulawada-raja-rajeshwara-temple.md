@@ -2,6 +2,7 @@
 name: "Vemulawada Sri Raja Rajeshwara Swamy Temple"
 te: "వేములవాడ శ్రీ రాజరాజేశ్వర స్వామి ఆలయం"
 state: "ts"
+kind: "god"
 district: "Rajanna Sircilla district"
 place: "Vemulawada"
 deity: "Raja Rajeshwara Swamy (Shiva), locally called Rajanna"

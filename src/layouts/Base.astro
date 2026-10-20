@@ -1,10 +1,15 @@
 ---
 import '../styles/global.css';
 import { SITE, NAV, ADSENSE_CLIENT, GA_ID } from '../config';
-interface Props { title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
-const { title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
+interface Props { breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
+const { breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
+const orgLd = home ? [
+  { '@context': 'https://schema.org', '@type': 'NewsMediaOrganization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png`, width: 512, height: 512 }, email: SITE.email, publishingPrinciples: `${SITE.url}/editorial-policy/` },
+  { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: SITE.url },
+] : null;
 const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.png', SITE.url).href;
 ---
 <!doctype html>
@@ -31,6 +36,8 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+  {crumbLd && <script type="application/ld+json" set:html={JSON.stringify(crumbLd)} />}
+  {orgLd && orgLd.map((o) => <script type="application/ld+json" set:html={JSON.stringify(o)} />)}
   {ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`} crossorigin="anonymous"></script>}
   {GA_ID && <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>}
   {GA_ID && <script is:inline define:vars={{ GA_ID }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',GA_ID);</script>}

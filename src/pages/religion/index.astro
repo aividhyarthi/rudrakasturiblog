@@ -1,22 +1,23 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Art from '../../components/Art.astro';
-import { CITIES, panchangFor, fmtTime, todayIST, WEEKDAYS } from '../../lib/panchang';
+import { CITIES, panchangFor, fmtTime, todayIST } from '../../lib/panchang';
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
 const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
 const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
 ---
-<Base title="Religion: Panchangam and Temples" description="Daily panchangam with Rahu Kalam and good timings, plus guides to temples in Andhra Pradesh, Telangana and the South." active="religion">
+<Base title="Religion: Panchangam, Temples and the Bhagavad Gita" description="Daily panchangam with Rahu Kalam and good timings, guides and lists of India's important temples, and the Bhagavad Gita explained chapter by chapter." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }]} image="/covers/temples.png">
   <div class="page" style="max-width:960px">
     <div class="sechead"><h2>Religion</h2></div>
-    <section class="tiles" style="margin-top:0">
-      <a class="tile" href="/religion/panchangam/hyderabad/"><Art name="sun" /><h3>Panchangam today</h3><div class="meta">Tithi, nakshatra, Rahu Kalam, good timings. Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai, Kochi.</div></a>
-      <a class="tile" href="/religion/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Guides to major temples: significance, festivals, how to reach.</div></a>
-      <a class="tile" href="/astrology/"><Art name="stars" /><h3>Rashi Phalalu</h3><div class="meta">Daily, weekly and monthly horoscopes for every rashi.</div></a>
+    <section class="tiles" style="margin-top:0;grid-template-columns:repeat(2,1fr)">
+      <a class="tile" href="/panchangam/hyderabad/"><Art name="sun" /><h3>Panchangam today</h3><div class="meta">Tithi, nakshatra, Rahu Kalam and good timings for seven southern cities.</div></a>
+      <a class="tile" href="/rahu-kalam-today/"><Art name="moon" /><h3>Rahu Kalam today</h3><div class="meta">Today's Rahu Kalam, Yamagandam and Gulika for every city, on one page.</div></a>
+      <a class="tile" href="/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Jyotirlingas, Shakti Peethas, Char Dham, Pancharama and more: lists and guides.</div></a>
+      <a class="tile" href="/bhagavad-gita/"><Art name="scroll" /><h3>Bhagavad Gita</h3><div class="meta">All 18 chapters explained simply.</div></a>
     </section>
-    <div class="sechead"><h2>Today in Hyderabad</h2><a href="/religion/panchangam/hyderabad/">Full panchangam</a></div>
+    <div class="sechead"><h2>Today in Hyderabad</h2><a href="/panchangam/hyderabad/">Full panchangam</a></div>
     <table class="data"><tbody>
       <tr><th>Sunrise / Sunset</th><td>{t(p.sunrise)} / {t(p.sunset)}</td></tr>
       <tr><th>Tithi</th><td>{p.tithi[0].paksha} {p.tithi[0].name} <span class="te">({p.tithi[0].te})</span> <span class="sub">until {t(p.tithi[0].endsAt)}</span></td></tr>
@@ -24,6 +25,6 @@ const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
       <tr><th>Rahu Kalam</th><td>{r(p.rahu)}</td></tr>
       <tr><th>Abhijit Muhurtham</th><td>{r(p.abhijit)}</td></tr>
     </tbody></table>
-    <div class="chips">{Object.entries(CITIES).map(([id, x]) => <a href={`/religion/panchangam/${id}/`}>{x.name}</a>)}</div>
+    <div class="chips">{Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/`}>{x.name}</a>)}</div>
   </div>
 </Base>

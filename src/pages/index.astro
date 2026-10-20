@@ -5,15 +5,15 @@ import Row from '../components/Row.astro';
 import Sidebar from '../components/Sidebar.astro';
 import Art from '../components/Art.astro';
 import { allArticles, categoryLabel, fmtDate } from '../lib/articles';
-import { CATEGORIES } from '../config';
+import { CATEGORIES, catHref } from '../config';
 const all = await allArticles();
 const [lead, ...rest] = all;
 ---
-<Base>
+<Base home image="/covers/home.png">
   <section class="tiles" style="margin-top:22px">
-    <a class="tile" href="/religion/panchangam/hyderabad/"><Art name="sun" /><h3>Today's Panchangam</h3><div class="meta">Sunrise, sunset, Rahu Kalam, tithi, nakshatra and good timings.</div></a>
-    <a class="tile" href="/astrology/"><Art name="stars" /><h3>Rashi Phalalu</h3><div class="meta">Daily, weekly and monthly for every rashi, from today's planetary positions.</div></a>
-    <a class="tile" href="/religion/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Guides to major temples of Andhra Pradesh and Telangana: history, festivals, what to know before you visit.</div></a>
+    <a class="tile" href="/panchangam/hyderabad/"><Art name="sun" /><h3>Today's Panchangam</h3><div class="meta">Sunrise, sunset, Rahu Kalam, tithi, nakshatra and good timings.</div></a>
+    <a class="tile" href="/rasi-phalalu/"><Art name="stars" /><h3>Rashi Phalalu</h3><div class="meta">Daily, weekly and monthly for every rashi, from today's planetary positions.</div></a>
+    <a class="tile" href="/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Guides to major temples of Andhra Pradesh and Telangana: history, festivals, what to know before you visit.</div></a>
   </section>
   {!lead ? (
     <div class="empty"><h1>First stories dropping soon.</h1></div>
@@ -36,7 +36,7 @@ const [lead, ...rest] = all;
           const items = all.filter((a) => a.data.category === c.id).slice(0, 3);
           return items.length ? (
             <div>
-              <div class="sechead"><h2>{c.label}</h2><a href={c.id === 'politics' ? '/politics/' : `/category/${c.id}/`}>More</a></div>
+              <div class="sechead"><h2>{c.label}</h2><a href={catHref(c.id)}>More</a></div>
               {items.map((a) => <Row a={a} />)}
             </div>
           ) : null;

@@ -9,9 +9,9 @@ const pretty = `${WEEKDAYS[p.weekday]}, ${ymd.d} ${['January', 'February', 'Marc
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 ---
-<Base title="Rashi Phalalu: Today's Horoscope for Every Rashi" description="Daily, weekly and monthly rashi phalalu for all twelve rashis, worked out from today's planetary positions, plus the overall outlook for the day." active="astrology">
+<Base title="Rasi Phalalu Today: Daily, Weekly, Monthly Horoscope for Every Rashi" description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
   <div class="page" style="max-width:960px">
-    <div class="sechead"><h2>Astrology: Rashi Phalalu</h2></div>
+    <div class="sechead"><h2>Rasi Phalalu</h2></div>
     <h1>Today: {pretty}</h1>
     <p class="dek" style="font-size:18px">{o.headline}</p>
     <h3>Overall for the day</h3>
@@ -20,7 +20,7 @@ const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
     <p class="sub">Your rashi is the sign your Moon was in at birth. Not sure? Check your janma rashi on your horoscope, or ask your family.</p>
     <div class="sign-grid">
       {readings.map(({ r, d }) => (
-        <a class="sign" href={`/astrology/${r.id}/`}>
+        <a class="sign" href={`/rasi-phalalu/${r.id}/`}>
           <div class="sym">{r.sym}</div>
           <h3>{r.skt} <span class="te">{r.te}</span></h3>
           <div class="sub">{r.en}</div>

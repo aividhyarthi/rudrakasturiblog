@@ -15,6 +15,19 @@ server {
   location /covers/ { expires 7d; }
   location = /feed/ { return 301 /rss.xml; }
 
+  # Old addresses -> clean addresses (safe to keep forever)
+  rewrite ^/category/ott/?$ /tv-ott/ permanent;
+  rewrite ^/category/(movies|trending|news|sports|politics)/?$ /$1/ permanent;
+  rewrite ^/state/ap/?$ /andhra-pradesh/ permanent;
+  rewrite ^/state/ts/?$ /telangana/ permanent;
+  rewrite ^/state/ka/?$ /karnataka/ permanent;
+  rewrite ^/state/tn/?$ /tamil-nadu/ permanent;
+  rewrite ^/state/kl/?$ /kerala/ permanent;
+  rewrite ^/religion/panchangam/(.*)$ /panchangam/$1 permanent;
+  rewrite ^/religion/temples/(.*)$ /temples/$1 permanent;
+  rewrite ^/astrology/?$ /rasi-phalalu/ permanent;
+  rewrite ^/astrology/([a-z]+)/?$ /rasi-phalalu/$1/ permanent;
+
   location / { try_files $uri $uri/ =404; }
   error_page 404 /404.html;
 }

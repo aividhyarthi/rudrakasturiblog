@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { RASHIS, reading } from '../lib/astro';
+import { todayIST, addDays } from '../lib/panchang';
+const { i, span } = Astro.props as { i: number; span: 'daily' | 'weekly' | 'monthly' };
+const r = RASHIS[i];
+const today = todayIST();
+const M = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const fd = (x: { y: number; m: number; d: number }) => `${x.d} ${M[x.m - 1]} ${x.y}`;
+const days = span === 'daily' ? 0 : span === 'weekly' ? 6 : 29;
+const d = reading(i, today, span);
+const range = span === 'daily' ? fd(today) : `${fd(today)} to ${fd(addDays(today, days))}`;
+const tomorrow = span === 'daily' ? reading(i, addDays(today, 1), 'daily') : null;
+const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const label = { daily: 'Today', weekly: 'This week', monthly: 'This month' }[span];
+const titles = {
+  daily: `${r.skt} Rasi Phalalu Today (${r.en} Daily Horoscope): ${fd(today)}`,
+  weekly: `${r.skt} Rasi Weekly Horoscope (${r.en}): ${range}`,
+  monthly: `${r.skt} Rasi Monthly Horoscope (${r.en}): ${range}`,
+};
+const base = `/rasi-phalalu/${r.id}/`;
+const crumbs = [{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }, { name: r.skt, href: base }, ...(span === 'daily' ? [] : [{ name: label, href: `${base}${span}/` }])];
+---
+<Base title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} rasi phalalu for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
+  <div class="page" style="max-width:860px">
+    <div class="kicker"><a href="/rasi-phalalu/">Rasi Phalalu</a></div>
+    <h1><span style="font-family:'Segoe UI Symbol','Noto Sans Symbols','DejaVu Sans',serif">{r.sym}</span> {r.skt} Rasi <span class="te">{r.te}</span> <span class="sub" style="font-weight:400">({r.en})</span></h1>
+    <div class="chips" style="margin:6px 0 10px">{RASHIS.map((x) => <a href={`/rasi-phalalu/${x.id}/${span === 'daily' ? '' : span + '/'}`} class={x.id === r.id ? 'on' : ''}>{x.skt}</a>)}</div>
+    <div class="chips" style="margin:0 0 6px">
+      <a href={base} class={span === 'daily' ? 'on' : ''}>Daily</a><a href={`${base}weekly/`} class={span === 'weekly' ? 'on' : ''}>Weekly</a><a href={`${base}monthly/`} class={span === 'monthly' ? 'on' : ''}>Monthly</a>
+    </div>
+    <section class="reading">
+      <h2 style="margin:0 0 4px;font-size:24px">{label}: {range}</h2>
+      <div class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)} <span class="sub" style="letter-spacing:0">({d.band})</span></div>
+      <p style="font-size:18px;margin:8px 0">{d.summary}</p>
+      <dl class="dl">
+        {d.domains.map((x) => <><dt>{x.label}</dt><dd>{x.text}</dd></>)}
+        <dt>Lucky colour</dt><dd>{d.lucky.color}</dd>
+        <dt>Lucky number</dt><dd>{d.lucky.number}</dd>
+      </dl>
+      <div class="sub">Based on: {d.factors.join('; ')}.</div>
+    </section>
+    {tomorrow && (
+      <section class="reading">
+        <h2 style="margin:0 0 4px;font-size:22px">Tomorrow: {fd(addDays(today, 1))}</h2>
+        <div class="stars">{star(tomorrow.rating)} <span class="sub" style="letter-spacing:0">({tomorrow.band})</span></div>
+        <p style="font-size:17px;margin:6px 0">{tomorrow.summary}</p>
+        <dl class="dl">{tomorrow.domains.map((x) => <><dt>{x.label}</dt><dd>{x.text}</dd></>)}</dl>
+      </section>
+    )}
+    <p class="disc">For entertainment and reflection only. These readings come from the day's planetary positions using traditional Vedic transit rules, the same for everyone born under {r.skt} rashi. They are not predictions about your life and not a substitute for medical, legal or financial advice. Your rashi is the sign of your Moon at birth.</p>
+  </div>
+</Base>

@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CITIES, panchangFor, fmtTime, todayIST, WEEKDAYS } from '../../lib/panchang';
+const ymd = todayIST();
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const rows = Object.entries(CITIES).map(([id, c]) => ({ id, c, p: panchangFor(ymd, id as any) }));
+const pretty = `${WEEKDAYS[ref.getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
+const faq = [
+  ['What is a Panchangam?', 'A panchangam is the Hindu almanac. Its five limbs are tithi (lunar day), vara (weekday), nakshatra (the star the Moon is in), yoga and karana. People use it to choose auspicious times for ceremonies, travel and new beginnings.'],
+  ['How do you calculate Rahu Kalam?', 'Divide the time between sunrise and sunset into eight equal parts. Rahu Kalam is one of those parts, and which one depends on the weekday: the 2nd on Monday, 7th on Tuesday, 5th on Wednesday, 6th on Thursday, 4th on Friday, 3rd on Saturday and 8th on Sunday.'],
+  ['Why do timings differ between cities?', 'Sunrise and sunset change with location, and every timing in the panchangam is measured from them. Cities a few hundred kilometres apart differ by several minutes.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base title="Today's Panchangam: Rahu Kalam, Tithi, Nakshatra for Telugu States and the South" description="Today's panchangam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi: sunrise, sunset, tithi, nakshatra, Rahu Kalam and good timings." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page" style="max-width:900px">
+    <div class="kicker"><a href="/religion/">Religion</a></div>
+    <h1>Today's Panchangam</h1>
+    <p class="meta" style="margin-top:0">{pretty}</p>
+    <table class="data">
+      <thead><tr><th>City</th><th>Sunrise</th><th>Sunset</th><th>Rahu Kalam</th><th>Tithi</th></tr></thead>
+      <tbody>{rows.map(({ id, c, p }) => (
+        <tr><td><a href={`/panchangam/${id}/`} style="text-decoration:underline"><b>{c.name}</b></a></td><td>{t(p.sunrise)}</td><td>{t(p.sunset)}</td><td>{t(p.rahu.start)} to {t(p.rahu.end)}</td><td>{p.tithi[0].paksha} {p.tithi[0].name}</td></tr>
+      ))}</tbody>
+    </table>
+    <div class="chips"><a href="/rahu-kalam-today/">Rahu Kalam today</a><a href="/temples/">Temples</a><a href="/rasi-phalalu/">Rasi phalalu</a></div>
+    <div class="sechead" style="margin-top:26px"><h2>Panchangam explained</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <p class="disc">Calculated from astronomical positions of the Sun and Moon (Lahiri ayanamsa, local sunrise). Traditions vary by region and family: for rituals, weddings and muhurthams, confirm with your family priest or temple.</p>
+  </div>
+</Base>

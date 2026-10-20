@@ -15,16 +15,22 @@ export const ADSENSE_CLIENT = '';
 // Paste your Google Analytics 4 id, e.g. 'G-XXXXXXXXXX'. Empty = no analytics.
 export const GA_ID = '';
 
+// URL helpers: clean, keyword-friendly addresses.
+export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
+export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', trending: 'trending', news: 'news', sports: 'sports' };
+export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
+export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/news/');
+
 // Top navigation. Politics, Religion and Astrology are their own sections.
 export const NAV = [
   { id: 'politics', label: 'Politics', href: '/politics/' },
   { id: 'religion', label: 'Religion', href: '/religion/' },
-  { id: 'astrology', label: 'Astrology', href: '/astrology/' },
-  { id: 'movies', label: 'Movies', href: '/category/movies/' },
-  { id: 'ott', label: 'TV & OTT', href: '/category/ott/' },
-  { id: 'trending', label: 'Trending', href: '/category/trending/' },
-  { id: 'news', label: 'News', href: '/category/news/' },
-  { id: 'sports', label: 'Sports', href: '/category/sports/' },
+  { id: 'astrology', label: 'Rasi Phalalu', href: '/rasi-phalalu/' },
+  { id: 'movies', label: 'Movies', href: '/movies/' },
+  { id: 'ott', label: 'TV & OTT', href: '/tv-ott/' },
+  { id: 'trending', label: 'Trending', href: '/trending/' },
+  { id: 'news', label: 'News', href: '/news/' },
+  { id: 'sports', label: 'Sports', href: '/sports/' },
 ] as const;
 
 export const CATEGORIES = [

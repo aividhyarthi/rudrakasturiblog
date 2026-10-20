@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import { CITIES, panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS } from '../lib/panchang';
+const ymd = todayIST();
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const rows = Object.entries(CITIES).map(([id, c]) => ({ id, c, p: panchangFor(ymd, id as any) }));
+const pretty = `${WEEKDAYS[ref.getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
+const key = ymdKey(ymd);
+const faq = [
+  ['What is Rahu Kalam?', 'Rahu Kalam is a period of about 90 minutes each day that tradition considers inauspicious for starting new work, signing agreements or beginning a journey. It is not considered a time to stop ongoing work.'],
+  ['How is Rahu Kalam calculated?', 'Divide the time from sunrise to sunset into eight equal parts. Rahu Kalam is one of those parts. Which one depends on the weekday: Monday 2nd, Tuesday 7th, Wednesday 5th, Thursday 6th, Friday 4th, Saturday 3rd and Sunday 8th.'],
+  ['Is Rahu Kalam the same everywhere?', 'No. Because it is measured from local sunrise and sunset, it shifts by several minutes between cities and by season. Use the timing for your own city.'],
+  ['What are Yamagandam and Gulika Kalam?', 'They are two more daily periods, worked out the same way (one eighth of the day), that tradition also treats as unsuitable for starting new ventures. Gulika is generally regarded as less strict than Rahu Kalam.'],
+];
+const part = ['', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'];
+const RAHU = [8, 2, 7, 5, 6, 4, 3];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base title="Rahu Kalam Today: Timings for Hyderabad, Vijayawada, Visakhapatnam, Chennai, Bengaluru, Kochi" description="Today's Rahu Kalam, Yamagandam and Gulika Kalam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi, with how Rahu Kalam is calculated." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Rahu Kalam today', href: '/rahu-kalam-today/' }]} image="/covers/rahu-kalam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page" style="max-width:900px">
+    <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
+    <h1>Rahu Kalam Today</h1>
+    <p class="meta" style="margin-top:0" id="when">{pretty}</p>
+    <table class="data">
+      <thead><tr><th>City</th><th>Rahu Kalam</th><th>Yamagandam</th><th>Gulika Kalam</th></tr></thead>
+      <tbody>{rows.map(({ id, c, p }) => (
+        <tr><td><a href={`/panchangam/${id}/`} style="text-decoration:underline"><b>{c.name}</b></a></td><td><b>{t(p.rahu.start)} to {t(p.rahu.end)}</b></td><td>{t(p.yama.start)} to {t(p.yama.end)}</td><td>{t(p.gulika.start)} to {t(p.gulika.end)}</td></tr>
+      ))}</tbody>
+    </table>
+    <p class="sub">Traditionally avoided for starting new work, signing or beginning a journey. Calculated from local sunrise and sunset for each city.</p>
+    <div class="sechead" style="margin-top:26px"><h2>Rahu Kalam by weekday</h2></div>
+    <table class="data">
+      <thead><tr><th>Day</th><th>Which eighth of the day</th></tr></thead>
+      <tbody>{WEEKDAYS.map((d, i) => <tr><td>{d}</td><td>{part[RAHU[i]]} part, counted from sunrise</td></tr>)}</tbody>
+    </table>
+    <div class="sechead" style="margin-top:26px"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:14px"><a href="/panchangam/hyderabad/">Full panchangam, Hyderabad</a><a href="/panchangam/">All cities</a></div>
+    <p class="disc">Traditions vary by region and family. For rituals, weddings and muhurthams, confirm with your family priest or temple.</p>
+  </div>
+  <script is:inline define:vars={{ key }}>
+    try {
+      var t = new Date(Date.now() + 5.5 * 3600 * 1000);
+      var today = t.getUTCFullYear() + '-' + String(t.getUTCMonth() + 1).padStart(2, '0') + '-' + String(t.getUTCDate()).padStart(2, '0');
+      if (today !== key) document.getElementById('when').innerHTML += ' <b>(This page was last updated for an earlier day. <a href="/panchangam/hyderabad/" style="text-decoration:underline">See today</a>.)</b>';
+    } catch (e) {}
+  </script>
+</Base>

@@ -1,0 +1,30 @@
+---
+import Base from '../../../layouts/Base.astro';
+import PanchangView from '../../../components/PanchangView.astro';
+import { CITIES, todayIST, ymdKey, WEEKDAYS, type CityId } from '../../../lib/panchang';
+export function getStaticPaths() { return Object.keys(CITIES).map((city) => ({ params: { city } })); }
+const city = Astro.params.city as CityId;
+const c = CITIES[city];
+const ymd = todayIST();
+const key = ymdKey(ymd);
+const pretty = `${WEEKDAYS[new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
+const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }, { name: c.name, href: `/panchangam/${city}/` }];
+---
+<Base title={`Today's Panchangam ${c.name}: Rahu Kalam, Tithi, Nakshatra, Sunrise`} description={`Today's panchangam for ${c.name}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
+  <div class="page" style="max-width:860px">
+    <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
+    <h1>Today's Panchangam {c.name}</h1>
+    <p class="meta" style="margin-top:0" id="when">{pretty}</p>
+    <div class="chips" style="margin:10px 0 22px">
+      {Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/`} class={id === city ? 'on' : ''}>{x.name}</a>)}
+    </div>
+    <PanchangView city={city} ymd={ymd} />
+  </div>
+  <script is:inline define:vars={{ city, key }}>
+    try {
+      var t = new Date(Date.now() + 5.5 * 3600 * 1000);
+      var today = t.getUTCFullYear() + '-' + String(t.getUTCMonth() + 1).padStart(2, '0') + '-' + String(t.getUTCDate()).padStart(2, '0');
+      if (today !== key) location.replace('/panchangam/' + city + '/' + today + '/');
+    } catch (e) {}
+  </script>
+</Base>

@@ -2,6 +2,7 @@
 name: "Srisailam Mallikarjuna Swamy Temple"
 te: "శ్రీశైలం మల్లికార్జున స్వామి ఆలయం"
 state: "ap"
+kind: "both"
 district: "Nandyal district"
 place: "Srisailam, Nallamala Hills, on the Krishna river"
 deity: "Mallikarjuna (Shiva) and Bhramaramba (Parvati)"
