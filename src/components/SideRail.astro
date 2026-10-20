@@ -49,13 +49,13 @@ const explore = [
     </div>
   )}
   {!noToday && <div class="mod">
-    <div class="sect"><h2>Today in Hyderabad</h2></div>
+    <div class="sect"><h2>Today in <span data-local="name">Hyderabad</span></h2></div>
     <div class="rail-card c-religion">
-      <div class="rc-row"><span>Tithi</span><b>{p.tithi[0].paksha} {p.tithi[0].name}</b></div>
-      <div class="rc-row"><span>Nakshatra</span><b>{p.nakshatra[0].name}</b></div>
-      <div class="rc-row"><span>Rahu Kalam</span><b>{t(p.rahu.start)} to {t(p.rahu.end)}</b></div>
-      <div class="rc-row"><span>Abhijit</span><b>{t(p.abhijit.start)} to {t(p.abhijit.end)}</b></div>
-      <a class="btn" href="/panchangam/hyderabad/" style="margin-top:14px;width:100%;justify-content:center">Full panchangam</a>
+      <div class="rc-row"><span>Tithi</span><b data-local="tithi">{p.tithi[0].paksha} {p.tithi[0].name}</b></div>
+      <div class="rc-row"><span>Nakshatra</span><b data-local="nakshatra">{p.nakshatra[0].name}</b></div>
+      <div class="rc-row"><span>Rahu Kalam</span><b data-local="rahu">{t(p.rahu.start)} to {t(p.rahu.end)}</b></div>
+      <div class="rc-row"><span>Abhijit</span><b data-local="abhijit">{t(p.abhijit.start)} to {t(p.abhijit.end)}</b></div>
+      <a class="btn" href="/panchangam/" style="margin-top:14px;width:100%;justify-content:center">Full panchangam</a>
     </div>
   </div>}
   {section === 'religion' && (
@@ -67,7 +67,7 @@ const explore = [
   {section === 'astrology' && (
     <div class="mod">
       <div class="sect"><h2>Also</h2></div>
-      <div class="rail-links"><a href="/rasi-phalalu/mesha/weekly/">Weekly horoscope</a><a href="/rasi-phalalu/mesha/monthly/">Monthly horoscope</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
+      <div class="rail-links"><a href="/horoscope-tomorrow/">Horoscope tomorrow</a><a href="/rasi-phalalu/mesha/weekly/">Weekly horoscope</a><a href="/rasi-phalalu/mesha/monthly/">Monthly horoscope</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
     </div>
   )}
   {newsy && states.length > 0 && (

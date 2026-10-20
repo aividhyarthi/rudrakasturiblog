@@ -1,0 +1,58 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from './Hero.astro';
+import { fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
+import { allLunations, MONTHS, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
+import { COPY } from '../data/lunar-text';
+const { kind } = Astro.props as { kind: 'amavasya' | 'pournami' };
+const c = COPY[kind];
+const other = kind === 'amavasya' ? 'pournami' : 'amavasya';
+const all = allLunations(kind);
+const today = todayIST(), tk = ymdKey(today);
+const upcoming = all.filter((x) => x.key >= tk);
+const next = upcoming[0];
+const thisYear = all.filter((x) => x.observed.y === today.y);
+const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()].slice(0, 3)}, ${fmtTime(d)}`; };
+const pretty = (x: Lunation) => `${WEEKDAYS[x.weekday]}, ${x.observed.d} ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
+const label = (x: Lunation) => `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
+const nextOther = allLunations(other).find((x) => x.key >= tk);
+const faq = [
+  [`When is the next ${c.title}?`, next ? `The next ${c.title} is on ${pretty(next)}. The tithi begins ${dt(next.start)} and ends ${dt(next.end)} (IST).` : ''],
+  ...c.faq,
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title={`${c.title} ${today.y} Dates: Next ${c.title} and Tithi Timings`} description={`${c.title} dates for ${today.y} with exact tithi start and end times (IST), the lunar month and festival for each. Next ${c.title}: ${next ? pretty(next) : ''}.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>{c.title} <span class="te">{c.te}</span> dates {today.y}</h1>
+    <Hero name="moon-nakshatra" alt="The Moon among the stars of the nakshatras" ratio="16/5" />
+    {next && (
+      <a class="rcard" href={`/${kind}/${next.slug}/`} style="display:block;margin:0 0 26px;text-decoration:none;color:inherit">
+        <small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Next {c.title}</small>
+        <b style="display:block;font-size:26px;margin:4px 0">{pretty(next)}</b>
+        <span>{next.occasion}. Tithi begins {dt(next.start)} and ends {dt(next.end)} (IST).</span>
+      </a>
+    )}
+    <p>{c.what}</p>
+    <div class="sect"><h2>Upcoming {c.title} dates</h2></div>
+    <div class="tw"><table class="data">
+      <thead><tr><th>Date</th><th>Tithi begins</th><th>Tithi ends</th><th>Lunar month</th><th>Occasion</th></tr></thead>
+      <tbody>{upcoming.slice(0, 12).map((x) => <tr><td><a href={`/${kind}/${x.slug}/`} style="text-decoration:underline"><b>{pretty(x)}</b></a></td><td>{dt(x.start)}</td><td>{dt(x.end)}</td><td>{x.adhika ? 'Adhika ' : ''}{MONTHS[x.month]}</td><td>{x.occasion}</td></tr>)}</tbody>
+    </table></div>
+    <p class="sub">Times are Indian Standard Time and are the same across India. The date is the day on which the tithi is observed ({kind === 'amavasya' ? 'present in the afternoon' : 'present at sunrise'}). Tap a date for the full guide.</p>
+    {thisYear.length > 0 && <>
+      <div class="sect" style="margin-top:26px"><h2>All {c.title} dates in {today.y}</h2></div>
+      <div class="chips">{thisYear.map((x) => <a href={`/${kind}/${x.slug}/`}>{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</a>)}</div>
+    </>}
+    <div class="sect" style="margin-top:26px"><h2>What people traditionally do</h2></div>
+    <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
+    <div class="sect"><h2>What many avoid</h2></div>
+    <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
+    <div class="sect"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:16px">{nextOther && <a href={`/${other}/`}>Next {COPY[other].title}: {pretty(nextOther)}</a>}<a href="/panchangam/">Today's panchangam</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
+    <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For rituals, confirm the day with your family priest or temple.</p>
+  </div>
+</Base>

@@ -1,0 +1,25 @@
+---
+import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
+// Timings for the visitor's own place. Server HTML is Hyderabad; src/scripts/local.ts swaps in the visitor's location.
+const { rahuOnly = false } = Astro.props as { rahuOnly?: boolean };
+const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
+---
+<section class="localcard" aria-live="polite">
+  <div class="lc-head"><h2>Today in <span data-local="name">Hyderabad</span></h2><span class="lc-note" data-local-note>Timings shown for Hyderabad (default).</span></div>
+  <div class="lc-grid">
+    <div class="bad"><span>Rahu Kalam</span><b data-local="rahu">{r(p.rahu)}</b></div>
+    <div class="bad"><span>Yamagandam</span><b data-local="yama">{r(p.yama)}</b></div>
+    <div class="bad"><span>Gulika Kalam</span><b data-local="gulika">{r(p.gulika)}</b></div>
+    {!rahuOnly && <div class="good"><span>Abhijit Muhurtham</span><b data-local="abhijit">{r(p.abhijit)}</b></div>}
+    {!rahuOnly && <div class="good"><span>Brahma Muhurtham</span><b data-local="brahma">{r(p.brahma)}</b></div>}
+    <div><span>Sunrise</span><b data-local="sunrise">{t(p.sunrise)}</b></div>
+    <div><span>Sunset</span><b data-local="sunset">{t(p.sunset)}</b></div>
+    {!rahuOnly && <div><span>Tithi</span><b data-local="tithi">{p.tithi[0].paksha} {p.tithi[0].name}</b></div>}
+    {!rahuOnly && <div><span>Nakshatra</span><b data-local="nakshatra">{p.nakshatra[0].name}</b></div>}
+  </div>
+  <p class="lc-actions"><button type="button" data-local-gps>Use my exact location</button> <a href="#" data-local-reset hidden>Reset to Hyderabad</a></p>
+</section>

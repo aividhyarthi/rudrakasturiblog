@@ -1,0 +1,47 @@
+---
+import Hero from '../../components/Hero.astro';
+import Glyph from '../../components/Glyph.astro';
+import Base from '../../layouts/Base.astro';
+import { RASHIS, reading, dayOverall } from '../../lib/astro';
+import { panchangFor, todayIST, addDays, WEEKDAYS } from '../../lib/panchang';
+const M = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const ymd = addDays(todayIST(), 1);
+const p = panchangFor(ymd, 'hyderabad');
+const o = dayOverall({ tithi: p.tithi, nakshatra: p.nakshatra, moonSign: p.moonSign, weekday: p.weekday });
+const pretty = `${WEEKDAYS[p.weekday]}, ${ymd.d} ${M[ymd.m - 1]} ${ymd.y}`;
+const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
+const faq = [
+  ['How is tomorrow\'s horoscope worked out?', 'From the real positions of the Sun, Moon and planets for tomorrow, read against each rashi with the traditional Vedic transit (gochara) rules. The Moon\'s sign carries the most weight for a single day.'],
+  ['Which rashi should I read?', 'Read the rashi your Moon was in at birth (janma rashi). If you only know your Western sun sign, check your Telugu or Vedic horoscope or ask your family for your rashi.'],
+  ['Is tomorrow\'s horoscope the same for everyone in a rashi?', 'Yes. It is general guidance for the rashi, not a personal prediction. It is for reflection and entertainment, not a substitute for medical, legal or financial advice.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="astrology" title={`Horoscope Tomorrow (${ymd.d} ${M[ymd.m - 1].slice(0, 3)} ${ymd.y}): All 12 Rashis`} description={`Tomorrow's horoscope (rasi phalalu) for all twelve rashis for ${pretty}, worked out from tomorrow's real planetary positions.`} active="astrology" breadcrumbs={[{ name: 'Tomorrow\'s horoscope', href: '/horoscope-tomorrow/' }]} image="/covers/rasi-phalalu.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-astrology">
+    <div class="kicker">Rasi Phalalu</div>
+    <h1>Horoscope tomorrow</h1>
+    <p class="meta" style="margin:0 0 6px">{pretty}</p>
+    <div class="chips" style="margin:0 0 14px"><a href="/rasi-phalalu/">Today</a><a href="/horoscope-tomorrow/" class="on">Tomorrow</a><a href="/rasi-phalalu/mesha/weekly/">Weekly</a><a href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
+    <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" />
+    <div class="sect"><h2>Overall for tomorrow</h2></div>
+    <div class="rcard" style="margin-bottom:34px"><b>{o.headline}</b><ul style="margin:0;padding-left:20px;font-family:var(--serif);font-size:17.5px;line-height:1.6">{o.points.map((x) => <li style="margin:6px 0">{x}</li>)}</ul></div>
+    <div class="sect"><h2>Tomorrow, rashi by rashi</h2></div>
+    <p class="sub" style="margin-top:-6px">Tap your rashi for career, money, relationships and health.</p>
+    <div class="sign-grid">
+      {readings.map(({ r, d }) => (
+        <a class="sign-card" href={`/horoscope-tomorrow/${r.id}/`}>
+          <Glyph id={r.id} size={38} />
+          <h3>{r.skt} <span class="te">{r.te}</span></h3>
+          <div class="sub">{r.en}</div>
+          <div class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</div>
+        </a>
+      ))}
+    </div>
+    <div class="sect" style="margin-top:30px"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <p class="disc">For entertainment and reflection only. Not a prediction about your life and not a substitute for medical, legal or financial advice.</p>
+  </div>
+</Base>

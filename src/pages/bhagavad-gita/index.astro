@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { CHAPTERS, GITA_FAQ } from '../../data/gita';
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: GITA_FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
-<Base rail="religion" title="Bhagavad Gita: All 18 Chapters Explained Simply (భగవద్గీత)" description="A plain guide to the Bhagavad Gita: summaries of all 18 chapters, the main ideas, the most quoted verses and answers to common questions." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Bhagavad Gita', href: '/bhagavad-gita/' }]} image="/covers/gita.png">
+<Base rail="religion" title="Bhagavad Gita: All 18 Chapters Explained Simply (భగవద్గీత)" description="A plain guide to the Bhagavad Gita: summaries of all 18 chapters, the main ideas, the most quoted verses and answers to common questions." active="gita" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Bhagavad Gita', href: '/bhagavad-gita/' }]} image="/covers/gita.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/religion/">Religion</a></div>

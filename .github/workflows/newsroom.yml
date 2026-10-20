@@ -1,7 +1,8 @@
 name: Newsroom (auto-write stories)
 on:
-  schedule:
-    - cron: '30 */3 * * *'   # every 3 hours
+  # Paused while the site builds devotional authority. Re-enable by restoring:
+  # schedule:
+  #   - cron: '30 */3 * * *'   # every 3 hours
   workflow_dispatch:           # also lets you press "Run workflow" by hand
 permissions:
   contents: write

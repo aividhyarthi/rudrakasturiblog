@@ -1,0 +1,7 @@
+---
+import LunarPage from '../../../components/LunarPage.astro';
+import { allLunations } from '../../../lib/lunar';
+export function getStaticPaths() { return allLunations('pournami').map((l) => ({ params: { slug: l.slug }, props: { l } })); }
+const { l } = Astro.props;
+---
+<LunarPage l={l} />

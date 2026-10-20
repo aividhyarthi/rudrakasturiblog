@@ -9,7 +9,7 @@ const temples = (await getCollection('temples')).sort((a, b) => a.data.name.loca
 const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
 const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Temples', href: '/temples/' }];
 ---
-<Base rail="religion" title="Temples of India: Jyotirlingas, Shakti Peethas, Char Dham" description="Complete lists of the key temples of India (12 Jyotirlingas, 18 Maha Shakti Peethas, Char Dham, Pancharama) plus guides with history and festivals." active="religion" breadcrumbs={crumbs} image="/covers/temples.png">
+<Base rail="religion" title="Temples of India: Jyotirlingas, Shakti Peethas, Char Dham" description="Complete lists of the key temples of India (12 Jyotirlingas, 18 Maha Shakti Peethas, Char Dham, Pancharama) plus guides with history and festivals." active="temples" breadcrumbs={crumbs} image="/covers/temples.png">
   <div class="page wide c-religion">
     <div class="kicker"><a href="/religion/">Devotional</a></div>
     <h1>Temples of India</h1>

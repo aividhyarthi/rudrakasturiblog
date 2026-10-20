@@ -12,6 +12,8 @@ body[data-sec=religion],.c-religion{--sec:#b4530a}
 body[data-sec=astrology],.c-astrology{--sec:#3d3a8f}
 body[data-sec=movies],.c-movies{--sec:#a31650}
 body[data-sec=ott],.c-ott{--sec:#0e7c7b}
+body[data-sec=temples],.c-temples{--sec:#8a3b12}
+body[data-sec=gita],.c-gita{--sec:#7a5b00}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
@@ -306,3 +308,18 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .rail-links a:hover{color:var(--sec)}
 @media(max-width:1000px){.layout{grid-template-columns:1fr;gap:20px}.rail{position:static;padding-top:10px}.layout .three,.layout .t-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:640px){.layout .three,.layout .t-grid,.layout .gita-grid,.layout .tiles,.layout .pgrid,.layout .sign-grid{grid-template-columns:1fr}.layout .pgrid,.layout .sign-grid{grid-template-columns:1fr 1fr}.rail-signs{grid-template-columns:repeat(4,1fr)}}
+
+/* Location-aware panchangam card */
+.localcard{border:1px solid var(--rule,#e3e3e3);border-top:3px solid #b4530a;background:#fffaf4;padding:16px 18px 12px;margin:0 0 26px}
+.localcard h2{font-size:22px;margin:0}
+.lc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:12px}
+.lc-note{font-size:13px;color:#6b6b6b}
+.lc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+.lc-grid>div{background:#fff;border:1px solid #ececec;padding:10px 12px}
+.lc-grid span{display:block;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b}
+.lc-grid b{display:block;font-size:17px;margin-top:2px}
+.lc-grid .bad{border-left:3px solid #d6382c}.lc-grid .good{border-left:3px solid #2fa866}
+.lc-actions{margin:12px 0 2px;font-size:14px}
+.lc-actions button{font:inherit;font-size:14px;border:1px solid #1a1a1a;background:#fff;padding:6px 12px;cursor:pointer}
+.lc-actions button:hover{background:#1a1a1a;color:#fff}
+.lc-actions a{margin-left:10px;text-decoration:underline}

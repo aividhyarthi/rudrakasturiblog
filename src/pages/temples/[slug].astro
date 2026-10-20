@@ -45,7 +45,7 @@ const LIST_HERO: Record<string, string> = { jyotirlingas: 'jyotirlinga-dawn', 'c
 const heroName = props.type === 'temple' ? (props.t.data.hero ?? 'temple-sunrise') : (LIST_HERO[slug] ?? 'temple-sunrise');
 const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
 ---
-<Base rail="religion" title={title} description={description} jsonLd={jsonLd} active="religion" breadcrumbs={crumbs} image={`/covers/${imageSlug}.png`}>
+<Base rail="religion" title={title} description={description} jsonLd={jsonLd} active="temples" breadcrumbs={crumbs} image={`/covers/${imageSlug}.png`}>
   {faqLd && <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />}
   <div class="page c-religion">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/temples/">Temples</a></div>

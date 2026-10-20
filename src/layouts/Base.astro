@@ -8,7 +8,7 @@ import '@fontsource/noto-serif-telugu/telugu-700.css';
 import '@fontsource/noto-sans-telugu/telugu-400.css';
 import '@fontsource/noto-sans-telugu/telugu-600.css';
 import '../styles/global.css';
-import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID } from '../config';
+import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID, GSC_VERIFICATION, NEWS_ENABLED } from '../config';
 import { sectionCounts } from '../lib/articles';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
@@ -17,7 +17,7 @@ const { railNoToday, rail, railExclude, todayBar, breadcrumbs, home, title, desc
 const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
-const nav = SECTIONS.filter((s) => s.always || counts.cat[s.id]);
+const nav = SECTIONS.filter((s) => s.always || (NEWS_ENABLED && counts.cat[s.id]));
 const section = SECTIONS.find((s) => s.id === active);
 const subnav = (active && SUBNAV[active]) || [];
 const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
@@ -34,6 +34,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google-site-verification" content={GSC_VERIFICATION} />
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
@@ -62,7 +63,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
 <body data-sec={active}>
   <div class="topbar"><div class="wrap">
     <span id="today">{SITE.tagline}</span>
-    <span>Hyderabad today: {snap.tithi} &middot; {snap.nak} nakshatra &middot; Rahu Kalam {snap.rahu} &middot; <a href="/panchangam/hyderabad/">Panchangam</a></span>
+    <span><span data-local="name">Hyderabad</span> today: <span data-local="tithi">{snap.tithi}</span> &middot; <span data-local="nakshatra">{snap.nak}</span> nakshatra &middot; Rahu Kalam <span data-local="rahu">{snap.rahu}</span> &middot; <a href="/panchangam/">Panchangam</a></span>
   </div></div>
   <header class="mast">
     <a class="logo" href="/" aria-label="Southwala home">Southwala<i>.</i></a>
@@ -88,7 +89,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     <div>
       <h4>Sections</h4>
       {nav.map((c) => <a href={c.href}>{c.label}</a>)}
-      <a href="/temples/">Temples</a><a href="/bhagavad-gita/">Bhagavad Gita</a>
+      <a href="/panchangam/">Panchangam</a><a href="/amavasya/">Amavasya</a><a href="/pournami/">Pournami</a>
     </div>
     <div>
       <h4>Trust</h4>
@@ -96,5 +97,6 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     </div>
     <div class="legal">&copy; {new Date().getFullYear()} {SITE.name}. Opinion and analysis are labelled. Bylines are AI-assisted desk voices. Corrections: {SITE.email}</div>
   </div></footer>
+  <script>import '../scripts/local';</script>
 </body>
 </html>

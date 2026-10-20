@@ -123,8 +123,9 @@ const GULIKA = [7, 6, 5, 4, 3, 2, 1];
 export type Day = ReturnType<typeof panchangFor>;
 
 /** ymd = local IST calendar date */
-export function panchangFor(ymd: { y: number; m: number; d: number }, cityId: CityId) {
-  const city = CITIES[cityId];
+export type Place = { lat: number; lon: number };
+export function panchangFor(ymd: { y: number; m: number; d: number }, cityId: CityId | Place) {
+  const city: Place = typeof cityId === 'string' ? CITIES[cityId] : cityId;
   const dayStartUtc = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d) - IST); // 00:00 IST
   const wd = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay();
   const st = sunTimes(dayStartUtc, city);
