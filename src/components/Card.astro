@@ -1,14 +1,11 @@
 ---
 import { categoryLabel, fmtDate, type Article } from '../lib/articles';
 const { a } = Astro.props as { a: Article };
-const img = a.data.image ?? `/covers/${a.slug}.png`;
 ---
 <a class="card" href={`/${a.slug}/`}>
-  <img src={img} alt={a.data.imageAlt ?? a.data.title} loading="lazy" width="1200" height="675" />
-  <div class="b">
-    <span class="chip">{categoryLabel(a.data.category)}</span>
-    <h3>{a.data.title}</h3>
-    <p>{a.data.description}</p>
-    <div class="meta" style="margin-top:8px">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
-  </div>
+  <img src={a.data.image ?? `/covers/${a.slug}.png`} alt={a.data.imageAlt ?? a.data.title} loading="lazy" width="1200" height="675" />
+  <div class="kicker" style="margin-top:8px">{categoryLabel(a.data.category)}</div>
+  <h3>{a.data.title}</h3>
+  <p>{a.data.description}</p>
+  <div class="meta" style="margin-top:4px">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
 </a>

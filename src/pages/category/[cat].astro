@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Card from '../../components/Card.astro';
+import Sidebar from '../../components/Sidebar.astro';
 import { allArticles } from '../../lib/articles';
 import { CATEGORIES } from '../../config';
 export function getStaticPaths() { return CATEGORIES.map((c) => ({ params: { cat: c.id }, props: { c } })); }
@@ -8,6 +9,12 @@ const { c } = Astro.props;
 const items = (await allArticles()).filter((a) => a.data.category === c.id);
 ---
 <Base title={c.label} description={c.blurb} active={c.id}>
-  <div class="sec"><h1 style="font-size:42px;letter-spacing:-1.2px;margin:20px 0 4px">{c.label}</h1><p class="meta" style="font-size:16px">{c.blurb}</p></div>
-  {items.length ? <div class="grid">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">Nothing here yet. Check back soon.</div>}
+  <div class="art">
+    <div>
+      <div class="sechead"><h2>{c.label}</h2></div>
+      <p class="meta" style="font-size:15px;margin:-4px 0 16px">{c.blurb}</p>
+      {items.length ? <div class="grid" style="grid-template-columns:repeat(2,1fr)">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">Nothing here yet. Check back soon.</div>}
+    </div>
+    <Sidebar />
+  </div>
 </Base>

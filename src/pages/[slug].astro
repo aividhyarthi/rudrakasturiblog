@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
+import Sidebar from '../components/Sidebar.astro';
 import { allArticles, categoryLabel, fmtDate, findAuthor, authorSlug } from '../lib/articles';
 import { SITE, REGIONS } from '../config';
 export async function getStaticPaths() {
@@ -30,24 +31,27 @@ const jsonLd = {
 const share = encodeURIComponent(`${d.title} ${url}`);
 ---
 <Base title={d.title} description={d.description} image={img} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
-  <article class="story">
-    <span class="chip">{categoryLabel(d.category)}</span> {d.format && <span class="chip alt">{d.format}</span>} <span class="chip alt">{REGIONS[d.region]}</span>
-    <h1>{d.title}</h1>
-    <p class="dek">{d.description}</p>
-    <div class="meta">By <a href={byUrl} style="text-decoration:underline">{d.author}</a>{who && <> · {who.desk}</>} · {fmtDate(d.date)}{d.updated ? ` · Updated ${fmtDate(d.updated)}` : ''}</div>
-    {d.draft && <div class="box" style="border-color:var(--pink);color:var(--text)"><h4>DRAFT: not public</h4>{d.reviewNote ?? 'Review before publishing.'}</div>}
-    <img class="hero-img" src={img} alt={d.imageAlt ?? d.title} width="1200" height="675" fetchpriority="high" />
-    {d.tldr && <div class="tldr"><b>The 20-second version</b>{d.tldr}</div>}
-    <div class="body"><Content /></div>
-    <div class="share">
-      <a class="btn wa" href={`https://wa.me/?text=${share}`} rel="noopener" target="_blank">Share on WhatsApp</a>
-      <a class="btn x" href={`https://twitter.com/intent/tweet?text=${share}`} rel="noopener" target="_blank">Post on X</a>
-    </div>
-    {d.sources.length > 0 && (
-      <div class="box"><h4>Receipts (sources)</h4><ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a> &mdash; {s.publisher}</li>)}</ul></div>
-    )}
-    <div class="box"><h4>About this byline</h4>{d.author} is an AI-assisted Southwala desk byline{who ? ` for the ${who.desk}` : ''}. Stories are drafted from the cited sources with AI help and published under our <a href="/editorial-policy/" style="text-decoration:underline">editorial policy</a>. <a href="/team/" style="text-decoration:underline">How our desks work</a>.</div>
-    <div class="box"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/" style="text-decoration:underline">How it works</a>.</div>
-  </article>
-  {related.length > 0 && <section class="sec"><header><h2>More {categoryLabel(d.category)}</h2></header><div class="grid">{related.map((r) => <Card a={r} />)}</div></section>}
+  <div class="art">
+    <article>
+      <div class="kicker"><a href={`/category/${d.category}/`}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;|&nbsp; {d.format}</>} &nbsp;|&nbsp; {d.region !== 'south' ? <a href={`/state/${d.region}/`}>{REGIONS[d.region]}</a> : REGIONS[d.region]}</div>
+      <h1>{d.title}</h1>
+      <p class="dek">{d.description}</p>
+      <div class="byline"><span>By <a href={byUrl}><b>{d.author}</b></a>{who && <> · {who.desk}</>}</span><span>{fmtDate(d.date)}</span>{d.updated && <span>Updated {fmtDate(d.updated)}</span>}</div>
+      {d.draft && <div class="draft"><b>DRAFT, not public.</b> {d.reviewNote ?? 'Review before publishing.'}</div>}
+      <img class="hero" src={img} alt={d.imageAlt ?? d.title} width="1200" height="675" fetchpriority="high" />
+      {d.tldr && <div class="tldr"><b>In short</b>{d.tldr}</div>}
+      <div class="body"><Content /></div>
+      <div class="share">
+        <a class="btn wa" href={`https://wa.me/?text=${share}`} rel="noopener" target="_blank">Share on WhatsApp</a>
+        <a class="btn x" href={`https://twitter.com/intent/tweet?text=${share}`} rel="noopener" target="_blank">Post on X</a>
+      </div>
+      {d.sources.length > 0 && (
+        <div class="note"><h4>Sources</h4><ul>{d.sources.map((s) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a>, {s.publisher}</li>)}</ul></div>
+      )}
+      <div class="note"><h4>About this byline</h4>{d.author} is an AI-assisted Southwala desk byline{who ? ` for the ${who.desk}` : ''}. Stories are drafted from the cited sources with AI help and published under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">How our desks work</a>.</div>
+      <div class="note"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/">How it works</a>.</div>
+    </article>
+    <Sidebar exclude={a.slug} />
+  </div>
+  {related.length > 0 && <section style="margin-bottom:20px"><div class="sechead"><h2>More {categoryLabel(d.category)}</h2></div><div class="grid">{related.map((r) => <Card a={r} />)}</div></section>}
 </Base>

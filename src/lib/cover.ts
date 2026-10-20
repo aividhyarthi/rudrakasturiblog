@@ -1,14 +1,14 @@
 // Text-free, bold cover art generated per article (no fonts needed, so it builds anywhere).
 // Real photos can be set per article with `image:` in the article header.
-const PALETTES = [
-  ['#ff3d81', '#7a2cff', '#c6ff3d'],
-  ['#00d4ff', '#2340f5', '#ff3d81'],
-  ['#ffb800', '#ff3d81', '#1a1033'],
-  ['#c6ff3d', '#00a870', '#0d0d12'],
-  ['#ff6a3d', '#c4004f', '#ffe14a'],
-  ['#7a2cff', '#00d4ff', '#c6ff3d'],
-];
-
+// Bright, category-coloured covers: [background, shape1, shape2]
+const BY_CAT: Record<string, string[]> = {
+  politics: ['#c62828', '#ffb74d', '#ffffff'],
+  movies: ['#6a1b9a', '#ff80ab', '#ffd54f'],
+  ott: ['#00796b', '#80cbc4', '#fff176'],
+  trending: ['#f9a825', '#ef5350', '#ffffff'],
+  news: ['#0b3d91', '#64b5f6', '#ffffff'],
+  sports: ['#2e7d32', '#aed581', '#ffffff'],
+};
 function hash(s: string) {
   let h = 2166136261;
   for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0;
@@ -28,13 +28,14 @@ function rng(seed: number) {
 export function coverSvg(slug: string, category: string): string {
   const seed = hash(slug);
   const r = rng(seed);
-  const [a, b, c] = PALETTES[seed % PALETTES.length];
+  const [bg, b, c] = BY_CAT[category] ?? BY_CAT.news;
+  const a = bg;
   const W = 1200, H = 675;
   let shapes = '';
   for (let i = 0; i < 7; i++) {
     const x = r() * W, y = r() * H, s = 80 + r() * 260;
-    const fill = [a, b, c][i % 3];
-    const op = (0.25 + r() * 0.55).toFixed(2);
+    const fill = [b, c, '#000000'][i % 3];
+    const op = (i % 3 === 2 ? 0.12 : 0.35 + r() * 0.4).toFixed(2);
     shapes +=
       i % 3 === 0
         ? `<circle cx="${x.toFixed(0)}" cy="${y.toFixed(0)}" r="${s.toFixed(0)}" fill="${fill}" opacity="${op}"/>`
@@ -43,7 +44,5 @@ export function coverSvg(slug: string, category: string): string {
           : `<polygon points="${x.toFixed(0)},${(y - s / 2).toFixed(0)} ${(x + s / 2).toFixed(0)},${(y + s / 2).toFixed(0)} ${(x - s / 2).toFixed(0)},${(y + s / 2).toFixed(0)}" fill="${fill}" opacity="${op}"/>`;
   }
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d0d12"/><stop offset="1" stop-color="#1a1033"/></linearGradient></defs>
-<rect width="${W}" height="${H}" fill="url(#g)"/>${shapes}
-<rect x="0" y="${H - 14}" width="${W}" height="14" fill="${a}"/></svg>`;
+<rect width="${W}" height="${H}" fill="${bg}"/>${shapes}</svg>`;
 }

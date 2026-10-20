@@ -1,49 +1,56 @@
 ---
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
-import { allArticles, categoryLabel } from '../lib/articles';
+import Row from '../components/Row.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { allArticles, categoryLabel, fmtDate } from '../lib/articles';
 import { CATEGORIES } from '../config';
 const all = await allArticles();
 const [lead, ...rest] = all;
-const trending = rest.slice(0, 5);
-const latest = rest.slice(5, 14);
+const twin = rest.slice(0, 2);
+const top = rest.slice(2, 9);
+const latest = rest.slice(9, 18);
 ---
 <Base>
   {!lead ? (
     <div class="empty"><h1>First stories dropping soon.</h1><p>The newsroom is warming up.</p></div>
   ) : (
     <>
-      <section class="hero">
-        <a class="lead" href={`/${lead.slug}/`}>
-          <img src={lead.data.image ?? `/covers/${lead.slug}.png`} alt={lead.data.imageAlt ?? lead.data.title} width="1200" height="675" fetchpriority="high" />
-          <div class="in">
-            <span class="chip">{categoryLabel(lead.data.category)}</span>
+      <section class="home">
+        <div>
+          <a class="lead" href={`/${lead.slug}/`} style="display:block">
+            <img src={lead.data.image ?? `/covers/${lead.slug}.png`} alt={lead.data.imageAlt ?? lead.data.title} width="1200" height="675" fetchpriority="high" />
+            <div class="kicker" style="margin-top:10px">{categoryLabel(lead.data.category)}</div>
             <h1>{lead.data.title}</h1>
-            <p style="margin:0;color:#ddd">{lead.data.description}</p>
-          </div>
-        </a>
-        <aside class="side">
-          <h2>Trending now</h2>
-          {trending.map((a, i) => (
-            <div class="rank"><span>{i + 1}</span><a href={`/${a.slug}/`}>{a.data.title}<div class="meta">{categoryLabel(a.data.category)}</div></a></div>
-          ))}
-        </aside>
+            <p>{lead.data.description}</p>
+            <div class="meta" style="margin-top:6px">{lead.data.author} · {fmtDate(lead.data.date)}</div>
+          </a>
+          {twin.length > 0 && <div class="twin">{twin.map((a) => <Card a={a} />)}</div>}
+        </div>
+        <div>
+          <div class="sechead"><h2>Top stories</h2></div>
+          <div class="rows">{top.map((a) => <Row a={a} />)}</div>
+        </div>
+        <Sidebar exclude={lead.slug} />
       </section>
       {latest.length > 0 && (
-        <section class="sec">
-          <header><h2>Latest</h2></header>
+        <section style="margin:10px 0 26px">
+          <div class="sechead"><h2>More stories</h2></div>
           <div class="grid">{latest.map((a) => <Card a={a} />)}</div>
         </section>
       )}
-      {CATEGORIES.map((c) => {
-        const items = all.filter((a) => a.data.category === c.id).slice(0, 3);
-        return items.length ? (
-          <section class="sec">
-            <header><h2>{c.label}</h2><a class="meta" href={`/category/${c.id}/`}>See all &rarr;</a></header>
-            <div class="grid">{items.map((a) => <Card a={a} />)}</div>
-          </section>
-        ) : null;
-      })}
+      <section class="blocks">
+        {CATEGORIES.map((c) => {
+          const items = all.filter((a) => a.data.category === c.id).slice(0, 4);
+          return items.length ? (
+            <div class="block">
+              <div class="sechead"><h2>{c.label}</h2><a href={`/category/${c.id}/`}>More &rarr;</a></div>
+              <Card a={items[0]} />
+              <div class="lists" style="margin-top:12px">{items.slice(1).map((a) => <a href={`/${a.slug}/`}>{a.data.title}</a>)}</div>
+            </div>
+          ) : null;
+        })}
+      </section>
     </>
   )}
 </Base>

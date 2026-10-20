@@ -7,7 +7,7 @@ const { p } = Astro.props;
 const items = (await allArticles()).filter((a) => a.data.author === p.name);
 ---
 <Base title={p.name} description={`Stories by ${p.name}, ${p.desk}.`} noindex={items.length === 0}>
-  <div class="page" style="max-width:1180px">
+  <div class="page" style="max-width:1180px"><div class="sechead"><h2>Byline</h2></div>
     <h1>{p.name}</h1>
     <p class="meta" style="font-size:16px">{p.desk}. An AI-assisted desk byline. <a href="/team/">How our desks work</a>.</p>
     {items.length ? <div class="grid">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No stories yet.</div>}
