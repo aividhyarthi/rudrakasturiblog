@@ -10,6 +10,8 @@ export async function getStaticPaths() {
 const { a, related } = Astro.props;
 const { Content } = await a.render();
 const d = a.data;
+const who = findAuthor(d.author);
+const byUrl = who ? `/author/${who.slug}/` : '/team/';
 const img = d.image ?? `/covers/${a.slug}.png`;
 const url = `${SITE.url}/${a.slug}/`;
 const jsonLd = {
@@ -25,8 +27,6 @@ const jsonLd = {
   mainEntityOfPage: url,
   articleSection: categoryLabel(d.category),
 };
-const who = findAuthor(d.author);
-const byUrl = who ? `/author/${who.slug}/` : '/team/';
 const share = encodeURIComponent(`${d.title} ${url}`);
 ---
 <Base title={d.title} description={d.description} image={img} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
