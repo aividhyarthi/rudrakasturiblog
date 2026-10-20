@@ -41,8 +41,8 @@ if (props.type === 'temple') {
 const lists = LISTS.filter((l) => (props.type === 'kind' ? (props.kind === 'goddess' ? l.kind === 'goddess' || l.kind === 'mixed' : l.kind === 'god' || l.kind === 'mixed') : false));
 const guides = props.type === 'kind' ? all.filter((t) => t.data.kind === props.kind || t.data.kind === 'both') : [];
 const faqLd = faq.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) } : null;
-const goddessy = (props.type === 'temple' && props.t.data.kind === 'goddess') || (props.type === 'list' && props.l.kind === 'goddess') || (props.type === 'kind' && props.kind === 'goddess');
-const heroName = slug === 'srisailam-mallikarjuna-temple' || slug === 'jyotirlingas' ? 'jyotirlinga-dawn' : goddessy ? 'goddess-temple' : 'temple-sunrise';
+const LIST_HERO: Record<string, string> = { jyotirlingas: 'jyotirlinga-dawn', 'char-dham': 'vishnu-symbols', 'pancharama-kshetralu': 'shiva-symbols', 'pancha-bhoota-sthalams': 'shiva-symbols', 'shakti-peethas': 'goddess-temple', 'god-temples': 'shiva-symbols', 'goddess-temples': 'devi-symbols' };
+const heroName = props.type === 'temple' ? (props.t.data.hero ?? 'temple-sunrise') : (LIST_HERO[slug] ?? 'temple-sunrise');
 const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
 ---
 <Base title={title} description={description} jsonLd={jsonLd} active="religion" breadcrumbs={crumbs} image={`/covers/${imageSlug}.png`}>

@@ -2,6 +2,7 @@
 name: "Yadagirigutta (Yadadri) Lakshmi Narasimha Swamy Temple"
 te: "యాదగిరిగుట్ట శ్రీ లక్ష్మీ నరసింహ స్వామి ఆలయం"
 state: "ts"
+hero: "temple-yadadri"
 kind: "god"
 district: "Yadadri Bhuvanagiri district"
 place: "Yadagirigutta, on a hill"

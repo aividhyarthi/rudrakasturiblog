@@ -2,6 +2,7 @@
 name: "Kanaka Durga Temple, Indrakeeladri"
 te: "విజయవాడ కనకదుర్గ ఆలయం"
 state: "ap"
+hero: "temple-kanakadurga"
 kind: "goddess"
 district: "Vijayawada city"
 place: "Indrakeeladri hill, Vijayawada, on the Krishna river"

@@ -138,3 +138,4 @@ footer a{margin-right:16px;text-decoration:underline;color:#fff}
 .tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .tw table.data{min-width:520px}
 @media(max-width:640px){table.data{font-size:14.5px}table.data th,table.data td{padding:8px 6px}}
+.glyph{display:inline-block;vertical-align:middle;flex:none}

@@ -2,6 +2,7 @@
 name: "Tirumala Venkateswara Temple"
 te: "తిరుమల శ్రీ వేంకటేశ్వర స్వామి ఆలయం"
 state: "ap"
+hero: "temple-tirumala"
 kind: "god"
 district: "Tirupati district"
 place: "Tirumala Hills, near Tirupati"

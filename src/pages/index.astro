@@ -1,5 +1,6 @@
 ---
 import Hero from '../components/Hero.astro';
+import Glyph from '../components/Glyph.astro';
 import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import Row from '../components/Row.astro';
@@ -68,7 +69,7 @@ const sections = SECTIONS.filter((s) => !s.always).map((s) => ({ s, items: all.f
       <div class="sechead"><h2>Southwala Astrology</h2><a href="/rasi-phalalu/" style="padding-right:10px">All</a></div>
       <Hero name="zodiac-wheel" alt="A zodiac wheel on a night sky" ratio="16/5" />
       <div class="in" style="padding:0">
-        <div class="signs">{stars.map(({ r, d }) => <a href={`/rasi-phalalu/${r.id}/`}><span class="sym">{r.sym}</span><b>{r.skt}</b><div class="stars" style="font-size:12px;letter-spacing:1px">{star(d.rating)}</div></a>)}</div>
+        <div class="signs">{stars.map(({ r, d }) => <a href={`/rasi-phalalu/${r.id}/`}><Glyph id={r.id} size={26} /><b>{r.skt}</b><div class="stars" style="font-size:12px;letter-spacing:1px">{star(d.rating)}</div></a>)}</div>
       </div>
     </div>
   </section>

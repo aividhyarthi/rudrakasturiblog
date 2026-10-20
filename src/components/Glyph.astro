@@ -1,0 +1,7 @@
+---
+import glyphs from '../data/zodiac-glyphs.json';
+// Zodiac sign drawn as a vector so it looks the same on every phone (no font needed).
+const { id, size = 28 } = Astro.props as { id: string; size?: number };
+const d = (glyphs as Record<string, string>)[id];
+---
+<svg class="glyph" width={size} height={size} viewBox="20 20 160 160" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d={d} /></svg>

@@ -52,4 +52,4 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 ## Update 2026-10-20 (images)
 - Section illustrations are drawn by us as vectors (scripts/make-heroes.mjs -> public/heroes/*.svg): temple-sunrise, jyotirlinga-dawn, goddess-temple, kurukshetra-dawn, panchangam, zodiac-wheel, moon-nakshatra.
 - Founder can override any of them with their own picture: drop a file named like the illustration into public/images/heroes/ (see README.txt there). The site prefers the founder's file automatically.
-- AI generation (Canva) works for 4 images at a time, then hits a quota, and only returns 199px thumbnails to us. Full-size AI images must be downloaded by the founder from the Canva links and dropped into public/images/heroes/.
+- Images are drawn by us in code (scripts/make-heroes.mjs and make-heroes2.mjs): 12 rashi pictures, 6 individual temple scenes, Shiva/Vishnu/Devi symbol art, section scenes. No third-party image tools.

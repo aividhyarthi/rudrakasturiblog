@@ -1,11 +1,8 @@
-Want to use your own picture for a section? Put a file here named exactly like one of these
-(.jpg, .webp or .png, wide 16:9 or similar, about 1600 pixels wide) and the site will use it
-instead of our drawing. No code changes needed.
+Want to use your own picture for a section, rashi or temple? Put a file here named exactly like the drawing
+(.jpg, .webp or .png, about 1600 pixels wide, 16:9) and the site uses it instead of our drawing automatically.
 
-  temple-sunrise      Devotional home, temples, god temples
-  jyotirlinga-dawn    Jyotirlingas list, Srisailam
-  goddess-temple      Shakti Peethas, goddess temples, Kanaka Durga
-  kurukshetra-dawn    Bhagavad Gita
-  panchangam          Panchangam and Rahu Kalam pages
-  zodiac-wheel        Rasi Phalalu home and daily pages
-  moon-nakshatra      Weekly and monthly rasi phalalu
+Names: rashi-mesha, rashi-vrishabha, rashi-mithuna, rashi-karkataka, rashi-simha, rashi-kanya, rashi-tula,
+rashi-vrischika, rashi-dhanu, rashi-makara, rashi-kumbha, rashi-meena,
+temple-tirumala, temple-srisailam, temple-bhadrachalam, temple-yadadri, temple-kanakadurga, temple-vemulawada,
+temple-sunrise, jyotirlinga-dawn, goddess-temple, kurukshetra-dawn, panchangam, zodiac-wheel, moon-nakshatra,
+vishnu-symbols, shiva-symbols, devi-symbols

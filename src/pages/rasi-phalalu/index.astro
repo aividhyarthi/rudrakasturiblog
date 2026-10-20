@@ -1,5 +1,6 @@
 ---
 import Hero from '../../components/Hero.astro';
+import Glyph from '../../components/Glyph.astro';
 import Base from '../../layouts/Base.astro';
 import { RASHIS, reading, dayOverall } from '../../lib/astro';
 import { panchangFor, todayIST, WEEKDAYS } from '../../lib/panchang';
@@ -23,7 +24,7 @@ const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
     <div class="sign-grid">
       {readings.map(({ r, d }) => (
         <a class="sign" href={`/rasi-phalalu/${r.id}/`}>
-          <div class="sym">{r.sym}</div>
+          <Glyph id={r.id} size={38} />
           <h3>{r.skt} <span class="te">{r.te}</span></h3>
           <div class="sub">{r.en}</div>
           <div class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</div>

@@ -1,5 +1,6 @@
 ---
 import Hero from '../components/Hero.astro';
+import Glyph from './Glyph.astro';
 import Base from '../layouts/Base.astro';
 import { RASHIS, reading } from '../lib/astro';
 import { todayIST, addDays } from '../lib/panchang';
@@ -25,8 +26,8 @@ const crumbs = [{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }, { name: r.skt,
 <Base title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} rasi phalalu for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
   <div class="page" style="max-width:860px">
     <div class="kicker"><a href="/rasi-phalalu/">Rasi Phalalu</a></div>
-    <h1><span style="font-family:'Segoe UI Symbol','Noto Sans Symbols','DejaVu Sans',serif">{r.sym}</span> {r.skt} Rasi <span class="te">{r.te}</span> <span class="sub" style="font-weight:400">({r.en})</span></h1>
-    <Hero name={span === 'daily' ? 'zodiac-wheel' : 'moon-nakshatra'} alt="Night sky illustration for rasi phalalu" ratio="16/4" />
+    <h1><Glyph id={r.id} size={34} /> {r.skt} Rasi <span class="te">{r.te}</span> <span class="sub" style="font-weight:400">({r.en})</span></h1>
+    <Hero name={`rashi-${r.id}`} alt={`${r.skt} (${r.en}) rashi illustration with its zodiac symbol`} ratio="16/6" />
     <div class="chips" style="margin:6px 0 10px">{RASHIS.map((x) => <a href={`/rasi-phalalu/${x.id}/${span === 'daily' ? '' : span + '/'}`} class={x.id === r.id ? 'on' : ''}>{x.skt}</a>)}</div>
     <div class="chips" style="margin:0 0 6px">
       <a href={base} class={span === 'daily' ? 'on' : ''}>Daily</a><a href={`${base}weekly/`} class={span === 'weekly' ? 'on' : ''}>Weekly</a><a href={`${base}monthly/`} class={span === 'monthly' ? 'on' : ''}>Monthly</a>
