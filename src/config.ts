@@ -2,7 +2,7 @@
 export const SITE = {
   name: 'Southwala',
   url: 'https://southwala.com',
-  tagline: 'Andhra & Telangana, with the receipts.',
+  tagline: 'The South, with the receipts.',
   description:
     'Politics, movies, OTT and the internet’s favourite drama from Tamil Nadu, Kerala, Karnataka, Andhra and Telangana. Fast, sharp, sourced.',
   email: 'hello@southwala.com',
@@ -24,6 +24,7 @@ export const CATEGORIES = [
   { id: 'sports', label: 'Sports', blurb: 'IPL, football, cricket and local legends.' },
 ] as const;
 
+export const REGION_LABELS_NOTE = 'Region codes: ap, ts, ka, tn, kl, south';
 export const REGIONS = {
   tn: 'Tamil Nadu',
   kl: 'Kerala',

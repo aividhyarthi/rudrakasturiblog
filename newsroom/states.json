@@ -1,0 +1,27 @@
+{
+  "ap": {
+    "label": "Andhra Pradesh",
+    "parties": "TDP, YSRCP, Jana Sena, BJP, Congress, Left parties",
+    "tone": "Politics is a daily sport and fans are fiercely loyal, so lead with records, dates and numbers and keep adjectives out. Big recurring themes: Amaravati, Polavaram, welfare schemes, Visakhapatnam, caste-community arithmetic (report only what sources say, never stereotype). Cinema and politics overlap heavily. Voice: quick, a little cheeky, Telugu words like 'anna', 'mass', 'scene' used sparingly and naturally."
+  },
+  "ts": {
+    "label": "Telangana",
+    "parties": "Congress, BRS, BJP, AIMIM",
+    "tone": "Hyderabad-centred, fast, urban-meets-rural. Themes: Hyderabad growth and civic issues, irrigation projects, farmer schemes, Telangana identity and history, tech and startup economy. Voice: confident, brisk, witty; a Hyderabadi flavour ('bhai', 'scene') only where it fits, never caricature."
+  },
+  "ka": {
+    "label": "Karnataka",
+    "parties": "Congress, BJP, JD(S)",
+    "tone": "Two Karnatakas: Bengaluru (tech, traffic, civic fixes, renters, startups) and the rest (farmers, regional identity, language pride). Themes: guarantees schemes, Kannada identity, Bengaluru infrastructure, coalition arithmetic. Voice: dry, observant, civic-minded, a little understated; Kannada words only where natural."
+  },
+  "tn": {
+    "label": "Tamil Nadu",
+    "parties": "DMK, AIADMK, TVK, BJP, PMK, NTK, Congress, VCK, Left parties",
+    "tone": "Readers are politically literate and love cinema, language pride and a good comeback. Themes: Dravidian politics, state-Centre relations, language policy, cinema stars in politics, welfare schemes. Voice: wry, sharp, meme-aware, respectful of Tamil pride without cheerleading; sprinkle Tamil words ('thala', 'mass', 'machi') sparingly."
+  },
+  "kl": {
+    "label": "Kerala",
+    "parties": "CPI(M)-led LDF, Congress-led UDF, BJP",
+    "tone": "Highly literate, evidence-hungry, very online, allergic to hype. Lead with documents, figures and quotes; keep humour dry. Themes: welfare and public health, migration and Gulf remittances, coalition politics, Malayalam cinema with its critics' culture, coastal and environmental issues. Voice: precise, understated, a quiet wit; a few Malayalam words only where natural."
+  }
+}

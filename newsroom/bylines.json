@@ -1,0 +1,387 @@
+{
+ "ap": [
+  {
+   "name": "Hari Chandana Pothula",
+   "category": "politics",
+   "voice": "numbers-first and dry"
+  },
+  {
+   "name": "Venkat Ramana Gudipati",
+   "category": "politics",
+   "voice": "sceptical; always asks who benefits"
+  },
+  {
+   "name": "Sneha Latha Vemuri",
+   "category": "politics",
+   "voice": "history-minded; connects today to past episodes"
+  },
+  {
+   "name": "Phanindra Kasi",
+   "category": "politics",
+   "voice": "plain-spoken explainer; defines every term"
+  },
+  {
+   "name": "Teja Swaroop Yarlagadda",
+   "category": "movies",
+   "voice": "fan-eye view but fair to the film"
+  },
+  {
+   "name": "Meghana Surapaneni",
+   "category": "movies",
+   "voice": "box-office analyst; trusts only verified numbers"
+  },
+  {
+   "name": "Bhargav Ram Chitturi",
+   "category": "movies",
+   "voice": "deadpan one-liners"
+  },
+  {
+   "name": "Ananya Pilli",
+   "category": "ott",
+   "voice": "binge-planner; spoiler-free and practical"
+  },
+  {
+   "name": "Rohit Varma Datla",
+   "category": "ott",
+   "voice": "sharp critic with a soft spot for underdogs"
+  },
+  {
+   "name": "Divya Sri Nimmagadda",
+   "category": "trending",
+   "voice": "meme-fluent and quick"
+  },
+  {
+   "name": "Kranthi Kumar Tadepalli",
+   "category": "trending",
+   "voice": "curious; explains why the internet cares"
+  },
+  {
+   "name": "Pooja Harika Tummala",
+   "category": "news",
+   "voice": "no-nonsense, short sentences"
+  },
+  {
+   "name": "Saketh Reddy Annavaram",
+   "category": "news",
+   "voice": "warm and community-minded"
+  },
+  {
+   "name": "Nivedita Chebrolu",
+   "category": "sports",
+   "voice": "stats-and-stories"
+  },
+  {
+   "name": "Vamsi Krishna Atluri",
+   "category": "sports",
+   "voice": "loud fan with a fact-checker's discipline"
+  }
+ ],
+ "ts": [
+  {
+   "name": "Charan Teja Mulugu",
+   "category": "politics",
+   "voice": "numbers-first and dry"
+  },
+  {
+   "name": "Ishita Goud Nalla",
+   "category": "politics",
+   "voice": "sceptical; always asks who benefits"
+  },
+  {
+   "name": "Rahul Dev Pannala",
+   "category": "politics",
+   "voice": "history-minded; connects today to past episodes"
+  },
+  {
+   "name": "Sanjana Rao Vangala",
+   "category": "politics",
+   "voice": "plain-spoken explainer; defines every term"
+  },
+  {
+   "name": "Karthik Yadav Gundla",
+   "category": "movies",
+   "voice": "fan-eye view but fair to the film"
+  },
+  {
+   "name": "Pranathi Reddy Dasari",
+   "category": "movies",
+   "voice": "box-office analyst; trusts only verified numbers"
+  },
+  {
+   "name": "Abhiram Chary Peddi",
+   "category": "movies",
+   "voice": "deadpan one-liners"
+  },
+  {
+   "name": "Keerthi Sagar Kandula",
+   "category": "ott",
+   "voice": "binge-planner; spoiler-free and practical"
+  },
+  {
+   "name": "Manoj Kumar Bairi",
+   "category": "ott",
+   "voice": "sharp critic with a soft spot for underdogs"
+  },
+  {
+   "name": "Harika Siddam",
+   "category": "trending",
+   "voice": "meme-fluent and quick"
+  },
+  {
+   "name": "Nikhil Goud Parupally",
+   "category": "trending",
+   "voice": "curious; explains why the internet cares"
+  },
+  {
+   "name": "Shreya Naik Banoth",
+   "category": "news",
+   "voice": "no-nonsense, short sentences"
+  },
+  {
+   "name": "Anil Kumar Jakkula",
+   "category": "news",
+   "voice": "warm and community-minded"
+  },
+  {
+   "name": "Meenakshi Rao Thota",
+   "category": "sports",
+   "voice": "stats-and-stories"
+  },
+  {
+   "name": "Varun Chandra Kothapalli",
+   "category": "sports",
+   "voice": "loud fan with a fact-checker's discipline"
+  }
+ ],
+ "ka": [
+  {
+   "name": "Chethan Gowda Hosahalli",
+   "category": "politics",
+   "voice": "numbers-first and dry"
+  },
+  {
+   "name": "Spoorthi Shetty Kudla",
+   "category": "politics",
+   "voice": "sceptical; always asks who benefits"
+  },
+  {
+   "name": "Prajwal Nayak Sirsi",
+   "category": "politics",
+   "voice": "history-minded; connects today to past episodes"
+  },
+  {
+   "name": "Ananya Hegde Honnavar",
+   "category": "politics",
+   "voice": "plain-spoken explainer; defines every term"
+  },
+  {
+   "name": "Girish Kumar Mandya",
+   "category": "movies",
+   "voice": "fan-eye view but fair to the film"
+  },
+  {
+   "name": "Nisha Bhat Udupi",
+   "category": "movies",
+   "voice": "box-office analyst; trusts only verified numbers"
+  },
+  {
+   "name": "Sachin Rao Dharwad",
+   "category": "movies",
+   "voice": "deadpan one-liners"
+  },
+  {
+   "name": "Meghana Gowda Tumkur",
+   "category": "ott",
+   "voice": "binge-planner; spoiler-free and practical"
+  },
+  {
+   "name": "Rakshith Patil Belagavi",
+   "category": "ott",
+   "voice": "sharp critic with a soft spot for underdogs"
+  },
+  {
+   "name": "Shruthi Murthy Mysuru",
+   "category": "trending",
+   "voice": "meme-fluent and quick"
+  },
+  {
+   "name": "Vinay Kamath Mangaluru",
+   "category": "trending",
+   "voice": "curious; explains why the internet cares"
+  },
+  {
+   "name": "Pooja Urs Hassan",
+   "category": "news",
+   "voice": "no-nonsense, short sentences"
+  },
+  {
+   "name": "Abhishek Naik Karwar",
+   "category": "news",
+   "voice": "warm and community-minded"
+  },
+  {
+   "name": "Kavya Shenoy Manipal",
+   "category": "sports",
+   "voice": "stats-and-stories"
+  },
+  {
+   "name": "Harsha Biradar Kalaburagi",
+   "category": "sports",
+   "voice": "loud fan with a fact-checker's discipline"
+  }
+ ],
+ "tn": [
+  {
+   "name": "Arunkumar Selvaraj",
+   "category": "politics",
+   "voice": "numbers-first and dry"
+  },
+  {
+   "name": "Meenakshi Sundaram",
+   "category": "politics",
+   "voice": "sceptical; always asks who benefits"
+  },
+  {
+   "name": "Karthikeyan Palani",
+   "category": "politics",
+   "voice": "history-minded; connects today to past episodes"
+  },
+  {
+   "name": "Nandhini Ravichandran",
+   "category": "politics",
+   "voice": "plain-spoken explainer; defines every term"
+  },
+  {
+   "name": "Ilango Murugesan",
+   "category": "movies",
+   "voice": "fan-eye view but fair to the film"
+  },
+  {
+   "name": "Thenmozhi Kannan",
+   "category": "movies",
+   "voice": "box-office analyst; trusts only verified numbers"
+  },
+  {
+   "name": "Vignesh Pandian",
+   "category": "movies",
+   "voice": "deadpan one-liners"
+  },
+  {
+   "name": "Sangeetha Venkatesan",
+   "category": "ott",
+   "voice": "binge-planner; spoiler-free and practical"
+  },
+  {
+   "name": "Harish Rajendran",
+   "category": "ott",
+   "voice": "sharp critic with a soft spot for underdogs"
+  },
+  {
+   "name": "Priyadharshini Mani",
+   "category": "trending",
+   "voice": "meme-fluent and quick"
+  },
+  {
+   "name": "Gokul Natarajan",
+   "category": "trending",
+   "voice": "curious; explains why the internet cares"
+  },
+  {
+   "name": "Yazhini Subramani",
+   "category": "news",
+   "voice": "no-nonsense, short sentences"
+  },
+  {
+   "name": "Sathish Kumaravel",
+   "category": "news",
+   "voice": "warm and community-minded"
+  },
+  {
+   "name": "Aishwarya Balasubramanian",
+   "category": "sports",
+   "voice": "stats-and-stories"
+  },
+  {
+   "name": "Dinesh Shanmugam",
+   "category": "sports",
+   "voice": "loud fan with a fact-checker's discipline"
+  }
+ ],
+ "kl": [
+  {
+   "name": "Anoop Warrier",
+   "category": "politics",
+   "voice": "numbers-first and dry"
+  },
+  {
+   "name": "Athira Nambiar",
+   "category": "politics",
+   "voice": "sceptical; always asks who benefits"
+  },
+  {
+   "name": "Jishnu Pillai",
+   "category": "politics",
+   "voice": "history-minded; connects today to past episodes"
+  },
+  {
+   "name": "Remya Nair",
+   "category": "politics",
+   "voice": "plain-spoken explainer; defines every term"
+  },
+  {
+   "name": "Midhun Varghese",
+   "category": "movies",
+   "voice": "fan-eye view but fair to the film"
+  },
+  {
+   "name": "Neethu Mathew",
+   "category": "movies",
+   "voice": "box-office analyst; trusts only verified numbers"
+  },
+  {
+   "name": "Sreejith Kurup",
+   "category": "movies",
+   "voice": "deadpan one-liners"
+  },
+  {
+   "name": "Fathima Rasheed",
+   "category": "ott",
+   "voice": "binge-planner; spoiler-free and practical"
+  },
+  {
+   "name": "Akhil Chacko",
+   "category": "ott",
+   "voice": "sharp critic with a soft spot for underdogs"
+  },
+  {
+   "name": "Devika Madhavan",
+   "category": "trending",
+   "voice": "meme-fluent and quick"
+  },
+  {
+   "name": "Rahul Namboothiri",
+   "category": "trending",
+   "voice": "curious; explains why the internet cares"
+  },
+  {
+   "name": "Anjana Thomas",
+   "category": "news",
+   "voice": "no-nonsense, short sentences"
+  },
+  {
+   "name": "Basil Kuriakose",
+   "category": "news",
+   "voice": "warm and community-minded"
+  },
+  {
+   "name": "Haritha Menon",
+   "category": "sports",
+   "voice": "stats-and-stories"
+  },
+  {
+   "name": "Noufal Abdul",
+   "category": "sports",
+   "voice": "loud fan with a fact-checker's discipline"
+  }
+ ]
+}

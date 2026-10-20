@@ -1,24 +1,27 @@
-// The Southwala newsroom: finds fresh South India stories, asks Claude to write them
-// in the house voice (newsroom/editor-guide.md), and saves them as articles.
+// The Southwala newsroom: finds fresh stories across the five southern states, assigns a state
+// desk byline and tone, asks Claude to write the story (newsroom/editor-guide.md), saves it.
 import fs from 'node:fs';
 import path from 'node:path';
-import { XMLParser } from 'fast-xml-parser';
+import { fetchFeed, classify, pageSummary } from './lib/feeds.mjs';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
-const CFG = JSON.parse(fs.readFileSync(path.join(ROOT, 'newsroom/sources.json'), 'utf8'));
-const GUIDE = fs.readFileSync(path.join(ROOT, 'newsroom/editor-guide.md'), 'utf8');
+const read = (p) => fs.readFileSync(path.join(ROOT, p), 'utf8');
+const CFG = JSON.parse(read('newsroom/sources.json'));
+const GUIDE = read('newsroom/editor-guide.md');
+const STATES = JSON.parse(read('newsroom/states.json'));
+const BYLINES = JSON.parse(read('newsroom/bylines.json'));
 const SEEN_FILE = path.join(ROOT, 'newsroom/seen.json');
 const OUT_DIR = path.join(ROOT, 'src/content/articles');
 
 const DRY = process.env.DRY_RUN === '1';
 const API_KEY = process.env.ANTHROPIC_API_KEY;
 const MODEL = process.env.ANTHROPIC_MODEL || 'claude-sonnet-5-5';
-const MAX = Number(process.env.MAX_ARTICLES || CFG.maxArticlesPerRun || 4);
-// Politics always waits for a human unless you turn this off in the GitHub settings.
+const MAX = Number(process.env.MAX_ARTICLES || CFG.maxArticlesPerRun || 6);
+// Politics always waits for a human unless you set POLITICS_REVIEW=off.
 const POLITICS_REVIEW = (process.env.POLITICS_REVIEW || 'on') !== 'off';
 
-const seen = fs.existsSync(SEEN_FILE) ? JSON.parse(fs.readFileSync(SEEN_FILE, 'utf8')) : { titles: [] };
-const parser = new XMLParser({ ignoreAttributes: false });
+const seen = fs.existsSync(SEEN_FILE) ? JSON.parse(fs.readFileSync(SEEN_FILE, 'utf8')) : { titles: [], links: [] };
+seen.links ??= [];
 
 const norm = (s) => s.toLowerCase().replace(/ - [^-]+$/, '').replace(/[^a-z0-9ऀ-෿ ]/g, ' ').split(/\s+/).filter((w) => w.length > 2);
 const jaccard = (a, b) => {
@@ -26,44 +29,46 @@ const jaccard = (a, b) => {
   const i = [...A].filter((x) => B.has(x)).length;
   return i / (A.size + B.size - i || 1);
 };
-const strip = (h = '') => String(h).replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
-
-async function fetchFeed(f) {
-  const url = f.url || `https://news.google.com/rss/search?q=${encodeURIComponent(f.query + ' when:1d')}&hl=en-IN&gl=IN&ceid=IN:en`;
-  try {
-    const res = await fetch(url, { headers: { 'User-Agent': 'Mozilla/5.0 SouthwalaBot' }, signal: AbortSignal.timeout(20000) });
-    if (!res.ok) throw new Error(res.status);
-    const xml = parser.parse(await res.text());
-    const items = [].concat(xml?.rss?.channel?.item ?? []);
-    return items.map((it) => ({
-      title: strip(it.title),
-      link: it.link,
-      publisher: strip(it.source?.['#text'] ?? it.source ?? ''),
-      snippet: strip(it.description),
-      date: new Date(it.pubDate),
-      category: f.category,
-      region: f.region,
-    }));
-  } catch (e) {
-    console.warn('feed failed:', f.query || f.url, String(e));
-    return [];
-  }
-}
+const hash = (s) => { let h = 2166136261; for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0; return h; };
 
 function cluster(items) {
   const clusters = [];
   for (const it of items) {
     const t = norm(it.title);
-    const hit = clusters.find((c) => jaccard(c.tokens, t) > 0.45);
+    const hit = clusters.find((c) => jaccard(c.tokens, t) > 0.4);
     if (hit) hit.items.push(it);
     else clusters.push({ tokens: t, items: [it], category: it.category, region: it.region });
   }
   return clusters;
 }
 
-async function writeStory(c) {
-  const material = c.items.slice(0, 6).map((i, n) => `${n + 1}. [${i.publisher || 'unknown outlet'}] ${i.title}\n   ${i.snippet.slice(0, 400)}\n   ${i.link}`).join('\n');
-  const user = `Category: ${c.category}\nRegion: ${c.region}\nToday: ${new Date().toISOString().slice(0, 10)}\n\nSOURCE MATERIAL (several outlets covering the same story):\n${material}\n\nWrite the Southwala story now. JSON only.`;
+// Same story always gets the same writer; different stories in a section rotate across the desk.
+function pickByline(c, key) {
+  const state = c.region === 'south' ? Object.keys(BYLINES)[hash(key) % 5] : c.region;
+  const desk = BYLINES[state];
+  const pool = desk.filter((p) => p.category === c.category);
+  const list = pool.length ? pool : desk;
+  return { state, person: list[hash(key) % list.length] };
+}
+
+async function writeStory(c, who) {
+  const cards = Object.entries(STATES).map(([k, s]) => `- ${k} (${s.label}): parties to treat symmetrically: ${s.parties}. Tone: ${s.tone}`).join('\n');
+  const material = [];
+  for (const [n, i] of c.items.slice(0, 6).entries()) {
+    let body = i.snippet;
+    if (i.lang === 'te' && n < 3) body = await pageSummary(i.link);
+    material.push(`${n + 1}. [${i.publisher || 'unknown outlet'}${i.lang === 'te' ? ', Telugu-language source' : ''}] ${i.title}\n   ${body.slice(0, 1200)}\n   ${i.link}`);
+  }
+  const st = STATES[who.state];
+  const user = [
+    `Byline: ${who.person.name}, ${st.label} ${c.category} desk. Voice: ${who.person.voice}. Write in this voice.`,
+    `Section: ${c.category}. State focus: ${st.label} (${c.region}).`,
+    `State tone cards (apply the one for this story's state):\n${cards}`,
+    `Today: ${new Date().toISOString().slice(0, 10)}`,
+    `Some sources are in Telugu: understand them, then write natural English. Transliterate names consistently and never paste Telugu text unless translated.`,
+    `SOURCE MATERIAL (several outlets covering the same story):\n${material.join('\n')}`,
+    'Write the Southwala story now. JSON only.',
+  ].join('\n\n');
   const res = await fetch('https://api.anthropic.com/v1/messages', {
     method: 'POST',
     headers: { 'x-api-key': API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' },
@@ -73,15 +78,14 @@ async function writeStory(c) {
   if (!res.ok) throw new Error(`Claude API ${res.status}: ${(await res.text()).slice(0, 300)}`);
   const data = await res.json();
   const text = data.content.filter((b) => b.type === 'text').map((b) => b.text).join('');
-  const json = text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1);
-  return JSON.parse(json);
+  return JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1));
 }
 
 const q = (s) => JSON.stringify(String(s)); // JSON strings are valid YAML
 
-function toMarkdown(c, a) {
+function toMarkdown(c, a, who) {
   const draft = a.risk === 'high' || (POLITICS_REVIEW && c.category === 'politics');
-  const sources = c.items.slice(0, 5).filter((i) => i.publisher && i.link);
+  const sources = c.items.filter((i) => i.publisher && i.link).slice(0, 5);
   const fm = [
     '---',
     `title: ${q(a.title)}`,
@@ -89,6 +93,7 @@ function toMarkdown(c, a) {
     `date: ${new Date().toISOString()}`,
     `category: ${c.category}`,
     `region: ${c.region}`,
+    `author: ${q(who.person.name)}`,
     `format: ${q(a.format || '60-Second Explainer')}`,
     `tldr: ${q(a.tldr)}`,
     `imageAlt: ${q(a.imageAlt || a.title)}`,
@@ -97,36 +102,41 @@ function toMarkdown(c, a) {
     ...sources.map((s) => `  - { title: ${q(s.title)}, url: ${q(s.link)}, publisher: ${q(s.publisher)} }`),
     `draft: ${draft}`,
     `reviewNote: ${q(a.reviewNote || '')}`,
-    '---',
-    '',
-    a.body.trim(),
-    '',
+    '---', '', a.body.trim(), '',
   ];
   return { draft, text: fm.join('\n') };
 }
 
 async function main() {
-  const all = (await Promise.all(CFG.feeds.map(fetchFeed))).flat();
+  const raw = (await Promise.all(CFG.feeds.map(fetchFeed))).flat();
   const cutoff = Date.now() - CFG.maxAgeHours * 3600 * 1000;
-  const fresh = all.filter((i) => i.title && i.date.getTime() > cutoff);
+  const fresh = raw.filter((i) => i.title && i.date.getTime() > cutoff && !seen.links.includes(i.link)).map(classify);
   const seenTok = seen.titles.map(norm);
   const clusters = cluster(fresh)
-    .filter((c) => !seenTok.some((t) => jaccard(t, c.tokens) > 0.45))
-    .map((c) => ({ ...c, score: new Set(c.items.map((i) => i.publisher)).size * 10 + c.items.length }))
+    .filter((c) => !seenTok.some((t) => jaccard(t, c.tokens) > 0.4))
+    .map((c) => {
+      const first = c.items[0];
+      const outlets = new Set(c.items.map((i) => i.publisher)).size;
+      return { ...c, category: first.category, region: first.region, score: outlets * 10 + c.items.length };
+    })
     .sort((a, b) => b.score - a.score);
 
-  // Spread the picks across categories so the front page is not all one topic.
-  const picks = [], used = {};
+  // Spread picks across sections and states so the front page is varied.
+  const picks = [], cat = {}, reg = {};
   for (const c of clusters) {
-    if ((used[c.category] ?? 0) >= 2) continue;
-    used[c.category] = (used[c.category] ?? 0) + 1;
+    if ((cat[c.category] ?? 0) >= CFG.maxPerCategory || (reg[c.region] ?? 0) >= CFG.maxPerRegion) continue;
+    cat[c.category] = (cat[c.category] ?? 0) + 1;
+    reg[c.region] = (reg[c.region] ?? 0) + 1;
     picks.push(c);
     if (picks.length >= MAX) break;
   }
-  console.log(`${all.length} items, ${fresh.length} fresh, ${clusters.length} new stories, writing ${picks.length}`);
+  console.log(`${raw.length} items, ${fresh.length} fresh, ${clusters.length} new stories, writing ${picks.length}`);
 
   if (DRY || !API_KEY) {
-    for (const c of picks) console.log(`- [${c.category}/${c.region}] (${c.items.length} reports) ${c.items[0].title}`);
+    for (const c of picks) {
+      const w = pickByline(c, c.items[0].link);
+      console.log(`- [${c.category}/${c.region}] by ${w.person.name} (${c.items.length} reports) ${c.items[0].title}`);
+    }
     if (!DRY) console.log('\nNo ANTHROPIC_API_KEY set, so nothing was written.');
     return;
   }
@@ -134,20 +144,23 @@ async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   for (const c of picks) {
     try {
-      const a = await writeStory(c);
-      if (a.skip) { console.log('skipped:', a.reason); seen.titles.push(c.items[0].title); continue; }
+      const who = pickByline(c, c.items[0].link);
+      const a = await writeStory(c, who);
+      c.items.forEach((i) => seen.links.push(i.link));
+      seen.titles.push(c.items[0].title);
+      if (a.skip) { console.log('skipped:', a.reason); continue; }
       const slug = String(a.slug || a.title).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 70);
       const file = path.join(OUT_DIR, `${slug}.md`);
       if (fs.existsSync(file)) continue;
-      const { draft, text } = toMarkdown(c, a);
+      const { draft, text } = toMarkdown(c, a, who);
       fs.writeFileSync(file, text);
-      seen.titles.push(c.items[0].title);
-      console.log(`${draft ? 'DRAFT ' : 'LIVE  '} ${slug}`);
+      console.log(`${draft ? 'DRAFT ' : 'LIVE  '} ${c.region}/${c.category} ${slug} (${who.person.name})`);
     } catch (e) {
       console.warn('story failed:', c.items[0].title, String(e));
     }
   }
-  seen.titles = seen.titles.slice(-600);
+  seen.titles = seen.titles.slice(-800);
+  seen.links = seen.links.slice(-3000);
   fs.writeFileSync(SEEN_FILE, JSON.stringify(seen, null, 1));
 }
 main();

@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { TEAM } from '../lib/articles';
+import { REGIONS } from '../config';
+const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
+---
+<Base title="Our desks and bylines" description="How Southwala's state desks and bylines work.">
+  <div class="page">
+    <h1>Our desks and bylines</h1>
+    <p>Southwala runs five state desks. Every byline here is an <b>AI-assisted desk byline</b>: a named editorial voice with a fixed beat, not a human reporter in the field. Stories are drafted by AI from the cited sources, follow our <a href="/editorial-policy/">editorial policy</a>, and politically sensitive stories are reviewed by a human editor before publication. Bylines do not claim interviews, on-the-ground reporting or personal experience.</p>
+    {states.map((s) => (
+      <>
+        <h2>{REGIONS[s]}</h2>
+        <ul>{TEAM.filter((p) => p.state === s).map((p) => <li><a href={`/author/${p.slug}/`}><b>{p.name}</b></a>: {p.desk}</li>)}</ul>
+      </>
+    ))}
+  </div>
+</Base>
