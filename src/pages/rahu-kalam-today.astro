@@ -18,19 +18,19 @@ const part = ['', '1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th'];
 const RAHU = [8, 2, 7, 5, 6, 4, 3];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
-<Base title="Rahu Kalam Today: Timings for Hyderabad, Vijayawada, Visakhapatnam, Chennai, Bengaluru, Kochi" description="Today's Rahu Kalam, Yamagandam and Gulika Kalam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi, with how Rahu Kalam is calculated." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Rahu Kalam today', href: '/rahu-kalam-today/' }]} image="/covers/rahu-kalam.png">
+<Base title="Rahu Kalam Today: Timings for Every Southern City" description="Today's Rahu Kalam, Yamagandam and Gulika Kalam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi, with how Rahu Kalam is calculated." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Rahu Kalam today', href: '/rahu-kalam-today/' }]} image="/covers/rahu-kalam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page" style="max-width:900px">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
     <h1>Rahu Kalam Today</h1>
     <p class="meta" style="margin-top:0" id="when">{pretty}</p>
     <Hero name="panchangam" alt="A sun, a lotus of five petals and a crescent moon above a palm-leaf manuscript" ratio="16/4" />
-    <table class="data">
+    <div class="tw"><table class="data">
       <thead><tr><th>City</th><th>Rahu Kalam</th><th>Yamagandam</th><th>Gulika Kalam</th></tr></thead>
       <tbody>{rows.map(({ id, c, p }) => (
         <tr><td><a href={`/panchangam/${id}/`} style="text-decoration:underline"><b>{c.name}</b></a></td><td><b>{t(p.rahu.start)} to {t(p.rahu.end)}</b></td><td>{t(p.yama.start)} to {t(p.yama.end)}</td><td>{t(p.gulika.start)} to {t(p.gulika.end)}</td></tr>
       ))}</tbody>
-    </table>
+    </table></div>
     <p class="sub">Traditionally avoided for starting new work, signing or beginning a journey. Calculated from local sunrise and sunset for each city.</p>
     <div class="sechead" style="margin-top:26px"><h2>Rahu Kalam by weekday</h2></div>
     <table class="data">

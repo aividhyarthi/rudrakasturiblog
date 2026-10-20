@@ -23,7 +23,7 @@ let title = '', description = '', h1 = '', crumbs = base, jsonLd: any = undefine
 if (props.type === 'temple') {
   const d = props.t.data;
   Content = (await props.t.render()).Content;
-  title = `${d.name}: History, Festivals and Visiting Guide`; description = d.summary; h1 = d.name;
+  title = d.name; description = d.summary; h1 = d.name;
   crumbs = [...base, { name: d.name, href: `/temples/${slug}/` }];
   jsonLd = { '@context': 'https://schema.org', '@type': 'HinduTemple', name: d.name, description: d.summary, url, address: { '@type': 'PostalAddress', addressLocality: d.place, addressRegion: REGIONS[d.state as keyof typeof REGIONS], addressCountry: 'IN' } };
 } else if (props.type === 'list') {
@@ -33,7 +33,7 @@ if (props.type === 'temple') {
   jsonLd = { '@context': 'https://schema.org', '@type': 'ItemList', name: l.h1, itemListElement: l.entries.map((e: any, i: number) => ({ '@type': 'ListItem', position: i + 1, name: `${e.name}, ${e.place}, ${e.state}` })) };
 } else {
   const goddess = props.kind === 'goddess';
-  title = goddess ? 'Goddess Temples of India: Shakti Peethas, Devi Temples and Guides' : 'God Temples of India: Jyotirlingas, Vishnu and Shiva Temples and Guides';
+  title = goddess ? 'Goddess Temples of India: Shakti Peethas and Devi Temples' : 'God Temples of India: Shiva, Vishnu and Rama Temples';
   description = goddess ? 'Guides and lists of the most important Devi and Shakti temples of India.' : 'Guides and lists of the most important Shiva, Vishnu and Rama temples of India.';
   h1 = goddess ? 'Goddess temples of India' : 'God temples of India';
   crumbs = [...base, { name: h1, href: `/temples/${slug}/` }];
@@ -69,14 +69,13 @@ const imageSlug = props.type === 'temple' ? `t-${slug}` : 'temples';
     {props.type === 'list' && (<>
       {props.l.intro.map((p: string) => <p class="dek" style="font-size:18px">{p}</p>)}
       <table class="data">
-        <thead><tr><th style="width:5%">#</th><th>Temple</th><th>Place</th><th>State</th></tr></thead>
+        <thead><tr><th style="width:6%">#</th><th>Temple</th><th style="width:34%">Where</th></tr></thead>
         <tbody>
           {props.l.entries.map((e: any, i: number) => (
             <tr>
               <td>{i + 1}</td>
               <td>{e.slug ? <a href={`/temples/${e.slug}/`} style="text-decoration:underline"><b>{e.name}</b></a> : <b>{e.name}</b>}<div class="sub">{[e.deity !== e.name ? e.deity : '', e.note ?? ''].filter(Boolean).join('. ')}</div></td>
-              <td>{e.place}</td>
-              <td>{e.state}</td>
+              <td>{e.place}, {e.state}</td>
             </tr>
           ))}
         </tbody>

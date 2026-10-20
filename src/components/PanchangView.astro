@@ -1,5 +1,5 @@
 ---
-import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, type CityId } from '../lib/panchang';
+import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, todayIST, type CityId } from '../lib/panchang';
 const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
 const p = panchangFor(ymd, city);
 const c = CITIES[city];
@@ -9,6 +9,9 @@ const range = (r: { start: Date; end: Date }) => `${t(r.start)} to ${t(r.end)}`;
 const seg = (s: { paksha?: string; name: string; te?: string; endsAt: Date }, i: number, n: number) =>
   `${s.paksha ? s.paksha + ' ' : ''}${s.name}${s.te ? ' (' + (s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : '') + s.te + ')' : ''}`;
 const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
+const tdy = todayIST();
+const offset = Math.round((Date.UTC(ymd.y, ymd.m - 1, ymd.d) - Date.UTC(tdy.y, tdy.m - 1, tdy.d)) / 86400000);
+const hasPrev = offset > -2, hasNext = offset < 45;
 ---
 <table class="data">
   <tbody>
@@ -48,4 +51,4 @@ const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
 </table>
 
 <p class="disc">Calculated for {c.name}, {c.state}, from astronomical positions of the Sun and Moon (Lahiri ayanamsa, local sunrise). Places a few hundred kilometres away differ by a few minutes. Traditions vary by region and family: for rituals, weddings and muhurthams, please confirm with your family priest or temple.</p>
-<div class="chips"><a href={`/panchangam/${city}/${prev}/`}>&larr; Previous day</a><a href={`/panchangam/${city}/${next}/`}>Next day &rarr;</a></div>
+<div class="chips">{hasPrev && <a href={`/panchangam/${city}/${prev}/`}>&larr; Previous day</a>}{hasNext && <a href={`/panchangam/${city}/${next}/`}>Next day &rarr;</a>}</div>

@@ -133,3 +133,8 @@ footer a{margin-right:16px;text-decoration:underline;color:#fff}
 @media(max-width:640px){.todaybar .wrap{gap:4px 14px}.todaybar span:nth-of-type(n+3){display:none}}
 .hero{width:100%;object-fit:cover;display:block;margin:12px 0 18px;border:1px solid #111;background:var(--soft)}
 .panel .hero{margin:0;border:0;border-bottom:1px solid #111}
+
+.sechead h1{margin:0;font-size:15px;text-transform:uppercase;letter-spacing:1px;background:#111;color:#fff;padding:5px 12px;font-family:var(--serif);font-weight:700}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tw table.data{min-width:520px}
+@media(max-width:640px){table.data{font-size:14.5px}table.data th,table.data td{padding:8px 6px}}

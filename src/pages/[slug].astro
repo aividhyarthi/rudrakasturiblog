@@ -71,7 +71,7 @@ const all = await allArticles();
 <Base title={isCat ? sec!.brand : title} description={blurb} active={isCat ? props.id : undefined} breadcrumbs={[{ name: isCat ? sec!.label : title, href: isCat ? sec!.href : stateHref(props.code) }]}>
   <div class="art">
     <div>
-      <div class="sechead"><h2>{isCat ? sec!.brand : title}</h2></div>
+      <div class="sechead"><h1>{isCat ? sec!.brand : title}</h1></div>
       <p class="meta" style="font-size:15px;margin:-4px 0 16px">{blurb}</p>
       <div class="blocks" style="margin:0;grid-template-columns:repeat(2,1fr)">{items.map((a: any) => <Card a={a} big />)}</div>
     </div>

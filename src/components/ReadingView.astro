@@ -15,9 +15,9 @@ const tomorrow = span === 'daily' ? reading(i, addDays(today, 1), 'daily') : nul
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const label = { daily: 'Today', weekly: 'This week', monthly: 'This month' }[span];
 const titles = {
-  daily: `${r.skt} Rasi Phalalu Today (${r.en} Daily Horoscope): ${fd(today)}`,
-  weekly: `${r.skt} Rasi Weekly Horoscope (${r.en}): ${range}`,
-  monthly: `${r.skt} Rasi Monthly Horoscope (${r.en}): ${range}`,
+  daily: `${r.skt} Rasi Phalalu Today (${r.en}): ${fd(today)}`,
+  weekly: `${r.skt} Rasi Weekly Horoscope (${r.en}), ${today.d}-${addDays(today, 6).d} ${M[addDays(today, 6).m - 1].slice(0, 3)} ${today.y}`,
+  monthly: `${r.skt} Rasi Monthly Horoscope (${r.en}), ${M[today.m - 1].slice(0, 3)} ${today.y}`,
 };
 const base = `/rasi-phalalu/${r.id}/`;
 const crumbs = [{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }, { name: r.skt, href: base }, ...(span === 'daily' ? [] : [{ name: label, href: `${base}${span}/` }])];

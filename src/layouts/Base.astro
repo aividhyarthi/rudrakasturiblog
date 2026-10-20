@@ -4,7 +4,7 @@ import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID } from '../config';
 import { sectionCounts } from '../lib/articles';
 interface Props { todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
 const { todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
-const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
+const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
 const nav = SECTIONS.filter((s) => s.always || counts.cat[s.id]);
