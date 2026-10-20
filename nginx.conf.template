@@ -1,0 +1,20 @@
+# Railway gives the port through $PORT; the nginx image fills it in at start-up.
+server {
+  listen ${PORT};
+  listen [::]:${PORT};
+  server_name _;
+  root /usr/share/nginx/html;
+  index index.html;
+  absolute_redirect off;
+
+  gzip on;
+  gzip_types text/css application/javascript application/json image/svg+xml application/xml text/plain;
+
+  location = /healthz { access_log off; default_type text/plain; return 200 "ok"; }
+  location /_astro/ { expires 1y; add_header Cache-Control "public, immutable"; }
+  location /covers/ { expires 7d; }
+  location = /feed/ { return 301 /rss.xml; }
+
+  location / { try_files $uri $uri/ =404; }
+  error_page 404 /404.html;
+}

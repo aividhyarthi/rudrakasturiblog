@@ -13,11 +13,13 @@ GitHub repo > Settings > Secrets and variables > Actions > **New repository secr
 Then Actions tab > **Newsroom (auto-write stories)** > **Run workflow**. Stories appear in
 `src/content/articles/`. After that it runs by itself every 3 hours.
 
-## 3. Put the site online (Cloudflare Pages, free)
-1. dash.cloudflare.com > Workers & Pages > Create > Pages > Connect to Git > pick this repo, branch `main`.
-2. Build command: `npm run build`   Output folder: `dist`
-3. Custom domains > add `southwala.com` and follow the DNS steps it shows.
-Every time the newsroom saves a story, the site rebuilds and updates itself.
+## 3. Put the site online (Railway)
+1. railway.com > **New Project > Deploy from GitHub repo** > pick `aividhyarthi/rudrakasturiblog`.
+2. Open the service > **Settings > Source** and set the branch to `claude/beautiful-newton-lnqky5` (or `main` once we create it).
+3. Railway finds the `Dockerfile` by itself. No variables needed. Wait for the green tick.
+4. **Settings > Networking > Generate Domain** to get a test link. Open it and check the site.
+5. Later: **+ Custom Domain** > `southwala.com`, then add the CNAME/TXT records Railway shows at your domain registrar. If asked for a port, choose `8080`.
+Every time the newsroom saves a story, Railway redeploys the site by itself.
 
 ## 4. Politics stories wait for you (on purpose)
 Politics stories are saved as drafts, and the live site hides them. To approve one:
