@@ -1,10 +1,15 @@
 ---
 import '../styles/global.css';
-import { SITE, NAV, ADSENSE_CLIENT, GA_ID } from '../config';
-interface Props { breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
-const { breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
+import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID } from '../config';
+import { sectionCounts } from '../lib/articles';
+interface Props { todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
+const { todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
+const counts = await sectionCounts();
+const nav = SECTIONS.filter((s) => s.always || counts.cat[s.id]);
+const section = SECTIONS.find((s) => s.id === active);
+const subnav = (active && SUBNAV[active]) || [];
 const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
 const orgLd = home ? [
   { '@context': 'https://schema.org', '@type': 'NewsMediaOrganization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png`, width: 512, height: 512 }, email: SITE.email, publishingPrinciples: `${SITE.url}/editorial-policy/` },
@@ -48,10 +53,17 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     <div class="date"><span id="today">{SITE.tagline}</span><br />Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</div>
   </div></header>
   <nav class="main"><div class="wrap">
-    {NAV.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''}>{c.label}</a>)}
+    <a href="/" class={!active ? 'on' : ''}>Home</a>
+    {nav.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''}>{c.label}</a>)}
   </div></nav>
+  {section && (
+    <div class="brandbar"><div class="wrap">
+      <a class="brand" href={section.href}>{section.brand}</a>
+      {subnav.length > 0 && <div class="subnav">{subnav.map((s) => <a href={s.href}>{s.label}</a>)}</div>}
+    </div></div>
+  )}
   <script is:inline>try{document.getElementById('today').textContent=new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'})}catch(e){}</script>
-  <main class="wrap"><slot /></main>
+  {home ? <slot /> : <main class="wrap"><slot /></main>}
   <footer>
     <div class="wrap">
       <p style="margin:0 0 10px"><b>{SITE.name}</b>: {SITE.description}</p>

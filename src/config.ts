@@ -21,17 +21,30 @@ export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 
 export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
 export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/news/');
 
-// Top navigation. Politics, Religion and Astrology are their own sections.
-export const NAV = [
-  { id: 'politics', label: 'Politics', href: '/politics/' },
-  { id: 'religion', label: 'Religion', href: '/religion/' },
-  { id: 'astrology', label: 'Rasi Phalalu', href: '/rasi-phalalu/' },
-  { id: 'movies', label: 'Movies', href: '/movies/' },
-  { id: 'ott', label: 'TV & OTT', href: '/tv-ott/' },
-  { id: 'trending', label: 'Trending', href: '/trending/' },
-  { id: 'news', label: 'News', href: '/news/' },
-  { id: 'sports', label: 'Sports', href: '/sports/' },
+// Sections. `always` sections have built-in content; the rest appear when they have published stories.
+export const SECTIONS = [
+  { id: 'politics', label: 'Politics', brand: 'Southwala Politics', href: '/politics/', always: false },
+  { id: 'religion', label: 'Devotional', brand: 'Southwala Devotional', href: '/religion/', always: true },
+  { id: 'astrology', label: 'Astrology', brand: 'Southwala Astrology', href: '/rasi-phalalu/', always: true },
+  { id: 'movies', label: 'Cinema', brand: 'Southwala Cinema', href: '/movies/', always: false },
+  { id: 'ott', label: 'TV & OTT', brand: 'Southwala OTT', href: '/tv-ott/', always: false },
+  { id: 'trending', label: 'Trending', brand: 'Southwala Trending', href: '/trending/', always: false },
+  { id: 'news', label: 'News', brand: 'Southwala News', href: '/news/', always: false },
+  { id: 'sports', label: 'Sports', brand: 'Southwala Sports', href: '/sports/', always: false },
 ] as const;
+
+// Sub-navigation shown under the section brand.
+export const SUBNAV: Record<string, { label: string; href: string }[]> = {
+  religion: [
+    { label: 'Panchangam', href: '/panchangam/hyderabad/' },
+    { label: 'Rahu Kalam today', href: '/rahu-kalam-today/' },
+    { label: 'Temples', href: '/temples/' },
+    { label: 'Jyotirlingas', href: '/temples/jyotirlingas/' },
+    { label: 'Shakti Peethas', href: '/temples/shakti-peethas/' },
+    { label: 'Char Dham', href: '/temples/char-dham/' },
+    { label: 'Bhagavad Gita', href: '/bhagavad-gita/' },
+  ],
+};
 
 export const CATEGORIES = [
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },

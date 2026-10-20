@@ -1,9 +1,9 @@
 ---
+import Thumb from './Thumb.astro';
 import { categoryLabel, fmtDate, type Article } from '../lib/articles';
 const { a } = Astro.props as { a: Article };
 ---
-<a class="item" href={`/${a.slug}/`}>
-  <div class="kicker">{categoryLabel(a.data.category)}</div>
-  <h3>{a.data.title}</h3>
-  <div class="meta">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
+<a class="row" href={`/${a.slug}/`}>
+  <div class="rthumb"><Thumb category={a.data.category} slug={a.slug} ratio="4/3" /></div>
+  <div><div class="kicker">{categoryLabel(a.data.category)}</div><div class="t">{a.data.title}</div><div class="meta">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div></div>
 </a>

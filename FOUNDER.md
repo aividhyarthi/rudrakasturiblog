@@ -43,3 +43,8 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Gita: chapter guides in our own words only. The only ready-made Gita dataset found is Prabhupada's (BBT, copyrighted): not used. Verse-by-verse text would need a public-domain translation (e.g. Telang 1882) plus the Sanskrit original; ask founder before adding.
 - Politician profiles: on hold (ADR terms). Founder says no ads at the moment, but monetisation is planned, so the hold stands.
 - Still to do for search: real photos (licensed or own) beat text cards on Discover; get Search Console + Bing Webmaster set up; Telugu edition later.
+
+## Update 2026-10-20 (design v3)
+- Look: white background, black text, black nav bar, one red accent for labels. News-portal layout: today bar (panchangam snapshot), lead story, top stories, latest, section panels.
+- Each section shows its own brand under the logo: Southwala Politics, Southwala Devotional, Southwala Astrology, Southwala Cinema, Southwala OTT (and Trending/News/Sports when they have stories). Sections with no published stories (Trending, News, Sports) and states with none (Karnataka) are hidden automatically and appear when the newsroom publishes into them.
+- Pictures: our own line drawings on soft tints for story thumbnails; headline cards (1200x675) for sharing. Real licensed photos still the upgrade path for Discover.

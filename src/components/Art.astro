@@ -1,6 +1,6 @@
 ---
 // Simple black line drawings, made for Southwala. No photos, so nothing to license.
-const { name, size = 44 } = Astro.props as { name: 'gopuram' | 'sun' | 'moon' | 'diya' | 'lotus' | 'ballot' | 'stars' | 'scroll'; size?: number };
+const { name, size = 44 } = Astro.props as { name: 'gopuram' | 'sun' | 'moon' | 'diya' | 'lotus' | 'ballot' | 'stars' | 'scroll' | 'film' | 'tv' | 'newspaper' | 'trophy' | 'flame'; size?: number };
 ---
 <svg width={size} height={size} viewBox="0 0 120 120" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
   {name === 'gopuram' && (<>
@@ -39,5 +39,24 @@ const { name, size = 44 } = Astro.props as { name: 'gopuram' | 'sun' | 'moon' | 
   {name === 'scroll' && (<>
     <path d="M30 24h60v70a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10zM40 40h40M40 54h40M40 68h28" />
     <path d="M30 24a10 10 0 1 0-10 10" />
+  </>)}
+  {name === 'film' && (<>
+    <path d="M16 52h88v52H16zM16 52l10-22h20L36 52M42 52l10-22h20L62 52M68 52l10-22h20L88 52" />
+    <path d="M52 70l22 12-22 12z" />
+  </>)}
+  {name === 'tv' && (<>
+    <rect x="14" y="32" width="92" height="62" rx="6" />
+    <path d="M40 106h40M48 94v12M72 94v12M48 18l12 14 12-14M52 62l20 10-20 10z" />
+  </>)}
+  {name === 'newspaper' && (<>
+    <path d="M20 28h66v72H26a6 6 0 0 1-6-6zM86 46h14v48a6 6 0 0 1-6 6" />
+    <path d="M30 42h46M30 56h46M30 70h30M30 84h30" />
+  </>)}
+  {name === 'trophy' && (<>
+    <path d="M40 22h40v26a20 20 0 0 1-40 0zM40 30H22v6a16 16 0 0 0 18 16M80 30h18v6a16 16 0 0 1-18 16M60 70v18M44 100h32M50 88h20" />
+  </>)}
+  {name === 'flame' && (<>
+    <path d="M60 12c8 18 28 30 28 56a28 28 0 0 1-56 0c0-14 8-20 14-30 4 8 6 10 10 12 4-12 2-24 4-38z" />
+    <path d="M60 72c6 8 10 12 10 18a10 10 0 0 1-20 0c0-6 4-10 10-18z" />
   </>)}
 </svg>

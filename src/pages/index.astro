@@ -3,45 +3,81 @@ import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import Row from '../components/Row.astro';
 import Sidebar from '../components/Sidebar.astro';
-import Art from '../components/Art.astro';
+import Thumb from '../components/Thumb.astro';
 import { allArticles, categoryLabel, fmtDate } from '../lib/articles';
-import { CATEGORIES, catHref } from '../config';
+import { SECTIONS } from '../config';
+import { RASHIS, reading } from '../lib/astro';
+import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 const all = await allArticles();
 const [lead, ...rest] = all;
+const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const stars = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
+const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const sections = SECTIONS.filter((s) => !s.always).map((s) => ({ s, items: all.filter((a) => a.data.category === s.id).slice(0, 3) })).filter((x) => x.items.length);
 ---
 <Base home image="/covers/home.png">
-  <section class="tiles" style="margin-top:22px">
-    <a class="tile" href="/panchangam/hyderabad/"><Art name="sun" /><h3>Today's Panchangam</h3><div class="meta">Sunrise, sunset, Rahu Kalam, tithi, nakshatra and good timings.</div></a>
-    <a class="tile" href="/rasi-phalalu/"><Art name="stars" /><h3>Rashi Phalalu</h3><div class="meta">Daily, weekly and monthly for every rashi, from today's planetary positions.</div></a>
-    <a class="tile" href="/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Guides to major temples of Andhra Pradesh and Telangana: history, festivals, what to know before you visit.</div></a>
-  </section>
+  <div class="todaybar"><div class="wrap">
+    <b>Today · Hyderabad</b>
+    <span>{p.tithi[0].paksha} {p.tithi[0].name}</span>
+    <span>{p.nakshatra[0].name} nakshatra</span>
+    <span>Rahu Kalam {t(p.rahu.start)} to {t(p.rahu.end)}</span>
+    <span>Sunrise {t(p.sunrise)} · Sunset {t(p.sunset)}</span>
+    <a href="/panchangam/hyderabad/">Full panchangam</a>
+  </div></div>
+  <main class="wrap" style="padding-top:0">
   {!lead ? (
     <div class="empty"><h1>First stories dropping soon.</h1></div>
   ) : (
-    <>
-      <section class="home">
-        <div class="lead">
-          <a href={`/${lead.slug}/`} style="display:block">
-            <div class="kicker">{categoryLabel(lead.data.category)}</div>
-            <h1>{lead.data.title}</h1>
-            <p>{lead.data.description}</p>
-            <div class="meta" style="margin-top:8px">{lead.data.author} · {fmtDate(lead.data.date)}</div>
-          </a>
-          <div style="margin-top:22px">{rest.slice(0, 5).map((a) => <Card a={a} />)}</div>
-        </div>
-        <Sidebar exclude={lead.slug} />
-      </section>
-      <section class="cols">
-        {CATEGORIES.map((c) => {
-          const items = all.filter((a) => a.data.category === c.id).slice(0, 3);
-          return items.length ? (
-            <div>
-              <div class="sechead"><h2>{c.label}</h2><a href={catHref(c.id)}>More</a></div>
-              {items.map((a) => <Row a={a} />)}
-            </div>
-          ) : null;
-        })}
-      </section>
-    </>
+    <section class="home">
+      <div class="lead">
+        <a href={`/${lead.slug}/`} style="display:block">
+          <Thumb category={lead.data.category} slug={lead.slug} />
+          <div class="kicker">{categoryLabel(lead.data.category)}</div>
+          <h1>{lead.data.title}</h1>
+          <p>{lead.data.description}</p>
+          <div class="meta" style="margin-top:8px">{lead.data.author} · {fmtDate(lead.data.date)}</div>
+        </a>
+        {rest.slice(0, 2).length > 0 && <div class="twin">{rest.slice(0, 2).map((a) => <Card a={a} big />)}</div>}
+      </div>
+      <div>
+        <div class="sechead"><h2>Top stories</h2></div>
+        <div>{rest.slice(2, 8).map((a) => <Row a={a} />)}</div>
+      </div>
+      <Sidebar exclude={lead.slug} />
+    </section>
   )}
+  <section class="blocks">
+    <div class="panel">
+      <div class="sechead"><h2>Southwala Devotional</h2><a href="/religion/" style="padding-right:10px">All</a></div>
+      <div class="in">
+        <table class="data" style="margin:0 0 8px"><tbody>
+          <tr><th style="width:38%">Tithi</th><td>{p.tithi[0].paksha} {p.tithi[0].name} <span class="te">({p.tithi[0].te})</span></td></tr>
+          <tr><th>Nakshatra</th><td>{p.nakshatra[0].name} <span class="te">({p.nakshatra[0].te})</span></td></tr>
+          <tr><th>Rahu Kalam</th><td>{t(p.rahu.start)} to {t(p.rahu.end)}</td></tr>
+          <tr><th>Abhijit</th><td>{t(p.abhijit.start)} to {t(p.abhijit.end)}</td></tr>
+        </tbody></table>
+        <div class="chips"><a href="/panchangam/hyderabad/">Panchangam</a><a href="/rahu-kalam-today/">Rahu Kalam</a><a href="/temples/">Temples</a><a href="/temples/jyotirlingas/">Jyotirlingas</a><a href="/bhagavad-gita/">Bhagavad Gita</a></div>
+      </div>
+    </div>
+    <div class="panel">
+      <div class="sechead"><h2>Southwala Astrology</h2><a href="/rasi-phalalu/" style="padding-right:10px">All</a></div>
+      <div class="in" style="padding:0">
+        <div class="signs">{stars.map(({ r, d }) => <a href={`/rasi-phalalu/${r.id}/`}><span class="sym">{r.sym}</span><b>{r.skt}</b><div class="stars" style="font-size:12px;letter-spacing:1px">{star(d.rating)}</div></a>)}</div>
+      </div>
+    </div>
+  </section>
+  {sections.length > 0 && (
+    <section class="blocks" style="margin-top:0">
+      {sections.map(({ s, items }) => (
+        <div>
+          <div class="sechead"><h2>{s.brand}</h2><a href={s.href}>More</a></div>
+          {items.map((a) => <Row a={a} />)}
+        </div>
+      ))}
+    </section>
+  )}
+  </main>
 </Base>

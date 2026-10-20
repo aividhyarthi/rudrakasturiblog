@@ -23,3 +23,14 @@ export const TEAM = Object.entries(bylines as Record<string, { name: string; cat
   people.map((p) => ({ ...p, state, slug: authorSlug(p.name), desk: `${REGIONS[state as keyof typeof REGIONS]} ${categoryLabel(p.category)} desk` }))
 );
 export const findAuthor = (name: string) => TEAM.find((p) => p.name === name);
+
+/** How many published stories each section and state has. Empty sections are hidden from the site. */
+let _counts: Promise<{ cat: Record<string, number>; region: Record<string, number> }> | null = null;
+export function sectionCounts() {
+  _counts ??= allArticles().then((all) => {
+    const cat: Record<string, number> = {}, region: Record<string, number> = {};
+    for (const a of all) { cat[a.data.category] = (cat[a.data.category] ?? 0) + 1; region[a.data.region] = (region[a.data.region] ?? 0) + 1; }
+    return { cat, region };
+  });
+  return _counts;
+}

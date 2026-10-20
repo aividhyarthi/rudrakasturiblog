@@ -1,10 +1,12 @@
 ---
+import Thumb from './Thumb.astro';
 import { categoryLabel, fmtDate, type Article } from '../lib/articles';
-const { a } = Astro.props as { a: Article };
+const { a, big = false } = Astro.props as { a: Article; big?: boolean };
 ---
-<a class="item" href={`/${a.slug}/`}>
+<a class="card" href={`/${a.slug}/`}>
+  <Thumb category={a.data.category} slug={a.slug} />
   <div class="kicker">{categoryLabel(a.data.category)}</div>
   <h3>{a.data.title}</h3>
-  <p>{a.data.description}</p>
-  <div class="meta" style="margin-top:4px">{a.data.author} · {fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
+  {big && <p>{a.data.description}</p>}
+  <div class="meta">{a.data.author} · {fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
 </a>
