@@ -142,6 +142,7 @@ async function main() {
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
+  let written = 0, failed = 0, lastError = '';
   for (const c of picks) {
     try {
       const who = pickByline(c, c.items[0].link);
@@ -154,13 +155,19 @@ async function main() {
       if (fs.existsSync(file)) continue;
       const { draft, text } = toMarkdown(c, a, who);
       fs.writeFileSync(file, text);
+      written++;
       console.log(`${draft ? 'DRAFT ' : 'LIVE  '} ${c.region}/${c.category} ${slug} (${who.person.name})`);
     } catch (e) {
-      console.warn('story failed:', c.items[0].title, String(e));
+      failed++;
+      lastError = String(e);
+      console.warn('story failed:', c.items[0].title, lastError);
     }
   }
   seen.titles = seen.titles.slice(-800);
   seen.links = seen.links.slice(-3000);
   fs.writeFileSync(SEEN_FILE, JSON.stringify(seen, null, 1));
+  console.log(`Done: ${written} written, ${failed} failed.`);
+  // Make the run show red when nothing could be written, so problems are never hidden behind a green tick.
+  if (failed > 0 && written === 0) { console.error(`::error::No stories written. Last error: ${lastError}`); process.exit(1); }
 }
 main();
