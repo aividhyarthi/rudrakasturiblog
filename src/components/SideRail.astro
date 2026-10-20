@@ -1,0 +1,79 @@
+---
+import Glyph from './Glyph.astro';
+import { allArticles, categoryLabel, fmtDate, sectionCounts } from '../lib/articles';
+import { RASHIS } from '../lib/astro';
+import { REGIONS, stateHref, SECTIONS } from '../config';
+import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
+// Right-hand rail for section and story pages. Content depends on the section.
+const { section = 'general', exclude, noToday = false } = Astro.props as { section?: string; exclude?: string; noToday?: boolean };
+const all = await allArticles();
+const sec = SECTIONS.find((s) => s.id === section);
+const newsy = ['politics', 'movies', 'ott', 'general'].includes(section);
+let latest = all.filter((a) => a.slug !== exclude && (section === 'general' || a.data.category === section)).slice(0, 4);
+if (latest.length === 0) latest = all.filter((a) => a.slug !== exclude).slice(0, 4);
+const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const counts = await sectionCounts();
+const states = (['ap', 'ts', 'ka', 'tn', 'kl'] as const).filter((s) => counts.region[s]);
+const explore = [
+  { label: 'Today\'s panchangam', href: '/panchangam/hyderabad/' }, { label: 'Rahu Kalam today', href: '/rahu-kalam-today/' },
+  { label: 'Temples of India', href: '/temples/' }, { label: '12 Jyotirlingas', href: '/temples/jyotirlingas/' },
+  { label: '18 Maha Shakti Peethas', href: '/temples/shakti-peethas/' }, { label: 'Bhagavad Gita', href: '/bhagavad-gita/' },
+];
+---
+<aside class="rail" aria-label="More on Southwala">
+  {newsy && latest.length > 0 && (
+    <div class="mod">
+      <div class="sect"><h2>{section === 'general' ? 'Latest' : `Latest in ${sec?.label}`}</h2></div>
+      {latest.map((a) => (
+        <a class={`latest-item c-${a.data.category}`} href={`/${a.slug}/`}>
+          <span class="kicker">{categoryLabel(a.data.category)}</span>
+          <h3>{a.data.title}</h3>
+          <div class="meta">{fmtDate(a.data.date)}</div>
+        </a>
+      ))}
+    </div>
+  )}
+  {section === 'astrology' && (
+    <div class="mod">
+      <div class="sect"><h2>Pick your rashi</h2></div>
+      <div class="rail-signs">{RASHIS.map((r) => <a href={`/rasi-phalalu/${r.id}/`} title={r.en}><Glyph id={r.id} size={26} /><span>{r.skt}</span></a>)}</div>
+    </div>
+  )}
+  {section !== 'astrology' && (section !== 'religion' || noToday) && (
+    <div class="mod">
+      <div class="sect"><h2>Rasi phalalu today</h2></div>
+      <div class="rail-signs">{RASHIS.map((r) => <a href={`/rasi-phalalu/${r.id}/`} title={r.en}><Glyph id={r.id} size={26} /><span>{r.skt}</span></a>)}</div>
+    </div>
+  )}
+  {!noToday && <div class="mod">
+    <div class="sect"><h2>Today in Hyderabad</h2></div>
+    <div class="rail-card c-religion">
+      <div class="rc-row"><span>Tithi</span><b>{p.tithi[0].paksha} {p.tithi[0].name}</b></div>
+      <div class="rc-row"><span>Nakshatra</span><b>{p.nakshatra[0].name}</b></div>
+      <div class="rc-row"><span>Rahu Kalam</span><b>{t(p.rahu.start)} to {t(p.rahu.end)}</b></div>
+      <div class="rc-row"><span>Abhijit</span><b>{t(p.abhijit.start)} to {t(p.abhijit.end)}</b></div>
+      <a class="btn" href="/panchangam/hyderabad/" style="margin-top:14px;width:100%;justify-content:center">Full panchangam</a>
+    </div>
+  </div>}
+  {section === 'religion' && (
+    <div class="mod">
+      <div class="sect"><h2>Explore</h2></div>
+      <div class="rail-links">{explore.map((e) => <a href={e.href}>{e.label}</a>)}</div>
+    </div>
+  )}
+  {section === 'astrology' && (
+    <div class="mod">
+      <div class="sect"><h2>Also</h2></div>
+      <div class="rail-links"><a href="/rasi-phalalu/mesha/weekly/">Weekly horoscope</a><a href="/rasi-phalalu/mesha/monthly/">Monthly horoscope</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
+    </div>
+  )}
+  {newsy && states.length > 0 && (
+    <div class="mod">
+      <div class="sect"><h2>By state</h2></div>
+      <div class="chips">{states.map((s) => <a href={stateHref(s)}>{REGIONS[s]}</a>)}</div>
+    </div>
+  )}
+</aside>

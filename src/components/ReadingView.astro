@@ -24,7 +24,7 @@ const titles = {
 const base = `/rasi-phalalu/${r.id}/`;
 const crumbs = [{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }, { name: r.skt, href: base }, ...(span === 'daily' ? [] : [{ name: label, href: `${base}${span}/` }])];
 ---
-<Base title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} rasi phalalu for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
+<Base rail="astrology" title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} rasi phalalu for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
   <div class="page wide c-astrology">
     <div class="kicker"><a href="/rasi-phalalu/">Rasi Phalalu</a></div>
     <h1 style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><Glyph id={r.id} size={44} /> <span>{r.skt} Rasi <span class="te" style="font-weight:600">{r.te}</span></span> <span class="sub" style="font-family:var(--sans);font-weight:500;font-size:18px;letter-spacing:0">{r.en}</span></h1>

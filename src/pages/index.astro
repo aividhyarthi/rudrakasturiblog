@@ -20,11 +20,14 @@ const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const signs = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 const counts = await sectionCounts();
 // Each story appears once: lead, then the latest list, then a card row, then section columns for what is left.
-const latestN = Math.min(4, rest.length);
+const latestN = rest.length <= 5 ? rest.length : 4;
 const shownTop = new Set([lead?.slug, ...rest.slice(0, latestN).map((a) => a.slug)]);
-const grid = rest.slice(latestN, latestN + 3);
+// The card row only appears when it has at least two stories; otherwise they flow into the section columns.
+let grid = rest.slice(latestN, latestN + 3);
+if (grid.length < 2) grid = [];
 grid.forEach((a) => shownTop.add(a.slug));
 const cols = SECTIONS.filter((s) => !s.always && counts.cat[s.id]).map((s) => ({ s, items: all.filter((a) => a.data.category === s.id && !shownTop.has(a.slug)).slice(0, 3) })).filter((x) => x.items.length);
+const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
 <Base home image="/covers/home.png">
   {!lead ? (
@@ -44,14 +47,14 @@ const cols = SECTIONS.filter((s) => !s.always && counts.cat[s.id]).map((s) => ({
   {grid.length > 0 && (
     <section class="wrap" style="padding-bottom:56px">
       <div class="sect"><h2>More stories</h2></div>
-      <div class="three">{grid.map((a) => <Card a={a} />)}</div>
+      <div class="three" style={`grid-template-columns:repeat(${grid.length},1fr)`}>{grid.map((a) => <Card a={a} />)}</div>
     </section>
   )}
 
   <section class="band band-dev c-religion">
     <div class="wrap">
       <div>
-        <span class="kicker">Southwala Devotional</span>
+        <span class="kicker">Devotional</span>
         <h2>Today's Panchangam</h2>
         <p class="lede">Tithi, nakshatra, Rahu Kalam and the good timings, worked out from the sky for seven southern cities. Plus guides to the temples every pilgrim asks about, and the Bhagavad Gita, chapter by chapter.</p>
         <div class="facts">
@@ -73,7 +76,7 @@ const cols = SECTIONS.filter((s) => !s.always && counts.cat[s.id]).map((s) => ({
   <section class="band band-astro c-astrology">
     <div class="wrap" style="grid-template-columns:1fr">
       <div style="max-width:640px">
-        <span class="kicker">Southwala Astrology</span>
+        <span class="kicker">Astrology</span>
         <h2>Rasi phalalu, from the real sky</h2>
         <p class="lede">Daily, weekly and monthly readings for every rashi, worked out from today's actual planetary positions using the classical transit rules.</p>
       </div>
@@ -86,12 +89,12 @@ const cols = SECTIONS.filter((s) => !s.always && counts.cat[s.id]).map((s) => ({
     </div>
   </section>
 
-  {cols.length > 0 && (
+  {leftover >= 2 && (
     <section class="wrap" style="padding-top:56px">
       <div class="three" style={`grid-template-columns:repeat(${Math.min(cols.length, 3)},1fr)`}>
         {cols.map(({ s, items }) => (
           <div class={`c-${s.id}`}>
-            <div class="sect"><h2>{s.brand}</h2><a href={s.href}>More</a></div>
+            <div class="sect"><h2>{s.label}</h2><a href={s.href}>More</a></div>
             {items.map((a) => <Row a={a} />)}
           </div>
         ))}

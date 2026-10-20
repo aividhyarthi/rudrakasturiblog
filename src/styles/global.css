@@ -273,3 +273,36 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 
 @media(max-width:1000px){.tiles[style*="repeat(3"]{grid-template-columns:1fr 1fr!important}}
 @media(max-width:640px){.tiles[style*="repeat(3"]{grid-template-columns:1fr!important}}
+
+/* ---------- section/story layout with right-hand rail ---------- */
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:64px;align-items:start}
+.main-col{min-width:0}
+.layout .page{max-width:none;margin:0;padding:40px 0 20px}
+.layout .three,.layout .t-grid,.layout .gita-grid{grid-template-columns:repeat(2,1fr)}
+.layout .sign-grid{grid-template-columns:repeat(3,1fr)}
+.layout .pgrid{grid-template-columns:repeat(2,1fr)}
+.layout .tiles{grid-template-columns:repeat(2,1fr)!important}
+.layout .story-head{max-width:none;margin:0;padding:40px 0 0;text-align:left}
+.layout .story-head h1{font-size:clamp(32px,4vw,50px)}
+.layout .story-head .dek{margin-left:0;margin-right:0}
+.layout .by{justify-content:flex-start}
+.layout .story-hero{max-width:none;margin:28px 0 0;padding:0}
+.layout .story-body{max-width:none;margin:34px 0 0;padding:0}
+.layout .prose,.layout .tldr{max-width:700px}
+.layout .notes{max-width:700px;margin:8px 0 0;padding:0}
+.layout .draftbox{margin-left:0;max-width:700px}
+.layout .more{padding:0;margin:48px 0 0;max-width:none}
+.rail{position:sticky;top:76px;padding:44px 0 24px;display:flex;flex-direction:column;gap:34px}
+.rail .latest-item h3{font-size:18px}
+.rail-card{background:var(--soft);border-radius:12px;padding:18px 20px}
+.rc-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--hair);font-size:14px}
+.rc-row:last-of-type{border-bottom:0}
+.rc-row span{color:var(--muted)}.rc-row b{font-weight:600;text-align:right}
+.rail-signs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.rail-signs a{display:flex;flex-direction:column;align-items:center;gap:4px;padding:10px 4px;border:1px solid var(--hair);border-radius:10px;font-size:11.5px;color:var(--ink2);transition:all .15s}
+.rail-signs a:hover{border-color:var(--sec);color:var(--sec)}
+.rail-links{display:flex;flex-direction:column}
+.rail-links a{padding:11px 0;border-bottom:1px solid var(--hair);font-weight:500;font-size:15px}
+.rail-links a:hover{color:var(--sec)}
+@media(max-width:1000px){.layout{grid-template-columns:1fr;gap:20px}.rail{position:static;padding-top:10px}.layout .three,.layout .t-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.layout .three,.layout .t-grid,.layout .gita-grid,.layout .tiles,.layout .pgrid,.layout .sign-grid{grid-template-columns:1fr}.layout .pgrid,.layout .sign-grid{grid-template-columns:1fr 1fr}.rail-signs{grid-template-columns:repeat(4,1fr)}}

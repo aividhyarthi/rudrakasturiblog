@@ -51,7 +51,7 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? sec!.tag : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/covers/${a.slug}.png`} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={d.category} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/covers/${a.slug}.png`} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</span>
@@ -83,16 +83,16 @@ const blurb = isCat ? sec!.tag : `Politics, cinema and OTT from ${REGIONS[props.
       <div class="note"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/">How it works</a>.</div>
     </div>
   </article>
-  {props.related.length > 0 && (
+  {props.related.length >= 2 && (
     <section class="more"><div class="sect"><h2>More {categoryLabel(d.category)}</h2></div><div class="three">{props.related.map((r: any) => <Card a={r} />)}</div></section>
   )}
 </Base>
 ) : (
-<Base title={isCat ? sec!.brand : listTitle} description={isCat ? `${blurb}. Latest ${sec!.label} stories from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources.` : blurb} active={isCat ? props.id : undefined} breadcrumbs={[{ name: isCat ? sec!.label : listTitle, href: isCat ? sec!.href : stateHref(props.code) }]}>
-  <section class="wrap" style="padding-top:36px">
-    <div class="sect"><h1>{isCat ? sec!.brand : listTitle}</h1></div>
-    <p class="dek" style="margin-bottom:28px">{blurb}</p>
+<Base rail={isCat ? props.id : 'general'} title={isCat ? sec!.brand : listTitle} description={isCat ? `${blurb}. Latest ${sec!.label} stories from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources.` : blurb} active={isCat ? props.id : undefined} breadcrumbs={[{ name: isCat ? sec!.label : listTitle, href: isCat ? sec!.href : stateHref(props.code) }]}>
+  <div class={`page ${isCat ? `c-${props.id}` : ''}`}>
+    <h1>{isCat ? sec!.tag : listTitle}</h1>
+    <p class="dek" style="margin-bottom:30px;max-width:60ch">{isCat ? `Stories from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources on every one.` : blurb}</p>
     <div class="three">{items.map((x: any) => <Card a={x} />)}</div>
-  </section>
+  </div>
 </Base>
 )}

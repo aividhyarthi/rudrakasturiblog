@@ -9,9 +9,10 @@ const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
 const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
 ---
-<Base title="Religion: Panchangam, Temples and the Bhagavad Gita" description="Daily panchangam with Rahu Kalam and good timings, guides and lists of India's important temples, and the Bhagavad Gita explained chapter by chapter." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }]} image="/covers/temples.png">
+<Base rail="religion" title="Religion: Panchangam, Temples and the Bhagavad Gita" description="Daily panchangam with Rahu Kalam and good timings, guides and lists of India's important temples, and the Bhagavad Gita explained chapter by chapter." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }]} image="/covers/temples.png">
   <div class="page" style="max-width:960px">
-    <div class="sect"><h1>Southwala Devotional</h1></div>
+    <h1>Panchangam, temples and the Bhagavad Gita</h1>
+    <p class="dek" style="max-width:60ch;margin-bottom:6px">Everything for the day ahead and the places you plan to visit, worked out and written for readers across the five southern states.</p>
     <Hero name="temple-sunrise" alt="A South Indian temple gopuram at sunrise with a row of lit oil lamps" />
     <section class="tiles" style="margin-top:0;grid-template-columns:repeat(2,1fr)">
       <a class="tile" href="/panchangam/hyderabad/"><Art name="sun" /><h3>Panchangam today</h3><div class="meta">Tithi, nakshatra, Rahu Kalam and good timings for seven southern cities.</div></a>
@@ -19,14 +20,7 @@ const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
       <a class="tile" href="/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Jyotirlingas, Shakti Peethas, Char Dham, Pancharama and more: lists and guides.</div></a>
       <a class="tile" href="/bhagavad-gita/"><Art name="scroll" /><h3>Bhagavad Gita</h3><div class="meta">All 18 chapters explained simply.</div></a>
     </section>
-    <div class="sect"><h2>Today in Hyderabad</h2><a href="/panchangam/hyderabad/">Full panchangam</a></div>
-    <table class="data"><tbody>
-      <tr><th>Sunrise / Sunset</th><td>{t(p.sunrise)} / {t(p.sunset)}</td></tr>
-      <tr><th>Tithi</th><td>{p.tithi[0].paksha} {p.tithi[0].name} <span class="te">({p.tithi[0].te})</span> <span class="sub">until {t(p.tithi[0].endsAt)}</span></td></tr>
-      <tr><th>Nakshatra</th><td>{p.nakshatra[0].name} <span class="te">({p.nakshatra[0].te})</span> <span class="sub">until {t(p.nakshatra[0].endsAt)}</span></td></tr>
-      <tr><th>Rahu Kalam</th><td>{r(p.rahu)}</td></tr>
-      <tr><th>Abhijit Muhurtham</th><td>{r(p.abhijit)}</td></tr>
-    </tbody></table>
+    <div class="sect"><h2>Panchangam for your city</h2></div>
     <div class="chips">{Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/`}>{x.name}</a>)}</div>
   </div>
 </Base>

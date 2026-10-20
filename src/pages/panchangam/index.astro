@@ -14,7 +14,7 @@ const faq = [
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
-<Base title="Today's Panchangam: Rahu Kalam, Tithi, Nakshatra" description="Today's panchangam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi: sunrise, sunset, tithi, nakshatra, Rahu Kalam and good timings." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }]} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday title="Today's Panchangam: Rahu Kalam, Tithi, Nakshatra" description="Today's panchangam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi: sunrise, sunset, tithi, nakshatra, Rahu Kalam and good timings." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }]} image="/covers/panchangam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page" style="max-width:900px">
     <div class="kicker"><a href="/religion/">Religion</a></div>

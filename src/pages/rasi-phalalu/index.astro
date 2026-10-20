@@ -11,7 +11,7 @@ const pretty = `${WEEKDAYS[p.weekday]}, ${ymd.d} ${['January', 'February', 'Marc
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 ---
-<Base title="Rasi Phalalu Today: Daily, Weekly, Monthly Horoscope for Every Rashi" description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
+<Base rail="astrology" title="Rasi Phalalu Today: Daily, Weekly, Monthly Horoscope for Every Rashi" description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
   <div class="page wide c-astrology">
     <div class="kicker">Rasi Phalalu</div>
     <h1>Today's rasi phalalu</h1>

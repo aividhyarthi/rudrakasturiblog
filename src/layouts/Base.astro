@@ -11,8 +11,9 @@ import '../styles/global.css';
 import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID } from '../config';
 import { sectionCounts } from '../lib/articles';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
-interface Props { todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
-const { todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
+import SideRail from '../components/SideRail.astro';
+interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
+const { railNoToday, rail, railExclude, todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
 const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
@@ -78,7 +79,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     </div></div>
   )}
   <script is:inline>try{document.getElementById('today').textContent=new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'})}catch(e){}</script>
-  <main><slot /></main>
+  <main>{rail ? <div class="wrap layout"><div class="main-col"><slot /></div><SideRail section={rail} exclude={railExclude} noToday={railNoToday} /></div> : <slot />}</main>
   <footer class="foot"><div class="wrap">
     <div>
       <a class="logo" href="/" style="display:inline-block;padding:0">Southwala<i>.</i></a>
@@ -86,7 +87,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     </div>
     <div>
       <h4>Sections</h4>
-      {nav.map((c) => <a href={c.href}>{c.brand}</a>)}
+      {nav.map((c) => <a href={c.href}>{c.label}</a>)}
       <a href="/temples/">Temples</a><a href="/bhagavad-gita/">Bhagavad Gita</a>
     </div>
     <div>

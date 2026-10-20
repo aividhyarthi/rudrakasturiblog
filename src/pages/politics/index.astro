@@ -4,10 +4,10 @@ import Card from '../../components/Card.astro';
 import { allArticles } from '../../lib/articles';
 const items = (await allArticles()).filter((a) => a.data.category === 'politics');
 ---
-<Base title="Politics" description="Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts." active="politics">
-  <section class="wrap c-politics" style="padding-top:36px">
-    <div class="sect"><h1>Southwala Politics</h1></div>
-    <p class="dek" style="margin-bottom:28px">Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts.</p>
+<Base rail="politics" title="Politics" description="Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources and the receipts." active="politics" breadcrumbs={[{ name: 'Politics', href: '/politics/' }]}>
+  <div class="page c-politics">
+    <h1>Receipts, records and what the numbers say</h1>
+    <p class="dek" style="margin-bottom:30px;max-width:60ch">Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, with sources on every story.</p>
     {items.length ? <div class="three">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No stories yet.</div>}
-  </section>
+  </div>
 </Base>
