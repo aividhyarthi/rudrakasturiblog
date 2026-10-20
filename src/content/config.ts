@@ -23,4 +23,20 @@ const articles = defineCollection({
   }),
 });
 
-export const collections = { articles };
+const temples = defineCollection({
+  type: 'content',
+  schema: z.object({
+    name: z.string(),
+    te: z.string().optional(),
+    state: z.enum(['ap', 'ts', 'ka', 'tn', 'kl']),
+    district: z.string(),
+    place: z.string(),
+    deity: z.string(),
+    summary: z.string(),
+    festivals: z.array(z.string()).default([]),
+    sources: z.array(z.object({ title: z.string(), url: z.string().url(), publisher: z.string() })).default([]),
+    updated: z.coerce.date().default(new Date('2026-10-20')),
+  }),
+});
+
+export const collections = { articles, temples };

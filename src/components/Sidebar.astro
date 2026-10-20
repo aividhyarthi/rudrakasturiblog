@@ -7,6 +7,6 @@ const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
 ---
 <aside>
   <div class="box"><h4>Trending</h4>{items.map((a, i) => <div class="rank"><span>{i + 1}</span><a href={`/${a.slug}/`}>{a.data.title}</a></div>)}</div>
-  <div class="box"><h4>Today</h4><div style="display:grid;gap:6px;font-size:15px"><a href="/religion/panchangam/hyderabad/" style="text-decoration:underline">Today's Panchangam</a><a href="/astrology/" style="text-decoration:underline">Today's Rashi Phalalu</a><a href="/politics/netas/" style="text-decoration:underline">Neta profiles and affidavits</a></div></div>
+  <div class="box"><h4>Today</h4><div style="display:grid;gap:6px;font-size:15px"><a href="/religion/panchangam/hyderabad/" style="text-decoration:underline">Today's Panchangam</a><a href="/astrology/" style="text-decoration:underline">Today's Rashi Phalalu</a><a href="/religion/temples/" style="text-decoration:underline">Temple guides</a></div></div>
   <div class="box"><h4>Browse by state</h4><div class="chips">{states.map((s) => <a href={`/state/${s}/`}>{REGIONS[s]}</a>)}</div></div>
 </aside>

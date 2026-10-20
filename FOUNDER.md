@@ -30,3 +30,9 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 ## Open questions
 - Which exact news feeds does the founder want?
 - Founder's public name/byline on the site (editor-in-chief), for trust and AdSense.
+
+## Update 2026-10-20: new sections and the affidavit data problem
+- Design: plain white background, black text, no photos. Our own line drawings only (src/components/Art.astro).
+- Sections live: Politics (news), Religion (panchangam for 7 cities, computed from astronomy and checked against published values; temple guides), Astrology (rashi phalalu from real planetary transits, Vedic gochara rules, entertainment only).
+- Panchangam v1 shows tithi, nakshatra, yoga, karana, sunrise/sunset/moonrise/moonset, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham. NOT yet: Varjyam, Amrit Kalam, Durmuhurtam (our reference tables were not reliable enough to publish), masa and samvatsara names, festival calendar.
+- Neta profiles: BLOCKED on data rights. MyNeta/ADR terms: free for non-commercial use with citation; commercial reuse and any automated scraping need ADR's written consent. Do not scrape. Paths: (1) ask ADR for written permission (draft in DATA-PERMISSIONS.md); (2) build from primary public records (ECI affidavits and results) and Wikipedia (CC BY-SA) for names, parties and constituencies. Founder to choose.
