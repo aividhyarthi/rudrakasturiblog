@@ -1,0 +1,43 @@
+---
+// Simple black line drawings, made for Southwala. No photos, so nothing to license.
+const { name, size = 44 } = Astro.props as { name: 'gopuram' | 'sun' | 'moon' | 'diya' | 'lotus' | 'ballot' | 'stars' | 'scroll'; size?: number };
+---
+<svg width={size} height={size} viewBox="0 0 120 120" fill="none" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  {name === 'gopuram' && (<>
+    <path d="M10 108h100M20 108V92h80v16M28 92V78h64v14M36 78V64h48v14M44 64V50h32v14M51 50V38h18v12M60 38V22M54 22h12M60 22l0-8" />
+    <path d="M52 108V96h16v12M58 70h4M58 84h4" />
+    <circle cx="60" cy="12" r="3" />
+  </>)}
+  {name === 'sun' && (<>
+    <circle cx="60" cy="60" r="22" />
+    <path d="M60 14v14M60 92v14M14 60h14M92 60h14M27 27l10 10M83 83l10 10M93 27L83 37M37 83L27 93" />
+  </>)}
+  {name === 'moon' && (<>
+    <path d="M78 24a38 38 0 1 0 22 56A32 32 0 0 1 78 24z" />
+    <path d="M96 30l2 5 5 2-5 2-2 5-2-5-5-2 5-2zM104 58l1 3 3 1-3 1-1 3-1-3-3-1 3-1z" />
+  </>)}
+  {name === 'diya' && (<>
+    <path d="M18 70c0 20 18 30 42 30s42-10 42-30z" />
+    <path d="M60 22c-10 12-10 22 0 30 10-8 10-18 0-30z" />
+    <path d="M40 106h40" />
+  </>)}
+  {name === 'lotus' && (<>
+    <path d="M60 22c-14 14-14 40 0 58 14-18 14-44 0-58z" />
+    <path d="M60 80C40 74 26 56 26 36c18 2 30 16 34 44z" />
+    <path d="M60 80c20-6 34-24 34-44-18 2-30 16-34 44z" />
+    <path d="M18 94c14-10 30-14 42-14s28 4 42 14M30 104h60" />
+  </>)}
+  {name === 'ballot' && (<>
+    <path d="M22 54h76v52H22zM42 54V40h36v14" />
+    <path d="M48 70h24" />
+    <path d="M44 22l32-4 2 20-32 4z" />
+  </>)}
+  {name === 'stars' && (<>
+    <circle cx="60" cy="60" r="38" />
+    <path d="M60 30l7 20 21 1-17 12 6 21-17-12-17 12 6-21-17-12 21-1z" />
+  </>)}
+  {name === 'scroll' && (<>
+    <path d="M30 24h60v70a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10zM40 40h40M40 54h40M40 68h28" />
+    <path d="M30 24a10 10 0 1 0-10 10" />
+  </>)}
+</svg>

@@ -33,12 +33,11 @@ const share = encodeURIComponent(`${d.title} ${url}`);
 <Base title={d.title} description={d.description} image={img} type="article" jsonLd={jsonLd} active={d.category} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <div class="art">
     <article>
-      <div class="kicker"><a href={`/category/${d.category}/`}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;|&nbsp; {d.format}</>} &nbsp;|&nbsp; {d.region !== 'south' ? <a href={`/state/${d.region}/`}>{REGIONS[d.region]}</a> : REGIONS[d.region]}</div>
+      <div class="kicker"><a href={d.category === 'politics' ? '/politics/' : `/category/${d.category}/`}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;|&nbsp; {d.format}</>} &nbsp;|&nbsp; {d.region !== 'south' ? <a href={`/state/${d.region}/`}>{REGIONS[d.region]}</a> : REGIONS[d.region]}</div>
       <h1>{d.title}</h1>
       <p class="dek">{d.description}</p>
       <div class="byline"><span>By <a href={byUrl}><b>{d.author}</b></a>{who && <> · {who.desk}</>}</span><span>{fmtDate(d.date)}</span>{d.updated && <span>Updated {fmtDate(d.updated)}</span>}</div>
       {d.draft && <div class="draft"><b>DRAFT, not public.</b> {d.reviewNote ?? 'Review before publishing.'}</div>}
-      <img class="hero" src={img} alt={d.imageAlt ?? d.title} width="1200" height="675" fetchpriority="high" />
       {d.tldr && <div class="tldr"><b>In short</b>{d.tldr}</div>}
       <div class="body"><Content /></div>
       <div class="share">
@@ -53,5 +52,5 @@ const share = encodeURIComponent(`${d.title} ${url}`);
     </article>
     <Sidebar exclude={a.slug} />
   </div>
-  {related.length > 0 && <section style="margin-bottom:20px"><div class="sechead"><h2>More {categoryLabel(d.category)}</h2></div><div class="grid">{related.map((r) => <Card a={r} />)}</div></section>}
+  {related.length > 0 && <section style="margin-bottom:20px"><div class="sechead"><h2>More {categoryLabel(d.category)}</h2></div><div class="cols" style="margin:0">{related.map((r) => <Card a={r} />)}</div></section>}
 </Base>

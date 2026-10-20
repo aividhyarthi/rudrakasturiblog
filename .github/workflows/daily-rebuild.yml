@@ -1,0 +1,19 @@
+name: Daily rebuild (panchangam and rashi phalalu)
+on:
+  schedule:
+    - cron: '35 18 * * *'   # 00:05 India time every day
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Touch the build stamp so the site rebuilds with today's date
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > build-stamp.txt
+          git config user.name "Southwala Newsroom"
+          git config user.email "newsroom@southwala.com"
+          git add build-stamp.txt
+          git commit -m "Daily rebuild" && git push

@@ -2,7 +2,8 @@
 import { categoryLabel, fmtDate, type Article } from '../lib/articles';
 const { a } = Astro.props as { a: Article };
 ---
-<a class="row" href={`/${a.slug}/`}>
-  <img src={a.data.image ?? `/covers/${a.slug}.png`} alt={a.data.imageAlt ?? a.data.title} loading="lazy" width="208" height="140" />
-  <div><div class="kicker">{categoryLabel(a.data.category)}</div><div class="t">{a.data.title}</div><div class="meta">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div></div>
+<a class="item" href={`/${a.slug}/`}>
+  <div class="kicker">{categoryLabel(a.data.category)}</div>
+  <h3>{a.data.title}</h3>
+  <div class="meta">{fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
 </a>

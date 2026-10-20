@@ -15,6 +15,18 @@ export const ADSENSE_CLIENT = '';
 // Paste your Google Analytics 4 id, e.g. 'G-XXXXXXXXXX'. Empty = no analytics.
 export const GA_ID = '';
 
+// Top navigation. Politics, Religion and Astrology are their own sections.
+export const NAV = [
+  { id: 'politics', label: 'Politics', href: '/politics/' },
+  { id: 'religion', label: 'Religion', href: '/religion/' },
+  { id: 'astrology', label: 'Astrology', href: '/astrology/' },
+  { id: 'movies', label: 'Movies', href: '/category/movies/' },
+  { id: 'ott', label: 'TV & OTT', href: '/category/ott/' },
+  { id: 'trending', label: 'Trending', href: '/category/trending/' },
+  { id: 'news', label: 'News', href: '/category/news/' },
+  { id: 'sports', label: 'Sports', href: '/category/sports/' },
+] as const;
+
 export const CATEGORIES = [
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },
   { id: 'movies', label: 'Movies', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },

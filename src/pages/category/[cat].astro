@@ -13,7 +13,7 @@ const items = (await allArticles()).filter((a) => a.data.category === c.id);
     <div>
       <div class="sechead"><h2>{c.label}</h2></div>
       <p class="meta" style="font-size:15px;margin:-4px 0 16px">{c.blurb}</p>
-      {items.length ? <div class="grid" style="grid-template-columns:repeat(2,1fr)">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">Nothing here yet. Check back soon.</div>}
+      {items.length ? <div>{items.map((a) => <Card a={a} />)}</div> : <div class="empty">Nothing here yet. Check back soon.</div>}
     </div>
     <Sidebar />
   </div>

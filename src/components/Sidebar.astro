@@ -3,10 +3,10 @@ import { allArticles } from '../lib/articles';
 import { REGIONS } from '../config';
 const { exclude } = Astro.props as { exclude?: string };
 const items = (await allArticles()).filter((a) => a.slug !== exclude).slice(0, 6);
-const states = (['ap', 'ts', 'ka', 'tn', 'kl'] as const);
+const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
 ---
 <aside>
   <div class="box"><h4>Trending</h4>{items.map((a, i) => <div class="rank"><span>{i + 1}</span><a href={`/${a.slug}/`}>{a.data.title}</a></div>)}</div>
-  <div class="box"><h4>Browse by state</h4><div class="states">{states.map((s) => <a href={`/state/${s}/`}>{REGIONS[s]}</a>)}</div></div>
-  <div class="box"><h4>Named in a story?</h4><p style="margin:0;font-size:14px">Every party and person gets a right of reply. <a href="/right-of-reply/" style="color:var(--accent2);text-decoration:underline">Here is how.</a></p></div>
+  <div class="box"><h4>Today</h4><div style="display:grid;gap:6px;font-size:15px"><a href="/religion/panchangam/hyderabad/" style="text-decoration:underline">Today's Panchangam</a><a href="/astrology/" style="text-decoration:underline">Today's Rashi Phalalu</a><a href="/politics/netas/" style="text-decoration:underline">Neta profiles and affidavits</a></div></div>
+  <div class="box"><h4>Browse by state</h4><div class="chips">{states.map((s) => <a href={`/state/${s}/`}>{REGIONS[s]}</a>)}</div></div>
 </aside>

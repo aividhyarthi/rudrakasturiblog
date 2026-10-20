@@ -1,0 +1,33 @@
+---
+import Base from '../../layouts/Base.astro';
+import { RASHIS, reading, dayOverall } from '../../lib/astro';
+import { panchangFor, todayIST, WEEKDAYS } from '../../lib/panchang';
+const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const o = dayOverall({ tithi: p.tithi, nakshatra: p.nakshatra, moonSign: p.moonSign, weekday: p.weekday });
+const pretty = `${WEEKDAYS[p.weekday]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
+const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
+---
+<Base title="Rashi Phalalu: Today's Horoscope for Every Rashi" description="Daily, weekly and monthly rashi phalalu for all twelve rashis, worked out from today's planetary positions, plus the overall outlook for the day." active="astrology">
+  <div class="page" style="max-width:960px">
+    <div class="sechead"><h2>Astrology: Rashi Phalalu</h2></div>
+    <h1>Today: {pretty}</h1>
+    <p class="dek" style="font-size:18px">{o.headline}</p>
+    <h3>Overall for the day</h3>
+    <ul>{o.points.map((x) => <li>{x}</li>)}</ul>
+    <div class="sechead" style="margin-top:26px"><h2>Choose your rashi</h2></div>
+    <p class="sub">Your rashi is the sign your Moon was in at birth. Not sure? Check your janma rashi on your horoscope, or ask your family.</p>
+    <div class="sign-grid">
+      {readings.map(({ r, d }) => (
+        <a class="sign" href={`/astrology/${r.id}/`}>
+          <div class="sym">{r.sym}</div>
+          <h3>{r.skt} <span class="te">{r.te}</span></h3>
+          <div class="sub">{r.en}</div>
+          <div class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</div>
+        </a>
+      ))}
+    </div>
+    <p class="disc">Rashi phalalu on Southwala are for entertainment and reflection. They are worked out from the day's planetary positions using the traditional Vedic gochara (transit) rules, the same for everyone born under a rashi. They are not predictions about your life and not a substitute for medical, legal or financial advice.</p>
+  </div>
+</Base>

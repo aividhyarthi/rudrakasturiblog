@@ -1,0 +1,32 @@
+---
+import Base from '../../../../layouts/Base.astro';
+import PanchangView from '../../../../components/PanchangView.astro';
+import { CITIES, todayIST, addDays, ymdKey, parseKey, WEEKDAYS, type CityId } from '../../../../lib/panchang';
+export function getStaticPaths() {
+  const t = new Date(Date.now() + 5.5 * 3600 * 1000);
+  const today = { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate() };
+  const out: any[] = [];
+  for (const city of ['hyderabad', 'visakhapatnam', 'vijayawada', 'tirupati', 'bengaluru', 'chennai', 'kochi']) {
+    for (let i = -2; i <= 45; i++) {
+      const x = new Date(Date.UTC(today.y, today.m - 1, today.d + i));
+      out.push({ params: { city, date: `${x.getUTCFullYear()}-${String(x.getUTCMonth() + 1).padStart(2, '0')}-${String(x.getUTCDate()).padStart(2, '0')}` } });
+    }
+  }
+  return out;
+}
+const { city, date } = Astro.params as { city: CityId; date: string };
+const ymd = parseKey(date);
+const c = CITIES[city];
+const pretty = `${WEEKDAYS[new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
+---
+<Base title={`Panchangam ${pretty}, ${c.name}`} description={`Panchangam for ${c.name} on ${pretty}: sunrise, sunset, tithi, nakshatra, Rahu Kalam, Yamagandam and good timings.`} active="religion">
+  <div class="page" style="max-width:860px">
+    <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; Panchangam</div>
+    <h1>Panchangam: {pretty}</h1>
+    <p class="meta" style="margin-top:0">{c.name}, {c.state}</p>
+    <div class="chips" style="margin:10px 0 22px">
+      {Object.entries(CITIES).map(([id, x]) => <a href={`/religion/panchangam/${id}/${date}/`} class={id === city ? 'on' : ''}>{x.name}</a>)}
+    </div>
+    <PanchangView city={city} ymd={ymd} />
+  </div>
+</Base>

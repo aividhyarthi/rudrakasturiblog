@@ -1,0 +1,19 @@
+---
+import Base from '../../layouts/Base.astro';
+import Card from '../../components/Card.astro';
+import Art from '../../components/Art.astro';
+import { allArticles } from '../../lib/articles';
+const items = (await allArticles()).filter((a) => a.data.category === 'politics');
+---
+<Base title="Politics" description="Politics from Andhra Pradesh, Telangana, Karnataka, Tamil Nadu and Kerala, plus profiles and election affidavits of MLAs and MPs." active="politics">
+  <div class="page" style="max-width:960px">
+    <div class="sechead"><h2>Politics</h2></div>
+    <section class="tiles" style="margin-top:0">
+      <a class="tile" href="/politics/netas/"><Art name="ballot" /><h3>Neta profiles</h3><div class="meta">MLAs and MPs of Andhra Pradesh and Telangana: declared assets, liabilities, education and cases, from their election affidavits.</div></a>
+      <a class="tile" href="/politics/parties/"><Art name="scroll" /><h3>Parties compared</h3><div class="meta">The same numbers for every party, side by side.</div></a>
+      <a class="tile" href="/category/news/"><Art name="lotus" /><h3>Latest news</h3><div class="meta">All stories across the five states.</div></a>
+    </section>
+    <div class="sechead"><h2>Political news and analysis</h2></div>
+    {items.length ? <div>{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No stories yet.</div>}
+  </div>
+</Base>

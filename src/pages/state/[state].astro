@@ -13,7 +13,7 @@ const items = (await allArticles()).filter((a) => a.data.region === state);
   <div class="art">
     <div>
       <div class="sechead"><h2>{label}</h2></div>
-      {items.length ? <div class="grid" style="grid-template-columns:repeat(2,1fr)">{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No {label} stories yet. Check back soon.</div>}
+      {items.length ? <div>{items.map((a) => <Card a={a} />)}</div> : <div class="empty">No {label} stories yet. Check back soon.</div>}
     </div>
     <Sidebar />
   </div>

@@ -1,0 +1,51 @@
+---
+import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, type CityId } from '../lib/panchang';
+const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
+const p = panchangFor(ymd, city);
+const c = CITIES[city];
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const range = (r: { start: Date; end: Date }) => `${t(r.start)} to ${t(r.end)}`;
+const seg = (s: { paksha?: string; name: string; te?: string; endsAt: Date }, i: number, n: number) =>
+  `${s.paksha ? s.paksha + ' ' : ''}${s.name}${s.te ? ' (' + (s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : '') + s.te + ')' : ''}`;
+const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
+---
+<table class="data">
+  <tbody>
+    <tr><th>Sunrise</th><td>{t(p.sunrise)}</td></tr>
+    <tr><th>Sunset</th><td>{t(p.sunset)}</td></tr>
+    {p.moonrise && <tr><th>Moonrise</th><td>{t(p.moonrise)}</td></tr>}
+    {p.moonset && <tr><th>Moonset</th><td>{t(p.moonset)}</td></tr>}
+  </tbody>
+</table>
+
+<div class="sechead"><h2>The five limbs (Panchangam)</h2></div>
+<table class="data">
+  <tbody>
+    <tr><th>Tithi</th><td>{p.tithi.map((s, i) => <div>{seg(s, i, p.tithi.length)} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
+    <tr><th>Nakshatra</th><td>{p.nakshatra.map((s, i) => <div>{seg(s, i, p.nakshatra.length)} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
+    <tr><th>Yoga</th><td>{p.yoga.map((s) => <div>{s.name} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
+    <tr><th>Karana</th><td>{p.karana.map((s) => <div>{s.name} <span class="sub">until {t(s.endsAt)}</span></div>)}</td></tr>
+    <tr><th>Vara (weekday)</th><td>{WEEKDAYS[p.weekday]} <span class="te">({WEEKDAYS_TE[p.weekday]})</span></td></tr>
+  </tbody>
+</table>
+
+<div class="sechead"><h2>Good timings (Manchi samayam)</h2></div>
+<table class="data">
+  <tbody>
+    <tr><th>Abhijit Muhurtham</th><td>{range(p.abhijit)} <div class="sub">The midday window traditionally considered auspicious for starting work.</div></td></tr>
+    <tr><th>Brahma Muhurtham</th><td>{range(p.brahma)} <div class="sub">The pre-dawn window traditionally used for prayer, study and meditation.</div></td></tr>
+  </tbody>
+</table>
+
+<div class="sechead"><h2>Timings to avoid</h2></div>
+<table class="data">
+  <tbody>
+    <tr><th>Rahu Kalam</th><td>{range(p.rahu)} <div class="sub">Traditionally avoided for starting new work or travel.</div></td></tr>
+    <tr><th>Yamagandam</th><td>{range(p.yama)}</td></tr>
+    <tr><th>Gulika Kalam</th><td>{range(p.gulika)}</td></tr>
+  </tbody>
+</table>
+
+<p class="disc">Calculated for {c.name}, {c.state}, from astronomical positions of the Sun and Moon (Lahiri ayanamsa, local sunrise). Places a few hundred kilometres away differ by a few minutes. Traditions vary by region and family: for rituals, weddings and muhurthams, please confirm with your family priest or temple.</p>
+<div class="chips"><a href={`/religion/panchangam/${city}/${prev}/`}>&larr; Previous day</a><a href={`/religion/panchangam/${city}/${next}/`}>Next day &rarr;</a></div>

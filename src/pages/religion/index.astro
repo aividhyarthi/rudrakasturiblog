@@ -1,0 +1,29 @@
+---
+import Base from '../../layouts/Base.astro';
+import Art from '../../components/Art.astro';
+import { CITIES, panchangFor, fmtTime, todayIST, WEEKDAYS } from '../../lib/panchang';
+const ymd = todayIST();
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
+---
+<Base title="Religion: Panchangam and Temples" description="Daily panchangam with Rahu Kalam and good timings, plus guides to temples in Andhra Pradesh, Telangana and the South." active="religion">
+  <div class="page" style="max-width:960px">
+    <div class="sechead"><h2>Religion</h2></div>
+    <section class="tiles" style="margin-top:0">
+      <a class="tile" href="/religion/panchangam/hyderabad/"><Art name="sun" /><h3>Panchangam today</h3><div class="meta">Tithi, nakshatra, Rahu Kalam, good timings. Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai, Kochi.</div></a>
+      <a class="tile" href="/religion/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Guides to major temples: significance, festivals, how to reach.</div></a>
+      <a class="tile" href="/astrology/"><Art name="stars" /><h3>Rashi Phalalu</h3><div class="meta">Daily, weekly and monthly horoscopes for every rashi.</div></a>
+    </section>
+    <div class="sechead"><h2>Today in Hyderabad</h2><a href="/religion/panchangam/hyderabad/">Full panchangam</a></div>
+    <table class="data"><tbody>
+      <tr><th>Sunrise / Sunset</th><td>{t(p.sunrise)} / {t(p.sunset)}</td></tr>
+      <tr><th>Tithi</th><td>{p.tithi[0].paksha} {p.tithi[0].name} <span class="te">({p.tithi[0].te})</span> <span class="sub">until {t(p.tithi[0].endsAt)}</span></td></tr>
+      <tr><th>Nakshatra</th><td>{p.nakshatra[0].name} <span class="te">({p.nakshatra[0].te})</span> <span class="sub">until {t(p.nakshatra[0].endsAt)}</span></td></tr>
+      <tr><th>Rahu Kalam</th><td>{r(p.rahu)}</td></tr>
+      <tr><th>Abhijit Muhurtham</th><td>{r(p.abhijit)}</td></tr>
+    </tbody></table>
+    <div class="chips">{Object.entries(CITIES).map(([id, x]) => <a href={`/religion/panchangam/${id}/`}>{x.name}</a>)}</div>
+  </div>
+</Base>

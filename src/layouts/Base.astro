@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE, CATEGORIES, REGIONS, ADSENSE_CLIENT, GA_ID } from '../config';
+import { SITE, NAV, ADSENSE_CLIENT, GA_ID } from '../config';
 interface Props { title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date }
 const { title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE.name}` : `${SITE.name}: ${SITE.tagline}`;
@@ -16,7 +16,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
   <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'} />
-  <meta name="theme-color" content="#d62828" />
+  <meta name="theme-color" content="#ffffff" />
   <meta property="og:site_name" content={SITE.name} />
   <meta property="og:type" content={type} />
   <meta property="og:title" content={title ?? SITE.name} />
@@ -36,23 +36,18 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   {GA_ID && <script is:inline define:vars={{ GA_ID }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',GA_ID);</script>}
 </head>
 <body>
-  <div class="strip"><div class="wrap">
-    <span id="today">{SITE.tagline}</span>
-    <nav>{(['ap', 'ts', 'ka', 'tn', 'kl'] as const).map((s) => <a href={`/state/${s}/`}>{REGIONS[s]}</a>)}</nav>
-  </div></div>
   <header class="mast"><div class="wrap">
-    <a class="logo" href="/">South<b>wala</b></a>
-    <div class="tag">{SITE.tagline}<br />Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</div>
+    <a class="logo" href="/">Southwala</a>
+    <div class="date"><span id="today">{SITE.tagline}</span><br />Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</div>
   </div></header>
   <nav class="main"><div class="wrap">
-    <a href="/" class={!active ? 'on' : ''}>Home</a>
-    {CATEGORIES.map((c) => <a href={`/category/${c.id}/`} class={active === c.id ? 'on' : ''}>{c.label}</a>)}
+    {NAV.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''}>{c.label}</a>)}
   </div></nav>
-  <script is:inline>try{document.getElementById('today').textContent=new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}catch(e){}</script>
+  <script is:inline>try{document.getElementById('today').textContent=new Date().toLocaleDateString('en-IN',{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Kolkata'})}catch(e){}</script>
   <main class="wrap"><slot /></main>
   <footer>
     <div class="wrap">
-      <p style="margin:0 0 10px"><b style="color:#fff">{SITE.name}</b>: {SITE.description}</p>
+      <p style="margin:0 0 10px"><b>{SITE.name}</b>: {SITE.description}</p>
       <p style="margin:0 0 10px"><a href="/about/">About</a><a href="/team/">Our desks</a><a href="/editorial-policy/">Editorial policy</a><a href="/right-of-reply/">Right of reply</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/rss.xml">RSS</a></p>
       <p style="margin:0">&copy; {new Date().getFullYear()} {SITE.name}. Opinion and analysis are labelled. Corrections: {SITE.email}</p>
     </div>
