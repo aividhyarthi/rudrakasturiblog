@@ -15,6 +15,7 @@ server {
 
   location = /healthz { access_log off; default_type text/plain; return 200 "ok"; }
   location /_astro/ { expires 1y; add_header Cache-Control "public, immutable"; }
+  location ~ ^/(favicon.*|apple-touch-icon\.png|icon-.*\.png|site\.webmanifest)$ { add_header Cache-Control "no-cache"; }
   location /covers/ { expires 7d; }
   location = /feed/ { return 301 /rss.xml; }
 
