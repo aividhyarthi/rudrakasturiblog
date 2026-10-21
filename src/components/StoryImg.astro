@@ -1,4 +1,4 @@
 ---
 const { slug, alt, ratio, eager = false } = Astro.props as { slug: string; alt: string; ratio?: string; eager?: boolean };
 ---
-<img class="art-img" src={`/art/${slug}.svg`} alt={alt} width="1200" height="675" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} style={ratio ? `aspect-ratio:${ratio}` : undefined} />
+<img class="art-img" src={eager ? `/img/${slug}/16x9.jpg` : `/art/${slug}.svg`} alt={alt} width="1200" height="675" loading={eager ? 'eager' : 'lazy'} fetchpriority={eager ? 'high' : undefined} style={ratio ? `aspect-ratio:${ratio}` : undefined} />

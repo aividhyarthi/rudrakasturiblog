@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Card from '../components/Card.astro';
 import StoryImg from '../components/StoryImg.astro';
 import LatestList from '../components/LatestList.astro';
+import { istIso, plainBody } from '../lib/ist';
 import { allArticles, categoryLabel, fmtDate, findAuthor, sectionCounts } from '../lib/articles';
 import { SITE, REGIONS, REGION_SLUG, CAT_SLUG, CATEGORIES, CAT_SECTION, CAT_RAIL, NEWS_CATS, SECTIONS, catHref, stateHref } from '../config';
 
@@ -39,7 +40,7 @@ if (isArticle) {
     '@context': 'https://schema.org', '@type': NEWS_CATS.includes(d.category) ? 'NewsArticle' : 'Article', headline: d.title, description: d.description,
     image: imgs.map((u: string) => new URL(u, SITE.url).href), thumbnailUrl: new URL(imgs[0], SITE.url).href,
     inLanguage: 'en-IN', isAccessibleForFree: true, wordCount: (a.body ?? '').split(/\s+/).filter(Boolean).length,
-    keywords: (d.tags ?? []).join(', '), datePublished: d.date.toISOString(), dateModified: (d.updated ?? d.date).toISOString(),
+    keywords: (d.tags ?? []).join(', '), datePublished: istIso(d.date), dateModified: istIso(d.updated ?? d.date), articleBody: plainBody(a.body ?? ''),
     author: { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),

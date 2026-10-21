@@ -10,6 +10,7 @@ import '@fontsource/noto-sans-telugu/telugu-600.css';
 import '../styles/global.css';
 import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID, GSC_VERIFICATION, NEWS_ENABLED } from '../config';
 import { sectionCounts } from '../lib/articles';
+import { istIso } from '../lib/ist';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
 interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date; imageAlt?: string; imageW?: number; imageH?: number; section?: string; tags?: string[]; author?: string }
@@ -60,8 +61,8 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   {type === 'article' && author && <meta property="article:author" content={author} />}
   {artSection && <meta property="article:section" content={artSection} />}
   {tags.map((t) => <meta property="article:tag" content={t} />)}
-  {published && <meta property="article:published_time" content={published.toISOString()} />}
-  {modified && <meta property="article:modified_time" content={modified.toISOString()} />}
+  {published && <meta property="article:published_time" content={istIso(published)} />}
+  {modified && <meta property="article:modified_time" content={istIso(modified)} />}
   <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
