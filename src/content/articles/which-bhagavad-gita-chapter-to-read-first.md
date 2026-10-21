@@ -1,6 +1,6 @@
 ---
 title: "Which Bhagavad Gita chapter should you read first? A guide for beginners"
-description: "The Gita has 18 chapters and about 700 verses. Here is a simple reading order for beginners, with what each key chapter is about."
+description: "The Gita has 18 chapters and about 700 verses. A simple reading order for beginners, with what each key chapter is about."
 date: "2026-10-20T02:50:00Z"
 category: "gita"
 author: "Southwala Gita Desk"

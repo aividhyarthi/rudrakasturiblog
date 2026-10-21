@@ -1,6 +1,6 @@
 ---
 title: "Aditya Hridayam: the Sunday prayer Rama received before facing Ravana"
-description: "Sunday is Surya\u2019s day. Here is the story of the Aditya Hridayam, what it contains and a simple way to start Sunday with the Sun."
+description: "Sunday is Surya\u2019s day. The story of the Aditya Hridayam, what it contains and a simple way to start Sunday with the Sun."
 date: "2026-10-25T00:10:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"

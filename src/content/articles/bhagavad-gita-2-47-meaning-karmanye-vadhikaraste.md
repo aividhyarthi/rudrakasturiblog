@@ -1,6 +1,6 @@
 ---
 title: "Bhagavad Gita 2.47: what “you have a right to action alone” really means"
-description: "The most quoted verse of the Gita is also the most misunderstood. Here is what Krishna says in 2.47, line by line, and how to apply it to work and exams."
+description: "The most quoted verse of the Gita is also the most misunderstood. What Krishna says in 2.47, line by line, and how to apply it to work and exams."
 date: "2026-10-20T04:10:00Z"
 category: "gita"
 author: "Southwala Gita Desk"

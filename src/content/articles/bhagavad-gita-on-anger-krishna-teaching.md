@@ -1,6 +1,6 @@
 ---
 title: "What the Bhagavad Gita says about anger, and how to break the chain"
-description: "Krishna traces anger back to a single thought in Gita 2.62 and 2.63. Here is the chain, why the Gita calls anger an enemy, and a practical way to apply it."
+description: "Krishna traces anger back to a single thought in Gita 2.62 and 2.63. The chain, why the Gita calls anger an enemy, and a practical way to apply it."
 date: "2026-10-20T03:30:00Z"
 category: "gita"
 author: "Southwala Gita Desk"

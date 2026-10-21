@@ -7,7 +7,7 @@ export type Article = CollectionEntry<'articles'>;
 // News categories stay out of lists while NEWS_ENABLED is false. Pass { includeHidden: true } to build their pages anyway.
 export async function allArticles(opts: { includeHidden?: boolean } = {}): Promise<Article[]> {
   const showDrafts = process.env.SHOW_DRAFTS === '1';
-  const all = await getCollection('articles', ({ data }) => (showDrafts || !data.draft) && data.date.getTime() <= Date.now() && (opts.includeHidden || NEWS_ENABLED || !NEWS_CATS.includes(data.category)));
+  const all = await getCollection('articles', ({ data }) => (showDrafts || !data.draft) && data.date.getTime() <= (process.env.SW_NOW ? new Date(process.env.SW_NOW).getTime() : Date.now()) && (opts.includeHidden || NEWS_ENABLED || !NEWS_CATS.includes(data.category)));
   return all.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 

@@ -18,7 +18,7 @@ export const GA_ID = '';
 
 // URL helpers: clean, keyword-friendly addresses.
 export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
-export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', devotional: 'devotional', spiritual: 'yoga-spiritual', gita: 'gita-teachings', karma: 'karma-stories', astrology: 'horoscope' };
+export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', devotional: 'devotional', spiritual: 'yoga-spiritual', gita: 'gita-teachings', karma: 'karma-stories', gods: 'gods-and-goddesses', dharma: 'advaita-and-dharma', temple: 'temple-stories', sacred: 'sacred-rivers-and-hills', faith: 'faith-stories', astrology: 'horoscope' };
 export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
 export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/');
 
@@ -61,14 +61,19 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
 };
 
 // Which menu section each article category belongs to, and which rail it uses.
-export const CAT_SECTION: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'gita', karma: 'religion', astrology: 'astrology' };
-export const CAT_RAIL: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'religion', karma: 'religion', astrology: 'astrology' };
+export const CAT_SECTION: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'gita', karma: 'religion', gods: 'religion', dharma: 'religion', temple: 'temples', sacred: 'religion', faith: 'religion', astrology: 'astrology' };
+export const CAT_RAIL: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'religion', karma: 'religion', gods: 'religion', dharma: 'religion', temple: 'religion', sacred: 'religion', faith: 'religion', astrology: 'astrology' };
 export const NEWS_CATS = ['politics', 'movies', 'ott'];
 
 export const CATEGORIES = [
   { id: 'devotional', label: 'Devotional', blurb: 'Festivals, panchangam, vratams and the traditions behind them.' },
   { id: 'astrology', label: 'Astrology', blurb: 'Rashis, planets and how to read your horoscope.' },
   { id: 'gita', label: 'Bhagavad Gita', blurb: 'What the Gita says about work, anger, fear and peace of mind.' },
+  { id: 'gods', label: 'Gods & Goddesses', blurb: 'Shiva, Krishna, Ganesha, Murugan, Kali, Balaji and more: who they are and why people pray to them.' },
+  { id: 'dharma', label: 'Advaita & Dharma', blurb: 'Advaita, Adi Shankaracharya, the Upanishads and what Sanatana Dharma means.' },
+  { id: 'temple', label: 'Temple Stories', blurb: 'The great temples of Tamil Nadu and the South, and the stories behind them.' },
+  { id: 'sacred', label: 'Rivers & Hills', blurb: 'The rivers and hills that people worship as living gods.' },
+  { id: 'faith', label: 'Faith Stories', blurb: 'Westerners who came to India as sceptics, scholars or soldiers and left changed.' },
   { id: 'karma', label: 'Karma Stories', blurb: 'Even the gods did not escape karma. Stories from the epics and what they teach.' },
   { id: 'spiritual', label: 'Yoga & Spiritual', blurb: 'Yoga, pranayama and simple practices for daily life.' },
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },

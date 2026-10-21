@@ -1,6 +1,6 @@
 ---
 title: "Jailer 2 made a fortune. Nobody agrees on how much."
-description: "Day-one India net ranges from ₹29 crore to ₹60 crore depending on who you read. Here is why, and which numbers to trust."
+description: "Day-one India net ranges from ₹29 crore to ₹60 crore depending on who you read. Why, and which numbers to trust."
 date: "2026-10-20T06:30:00Z"
 category: "movies"
 region: "tn"

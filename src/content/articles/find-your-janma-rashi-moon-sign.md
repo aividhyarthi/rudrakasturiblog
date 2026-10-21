@@ -1,6 +1,6 @@
 ---
 title: "How to find your janma rashi (moon sign) and why it matters"
-description: "Your rashi is the sign your Moon was in at birth, not your Sun sign. Here are three ways to find it and a table of the 12 rashis with their nakshatras."
+description: "Your rashi is the sign your Moon was in at birth, not your Sun sign. Three ways to find it and a table of the 12 rashis with their nakshatras."
 date: "2026-10-20T03:40:00Z"
 category: "astrology"
 author: "Southwala Astrology Desk"

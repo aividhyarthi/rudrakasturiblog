@@ -1,6 +1,6 @@
 ---
 title: "Karthika Masam 2026: dates, Karthika Somavaram and how to light the deepam"
-description: "Karthika Masam runs from 10 November to 8 December 2026. Here are the Mondays, Kartika Pournami, the deepam tradition and what families usually observe."
+description: "Karthika Masam runs from 10 November to 8 December 2026. The Mondays, Kartika Pournami, the deepam tradition and what families usually observe."
 date: "2026-10-20T04:30:00Z"
 category: "devotional"
 author: "Southwala Devotional Desk"

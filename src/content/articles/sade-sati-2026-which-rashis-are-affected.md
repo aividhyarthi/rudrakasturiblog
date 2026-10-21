@@ -1,6 +1,6 @@
 ---
 title: "Sade Sati in 2026: which rashis are affected and what traditions say"
-description: "Saturn is in Meena until June 2027. That means Mesha, Meena and Kumbha rashis are in Sade Sati. Here is what it means and what people traditionally do."
+description: "Saturn is in Meena until June 2027. That means Mesha, Meena and Kumbha rashis are in Sade Sati. What it means and what people traditionally do."
 date: "2026-10-20T04:20:00Z"
 category: "astrology"
 author: "Southwala Astrology Desk"

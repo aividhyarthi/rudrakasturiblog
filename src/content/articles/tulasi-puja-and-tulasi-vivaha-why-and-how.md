@@ -1,6 +1,6 @@
 ---
 title: "Tulasi puja and Tulasi Vivaha: why the plant is sacred and how to worship it"
-description: "The Tulasi plant is worshipped in almost every Telugu home. Here is the story of Vrinda, how to do the daily puja, the plucking rules and when Tulasi Vivaha falls in 2026."
+description: "The Tulasi plant is worshipped in almost every Telugu home. The story of Vrinda, how to do the daily puja, the plucking rules and when Tulasi Vivaha falls in 2026."
 date: "2026-11-01T00:10:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"

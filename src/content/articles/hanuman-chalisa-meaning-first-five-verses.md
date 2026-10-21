@@ -1,6 +1,6 @@
 ---
 title: "Hanuman Chalisa meaning: the first verses explained line by line"
-description: "The Hanuman Chalisa by Tulsidas has forty verses. Here are the opening doha and first four chaupais with transliteration and meaning, and how to recite it on Tuesdays."
+description: "The Hanuman Chalisa by Tulsidas has forty verses. The opening doha and first four chaupais with transliteration and meaning, and how to recite it on Tuesdays."
 date: "2026-10-27T00:10:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"

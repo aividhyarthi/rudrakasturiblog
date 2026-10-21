@@ -1,6 +1,6 @@
 ---
 title: "Brahma Muhurtham: what it is, how to find the time and how people use it"
-description: "Brahma Muhurtham is the period about 96 to 48 minutes before sunrise. Here is how to work it out and what it is traditionally used for."
+description: "Brahma Muhurtham is the period about 96 to 48 minutes before sunrise. How to work it out and what it is traditionally used for."
 date: "2026-10-20T02:40:00Z"
 category: "devotional"
 author: "Southwala Devotional Desk"

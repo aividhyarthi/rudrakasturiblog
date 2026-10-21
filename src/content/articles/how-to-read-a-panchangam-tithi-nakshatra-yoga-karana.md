@@ -1,6 +1,6 @@
 ---
 title: "How to read a panchangam: tithi, vara, nakshatra, yoga and karana"
-description: "A panchangam has five limbs. Here is what each one means, how it is worked out, and how to use it to pick a good day without a priest on the phone."
+description: "A panchangam has five limbs. What each one means, how it is worked out, and how to use it to pick a good day without a priest on the phone."
 date: "2026-10-20T04:00:00Z"
 category: "devotional"
 author: "Southwala Devotional Desk"

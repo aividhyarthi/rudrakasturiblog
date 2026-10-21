@@ -60,3 +60,12 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Every story gets its own vector scene (assembly hall, cinema hall, OTT screens) from src/lib/storyart.ts, served at /art/<slug>.svg. No stock photos, no faces.
 - Panchangam page: dashboard with a day timeline (good and avoid periods), cards for the five limbs, Telugu names.
 - Home page shows each story once (lead, latest, card row, then section columns for what is left).
+
+## Devotional pivot (October 2026)
+- Site is devotional, astrology, temples, Gita and spiritual only for about three months. News stays live at its URLs but is not linked (`NEWS_ENABLED = false` in `src/config.ts`). Newsroom schedule paused.
+- Articles are scheduled by the `date` in each file. A story with a future date is not built until that date; the 00:05 IST daily rebuild publishes it. Links to not-yet-published stories are dropped automatically (`scripts/rehype-unpublished-links.mjs`).
+- Test a future day: `SW_NOW=2026-11-06 npx astro build`.
+- Series: gods, dharma (Advaita and Shankara), temple (Tamil Nadu), sacred (rivers and hills), faith (Westerners and Hindu tradition), karma, plus devotional, astrology, gita, spiritual.
+- Daily generated pages: `/daily-horoscope/<date>/`, `/daily-panchangam/<date>/`, Amavasya and Pournami pages, mantras section.
+- Discover: images are 1600x900, 1200x900 and 1200x1200 PNGs per article (`/img/<slug>/`), `max-image-preview:large` on every page, Article and FAQPage schema.
+- Copy rule: no AI mentions anywhere on the site. Desk bylines only.

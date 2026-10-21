@@ -34,10 +34,12 @@ if (isArticle) {
   mins = Math.max(1, Math.round(((a.body ?? '').split(/\s+/).length) / 210));
   initials = d.author.split(' ').map((w: string) => w[0]).slice(0, 2).join('');
   share = encodeURIComponent(`${d.title} ${url}`);
-  const img = d.image ?? `/covers/${a.slug}.png`;
+  const imgs = d.image ? [d.image] : ['16x9', '4x3', '1x1'].map((r) => `/img/${a.slug}/${r}.png`);
   jsonLd = {
-    '@context': 'https://schema.org', '@type': 'NewsArticle', headline: d.title, description: d.description,
-    image: [new URL(img, SITE.url).href], datePublished: d.date.toISOString(), dateModified: (d.updated ?? d.date).toISOString(),
+    '@context': 'https://schema.org', '@type': NEWS_CATS.includes(d.category) ? 'NewsArticle' : 'Article', headline: d.title, description: d.description,
+    image: imgs.map((u: string) => new URL(u, SITE.url).href), thumbnailUrl: new URL(imgs[0], SITE.url).href,
+    inLanguage: 'en-IN', isAccessibleForFree: true, wordCount: (a.body ?? '').split(/\s+/).filter(Boolean).length,
+    keywords: (d.tags ?? []).join(', '), datePublished: d.date.toISOString(), dateModified: (d.updated ?? d.date).toISOString(),
     author: { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),
@@ -54,7 +56,7 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/covers/${a.slug}.png`} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.png`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={d.author} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>
@@ -75,6 +77,8 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
     <div class="story-body">
       {d.tldr && <div class="tldr"><b>In short</b>{d.tldr}</div>}
       <div class="prose"><Content /></div>
+      {d.faq.length > 0 && <section class="faq"><h2>Quick answers</h2>{d.faq.map((f: any) => <><h3>{f.q}</h3><p>{f.a}</p></>)}</section>}
+      {d.faq.length > 0 && <script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: d.faq.map((f: any) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) })} />}
       <div class="share">
         <a class="btn" href={`https://wa.me/?text=${share}`} rel="noopener" target="_blank">Share on WhatsApp</a>
         <a class="btn" href={`https://twitter.com/intent/tweet?text=${share}`} rel="noopener" target="_blank">Post on X</a>
