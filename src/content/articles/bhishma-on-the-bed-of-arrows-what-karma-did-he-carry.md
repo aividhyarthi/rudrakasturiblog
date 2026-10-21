@@ -1,7 +1,7 @@
 ---
 title: "Bhishma on the bed of arrows: what karma did he carry?"
 description: "The wisest man of the Mahabharata lay in pain for fifty-eight days and asked what he had done to deserve it. The popular answer, and what the epic itself suggests."
-date: "2026-10-26T00:00:00+05:30"
+date: "2026-10-25T00:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

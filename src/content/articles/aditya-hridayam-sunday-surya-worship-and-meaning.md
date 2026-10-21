@@ -1,7 +1,7 @@
 ---
 title: "Aditya Hridayam: the Sunday prayer Rama received before facing Ravana"
 description: "Sunday is Surya\u2019s day. The story of the Aditya Hridayam, what it contains and a simple way to start Sunday with the Sun."
-date: "2026-10-25T00:10:00+05:30"
+date: "2026-10-24T00:10:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"
@@ -34,7 +34,7 @@ All three mantras, with their meanings, are on the [Surya mantras page](/mantras
 ## The Sun in the Vedic horoscope
 In astrology the Sun stands for self, vitality and authority. Read about all nine in our [guide to the Navagraha](/navagraha-the-nine-planets-in-vedic-astrology/).
 
-## Tonight and tomorrow
-Tonight is the eve of Sharad Purnima (see [our guide](/sharad-purnima-2026-date-timings-and-kojagari-lakshmi-puja/)), and tomorrow, Monday, is the day of Shiva.
+## Around this Sunday
+Sharad Purnima falls on the night of Sunday, 25 October (see [our guide](/sharad-purnima-2026-date-timings-and-kojagari-lakshmi-puja/)), and the next day, Monday, is the day of Shiva.
 
 *Traditions vary by family and region.*

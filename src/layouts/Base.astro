@@ -77,7 +77,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   </div></div>
   <header class="mast">
     <a class="logo" href="/" aria-label="Southwala home">Southwala<i>.</i></a>
-    <p class="tagline">Andhra &middot; Telangana &middot; Karnataka &middot; Tamil Nadu &middot; Kerala</p>
+    <p class="tagline">{SITE.tagline}</p>
   </header>
   <nav class="nav" aria-label="Sections"><div class="wrap">
     <a href="/" class={!active ? 'on' : ''}>Home</a>

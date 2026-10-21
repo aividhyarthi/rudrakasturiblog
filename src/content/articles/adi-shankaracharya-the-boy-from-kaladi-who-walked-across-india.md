@@ -1,7 +1,7 @@
 ---
 title: "Adi Shankaracharya: the boy from Kaladi who walked across India"
 description: "Born in a small village in Kerala, Shankara became a monk as a boy, studied by the Narmada, argued with the best scholars in India and set up four monasteries. His story."
-date: "2026-10-23T00:30:00+05:30"
+date: "2026-10-22T00:30:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

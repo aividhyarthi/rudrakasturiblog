@@ -1,7 +1,7 @@
 ---
 title: "Sir William Jones: the British judge who fell in love with Sanskrit"
 description: "He came to Calcutta in 1783 as a judge and left behind a hymn to Narayana, a translation of Shakuntala and the idea that Sanskrit was a cousin of Greek. His story."
-date: "2026-10-22T00:15:00+05:30"
+date: "2026-10-21T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

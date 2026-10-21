@@ -1,7 +1,7 @@
 ---
 title: "King Parikshit and the curse: how to spend a week you know is your last"
 description: "A tired king hung a dead snake around a sage\u2019s neck, and was cursed to die in seven days. What he did with those days is the part worth remembering."
-date: "2026-11-01T00:00:00+05:30"
+date: "2026-10-31T00:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

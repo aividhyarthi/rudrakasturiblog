@@ -1,7 +1,7 @@
 ---
 title: "Indra, Ahalya and Gautama\u2019s curse: status is no shield from karma"
 description: "The king of the gods was cursed for an act of deceit, and Ahalya\u2019s long penance ended when Rama arrived. The Ramayana story and its teaching on karma and repentance."
-date: "2026-10-30T00:00:00+05:30"
+date: "2026-10-29T00:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

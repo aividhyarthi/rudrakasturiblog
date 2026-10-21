@@ -1,7 +1,7 @@
 ---
 title: "Deepavali 2026 dates: Dhanteras, Lakshmi Puja and Bhai Dooj"
 description: "Dhanteras is on Friday, 6 November 2026, Deepavali Amavasya on Sunday, 8 November, Bali Padyami on 10 November and Bhai Dooj on 11 November. Tithi timings and traditions."
-date: "2026-10-30T00:10:00+05:30"
+date: "2026-10-29T00:10:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

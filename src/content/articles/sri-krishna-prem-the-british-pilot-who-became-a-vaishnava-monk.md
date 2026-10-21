@@ -1,7 +1,7 @@
 ---
 title: "Sri Krishna Prem: the British fighter pilot who became a Vaishnava monk"
 description: "Ronald Nixon flew planes for the Royal Flying Corps in the First World War. A few years later he was a Hindu monk in the Himalayan foothills. How it happened."
-date: "2026-10-25T00:15:00+05:30"
+date: "2026-10-24T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

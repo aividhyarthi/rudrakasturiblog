@@ -1,7 +1,7 @@
 ---
 title: "Godavari: the Ganga of the South and the Englishman farmers still thank"
 description: "The Godavari rises at Trimbak and reaches the sea in Andhra Pradesh. Her story, the Pushkaralu festival and why delta farmers still honour Arthur Cotton."
-date: "2026-10-23T00:20:00+05:30"
+date: "2026-10-22T00:20:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

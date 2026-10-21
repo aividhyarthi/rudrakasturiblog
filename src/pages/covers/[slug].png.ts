@@ -8,7 +8,7 @@ import { CHAPTERS } from '../../data/gita';
 type Item = { kicker: string; title: string };
 async function items(): Promise<Record<string, Item>> {
   const out: Record<string, Item> = {
-    home: { kicker: 'South India, with the receipts', title: 'Politics, panchangam, rasi phalalu, temples and the stories behind the headlines' },
+    home: { kicker: 'Be South. Sanatan. Sacred.', title: 'Panchangam, rasi phalalu, temples, the Gita and the stories behind our faith' },
     panchangam: { kicker: 'Religion', title: "Today's Panchangam: Rahu Kalam, tithi, nakshatra and good timings" },
     'rahu-kalam': { kicker: 'Panchangam', title: 'Rahu Kalam today: timings for Hyderabad, Vijayawada, Chennai and more' },
     'rasi-phalalu': { kicker: 'Rasi Phalalu', title: "Today's rasi phalalu for every rashi: daily, weekly, monthly" },

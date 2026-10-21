@@ -1,7 +1,7 @@
 ---
 title: "Swami Abhishiktananda: the French priest who found Advaita in Tamil Nadu"
 description: "Henri Le Saux was a Benedictine monk from France who came to India in 1948, met Ramana Maharshi and spent his life between Christian faith and Advaita. His story."
-date: "2026-10-29T00:15:00+05:30"
+date: "2026-10-28T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

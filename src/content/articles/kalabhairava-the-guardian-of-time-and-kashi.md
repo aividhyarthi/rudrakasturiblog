@@ -1,7 +1,7 @@
 ---
 title: "Kalabhairava: the fierce guardian of time and of Kashi"
 description: "Kalabhairava is the form of Shiva who guards Kashi and rules over time. The story, the Ashtami worship and why people offer him black sesame and dogs are fed."
-date: "2026-10-27T00:50:00+05:30"
+date: "2026-10-26T00:50:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

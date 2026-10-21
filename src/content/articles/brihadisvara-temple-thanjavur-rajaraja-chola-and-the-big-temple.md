@@ -1,7 +1,7 @@
 ---
 title: "Brihadisvara Temple, Thanjavur: how the Cholas built the Big Temple"
 description: "A 66-metre granite tower, a Nandi carved from a single rock, and a temple finished in 1010. The story of the Peruvudaiyar Kovil of Thanjavur."
-date: "2026-10-23T00:40:00+05:30"
+date: "2026-10-22T00:40:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

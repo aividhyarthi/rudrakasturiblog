@@ -1,7 +1,7 @@
 ---
 title: "Kamakhya Devi: the Shakti Peetha of Assam and its hilltop mystery"
 description: "Kamakhya has no idol. The story of the Nilachal hill temple in Guwahati, the Ambubachi Mela and why it is one of the most powerful Shakti Peethas."
-date: "2026-10-28T00:50:00+05:30"
+date: "2026-10-27T00:50:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

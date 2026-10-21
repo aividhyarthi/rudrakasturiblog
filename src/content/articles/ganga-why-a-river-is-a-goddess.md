@@ -1,7 +1,7 @@
 ---
 title: "Ganga: why a river is worshipped as a goddess"
 description: "For hundreds of millions of people the Ganga is a mother, not a river. The story of Bhagiratha, why Shiva caught her in his hair and what Ganga Dussehra marks."
-date: "2026-10-22T00:20:00+05:30"
+date: "2026-10-21T00:20:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

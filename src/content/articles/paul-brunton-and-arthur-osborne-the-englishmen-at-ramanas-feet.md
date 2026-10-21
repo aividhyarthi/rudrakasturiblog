@@ -1,7 +1,7 @@
 ---
 title: "Paul Brunton and Arthur Osborne: Englishmen at Ramana’s feet"
 description: "A journalist went looking for fakirs in 1930 and found a sage under a hill. Another Englishman moved to Tiruvannamalai to stay."
-date: "2026-10-30T00:15:00+05:30"
+date: "2026-10-29T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

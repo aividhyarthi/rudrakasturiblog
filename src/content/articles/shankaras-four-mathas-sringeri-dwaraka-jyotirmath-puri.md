@@ -1,7 +1,7 @@
 ---
 title: "Shankara’s four mathas: Sringeri, Dwaraka, Jyotirmath and Puri"
 description: "Adi Shankaracharya set up four monasteries at the four corners of India. Where each is, which Veda it follows and what its teaching is."
-date: "2026-10-29T00:30:00+05:30"
+date: "2026-10-28T00:30:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

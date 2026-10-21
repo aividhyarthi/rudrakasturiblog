@@ -1,7 +1,7 @@
 ---
 title: "Three kinds of karma: sanchita, prarabdha and kriyamana explained"
 description: "Karma is not one fixed bill. Tradition speaks of three kinds: the stored account, the part already ripening, and the action you take now. How they fit together."
-date: "2026-10-22T00:00:00+05:30"
+date: "2026-10-21T00:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"
