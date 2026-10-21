@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import Card from '../../components/Card.astro';
+import { SITE, CAT_SECTION } from '../../config';
+import { allArticles } from '../../lib/articles';
+import { AUTHORS, CAT_AUTHOR, EDITORIAL_DESK } from '../../data/authors';
+export function getStaticPaths() { return AUTHORS.map((a) => ({ params: { id: a.id }, props: { a } })); }
+const { a } = Astro.props;
+const mine = (await allArticles()).filter((x) => CAT_AUTHOR[x.data.category] === a.id).sort((p, q) => q.data.date.getTime() - p.data.date.getTime());
+const ld = { '@context': 'https://schema.org', '@type': 'ProfilePage', mainEntity: { '@type': 'Person', name: a.name, jobTitle: a.role, description: a.bio, image: `${SITE.url}/authors/${a.id}.png`, url: `${SITE.url}/team/${a.id}/`, worksFor: { '@type': 'Organization', name: SITE.name, url: SITE.url } } };
+---
+<Base title={`${a.name}, ${a.role}`} description={`${a.name} writes about ${a.beat.toLowerCase()} for Southwala. Read their articles, reviewed by the ${EDITORIAL_DESK}.`} image={`/authors/${a.id}-card.jpg`} imageAlt={`Illustrated portrait of ${a.name}`} imageH={630} jsonLd={ld} breadcrumbs={[{ name: 'Our contributors', href: '/team/' }, { name: a.name, href: `/team/${a.id}/` }]}>
+  <div class="page">
+    <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:12px">
+      <img src={`/authors/${a.id}.svg`} alt={`Illustrated portrait of ${a.name}`} width="140" height="140" style="border-radius:50%" />
+      <div><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">{a.role}</small><h1 style="margin:4px 0">{a.name}</h1><span>{a.beat}</span></div>
+    </div>
+    <p>{a.bio}</p>
+    <p class="sub">{a.name} is a pen name. The portrait is an illustration. Every article is reviewed by the {EDITORIAL_DESK}. To reach us, write to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    <div class="sect"><h2>Articles by {a.name}</h2></div>
+    {mine.length === 0 ? <p>New articles are on the way.</p> : <div class="tiles" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px">{mine.map((x) => <Card a={x} big={false} />)}</div>}
+    <p style="margin-top:24px"><a href="/team/">All contributors</a></p>
+  </div>
+</Base>

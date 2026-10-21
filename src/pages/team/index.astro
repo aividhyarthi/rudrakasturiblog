@@ -1,0 +1,25 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SITE } from '../../config';
+import { AUTHORS, EDITORIAL_DESK } from '../../data/authors';
+---
+<Base title="Our contributors" description="The Southwala contributors for devotional, astrology, Gita, yoga, temples, dharma and prayer, and the editorial desk that reviews every article." breadcrumbs={[{ name: 'Our contributors', href: '/team/' }]}>
+  <div class="page">
+    <h1>Our contributors</h1>
+    <p>Southwala articles are written by contributors who each cover one area, and every article is reviewed by the <b>{EDITORIAL_DESK}</b> before it is published, under our <a href="/editorial-policy/">editorial policy</a>. Our contributors write under pen names, and the portraits you see are illustrations, not photographs.</p>
+    <div class="tiles" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin:22px 0">
+      {AUTHORS.map((a) => (
+        <a href={`/team/${a.id}/`} style="display:block;text-decoration:none;color:inherit;border:1px solid #e6e1d8;border-radius:12px;padding:18px">
+          <img src={`/authors/${a.id}.svg`} alt={`Illustrated portrait of ${a.name}`} width="96" height="96" style="border-radius:50%" loading="lazy" />
+          <h3 style="margin:10px 0 2px">{a.name}</h3>
+          <small style="color:#6b6b6b">{a.role}</small>
+          <p style="margin:8px 0 0">{a.beat}</p>
+        </a>
+      ))}
+    </div>
+    <h2>{EDITORIAL_DESK}</h2>
+    <p>The editorial desk checks every article for accuracy, tone and sources before it goes live, and handles corrections. Health notes carry a reminder that they are not medical advice. Traditions differ by region and family, and we say so where it matters.</p>
+    <h2>Get in touch</h2>
+    <p>To suggest a topic, ask a question or request a correction, write to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+  </div>
+</Base>

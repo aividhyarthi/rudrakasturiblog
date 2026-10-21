@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3a8fd0"/><stop offset="1" stop-color="#173a73"/></linearGradient><clipPath id="c"><circle cx="200" cy="200" r="200"/></clipPath></defs>
+<g clip-path="url(#c)"><rect width="400" height="400" fill="url(#g)"/><circle cx="200" cy="170" r="128" fill="#fff" opacity=".13"/><g transform="translate(76 296)" stroke="#ffe08a" stroke-width="3" fill="none"><circle r="32"/><circle r="8" fill="#ffe08a"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(0)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(22.5)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(45)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(67.5)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(90)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(112.5)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(135)"/><line x1="0" y1="-30" x2="0" y2="30" transform="rotate(157.5)"/></g>
+
+<path d="M40 420 Q48 290 130 272 L270 272 Q352 290 360 420Z" fill="#f7f0dc"/>
+<path d="M130 272 L270 420 L330 420 Q318 300 270 272Z" fill="#f2b632" opacity=".95"/>
+<rect x="178" y="236" width="44" height="46" fill="#c4885a"/>
+<ellipse cx="200" cy="170" rx="54" ry="68" fill="#c4885a"/>
+<ellipse cx="146" cy="176" rx="8" ry="14" fill="#c4885a"/><ellipse cx="254" cy="176" rx="8" ry="14" fill="#c4885a"/>
+<path d="M150 150 Q154 118 200 116 Q246 118 250 150 Q226 130 200 130 Q174 130 150 150Z" fill="#201813" opacity=".9"/><path d="M198 108 Q206 92 212 80 Q204 98 196 108Z" fill="#201813"/>
+<g fill="#1b1210"><ellipse cx="180" cy="170" rx="5" ry="3.4"/><ellipse cx="220" cy="170" rx="5" ry="3.4"/></g>
+<path d="M170 160 Q180 154 190 160 M210 160 Q220 154 230 160" stroke="#1b1210" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M200 174 L196 196 Q200 199 204 196" stroke="#00000033" stroke-width="3" fill="none"/>
+<path d="M184 214 Q200 224 216 214" stroke="#6b2a22" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M190 128 L190 160 M210 128 L210 160 M190 160 Q200 168 210 160" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M200 130 L200 158" stroke="#d62a1f" stroke-width="5" stroke-linecap="round"/></g></svg>

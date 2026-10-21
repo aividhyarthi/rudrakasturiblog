@@ -35,3 +35,7 @@ export function sectionCounts() {
   });
   return _counts;
 }
+
+import { contributorFor } from '../data/authors';
+/** Name shown in bylines: the contributor for the category, else the desk named in the article. */
+export const byline = (d: { category: string; author: string }) => contributorFor(d.category)?.name ?? d.author;

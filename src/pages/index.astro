@@ -6,7 +6,7 @@ import StoryImg from '../components/StoryImg.astro';
 import LatestList from '../components/LatestList.astro';
 import Glyph from '../components/Glyph.astro';
 import { heroSrc } from '../lib/heroes';
-import { allArticles, categoryLabel, fmtDate, sectionCounts } from '../lib/articles';
+import { allArticles, categoryLabel, fmtDate, sectionCounts, byline } from '../lib/articles';
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
@@ -39,7 +39,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         <span class="kicker">{categoryLabel(lead.data.category)}</span>
         <h1>{lead.data.title}</h1>
         <p>{lead.data.description}</p>
-        <div class="meta">{lead.data.author} · {fmtDate(lead.data.date)}</div>
+        <div class="meta">{byline(lead.data)} · {fmtDate(lead.data.date)}</div>
       </a>
       <LatestList exclude={[lead.slug]} limit={latestN} title="Latest" />
     </section>

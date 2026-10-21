@@ -4,7 +4,8 @@ import Card from '../components/Card.astro';
 import StoryImg from '../components/StoryImg.astro';
 import LatestList from '../components/LatestList.astro';
 import { istIso, plainBody } from '../lib/ist';
-import { allArticles, categoryLabel, fmtDate, findAuthor, sectionCounts } from '../lib/articles';
+import { allArticles, categoryLabel, fmtDate, findAuthor, sectionCounts, byline } from '../lib/articles';
+import { contributorFor, contributorsForCategory, EDITORIAL_DESK } from '../data/authors';
 import { SITE, REGIONS, REGION_SLUG, CAT_SLUG, CATEGORIES, CAT_SECTION, CAT_RAIL, NEWS_CATS, SECTIONS, catHref, stateHref } from '../config';
 
 // One route serves stories, plus section and state pages that exist only once they have stories.
@@ -31,9 +32,10 @@ if (isArticle) {
   Content = (await a.render()).Content;
   const url = `${SITE.url}/${a.slug}/`;
   who = null;
-  byUrl = '/team/';
+  who = contributorFor(d.category);
+  byUrl = who ? `/team/${who.id}/` : '/team/';
   mins = Math.max(1, Math.round(((a.body ?? '').split(/\s+/).length) / 210));
-  initials = d.author.split(' ').map((w: string) => w[0]).slice(0, 2).join('');
+  initials = byline(d).split(' ').map((w: string) => w[0]).slice(0, 2).join('');
   share = encodeURIComponent(`${d.title} ${url}`);
   const imgs = d.image ? [d.image] : ['16x9', '4x3', '1x1'].map((r) => `/img/${a.slug}/${r}.jpg`);
   jsonLd = {
@@ -41,7 +43,8 @@ if (isArticle) {
     image: imgs.map((u: string) => new URL(u, SITE.url).href), thumbnailUrl: new URL(imgs[0], SITE.url).href,
     inLanguage: 'en-IN', isAccessibleForFree: true, wordCount: (a.body ?? '').split(/\s+/).filter(Boolean).length,
     keywords: (d.tags ?? []).join(', '), datePublished: istIso(d.date), dateModified: istIso(d.updated ?? d.date), articleBody: plainBody(a.body ?? ''),
-    author: { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
+    author: who ? { '@type': 'Person', name: who.name, jobTitle: who.role, url: `${SITE.url}${byUrl}`, image: `${SITE.url}/authors/${who.id}.png`, description: who.bio, worksFor: { '@type': 'Organization', name: SITE.name } } : { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
+    editor: { '@type': 'Organization', name: EDITORIAL_DESK, url: `${SITE.url}/team/` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),
   };
@@ -57,15 +60,15 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/share/${a.slug}.jpg`} imageW={d.image ? 1200 : 1200} imageH={d.image ? 675 : 630} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={d.author} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/share/${a.slug}.jpg`} imageW={d.image ? 1200 : 1200} imageH={d.image ? 675 : 630} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={byline(d)} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>
       <h1>{d.title}</h1>
       <p class="dek">{d.description}</p>
       <div class="by">
-        <span class="avatar" aria-hidden="true">{initials}</span>
-        <span>By <a href={byUrl}><b>{d.author}</b></a></span>
+        {who ? <img class="avatar" src={`/authors/${who.id}.svg`} alt="" width="40" height="40" style="border-radius:50%;object-fit:cover" /> : <span class="avatar" aria-hidden="true">{initials}</span>}
+        <span>By <a href={byUrl}><b>{byline(d)}</b></a>{who && <> &nbsp;·&nbsp; Reviewed by <a href="/team/">{EDITORIAL_DESK}</a></>}</span>
         <span>{fmtDate(d.date)}{d.updated ? `, updated ${fmtDate(d.updated)}` : ''}</span>
         <span>{mins} min read</span>
       </div>
@@ -87,7 +90,7 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
     </div>
     <div class="notes">
       {d.sources.length > 0 && <details class="note" open><summary>Sources</summary><ul style="margin-top:12px">{d.sources.map((s: any) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a>, {s.publisher}</li>)}</ul></details>}
-      <div class="note"><h4>About this article</h4>Published by the {d.author} under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">Our desks</a>.</div>
+      <div class="note"><h4>About this article</h4>{who ? <>Written by <a href={byUrl}>{who.name}</a> and reviewed by the {EDITORIAL_DESK} under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">Our contributors</a>.</> : <>Published by the {d.author} under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">Our contributors</a>.</>}</div>
       <div class="note"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/">How it works</a>.</div>
     </div>
   </article>
@@ -99,6 +102,7 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
 <Base rail={isCat ? CAT_RAIL[props.id] : 'general'} title={isCat ? `${cat!.label} Articles` : listTitle} description={isCat ? `${blurb} Articles from the Southwala ${cat!.label} desk.` : blurb} active={isCat ? CAT_SECTION[props.id] : undefined} breadcrumbs={[{ name: isCat ? cat!.label : listTitle, href: isCat ? catHref(props.id) : stateHref(props.code) }]}>
   <div class={`page ${isCat ? `c-${CAT_SECTION[props.id]}` : ''}`}>
     <h1>{isCat ? cat!.label : listTitle}</h1>
+    {isCat && contributorsForCategory(props.id).length > 0 && <p class="sub contrib">{contributorsForCategory(props.id).map((c) => <a href={`/team/${c.id}/`} style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;color:inherit;margin-right:14px"><img src={`/authors/${c.id}.svg`} alt="" width="32" height="32" style="border-radius:50%" /><span>Contributor: <b>{c.name}</b>, reviewed by {EDITORIAL_DESK}</span></a>)}</p>}
     <p class="dek" style="margin-bottom:30px;max-width:60ch">{blurb}</p>
     <div class="three">{items.map((x: any) => <Card a={x} />)}</div>
   </div>

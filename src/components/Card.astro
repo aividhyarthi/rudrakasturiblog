@@ -1,6 +1,6 @@
 ---
 import StoryImg from './StoryImg.astro';
-import { categoryLabel, fmtDate, type Article } from '../lib/articles';
+import { categoryLabel, fmtDate, byline, type Article } from '../lib/articles';
 const { a, big = true } = Astro.props as { a: Article; big?: boolean };
 ---
 <a class={`card c-${a.data.category}`} href={`/${a.slug}/`}>
@@ -8,5 +8,5 @@ const { a, big = true } = Astro.props as { a: Article; big?: boolean };
   <span class="kicker">{categoryLabel(a.data.category)}</span>
   <h3>{a.data.title}</h3>
   {big && <p>{a.data.description}</p>}
-  <div class="meta">{a.data.author} · {fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
+  <div class="meta">{byline(a.data)} · {fmtDate(a.data.date)}{a.data.draft ? ' · DRAFT' : ''}</div>
 </a>
