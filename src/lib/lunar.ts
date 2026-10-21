@@ -7,7 +7,7 @@ import { CITIES, sunTimes, sunTrop, moonTrop, sunSid, todayIST, addDays, ymdKey,
 const IST = 5.5 * 3600 * 1000;
 const DAY = 86400000;
 const norm = (x: number) => ((x % 360) + 360) % 360;
-const elong = (d: Date) => norm(moonTrop(d) - sunTrop(d));
+export const elong = (d: Date) => norm(moonTrop(d) - sunTrop(d));
 export const MONTHS = ['Chaitra', 'Vaishakha', 'Jyeshtha', 'Ashadha', 'Shravana', 'Bhadrapada', 'Ashwayuja', 'Kartika', 'Margashira', 'Pushya', 'Magha', 'Phalguna'];
 export const MONTHS_TE = ['చైత్రం', 'వైశాఖం', 'జ్యేష్ఠం', 'ఆషాఢం', 'శ్రావణం', 'భాద్రపదం', 'ఆశ్వయుజం', 'కార్తీకం', 'మార్గశిరం', 'పుష్యం', 'మాఘం', 'ఫాల్గుణం'];
 const EN_MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
@@ -20,7 +20,7 @@ function refine(seed: Date, target: number) {
   for (let i = 0; i < 40; i++) { const mid = (lo + hi) / 2; if (f(mid) < 0) lo = mid; else hi = mid; }
   return new Date((lo + hi) / 2);
 }
-function phases(target: 0 | 180, from: Date, to: Date) {
+export function phases(target: 0 | 180, from: Date, to: Date) {
   const out: Date[] = [];
   let t = from;
   while (t < to) {
@@ -36,7 +36,7 @@ function bisectCross(end: Date, thr: number) {
   for (let i = 0; i < 40; i++) { const mid = (lo + hi) / 2; if (elong(new Date(mid)) >= thr && elong(new Date(mid)) < 359.9999) hi = mid; else lo = mid; }
   return new Date(hi);
 }
-const istYmd = (d: Date) => { const t = new Date(d.getTime() + IST); return { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate() }; };
+export const istYmd = (d: Date) => { const t = new Date(d.getTime() + IST); return { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate() }; };
 
 export type Lunation = {
   kind: 'amavasya' | 'pournami'; start: Date; end: Date; observed: { y: number; m: number; d: number }; weekday: number;

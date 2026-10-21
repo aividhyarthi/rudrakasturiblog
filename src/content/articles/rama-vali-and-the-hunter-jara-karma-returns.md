@@ -1,7 +1,7 @@
 ---
 title: "Rama, Vali and the hunter Jara: even an avatar meets his karma"
 description: "Rama shot Vali from behind a tree. In a popular tradition, Vali returns as the hunter whose arrow ends Krishna\u2019s life. What the story says about karma."
-date: "2026-10-22T00:00:00+05:30"
+date: "2026-10-22T00:00:04+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

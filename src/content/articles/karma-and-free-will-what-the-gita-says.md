@@ -1,7 +1,7 @@
 ---
 title: "Karma and free will: what the Gita says you control"
 description: "If karma is real, how much is fate and how much is choice? The Gita lists five factors behind every action, and only one of them is fate."
-date: "2026-11-03T00:00:00+05:30"
+date: "2026-11-10T00:00:12+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

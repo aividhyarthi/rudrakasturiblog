@@ -1,7 +1,7 @@
 ---
 title: "Searching for happiness: why “enough” is the hardest word"
 description: "We think happiness is one purchase or promotion away. The Gita says pleasures born of contact have a beginning and an end (5.22), and Yayati learned the same."
-date: "2026-11-10T00:00:00+05:30"
+date: "2026-11-17T00:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

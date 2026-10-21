@@ -1,7 +1,7 @@
 ---
 title: "Searching for purpose at work: dharma and your job"
 description: "Many of us spend our best hours on a job that feels meaningless. What the Gita says about your own work (3.35, 18.45, 2.50) and how to find dharma in an ordinary job."
-date: "2026-11-13T00:00:00+05:30"
+date: "2026-11-20T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

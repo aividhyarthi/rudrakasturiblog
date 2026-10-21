@@ -1,7 +1,7 @@
 ---
 title: "Kanakadhara Stotram: the day young Shankara made it rain gold amla"
 description: "A poor woman gave a young Shankara the only thing she had, a dried amla fruit. His hymn to Lakshmi is said to have rained golden amlas on her house. The story and the hymn."
-date: "2026-10-30T00:00:16+05:30"
+date: "2026-11-07T00:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

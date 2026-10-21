@@ -1,7 +1,7 @@
 ---
 title: "Basar Saraswati Temple: where Telangana children write their first letters"
 description: "Basar, on the Godavari in Telangana, is one of the few Saraswati temples in India. The aksharabhyasam ceremony, the legend of Vyasa and what families do there."
-date: "2026-11-13T00:00:12+05:30"
+date: "2026-11-21T00:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

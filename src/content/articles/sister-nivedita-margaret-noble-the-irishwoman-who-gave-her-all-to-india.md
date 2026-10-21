@@ -1,7 +1,7 @@
 ---
 title: "Sister Nivedita: the Irishwoman who gave her all to India"
 description: "Margaret Noble was a schoolteacher from Ireland when she heard Swami Vivekananda speak in London. Three years later she was in Calcutta, nursing plague patients. Her story."
-date: "2026-10-22T00:00:08+05:30"
+date: "2026-10-22T00:00:12+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

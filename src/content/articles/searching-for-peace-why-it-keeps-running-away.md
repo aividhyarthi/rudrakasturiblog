@@ -1,7 +1,7 @@
 ---
 title: "Searching for peace: why it keeps running away"
 description: "You think peace will come once the exam, wedding or loan is over, and it doesn’t. What the Gita and Upanishads say about a peace that does not depend on events."
-date: "2026-11-02T00:00:08+05:30"
+date: "2026-11-10T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

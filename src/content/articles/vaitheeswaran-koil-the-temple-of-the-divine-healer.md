@@ -1,7 +1,7 @@
 ---
 title: "Vaitheeswaran Koil: the temple of the divine healer"
 description: "People pray at Vaitheeswaran Koil in Tamil Nadu for health and for Mars. The story of Vaidyanatha, the sacred tank and how to combine faith with treatment."
-date: "2026-11-06T00:00:04+05:30"
+date: "2026-11-13T00:00:04+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

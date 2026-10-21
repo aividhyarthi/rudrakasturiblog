@@ -1,0 +1,7 @@
+---
+import TithiPage from '../../../components/TithiPage.astro';
+import { allTithis } from '../../../lib/tithi';
+export function getStaticPaths() { return allTithis('pradosham').map((l) => ({ params: { slug: l.slug }, props: { l } })); }
+const { l } = Astro.props;
+---
+<TithiPage l={l} />

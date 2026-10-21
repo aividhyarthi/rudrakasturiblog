@@ -1,7 +1,7 @@
 ---
 title: "Maya: is the world an illusion? What Advaita actually says"
 description: "People say Advaita calls the world an illusion. That is not quite right. What Maya means, with the rope and snake example that Shankara used."
-date: "2026-10-25T00:00:16+05:30"
+date: "2026-10-28T00:00:08+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

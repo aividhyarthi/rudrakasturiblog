@@ -1,7 +1,7 @@
 ---
 title: "Yoga for better breathing: open the chest and slow the breath"
 description: "Desk life makes us shallow breathers. Simple postures and breathing habits that help you use your lungs fully, and why asthma needs a doctor, not just yoga."
-date: "2026-11-09T00:00:00+05:30"
+date: "2026-11-15T00:00:12+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Dreams of gods and temples: what do they mean?"
 description: "You dream of Shiva, a temple or a snake and wake up unsettled. What tradition says about auspicious dreams, what psychology adds, and how to avoid acting on a dream."
-date: "2026-11-02T00:00:12+05:30"
+date: "2026-11-10T00:00:08+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

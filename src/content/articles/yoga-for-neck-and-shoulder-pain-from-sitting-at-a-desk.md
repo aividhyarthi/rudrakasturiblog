@@ -1,7 +1,7 @@
 ---
 title: "Yoga for neck and shoulder pain from sitting at a desk"
 description: "Hours at a laptop pull the head forward and tighten the shoulders. Five desk-friendly stretches, the habits that stop it coming back and warning signs."
-date: "2026-11-10T00:00:08+05:30"
+date: "2026-11-17T00:00:08+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

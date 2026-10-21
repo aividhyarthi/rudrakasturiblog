@@ -1,7 +1,7 @@
 ---
 title: "Yoga for anger: how to cool the body before the mind explodes"
 description: "Anger lives in the body first: hot face, clenched jaw, fast heart. Cooling breath, a long exhale, slow movement and a walk can interrupt it. A practical guide."
-date: "2026-11-14T00:00:08+05:30"
+date: "2026-11-21T00:00:08+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

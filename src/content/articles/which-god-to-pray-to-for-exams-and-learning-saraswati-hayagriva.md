@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for exams and learning: Saraswati and Hayagriva"
 description: "Students in the South pray to Saraswati and to Hayagriva, the horse-headed form of Vishnu. The mantras to use, how to pray before an exam, and what to do the night before."
-date: "2026-11-11T00:00:04+05:30"
+date: "2026-11-18T00:00:08+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

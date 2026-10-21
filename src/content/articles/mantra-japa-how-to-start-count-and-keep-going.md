@@ -1,7 +1,7 @@
 ---
 title: "Mantra japa for beginners: how to start, how to count and how to keep going"
 description: "A beginner\u2019s guide to chanting a mantra with a mala: posture, the 108 count, which finger to use, the best time and what to do when the mind wanders."
-date: "2026-11-03T00:00:04+05:30"
+date: "2026-11-11T00:00:00+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Thirukkadaiyur: the temple where people celebrate their 60th birthday"
 description: "Thirukkadaiyur in Tamil Nadu is where couples go for Shashtiabdapoorthi and Sathabhishekam. The story of Markandeya, who defeated death, and the miracle of Abhirami."
-date: "2026-11-16T00:00:04+05:30"
+date: "2026-11-23T00:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

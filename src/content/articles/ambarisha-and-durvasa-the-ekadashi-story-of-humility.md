@@ -1,7 +1,7 @@
 ---
 title: "Ambarisha and Durvasa: the Ekadashi story of humility"
 description: "A king kept his Ekadashi fast and a famous sage lost his temper. The Bhagavata Purana story of Sudarshana chakra chasing Durvasa through the worlds, and what it teaches."
-date: "2026-11-15T00:00:00+05:30"
+date: "2026-11-16T00:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Story"

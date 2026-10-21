@@ -1,0 +1,74 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from './Hero.astro';
+import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
+import { MONTHS, MONTHS_TE, EN_MONTH_NAMES } from '../lib/lunar';
+import { allTithis, ROUTE, type Obs, type TithiKind } from '../lib/tithi';
+import { COPY, EK_NOTE, WEEKDAY_NOTE } from '../data/tithi-text';
+const { l } = Astro.props as { l: Obs };
+const kind = l.kind, c = COPY[kind], R = ROUTE[kind];
+const all = allTithis(kind);
+const i = all.findIndex((x) => x.slug === l.slug);
+const prev = all[i - 1], next = all[i + 1];
+const ymd = l.observed;
+const p = panchangFor(ymd, 'hyderabad');
+const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(d)}`; };
+const prettyDate = `${WEEKDAYS[l.weekday]}, ${ymd.d} ${EN_MONTH_NAMES[ymd.m - 1]} ${ymd.y}`;
+const mName = EN_MONTH_NAMES[ymd.m - 1];
+const label = (x: Obs) => kind === 'ekadashi' ? `${x.name}, ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.d}` : `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.d}, ${x.observed.y}`;
+const past = l.key < ymdKey(todayIST());
+const monthLine = `${l.adhika ? 'Adhika ' : ''}${MONTHS[l.month]} (${MONTHS_TE[l.month]}), ${l.paksha === 'shukla' ? 'Shukla paksha' : 'Krishna paksha'}`;
+const baseName = l.name.replace(' Ekadashi', '');
+const note = [kind === 'ekadashi' ? (EK_NOTE[baseName] ?? `${l.name} is one of the 24 Ekadashis of the year. Devotees fast and worship Vishnu.`) : '', WEEKDAY_NOTE[kind + l.weekday]].filter(Boolean);
+const basis = kind === 'ekadashi' ? 'present at sunrise' : kind === 'sankashti' ? 'present when the Moon rises' : 'present at sunset';
+const faq: [string, string][] = [
+  [`When is ${l.name} in ${mName} ${ymd.y}?`, `${l.name} in ${mName} ${ymd.y} is observed on ${prettyDate}. The tithi begins ${dt(l.start)} and ends ${dt(l.end)} (IST).`],
+  ...(kind === 'ekadashi' && l.parana ? [[`When is the parana time for ${l.name}?`, `Break the fast on ${WEEKDAYS[(l.weekday + 1) % 7]} morning between ${t(l.parana.from)} and ${t(l.parana.to)} (Hyderabad), after sunrise and before Dwadashi ends.`] as [string, string]] : []),
+  ...(kind === 'sankashti' && l.moonrise ? [[`What time is moonrise on ${mName} ${ymd.d}?`, `Moonrise in Hyderabad is about ${t(l.moonrise)}. It is a few minutes earlier or later in other cities.`] as [string, string]] : []),
+  ...c.faq,
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+const dup = /-\d+-\d{4}$/.test(l.slug) || (kind === 'ekadashi' && /-\d+$/.test(l.slug));
+const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise, Vrat` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
+const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana.from)} to ${t(l.parana.to)}` : 'Next morning, after sunrise'] : kind === 'sankashti' ? ['Moonrise (Hyderabad)', l.moonrise ? t(l.moonrise) : ''] : ['Puja window (Hyderabad)', l.puja ? `${t(l.puja.from)} to ${t(l.puja.to)}` : ''];
+---
+<Base rail="religion" title={title} description={`${l.name} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: label(l), href: `/${R}/${l.slug}/` }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href={`/${R}/`}>{c.title} <span class="te">{c.te}</span></a></div>
+    <h1>{kind === "ekadashi" ? l.name : `${l.name} ${dup ? ymd.d + " " : ""}${mName} ${ymd.y}`}: {prettyDate}</h1>
+    <p class="dek" style="margin:0 0 6px">{l.occasion}</p>
+    {past && <p class="sub"><b>This date has passed.</b> {next ? <>The next one is <a href={`/${R}/${next.slug}/`} style="text-decoration:underline">{label(next)}</a>.</> : null}</p>}
+    <Hero name="moon-nakshatra" alt="The Moon among the stars of the nakshatras" ratio="16/5" />
+    <div class="pgrid">
+      <div class="pcard"><b>Date</b><span>{ymd.d} {mName.slice(0, 3)} {ymd.y}</span></div>
+      <div class="pcard"><b>Tithi begins</b><span>{dt(l.start)}</span></div>
+      <div class="pcard"><b>Tithi ends</b><span>{dt(l.end)}</span></div>
+      <div class="pcard"><b>{extraCard[0]}</b><span>{extraCard[1]}</span></div>
+    </div>
+    <div class="sect"><h2>{l.name} on {prettyDate}</h2></div>
+    <p>{c.what}</p>
+    <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. We take the day on which the tithi is {basis}. It falls in {monthLine}. Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
+    {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
+    <div class="sect"><h2>Timings on the day (Hyderabad)</h2></div>
+    <div class="timing">
+      <div class="good"><b>Good timings</b><span>{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small><span style="display:block;margin-top:14px">{t(p.brahma.start)} to {t(p.brahma.end)}</span><small>Brahma Muhurtham</small></div>
+      <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam</small><span style="display:block;margin-top:14px;font-size:18px">Sunrise {t(p.sunrise)}, sunset {t(p.sunset)}</span></div>
+    </div>
+    <p class="sub">For your own city see <a href="/panchangam/" style="text-decoration:underline">today's panchangam</a>. Tithi start and end times are the same across India; sunrise, sunset and moonrise shift by a few minutes between cities.</p>
+    <div class="sect"><h2>What people traditionally do</h2></div>
+    <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
+    <div class="sect"><h2>What many avoid</h2></div>
+    <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
+    <div class="sect"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:18px">
+      {prev && <a href={`/${R}/${prev.slug}/`}>&larr; {label(prev)}</a>}
+      {next && <a href={`/${R}/${next.slug}/`}>{label(next)} &rarr;</a>}
+      <a href={`/${R}/`}>All {c.title} dates</a>
+    </div>
+    <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For vratams, confirm the day with your family priest or temple.</p>
+  </div>
+</Base>

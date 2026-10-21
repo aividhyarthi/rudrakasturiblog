@@ -1,7 +1,7 @@
 ---
 title: "Tripura Pournami: the story of the three cities and Dev Deepawali"
 description: "On Kartika Pournami Shiva destroyed the three flying cities of the demons with one arrow. The story, why lamps are lit on this night and what else happens on 24 November."
-date: "2026-11-14T00:00:00+05:30"
+date: "2026-11-18T00:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Story"

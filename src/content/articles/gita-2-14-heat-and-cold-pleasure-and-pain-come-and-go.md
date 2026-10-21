@@ -1,7 +1,7 @@
 ---
 title: "Gita 2.14: pleasure and pain come and go, so learn to endure them"
 description: "Krishna\u2019s advice in Gita 2.14 is simple and hard: sensations of heat, cold, pleasure and pain arrive and leave, so bear them patiently. What it means in daily life."
-date: "2026-10-28T00:00:04+05:30"
+date: "2026-11-01T00:00:12+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

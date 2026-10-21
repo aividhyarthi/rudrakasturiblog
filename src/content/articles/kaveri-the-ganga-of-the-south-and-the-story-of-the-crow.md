@@ -1,7 +1,7 @@
 ---
 title: "Kaveri: the story of the crow that spilled a river"
 description: "The Kaveri begins on a hill in Kodagu and feeds the delta of Tamil Nadu. The story of Agastya, Ganesha as a crow, Tula Sankramana and the festival of Aadi Perukku."
-date: "2026-10-24T00:00:12+05:30"
+date: "2026-10-26T00:00:08+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"
