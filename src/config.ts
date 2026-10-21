@@ -1,7 +1,7 @@
 // Everything you may want to change lives here.
 export const SITE = {
   name: 'Southwala',
-  url: 'https://southwala.com',
+  url: 'https://www.southwala.com',
   tagline: 'Be South. Sanatan. Sacred.',
   description:
     'Daily panchangam by your location, Rahu Kalam, rasi phalalu, Amavasya and Pournami dates, temple guides and the Bhagavad Gita, for Telugu, Kannada, Tamil and Malayalam homes.',

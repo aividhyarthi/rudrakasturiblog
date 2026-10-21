@@ -7,6 +7,9 @@ server {
   index index.html;
   absolute_redirect off;
 
+  # Shared links without www go to the real address
+  if ($host = southwala.com) { return 301 https://www.southwala.com$request_uri; }
+
   gzip on;
   gzip_types text/css application/javascript application/json image/svg+xml application/xml text/plain;
 

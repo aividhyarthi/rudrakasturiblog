@@ -38,7 +38,7 @@ export function cardSvg(kicker: string, title: string): string {
 ${text}
 <line x1="90" y1="582" x2="1110" y2="582" stroke="#000" stroke-width="2"/>
 <text x="90" y="632" font-family="DejaVu Serif" font-weight="700" font-size="40" fill="#000">Southwala</text>
-<text x="1110" y="630" text-anchor="end" font-family="DejaVu Sans" font-weight="700" font-size="22" letter-spacing="2" fill="#000">southwala.com</text>
+<text x="1110" y="630" text-anchor="end" font-family="DejaVu Sans" font-weight="700" font-size="22" letter-spacing="2" fill="#000">www.southwala.com</text>
 </svg>`;
 }
 
