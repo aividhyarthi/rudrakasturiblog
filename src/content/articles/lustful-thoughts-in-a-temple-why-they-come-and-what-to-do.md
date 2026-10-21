@@ -1,7 +1,7 @@
 ---
 title: "Lustful thoughts in a temple: why they come and what to do"
 description: "It is more common than anyone admits. Why the mind wanders into desire in sacred places, what the Gita and Ramana say, and a calm way to deal with it."
-date: "2026-10-21T00:05:00+05:30"
+date: "2026-10-21T00:00:08+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

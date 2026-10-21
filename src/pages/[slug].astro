@@ -34,7 +34,7 @@ if (isArticle) {
   mins = Math.max(1, Math.round(((a.body ?? '').split(/\s+/).length) / 210));
   initials = d.author.split(' ').map((w: string) => w[0]).slice(0, 2).join('');
   share = encodeURIComponent(`${d.title} ${url}`);
-  const imgs = d.image ? [d.image] : ['16x9', '4x3', '1x1'].map((r) => `/img/${a.slug}/${r}.png`);
+  const imgs = d.image ? [d.image] : ['16x9', '4x3', '1x1'].map((r) => `/img/${a.slug}/${r}.jpg`);
   jsonLd = {
     '@context': 'https://schema.org', '@type': NEWS_CATS.includes(d.category) ? 'NewsArticle' : 'Article', headline: d.title, description: d.description,
     image: imgs.map((u: string) => new URL(u, SITE.url).href), thumbnailUrl: new URL(imgs[0], SITE.url).href,
@@ -56,7 +56,7 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.png`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={d.author} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/share/${a.slug}.jpg`} imageW={d.image ? 1200 : 1200} imageH={d.image ? 675 : 630} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={d.author} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>

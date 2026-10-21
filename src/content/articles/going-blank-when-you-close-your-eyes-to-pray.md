@@ -1,7 +1,7 @@
 ---
 title: "Going blank when you close your eyes to pray: what it means"
 description: "You sit to pray, close your eyes and nothing comes. No words, no feeling. Why that happens, what the tradition says about silence and how to pray again."
-date: "2026-10-21T00:05:00+05:30"
+date: "2026-10-21T00:00:04+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

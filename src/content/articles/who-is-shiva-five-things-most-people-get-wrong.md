@@ -1,7 +1,7 @@
 ---
 title: "Who is Shiva? Five things most people get wrong"
 description: "Shiva is called the destroyer, but that is the smallest part of the picture. Who he is, what the linga means and why ash and graveyards belong to him."
-date: "2026-10-21T00:50:00+05:30"
+date: "2026-10-21T00:00:40+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

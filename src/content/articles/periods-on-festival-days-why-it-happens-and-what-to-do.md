@@ -1,7 +1,7 @@
 ---
 title: "Periods on festival days: why it happens and what to do"
 description: "Your period starts on the morning of a festival and you feel guilty. Why the timing happens, what traditions say, and the middle paths families use."
-date: "2026-10-21T00:05:00+05:30"
+date: "2026-10-21T00:00:12+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

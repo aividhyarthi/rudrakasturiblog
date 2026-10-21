@@ -1,7 +1,7 @@
 ---
 title: "Krishna: the cowherd, the king and the teacher"
 description: "Krishna is three people in one story. The naughty child of Gokul, the clever king of Dwaraka and the voice of the Gita. How they fit together."
-date: "2026-10-22T00:50:00+05:30"
+date: "2026-10-22T00:00:24+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

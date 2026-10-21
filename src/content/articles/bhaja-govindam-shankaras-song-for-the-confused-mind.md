@@ -1,7 +1,7 @@
 ---
 title: "Bhaja Govindam: Shankara’s song for the confused mind"
 description: "Bhaja Govindam is one of the most sung hymns in India. The story of how it began in Varanasi and what its best-known verses say."
-date: "2026-10-23T00:30:00+05:30"
+date: "2026-10-23T00:00:16+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

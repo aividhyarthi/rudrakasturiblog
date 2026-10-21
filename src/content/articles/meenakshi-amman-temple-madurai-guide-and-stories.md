@@ -1,7 +1,7 @@
 ---
 title: "Meenakshi Amman Temple, Madurai: towers, tank and wedding"
 description: "Madurai is a city built around one temple. What to see at Meenakshi Amman Temple, the story of the goddess, the wedding festival and how to plan a visit."
-date: "2026-10-21T00:40:00+05:30"
+date: "2026-10-21T00:00:36+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

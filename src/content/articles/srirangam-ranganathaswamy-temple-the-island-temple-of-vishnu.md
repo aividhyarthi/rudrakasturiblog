@@ -1,7 +1,7 @@
 ---
 title: "Srirangam: the island temple of Ranganatha and its twenty-one towers"
 description: "Srirangam is one of the largest temple complexes in the world, on an island in the Kaveri. The story of Ranganatha, Ramanuja and Vaikuntha Ekadashi."
-date: "2026-10-25T00:40:00+05:30"
+date: "2026-10-25T00:00:20+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

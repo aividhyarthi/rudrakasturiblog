@@ -1,7 +1,7 @@
 ---
 title: "Shankara, Ramanuja and Madhva: three ways to understand God and the soul"
 description: "The three great teachers of Vedanta read the same texts and reached different answers. How Advaita, Vishishtadvaita and Dvaita differ, in plain words."
-date: "2026-10-27T00:30:00+05:30"
+date: "2026-10-27T00:00:16+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

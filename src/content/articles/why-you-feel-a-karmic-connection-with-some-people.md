@@ -1,7 +1,7 @@
 ---
 title: "Why you feel a karmic connection with some people"
 description: "You meet someone and feel you have known them forever. Rinanubandha, psychology and how to tell a warm bond from one that drains you."
-date: "2026-10-21T00:05:00+05:30"
+date: "2026-10-21T00:00:16+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

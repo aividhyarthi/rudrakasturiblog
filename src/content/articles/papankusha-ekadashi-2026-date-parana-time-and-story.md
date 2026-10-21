@@ -1,7 +1,7 @@
 ---
 title: "Papankusha Ekadashi 2026: date, fasting rules, parana time and the story"
 description: "Papankusha Ekadashi falls on Thursday, 22 October 2026. The tithi timings, how to fast, when to break the fast and the story behind it."
-date: "2026-10-21T00:10:00+05:30"
+date: "2026-10-21T00:00:20+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

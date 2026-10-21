@@ -1,7 +1,7 @@
 ---
 title: "Kali: the goddess people fear and the mother they pray to"
 description: "Kali looks frightening on purpose. What her dark form, her tongue and her garland mean, and why Ramakrishna called her Ma."
-date: "2026-10-25T00:50:00+05:30"
+date: "2026-10-25T00:00:24+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

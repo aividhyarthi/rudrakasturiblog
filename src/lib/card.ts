@@ -1,5 +1,6 @@
 // Headline cards (1200x675) for social sharing and Google Discover: white, black type, our wordmark.
 // Fonts are bundled (DejaVu) so the card renders the same on every machine.
+import fs from 'node:fs';
 import path from 'node:path';
 import { Resvg } from '@resvg/resvg-js';
 
@@ -47,6 +48,7 @@ export function cardPng(kicker: string, title: string): Buffer {
 }
 
 export function logoPng(): Buffer {
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><rect width="512" height="512" fill="#fff"/><rect x="14" y="14" width="484" height="484" fill="none" stroke="#000" stroke-width="14"/><text x="256" y="360" text-anchor="middle" font-family="DejaVu Serif" font-weight="700" font-size="320" fill="#000">S</text></svg>`;
-  return new Resvg(svg, { font: { fontFiles: FONTS, loadSystemFonts: false, defaultFontFamily: 'DejaVu Serif' } }).render().asPng();
+  // The same mark as the favicon: a serif S with a red dot, on white, 512x512.
+  const fav = fs.readFileSync('public/favicon.svg', 'utf8').replace('<rect width="64" height="64" rx="14" fill="#fff"/>', '<rect width="64" height="64" fill="#fff"/>');
+  return new Resvg(fav, { fitTo: { mode: 'width', value: 512 } }).render().asPng();
 }

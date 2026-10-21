@@ -1,7 +1,7 @@
 ---
 title: "Kapaleeshwarar Temple, Mylapore: Chennai’s temple of the peacock"
 description: "A Shiva temple in the middle of Chennai, praised in Tamil hymns over a thousand years ago. Its story and the Panguni festival."
-date: "2026-10-24T00:40:00+05:30"
+date: "2026-10-24T00:00:20+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

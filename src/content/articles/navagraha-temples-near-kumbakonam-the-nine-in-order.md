@@ -1,7 +1,7 @@
 ---
 title: "The nine Navagraha temples near Kumbakonam: which planet, which temple"
 description: "Nine temples around Kumbakonam are each dedicated to one of the nine planets. The list, the planet and the story of each, and how people plan the circuit."
-date: "2026-10-29T00:40:00+05:30"
+date: "2026-10-29T00:00:20+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

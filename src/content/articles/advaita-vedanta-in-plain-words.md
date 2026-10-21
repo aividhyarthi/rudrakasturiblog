@@ -1,7 +1,7 @@
 ---
 title: "Advaita Vedanta in plain words: you are not separate from the whole"
 description: "Advaita says the self inside you and the ultimate reality are one. What that means, how it differs from belief in a God out there, and how people actually practise it."
-date: "2026-10-21T00:30:00+05:30"
+date: "2026-10-21T00:00:32+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

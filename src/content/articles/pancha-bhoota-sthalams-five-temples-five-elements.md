@@ -1,7 +1,7 @@
 ---
 title: "The Pancha Bhoota temples: five Shiva temples for five elements"
 description: "Five Shiva temples stand for earth, water, fire, air and space. Where each is, how it shows its element and why Srikalahasti is on the list."
-date: "2026-10-30T00:40:00+05:30"
+date: "2026-10-30T00:00:20+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
