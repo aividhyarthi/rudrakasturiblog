@@ -29,8 +29,8 @@ if (isArticle) {
   a = props.a; d = a.data;
   Content = (await a.render()).Content;
   const url = `${SITE.url}/${a.slug}/`;
-  who = findAuthor(d.author);
-  byUrl = who ? `/author/${who.slug}/` : '/team/';
+  who = null;
+  byUrl = '/team/';
   mins = Math.max(1, Math.round(((a.body ?? '').split(/\s+/).length) / 210));
   initials = d.author.split(' ').map((w: string) => w[0]).slice(0, 2).join('');
   share = encodeURIComponent(`${d.title} ${url}`);
@@ -38,7 +38,7 @@ if (isArticle) {
   jsonLd = {
     '@context': 'https://schema.org', '@type': 'NewsArticle', headline: d.title, description: d.description,
     image: [new URL(img, SITE.url).href], datePublished: d.date.toISOString(), dateModified: (d.updated ?? d.date).toISOString(),
-    author: { '@type': 'Person', name: d.author, url: `${SITE.url}${byUrl}`, description: 'AI-assisted Southwala desk byline' },
+    author: { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),
   };
@@ -62,7 +62,7 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
       <p class="dek">{d.description}</p>
       <div class="by">
         <span class="avatar" aria-hidden="true">{initials}</span>
-        <span>By <a href={byUrl}><b>{d.author}</b></a>{who && <> · {who.desk}</>}</span>
+        <span>By <a href={byUrl}><b>{d.author}</b></a></span>
         <span>{fmtDate(d.date)}{d.updated ? `, updated ${fmtDate(d.updated)}` : ''}</span>
         <span>{mins} min read</span>
       </div>
@@ -82,7 +82,7 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
     </div>
     <div class="notes">
       {d.sources.length > 0 && <details class="note" open><summary>Sources</summary><ul style="margin-top:12px">{d.sources.map((s: any) => <li><a href={s.url} rel="noopener nofollow" target="_blank">{s.title}</a>, {s.publisher}</li>)}</ul></details>}
-      <div class="note"><h4>About this byline</h4>{d.author} is an AI-assisted Southwala desk byline{who ? ` for the ${who.desk}` : ''}. Stories are written with AI help and published under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">How our desks work</a>.</div>
+      <div class="note"><h4>About this article</h4>Published by the {d.author} under our <a href="/editorial-policy/">editorial policy</a>. <a href="/team/">Our desks</a>.</div>
       <div class="note"><h4>Right of reply</h4>Named in this story and want to respond? Write to {SITE.email}. We will add your response, unedited, and update this story. <a href="/right-of-reply/">How it works</a>.</div>
     </div>
   </article>

@@ -4,7 +4,7 @@ description: "The government is weighing legal options, including a Supreme Cour
 date: "2026-10-20T10:00:00Z"
 category: "politics"
 region: "ka"
-author: "Ananya Hegde Honnavar"
+author: "Southwala News Desk"
 format: "60-Second Explainer"
 tldr: "The Karnataka High Court struck down provisions of a 2022 state law that increased SC/ST reservation. The Deputy CM says the government will weigh options, including the Supreme Court."
 imageAlt: "Abstract scales of justice and courthouse columns in neon colours"

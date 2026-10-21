@@ -18,7 +18,7 @@ export const GA_ID = '';
 
 // URL helpers: clean, keyword-friendly addresses.
 export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
-export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', devotional: 'devotional', spiritual: 'yoga-spiritual', gita: 'gita-teachings', astrology: 'horoscope' };
+export const CAT_SLUG: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'tv-ott', devotional: 'devotional', spiritual: 'yoga-spiritual', gita: 'gita-teachings', karma: 'karma-stories', astrology: 'horoscope' };
 export const catHref = (id: string) => `/${CAT_SLUG[id] ?? id}/`;
 export const stateHref = (id: string) => (id in REGION_SLUG ? `/${REGION_SLUG[id as keyof typeof REGION_SLUG]}/` : '/');
 
@@ -43,6 +43,8 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
     { label: 'Rahu Kalam today', href: '/rahu-kalam-today/' },
     { label: 'Amavasya', href: '/amavasya/' },
     { label: 'Pournami', href: '/pournami/' },
+    { label: 'Daily panchangam', href: '/daily-panchangam/' },
+    { label: 'Mantras', href: '/mantras/' },
     { label: 'Temples', href: '/temples/' },
     { label: 'Jyotirlingas', href: '/temples/jyotirlingas/' },
     { label: 'Shakti Peethas', href: '/temples/shakti-peethas/' },
@@ -52,20 +54,22 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
   astrology: [
     { label: 'Today', href: '/rasi-phalalu/' },
     { label: 'Tomorrow', href: '/horoscope-tomorrow/' },
+    { label: 'Daily article', href: '/daily-horoscope/' },
     { label: 'Weekly', href: '/rasi-phalalu/mesha/weekly/' },
     { label: 'Monthly', href: '/rasi-phalalu/mesha/monthly/' },
   ],
 };
 
 // Which menu section each article category belongs to, and which rail it uses.
-export const CAT_SECTION: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'gita', astrology: 'astrology' };
-export const CAT_RAIL: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'religion', astrology: 'astrology' };
+export const CAT_SECTION: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'gita', karma: 'religion', astrology: 'astrology' };
+export const CAT_RAIL: Record<string, string> = { politics: 'politics', movies: 'movies', ott: 'ott', devotional: 'religion', spiritual: 'religion', gita: 'religion', karma: 'religion', astrology: 'astrology' };
 export const NEWS_CATS = ['politics', 'movies', 'ott'];
 
 export const CATEGORIES = [
   { id: 'devotional', label: 'Devotional', blurb: 'Festivals, panchangam, vratams and the traditions behind them.' },
   { id: 'astrology', label: 'Astrology', blurb: 'Rashis, planets and how to read your horoscope.' },
   { id: 'gita', label: 'Bhagavad Gita', blurb: 'What the Gita says about work, anger, fear and peace of mind.' },
+  { id: 'karma', label: 'Karma Stories', blurb: 'Even the gods did not escape karma. Stories from the epics and what they teach.' },
   { id: 'spiritual', label: 'Yoga & Spiritual', blurb: 'Yoga, pranayama and simple practices for daily life.' },
   { id: 'politics', label: 'Politics', blurb: 'Who said what, who promised what, who got caught.' },
   { id: 'movies', label: 'Cinema', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },

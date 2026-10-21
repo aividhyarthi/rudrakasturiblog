@@ -4,7 +4,7 @@ description: "Vijay Deverakonda and Rashmika Mandanna's period action drama open
 date: "2026-10-20T07:00:00Z"
 category: "movies"
 region: "ts"
-author: "Pranathi Reddy Dasari"
+author: "Southwala News Desk"
 format: "Box Office Check"
 tldr: "Ranabaali opened on 16 October. Trackers' day-one figures range from ₹1.68 crore (an early live tally) to ₹7.76 crore (the later total). Reviews and reports call the start lukewarm."
 imageAlt: "Abstract warrior shield and sword shapes in neon colours"

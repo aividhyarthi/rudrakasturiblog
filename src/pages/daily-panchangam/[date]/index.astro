@@ -1,0 +1,82 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Hero from '../../../components/Hero.astro';
+import { dailyDates, dayFacts, otherCities, niceDate, weekdayOf, ymdKey, parseKey, WEEKDAYS } from '../../../lib/daily';
+import { addDays, WEEKDAYS_TE } from '../../../lib/panchang';
+export function getStaticPaths() { return dailyDates().map((x) => ({ params: { date: ymdKey(x) }, props: { x } })); }
+const { x } = Astro.props as any;
+const f = dayFacts(x);
+const { p, t, range } = f;
+const nice = niceDate(x), wdName = WEEKDAYS[f.wd];
+const prevK = ymdKey(addDays(x, -1)), nextK = ymdKey(addDays(x, 1));
+const all = new Set(dailyDates().map(ymdKey));
+const tithiName = `${f.tithi.paksha} ${f.tithi.name}`;
+const title = `Panchangam ${nice}: ${tithiName}, ${f.nak.name}`;
+const cities = otherCities(x);
+const heroFor: Record<string, string> = { shiva: 'shiva-symbols', vishnu: 'vishnu-symbols', venkateswara: 'temple-tirumala', durga: 'temple-kanakadurga', lakshmi: 'devi-symbols', surya: 'temple-sunrise' };
+const hero = heroFor[f.main.id] ?? 'panchangam';
+const faq = [
+  [`What is the tithi on ${nice}?`, `On ${nice} the tithi at sunrise is ${tithiName}, running until ${t(f.tithi.endsAt)}${p.tithi[1] ? `, followed by ${p.tithi[1].paksha} ${p.tithi[1].name}` : ''} (Hyderabad).`],
+  [`What is Rahu Kalam on ${nice}?`, `Rahu Kalam on ${wdName}, ${nice} is ${range(p.rahu)} in Hyderabad. Avoid starting new work in this window.`],
+  [`Which god is worshipped on ${wdName}?`, `${wdName} is the day of ${f.main.name}${f.alt ? `, and also of ${f.alt.name}` : ''}.`],
+  [`What is the nakshatra on ${nice}?`, `The nakshatra is ${f.nak.name} until ${t(f.nak.endsAt)}${p.nakshatra[1] ? `, then ${p.nakshatra[1].name}` : ''}.`],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" railNoToday title={title} description={`${wdName}, ${nice}: ${tithiName} until ${t(f.tithi.endsAt)}, ${f.nak.name} nakshatra, Rahu Kalam ${range(p.rahu)}, Abhijit muhurtham, and the god and mantra of the day.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Daily panchangam', href: '/daily-panchangam/' }, { name: nice, href: `/daily-panchangam/${f.key}/` }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/daily-panchangam/">Daily panchangam</a></div>
+    <h1>Panchangam {nice}: {wdName}, {tithiName}</h1>
+    <p class="dek" style="max-width:62ch">{wdName} <span class="te">{WEEKDAYS_TE[f.wd]}</span> is the day of {f.main.name}. The Moon is in {f.nak.name} nakshatra and in {f.moonSign.skt} rashi <span class="te">{f.moonSign.te}</span>.</p>
+    <Hero name={hero} alt={`Illustration for the worship of ${f.main.name}`} ratio="16/5" />
+    <p>{nice} is a {wdName}. The tithi at sunrise in Hyderabad is <b>{tithiName}</b> and it lasts until <b>{t(f.tithi.endsAt)}</b>{p.tithi[1] && `, after which ${p.tithi[1].paksha} ${p.tithi[1].name} begins`}. The Moon is in <b>{f.nak.name}</b> nakshatra until <b>{t(f.nak.endsAt)}</b>{p.nakshatra[1] && `, then ${p.nakshatra[1].name}`}. The yoga is <b>{p.yoga[0].name}</b> and the karana is <b>{p.karana[0].name}</b>. Sunrise is at {t(p.sunrise)} and sunset at {t(p.sunset)}. Timings below are for Hyderabad; use the <a href="/panchangam/" style="text-decoration:underline">panchangam for your location</a> for your own city.</p>
+    {f.special.length > 0 && <><div class="sect"><h2>Special today</h2></div>{f.special.map((s) => <p set:html={s} />)}</>}
+
+    <div class="sect"><h2>Good and bad timings</h2></div>
+    <div class="timing">
+      <div class="good"><b>Good timings</b><span>{range(p.abhijit)}</span><small>Abhijit Muhurtham: good for beginning important work.</small><span style="display:block;margin-top:14px">{range(p.brahma)}</span><small>Brahma Muhurtham: prayer, study and meditation.</small></div>
+      <div class="bad"><b>Timings to avoid</b><span>{range(p.rahu)}</span><small>Rahu Kalam on {wdName}.</small><span style="display:block;margin-top:14px;font-size:18px">Yamagandam {range(p.yama)}</span><span style="display:block;margin-top:8px;font-size:18px">Gulika {range(p.gulika)}</span></div>
+    </div>
+
+    <div class="sect"><h2>God of the day: {f.main.name} <span class="te">{f.main.te}</span></h2></div>
+    <p>{f.main.about}</p>
+    <p><b>Offerings today:</b> {f.main.offerings}. <b>Naivedyam:</b> {f.main.naivedyam}. <b>Colour for the day:</b> {f.main.colour}.</p>
+    <div class="rcard" style="margin:14px 0 18px"><b>Mantra for today: {f.mantra.name}</b>{f.mantra.te && <p class="te" style="font-size:22px;margin:8px 0 2px">{f.mantra.te}</p>}<p style="font-style:italic;margin:8px 0 6px">{f.mantra.sa}</p><p style="margin:0 0 6px"><b>Meaning:</b> {f.mantra.meaning}</p><p class="sub" style="margin:0">{f.mantra.use}</p></div>
+    <p>A short pooja: bathe, light a lamp, remember Ganesha with <i>Om Gam Ganapataye Namah</i>, offer {f.main.offerings}, chant the mantra above 11 or 108 times, and offer {f.main.naivedyam}. More on <a href={`/mantras/${f.main.id}/`} style="text-decoration:underline">{f.main.name} mantras</a>{f.alt && <>, and on <a href={`/mantras/${f.alt.id}/`} style="text-decoration:underline">{f.alt.name}</a>, who is also worshipped on {wdName}</>}.</p>
+    {f.tithiDeity && <p><b>Tithi deity:</b> {tithiName} is also associated with <a href={`/mantras/${f.tithiDeity.id}/`} style="text-decoration:underline">{f.tithiDeity.name}</a>. Mantra: <i>{f.tithiDeity.mantras[0].sa}</i>.</p>}
+
+    <div class="sect"><h2>What today's tithi and nakshatra mean</h2></div>
+    <ul>{f.overall.points.slice(0, 3).map((s) => <li>{s}</li>)}</ul>
+    <p>The presiding deity of {f.nak.name} is {f.nakDeity}, so a prayer to {f.nakDeity} is traditionally made on this nakshatra by those born under it.</p>
+
+    <div class="sect"><h2>The five limbs today</h2></div>
+    <div class="tw"><table class="data">
+      <tbody>
+        <tr><td><b>Tithi</b></td><td>{p.tithi.map((s) => `${s.paksha} ${s.name} until ${t(s.endsAt)}`).join('; ')}</td></tr>
+        <tr><td><b>Vara</b></td><td>{wdName} ({WEEKDAYS_TE[f.wd]})</td></tr>
+        <tr><td><b>Nakshatra</b></td><td>{p.nakshatra.map((s) => `${s.name} until ${t(s.endsAt)}`).join('; ')}</td></tr>
+        <tr><td><b>Yoga</b></td><td>{p.yoga.map((s) => `${s.name} until ${t(s.endsAt)}`).join('; ')}</td></tr>
+        <tr><td><b>Karana</b></td><td>{p.karana.map((s) => `${s.name} until ${t(s.endsAt)}`).join('; ')}</td></tr>
+        <tr><td><b>Moon sign</b></td><td>{f.moonSign.skt} ({f.moonSign.en})</td></tr>
+        {p.moonrise && <tr><td><b>Moonrise / moonset</b></td><td>{t(p.moonrise)}{p.moonset ? ` / ${t(p.moonset)}` : ''}</td></tr>}
+      </tbody>
+    </table></div>
+
+    <div class="sect" style="margin-top:26px"><h2>Sunrise and Rahu Kalam in other cities</h2></div>
+    <div class="tw"><table class="data">
+      <thead><tr><th>City</th><th>Sunrise</th><th>Rahu Kalam</th></tr></thead>
+      <tbody>{cities.map((c) => <tr><td><a href={`/panchangam/${c.id}/`} style="text-decoration:underline">{c.name}</a></td><td>{c.sunrise}</td><td>{c.rahu}</td></tr>)}</tbody>
+    </table></div>
+
+    <div class="sect" style="margin-top:26px"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:16px">
+      {all.has(prevK) && <a href={`/daily-panchangam/${prevK}/`}>&larr; Previous day</a>}
+      {all.has(nextK) && <a href={`/daily-panchangam/${nextK}/`}>Next day &rarr;</a>}
+      <a href={`/daily-horoscope/${f.key}/`}>Horoscope for {nice}</a>
+      <a href="/mantras/">Mantras</a><a href="/rahu-kalam-today/">Rahu Kalam today</a>
+    </div>
+    <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa, true local sunrise). Traditions vary by region and family. For rituals and muhurthams, confirm with your family priest or temple.</p>
+  </div>
+</Base>

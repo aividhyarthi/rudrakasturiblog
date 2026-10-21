@@ -3,7 +3,7 @@ import Hero from '../../components/Hero.astro';
 import Glyph from '../../components/Glyph.astro';
 import Base from '../../layouts/Base.astro';
 import { RASHIS, reading, dayOverall } from '../../lib/astro';
-import { panchangFor, todayIST, WEEKDAYS } from '../../lib/panchang';
+import { panchangFor, todayIST, WEEKDAYS, ymdKey } from '../../lib/panchang';
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
 const o = dayOverall({ tithi: p.tithi, nakshatra: p.nakshatra, moonSign: p.moonSign, weekday: p.weekday });
@@ -16,6 +16,7 @@ const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
     <div class="kicker">Rasi Phalalu</div>
     <h1>Today's rasi phalalu</h1>
     <p class="meta" style="margin:0 0 6px">{pretty}</p>
+    <p class="sub" style="margin:0 0 10px"><a href={`/daily-horoscope/${ymdKey(ymd)}/`} style="text-decoration:underline"><b>Read today's full horoscope article for all 12 rashis</b></a> &middot; <a href="/daily-panchangam/" style="text-decoration:underline">Daily panchangam</a></p>
     <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" />
     <div class="sect"><h2>Overall for the day</h2></div>
     <div class="rcard" style="margin-bottom:34px"><b>{o.headline}</b><ul style="margin:0;padding-left:20px;font-family:var(--serif);font-size:17.5px;line-height:1.6">{o.points.map((x) => <li style="margin:6px 0">{x}</li>)}</ul></div>

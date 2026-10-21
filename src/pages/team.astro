@@ -1,18 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
-import { TEAM } from '../lib/articles';
-import { REGIONS } from '../config';
-const states = ['ap', 'ts', 'ka', 'tn', 'kl'] as const;
+import { SITE } from '../config';
+const desks = [
+  ['Devotional Desk', 'Panchangam, festivals, vratams, mantras and temple guides.'],
+  ['Astrology Desk', 'Daily, weekly and monthly rasi phalalu, planets and rashis.'],
+  ['Gita Desk', 'The Bhagavad Gita chapter by chapter, and karma stories from the epics.'],
+  ['Yoga Desk', 'Yoga, pranayama and simple practices for daily life.'],
+  ['News Desk', 'Politics, cinema and OTT from the five southern states.'],
+];
 ---
-<Base title="Our desks and bylines" description="How Southwala state desks and AI-assisted bylines work, what they can and cannot claim, and the full list of desk names.">
+<Base title="Our desks" description="The Southwala desks: devotional, astrology, Gita, yoga and news, and what each covers.">
   <div class="page">
-    <h1>Our desks and bylines</h1>
-    <p>Southwala runs five state desks. Every byline here is an <b>AI-assisted desk byline</b>: a named editorial voice with a fixed beat, not a human reporter in the field. Stories are drafted by AI from the cited sources, follow our <a href="/editorial-policy/">editorial policy</a>, and politically sensitive stories are reviewed by a human editor before publication. Bylines do not claim interviews, on-the-ground reporting or personal experience.</p>
-    {states.map((s) => (
-      <>
-        <h2>{REGIONS[s]}</h2>
-        <ul>{TEAM.filter((p) => p.state === s).map((p) => <li><a href={`/author/${p.slug}/`}><b>{p.name}</b></a>: {p.desk}</li>)}</ul>
-      </>
-    ))}
+    <h1>Our desks</h1>
+    <p>Southwala articles are published under the name of the desk that covers the topic. Every article follows our <a href="/editorial-policy/">editorial policy</a>. To suggest a topic or request a correction, write to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    <ul>{desks.map(([n, d]) => <li><b>Southwala {n}</b>: {d}</li>)}</ul>
   </div>
 </Base>

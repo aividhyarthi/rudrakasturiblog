@@ -19,6 +19,7 @@ const counts = await sectionCounts();
 const states = (['ap', 'ts', 'ka', 'tn', 'kl'] as const).filter((s) => counts.region[s]);
 const explore = [
   { label: 'Today\'s panchangam', href: '/panchangam/hyderabad/' }, { label: 'Rahu Kalam today', href: '/rahu-kalam-today/' },
+  { label: 'Daily panchangam article', href: '/daily-panchangam/' }, { label: 'Mantras with meaning', href: '/mantras/' },
   { label: 'Temples of India', href: '/temples/' }, { label: '12 Jyotirlingas', href: '/temples/jyotirlingas/' },
   { label: '18 Maha Shakti Peethas', href: '/temples/shakti-peethas/' }, { label: 'Bhagavad Gita', href: '/bhagavad-gita/' },
 ];
@@ -67,7 +68,7 @@ const explore = [
   {section === 'astrology' && (
     <div class="mod">
       <div class="sect"><h2>Also</h2></div>
-      <div class="rail-links"><a href="/horoscope-tomorrow/">Horoscope tomorrow</a><a href="/rasi-phalalu/mesha/weekly/">Weekly horoscope</a><a href="/rasi-phalalu/mesha/monthly/">Monthly horoscope</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
+      <div class="rail-links"><a href="/daily-horoscope/">Daily horoscope article</a><a href="/horoscope-tomorrow/">Horoscope tomorrow</a><a href="/rasi-phalalu/mesha/weekly/">Weekly horoscope</a><a href="/rasi-phalalu/mesha/monthly/">Monthly horoscope</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
     </div>
   )}
   {newsy && states.length > 0 && (

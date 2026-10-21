@@ -65,6 +65,8 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         </div>
         <div class="chips">
           <a class="btn solid" href="/panchangam/">Today's panchangam</a>
+          <a class="btn" href="/daily-panchangam/">Daily article</a>
+          <a class="btn" href="/mantras/">Mantras</a>
           <a class="btn" href="/amavasya/">Amavasya</a>
           <a class="btn" href="/pournami/">Pournami</a>
           <a class="btn" href="/temples/">Temples</a>
@@ -87,7 +89,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
           <a class="sign-tile" href={`/rasi-phalalu/${r.id}/`}><Glyph id={r.id} size={34} /><b>{r.skt}</b><span class="stars">{star(d.rating)}</span></a>
         ))}
       </div>
-      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
+      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/daily-horoscope/">Daily article</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
     </div>
   </section>
 

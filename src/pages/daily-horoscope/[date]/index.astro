@@ -1,0 +1,69 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Hero from '../../../components/Hero.astro';
+import Glyph from '../../../components/Glyph.astro';
+import { dailyDates, dayFacts, niceDate, ymdKey, WEEKDAYS } from '../../../lib/daily';
+import { addDays, WEEKDAYS_TE } from '../../../lib/panchang';
+import { RASHIS, reading } from '../../../lib/astro';
+export function getStaticPaths() { return dailyDates().map((x) => ({ params: { date: ymdKey(x) }, props: { x } })); }
+const { x } = Astro.props as any;
+const f = dayFacts(x);
+const nice = niceDate(x), wdName = WEEKDAYS[f.wd];
+const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
+const reads = RASHIS.map((r, i) => ({ r, d: reading(i, x, 'daily') }));
+const best = [...reads].sort((a, b) => b.d.rating - a.d.rating || a.r.id.localeCompare(b.r.id));
+const top = best.slice(0, 3), care = best.slice(-3).reverse();
+const prevK = ymdKey(addDays(x, -1)), nextK = ymdKey(addDays(x, 1));
+const all = new Set(dailyDates().map(ymdKey));
+const tithiName = `${f.tithi.paksha} ${f.tithi.name}`;
+const first = reads[0].d.daily!;
+const faq = [
+  [`Which rashi has the best day on ${nice}?`, `${top.map((a) => `${a.r.skt} (${a.r.en})`).join(', ')} have the most supportive day, based on the Moon in ${f.moonSign.en} and the day's nakshatra.`],
+  [`What is the Moon sign on ${nice}?`, `The Moon is in ${f.moonSign.skt} (${f.moonSign.en}) in ${f.nak.name} nakshatra. The Moon's sign carries the most weight in a daily horoscope.`],
+  [`Which god should I pray to on ${wdName}?`, `${wdName} is the day of ${f.main.name}. Today's mantra is ${f.mantra.sa.split(',')[0]}.`],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="astrology" title={`Horoscope ${nice} (${wdName}): Rasi Phalalu for All 12 Rashis`} description={`Horoscope for ${wdName}, ${nice}: rasi phalalu for all twelve rashis with career, money, relationships and health, plus the god, mantra and colour of the day.`} active="astrology" breadcrumbs={[{ name: 'Daily horoscope', href: '/daily-horoscope/' }, { name: nice, href: `/daily-horoscope/${f.key}/` }]} image="/covers/rasi-phalalu.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-astrology">
+    <div class="kicker"><a href="/daily-horoscope/">Daily horoscope</a></div>
+    <h1>Horoscope {nice}: rasi phalalu for all 12 rashis</h1>
+    <p class="meta" style="margin:0 0 6px">{wdName} <span class="te">{WEEKDAYS_TE[f.wd]}</span> &middot; {tithiName} &middot; {f.nak.name} nakshatra &middot; Moon in {f.moonSign.skt} <span class="te">{f.moonSign.te}</span></p>
+    <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" ratio="16/5" />
+    <p>The Moon is in <b>{f.moonSign.skt}</b> ({f.moonSign.en}) today, passing through <b>{f.nak.name}</b> nakshatra until {f.t(f.nak.endsAt)}. {first.nak} {first.weekday} The tithi is {tithiName}, until {f.t(f.tithi.endsAt)}.</p>
+    <div class="sect"><h2>Overall for the day</h2></div>
+    <ul>{f.overall.points.map((s) => <li>{s}</li>)}</ul>
+    <div class="rcard" style="margin:16px 0"><b>Best day for:</b> {top.map((a) => a.r.skt).join(', ')}. <b>Take extra care:</b> {care.map((a) => a.r.skt).join(', ')}.</div>
+
+    <div class="sect"><h2>Pooja and mantra for the day</h2></div>
+    <p>{wdName} belongs to <a href={`/mantras/${f.main.id}/`} style="text-decoration:underline"><b>{f.main.name}</b></a> <span class="te">{f.main.te}</span>. Offer {f.main.offerings}, and keep {f.main.colour} as the colour of the day. Naivedyam: {f.main.naivedyam}.</p>
+    <div class="rcard" style="margin:12px 0 18px"><b>{f.mantra.name}</b>{f.mantra.te && <p class="te" style="font-size:22px;margin:8px 0 2px">{f.mantra.te}</p>}<p style="font-style:italic;margin:8px 0 6px">{f.mantra.sa}</p><p style="margin:0 0 6px"><b>Meaning:</b> {f.mantra.meaning}</p><p class="sub" style="margin:0">{f.mantra.use}</p></div>
+    {f.special.length > 0 && <>{f.special.map((s) => <p set:html={s} />)}</>}
+
+    <div class="sect"><h2>Rashi at a glance</h2></div>
+    <div class="tw"><table class="data">
+      <thead><tr><th>Rashi</th><th>Day</th><th>Strongest area</th></tr></thead>
+      <tbody>{reads.map(({ r, d }) => <tr><td><a href={`#${r.id}`} style="text-decoration:underline"><b>{r.skt}</b></a> <span class="te">{r.te}</span></td><td class="stars">{star(d.rating)}</td><td>{d.summary.split('Strongest area: ')[1]?.replace('.', '')}</td></tr>)}</tbody>
+    </table></div>
+
+    <div class="sect" style="margin-top:30px"><h2>Rashi by rashi</h2></div>
+    {reads.map(({ r, d }) => (
+      <section id={r.id} style="margin:0 0 26px;scroll-margin-top:80px">
+        <h3 style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px"><Glyph id={r.id} size={30} /> <a href={`/rasi-phalalu/${r.id}/`}>{r.skt} <span class="te">{r.te}</span></a> <span class="sub" style="font-family:var(--sans);font-weight:500;font-size:15px">{r.en}</span> <span class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</span></h3>
+        <p style="margin:4px 0">{d.daily!.moon} {d.summary}</p>
+        <ul style="margin:6px 0">{d.domains.map((m) => <li><b>{m.label}:</b> {m.text}</li>)}</ul>
+        <p class="sub" style="margin:4px 0">Lucky colour {d.lucky.color}, lucky number {d.lucky.number}. Moon's star today is a {d.daily!.tara} for this rashi.</p>
+      </section>
+    ))}
+
+    <div class="sect"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:16px">
+      {all.has(prevK) && <a href={`/daily-horoscope/${prevK}/`}>&larr; Previous day</a>}
+      {all.has(nextK) && <a href={`/daily-horoscope/${nextK}/`}>Next day &rarr;</a>}
+      <a href={`/daily-panchangam/${f.key}/`}>Panchangam for {nice}</a><a href="/mantras/">Mantras</a><a href="/rasi-phalalu/">Choose your rashi</a>
+    </div>
+    <p class="disc">For entertainment and reflection only. Daily horoscopes are general guidance for each rashi, worked out from the day's planetary positions using traditional Vedic rules. They are not predictions about your life and not a substitute for medical, legal or financial advice. Your rashi is the sign of your Moon at birth: <a href="/find-your-janma-rashi-moon-sign/" style="text-decoration:underline">how to find it</a>.</p>
+  </div>
+</Base>

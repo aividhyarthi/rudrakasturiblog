@@ -4,7 +4,7 @@ description: "108 seats, a 118 majority mark, and nine ministers on day one: how
 date: "2026-10-20T08:30:00Z"
 category: "politics"
 region: "tn"
-author: "Nandhini Ravichandran"
+author: "Southwala News Desk"
 format: "By the Numbers"
 tldr: "TVK won 108 of 234 seats in its first election and formed the government with Congress and smaller parties. Vijay took oath on 10 May 2026 with nine ministers."
 imageAlt: "Abstract assembly hall seats and numbers in neon colours"

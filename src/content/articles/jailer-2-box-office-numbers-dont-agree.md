@@ -4,7 +4,7 @@ description: "Day-one India net ranges from ₹29 crore to ₹60 crore depending
 date: "2026-10-20T06:30:00Z"
 category: "movies"
 region: "tn"
-author: "Thenmozhi Kannan"
+author: "Southwala News Desk"
 format: "By the Numbers"
 tldr: "Jailer 2 opened on 15 October with ₹59.70 crore net in India per Sacnilk, short of Coolie's ₹65 crore. Early live counts, two-day totals and even headlines still disagree."
 imageAlt: "Abstract cinema-hall seats and rising bar chart in neon colours"

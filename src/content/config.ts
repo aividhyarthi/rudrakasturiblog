@@ -7,7 +7,7 @@ const articles = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    category: z.enum(['politics', 'movies', 'ott', 'devotional', 'astrology', 'gita', 'spiritual']),
+    category: z.enum(['politics', 'movies', 'ott', 'devotional', 'astrology', 'gita', 'spiritual', 'karma']),
     hero: z.string().optional(), // name of an illustration in public/heroes
     region: z.enum(['tn', 'kl', 'ka', 'ap', 'ts', 'south']).default('south'),
     format: z.string().optional(), // e.g. "Receipts", "60-Second Explainer"

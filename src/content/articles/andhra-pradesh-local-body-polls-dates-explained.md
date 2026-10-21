@@ -4,7 +4,7 @@ description: "Urban bodies vote on 28 October, mandal and zilla parishads on 3 N
 date: "2026-10-20T08:00:00Z"
 category: "politics"
 region: "ap"
-author: "Phanindra Kasi"
+author: "Southwala News Desk"
 format: "60-Second Explainer"
 tldr: "Andhra Pradesh announced its local body schedule on 14 October. Urban polls are on 28 October, mandal and zilla parishad polls on 3 November, panchayat polls in three phases from 26 November."
 imageAlt: "Abstract ballot box and calendar shapes in neon colours"

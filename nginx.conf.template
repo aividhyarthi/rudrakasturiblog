@@ -25,6 +25,7 @@ server {
   rewrite ^/state/kl/?$ /kerala/ permanent;
   rewrite ^/religion/panchangam/(.*)$ /panchangam/$1 permanent;
   rewrite ^/religion/temples/(.*)$ /temples/$1 permanent;
+  rewrite ^/author/.*$ /team/ permanent;
   rewrite ^/astrology/?$ /rasi-phalalu/ permanent;
   rewrite ^/astrology/([a-z]+)/?$ /rasi-phalalu/$1/ permanent;
 

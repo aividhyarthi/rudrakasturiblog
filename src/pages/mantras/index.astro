@@ -1,0 +1,47 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import { DEITIES, WEEKDAY_DEITY, deity } from '../../data/deities';
+import { WEEKDAYS, todayIST } from '../../lib/panchang';
+const wd = new Date(Date.UTC(todayIST().y, todayIST().m - 1, todayIST().d)).getUTCDay();
+const faq = [
+  ['Which mantra should I chant daily?', 'Choose the deity your family worships, or the deity of the day, and repeat a short name mantra such as Om Namah Shivaya or Om Namo Narayanaya. A short mantra said with attention is better than a long one said in a hurry.'],
+  ['How many times should I chant a mantra?', 'Traditionally 108 times, counted on a mala of 108 beads, which is one round (japa). If you are short of time, 11 or 21 times is fine. Regularity matters more than the count.'],
+  ['Do I need initiation (diksha) to chant these?', 'The mantras on this site are the common name mantras, gayatris and verses of praise that families chant freely. Some seed (bija) mantras are traditionally taken from a teacher, and we have kept to the open ones.'],
+  ['What if I cannot pronounce the Sanskrit properly?', 'Say it as best you can, slowly, and listen to a recording or a family elder. Devotion and steady practice matter most, and the name mantras are easy to learn.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title="Mantras with Meaning for Every God and Day of the Week" description="Mantras for Shiva, Vishnu, Hanuman, Lakshmi, Durga, Ganesha and more, with meanings, the day to chant each and how to do a simple pooja." active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Mantras', href: '/mantras/' }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>Mantras with meaning, for every god and every day</h1>
+    <p class="dek" style="max-width:62ch">Each day of the week belongs to a deity. Pick the god of the day, chant a short mantra, and know what the words mean.</p>
+    <Hero name="temple-sunrise" alt="A South Indian temple at sunrise with a row of lit lamps" ratio="16/5" />
+    <div class="sect"><h2>The god of each day</h2></div>
+    <div class="tw"><table class="data">
+      <thead><tr><th>Day</th><th>Main deity</th><th>Also worshipped</th><th>Colour</th></tr></thead>
+      <tbody>{WEEKDAY_DEITY.map((w, i) => (
+        <tr class={i === wd ? 'on' : ''}><td><b>{WEEKDAYS[i]}</b>{i === wd && ' (today)'}</td><td><a href={`/mantras/${w.main}/`} style="text-decoration:underline">{deity(w.main).name}</a></td><td><a href={`/mantras/${w.alt}/`} style="text-decoration:underline">{deity(w.alt).name}</a></td><td>{deity(w.main).colour}</td></tr>
+      ))}</tbody>
+    </table></div>
+    <p class="sub">Other days: Ekadashi for Vishnu, Chaturthi for Ganesha, Shashthi for Subramanya, Ashtami for Durga, and Trayodashi (Pradosham) and Chaturdashi for Shiva. Each daily <a href="/daily-panchangam/" style="text-decoration:underline">panchangam article</a> names the god of that day.</p>
+    <div class="sect" style="margin-top:26px"><h2>Mantras by deity</h2></div>
+    <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
+      {DEITIES.map((d) => <a class="tile" href={`/mantras/${d.id}/`}><h3 style="margin-top:0;font-size:20px">{d.name} <span class="te">{d.te}</span></h3><div class="meta">{d.day} &middot; {d.mantras.length} mantras</div></a>)}
+      <a class="tile" href="/mantras/navagraha/"><h3 style="margin-top:0;font-size:20px">Navagraha <span class="te">నవగ్రహాలు</span></h3><div class="meta">Nine planets &middot; 9 verses</div></a>
+    </div>
+    <div class="sect" style="margin-top:30px"><h2>How to chant a mantra</h2></div>
+    <ol>
+      <li>Bathe if you can, wear clean clothes and sit facing east or north on a mat.</li>
+      <li>Light a lamp and place a flower or a picture of the deity in front of you.</li>
+      <li>Begin by saying the name of Ganesha, then your chosen deity.</li>
+      <li>Chant slowly and clearly, aloud, in a whisper or silently, counting on a mala of 108 beads.</li>
+      <li>Finish with a moment of silence and offer your thanks.</li>
+    </ol>
+    <div class="sect" style="margin-top:26px"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <p class="disc">Traditions vary by family and region. If your family follows a different practice, follow it.</p>
+  </div>
+</Base>

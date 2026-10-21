@@ -4,7 +4,7 @@ description: "Congress won 102 seats and ended a decade of LDF rule. The new cab
 date: "2026-10-20T09:00:00Z"
 category: "politics"
 region: "kl"
-author: "Anoop Warrier"
+author: "Southwala News Desk"
 format: "By the Numbers"
 tldr: "V.D. Satheesan became chief minister in May 2026 after a 102-seat win. Early moves include dropping Silver Line land acquisition and a ₹1,000 monthly raise for school cooking staff."
 imageAlt: "Abstract coconut palms and railway lines in neon colours"

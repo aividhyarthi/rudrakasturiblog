@@ -4,7 +4,7 @@ description: "Free bus travel, jobs and investment figures on one side; 'complet
 date: "2026-10-20T09:30:00Z"
 category: "politics"
 region: "ts"
-author: "Ishita Goud Nalla"
+author: "Southwala News Desk"
 format: "Receipts"
 tldr: "At the 1,000-day mark, Congress leaders point to welfare schemes and job numbers. The BJP calls the term a complete failure and BRS plans a statewide campaign. Most figures are government claims, not independently checked."
 imageAlt: "Abstract scoreboard with a thousand-day counter in neon colours"

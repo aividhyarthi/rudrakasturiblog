@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { dailyDates, dayFacts, niceDate, ymdKey, WEEKDAYS } from '../../lib/daily';
+import { todayIST, addDays } from '../../lib/panchang';
+const today = todayIST(), tom = addDays(today, 1);
+const all = dailyDates().reverse();
+const ft = dayFacts(today), fn = dayFacts(tom);
+---
+<Base rail="religion" railNoToday title="Daily Panchangam: Today and Tomorrow, Tithi, Rahu Kalam and Pooja" description="A new panchangam article every day, with tithi, nakshatra, Rahu Kalam, the god of the day, a mantra with its meaning and special observances." active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Daily panchangam', href: '/daily-panchangam/' }]} image="/covers/panchangam.png">
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>Daily panchangam</h1>
+    <p class="dek" style="max-width:62ch">A fresh panchangam article every day: tithi, nakshatra, good and bad timings, the god of the day with a mantra and its meaning.</p>
+    <div class="three" style="grid-template-columns:1fr 1fr">
+      <a class="rcard" href={`/daily-panchangam/${ft.key}/`} style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Today</small><b style="display:block;font-size:22px;margin:4px 0">{WEEKDAYS[ft.wd]}, {niceDate(today)}</b><span>{ft.tithi.paksha} {ft.tithi.name}, {ft.nak.name}. God of the day: {ft.main.name}.</span></a>
+      <a class="rcard" href={`/daily-panchangam/${fn.key}/`} style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Tomorrow</small><b style="display:block;font-size:22px;margin:4px 0">{WEEKDAYS[fn.wd]}, {niceDate(tom)}</b><span>{fn.tithi.paksha} {fn.tithi.name}, {fn.nak.name}. God of the day: {fn.main.name}.</span></a>
+    </div>
+    <div class="sect" style="margin-top:30px"><h2>Earlier days</h2></div>
+    <div class="chips">{all.map((x) => <a href={`/daily-panchangam/${ymdKey(x)}/`}>{x.d} {niceDate(x).split(' ')[1].slice(0, 3)}</a>)}</div>
+  </div>
+</Base>

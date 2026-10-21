@@ -1,7 +1,7 @@
 // Rashi phalalu from real planetary transits (Vedic gochara rules, Lahiri sidereal, Moon sign = rashi).
 // Entertainment only. Everything here is deterministic: same date, same text.
 import * as A from 'astronomy-engine';
-import { ayanamsa, moonSid, sunSid, NAKSHATRAS, TITHIS, istParts, type CityId } from './panchang';
+import { ayanamsa, moonSid, sunSid, moonTrop, sunTrop, NAKSHATRAS, TITHIS, istParts, type CityId } from './panchang';
 
 export const RASHIS = [
   { id: 'mesha', en: 'Aries', skt: 'Mesha', te: 'మేషం', sym: '♈︎', lord: 'Mars' },
@@ -104,7 +104,102 @@ export type Reading = {
   span: Span; start: string; rating: number; band: Band; summary: string;
   domains: { key: string; label: string; band: Band; text: string }[];
   factors: string[]; lucky: { color: string; number: number };
+  daily?: { moon: string; nak: string; weekday: string; tara: string; nakName: string; moonHouse: number };
 };
+
+
+// ---------- Day-specific detail (changes every day: weekday, tithi and the Moon's nakshatra) ----------
+const NAK_THEME = [
+  'Ashwini favours quick starts and healing work.', 'Bharani asks you to carry responsibility and finish what you begin.', 'Krittika sharpens focus: cut away what you do not need.',
+  'Rohini favours growth, beauty and steady building.', 'Mrigashira favours curiosity, learning and the search for answers.', 'Ardra stirs strong feelings that clear the air, so be gentle with words.',
+  'Punarvasu favours a fresh start after a setback.', 'Pushya is among the most supportive stars for giving, nourishing and learning.', 'Ashlesha asks for caution with secrets and clever talk.',
+  'Magha brings respect for elders and ancestors.', 'Purva Phalguni favours rest, enjoyment and creative leisure.', 'Uttara Phalguni favours agreements, friendship and support.',
+  'Hasta favours skilled handwork, trade and getting things done.', 'Chitra favours design, craft and making things look right.', 'Swati favours independence, trade and flexibility.',
+  'Vishakha favours goals and determination, but avoid rivalry.', 'Anuradha favours friendship, teamwork and devotion.', 'Jyeshtha brings pressure and seniority: lead with humility.',
+  'Mula digs to the roots: good for research and letting go.', 'Purva Ashadha favours conviction and renewal.', 'Uttara Ashadha favours lasting success through steady effort.',
+  'Shravana favours listening, learning and good counsel.', 'Dhanishta favours rhythm, group effort and building resources.', 'Shatabhisha favours healing, research and quiet work.',
+  'Purva Bhadrapada brings intensity: channel it into discipline.', 'Uttara Bhadrapada favours patience, depth and compassion.', 'Revati favours safe journeys, kindness and finishing things well.',
+];
+const NAK_CLASS = ['active','intense','mixed','steady','steady','intense','active','active','intense','intense','intense','steady','active','steady','active','mixed','steady','intense','intense','intense','steady','active','active','mixed','intense','steady','steady'] as const;
+const HOUSE_THEME = [
+  '', 'The Moon is in your own sign, so feelings and instincts run strong. Trust your gut, but do not reply in haste.',
+  'The Moon is in your 2nd house of money and speech. Watch what you say and what you spend.',
+  'The Moon is in your 3rd house: good for talking, short trips and acting with courage.',
+  'The Moon is in your 4th house of home and peace. Family and property matters come forward and the mind wants comfort.',
+  'The Moon is in your 5th house: study, creativity and children are favoured.',
+  'The Moon is in your 6th house: good for clearing debts, facing competition and fixing health routines.',
+  'The Moon is in your 7th house of partnerships: good for meetings, spouses and joint decisions.',
+  'The Moon is in your 8th house. Be careful with temper and money, and avoid starting anything large.',
+  'The Moon is in your 9th house of luck and learning: favourable for teachers, blessings and travel.',
+  'The Moon is in your 10th house of career: your work is in focus and visible to others.',
+  'The Moon is in your 11th house of gains: friends and income are supportive.',
+  'The Moon is in your 12th house: expenses, rest and quiet reflection. Keep plans light.',
+];
+const WD_THEME = [
+  'Sunday: begin with a minute facing the sun, and look after your health and the elders at home.',
+  'Monday is Shiva’s day: keep the mind calm and be kind to your mother and the women of the family.',
+  'Tuesday belongs to Hanuman and Subramanya: put energy into effort, not into arguments.',
+  'Wednesday favours writing, trade and study. Finish paperwork and messages that are pending.',
+  'Thursday favours teachers, learning and good advice. Listen to someone older today.',
+  'Friday favours family, comfort and the arts. Keep the home bright and orderly.',
+  'Saturday rewards discipline. Do the long-pending, dull task today.',
+];
+const TAIL: Record<string, Record<string, string[]>> = {
+  career: {
+    steady: ['Slow, careful work counts for more than speed today.', 'Detail and follow-through will be noticed.', 'Finish what is half done before taking on anything new.', 'Consistency will earn more respect than a big gesture.'],
+    active: ['Move quickly on one thing you have been delaying.', 'Quick replies and quick decisions pay off today.', 'Take the first step on a plan while the energy is with you.', 'A short, direct conversation can unblock a stalled task.'],
+    intense: ['Keep a cool head with colleagues; pressure is higher than usual.', 'Focus on one hard task rather than several easy ones.', 'Do not take sharp words at work personally today.', 'Keep your tone even when deadlines press.'],
+    mixed: ['Keep your plans flexible, as priorities may shift by evening.', 'Handle the important call before noon.', 'Write down your top three tasks and stop at three.', 'Leave room in the schedule for one surprise.'],
+  },
+  money: {
+    steady: ['A good day to save, repay or record expenses.', 'Stable choices beat clever ones with money today.', 'Review your bills and subscriptions today.', 'Put a small fixed amount aside before you spend.'],
+    active: ['Small, fast transactions go well, but skip big commitments.', 'Check payments twice before sending.', 'Act on a small bargain you have already researched.', 'Avoid signing anything you have not read in full.'],
+    intense: ['Avoid impulse spending when you feel pressed.', 'Do not lend or borrow in a hurry today.', 'Delay any large purchase until tomorrow.', 'Keep receipts and records tidy today.'],
+    mixed: ['Compare two options before you decide anything.', 'Keep a little extra in hand until evening.', 'Ask the price twice and sleep on any big choice.', 'Small savings add up more than you expect today.'],
+  },
+  relationships: {
+    steady: ['Spend unhurried time with family and listen more than you speak.', 'A calm meal together does more than a big gesture.', 'Ask an elder about their day and listen fully.', 'Small acts of help at home will be remembered.'],
+    active: ['A quick call or message will lift someone’s day.', 'Make the plan today rather than leaving it vague.', 'Reach out to a friend you have not spoken to lately.', 'A spontaneous visit or call will be welcomed.'],
+    intense: ['Say less when you are upset and revisit the topic tomorrow.', 'Old topics can flare up, so let them pass.', 'Take a walk before answering a hurtful message.', 'Apologise first if you can; it costs little today.'],
+    mixed: ['Be flexible about timing and keep your tone light.', 'Do not read too much into a short reply.', 'Check in rather than assume how someone feels.', 'Keep plans loose and good humour close.'],
+  },
+  health: {
+    steady: ['Regular meals and an early night help you most.', 'A gentle walk or stretching suits the day.', 'Warm food and enough water will keep you steady.', 'Ten quiet minutes before bed will help you sleep.'],
+    active: ['Channel the energy into a brisk walk or exercise.', 'Drink water and avoid skipping meals while busy.', 'Move your body for at least twenty minutes today.', 'Stretch your back and shoulders between tasks.'],
+    intense: ['Go easy on spicy food and screens late at night.', 'Take short breaks to settle a restless mind.', 'Slow breathing for a few minutes will calm the day.', 'Avoid heavy meals late at night.'],
+    mixed: ['Keep your routine steady and do not overdo anything.', 'Listen to your body’s first signal of tiredness.', 'Sit up straight and take a break from the screen every hour.', 'Light, regular food suits you better than a feast.'],
+  },
+};
+const LUCKY_COLORS = ['Red', 'White', 'Green', 'Yellow', 'Blue', 'Orange', 'Pink', 'Cream', 'Maroon', 'Saffron'];
+const FRIENDS: Record<string, string[]> = {
+  Sun: ['Moon', 'Mars', 'Jupiter'], Moon: ['Sun', 'Mercury'], Mars: ['Sun', 'Moon', 'Jupiter'], Mercury: ['Sun', 'Venus'],
+  Jupiter: ['Sun', 'Moon', 'Mars'], Venus: ['Mercury', 'Saturn'], Saturn: ['Mercury', 'Venus'],
+};
+const ENEMIES: Record<string, string[]> = {
+  Sun: ['Venus', 'Saturn'], Moon: [], Mars: ['Mercury'], Mercury: ['Moon'], Jupiter: ['Mercury', 'Venus'], Venus: ['Sun', 'Moon'], Saturn: ['Sun', 'Moon', 'Mars'],
+};
+const WD_LORD = ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn'];
+const TARA = ['Janma', 'Sampat', 'Vipat', 'Kshema', 'Pratyak', 'Sadhana', 'Naidhana', 'Mitra', 'Parama Mitra'];
+const TARA_GOOD = [0, 1, 0, 1, 0, 1, 0, 1, 1];
+
+/** Day-specific adjustment from the Moon's phase, nakshatra and the weekday lord. Range roughly -0.45..0.45. */
+function dayMicro(rashi: number, d: Date) {
+  const tithi = Math.floor((((moonTrop(d) - sunTrop(d)) % 360) + 360) % 360 / 12);
+  const nak = Math.floor(moonSid(d) / (360 / 27));
+  const wd = new Date(d.getTime() + 5.5 * 3600000).getUTCDay();
+  const mid = Math.floor(rashi * 2.25 + 1);
+  const cat = (((nak - mid) % 27) + 27) % 27 % 9;
+  const cls = NAK_CLASS[nak];
+  const lord = RASHIS[rashi].lord, wl = WD_LORD[wd];
+  const fr = lord === wl || FRIENDS[wl].includes(lord) ? 1 : ENEMIES[wl].includes(lord) ? -1 : 0;
+  let m = 0;
+  m += tithi < 15 ? 0.08 : -0.08;
+  if ([3, 8, 13, 18, 23, 28].includes(tithi)) m -= 0.08; // Rikta tithis
+  m += TARA_GOOD[cat] ? 0.12 : cat === 0 ? 0 : -0.15;
+  m += 0.12 * fr;
+  m += cls === 'intense' ? -0.06 : cls === 'mixed' ? 0 : 0.04;
+  return { m, tithi, nak, wd, cat, cls };
+}
 
 const bandOf = (x: number): Band => (x < -0.3 ? 'challenging' : x < 0.1 ? 'mixed' : x < 0.5 ? 'good' : 'excellent');
 const stars = (x: number) => Math.max(1, Math.min(5, Math.round(3 + x * 2.2)));
@@ -132,12 +227,20 @@ export function reading(rashi: number, startYmd: { y: number; m: number; d: numb
     });
   }
   const overall = total / wsum; // -1..1
-  const base = overall;
+  let microSum = 0;
+  let lastMicro: ReturnType<typeof dayMicro> | null = null;
+  for (const d of ds) { lastMicro = dayMicro(rashi, d); microSum += lastMicro.m; }
+  const micro = microSum / ds.length;
+  const base = overall * (span === 'daily' ? 0.6 : 0.85) + micro * (span === 'daily' ? 1 : 0.5);
+  const cls0 = span === 'daily' && lastMicro ? lastMicro.cls : 'mixed';
+  const bias: Record<string, number> = span === 'daily'
+    ? { career: cls0 === 'active' ? 0.15 : cls0 === 'intense' ? -0.05 : 0, money: cls0 === 'steady' ? 0.12 : cls0 === 'intense' ? -0.08 : 0, relationships: cls0 === 'steady' || cls0 === 'mixed' ? 0.1 : -0.06, health: cls0 === 'intense' ? -0.12 : 0.05 }
+    : { career: 0, money: 0, relationships: 0, health: 0 };
   const band = bandOf(base);
   const clamp = (v: number) => Math.max(-1, Math.min(1, base * 0.7 + v * 0.8));
   const domains = (['career', 'money', 'relationships', 'health'] as const).map((k) => {
-    const b = bandOf(clamp(dom[k]));
-    return { key: k, label: { career: 'Career', money: 'Money', relationships: 'Relationships', health: 'Health' }[k], band: b, text: pick([...TEXT[k][b]], `${k}|${rashi}|${span}|${dayKey}`) };
+    const b = bandOf(clamp(dom[k] + bias[k]));
+    return { key: k, label: { career: 'Career', money: 'Money', relationships: 'Relationships', health: 'Health' }[k], band: b, text: pick([...TEXT[k][b]], `${k}|${rashi}|${span}|${dayKey}`) + (span === 'daily' ? ' ' + pick(TAIL[k][cls0], `t|${k}|${rashi}|${dayKey}`) : '') };
   });
   // Factors: the facts the reading rests on (first sample for daily, midpoint for longer spans).
   const mid = ds[Math.floor(ds.length / 2)];
@@ -157,9 +260,19 @@ export function reading(rashi: number, startYmd: { y: number; m: number; d: numb
   const wd = new Date(Date.UTC(startYmd.y, startYmd.m - 1, startYmd.d)).getUTCDay();
   const best = [...domains].sort((a, b) => BANDS.indexOf(b.band) - BANDS.indexOf(a.band))[0];
   const summary = `${pick(openers[band], `o|${rashi}|${span}|${dayKey}`)} Strongest area: ${best.label}.`;
+  let daily: Reading['daily'];
+  if (span === 'daily' && lastMicro) {
+    const msg = sg.Moon;
+    daily = {
+      moon: HOUSE_THEME[house(msg, rashi)], nak: NAK_THEME[lastMicro.nak], weekday: WD_THEME[lastMicro.wd],
+      tara: `${TARA[lastMicro.cat]} tara`, nakName: NAKSHATRAS[lastMicro.nak], moonHouse: house(msg, rashi),
+    };
+    factors.push(`the Moon in ${NAKSHATRAS[lastMicro.nak]} nakshatra (${TARA[lastMicro.cat]} tara from your rashi's central star)`);
+    factors.push(`${WD_LORD[lastMicro.wd]}'s day (weekday lord)`);
+  }
   return {
-    span, start: dayKey, rating: stars(base), band, summary, domains, factors,
-    lucky: { color: WEEKDAY_COLOR[wd], number: (hash(`${rashi}|${dayKey}|${span}`) % 9) + 1 },
+    span, start: dayKey, rating: stars(base), band, summary, domains, factors, daily,
+    lucky: { color: LUCKY_COLORS[hash(`c|${rashi}|${dayKey}|${span}`) % LUCKY_COLORS.length], number: (hash(`${rashi}|${dayKey}|${span}`) % 9) + 1 },
   };
 }
 

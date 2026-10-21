@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import { dailyDates, dayFacts, niceDate, ymdKey, WEEKDAYS } from '../../lib/daily';
+import { todayIST, addDays } from '../../lib/panchang';
+const today = todayIST(), tom = addDays(today, 1);
+const all = dailyDates().reverse();
+const ft = dayFacts(today), fn = dayFacts(tom);
+---
+<Base rail="astrology" title="Daily Horoscope: Today and Tomorrow for All 12 Rashis" description="A new horoscope article every day for all twelve rashis, with career, money, relationships and health, and the god, mantra and colour of the day." active="astrology" breadcrumbs={[{ name: 'Daily horoscope', href: '/daily-horoscope/' }]} image="/covers/rasi-phalalu.png">
+  <div class="page wide c-astrology">
+    <div class="kicker">Rasi Phalalu</div>
+    <h1>Daily horoscope</h1>
+    <p class="dek" style="max-width:62ch">A fresh horoscope article every day for all twelve rashis, with the god and mantra of the day.</p>
+    <div class="three" style="grid-template-columns:1fr 1fr">
+      <a class="rcard" href={`/daily-horoscope/${ft.key}/`} style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Today</small><b style="display:block;font-size:22px;margin:4px 0">{WEEKDAYS[ft.wd]}, {niceDate(today)}</b><span>Moon in {ft.moonSign.en}, {ft.nak.name} nakshatra.</span></a>
+      <a class="rcard" href={`/daily-horoscope/${fn.key}/`} style="display:block;text-decoration:none;color:inherit"><small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Tomorrow</small><b style="display:block;font-size:22px;margin:4px 0">{WEEKDAYS[fn.wd]}, {niceDate(tom)}</b><span>Moon in {fn.moonSign.en}, {fn.nak.name} nakshatra.</span></a>
+    </div>
+    <div class="sect" style="margin-top:30px"><h2>Earlier days</h2></div>
+    <div class="chips">{all.map((x) => <a href={`/daily-horoscope/${ymdKey(x)}/`}>{x.d} {niceDate(x).split(' ')[1].slice(0, 3)}</a>)}</div>
+  </div>
+</Base>

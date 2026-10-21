@@ -39,6 +39,7 @@ const crumbs = span === 'tomorrow' ? [{ name: 'Tomorrow\'s horoscope', href: '/h
       <div class="sect"><h2>{label}: {range}</h2></div>
       <div class="rating-big"><span class="stars" aria-label={`${d.rating} of 5`}>{star(d.rating)}</span><small>{d.band}</small></div>
       <p class="dek" style="margin:6px 0 4px">{d.summary}</p>
+      {d.daily && <p style="margin:8px 0 4px"><b>Focus of the day.</b> {d.daily.moon} {d.daily.nak} {d.daily.weekday}</p>}
       <div class="rgrid">
         {d.domains.map((x) => <div class="rcard"><b>{x.label}<em>{star(bandStars[x.band])}</em></b><p>{x.text}</p></div>)}
       </div>

@@ -4,7 +4,7 @@ description: "From a Telugu reality show to a Malayalam comedy-drama: what dropp
 date: "2026-10-20T07:30:00Z"
 category: "ott"
 region: "south"
-author: "Meghana Gowda Tumkur"
+author: "Southwala News Desk"
 format: "Binge Verdict"
 tldr: "Five South releases arrived on 15 and 16 October across four platforms. We have not reviewed them yet, so this is a what's-where guide, not a verdict."
 imageAlt: "Abstract streaming play button and screens in neon colours"

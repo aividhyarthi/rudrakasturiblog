@@ -1,0 +1,66 @@
+---
+import Base from '../../../layouts/Base.astro';
+import Hero from '../../../components/Hero.astro';
+import { DEITIES, NAVAGRAHA } from '../../../data/deities';
+export function getStaticPaths() {
+  return [...DEITIES.map((d) => ({ params: { id: d.id }, props: { d, nav: false } })), { params: { id: 'navagraha' }, props: { d: null, nav: true } }];
+}
+const { d, nav } = Astro.props as any;
+const heroFor: Record<string, string> = { shiva: 'shiva-symbols', vishnu: 'vishnu-symbols', venkateswara: 'temple-tirumala', durga: 'temple-kanakadurga', lakshmi: 'devi-symbols', rama: 'temple-bhadrachalam', narasimha: 'temple-yadadri', surya: 'temple-sunrise', saraswati: 'devi-symbols' };
+const hero = nav ? 'zodiac-wheel' : heroFor[d.id] ?? 'temple-sunrise';
+const title = nav ? 'Navagraha Mantras with Meaning: Verses for the Nine Planets' : `${d.name} Mantras with Meaning and When to Chant`;
+const desc = nav ? 'The nine Navagraha verses for Surya, Chandra, Mangala, Budha, Guru, Shukra, Shani, Rahu and Ketu, with the meaning of each and the day to chant it.' : `${d.name} mantras with meaning: ${d.mantras.map((m: any) => m.name).join(', ')}. Day of worship: ${d.day}.`;
+const faq = nav ? [
+  ['Which Navagraha verse should I chant?', 'Chant the verse of the graha you wish to honour on its day. Many people recite all nine in order, starting with Surya, on Saturday or Sunday.'],
+  ['Where do these verses come from?', 'They are the nine verses of the traditional Navagraha stotra, attributed to Vyasa, and are chanted at Navagraha shrines across the South.'],
+] : [
+  [`Which day is for ${d.name}?`, `${d.name} is worshipped especially on ${d.day}. The traditional colour is ${d.colour}.`],
+  [`What should I offer to ${d.name}?`, `Traditionally ${d.offerings}. For the food offering (naivedyam), ${d.naivedyam}. Offer what you can with devotion; the quantity does not matter.`],
+  [`How many times should I chant the ${d.name} mantra?`, 'Traditionally 108 times on a mala. If you are short of time, 11 or 21 repetitions said with attention are fine.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title={title} description={desc} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Mantras', href: '/mantras/' }, { name: nav ? 'Navagraha' : d.name, href: `/mantras/${nav ? 'navagraha' : d.id}/` }]} image="/covers/panchangam.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/mantras/">Mantras</a></div>
+    <h1>{nav ? 'Navagraha mantras with meaning' : `${d.name} mantras with meaning`} {!nav && <span class="te" style="font-weight:600">{d.te}</span>}</h1>
+    <Hero name={hero} alt={nav ? 'A zodiac wheel with twelve constellations' : `Illustration for ${d.name} worship`} ratio="16/5" />
+    {nav ? (
+      <p class="dek" style="max-width:62ch">The Navagraha are the nine planets of Vedic astrology. These nine verses, one for each, are chanted at Navagraha shrines and at home. Read about the nine in our <a href="/navagraha-the-nine-planets-in-vedic-astrology/" style="text-decoration:underline">guide to the Navagraha</a>.</p>
+    ) : (
+      <>
+        <p class="dek" style="max-width:62ch">{d.about}</p>
+        <div class="pgrid">
+          <div class="pcard"><b>Day</b><span>{d.day}</span></div>
+          <div class="pcard"><b>Colour</b><span>{d.colour}</span></div>
+          <div class="pcard"><b>Offerings</b><span style="font-size:16px">{d.offerings}</span></div>
+          <div class="pcard"><b>Naivedyam</b><span style="font-size:16px">{d.naivedyam}</span></div>
+        </div>
+      </>
+    )}
+    <div class="sect" style="margin-top:28px"><h2>{nav ? 'The nine verses' : 'Mantras'}</h2></div>
+    {nav ? NAVAGRAHA.map((g) => (
+      <div class="rcard" style="margin-bottom:14px"><b>{g.graha} <span class="te">{g.te}</span> <small style="font-weight:500;color:#6b6b6b">&middot; {g.day}</small></b><p style="font-style:italic;margin:8px 0 6px">{g.sa}</p><p style="margin:0">{g.meaning}</p></div>
+    )) : d.mantras.map((m: any) => (
+      <div class="rcard" style="margin-bottom:14px"><b>{m.name}</b>{m.te && <p class="te" style="font-size:22px;margin:8px 0 2px">{m.te}</p>}<p style="font-style:italic;margin:8px 0 6px">{m.sa}</p><p style="margin:0 0 6px"><b>Meaning:</b> {m.meaning}</p><p style="margin:0" class="sub"><b>When:</b> {m.use}</p></div>
+    ))}
+    {!nav && (
+      <>
+        <div class="sect" style="margin-top:28px"><h2>A simple {d.name} pooja at home</h2></div>
+        <ol>
+          <li>Bathe, wear clean clothes and clean the place of worship.</li>
+          <li>Light a lamp and invoke Ganesha first, with <i>Om Gam Ganapataye Namah</i>.</li>
+          <li>Offer {d.offerings}.</li>
+          <li>Chant a mantra above, 11 or 108 times.</li>
+          <li>Offer {d.naivedyam}, show the lamp (aarti), and share the prasadam with the family.</li>
+        </ol>
+        {d.temple && <p>Famous temple: <a href={`/temples/${d.temple.slug}/`} style="text-decoration:underline">{d.temple.name}</a>.</p>}
+      </>
+    )}
+    <div class="sect" style="margin-top:26px"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips" style="margin-top:14px"><a href="/mantras/">All mantras</a><a href="/daily-panchangam/">Today's panchangam article</a><a href="/panchangam/">Panchangam for your location</a></div>
+    <p class="disc">Traditions vary by family and region. If your family follows a different practice, follow it.</p>
+  </div>
+</Base>
