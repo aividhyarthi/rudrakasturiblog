@@ -1,6 +1,6 @@
 ---
 title: "Godavari: the Ganga of the South and the Englishman farmers still thank"
-description: "The Godavari starts at Trimbak in Maharashtra and reaches the sea in Andhra Pradesh. Her story, the Pushkaralu festival and why farmers in the delta still honour Arthur Cotton."
+description: "The Godavari rises at Trimbak and reaches the sea in Andhra Pradesh. Her story, the Pushkaralu festival and why delta farmers still honour Arthur Cotton."
 date: "2026-10-23T00:20:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"

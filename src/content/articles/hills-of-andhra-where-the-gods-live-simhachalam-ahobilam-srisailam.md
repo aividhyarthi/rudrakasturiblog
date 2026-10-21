@@ -1,5 +1,5 @@
 ---
-title: "The hills of Andhra where the gods live: Simhachalam, Ahobilam, Mangalagiri and Srisailam"
+title: "Hill temples of Andhra: Simhachalam, Ahobilam, Srisailam"
 description: "In Andhra Pradesh, many of the great temples are not in cities but on hills. Five of them, what is special about each and when people go."
 date: "2026-10-30T00:20:00+05:30"
 category: "sacred"

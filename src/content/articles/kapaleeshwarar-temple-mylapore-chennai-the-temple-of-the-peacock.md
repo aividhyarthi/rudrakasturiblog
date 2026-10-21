@@ -1,6 +1,6 @@
 ---
 title: "Kapaleeshwarar Temple, Mylapore: Chennai’s temple of the peacock"
-description: "In the middle of Chennai is a Shiva temple that is over a thousand years old in the poems, and about four hundred years old in its walls. Its story and the Panguni festival."
+description: "A Shiva temple in the middle of Chennai, praised in Tamil hymns over a thousand years ago. Its story and the Panguni festival."
 date: "2026-10-25T00:40:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"

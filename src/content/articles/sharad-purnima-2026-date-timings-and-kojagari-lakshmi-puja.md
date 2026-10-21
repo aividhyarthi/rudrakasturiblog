@@ -1,5 +1,5 @@
 ---
-title: "Sharad Purnima 2026: tithi timings, moonlight tradition and Kojagari Lakshmi puja"
+title: "Sharad Purnima 2026: timings, moonlight and Kojagari puja"
 description: "Sharad Purnima falls on the night of Sunday, 25 October 2026. The Purnima tithi runs from 11:56 AM on 25 October to 9:41 AM on 26 October. What to do."
 date: "2026-10-24T00:10:00+05:30"
 category: "devotional"

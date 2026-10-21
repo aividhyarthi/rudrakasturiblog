@@ -334,3 +334,4 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .faq h2{font-size:22px;margin:14px 0 6px}
 .faq h3{font-size:18px;margin:18px 0 4px}
 .faq p{margin:0;font-family:var(--serif);font-size:17.5px;line-height:1.6}
+.main-col{min-width:0}

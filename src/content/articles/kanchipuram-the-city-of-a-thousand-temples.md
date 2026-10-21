@@ -1,6 +1,6 @@
 ---
 title: "Kanchipuram: the city of a thousand temples, and which ones to see first"
-description: "Kanchipuram is one of the seven sacred cities of India. A short guide to Ekambareswarar, Kamakshi, Varadaraja and the Kailasanathar temple, and what makes each special."
+description: "Kanchipuram is one of India’s seven sacred cities. A short guide to Ekambareswarar, Kamakshi, Varadaraja and Kailasanathar, and what makes each special."
 date: "2026-10-29T00:40:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"

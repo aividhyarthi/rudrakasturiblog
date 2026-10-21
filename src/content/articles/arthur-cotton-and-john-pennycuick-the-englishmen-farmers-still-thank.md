@@ -1,6 +1,6 @@
 ---
 title: "Arthur Cotton and John Pennycuick: two Englishmen farmers still thank"
-description: "In the Godavari delta and in Theni, farmers still celebrate two British engineers who brought water to their land. The story of the Dowleswaram barrage and the Mullaperiyar dam."
+description: "In the Godavari delta and in Theni, farmers still celebrate two British engineers who brought water to their land. The story of Dowleswaram and Mullaperiyar."
 date: "2026-10-28T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"

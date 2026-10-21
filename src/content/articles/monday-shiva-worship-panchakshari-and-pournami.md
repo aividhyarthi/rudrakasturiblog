@@ -1,5 +1,5 @@
 ---
-title: "Monday is Shiva\u2019s day: how to worship, the meaning of Om Namah Shivaya and Monday Pournami"
+title: "Monday is Shiva’s day: how to worship and Om Namah Shivaya"
 description: "A practical guide to Monday worship of Shiva with abhishekam, bilva leaves and the Panchakshari mantra, plus what makes Monday, 26 October 2026 special."
 date: "2026-10-26T00:10:00+05:30"
 category: "devotional"

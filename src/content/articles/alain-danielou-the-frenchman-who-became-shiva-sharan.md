@@ -1,6 +1,6 @@
 ---
 title: "Alain Danielou: the Frenchman who became a Shaiva in Banaras"
-description: "A musician from France came to India in 1932 and stayed for over two decades. He studied the veena, took a Shaiva initiation and wrote some of the best-known Western books on Hindu gods."
+description: "A French musician came to India in 1932, stayed over twenty years in Banaras, took a Shaiva initiation and wrote popular books on the Hindu gods."
 date: "2026-10-27T00:15:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"

@@ -1,6 +1,6 @@
 ---
 title: "Tungabhadra and Hampi: the river that held an empire together"
-description: "The Tungabhadra is formed by two rivers and flows past the ruins of Hampi and the Brindavana of Raghavendra Swami at Mantralayam. Her story and the places on her banks."
+description: "The Tungabhadra is formed by two rivers and flows past Hampi and the Brindavana of Raghavendra Swami at Mantralayam."
 date: "2026-10-27T00:20:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"

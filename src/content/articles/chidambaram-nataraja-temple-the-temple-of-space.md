@@ -1,5 +1,5 @@
 ---
-title: "Chidambaram: the Nataraja temple, the empty space and the dance of the cosmos"
+title: "Chidambaram Nataraja Temple: the empty space and the cosmic dance"
 description: "At Chidambaram, the secret of the temple is an empty space behind a curtain. The story of Nataraja, the Chidambara Rahasyam and the 108 poses on the towers."
 date: "2026-10-27T00:40:00+05:30"
 category: "temple"

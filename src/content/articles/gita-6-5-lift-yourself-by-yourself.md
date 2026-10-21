@@ -1,6 +1,6 @@
 ---
-title: "Gita 6.5: lift yourself by yourself, because the mind is your friend or your enemy"
-description: "Verse 6.5 of the Bhagavad Gita says you must raise yourself and not let yourself sink, since the self is its own friend and its own enemy. What it means for discipline and habits."
+title: "Gita 6.5: lift yourself by yourself"
+description: "Gita 6.5 says you must raise yourself, because the mind is your friend or your enemy. What it means for discipline and habits."
 date: "2026-11-03T00:10:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"

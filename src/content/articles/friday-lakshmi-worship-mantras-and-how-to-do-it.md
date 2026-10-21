@@ -1,5 +1,5 @@
 ---
-title: "Friday is Lakshmi\u2019s day: how to worship, which mantras to chant and what to offer"
+title: "Friday Lakshmi puja: mantras, offerings and how to do it"
 description: "A practical guide to Friday Lakshmi puja: the lamp at dusk, the eight forms of Lakshmi, simple mantras with meaning and what to avoid."
 date: "2026-10-23T00:10:00+05:30"
 category: "devotional"
