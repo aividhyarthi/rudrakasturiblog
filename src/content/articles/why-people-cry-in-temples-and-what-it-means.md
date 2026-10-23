@@ -1,7 +1,7 @@
 ---
 title: "Why people cry in temples, and what it means"
 description: "You stand before the deity and tears come, sometimes without a reason. What the saints said about tears, what psychology says, and what to do if it happens to you."
-date: "2026-11-21T00:00:00+05:30"
+date: "2026-11-28T00:00:08+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

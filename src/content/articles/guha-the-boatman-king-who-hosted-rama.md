@@ -1,7 +1,7 @@
 ---
 title: "Guha: the boatman king who sat awake all night guarding Rama"
 description: "On the first night of exile, Rama slept on the bank of the Ganga while a tribal king kept watch. The story of Guha, his friendship, and his suspicion of Bharata."
-date: "2026-10-25T00:00:00+05:30"
+date: "2026-10-24T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

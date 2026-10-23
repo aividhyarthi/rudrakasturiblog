@@ -1,7 +1,7 @@
 ---
 title: "Gita on overthinking: the restless mind and how to hold it"
 description: "Arjuna told Krishna the mind is harder to hold than the wind. Krishna did not disagree. His answer in Gita 6.35 is the most practical advice on overthinking."
-date: "2026-11-13T00:00:08+05:30"
+date: "2026-11-21T00:00:08+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

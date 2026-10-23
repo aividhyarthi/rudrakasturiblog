@@ -1,7 +1,7 @@
 ---
 title: "Vibhishana: the brother who left Lanka and the vow Rama made"
 description: "Ravana's younger brother told him to return Sita, was insulted, and walked out. Rama's army doubted him. Why Rama welcomed him, and the famous verse of refuge."
-date: "2026-11-10T00:00:00+05:30"
+date: "2026-11-13T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

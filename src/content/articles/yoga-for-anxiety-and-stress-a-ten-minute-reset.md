@@ -1,7 +1,7 @@
 ---
 title: "Yoga for anxiety and stress: a ten-minute reset"
 description: "A short routine for a racing heart and tight chest: grounding, slow breathing, a few calming poses and rest. And the signs that you need more than yoga."
-date: "2026-11-13T00:00:04+05:30"
+date: "2026-11-21T00:00:04+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

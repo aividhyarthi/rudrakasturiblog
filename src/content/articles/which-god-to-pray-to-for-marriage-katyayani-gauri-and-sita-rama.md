@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for marriage: Katyayani, Gauri and Sita Rama"
 description: "Young women have prayed to Katyayani for a good husband since the gopis. The mantras for Katyayani and Gauri, the Sita Rama Kalyanam, and sensible advice."
-date: "2026-11-22T00:00:00+05:30"
+date: "2026-11-29T00:00:08+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

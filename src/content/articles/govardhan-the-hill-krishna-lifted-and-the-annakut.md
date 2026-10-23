@@ -1,7 +1,7 @@
 ---
 title: "Govardhan: the hill Krishna lifted, and the mountain of food"
 description: "The story of Krishna lifting Govardhana Hill is told in every Hindu home. What happened, how pilgrims walk the 21 km parikrama and when Govardhan Puja is this year."
-date: "2026-11-06T00:00:04+05:30"
+date: "2026-11-06T00:00:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Yoga for overthinking: how to quiet a mind that will not stop"
 description: "The mind replays the same worry at 2 a.m. Yoga offers practical tools: slow exhales, candle gazing, body scan and walking. How to try them, and when to ask for help."
-date: "2026-11-18T00:00:04+05:30"
+date: "2026-11-25T00:00:12+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

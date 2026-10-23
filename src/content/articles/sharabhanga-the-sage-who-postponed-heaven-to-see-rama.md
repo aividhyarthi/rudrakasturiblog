@@ -1,7 +1,7 @@
 ---
 title: "Sharabhanga: the sage who put off heaven to see Rama"
 description: "Indra came to take him to the world of Brahma. Sharabhanga said, wait, Rama is coming. What the old sage did when Rama finally arrived, and what it tells us about waiting."
-date: "2026-10-29T00:00:00+05:30"
+date: "2026-10-29T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

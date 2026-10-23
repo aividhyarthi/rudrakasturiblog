@@ -1,7 +1,7 @@
 ---
 title: "Yoga for sleep: an evening routine that helps you wind down"
 description: "Poor sleep is usually a wind-down problem. A gentle twenty-minute evening routine of slow poses, breathing and yoga nidra, plus habits that matter more than any pose."
-date: "2026-11-19T00:00:12+05:30"
+date: "2026-11-27T00:00:04+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Gita on jealousy and comparison: your path is not theirs"
 description: "Scrolling through someone else’s success hurts. What Krishna says in Gita 3.35 about your own dharma, and how to stop measuring yourself against other people."
-date: "2026-11-20T00:00:00+05:30"
+date: "2026-11-27T00:00:08+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

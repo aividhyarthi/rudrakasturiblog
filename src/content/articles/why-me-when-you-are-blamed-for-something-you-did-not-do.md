@@ -1,7 +1,7 @@
 ---
 title: "Why me? When you are blamed for something you did not do"
 description: "Rumours, a false accusation, a name dragged through mud. Krishna himself was accused of stealing a jewel, and Sita and Draupadi faced worse. What the stories teach."
-date: "2026-11-07T00:00:00+05:30"
+date: "2026-11-10T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

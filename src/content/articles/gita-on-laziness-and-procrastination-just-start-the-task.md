@@ -1,7 +1,7 @@
 ---
 title: "Gita on laziness and procrastination: just start the task"
 description: "Krishna said action is better than inaction (3.8) and described the laziness that feels like comfort (18.39). Why we delay, and a practical way to begin."
-date: "2026-11-26T00:00:12+05:30"
+date: "2026-12-04T00:00:04+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

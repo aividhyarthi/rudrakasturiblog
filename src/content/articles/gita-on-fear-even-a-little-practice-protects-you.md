@@ -1,7 +1,7 @@
 ---
 title: "Gita on fear: even a little practice protects you from great fear"
 description: "Arjuna’s hands were trembling when the Gita began. What Krishna says about fear in 2.40, 16.1 and 18.66, and a small daily practice for a fearful mind."
-date: "2026-11-16T00:00:12+05:30"
+date: "2026-11-24T00:00:08+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

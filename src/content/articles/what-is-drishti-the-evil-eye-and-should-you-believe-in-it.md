@@ -1,7 +1,7 @@
 ---
 title: "What is drishti, the evil eye, and should you believe in it?"
 description: "Black dots on babies, lemon and chilli at the door, a pumpkin smashed at a new house. Where drishti customs come from, what psychology says, and a calm way to treat them."
-date: "2026-11-19T00:00:08+05:30"
+date: "2026-11-27T00:00:00+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

@@ -1,7 +1,7 @@
 ---
 title: "Srikalahasti: the Rahu-Ketu temple and the story of Kannappa"
 description: "Srikalahasti in Andhra Pradesh is the temple of the air element and the place for Rahu-Ketu worship."
-date: "2026-11-17T00:00:00+05:30"
+date: "2026-11-24T00:00:12+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

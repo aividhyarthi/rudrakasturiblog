@@ -1,7 +1,7 @@
 ---
 title: "Guruvayur: the temple where babies eat their first rice"
 description: "Guruvayur in Kerala is called the Dwaraka of the South. The annaprasanam ceremony, thulabharam, the elephants, and the story of Narayaneeyam and a poet who was cured."
-date: "2026-11-24T00:00:12+05:30"
+date: "2026-12-02T00:00:04+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

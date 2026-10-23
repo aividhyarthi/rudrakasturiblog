@@ -1,7 +1,7 @@
 ---
 title: "Why is Ganesha worshipped first? The stories behind the elephant head"
 description: "Ganesha comes before every other god in every puja. The stories behind his elephant head, his broken tusk, his mouse and his love of modak."
-date: "2026-10-25T00:00:12+05:30"
+date: "2026-10-27T00:00:08+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

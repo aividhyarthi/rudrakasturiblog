@@ -1,7 +1,7 @@
 ---
 title: "Why me? When illness strikes a person who lived rightly"
 description: "You ate well, you prayed, you tried to live right, and then the diagnosis came. What the Gita says about the body, and what Ramakrishna and Ramana teach about illness."
-date: "2026-10-26T00:00:00+05:30"
+date: "2026-10-26T00:00:08+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

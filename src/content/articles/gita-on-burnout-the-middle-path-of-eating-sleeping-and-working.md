@@ -1,7 +1,7 @@
 ---
 title: "Gita on burnout: the middle path of eating, sleeping and working"
 description: "Gita 6.16 and 6.17 give a recipe for balance: not too much food or too little, not too much sleep or too little. Why burnout is a middle-path problem."
-date: "2026-11-24T00:00:08+05:30"
+date: "2026-12-02T00:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

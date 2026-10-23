@@ -1,7 +1,7 @@
 ---
 title: "Is it okay to pray without a bath? And other purity worries"
 description: "Bath, kitchen, leather, onion, travel: many sincere people worry whether they are pure enough to pray."
-date: "2026-11-17T00:00:12+05:30"
+date: "2026-11-25T00:00:08+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

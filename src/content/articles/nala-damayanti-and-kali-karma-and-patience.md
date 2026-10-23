@@ -1,7 +1,7 @@
 ---
 title: "Nala, Damayanti and Kali: how one lapse opened the door to ruin"
 description: "King Nala skipped a small purification and lost his kingdom and his wife\u2019s company. The Mahabharata tale of karma, patience and steadfast love."
-date: "2026-11-02T00:00:08+05:30"
+date: "2026-11-10T00:00:08+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

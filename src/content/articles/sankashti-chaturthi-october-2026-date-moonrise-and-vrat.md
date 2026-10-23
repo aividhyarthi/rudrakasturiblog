@@ -1,7 +1,7 @@
 ---
 title: "Sankashti Chaturthi October 2026: date, moonrise time and how to observe it"
 description: "Sankashti Chaturthi falls on Thursday, 29 October 2026. Chaturthi runs until 10:10 PM and moonrise in Hyderabad is about 8:36 PM. How to observe the Ganesha vratam."
-date: "2026-10-26T00:00:04+05:30"
+date: "2026-10-26T00:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

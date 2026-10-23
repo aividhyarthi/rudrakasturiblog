@@ -1,7 +1,7 @@
 ---
 title: "Vemulawada Raja Rajeshwara temple and the tradition of Kode Mokku"
 description: "Vemulawada in Telangana is known as the Dakshina Kashi. The temple of Raja Rajeshwara, the Dharmagundam pond, and the tradition of Kode Mokku, offering a bull to the Lord."
-date: "2026-11-23T00:00:04+05:30"
+date: "2026-11-30T00:00:12+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

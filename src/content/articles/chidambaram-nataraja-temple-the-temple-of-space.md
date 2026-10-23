@@ -1,7 +1,7 @@
 ---
 title: "Chidambaram Nataraja Temple: the empty space and the cosmic dance"
 description: "At Chidambaram, the secret of the temple is an empty space behind a curtain. The story of Nataraja, the Chidambara Rahasyam and the 108 poses on the towers."
-date: "2026-11-01T00:00:12+05:30"
+date: "2026-11-09T00:00:08+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

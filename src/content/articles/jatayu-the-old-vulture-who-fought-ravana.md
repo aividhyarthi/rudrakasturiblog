@@ -1,7 +1,7 @@
 ---
 title: "Jatayu: the old bird who fought Ravana and died in Rama's lap"
 description: "He was Dasharatha's friend and an old bird, with no hope of winning. Why Jatayu fought Ravana anyway, how Rama honoured him, and where Lepakshi remembers him."
-date: "2026-10-31T00:00:00+05:30"
+date: "2026-11-01T00:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

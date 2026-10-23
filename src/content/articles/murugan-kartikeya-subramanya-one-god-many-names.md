@@ -1,7 +1,7 @@
 ---
 title: "Murugan, Kartikeya, Subramanya: one god, many names"
 description: "The Tamil Murugan, the Telugu Subramanya and the northern Kartikeya are the same god. His six faces, his vel and the six abodes in Tamil Nadu."
-date: "2026-10-28T00:00:08+05:30"
+date: "2026-10-30T00:00:12+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

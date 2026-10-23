@@ -1,7 +1,7 @@
 ---
 title: "Why me? When death takes someone you love too soon"
 description: "No answer takes grief away. But Yudhishthira, Dasharatha, Arjuna and Krishna all stood where you are standing. What the old texts say about loss, and what helps."
-date: "2026-10-30T00:00:00+05:30"
+date: "2026-10-31T00:00:04+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"
