@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SERIES, seriesHref } from '../../config';
+import { seriesCounts } from '../../lib/articles';
+const sc = await seriesCounts();
+const series = SERIES.filter((s) => sc[s.id]);
+---
+<Base title="Series: read in order" description="Series on Southwala to read in order: Why me?, small stories from the Ramayana and Mahabharata, goddesses and village deities, Read the line, the Gita for the mind and more." breadcrumbs={[{ name: 'Series', href: '/series/' }]} rail="religion" active="religion">
+  <div class="page wide">
+    <h1>Series</h1>
+    <p class="dek">Articles that belong together, in the order they are meant to be read.</p>
+    <div class="tiles" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">{series.map((s) => (
+      <a class="tile" href={seriesHref(s.id)}><h3>{s.label}</h3><div class="meta">{s.blurb}</div><div class="meta" style="margin-top:6px"><b>{sc[s.id]}</b> {sc[s.id] === 1 ? 'article' : 'articles'}</div></a>
+    ))}</div>
+    <p style="margin-top:22px"><a href="/topics/">All topics</a></p>
+  </div>
+</Base>

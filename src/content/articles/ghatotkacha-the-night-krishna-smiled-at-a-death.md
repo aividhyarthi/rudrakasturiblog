@@ -16,6 +16,7 @@ faq:
     a: "A divine spear given to Karna by Indra in exchange for his armour and earrings. It could be used once, and Karna had kept it for Arjuna."
   - q: "Why did Krishna smile at his death?"
     a: "Because Karna had been forced to use his one infallible weapon on Ghatotkacha, which meant it could no longer be used against Arjuna."
+series: "mahabharata-stories"
 draft: false
 ---
 

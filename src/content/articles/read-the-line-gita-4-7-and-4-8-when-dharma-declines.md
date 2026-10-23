@@ -16,6 +16,7 @@ faq:
     a: "No. Krishna says it to Arjuna, who is asked to act. The verse speaks of God's presence, not of human passivity."
   - q: "Where is this verse most chanted?"
     a: "It is among the most quoted verses of the Gita, used in discourses, schools and dramas, especially on Gita Jayanti."
+series: "read-the-line"
 draft: false
 ---
 

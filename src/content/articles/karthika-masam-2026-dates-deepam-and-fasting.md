@@ -9,6 +9,7 @@ tldr: "Karthika Masam 2026 begins on 10 November, the day after Deepavali Amavas
 hero: "shiva-symbols"
 imageAlt: "A Shiva lingam with a row of lit oil lamps"
 tags: ["Karthika Masam", "Kartika Pournami", "Karthika Somavaram", "deepam"]
+series: "karthika"
 draft: false
 ---
 

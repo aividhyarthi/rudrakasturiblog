@@ -16,6 +16,7 @@ faq:
     a: "It says the heart matters more than the size. It does not forbid larger offerings, but it removes the idea that worship requires them."
   - q: "Which leaf is traditionally offered?"
     a: "The tulasi leaf for Vishnu and Krishna, bilva for Shiva and durva grass for Ganesha, among others."
+series: "read-the-line"
 draft: false
 ---
 

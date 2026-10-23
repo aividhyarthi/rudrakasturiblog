@@ -23,6 +23,7 @@ faq:
     a: "Some people may act. But many trances are involuntary, and the tradition itself warns against pretending. A few false cases do not cancel the genuine ones."
   - q: "When should I be worried?"
     a: "If episodes come unasked outside the temple, leave you frightened, or come with fits, fainting or low mood, see a doctor. Tele-MANAS (14416, free in India) can also help."
+series: "goddess-stories"
 draft: false
 ---
 

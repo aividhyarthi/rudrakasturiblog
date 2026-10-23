@@ -16,6 +16,7 @@ faq:
     a: "Saraswati Namastubhyam Varade Kamarupini, the verse of beginning study."
   - q: "What helps most during exams?"
     a: "Regular study, sleep and a calm mind. A short prayer before the paper helps with nerves."
+series: "which-god"
 draft: false
 ---
 

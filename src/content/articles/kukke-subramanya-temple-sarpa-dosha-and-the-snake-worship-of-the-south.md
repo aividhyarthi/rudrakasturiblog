@@ -16,6 +16,7 @@ faq:
     a: "Commonly Ashlesha Bali, Sarpa Samskara and Naga Prathishta pujas, plus daily worship of Subramanya in the form of a serpent deity."
   - q: "Is it necessary to go there for sarpa dosha?"
     a: "No one has to. Many families do simpler worship at home or at a nearby temple. Seek medical advice for health or fertility problems."
+series: "temples-for-a-reason"
 draft: false
 ---
 

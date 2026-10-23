@@ -16,6 +16,7 @@ faq:
     a: "A guided deep relaxation lying down, where attention moves through the body. It takes ten to thirty minutes."
   - q: "When is insomnia a medical issue?"
     a: "If you have trouble sleeping for more than three weeks, snore loudly with pauses in breathing, or feel very sleepy in the daytime, see a doctor."
+series: "yoga-for-life"
 draft: false
 ---
 

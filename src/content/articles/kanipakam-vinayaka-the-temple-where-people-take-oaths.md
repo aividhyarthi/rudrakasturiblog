@@ -16,6 +16,7 @@ faq:
     a: "In Chittoor district of Andhra Pradesh, about 12 km from Chittoor and 75 km from Tirupati."
   - q: "What is the legend of the well?"
     a: "Three brothers, who were physically disabled, dug a well, and when the spade struck a stone, blood flowed and the idol appeared."
+series: "temples-for-a-reason"
 draft: false
 ---
 

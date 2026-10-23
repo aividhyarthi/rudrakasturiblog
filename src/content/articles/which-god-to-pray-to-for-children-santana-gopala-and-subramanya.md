@@ -16,6 +16,7 @@ faq:
     a: "Devaki Sutam Govindam Vasudeva Jagatpate, Dehi Me Tanayam Krishna Tvam Aham Sharanam Gatah."
   - q: "Should we see a doctor too?"
     a: "Yes. Many causes of delay are treatable, and both partners should be checked."
+series: "which-god"
 draft: false
 ---
 

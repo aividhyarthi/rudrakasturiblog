@@ -16,6 +16,7 @@ faq:
     a: "Yes, many families do. It gives comfort. It should never replace medical care."
   - q: "How many times should I chant the Maha Mrityunjaya mantra?"
     a: "Traditionally 108 times a day, or 11 or 21 if you are short of time."
+series: "which-god"
 draft: false
 ---
 

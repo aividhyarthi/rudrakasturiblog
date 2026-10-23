@@ -16,6 +16,7 @@ faq:
     a: "Many people with asthma do gentle yoga and breathing, but they should keep their medicines, avoid forceful breathing and talk to their doctor first."
   - q: "What is the simplest breathing practice?"
     a: "Belly breathing: one hand on the belly, breathe in so it rises, breathe out longer than you breathed in, for five minutes."
+series: "yoga-for-life"
 draft: false
 ---
 

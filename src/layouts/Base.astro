@@ -8,8 +8,8 @@ import '@fontsource/noto-serif-telugu/telugu-700.css';
 import '@fontsource/noto-sans-telugu/telugu-400.css';
 import '@fontsource/noto-sans-telugu/telugu-600.css';
 import '../styles/global.css';
-import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID, GSC_VERIFICATION, NEWS_ENABLED } from '../config';
-import { sectionCounts } from '../lib/articles';
+import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID, GSC_VERIFICATION, NEWS_ENABLED, CATEGORIES, NEWS_CATS, SERIES, CAT_SLUG, catHref, seriesHref } from '../config';
+import { sectionCounts, seriesCounts } from '../lib/articles';
 import { istIso } from '../lib/ist';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
@@ -20,7 +20,18 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
 const nav = SECTIONS.filter((s) => s.always || (NEWS_ENABLED && counts.cat[s.id]));
 const section = SECTIONS.find((s) => s.id === active);
-const subnav = (active && SUBNAV[active]) || [];
+const sc = await seriesCounts();
+// Hide links to topic and series pages that do not exist yet (a page is built once it has a published article).
+const hasPage = (href: string) => {
+  const cat = CATEGORIES.find((c) => catHref(c.id) === href);
+  if (cat) return !!counts.cat[cat.id];
+  if (href === '/series/') return Object.keys(sc).length > 0;
+  if (href.startsWith('/series/')) return !!sc[href.split('/')[2]];
+  return true;
+};
+const subnav = ((active && SUBNAV[active]) || []).filter((s) => hasPage(s.href));
+const exploreCats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts.cat[c.id]);
+const exploreSeries = SERIES.filter((s) => sc[s.id]);
 const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
 const snap = { tithi: `${_p.tithi[0].paksha} ${_p.tithi[0].name}`, nak: _p.nakshatra[0].name, rahu: `${fmtTime(_p.rahu.start, _ref)} to ${fmtTime(_p.rahu.end, _ref)}` };
 const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
@@ -89,6 +100,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   <nav class="nav" aria-label="Sections"><div class="wrap">
     <a href="/" class={!active ? 'on' : ''}>Home</a>
     {nav.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''} style={`--navc:${c.accent}`}>{c.label}</a>)}
+    <a href="/topics/" class={Astro.url.pathname.startsWith('/topics') || Astro.url.pathname.startsWith('/series') ? 'on' : ''} style="--navc:#444">Topics</a>
   </div></nav>
   {section && (
     <div class="brandbar"><div class="wrap">
@@ -108,6 +120,15 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
       {nav.map((c) => <a href={c.href}>{c.label}</a>)}
       <a href="/panchangam/">Panchangam</a><a href="/amavasya/">Amavasya</a><a href="/pournami/">Pournami</a><a href="/ekadashi/">Ekadashi</a><a href="/sankashti-chaturthi/">Sankashti</a><a href="/pradosham/">Pradosham</a>
     </div>
+    <div>
+      <h4>Topics</h4>
+      {exploreCats.map((c) => <a href={catHref(c.id)}>{c.label}</a>)}
+      <a href="/topics/">All topics</a>
+    </div>
+    {exploreSeries.length > 0 && <div>
+      <h4>Series</h4>
+      {exploreSeries.map((s) => <a href={seriesHref(s.id)}>{s.label}</a>)}
+    </div>}
     <div>
       <h4>Trust</h4>
       <a href="/about/">About</a><a href="/team/">Our contributors</a><a href="/editorial-policy/">Editorial policy</a><a href="/right-of-reply/">Right of reply</a><a href="/contact/">Contact</a><a href="/privacy-policy/">Privacy</a><a href="/rss.xml">RSS</a>

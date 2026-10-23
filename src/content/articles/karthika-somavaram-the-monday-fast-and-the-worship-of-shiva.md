@@ -16,6 +16,7 @@ faq:
     a: "16, 23 and 30 November and 7 December."
   - q: "Do I have to fast?"
     a: "No. It is a personal choice. Many people take a light meal or fruit, and those with health conditions should not fast."
+series: "karthika"
 draft: false
 ---
 

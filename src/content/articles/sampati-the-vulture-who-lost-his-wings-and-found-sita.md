@@ -16,6 +16,7 @@ faq:
     a: "From his mountain he saw Sita in Lanka, a hundred yojanas away, and told the vanaras where to find her."
   - q: "Did Sampati get his wings back?"
     a: "Yes. A sage had told him that after he served Rama's cause, his wings would grow again, and they did."
+series: "ramayana-stories"
 draft: false
 ---
 

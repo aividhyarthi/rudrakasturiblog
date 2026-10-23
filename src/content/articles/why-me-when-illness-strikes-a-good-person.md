@@ -16,6 +16,7 @@ faq:
     a: "That the body changes through childhood, youth and old age, and that the self is not harmed when the body is (2.13 and 2.20). It is a way of finding steadiness, not a reason to neglect treatment."
   - q: "Should I rely on prayer or on medicine?"
     a: "Both. The tradition honours the physician, Dhanvantari, as a form of God. Pray, and follow your doctor."
+series: "why-me"
 draft: false
 ---
 

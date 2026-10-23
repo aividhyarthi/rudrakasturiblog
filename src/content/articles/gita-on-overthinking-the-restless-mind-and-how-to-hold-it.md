@@ -16,6 +16,7 @@ faq:
     a: "Abhyasa is steady, repeated practice. Vairagya is a loosening of grip on what the mind clings to."
   - q: "What should I do when the mind wanders?"
     a: "Bring it back gently, again and again. Verse 6.26 says wherever the mind wanders, bring it back under control of the Self."
+series: "gita-for-the-mind"
 draft: false
 ---
 

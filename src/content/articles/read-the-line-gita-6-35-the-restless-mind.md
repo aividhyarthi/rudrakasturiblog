@@ -16,6 +16,7 @@ faq:
     a: "He says it is hard to restrain but can be held by practice and detachment. The verse is realistic, not a promise of an instant cure."
   - q: "What kind of practice does the Gita mean?"
     a: "Chapter 6 describes meditation, regulated living and steady effort. Even a few minutes each day counts."
+series: "read-the-line"
 draft: false
 ---
 

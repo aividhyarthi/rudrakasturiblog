@@ -16,6 +16,7 @@ faq:
     a: "Better is one’s own dharma, though imperfect, than the dharma of another well performed. Death in one’s own dharma is better; the dharma of another brings fear."
   - q: "How do I stop comparing myself with others?"
     a: "Limit social media, notice envy as information about what you want, celebrate someone else’s win in words, and set goals by your own past, not their present."
+series: "gita-for-the-mind"
 draft: false
 ---
 

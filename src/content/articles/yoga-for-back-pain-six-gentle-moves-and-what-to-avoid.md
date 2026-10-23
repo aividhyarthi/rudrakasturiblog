@@ -16,6 +16,7 @@ faq:
     a: "Avoid deep forward bends with straight legs, fast or forceful twists and heavy backbends. Go slowly and stop if the pain sharpens."
   - q: "When should I see a doctor about back pain?"
     a: "If you have numbness, tingling or weakness in a leg, pain after a fall or accident, fever, or trouble controlling your bladder or bowels, see a doctor straight away."
+series: "yoga-for-life"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Nala, a vanara who was the son of Vishwakarma, supervised the building, with an army of vanaras carrying rocks and trees (Yuddha Kanda 22)."
   - q: "What does udata bhakti mean?"
     a: "A Telugu phrase for a small but sincere effort, taken from the squirrel in the story."
+series: "ramayana-stories"
 draft: false
 ---
 

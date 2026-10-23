@@ -16,6 +16,7 @@ faq:
     a: "Mondays for Shiva and Parvati, Fridays for the goddess, and Rama Navami for Sita and Rama."
   - q: "What if marriage is delayed?"
     a: "Delay has many ordinary causes. Pray if it comforts you, but don’t blame yourself or accept fear about a horoscope."
+series: "which-god"
 draft: false
 ---
 

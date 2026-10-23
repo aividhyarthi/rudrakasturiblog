@@ -16,6 +16,7 @@ faq:
     a: "It is part of the Shukla Yajurveda and one of the shortest and oldest Upanishads. Its first verse is often chanted and quoted."
   - q: "Who called this verse the essence of Hinduism?"
     a: "Mahatma Gandhi is reported to have said that if all the scriptures were lost, this verse would be enough."
+series: "read-the-line"
 draft: false
 ---
 

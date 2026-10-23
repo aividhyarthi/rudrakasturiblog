@@ -16,6 +16,7 @@ faq:
     a: "Most teachers say pray for justice and strength, and for the other person’s mind to change, not for harm."
   - q: "What if the case is dragging on?"
     a: "Prayer can steady you, but a good lawyer, patience and openness to settlement are what move the case."
+series: "which-god"
 draft: false
 ---
 

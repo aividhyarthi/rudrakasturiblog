@@ -16,6 +16,7 @@ faq:
     a: "Demands for money or total obedience, claims of miracles, pressure to cut off family, secrecy, and punishment for questions."
   - q: "Do I need a guru?"
     a: "Tradition says a teacher is a great help, but you can begin with texts, practice and good company. The right teacher often appears when you are ready."
+series: "searching"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Regular practice can help you notice the body signs earlier and respond more calmly. It does not replace help for serious anger problems."
   - q: "What is the quickest thing to do when angry?"
     a: "Breathe out slowly, drop your shoulders, unclench your jaw, and walk away for ten minutes before you reply."
+series: "yoga-for-life"
 draft: false
 ---
 

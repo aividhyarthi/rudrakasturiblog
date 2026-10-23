@@ -16,6 +16,7 @@ faq:
     a: "Allow yourself to feel it, separate the event from your worth, learn one lesson, and take one small next step."
   - q: "Does the Gita say results do not matter?"
     a: "It says you do not control results fully. Care about quality of effort, accept the outcome, and keep going."
+series: "gita-for-the-mind"
 draft: false
 ---
 

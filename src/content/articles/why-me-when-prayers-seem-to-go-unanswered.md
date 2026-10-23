@@ -16,6 +16,7 @@ faq:
     a: "The tradition does not promise a particular result. It says that the answer may come as strength, as a person, or in a different form than we expected."
   - q: "What if I have lost faith completely?"
     a: "Many saints describe dry periods. Keep one small practice going, talk to someone you trust, and give yourself time."
+series: "why-me"
 draft: false
 ---
 

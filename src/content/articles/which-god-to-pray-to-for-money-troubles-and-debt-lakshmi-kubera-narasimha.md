@@ -16,6 +16,7 @@ faq:
     a: "Friday. Deepavali and Dhanteras are her biggest festivals."
   - q: "What if I am in serious debt?"
     a: "Prayer can steady you, but also talk to a financial counsellor or your bank about repayment plans. Avoid new loans to repay old ones."
+series: "which-god"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "With dhyayatah vishayan, the mind dwelling on objects of the senses."
   - q: "How can I use it in daily life?"
     a: "Notice the first step, replaying a thought, and interrupt it early, by moving, breathing or changing the subject."
+series: "read-the-line"
 draft: false
 ---
 

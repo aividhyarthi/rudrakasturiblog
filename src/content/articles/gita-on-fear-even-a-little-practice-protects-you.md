@@ -16,6 +16,7 @@ faq:
     a: "No. Abhayam means not being ruled by fear. Arjuna himself was afraid and still acted."
   - q: "What is a simple practice for fear?"
     a: "A few minutes each day of slow breathing and a short prayer or mantra, repeated for weeks, reduces how strongly fear grips the body."
+series: "gita-for-the-mind"
 draft: false
 ---
 

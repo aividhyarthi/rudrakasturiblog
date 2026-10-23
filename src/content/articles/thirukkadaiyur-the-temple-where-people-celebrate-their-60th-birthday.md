@@ -16,6 +16,7 @@ faq:
     a: "The temple is linked with the story of the boy Markandeya, who was saved from Yama by Shiva, so it is associated with long life."
   - q: "Who was Abhirami Bhattar?"
     a: "A devotee who composed the Abhirami Anthadi, a hundred verses to the goddess, after a miracle involving the moon."
+series: "temples-for-a-reason"
 draft: false
 ---
 

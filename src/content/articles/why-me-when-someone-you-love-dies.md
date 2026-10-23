@@ -16,6 +16,7 @@ faq:
     a: "In the Mahabharata a yaksha asks Yudhishthira what is the most wonderful thing. He answers that every day beings go to the abode of death, yet those who remain wish to live forever."
   - q: "How long does grief last?"
     a: "There is no fixed time. If it stops you from eating, sleeping or working for weeks, or you think of harming yourself, please see a doctor or call Tele-MANAS on 14416."
+series: "why-me"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Kartika Pournami is on 24 November 2026. The tithi runs from late night on 23 November to the evening of 24 November."
   - q: "What is Dev Deepawali?"
     a: "A festival in Varanasi on Kartika Pournami, when lakhs of lamps are lit along the ghats of the Ganga."
+series: "karthika"
 draft: false
 ---
 

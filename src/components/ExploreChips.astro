@@ -1,0 +1,14 @@
+---
+import { CATEGORIES, NEWS_CATS, SERIES, catHref, seriesHref } from '../config';
+import { sectionCounts, seriesCounts } from '../lib/articles';
+const counts = await sectionCounts();
+const sc = await seriesCounts();
+const cats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts.cat[c.id]);
+const series = SERIES.filter((s) => sc[s.id]);
+---
+<div class="sect"><h2>Explore by topic</h2></div>
+<div class="chips">{cats.map((c) => <a href={catHref(c.id)}>{c.label} ({counts.cat[c.id]})</a>)}</div>
+{series.length > 0 && <>
+  <div class="sect" style="margin-top:22px"><h2>Series to read in order</h2></div>
+  <div class="chips">{series.map((s) => <a href={seriesHref(s.id)}>{s.label} ({sc[s.id]})</a>)}</div>
+</>}

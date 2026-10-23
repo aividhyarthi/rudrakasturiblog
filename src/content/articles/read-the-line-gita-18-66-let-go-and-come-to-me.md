@@ -16,6 +16,7 @@ faq:
     a: "Because it is regarded as the final verse of instruction in the Gita, and the heart of surrender in the Sri Vaishnava tradition."
   - q: "What does Arjuna do after hearing it?"
     a: "In 18.73 he says his confusion is gone and that he will act on Krishna's word."
+series: "read-the-line"
 draft: false
 ---
 

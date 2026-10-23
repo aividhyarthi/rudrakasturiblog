@@ -16,6 +16,7 @@ faq:
     a: "It can help by reducing stress and encouraging better eating habits, but frequent acid reflux should be checked by a doctor."
   - q: "Which poses should I avoid right after eating?"
     a: "Strong forward bends, deep twists and inversions. Wait at least two hours."
+series: "yoga-for-life"
 draft: false
 ---
 

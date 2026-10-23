@@ -16,6 +16,7 @@ faq:
     a: "A yogic practice of gazing steadily at a candle flame for a minute or two to steady the mind."
   - q: "When should I seek help?"
     a: "If worry or repetitive thoughts affect your sleep, work or relationships for weeks, or you feel hopeless, speak to a doctor or counsellor. In India you can call the Tele-MANAS helpline on 14416."
+series: "yoga-for-life"
 draft: false
 ---
 

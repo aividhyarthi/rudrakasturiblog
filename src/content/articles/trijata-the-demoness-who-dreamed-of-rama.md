@@ -16,6 +16,7 @@ faq:
     a: "She dreamed that Rama and Lakshmana rode in triumph while Lanka sank and Ravana fell. She said it foretold Ravana s end."
   - q: "Was Trijata Vibhishana's daughter?"
     a: "Later traditions say so. In Valmiki she is described as an old, wise rakshasi."
+series: "ramayana-stories"
 draft: false
 ---
 

@@ -2,6 +2,7 @@
 import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
 import Art from '../../components/Art.astro';
+import ExploreChips from '../../components/ExploreChips.astro';
 import { CITIES, panchangFor, fmtTime, todayIST } from '../../lib/panchang';
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -20,7 +21,8 @@ const r = (x: { start: Date; end: Date }) => `${t(x.start)} to ${t(x.end)}`;
       <a class="tile" href="/temples/"><Art name="gopuram" /><h3>Temples</h3><div class="meta">Jyotirlingas, Shakti Peethas, Char Dham, Pancharama and more: lists and guides.</div></a>
       <a class="tile" href="/bhagavad-gita/"><Art name="scroll" /><h3>Bhagavad Gita</h3><div class="meta">All 18 chapters explained simply.</div></a>
     </section>
-    <div class="sect"><h2>Panchangam for your city</h2></div>
+    <ExploreChips />
+    <div class="sect" style="margin-top:22px"><h2>Panchangam for your city</h2></div>
     <div class="chips">{Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/`}>{x.name}</a>)}</div>
   </div>
 </Base>

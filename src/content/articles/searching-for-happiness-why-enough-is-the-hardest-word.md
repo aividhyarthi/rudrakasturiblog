@@ -16,6 +16,7 @@ faq:
     a: "Practise gratitude, reduce comparison, keep a savings plan so fear doesn’t drive spending and spend time on what lasts."
   - q: "What is the happiness the Upanishads talk about?"
     a: "Ananda, a joy that does not depend on external things, which the Taittiriya Upanishad describes in levels."
+series: "searching"
 draft: false
 ---
 

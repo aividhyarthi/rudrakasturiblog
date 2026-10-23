@@ -16,6 +16,7 @@ faq:
     a: "Tradition says that in 1813 a regiment from Hyderabad posted at Ujjain returned and found cholera spreading. The soldier Suriti Appaiah vowed to install the goddess in Secunderabad if the plague ended."
   - q: "What is the Rangam?"
     a: "On the morning after Bonalu a woman stands on an earthen pot before the goddess and gives the Bhavishyavani, the forecast for the year ahead."
+series: "goddess-stories"
 draft: false
 ---
 

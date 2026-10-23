@@ -16,6 +16,7 @@ faq:
     a: "If low mood, loss of interest or changes in sleep and appetite last more than two weeks, see a doctor."
   - q: "Who can I call in India?"
     a: "Tele-MANAS on 14416 is a free, round-the-clock mental health helpline. For immediate danger, call 112."
+series: "yoga-for-life"
 draft: false
 ---
 

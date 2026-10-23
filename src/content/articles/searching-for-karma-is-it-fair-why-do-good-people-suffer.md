@@ -16,6 +16,7 @@ faq:
     a: "No. Using karma to blame a sufferer or excuse cruelty is a misuse. Teachers say it should move you to compassion."
   - q: "What is the Yaksha Prashna?"
     a: "A scene in the Mahabharata where a spirit asks Yudhishthira riddles, including what is the greatest wonder."
+series: "searching"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Rani Rasmani belonged to a caste regarded by some as low, and some Brahmins refused to take food offered in her temple or to serve as priests."
   - q: "How is Ramakrishna linked to Kali?"
     a: "He served as priest from 1856, and his lifelong devotion to the Mother is the subject of the Kathamrita and of many biographies."
+series: "goddess-stories"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "In Yuddha Kanda 18.33 Rama says that he gives protection to all beings from the one who comes to him once and says I am yours. It is the heart of the idea of taking refuge."
   - q: "Where was Vibhishana crowned?"
     a: "Valmiki says Rama had Lakshmana consecrate him on the shore before the war. Dhanushkodi has a temple that tradition links to this."
+series: "ramayana-stories"
 draft: false
 ---
 

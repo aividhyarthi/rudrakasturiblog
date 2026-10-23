@@ -22,6 +22,7 @@ const articles = defineCollection({
       .default([]),
     draft: z.boolean().default(false),
     reviewNote: z.string().optional(), // why a human should look before publishing
+    series: z.string().optional(), // id of a series in config SERIES
   }),
 });
 

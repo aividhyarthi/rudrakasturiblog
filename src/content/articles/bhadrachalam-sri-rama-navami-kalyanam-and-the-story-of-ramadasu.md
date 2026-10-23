@@ -16,6 +16,7 @@ faq:
     a: "Kancherla Gopanna, a 17th-century tax officer who built the temple at Bhadrachalam and composed devotional songs to Rama."
   - q: "Why do couples pray here?"
     a: "Because of the divine marriage, many couples and unmarried people pray at Bhadrachalam for a harmonious marriage."
+series: "temples-for-a-reason"
 draft: false
 ---
 

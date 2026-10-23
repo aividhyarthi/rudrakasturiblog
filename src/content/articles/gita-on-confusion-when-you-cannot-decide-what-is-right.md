@@ -16,6 +16,7 @@ faq:
     a: "List your values, gather facts, ask someone wise and honest, sleep on it, then decide and act."
   - q: "What if I still can’t decide?"
     a: "Choose the option that you can live with best if it goes wrong and that harms the fewest people. Take a small step first if possible."
+series: "gita-for-the-mind"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "In 16.13 to 16.16 Krishna describes those who say, I have gained this today, I will gain that tomorrow, and warns that such thinking ends in a fall."
   - q: "Is there justice in the end?"
     a: "The tradition says dharma protects those who protect it, but it does not promise that justice arrives on time. It asks you to remain steady and to keep your own hands clean."
+series: "why-me"
 draft: false
 ---
 

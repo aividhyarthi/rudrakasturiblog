@@ -16,6 +16,7 @@ faq:
     a: "A divine garland, clothes, ornaments and an unguent that would never lose their freshness or beauty."
   - q: "Why is Anasuya called one of the great pativratas?"
     a: "Tradition holds that her devotion was so strong that even the gods respected her. The Puranas tell stories about this."
+series: "ramayana-stories"
 draft: false
 ---
 

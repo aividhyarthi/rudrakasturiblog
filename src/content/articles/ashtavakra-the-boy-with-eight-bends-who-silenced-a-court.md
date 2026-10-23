@@ -16,6 +16,7 @@ faq:
     a: "A court scholar of King Janaka who had won debates and had the losers drowned. He was said to be a son of Varuna."
   - q: "Is the Ashtavakra Gita by this Ashtavakra?"
     a: "It is a separate Advaita text named after him. Scholars do not regard the sage of this story as its author."
+series: "mahabharata-stories"
 draft: false
 ---
 

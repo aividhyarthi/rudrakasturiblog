@@ -16,6 +16,7 @@ faq:
     a: "Not permanently, since all three are always present, but you can shift which one dominates through food, sleep, company, work and practice."
   - q: "Is sattva always better?"
     a: "The Gita says sattva leads to clarity and peace, but also warns that even it can bind through attachment to pleasure and knowledge."
+series: "gita-for-the-mind"
 draft: false
 ---
 

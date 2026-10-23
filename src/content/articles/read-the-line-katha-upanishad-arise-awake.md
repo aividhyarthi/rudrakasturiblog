@@ -16,6 +16,7 @@ faq:
     a: "The text says the path to the Self is as sharp and hard to cross as the edge of a razor, which means it needs care and a guide."
   - q: "Who is speaking in the Katha Upanishad?"
     a: "Yama, the god of death, teaching the boy Nachiketa."
+series: "read-the-line"
 draft: false
 ---
 

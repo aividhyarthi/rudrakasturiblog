@@ -16,6 +16,7 @@ faq:
     a: "In 12.18 and 12.19 Krishna describes the devotee who is the same in honour and dishonour, in praise and blame."
   - q: "What should I do when blamed unfairly?"
     a: "Stay calm, gather facts, state your side once and clearly, and ask a trusted person or authority to help. If it is serious, take legal advice."
+series: "why-me"
 draft: false
 ---
 

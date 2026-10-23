@@ -16,6 +16,7 @@ faq:
     a: "Many families place the lamp so that the flame faces east or north. Follow your family custom."
   - q: "Is a lamp on an amla fruit safe?"
     a: "A small lamp carved into an amla (usirika) is a Karthika tradition. Place it on a plate, away from anything flammable, and never leave it unattended."
+series: "karthika"
 draft: false
 ---
 

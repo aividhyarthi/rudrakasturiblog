@@ -16,6 +16,7 @@ faq:
     a: "Parvati made a lingam of earth at Kanchi. When Shiva sent the Kampa river in flood, she held the lingam to her chest to save it. The Prithvi lingam at Ekambareswarar temple is linked to this."
   - q: "How is Adi Shankara connected to Kamakshi?"
     a: "Tradition says he installed a Sri Chakra before the goddess and is linked to the Kanchi Kamakoti Peetham."
+series: "goddess-stories"
 draft: false
 ---
 

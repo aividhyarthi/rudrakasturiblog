@@ -16,6 +16,7 @@ faq:
     a: "A sage or yaksha who, in the tradition, prayed to Durga and asked her to remain on his hill, which was then named after him."
   - q: "What is Bhavani Deeksha?"
     a: "A vow of about 41 days taken in Karthika or Margashira in which devotees wear red and abstain from certain things, ending with a pilgrimage to the temple."
+series: "goddess-stories"
 draft: false
 ---
 

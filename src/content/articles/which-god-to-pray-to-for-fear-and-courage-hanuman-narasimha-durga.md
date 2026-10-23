@@ -16,6 +16,7 @@ faq:
     a: "The Hanuman verse Buddhir Balam Yasho Dhairyam and the Durga verse Durge Smrita are popular."
   - q: "What if my fear does not go away?"
     a: "Constant fear, panic or avoidance needs a doctor or counsellor. Prayer is a support."
+series: "which-god"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "That human birth, the desire for liberation and the guidance of a great teacher are three rare gifts (Vivekachudamani 2)."
   - q: "What if I feel my life has no purpose?"
     a: "Start small: service, learning, relationships. If the feeling is heavy and lasts, speak to a counsellor or doctor."
+series: "searching"
 draft: false
 ---
 

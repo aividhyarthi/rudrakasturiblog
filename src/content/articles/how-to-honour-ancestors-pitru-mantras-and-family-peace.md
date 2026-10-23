@@ -16,6 +16,7 @@ faq:
     a: "On the death anniversary (shraddha), Amavasya, Mahalaya Amavasya and Pitru Paksha."
   - q: "What is pitru dosha?"
     a: "An astrological belief that unhappy ancestors cause trouble. It is a belief, not a proven fact, and gratitude is a better reason to remember them."
+series: "which-god"
 draft: false
 ---
 

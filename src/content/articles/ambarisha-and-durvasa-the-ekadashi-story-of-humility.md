@@ -16,6 +16,7 @@ faq:
     a: "Ambarisha broke his fast with a sip of water before Durvasa returned from his bath, to keep the Ekadashi rule while not eating before the guest."
   - q: "What is the lesson?"
     a: "That power and austerity without humility fall, and that sincere devotion is protected."
+series: "karthika"
 draft: false
 ---
 

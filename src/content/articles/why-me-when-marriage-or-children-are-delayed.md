@@ -16,6 +16,7 @@ faq:
     a: "Many families pray to Santana Gopala, Subramanya or Katyayani, and find peace in it. Prayer can sit alongside medical care and sensible effort."
   - q: "How do I deal with family pressure?"
     a: "Decide on a short answer, repeat it calmly, and choose one or two people you can talk to honestly. You do not owe everyone an explanation."
+series: "why-me"
 draft: false
 ---
 

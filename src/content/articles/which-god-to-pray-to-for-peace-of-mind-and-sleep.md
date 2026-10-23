@@ -16,6 +16,7 @@ faq:
     a: "Shantakaram Bhujagashayanam, a well-known verse to Vishnu, is said at night or for peace."
   - q: "What if I can’t sleep for weeks?"
     a: "See a doctor. Sleep problems have many treatable causes."
+series: "which-god"
 draft: false
 ---
 

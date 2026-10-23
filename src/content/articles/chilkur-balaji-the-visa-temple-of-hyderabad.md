@@ -16,6 +16,7 @@ faq:
     a: "Devotees do 11 rounds around the sanctum while making their wish, and when it is fulfilled they return to do 108."
   - q: "Does the temple take donations?"
     a: "No. It has no hundi and does not accept donations or have VIP tickets."
+series: "temples-for-a-reason"
 draft: false
 ---
 

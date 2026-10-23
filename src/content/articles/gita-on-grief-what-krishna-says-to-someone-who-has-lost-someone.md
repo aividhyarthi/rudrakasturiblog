@@ -16,6 +16,7 @@ faq:
     a: "Krishna says the wise do not grieve for the living or the dead, but he does not scold grief. He starts by acknowledging Arjuna’s sorrow and stays with him."
   - q: "How can I cope with loss?"
     a: "Give yourself time, talk to people, keep small routines, and seek counselling if grief feels unmanageable for a long time."
+series: "gita-for-the-mind"
 draft: false
 ---
 

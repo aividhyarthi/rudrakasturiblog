@@ -16,6 +16,7 @@ faq:
     a: "Asato ma sad gamaya, tamaso ma jyotir gamaya, mrityor ma amritam gamaya: lead me from untruth to truth, from darkness to light, from death to immortality."
   - q: "What helps in daily life?"
     a: "A short daily practice, fewer inputs, honest work, time in nature and speaking kindly."
+series: "searching"
 draft: false
 ---
 

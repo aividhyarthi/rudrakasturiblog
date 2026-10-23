@@ -16,6 +16,7 @@ faq:
     a: "On the bank of the Godavari in Nirmal district, Telangana, about 200 km from Hyderabad."
   - q: "What is the prasadam at Basar?"
     a: "Bandaru, a paste of turmeric, which devotees apply on the forehead or the child’s tongue."
+series: "temples-for-a-reason"
 draft: false
 ---
 

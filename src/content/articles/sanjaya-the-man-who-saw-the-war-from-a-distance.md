@@ -16,6 +16,7 @@ faq:
     a: "The text says he did not want to witness the destruction of his family, though he wished to hear about it."
   - q: "Did Sanjaya keep his vision?"
     a: "The text says he lost his divine sight at the end of the war, after being captured, and Vyasa freed him."
+series: "mahabharata-stories"
 draft: false
 ---
 

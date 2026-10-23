@@ -16,6 +16,7 @@ faq:
     a: "He saw Sita being carried off and chose to stop the wrong, though he was old and Ravana was far stronger."
   - q: "What is Lepakshi's link to Jatayu?"
     a: "Tradition says Jatayu fell at Lepakshi in Andhra Pradesh, and that Rama said, Le pakshi, rise, bird. The Veerabhadra temple is nearby."
+series: "ramayana-stories"
 draft: false
 ---
 

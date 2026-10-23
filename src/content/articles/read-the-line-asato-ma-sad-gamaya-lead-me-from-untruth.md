@@ -16,6 +16,7 @@ faq:
     a: "Sat means the real, that which is true and does not change, in contrast with asat, the unreal."
   - q: "What does amrita mean here?"
     a: "Not endless life of the body, but freedom from the fear of death, which the Upanishads connect with knowing the Self."
+series: "read-the-line"
 draft: false
 ---
 

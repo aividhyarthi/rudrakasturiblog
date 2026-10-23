@@ -39,3 +39,13 @@ export function sectionCounts() {
 import { contributorFor } from '../data/authors';
 /** Name shown in bylines: the contributor for the category, else the desk named in the article. */
 export const byline = (d: { category: string; author: string }) => contributorFor(d.category)?.name ?? d.author;
+
+/** Published articles in a series, oldest first, so a series reads in order. */
+export async function articlesInSeries(id: string) {
+  return (await allArticles()).filter((a) => a.data.series === id).sort((a, b) => a.data.date.getTime() - b.data.date.getTime());
+}
+let _sc: Promise<Record<string, number>> | null = null;
+export function seriesCounts() {
+  _sc ??= allArticles().then((all) => { const c: Record<string, number> = {}; for (const a of all) if (a.data.series) c[a.data.series] = (c[a.data.series] ?? 0) + 1; return c; });
+  return _sc;
+}

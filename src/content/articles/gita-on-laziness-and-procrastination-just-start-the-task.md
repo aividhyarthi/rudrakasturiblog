@@ -16,6 +16,7 @@ faq:
     a: "Usually from fear of failing, of the size of the task or of discomfort, not from simple laziness."
   - q: "How do I start?"
     a: "Pick the smallest first step, set a timer for ten minutes, and begin before you feel ready."
+series: "gita-for-the-mind"
 draft: false
 ---
 

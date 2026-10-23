@@ -16,6 +16,7 @@ faq:
     a: "That detail is from later retellings and folk tradition. In Valmiki she offers him fruits and roots she had gathered."
   - q: "Where is Shabari's hermitage?"
     a: "Tradition places Matanga's hermitage on Matanga Hill at Hampi, near Lake Pampa in Karnataka."
+series: "ramayana-stories"
 draft: false
 ---
 

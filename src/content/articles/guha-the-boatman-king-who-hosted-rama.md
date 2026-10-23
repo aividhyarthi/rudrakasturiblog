@@ -16,6 +16,7 @@ faq:
     a: "That scene, with the boatman washing Rama's feet before the crossing, comes from later retellings such as the Ramcharitmanas. In Valmiki Guha arranges the boat and a safe night."
   - q: "Where was Shringaverapura?"
     a: "Tradition places it near Prayagraj on the Ganga, at the modern Singraur."
+series: "ramayana-stories"
 draft: false
 ---
 

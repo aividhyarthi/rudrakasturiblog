@@ -16,6 +16,7 @@ faq:
     a: "Before starting anything important, and on Wednesdays, Chaturthi and Sankashti."
   - q: "What if the obstacle is a practical problem?"
     a: "Pray, and also fix what can be fixed. The prayer steadies you while you do the work."
+series: "which-god"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "A festival in the Malayalam month of Meenam, when devotees, many dressed in red, gather in huge numbers. Oracles called komarams dance and strike their heads with swords."
   - q: "Is Kodungallur linked to Kannagi?"
     a: "Some traditions say the goddess was Kannagi from the Tamil epic Silappathikaram, who burned Madurai. Others disagree. The link is a legend, not settled history."
+series: "goddess-stories"
 draft: false
 ---
 

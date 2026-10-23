@@ -241,7 +241,7 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 
 /* ---------- footer ---------- */
 .foot{margin-top:84px;background:var(--ink);color:#c9c9cf;padding:56px 0 36px}
-.foot .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.foot .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1fr;gap:32px}
 .foot .logo{font-size:36px;color:#fff;text-align:left}
 .foot h4{font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#fff;margin-bottom:16px}
 .foot a{display:block;padding:5px 0;font-size:14.5px;color:#c9c9cf}.foot a:hover{color:#fff}
@@ -264,7 +264,7 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
   .sign-grid{grid-template-columns:1fr 1fr}
   .sign-tiles{grid-template-columns:repeat(3,1fr)}
   .nav .wrap{justify-content:flex-start;padding:0 8px}.nav a{padding:12px 13px}
-  .foot .wrap{grid-template-columns:1fr}
+  .foot .wrap{grid-template-columns:1fr 1fr}
   .topbar .wrap{justify-content:center;text-align:center}
   .row{grid-template-columns:92px 1fr}
   .prose{font-size:19px}.prose>p:first-of-type:first-letter{font-size:3.6em}
@@ -341,3 +341,17 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .prose figure{margin:30px 0}
 .prose figure img{display:block;width:100%;height:auto;border-radius:10px}
 .prose figcaption{font-size:14px;color:var(--muted);margin-top:8px}
+
+/* Series pages */
+.series-list{padding-left:1.4em;margin:18px 0}
+.series-list li{margin:0 0 20px;line-height:1.45}
+.series-list li a{text-decoration:underline;text-underline-offset:3px}
+
+/* Sub-navigation: one scrollable line on small screens */
+@media(max-width:700px){
+  .brandbar .wrap{flex-direction:column;align-items:flex-start;gap:8px}
+  .subnav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;gap:20px;max-width:100%;width:100%;padding-bottom:4px;mask-image:linear-gradient(90deg,#000 88%,transparent)}
+  .subnav::-webkit-scrollbar{display:none}
+  .subnav a{white-space:nowrap;flex:0 0 auto;padding:6px 0}
+  .nav .wrap{justify-content:flex-start;mask-image:linear-gradient(90deg,#000 90%,transparent)}
+}

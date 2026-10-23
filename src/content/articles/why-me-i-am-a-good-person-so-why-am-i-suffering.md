@@ -16,6 +16,7 @@ faq:
     a: "Krishna says no one who does good ever comes to a bad end (6.40), and that the way of karma is deep and hard to understand (4.17). It does not promise a life without pain."
   - q: "What should I do when I feel it is unfair?"
     a: "Say so honestly, to God or to a friend. Then do the next small right thing. The tradition asks for steadiness, not for pretending that you are fine."
+series: "why-me"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Many teachers suggest avoiding strong inversions like headstand and shoulderstand, intense abdominal work and forceful breathing such as Kapalabhati, especially on heavy days."
   - q: "When is period pain a medical problem?"
     a: "If the pain stops you from going to work or school, gets worse over time, or comes with very heavy bleeding, see a doctor. It can have a treatable cause."
+series: "yoga-for-life"
 draft: false
 ---
 

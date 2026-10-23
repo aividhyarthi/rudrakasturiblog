@@ -16,6 +16,7 @@ faq:
     a: "Raja Wodeyar began the royal Dasara celebration in Srirangapatna in 1610, following the earlier Vijayanagara tradition. It later moved to Mysuru."
   - q: "How do I reach the temple?"
     a: "By road up Chamundi Hill, or on foot by the stairway of about 1,000 steps, with a huge Nandi statue about halfway."
+series: "goddess-stories"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "He learned that the joys of heaven are temporary and last only as long as one's merit lasts, and that there is a fall at the end."
   - q: "What did he choose instead?"
     a: "He turned to renunciation and knowledge and, the text says, attained liberation (moksha)."
+series: "mahabharata-stories"
 draft: false
 ---
 

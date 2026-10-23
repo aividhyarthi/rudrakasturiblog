@@ -16,6 +16,7 @@ faq:
     a: "Because it is regarded as the Kashi (Varanasi) of the South, with a Shiva temple of great antiquity."
   - q: "Where is the Dharmagundam?"
     a: "A sacred pond in the temple complex where devotees bathe before darshan."
+series: "temples-for-a-reason"
 draft: false
 ---
 

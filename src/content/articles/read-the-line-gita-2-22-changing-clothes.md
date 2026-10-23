@@ -16,6 +16,7 @@ faq:
     a: "It is part of Krishna's teaching to Arjuna. Offered to someone grieving, it can sound cold. Presence and silence usually help first."
   - q: "What is dehi?"
     a: "The embodied one, the self that lives in the body."
+series: "read-the-line"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "May the guest be to you like a god. It is the root of the Indian ideal of hospitality."
   - q: "Does the text ask for blind obedience?"
     a: "No. It says follow the blameless actions of your elders and not the others, so judgement is still asked of the student."
+series: "read-the-line"
 draft: false
 ---
 

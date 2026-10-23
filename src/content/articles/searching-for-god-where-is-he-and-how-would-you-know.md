@@ -16,6 +16,7 @@ faq:
     a: "Temples are a support for many people, but the tradition says God is not limited to them."
   - q: "How would I know I have found God?"
     a: "Teachers point not to visions but to changes in conduct: more compassion, less fear, steadier mind."
+series: "searching"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "He accepted the exile without cursing Kaikeyi or his father, and spoke of her with respect. He did not pretend that it did not hurt."
   - q: "Is it wrong to leave a family that harms me?"
     a: "Vibhishana left Ravana, and Prahlada chose his own faith over his father. Sometimes dharma is to step away."
+series: "why-me"
 draft: false
 ---
 

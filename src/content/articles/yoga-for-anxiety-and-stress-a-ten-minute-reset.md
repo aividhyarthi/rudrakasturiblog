@@ -16,6 +16,7 @@ faq:
     a: "Breathe out slowly, press your feet into the floor, name five things you can see, and remind yourself it will pass. If attacks are frequent, see a doctor."
   - q: "How often should I practise?"
     a: "Ten minutes daily is better than an hour once a week."
+series: "yoga-for-life"
 draft: false
 ---
 

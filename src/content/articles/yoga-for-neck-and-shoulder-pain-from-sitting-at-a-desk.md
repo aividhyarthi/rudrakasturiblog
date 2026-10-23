@@ -16,6 +16,7 @@ faq:
     a: "A one-minute break every hour is better than a long session once a day."
   - q: "When should I see a doctor?"
     a: "If you have tingling, numbness or weakness in an arm or hand, severe pain after an injury, or headaches that keep returning, see a doctor."
+series: "yoga-for-life"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "Check facts, ask directly and kindly, extend the benefit of the doubt where there is no evidence, and notice when old hurt is speaking."
   - q: "What if my suspicion is justified?"
     a: "Then act on facts, not on the feeling alone, and protect yourself. Seek advice if you feel unsafe."
+series: "gita-for-the-mind"
 draft: false
 ---
 

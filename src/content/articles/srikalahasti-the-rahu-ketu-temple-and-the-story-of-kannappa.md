@@ -16,6 +16,7 @@ faq:
     a: "A hunter, Thinnadu, whose devotion to Shiva was so strong that he offered his own eyes to the lingam. He became the Nayanar saint Kannappa."
   - q: "What is the Rahu-Ketu pooja?"
     a: "A ritual done by people who believe that Rahu and Ketu are affecting their chart, aimed at relief from delays and obstacles. It is a matter of belief."
+series: "temples-for-a-reason"
 draft: false
 ---
 

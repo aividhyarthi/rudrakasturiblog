@@ -16,6 +16,7 @@ faq:
     a: "To avenge his father Parikshit, who had died of the snake Takshaka's bite."
   - q: "How does this connect to festivals?"
     a: "Naga Panchami and, in Andhra and Telangana, Nagula Chavithi remember the nagas, and the Astika verse is traditionally chanted for protection from snakes."
+series: "mahabharata-stories"
 draft: false
 ---
 

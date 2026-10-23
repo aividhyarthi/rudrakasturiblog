@@ -16,6 +16,7 @@ faq:
     a: "He thought Krishna could have stopped the war and saved the Kurus, and he threatened to curse him."
   - q: "Why did he refuse nectar from the hunter?"
     a: "The man was Indra in disguise, but Uttanka saw only a low-caste man with dogs and refused. Indra said that if he had accepted, he would have become immortal."
+series: "mahabharata-stories"
 draft: false
 ---
 

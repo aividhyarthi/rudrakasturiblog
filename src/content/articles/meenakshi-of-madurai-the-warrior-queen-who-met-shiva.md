@@ -16,6 +16,7 @@ faq:
     a: "The legend says the girl who emerged from the fire had three breasts, and that the extra one would vanish when she met her husband. It vanished when she saw Shiva."
   - q: "What is Chithirai Thirukalyanam?"
     a: "The wedding of Meenakshi and Sundareswarar, celebrated each year in the Tamil month of Chithirai, with Vishnu in the role of her brother giving her away."
+series: "goddess-stories"
 draft: false
 ---
 

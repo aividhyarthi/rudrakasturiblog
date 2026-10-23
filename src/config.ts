@@ -48,11 +48,32 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
     { label: 'Pradosham', href: '/pradosham/' },
     { label: 'Daily panchangam', href: '/daily-panchangam/' },
     { label: 'Mantras', href: '/mantras/' },
-    { label: 'Temples', href: '/temples/' },
+    { label: 'Gods & Goddesses', href: '/gods-and-goddesses/' },
+    { label: 'Prayer & Mantras', href: '/prayer-and-mantras/' },
+    { label: 'Karma Stories', href: '/karma-stories/' },
+    { label: 'Faith Questions', href: '/faith-questions/' },
+    { label: 'Yoga', href: '/yoga-spiritual/' },
+    { label: 'Series', href: '/series/' },
+    { label: 'All topics', href: '/topics/' },
+  ],
+  gita: [
+    { label: 'All 18 chapters', href: '/bhagavad-gita/' },
+    { label: 'Gita teachings', href: '/gita-teachings/' },
+    { label: 'Read the line', href: '/series/read-the-line/' },
+    { label: 'Gita for the mind', href: '/series/gita-for-the-mind/' },
+    { label: 'Why me?', href: '/series/why-me/' },
+    { label: 'Karma Stories', href: '/karma-stories/' },
+    { label: 'All topics', href: '/topics/' },
+  ],
+  temples: [
+    { label: 'All temples', href: '/temples/' },
+    { label: 'Temple Stories', href: '/temple-stories/' },
+    { label: 'Rivers & Hills', href: '/sacred-rivers-and-hills/' },
+    { label: 'Goddess stories', href: '/series/goddess-stories/' },
+    { label: 'Temples for a reason', href: '/series/temples-for-a-reason/' },
     { label: 'Jyotirlingas', href: '/temples/jyotirlingas/' },
     { label: 'Shakti Peethas', href: '/temples/shakti-peethas/' },
     { label: 'Char Dham', href: '/temples/char-dham/' },
-    { label: 'Bhagavad Gita', href: '/bhagavad-gita/' },
   ],
   astrology: [
     { label: 'Today', href: '/rasi-phalalu/' },
@@ -85,6 +106,22 @@ export const CATEGORIES = [
   { id: 'movies', label: 'Cinema', blurb: 'Kollywood, Tollywood, Sandalwood, Mollywood. Box office to buzz.' },
   { id: 'ott', label: 'OTT', blurb: 'What to binge, what to skip, what everyone is arguing about.' },
 ] as const;
+
+// Series: groups of articles that belong together. Articles opt in with `series: "<id>"` in their front matter.
+export const SERIES = [
+  { id: 'why-me', label: 'Why me?', blurb: 'You are a good person and still suffer. Answers from the Gita, the Upanishads and the epics, one situation at a time.' },
+  { id: 'ramayana-stories', label: 'Small stories from the Ramayana', blurb: 'The people Rama met on the road, from Guha to Shabari to Vibhishana, with the source named for each.' },
+  { id: 'mahabharata-stories', label: 'Small stories from the Mahabharata', blurb: 'The lesser-told stories of the epic: Ekalavya, Ashtavakra, Mudgala, Sanjaya, Yuyutsu and more.' },
+  { id: 'goddess-stories', label: 'Goddesses and village deities', blurb: 'Kamakshi, Meenakshi, Mahankali, Kali and the grama devatas, as the temples tell their stories.' },
+  { id: 'read-the-line', label: 'Read the line', blurb: 'Verses from the Gita and the Upanishads, word by word, with the meaning and one thing to try.' },
+  { id: 'gita-for-the-mind', label: 'The Gita for the mind', blurb: 'Overthinking, fear, grief, jealousy and doubt: what Krishna says about the troubled mind.' },
+  { id: 'searching', label: 'Searching', blurb: 'Searching for a guru, for peace, for meaning, for God and for fairness in karma.' },
+  { id: 'which-god', label: 'Which god to pray to', blurb: 'Problem by problem: the gods, the mantras and how to pray for health, money, marriage, exams and more.' },
+  { id: 'yoga-for-life', label: 'Yoga for everyday problems', blurb: 'Back pain, anxiety, sleep, breathing and an overthinking mind: gentle practices that help.' },
+  { id: 'temples-for-a-reason', label: 'Temples for a reason', blurb: 'Which temple to go to for which need: Kukke Subramanya, Srikalahasti, Vaitheeswaran Koil and more.' },
+  { id: 'karthika', label: 'Karthika masam', blurb: 'What the month means, who to worship, the lamps, the Mondays and Tripura Pournami.' },
+] as const;
+export const seriesHref = (id: string) => `/series/${id}/`;
 
 export const REGION_LABELS_NOTE = 'Region codes: ap, ts, ka, tn, kl, south';
 export const REGIONS = {

@@ -16,6 +16,7 @@ faq:
     a: "He wished to see Rama before leaving the world. The text says he had been told that Rama would soon come to the forest."
   - q: "What did Rama do when Sharabhanga offered his merit?"
     a: "Rama declined, saying he would find his own way. Sharabhanga then entered the fire and rose to the higher worlds."
+series: "ramayana-stories"
 draft: false
 ---
 

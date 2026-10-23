@@ -16,6 +16,7 @@ faq:
     a: "Gita 18.14 lists the body, the doer, the instruments, the many kinds of effort and the unseen factor, often called daiva. Your effort is one of the five."
   - q: "How do I keep going after repeated failure?"
     a: "Review what you can change, drop what you cannot, and keep one small daily action going. Seek help if low mood continues."
+series: "why-me"
 draft: false
 ---
 

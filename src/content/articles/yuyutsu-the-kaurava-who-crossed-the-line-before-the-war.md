@@ -16,6 +16,7 @@ faq:
     a: "The text says he chose dharma when Yudhishthira offered the choice, even though it meant fighting his own brothers."
   - q: "What happened to Yuyutsu after the war?"
     a: "He survived and was entrusted with Hastinapura's affairs when the Pandavas left for their final journey, and he guarded Parikshit."
+series: "mahabharata-stories"
 draft: false
 ---
 

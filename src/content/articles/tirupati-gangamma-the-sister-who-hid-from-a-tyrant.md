@@ -16,6 +16,7 @@ faq:
     a: "A week-long festival in May in which devotees take on disguises, including as Matangi, bandits and ascetics, and make offerings at her temple."
   - q: "Why do devotees take disguises?"
     a: "Tradition says that the goddess hid in disguises when she was pursued by Palegadu. The vesham remembers her flight and her victory."
+series: "goddess-stories"
 draft: false
 ---
 

@@ -16,6 +16,7 @@ faq:
     a: "The Siddhamritham tank, in which devotees bathe, is believed to have healing properties."
   - q: "Should I rely on prayer instead of treatment?"
     a: "No. Use prayer alongside medical treatment, not instead of it."
+series: "temples-for-a-reason"
 draft: false
 ---
 

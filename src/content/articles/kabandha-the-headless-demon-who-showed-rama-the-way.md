@@ -16,6 +16,7 @@ faq:
     a: "The curse would end when Rama cut off his arms. After Rama did, Kabandha asked to be cremated, and rose in a radiant form."
   - q: "What did Kabandha tell Rama?"
     a: "To go to Sugriva at Rishyamukha near the Pampa lake, to make a friendship by fire, and to visit the hermitage of Matanga where Shabari lived."
+series: "ramayana-stories"
 draft: false
 ---
 

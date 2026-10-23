@@ -16,6 +16,7 @@ faq:
     a: "Shiva and Vishnu above all, plus Subramanya, Tulasi Devi and, for the mala vow, Ayyappa."
   - q: "Do I have to do everything?"
     a: "No. Even lighting one lamp at dusk each day is a complete observance."
+series: "karthika"
 draft: false
 ---
 

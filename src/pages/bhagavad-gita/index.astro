@@ -1,6 +1,7 @@
 ---
 import Hero from '../../components/Hero.astro';
 import Base from '../../layouts/Base.astro';
+import ExploreChips from '../../components/ExploreChips.astro';
 import { CHAPTERS, GITA_FAQ } from '../../data/gita';
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: GITA_FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
@@ -27,6 +28,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
         <p>{c.summary[0].slice(0, 130)}…</p>
       </a>
     ))}</div>
+    <ExploreChips />
     <div class="sect" style="margin-top:22px"><h2>Common questions</h2></div>
     {GITA_FAQ.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
   </div>

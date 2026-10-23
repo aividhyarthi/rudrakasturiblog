@@ -16,6 +16,7 @@ faq:
     a: "It says that one's own duty, even imperfectly done, is better than the duty of another done well."
   - q: "How do I stop comparing myself with others?"
     a: "Limit what you scroll, name what you actually want, and measure against your own earlier self. If it brings low mood, speak to a counsellor."
+series: "why-me"
 draft: false
 ---
 

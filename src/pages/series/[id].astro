@@ -1,0 +1,23 @@
+---
+import Base from '../../layouts/Base.astro';
+import { SERIES, SITE, seriesHref } from '../../config';
+import { articlesInSeries, byline, fmtDate } from '../../lib/articles';
+export async function getStaticPaths() {
+  const out = [];
+  for (const s of SERIES) { const items = await articlesInSeries(s.id); if (items.length) out.push({ params: { id: s.id }, props: { s, items } }); }
+  return out;
+}
+const { s, items } = Astro.props;
+const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: s.label, description: s.blurb, url: `${SITE.url}${seriesHref(s.id)}`, mainEntity: { '@type': 'ItemList', itemListElement: items.map((a: any, i: number) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/${a.slug}/`, name: a.data.title })) } };
+---
+<Base title={s.label} description={s.blurb} jsonLd={ld} breadcrumbs={[{ name: 'Series', href: '/series/' }, { name: s.label, href: seriesHref(s.id) }]} rail="religion" active="religion">
+  <div class="page wide">
+    <div class="kicker"><a href="/series/">Series</a></div>
+    <h1>{s.label}</h1>
+    <p class="dek">{s.blurb}</p>
+    <ol class="series-list">{items.map((a: any) => (
+      <li><a href={`/${a.slug}/`}><b>{a.data.title}</b></a><br /><span class="meta">{a.data.description}</span><br /><span class="meta">{byline(a.data)} · {fmtDate(a.data.date)}</span></li>
+    ))}</ol>
+    <p class="sub">{items.length} {items.length === 1 ? 'article' : 'articles'} so far. New ones are added every day. <a href="/series/">All series</a> · <a href="/topics/">All topics</a></p>
+  </div>
+</Base>

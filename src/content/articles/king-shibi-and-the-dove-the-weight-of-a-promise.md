@@ -16,6 +16,7 @@ faq:
     a: "Indra took the form of a hawk and Agni the form of a dove, to test the king's dharma."
   - q: "How is this connected to the Ramayana?"
     a: "Rama's vow to protect anyone who seeks refuge (6.18.33) draws on the same ideal. The dove who shelters the hunter is a related tale."
+series: "mahabharata-stories"
 draft: false
 ---
 

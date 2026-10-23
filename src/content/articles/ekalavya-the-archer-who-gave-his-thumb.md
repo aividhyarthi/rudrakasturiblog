@@ -16,6 +16,7 @@ faq:
     a: "Drona had promised Arjuna that no one would surpass him. When he saw Ekalavya's skill he asked for the right thumb as the fee, and Ekalavya gave it."
   - q: "Is the story a lesson in obedience or in injustice?"
     a: "Readers have taken it both ways for centuries. The epic reports it without comment and lets the reader feel the weight."
+series: "mahabharata-stories"
 draft: false
 ---
 

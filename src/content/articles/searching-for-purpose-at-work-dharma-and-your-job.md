@@ -16,6 +16,7 @@ faq:
     a: "Gita 2.50 says that yoga is excellence in action: doing work with full attention and a steady mind."
   - q: "What if my job feels meaningless?"
     a: "Ask whom it serves, find the part you can do well, and in time consider whether to change. If it harms your health, take it seriously."
+series: "searching"
 draft: false
 ---
 

@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import { CATEGORIES, NEWS_CATS, SERIES, SITE, catHref, seriesHref } from '../config';
+import { sectionCounts, seriesCounts } from '../lib/articles';
+const counts = await sectionCounts();
+const sc = await seriesCounts();
+const cats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts.cat[c.id]);
+const series = SERIES.filter((s) => sc[s.id]);
+const tools = [
+  ['Panchangam today', '/panchangam/', 'Tithi, nakshatra, Rahu Kalam and good timings by city.'],
+  ['Rahu Kalam today', '/rahu-kalam-today/', 'Rahu Kalam, Yamagandam and Gulika for every city.'],
+  ['Amavasya dates', '/amavasya/', 'New moon dates and tithi timings.'],
+  ['Pournami dates', '/pournami/', 'Full moon dates and the festival for each.'],
+  ['Ekadashi dates', '/ekadashi/', 'All 24 Ekadashis with parana time.'],
+  ['Sankashti Chaturthi', '/sankashti-chaturthi/', 'Dates, moonrise and vrat.'],
+  ['Pradosham', '/pradosham/', 'Dates and the evening puja window.'],
+  ['Daily panchangam', '/daily-panchangam/', 'A page for every day.'],
+  ['Mantras by god', '/mantras/', 'Mantras and their meanings for each deity.'],
+  ['Rasi phalalu', '/rasi-phalalu/', 'Daily, weekly and monthly horoscope for every rashi.'],
+  ['Horoscope tomorrow', '/horoscope-tomorrow/', 'Tomorrow for all twelve rashis.'],
+  ['Temples', '/temples/', 'Temple guides, Jyotirlingas, Shakti Peethas and Char Dham.'],
+  ['Bhagavad Gita', '/bhagavad-gita/', 'All 18 chapters in plain words.'],
+];
+---
+<Base title="All topics and series" description="Everything on Southwala by topic: devotional, Gita, gods and goddesses, prayer and mantras, karma stories, faith questions, yoga, temples, and series to read in order." breadcrumbs={[{ name: 'All topics', href: '/topics/' }]} rail="religion" active="religion">
+  <div class="page wide">
+    <h1>All topics and series</h1>
+    <p class="dek">Everything we have written, in one place. Pick a topic, or follow a series from the first article to the last.</p>
+    {series.length > 0 && <>
+      <div class="sect"><h2>Series to read in order</h2></div>
+      <div class="tiles" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">{series.map((s) => (
+        <a class="tile" href={seriesHref(s.id)}><h3>{s.label}</h3><div class="meta">{s.blurb}</div><div class="meta" style="margin-top:6px"><b>{sc[s.id]}</b> {sc[s.id] === 1 ? 'article' : 'articles'}</div></a>
+      ))}</div>
+    </>}
+    <div class="sect" style="margin-top:26px"><h2>Topics</h2></div>
+    <div class="tiles" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">{cats.map((c) => (
+      <a class="tile" href={catHref(c.id)}><h3>{c.label}</h3><div class="meta">{c.blurb}</div><div class="meta" style="margin-top:6px"><b>{counts.cat[c.id]}</b> {counts.cat[c.id] === 1 ? 'article' : 'articles'}</div></a>
+    ))}</div>
+    <div class="sect" style="margin-top:26px"><h2>Dates, tools and guides</h2></div>
+    <ul>{tools.map(([n, h, d]) => <li><a href={h} style="text-decoration:underline"><b>{n}</b></a>: {d}</li>)}</ul>
+    <p class="sub">Written by <a href="/team/">our contributors</a> and reviewed by the Southwala Editorial Desk. To suggest a topic, write to <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+  </div>
+</Base>

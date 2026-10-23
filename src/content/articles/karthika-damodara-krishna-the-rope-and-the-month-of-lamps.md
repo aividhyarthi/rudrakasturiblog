@@ -16,6 +16,7 @@ faq:
     a: "A hymn of eight verses to Krishna as Damodara, traditionally recited in the month of Kartika."
   - q: "How do I offer a lamp to Damodara?"
     a: "Light a ghee or sesame oil lamp in front of an image of Krishna or Vishnu at dusk, and say a short prayer. It is one of the main practices of the month."
+series: "karthika"
 draft: false
 ---
 

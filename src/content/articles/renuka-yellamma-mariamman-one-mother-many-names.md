@@ -16,6 +16,7 @@ faq:
     a: "In many traditions, yes. Other traditions treat Mariamman as a local goddess in her own right. The links vary by region."
   - q: "What is the devadasi practice and is it required?"
     a: "The dedication of girls to the goddess, once linked to Yellamma worship, is illegal in India and harmful. The goddess's worship does not require it."
+series: "goddess-stories"
 draft: false
 ---
 

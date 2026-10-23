@@ -16,6 +16,7 @@ faq:
     a: "Natural rock forms in the cave, regarded as Maha Kali, Maha Lakshmi and Maha Saraswati."
   - q: "How long is the pilgrimage?"
     a: "About 12 to 13 km on foot from Katra to the shrine, usually taking 4 to 8 hours. Ponies, palanquins and a helicopter are available."
+series: "goddess-stories"
 draft: false
 ---
 

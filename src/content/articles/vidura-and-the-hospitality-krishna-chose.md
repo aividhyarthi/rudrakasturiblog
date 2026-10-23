@@ -16,6 +16,7 @@ faq:
     a: "The wise half-brother of Dhritarashtra and Pandu, a son of Vyasa and a maid, and the epic's most honest counsellor."
   - q: "Did Vidura's wife feed Krishna banana peels?"
     a: "That is a popular folk story, not in the Mahabharata. It shows the idea that a gift given with love matters more than what it is."
+series: "mahabharata-stories"
 draft: false
 ---
 

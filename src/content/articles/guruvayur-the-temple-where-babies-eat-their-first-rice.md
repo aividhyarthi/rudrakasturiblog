@@ -16,6 +16,7 @@ faq:
     a: "A ritual in which a devotee sits on one pan of a large scale and is weighed against bananas, sugar, jaggery, coconuts or other offerings."
   - q: "What is Narayaneeyam?"
     a: "A Sanskrit poem of about 1,036 verses by Melpathur Narayana Bhattathiri that retells the Bhagavata Purana and is recited at Guruvayur."
+series: "temples-for-a-reason"
 draft: false
 ---
 

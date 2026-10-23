@@ -16,6 +16,7 @@ faq:
     a: "No. It is against extremes. Work fully, but rest, eat and play enough to keep going."
   - q: "How do I know I am burning out?"
     a: "Constant exhaustion, cynicism about work, trouble concentrating, and feeling that nothing you do matters. Take it seriously and talk to someone."
+series: "gita-for-the-mind"
 draft: false
 ---
 
