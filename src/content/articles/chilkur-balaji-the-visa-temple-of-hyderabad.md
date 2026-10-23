@@ -1,7 +1,7 @@
 ---
 title: "Chilkur Balaji: the “Visa temple” of Hyderabad and why it has no hundi"
 description: "Chilkur Balaji, near Hyderabad, is known as the Visa temple. How the 11 and 108 pradakshina vow works, the story of the temple and why it does not take donations."
-date: "2026-11-14T00:00:12+05:30"
+date: "2026-11-20T00:00:04+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

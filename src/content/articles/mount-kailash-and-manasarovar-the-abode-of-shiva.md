@@ -1,7 +1,7 @@
 ---
 title: "Mount Kailash and Manasarovar: why nobody climbs the abode of Shiva"
 description: "Kailash is a mountain that people walk around but never climb. Why four religions hold it sacred, what the parikrama involves and how the yatra from India works."
-date: "2026-11-06T00:00:12+05:30"
+date: "2026-11-11T00:00:08+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

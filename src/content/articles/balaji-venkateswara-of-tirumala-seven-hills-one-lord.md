@@ -1,7 +1,7 @@
 ---
 title: "Balaji of Tirumala: the seven hills, the loan and the lord who waits"
 description: "Why does Venkateswara stand on seven hills, why do pilgrims shave their heads and what is the story of the loan from Kubera? A plain guide to Balaji."
-date: "2026-11-05T00:00:00+05:30"
+date: "2026-11-10T00:00:04+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

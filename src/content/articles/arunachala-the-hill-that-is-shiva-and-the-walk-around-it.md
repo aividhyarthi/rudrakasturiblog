@@ -1,7 +1,7 @@
 ---
 title: "Arunachala: the hill that is Shiva, and the 14 km walk around it"
 description: "At Tiruvannamalai a whole hill is worshipped as Shiva in the form of fire. The story, the Girivalam walk and why Ramana Maharshi spent his life there."
-date: "2026-10-31T00:00:08+05:30"
+date: "2026-11-03T00:00:08+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

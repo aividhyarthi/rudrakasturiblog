@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for money troubles and debt: Lakshmi and Kubera"
 description: "People pray to Lakshmi for prosperity, Kubera for wealth, and Lakshmi Narasimha for release from debt."
-date: "2026-11-15T00:00:00+05:30"
+date: "2026-11-20T00:00:08+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

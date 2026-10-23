@@ -1,7 +1,7 @@
 ---
 title: "Karthika Damodara: Krishna, the rope and the month of lamps"
 description: "Why is Krishna called Damodara in Karthika? The story of the rope that was two fingers too short, the Damodarashtakam and how to offer a lamp to Damodara."
-date: "2026-11-06T00:00:04+05:30"
+date: "2026-11-06T00:00:12+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Story"

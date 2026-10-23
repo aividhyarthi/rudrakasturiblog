@@ -1,7 +1,7 @@
 ---
 title: "What does Sanatana Dharma mean? Where the phrase comes from"
 description: "Sanatana Dharma means the eternal order or duty. Where the phrase appears in the old texts and how it came to name the Hindu tradition."
-date: "2026-10-30T00:00:04+05:30"
+date: "2026-11-01T00:00:08+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

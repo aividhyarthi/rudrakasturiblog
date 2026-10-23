@@ -1,7 +1,7 @@
 ---
 title: "The Krishna river: from Mahabaleshwar to Srisailam and Vijayawada"
 description: "The Krishna, or Krishnaveni, runs through four states and past some of the great temples of the Telugu land. Her route, her holy places and the Pushkaralu festival."
-date: "2026-10-24T00:00:08+05:30"
+date: "2026-10-24T00:00:12+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

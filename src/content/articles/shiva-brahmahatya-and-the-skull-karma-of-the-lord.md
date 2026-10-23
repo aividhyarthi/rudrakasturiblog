@@ -1,7 +1,7 @@
 ---
 title: "Shiva, Brahma\u2019s fifth head and the skull he carried: the karma of the lord"
 description: "In the Puranas Shiva cuts off Brahma\u2019s fifth head and carries its skull as a penance until he reaches Kashi. A story of anger, responsibility and release."
-date: "2026-10-29T00:00:04+05:30"
+date: "2026-10-31T00:00:04+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

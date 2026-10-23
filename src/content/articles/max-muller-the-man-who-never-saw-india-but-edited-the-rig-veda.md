@@ -1,7 +1,7 @@
 ---
 title: "Max Muller: the man who never saw India but edited the Rig Veda"
 description: "He hoped that Christianity would one day replace Hindu belief, and then spent his life publishing its oldest scripture. A story of how a scholar changed his mind, a little."
-date: "2026-11-05T00:00:12+05:30"
+date: "2026-11-11T00:00:04+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

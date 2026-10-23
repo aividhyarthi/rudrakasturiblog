@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for health and recovery: Dhanvantari and Shiva"
 description: "In illness, families turn to Dhanvantari and Shiva as Mrityunjaya. The mantras, how to pray for someone in hospital, and why treatment always comes first."
-date: "2026-11-13T00:00:08+05:30"
+date: "2026-11-19T00:00:00+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "How to honour ancestors: tarpanam, pitru mantras and family peace"
 description: "Many families ask about pitru dosha and ancestors’ peace. What tarpanam and shraddha are, the simple offerings, the mantra, and why remembering is the heart of it."
-date: "2026-11-23T00:00:04+05:30"
+date: "2026-11-28T00:00:04+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

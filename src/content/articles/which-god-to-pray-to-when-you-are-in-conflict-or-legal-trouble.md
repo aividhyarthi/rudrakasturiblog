@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to when you are in conflict or legal trouble"
 description: "Disputes, lawsuits and bitter family quarrels are exhausting. Durga, Narasimha and Rama are the usual refuge. The verses, and the limits of what prayer should ask for."
-date: "2026-11-22T00:00:04+05:30"
+date: "2026-11-27T00:00:04+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Yayati and the borrowed youth: why desire is never satisfied"
 description: "King Yayati borrowed his son\u2019s youth for a thousand years and learned that enjoyment never ends desire. The Mahabharata story and its verse on fire and ghee."
-date: "2026-11-09T00:00:12+05:30"
+date: "2026-11-14T00:00:12+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

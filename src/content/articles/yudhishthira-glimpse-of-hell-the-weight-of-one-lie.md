@@ -1,7 +1,7 @@
 ---
 title: "Yudhishthira\u2019s glimpse of hell: the weight of one half-truth"
 description: "The most truthful of the Pandavas once told a half-lie in war. At the end of his life, the Mahabharata says, he had to see hell for it. A story of karma and honesty."
-date: "2026-11-05T00:00:04+05:30"
+date: "2026-11-10T00:00:08+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

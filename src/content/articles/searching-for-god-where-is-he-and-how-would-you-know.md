@@ -1,7 +1,7 @@
 ---
 title: "Searching for God: where is he, and how would you know?"
 description: "People look for God in temples, mountains and miracles. The Upanishads and the Gita say the search ends closer than that. What they mean, and how to look."
-date: "2026-11-18T00:00:12+05:30"
+date: "2026-11-23T00:00:12+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

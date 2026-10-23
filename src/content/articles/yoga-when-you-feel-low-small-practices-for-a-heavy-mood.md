@@ -1,7 +1,7 @@
 ---
 title: "Yoga when you feel low: small practices for a heavy mood"
 description: "When everything feels heavy, big routines are impossible. Tiny practices, five minutes of light, gentle movement and breath, can help. And when low mood needs a doctor."
-date: "2026-11-22T00:00:08+05:30"
+date: "2026-11-27T00:00:08+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

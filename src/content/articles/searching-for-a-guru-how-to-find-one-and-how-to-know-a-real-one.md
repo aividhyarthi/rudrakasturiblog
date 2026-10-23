@@ -1,7 +1,7 @@
 ---
 title: "Searching for a guru: how to find one and how to know a real one"
 description: "Everyone wants a guru, and plenty of people are happy to play the part. What the old texts say a teacher should be, what to look for, the warning signs and how to begin."
-date: "2026-11-12T00:00:04+05:30"
+date: "2026-11-17T00:00:08+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

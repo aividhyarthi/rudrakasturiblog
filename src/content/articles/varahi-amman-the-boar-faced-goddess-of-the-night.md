@@ -1,7 +1,7 @@
 ---
 title: "Varahi Amman: the boar-faced goddess people worship before dawn"
 description: "Varahi is one of the Saptamatrikas, the commander of the Divine Mother’s army. Who she is, why she is worshipped at night and in the Ashadha Navaratri."
-date: "2026-11-03T00:00:04+05:30"
+date: "2026-11-08T00:00:04+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

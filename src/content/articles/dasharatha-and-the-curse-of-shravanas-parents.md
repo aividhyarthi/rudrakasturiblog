@@ -1,7 +1,7 @@
 ---
 title: "Dasharatha and the curse of Shravana\u2019s parents: one arrow, years later"
 description: "A young prince\u2019s hasty arrow in the dark led to a curse, and that curse came due when Rama left for the forest. The story from the Ramayana and its lesson."
-date: "2026-10-24T00:00:00+05:30"
+date: "2026-10-24T00:00:04+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

@@ -1,7 +1,7 @@
 ---
 title: "Why some temples feel peaceful and others do not"
 description: "You walk into one temple and your shoulders drop. Another feels like a market. Architecture, sound, light, crowds and your own mind all play a part."
-date: "2026-11-17T00:00:04+05:30"
+date: "2026-11-22T00:00:08+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

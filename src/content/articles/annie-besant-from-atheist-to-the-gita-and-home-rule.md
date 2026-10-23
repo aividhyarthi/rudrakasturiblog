@@ -1,7 +1,7 @@
 ---
 title: "Annie Besant: from atheist platform to the Gita and Home Rule"
 description: "She started as a vicar’s wife, became a famous atheist, then a Theosophist, and finally a woman who translated the Gita and led the Indian National Congress."
-date: "2026-10-24T00:00:04+05:30"
+date: "2026-10-24T00:00:08+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"
