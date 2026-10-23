@@ -1,11 +1,19 @@
 ---
-import { allArticles, categoryLabel, fmtDate } from '../lib/articles';
-const { exclude, limit = 5, title = 'Latest' } = Astro.props as { exclude?: string[]; limit?: number; title?: string };
-const items = (await allArticles()).filter((a) => !(exclude ?? []).includes(a.slug)).slice(0, limit);
+import { allArticles, categoryLabel, fmtDate, type Article } from '../lib/articles';
+type Extra = { kicker: string; title: string; href: string; meta: string; cls?: string };
+const { exclude, limit = 5, title = 'Latest', items: given, extras = [] } = Astro.props as { exclude?: string[]; limit?: number; title?: string; items?: Article[]; extras?: Extra[] };
+const items = given ?? (await allArticles()).filter((a) => !(exclude ?? []).includes(a.slug)).slice(0, limit);
 ---
-{items.length > 0 && (
+{(items.length > 0 || extras.length > 0) && (
   <aside>
     <div class="sect"><h2>{title}</h2></div>
+    {extras.map((e) => (
+      <a class={`latest-item ${e.cls ?? ''}`} href={e.href}>
+        <span class="kicker">{e.kicker}</span>
+        <h3>{e.title}</h3>
+        <div class="meta">{e.meta}</div>
+      </a>
+    ))}
     {items.map((a) => (
       <a class={`latest-item c-${a.data.category}`} href={`/${a.slug}/`}>
         <span class="kicker">{categoryLabel(a.data.category)}</span>

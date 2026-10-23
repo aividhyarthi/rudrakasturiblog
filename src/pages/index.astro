@@ -9,9 +9,10 @@ import { heroSrc } from '../lib/heroes';
 import { allArticles, categoryLabel, fmtDate, sectionCounts, byline } from '../lib/articles';
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
-import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
+import { panchangFor, fmtTime, todayIST, addDays } from '../lib/panchang';
+import { shuffle, diversePick, dayNumber } from '../lib/rotate';
+import { niceDate, ymdKey } from '../lib/daily';
 const all = await allArticles();
-const [lead, ...rest] = all;
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
 const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
@@ -19,14 +20,25 @@ const t = (d: Date) => fmtTime(d, ref);
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const signs = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 const counts = await sectionCounts();
-// Each story appears once: lead, then the latest list, then a card row, then section columns for what is left.
-const latestN = rest.length <= 5 ? rest.length : 4;
-const shownTop = new Set([lead?.slug, ...rest.slice(0, latestN).map((a) => a.slug)]);
-// The card row only appears when it has at least two stories; otherwise they flow into the section columns.
-let grid = rest.slice(latestN, latestN + 3);
+// The home page rotates: the same day always gives the same picks, and each daily rebuild shows a fresh mix,
+// so older stories and every series get their turn. Each story appears once.
+const seed = dayNumber();
+const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000);
+const lead = fresh.length ? shuffle(fresh, seed)[0] : all[0];
+const rest = all.filter((a) => a !== lead);
+const latestArts = rest.slice(0, 2);
+const key = ymdKey(ymd);
+const dailyExtras = [
+  { kicker: 'Astrology', title: 'Horoscope today: all 12 rashis', href: `/daily-horoscope/${key}/`, meta: niceDate(ymd), cls: 'c-astrology' },
+  { kicker: 'Devotional', title: 'Panchangam today: tithi, nakshatra, Rahu Kalam', href: `/daily-panchangam/${key}/`, meta: niceDate(ymd), cls: 'c-religion' },
+  { kicker: 'Astrology', title: 'Horoscope tomorrow: all 12 rashis', href: '/horoscope-tomorrow/', meta: niceDate(addDays(ymd, 1)), cls: 'c-astrology' },
+];
+const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
+// The card row shows stories from different series and topics, and only appears when it has at least two.
+let grid = diversePick(rest.filter((a) => !shownTop.has(a.slug)), 3, seed);
 if (grid.length < 2) grid = [];
 grid.forEach((a) => shownTop.add(a.slug));
-const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)).slice(0, 3) })).filter((x) => x.items.length);
+const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c, i) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: shuffle(all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)), seed + 31 * (i + 1)).slice(0, 3) })).filter((x) => x.items.length);
 const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
 <Base home image="/covers/home.png">
@@ -41,7 +53,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         <p>{lead.data.description}</p>
         <div class="meta">{byline(lead.data)} · {fmtDate(lead.data.date)}</div>
       </a>
-      <LatestList exclude={[lead.slug]} limit={latestN} title="Latest" />
+      <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
   )}
   {grid.length > 0 && (
