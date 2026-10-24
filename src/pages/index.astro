@@ -6,12 +6,14 @@ import StoryImg from '../components/StoryImg.astro';
 import LatestList from '../components/LatestList.astro';
 import Glyph from '../components/Glyph.astro';
 import { heroSrc } from '../lib/heroes';
-import { allArticles, categoryLabel, fmtDate, sectionCounts, byline } from '../lib/articles';
+import { allArticles, categoryLabel, fmtDate, sectionCounts, seriesCounts, byline } from '../lib/articles';
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
-import { panchangFor, fmtTime, todayIST, addDays } from '../lib/panchang';
+import { panchangFor, fmtTime, todayIST, addDays, WEEKDAYS } from '../lib/panchang';
 import { shuffle, diversePick, dayNumber } from '../lib/rotate';
-import { niceDate, ymdKey } from '../lib/daily';
+import { niceDate, ymdKey, dayFacts } from '../lib/daily';
+import { WEEKDAY_FEATURE } from '../data/weekday';
+import { SERIES, seriesHref } from '../config';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -23,21 +25,41 @@ const counts = await sectionCounts();
 // The home page rotates: the same day always gives the same picks, and each daily rebuild shows a fresh mix,
 // so older stories and every series get their turn. Each story appears once.
 const seed = dayNumber();
-const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000);
-const lead = fresh.length ? shuffle(fresh, seed)[0] : all[0];
+const bySlug = new Map(all.map((a) => [a.slug, a]));
+const facts = dayFacts(ymd);
+const wk = WEEKDAY_FEATURE[facts.wd];
+const wkLead = bySlug.get(wk.lead);
+const wkMore = wk.more.map((s) => bySlug.get(s)).filter(Boolean) as typeof all;
+// Lead: the day's own story (Saturday is Balaji), otherwise a rotating pick from the last day and a half.
+const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
+const lead = wkLead ?? (fresh.length ? shuffle(fresh, seed)[0] : all[0]);
 const rest = all.filter((a) => a !== lead);
-const latestArts = rest.slice(0, 2);
+// Today's three daily pages, with titles that say what is in them.
+const tomorrow = addDays(ymd, 1);
+const tf = dayFacts(tomorrow);
+const rank = (d: typeof ymd) => RASHIS.map((r, i) => ({ r, s: reading(i, d, 'daily').rating })).sort((x, y) => y.s - x.s);
+const todayRank = rank(ymd), tomRank = rank(tomorrow);
+const names = (xs: { r: { skt: string } }[]) => `${xs[0].r.skt} and ${xs[1].r.skt}`;
 const key = ymdKey(ymd);
 const dailyExtras = [
-  { kicker: 'Astrology', title: 'Horoscope today: all 12 rashis', href: `/daily-horoscope/${key}/`, meta: niceDate(ymd), cls: 'c-astrology' },
-  { kicker: 'Devotional', title: 'Panchangam today: tithi, nakshatra, Rahu Kalam', href: `/daily-panchangam/${key}/`, meta: niceDate(ymd), cls: 'c-religion' },
-  { kicker: 'Astrology', title: 'Horoscope tomorrow: all 12 rashis', href: '/horoscope-tomorrow/', meta: niceDate(addDays(ymd, 1)), cls: 'c-astrology' },
+  { kicker: 'Horoscope today', title: `${WEEKDAYS[facts.wd]}: a good day for ${names(todayRank)}, go slowly if you are ${todayRank[11].r.skt}`, href: `/daily-horoscope/${key}/`, meta: `Moon in ${facts.moonSign.skt}, ${facts.nak.name} nakshatra. All 12 rashis`, cls: 'c-astrology' },
+  { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: `/daily-panchangam/${key}/`, meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
+  { kicker: 'Horoscope tomorrow', title: `${WEEKDAYS[tf.wd]}: Moon in ${tf.moonSign.skt}, best for ${names(tomRank)}`, href: '/horoscope-tomorrow/', meta: `${niceDate(tomorrow)}. Plan the day ahead`, cls: 'c-astrology' },
 ];
+const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 2);
 const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
-// The card row shows stories from different series and topics, and only appears when it has at least two.
+// "Keep reading": stories from different series and topics, rotating daily.
 let grid = diversePick(rest.filter((a) => !shownTop.has(a.slug)), 3, seed);
 if (grid.length < 2) grid = [];
 grid.forEach((a) => shownTop.add(a.slug));
+// The Gita and the Upanishads: always some of the best teaching on the page.
+const isTeaching = (a: any) => a.data.category === 'gita' || a.data.series === 'read-the-line' || /upanishad/i.test(`${a.data.title} ${(a.data.tags ?? []).join(' ')}`);
+let teach = diversePick(all.filter((a) => isTeaching(a) && !shownTop.has(a.slug)), 3, seed + 5);
+if (teach.length < 2) teach = [];
+teach.forEach((a) => shownTop.add(a.slug));
+// Series to follow: a few series each day, each showing where to start or what is new.
+const sc = await seriesCounts();
+const seriesTiles = shuffle(SERIES.filter((s) => sc[s.id]), seed + 9).slice(0, 4).map((s) => ({ s, items: all.filter((a) => a.data.series === s.id).sort((x, y) => x.data.date.getTime() - y.data.date.getTime()) }));
 const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c, i) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: shuffle(all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)), seed + 31 * (i + 1)).slice(0, 3) })).filter((x) => x.items.length);
 const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
@@ -48,7 +70,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
     <section class="wrap lead-grid">
       <a class={`lead c-${lead.data.category}`} href={`/${lead.slug}/`}>
         <div class="imgwrap"><StoryImg slug={lead.slug} alt={lead.data.imageAlt ?? lead.data.title} eager /></div>
-        <span class="kicker">{categoryLabel(lead.data.category)}</span>
+        <span class="kicker">{lead === wkLead ? `${wk.name}: ${wk.gods}` : categoryLabel(lead.data.category)}</span>
         <h1>{lead.data.title}</h1>
         <p>{lead.data.description}</p>
         <div class="meta">{byline(lead.data)} · {fmtDate(lead.data.date)}</div>
@@ -56,13 +78,6 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
   )}
-  {grid.length > 0 && (
-    <section class="wrap" style="padding-bottom:56px">
-      <div class="sect"><h2>More stories</h2></div>
-      <div class="three" style={`grid-template-columns:repeat(${grid.length},1fr)`}>{grid.map((a) => <Card a={a} />)}</div>
-    </section>
-  )}
-
   <section class="band band-dev c-religion">
     <div class="wrap">
       <div>
@@ -78,7 +93,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         <div class="chips">
           <a class="btn solid" href="/panchangam/">Today's panchangam</a>
           <a class="btn" href="/daily-panchangam/">Daily article</a>
-          <a class="btn" href="/mantras/">Mantras</a>
+          <a class="btn" href={`/mantras/${facts.main.id}/`}>{facts.main.name} mantras</a><a class="btn" href="/mantras/">Mantras</a>
           <a class="btn" href="/amavasya/">Amavasya</a>
           <a class="btn" href="/pournami/">Pournami</a>
           <a class="btn" href="/temples/">Temples</a>
@@ -104,6 +119,28 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
       <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/daily-horoscope/">Daily article</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
     </div>
   </section>
+
+  {grid.length > 0 && (
+    <section class="wrap" style="padding-top:56px;padding-bottom:56px">
+      <div class="sect"><h2>Keep reading</h2></div>
+      <div class="three" style={`grid-template-columns:repeat(${grid.length},1fr)`}>{grid.map((a) => <Card a={a} />)}</div>
+    </section>
+  )}
+
+  {teach.length > 0 && (
+    <section class="wrap" style="padding-bottom:56px">
+      <div class="sect"><h2>From the Gita and the Upanishads</h2><a href="/gita-teachings/">More</a></div>
+      <div class="three" style={`grid-template-columns:repeat(${teach.length},1fr)`}>{teach.map((a) => <Card a={a} />)}</div>
+    </section>
+  )}
+  {seriesTiles.length > 0 && (
+    <section class="wrap" style="padding-bottom:56px">
+      <div class="sect"><h2>Series to follow</h2><a href="/topics/">All topics</a></div>
+      <div class="tiles" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">{seriesTiles.map(({ s, items }) => (
+        <a class="tile" href={seriesHref(s.id)}><h3>{s.label}</h3><div class="meta">{s.blurb}</div><div class="meta" style="margin-top:8px">Latest: <b>{items[items.length - 1].data.title}</b> ({items.length} {items.length === 1 ? 'article' : 'articles'})</div></a>
+      ))}</div>
+    </section>
+  )}
 
   {leftover >= 2 && (
     <section class="wrap" style="padding-top:56px">

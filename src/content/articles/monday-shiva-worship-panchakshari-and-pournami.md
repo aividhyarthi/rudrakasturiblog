@@ -1,7 +1,7 @@
 ---
 title: "Monday is Shiva’s day: how to worship and Om Namah Shivaya"
 description: "A practical guide to Monday worship of Shiva with abhishekam, bilva leaves and the Panchakshari mantra, plus what makes Monday, 26 October 2026 special."
-date: "2026-10-31T00:00:12+05:30"
+date: "2026-10-24T00:00:46+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

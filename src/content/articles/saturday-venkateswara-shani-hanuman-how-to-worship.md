@@ -1,7 +1,7 @@
 ---
 title: "Saturday worship: Venkateswara, Shani and Hanuman"
 description: "Saturday belongs to Venkateswara, Shani and Hanuman. How families worship on Saturdays, the sesame oil lamp and mantras, and a note for Sade Sati."
-date: "2026-11-19T00:00:08+05:30"
+date: "2026-10-24T00:00:40+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

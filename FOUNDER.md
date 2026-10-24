@@ -69,3 +69,9 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Daily generated pages: `/daily-horoscope/<date>/`, `/daily-panchangam/<date>/`, Amavasya and Pournami pages, mantras section.
 - Discover: images are 1600x900, 1200x900 and 1200x1200 PNGs per article (`/img/<slug>/`), `max-image-preview:large` on every page, Article and FAQPage schema.
 - Copy rule: no AI mentions anywhere on the site. Desk bylines only.
+
+## Update 2026-10-24 (home page, writing voice, navigation)
+- Home order: the day's own story leads (Saturday is Balaji, Thursday is the guru, and so on: `src/data/weekday.ts`), then Latest (today's horoscope, panchangam and tomorrow's horoscope with informative titles, then stories), the panchangam and astrology bands, Keep reading, From the Gita and the Upanishads, Series to follow, and the topic columns. Picks rotate daily (`src/lib/rotate.ts`).
+- Navigation: Topics page, Series pages (`series:` in front matter, list in `src/config.ts`), topic and series links in the footer, one-line scrolling sub-navigation on mobile.
+- Writing voice (founder feedback): the stories are good but need more feeling and a connection between writer and reader. For new articles: open with a scene the reader recognises, speak to "you", ask real questions, admit what is not known, and close with an invitation to write in. No invented personal experiences for the pen-named contributors. Older articles are not rewritten for now.
+- Planned later: a downloadable, unbranded monthly panchangam calendar (12 months, a Gita verse for each month, PDF, visually rich) with a download pop-up.
