@@ -1,7 +1,7 @@
 ---
 title: "Why me? I worked so hard and still did not get the result"
 description: "The exam, the job, the business, the long wait. What the Gita says about effort and result, and how Shabari, the Pandavas and Rama kept going when nothing came."
-date: "2026-11-03T00:00:04+05:30"
+date: "2026-11-03T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

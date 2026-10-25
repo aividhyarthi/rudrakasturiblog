@@ -1,7 +1,7 @@
 ---
 title: "The ten principal Upanishads: a beginner’s map"
 description: "Upanishads are the last part of the Vedas and the source of Vedanta. The ten that Shankara wrote on, with one line on what each is about."
-date: "2026-11-18T00:00:08+05:30"
+date: "2026-11-18T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

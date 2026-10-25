@@ -1,7 +1,7 @@
 ---
 title: "Why do bad people prosper while good people struggle?"
 description: "Draupadi asked this very question in the forest. What Yudhishthira answered, what the Gita says about those who gain wealth by wrong means, and how to keep your peace."
-date: "2026-11-05T00:00:04+05:30"
+date: "2026-11-05T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

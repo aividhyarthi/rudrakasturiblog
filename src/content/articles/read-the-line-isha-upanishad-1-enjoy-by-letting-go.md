@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Isha Upanishad 1, enjoy by letting go"
 description: "The first verse of the Isha Upanishad says the world is covered by the Lord, so enjoy it by renouncing, and do not covet. Read it word by word and see its wide meaning."
-date: "2026-11-02T00:00:04+05:30"
+date: "2026-11-02T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Gita Desk"
 format: "Read the line"

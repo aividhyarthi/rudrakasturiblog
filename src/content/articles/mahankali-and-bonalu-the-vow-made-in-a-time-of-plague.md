@@ -1,7 +1,7 @@
 ---
 title: "Mahankali and Bonalu: the vow made when cholera struck in 1813"
 description: "Secunderabad's Ujjaini Mahankali temple began with a vow made when cholera struck in 1813. How it became Bonalu, with clay pots, Potharaju and the Rangam."
-date: "2026-11-04T00:00:08+05:30"
+date: "2026-11-04T15:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

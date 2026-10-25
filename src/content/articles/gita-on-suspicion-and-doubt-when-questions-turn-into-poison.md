@@ -1,7 +1,7 @@
 ---
 title: "Gita on suspicion and doubt: when questions turn into poison"
 description: "Krishna encourages questions, yet he warns that the doubting soul is lost. How to tell honest questioning from the suspicion that eats at a relationship."
-date: "2026-11-26T00:00:00+05:30"
+date: "2026-11-26T07:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

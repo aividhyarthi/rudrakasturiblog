@@ -1,7 +1,7 @@
 ---
 title: "Why you feel sleepy during puja and meditation"
 description: "You sit to pray and your head drops. Why sleepiness comes in prayer, what the tradition calls it, and simple fixes: posture, timing, light, breath and food."
-date: "2026-12-01T00:00:08+05:30"
+date: "2026-12-01T15:00:00+05:30"
 category: "questions"
 author: "Southwala Dharma Desk"
 format: "Question"

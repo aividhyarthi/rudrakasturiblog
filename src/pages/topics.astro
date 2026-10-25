@@ -7,6 +7,7 @@ const sc = await seriesCounts();
 const cats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts.cat[c.id]);
 const series = SERIES.filter((s) => sc[s.id]);
 const tools = [
+  ['Panchangam Calendar 2027 (PDF)', '/calendar/', 'A free printable calendar with tithi, vratam days and a Gita verse for each month.'],
   ['Panchangam today', '/panchangam/', 'Tithi, nakshatra, Rahu Kalam and good timings by city.'],
   ['Rahu Kalam today', '/rahu-kalam-today/', 'Rahu Kalam, Yamagandam and Gulika for every city.'],
   ['Amavasya dates', '/amavasya/', 'New moon dates and tithi timings.'],

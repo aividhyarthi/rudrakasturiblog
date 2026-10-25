@@ -46,7 +46,7 @@ const dailyExtras = [
   { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: `/daily-panchangam/${key}/`, meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
   { kicker: 'Horoscope tomorrow', title: `${WEEKDAYS[tf.wd]}: Moon in ${tf.moonSign.skt}, best for ${names(tomRank)}`, href: '/horoscope-tomorrow/', meta: `${niceDate(tomorrow)}. Plan the day ahead`, cls: 'c-astrology' },
 ];
-const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 2);
+const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 3);
 const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
 // "Keep reading": stories from different series and topics, rotating daily.
 let grid = diversePick(rest.filter((a) => !shownTop.has(a.slug)), 3, seed);

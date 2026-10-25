@@ -1,7 +1,7 @@
 ---
 title: "Trijata: the rakshasi in Ravana's garden who dreamed of Rama"
 description: "Sita sat among fierce guards in the Ashoka grove. One of them, an old woman, woke up with a dream and told the others to be kind. The story of Trijata."
-date: "2026-11-11T00:00:00+05:30"
+date: "2026-11-11T07:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

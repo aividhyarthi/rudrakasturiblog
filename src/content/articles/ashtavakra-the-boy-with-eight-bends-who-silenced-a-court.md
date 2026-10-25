@@ -1,7 +1,7 @@
 ---
 title: "Ashtavakra: the boy with eight bends who out-argued a court"
 description: "He corrected his father from the womb, was born crooked, and at twelve walked into King Janaka's court and defeated the man who had drowned his father."
-date: "2026-10-27T00:00:04+05:30"
+date: "2026-10-27T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

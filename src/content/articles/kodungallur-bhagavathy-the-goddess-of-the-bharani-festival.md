@@ -1,7 +1,7 @@
 ---
 title: "Kodungallur Bhagavathy: the goddess of a very different Kerala"
 description: "Red cloth, sword-bearing oracles, and a festival that breaks every rule of the temple next door. The story of Kodungallur Bhagavathy and the links to Kannagi."
-date: "2026-11-07T00:00:08+05:30"
+date: "2026-11-07T15:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

@@ -75,3 +75,8 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Navigation: Topics page, Series pages (`series:` in front matter, list in `src/config.ts`), topic and series links in the footer, one-line scrolling sub-navigation on mobile.
 - Writing voice (founder feedback): the stories are good but need more feeling and a connection between writer and reader. For new articles: open with a scene the reader recognises, speak to "you", ask real questions, admit what is not known, and close with an invitation to write in. No invented personal experiences for the pen-named contributors. Older articles are not rewritten for now.
 - Planned later: a downloadable, unbranded monthly panchangam calendar (12 months, a Gita verse for each month, PDF, visually rich) with a download pop-up.
+
+## Update 2026-10-25 (publishing, calendar, pop-up)
+- Publishing: stories now carry real times (07:00, 11:00, 15:00, 19:00 IST) so they go out through the day. The workflow `.github/workflows/daily-rebuild.yml` runs hourly and only commits a new `src/data/build-stamp.txt` when a story has come due or a new India day has started (`scripts/rebuild-if-due.mjs`). Commits are made as the repository owner so Railway treats them like any other push.
+- Calendar: `npx tsx scripts/make-calendar.mts 2027` writes `public/downloads/southwala-panchangam-calendar-2027.pdf` (branded, A4 landscape). Page at `/calendar/`. Regenerate each year.
+- "Surprise me" pop-up: `src/scripts/popups.ts` and `/topics.json`. Opens by itself at most once every 12 hours.

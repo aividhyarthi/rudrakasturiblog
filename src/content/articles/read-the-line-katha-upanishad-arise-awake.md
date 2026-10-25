@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Katha Upanishad, arise, awake, and understand"
 description: "Arise, awake is Vivekananda's famous call, but the original verse says more. Read Katha Upanishad 1.3.14 word by word, including the line about the razor's edge."
-date: "2026-11-12T00:00:04+05:30"
+date: "2026-11-12T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Gita Desk"
 format: "Read the line"

@@ -1,7 +1,7 @@
 ---
 title: "Karna: generous, loyal and cursed. Why good qualities do not cancel actions"
 description: "Karna gave away his armour and stood by his friend to the end, but the Mahabharata also counts his curses and his choices. What his story says about karma."
-date: "2026-11-21T00:00:12+05:30"
+date: "2026-11-21T19:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

@@ -1,7 +1,7 @@
 ---
 title: "Sir John Woodroffe: the Calcutta judge who defended Tantra"
 description: "In the early 1900s, educated opinion in Britain and India dismissed Tantra as superstition. A High Court judge in Calcutta spent decades proving otherwise. His story."
-date: "2026-11-01T00:00:08+05:30"
+date: "2026-11-01T15:00:00+05:30"
 category: "faith"
 author: "Southwala Dharma Desk"
 format: "Story"

@@ -1,7 +1,7 @@
 ---
 title: "The squirrel and Rama's bridge: where the story really comes from"
 description: "Everyone knows the squirrel with three stripes on its back. But it is not in Valmiki. A look at what the Ramayana says about the bridge, and where the squirrel story lives."
-date: "2026-11-16T00:00:04+05:30"
+date: "2026-11-16T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

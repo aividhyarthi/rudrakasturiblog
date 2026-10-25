@@ -1,7 +1,7 @@
 ---
 title: "Chamundeshwari of Mysuru: the goddess who gave the city its name"
 description: "Mysuru is named after the demon Mahishasura. The goddess who slew him sits on Chamundi Hill, and the Wodeyar kings made her their family deity. The legend and the Dasara."
-date: "2026-11-17T00:00:00+05:30"
+date: "2026-11-17T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

@@ -1,7 +1,7 @@
 ---
 title: "Kukke Subramanya: sarpa dosha, snake worship and what people do there"
 description: "Kukke Subramanya in Karnataka is the temple families visit for snake-related troubles. What sarpa dosha is believed to mean, the rituals offered and how to visit without."
-date: "2026-11-22T00:00:04+05:30"
+date: "2026-11-22T11:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

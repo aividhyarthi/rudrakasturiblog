@@ -1,7 +1,7 @@
 ---
 title: "Ayyappa and Sabarimala: how the 41-day vratam works"
 description: "Every year lakhs of devotees wear black, give up comforts for 41 days and climb to Sabarimala. Who Ayyappa is and what the vratam asks of you."
-date: "2026-11-20T00:00:12+05:30"
+date: "2026-11-20T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Kabandha: the cursed demon who pointed Rama to Sugriva"
 description: "A terrible creature, all arms and one huge mouth, who caught Rama and Lakshmana in the forest. Why Rama was glad to be caught, and what the freed Kabandha told him."
-date: "2026-11-03T00:00:08+05:30"
+date: "2026-11-03T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

@@ -1,7 +1,7 @@
 ---
 title: "Why Karthika Masam? What the month means and who to worship"
 description: "Karthika Masam is the month of lamps. Where its name comes from, which gods are worshipped, and a simple daily plan for 10 November to 8 December 2026."
-date: "2026-11-04T00:00:00+05:30"
+date: "2026-11-04T07:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

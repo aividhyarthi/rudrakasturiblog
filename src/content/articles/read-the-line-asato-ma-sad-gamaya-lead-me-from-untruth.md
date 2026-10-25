@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Asato ma sad gamaya, lead me from the unreal"
 description: "A prayer from the Brihadaranyaka Upanishad that millions know by ear. Read it word by word: from the unreal to the real, from darkness to light, from death to immortality."
-date: "2026-11-07T00:00:12+05:30"
+date: "2026-11-07T19:00:00+05:30"
 category: "dharma"
 author: "Southwala Gita Desk"
 format: "Read the line"

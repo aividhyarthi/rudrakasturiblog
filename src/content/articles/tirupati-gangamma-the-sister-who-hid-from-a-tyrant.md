@@ -1,7 +1,7 @@
 ---
 title: "Tirupati Gangamma: the sister of Balaji who wore many disguises"
 description: "Every May, devotees in Tirupati dress in disguises for Gangamma. The local legend of the village goddess who outwitted a tyrant, and the jatara that remembers it."
-date: "2026-11-02T00:00:00+05:30"
+date: "2026-11-02T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

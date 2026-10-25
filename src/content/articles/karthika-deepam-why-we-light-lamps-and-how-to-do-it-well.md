@@ -1,7 +1,7 @@
 ---
 title: "Karthika Deepam: why we light lamps and how to do it well"
 description: "What a lamp means in Hindu worship, how to light a deepam correctly in Karthika, the oil, wick and amla lamp tradition, and how to keep it safe."
-date: "2026-11-06T00:00:04+05:30"
+date: "2026-11-06T11:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

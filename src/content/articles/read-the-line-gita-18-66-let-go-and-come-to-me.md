@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 18.66, the last words Krishna says to Arjuna"
 description: "Often misread as give up all duties, this verse is the Gita's final instruction. Read it word by word and see what it asks Arjuna to surrender, and what he does next."
-date: "2026-11-17T00:00:04+05:30"
+date: "2026-11-17T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

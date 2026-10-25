@@ -1,7 +1,7 @@
 ---
 title: "Nirvana Shatakam: “I am not the mind”, meaning verse by verse"
 description: "Shankara is said to have sung these six verses at the age of eight when his teacher asked who he was. The meaning of each in plain words."
-date: "2026-10-29T00:00:12+05:30"
+date: "2026-10-29T19:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

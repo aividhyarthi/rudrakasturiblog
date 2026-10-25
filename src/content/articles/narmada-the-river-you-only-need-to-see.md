@@ -1,7 +1,7 @@
 ---
 title: "Narmada: the river whose darshan is enough"
 description: "People say you bathe in the Ganga but only need to see the Narmada. The story of the river of Amarkantak, the Narmada Parikrama and the stones of Shiva."
-date: "2026-11-01T00:00:12+05:30"
+date: "2026-11-01T19:00:00+05:30"
 category: "sacred"
 author: "Southwala Devotional Desk"
 format: "Guide"

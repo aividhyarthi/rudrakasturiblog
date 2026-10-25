@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 2.22, the self and a change of clothes"
 description: "Krishna compares the death of a body to changing worn-out clothes. Read the verse word by word and see what it says, and what it does not say, to someone who is grieving."
-date: "2026-10-26T00:00:04+05:30"
+date: "2026-10-26T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

@@ -1,7 +1,7 @@
 ---
 title: "Gita on confusion: when you cannot decide what is right"
 description: "Arjuna asked Krishna for help because he could not decide. Gita 2.7 is the model of how to ask: admit the confusion, find a teacher and listen."
-date: "2026-12-03T00:00:04+05:30"
+date: "2026-12-03T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

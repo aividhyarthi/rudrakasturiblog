@@ -11,6 +11,7 @@ import '../styles/global.css';
 import { SITE, SECTIONS, SUBNAV, ADSENSE_CLIENT, GA_ID, GSC_VERIFICATION, NEWS_ENABLED, CATEGORIES, NEWS_CATS, SERIES, CAT_SLUG, catHref, seriesHref } from '../config';
 import { sectionCounts, seriesCounts } from '../lib/articles';
 import { istIso } from '../lib/ist';
+import buildStamp from '../data/build-stamp.txt?raw';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
 interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date; imageAlt?: string; imageW?: number; imageH?: number; section?: string; tags?: string[]; author?: string }
@@ -50,6 +51,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   <title>{fullTitle}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonical} />
+  <meta name="build" content={buildStamp.trim()} />
   <meta name="robots" content={noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1'} />
   <meta name="theme-color" content="#ffffff" />
   <meta property="og:site_name" content={SITE.name} />
@@ -118,7 +120,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     <div>
       <h4>Sections</h4>
       {nav.map((c) => <a href={c.href}>{c.label}</a>)}
-      <a href="/panchangam/">Panchangam</a><a href="/amavasya/">Amavasya</a><a href="/pournami/">Pournami</a><a href="/ekadashi/">Ekadashi</a><a href="/sankashti-chaturthi/">Sankashti</a><a href="/pradosham/">Pradosham</a>
+      <a href="/panchangam/">Panchangam</a><a href="/amavasya/">Amavasya</a><a href="/pournami/">Pournami</a><a href="/ekadashi/">Ekadashi</a><a href="/sankashti-chaturthi/">Sankashti</a><a href="/pradosham/">Pradosham</a><a href="/calendar/">Calendar 2027 (PDF)</a>
     </div>
     <div>
       <h4>Topics</h4>
@@ -136,5 +138,6 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
     <div class="legal">&copy; {new Date().getFullYear()} {SITE.name}. Corrections and suggestions: {SITE.email}</div>
   </div></footer>
   <script>import '../scripts/local';</script>
+  <script>import '../scripts/popups';</script>
 </body>
 </html>

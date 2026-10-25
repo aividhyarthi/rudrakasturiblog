@@ -1,7 +1,7 @@
 ---
 title: "Anasuya and Sita: the garland an old sage woman gave in the forest"
 description: "On the way to Chitrakuta, Sita met Anasuya, wife of Sage Atri, who had once brought a river to a dying forest. What she gave Sita, and what she taught her."
-date: "2026-10-27T00:00:00+05:30"
+date: "2026-10-27T07:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

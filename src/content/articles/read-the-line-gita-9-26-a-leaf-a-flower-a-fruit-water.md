@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 9.26, a leaf, a flower, a fruit, water"
 description: "Krishna says he accepts whatever is offered with love, even a leaf. Read the verse word by word and see why it changes what an offering is."
-date: "2026-10-28T00:00:04+05:30"
+date: "2026-10-28T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

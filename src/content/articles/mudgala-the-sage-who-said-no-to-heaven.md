@@ -1,7 +1,7 @@
 ---
 title: "Mudgala: the sage offered heaven who asked what the catch was"
 description: "A poor sage who lived on gleaned grain gave away his meals to guests. The gods sent a chariot. He asked what happens after, and said no thank you."
-date: "2026-11-06T00:00:12+05:30"
+date: "2026-11-06T19:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

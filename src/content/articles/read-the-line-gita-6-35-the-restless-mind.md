@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 6.35, the restless mind can be trained"
 description: "Arjuna says the mind is like the wind. Krishna agrees, then gives two tools: practice and detachment. Read the verse closely and see what each word asks of you."
-date: "2026-11-05T00:00:00+05:30"
+date: "2026-11-05T07:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

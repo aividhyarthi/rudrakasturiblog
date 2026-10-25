@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for peace of mind and sleep"
 description: "For a restless mind and sleepless nights, tradition offers Shiva as Dakshinamurthy, Vishnu in repose and the Moon. The verses to say at night and a simple bedtime routine."
-date: "2026-11-25T00:00:00+05:30"
+date: "2026-11-25T07:00:00+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

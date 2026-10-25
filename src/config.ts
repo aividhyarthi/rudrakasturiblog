@@ -53,6 +53,7 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
     { label: 'Karma Stories', href: '/karma-stories/' },
     { label: 'Faith Questions', href: '/faith-questions/' },
     { label: 'Yoga', href: '/yoga-spiritual/' },
+    { label: 'Calendar 2027', href: '/calendar/' },
     { label: 'Series', href: '/series/' },
     { label: 'All topics', href: '/topics/' },
   ],

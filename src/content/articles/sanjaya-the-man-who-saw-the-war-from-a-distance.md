@@ -1,7 +1,7 @@
 ---
 title: "Sanjaya: the charioteer who watched the whole war from a distance"
 description: "Vyasa offered the blind king sight. He refused. So Sanjaya got it, and the Bhagavad Gita reached us through his mouth. The first live commentator in the world?"
-date: "2026-11-14T00:00:00+05:30"
+date: "2026-11-14T07:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

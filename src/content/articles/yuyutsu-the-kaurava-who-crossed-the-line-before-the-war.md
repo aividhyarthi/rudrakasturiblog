@@ -1,7 +1,7 @@
 ---
 title: "Yuyutsu: the one Kaurava who walked across to the Pandavas"
 description: "Just before the war, Yudhishthira called out that anyone could still change sides. One of Dhritarashtra's sons accepted. The little-known story of Yuyutsu."
-date: "2026-11-16T00:00:08+05:30"
+date: "2026-11-16T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

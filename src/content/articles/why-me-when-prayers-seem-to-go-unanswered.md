@@ -1,7 +1,7 @@
 ---
 title: "Why me? When you pray and it seems nobody is listening"
 description: "Years of prayer, vows kept, lamps lit, and still no change. What Krishna says about the distressed devotee, and the stories of Gajendra, Draupadi and Prahlada."
-date: "2026-11-15T00:00:08+05:30"
+date: "2026-11-15T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

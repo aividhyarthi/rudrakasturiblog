@@ -1,19 +1,34 @@
-name: Daily rebuild (panchangam and rashi phalalu)
+name: Rebuild when a story is due (and every new day)
 on:
   schedule:
-    - cron: '35 18 * * *'   # 00:05 India time every day
+    - cron: '20 * * * *'   # every hour; the script decides whether anything is due
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rebuild even if nothing is due'
+        required: false
+        default: 'false'
 permissions:
   contents: write
+concurrency:
+  group: rebuild
+  cancel-in-progress: false
 jobs:
   stamp:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Touch the build stamp so the site rebuilds with today's date
+      - name: Is anything due?
+        id: check
         run: |
-          date -u +"%Y-%m-%dT%H:%M:%SZ" > build-stamp.txt
-          git config user.name "Southwala Newsroom"
-          git config user.email "newsroom@southwala.com"
-          git add build-stamp.txt
-          git commit -m "Daily rebuild" && git push
+          node scripts/rebuild-if-due.mjs | tee /tmp/due.txt
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else grep '^due=' /tmp/due.txt >> "$GITHUB_OUTPUT"; fi
+      - name: Touch the build stamp so the site rebuilds
+        if: steps.check.outputs.due == 'true'
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > src/data/build-stamp.txt
+          # Commit as the repository owner so Railway treats the push like any other deploy from the team.
+          git config user.name "aividhyarthi"
+          git config user.email "226963610+aividhyarthi@users.noreply.github.com"
+          git add src/data/build-stamp.txt
+          git commit -m "Rebuild: a story is due or a new day has started" && git push

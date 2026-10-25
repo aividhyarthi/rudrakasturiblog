@@ -1,7 +1,7 @@
 ---
 title: "Astika: the boy who stopped a sacrifice and saved the snakes"
 description: "Janamejaya set out to destroy every snake to avenge his father. A young sage asked for one boon. The story behind Naga Panchami and Nagula Chavithi."
-date: "2026-11-11T00:00:04+05:30"
+date: "2026-11-11T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

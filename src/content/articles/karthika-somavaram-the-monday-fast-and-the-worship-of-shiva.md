@@ -1,7 +1,7 @@
 ---
 title: "Karthika Somavaram: the Monday fast and the worship of Shiva"
 description: "The four Mondays of Karthika Masam are the most important days for Shiva worship in Telugu homes. How the fast is kept, the abhishekam, the lamp and what to eat."
-date: "2026-11-07T00:00:04+05:30"
+date: "2026-11-07T11:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Searching for the meaning of life: what the old teachers answered"
 description: "What is life for? The Indian tradition gave four answers: dharma, artha, kama and moksha. How to use them when you are lost, and what Shankara said about the rarest gift."
-date: "2026-11-26T00:00:12+05:30"
+date: "2026-11-26T19:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"
