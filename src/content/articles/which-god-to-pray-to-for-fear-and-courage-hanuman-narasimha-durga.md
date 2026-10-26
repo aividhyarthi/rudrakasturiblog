@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for fear and courage: Hanuman, Narasimha and Durga"
 description: "When you are afraid, South Indian homes turn to Hanuman, Narasimha and Durga. The verses to say, how to use them and what to do about fear that does not go away."
-date: "2026-12-03T19:00:00+05:30"
+date: "2026-11-21T07:00:00+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

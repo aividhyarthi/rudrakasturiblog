@@ -1,7 +1,7 @@
 ---
 title: "Yoga before and during periods: what helps and what to skip"
 description: "Gentle yoga can ease cramps and bloating. Which poses women often find soothing, which strong practices to skip on heavy days, and when pain needs a doctor."
-date: "2026-12-01T19:00:00+05:30"
+date: "2026-12-04T19:00:00+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

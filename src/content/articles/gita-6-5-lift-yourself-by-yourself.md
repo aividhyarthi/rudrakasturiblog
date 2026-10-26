@@ -1,7 +1,7 @@
 ---
 title: "Gita 6.5: lift yourself by yourself"
 description: "Gita 6.5 says you must raise yourself, because the mind is your friend or your enemy. What it means for discipline and habits."
-date: "2026-11-23T07:00:00+05:30"
+date: "2026-11-23T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

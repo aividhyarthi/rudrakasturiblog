@@ -1,7 +1,7 @@
 ---
 title: "Gandhari\u2019s curse and Krishna: why the Yadava clan perished"
 description: "After the Kurukshetra war, Gandhari cursed Krishna that his own clan would destroy itself. He accepted. The story of karma from the Stri and Mausala Parvas."
-date: "2026-10-27T15:00:00+05:30"
+date: "2026-10-29T15:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

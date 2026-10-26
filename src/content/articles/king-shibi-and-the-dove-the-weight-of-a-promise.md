@@ -1,7 +1,7 @@
 ---
 title: "King Shibi and the dove: the man who weighed his own flesh"
 description: "A hawk, a dove, and a king who would not give up a refugee. Shibi cut his own flesh to balance the scales. The story is in the Mahabharata and has an echo in the Ramayana."
-date: "2026-11-04T11:00:00+05:30"
+date: "2026-11-07T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

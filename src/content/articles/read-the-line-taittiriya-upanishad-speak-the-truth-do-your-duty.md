@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Taittiriya Upanishad, speak the truth, do your duty"
 description: "A teacher's farewell speech to students over two thousand years ago: speak the truth, follow dharma, honour your mother, father, teacher and guest. Read it word by word."
-date: "2026-11-15T11:00:00+05:30"
+date: "2026-11-16T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Gita Desk"
 format: "Read the line"

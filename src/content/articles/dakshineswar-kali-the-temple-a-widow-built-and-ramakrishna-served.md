@@ -1,7 +1,7 @@
 ---
 title: "Dakshineswar Kali: the temple Rani Rasmani built for the Mother"
 description: "A widow of the fishing caste built a Kali temple that the priests would not touch. A young priest named Gadadhar took the job and wept before the Mother until she appeared."
-date: "2026-11-09T11:00:00+05:30"
+date: "2026-11-07T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

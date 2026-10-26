@@ -1,5 +1,5 @@
 ---
-title: "Hanuman Chalisa meaning: the first verses explained line by line"
+title: "Hanuman puja on Tuesday: Chalisa meaning, first verses explained"
 description: "The Hanuman Chalisa by Tulsidas has forty verses. The opening doha and first four chaupais with transliteration and meaning, and how to recite it on Tuesdays."
 date: "2026-10-24T00:00:48+05:30"
 category: "devotional"
@@ -48,3 +48,28 @@ Notice the order. Before asking Hanuman for anything, Tulsidas cleans his own mi
 More Hanuman mantras with meanings are on our [Hanuman page](/mantras/hanuman/). Tuesday is also the day of [Subramanya](/mantras/subramanya/).
 
 *Traditions vary by family and region.*
+
+## Hanuman puja on Tuesday: a simple routine
+Tuesday, *Mangalavaram*, is the day of Hanuman, and in many homes also of Subramanya. If you want a short puja to go with the Chalisa, here is one.
+1. **Bathe** and wear clean clothes. Red or orange are traditional.
+2. **Light a lamp** before a picture of Hanuman, with oil or ghee.
+3. **Offer** a red flower or a garland of betel leaves, and a little sindoor. Many offer jaggery, chana or banana.
+4. **Say *Om Hanumate Namah*** 11 or 108 times, then read the Chalisa.
+5. **Close with the Rama name.** Hanuman is happiest when Rama is remembered. A single *Sri Rama Jaya Rama Jaya Jaya Rama* is enough.
+
+## Why people turn to Hanuman
+Look at the qualities in the opening verses: knowledge, strength, a mind that sends away bad thoughts. The Hanuman most people love is not only the strong one. He is the one who is *humble* about his strength, who forgets his own power until a friend reminds him (see the story of [Jambavan](/jambavan-the-old-bear-who-reminded-hanuman-of-his-strength/)), and who always puts Rama first. That is a very useful picture to hold on a Tuesday morning.
+
+## The last verses: what the Chalisa promises
+Near the end of the Chalisa, Tulsidas says that whoever recites it a hundred times is freed from bondage and gains great happiness (*jo sat bar path kar koi, chhutehi bandi maha sukh hoi*). He then adds, simply, that Hanuman should make his home in the poet's heart. That last request is the real point. The promise is not magic. It is that something said every day, with attention, changes the person saying it.
+
+## Who was Tulsidas?
+Tulsidas lived in the sixteenth century and wrote the *Ramcharitmanas*, the retelling of the Ramayana in Awadhi that millions of north Indian families treat as scripture. The Chalisa is one of his shorter works. It is in the plain language of the people, which is why it spread so far, and why it has been translated into every Indian language.
+
+## Temples
+In the Telugu states, the Kondagattu Anjaneya Swamy temple in Telangana is one of the best loved, and the Karmanghat Hanuman temple in Hyderabad is visited on Tuesdays and Saturdays. For the Ramayana's own account of Hanuman's great journey, see our piece on [Sundara Kanda](/sundara-kanda-why-people-read-it-in-hard-times-and-how/).
+
+*Is there a Hanuman temple that matters to your family? Tell us. hello@southwala.com*
+
+## A note for beginners
+If the Awadhi is hard, do not worry. Read the meaning in your own language first, then say the verse. After a week or two, your tongue will know it and your mind will know what it says. That is how most people learn it.

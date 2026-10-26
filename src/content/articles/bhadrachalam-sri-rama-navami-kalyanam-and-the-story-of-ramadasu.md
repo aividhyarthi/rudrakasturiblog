@@ -1,7 +1,7 @@
 ---
 title: "Bhadrachalam: the Rama Navami wedding and the story of Ramadasu"
 description: "Bhadrachalam on the Godavari holds the Sitarama Kalyanam every Rama Navami. The story of Kancherla Gopanna, jailed for spending the tax money on the temple."
-date: "2026-12-04T15:00:00+05:30"
+date: "2026-12-06T19:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

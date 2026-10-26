@@ -31,7 +31,7 @@ const faq: [string, string][] = [
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const dup = /-\d+-\d{4}$/.test(l.slug) || (kind === 'ekadashi' && /-\d+$/.test(l.slug));
-const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise, Vrat` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
+const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise Time, Vrat${l.name.length > 20 ? '' : ' (Sankatahara)'}` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
 const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana.from)} to ${t(l.parana.to)}` : 'Next morning, after sunrise'] : kind === 'sankashti' ? ['Moonrise (Hyderabad)', l.moonrise ? t(l.moonrise) : ''] : ['Puja window (Hyderabad)', l.puja ? `${t(l.puja.from)} to ${t(l.puja.to)}` : ''];
 ---
 <Base rail="religion" title={title} description={`${l.name} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: label(l), href: `/${R}/${l.slug}/` }]} image="/covers/panchangam.png">

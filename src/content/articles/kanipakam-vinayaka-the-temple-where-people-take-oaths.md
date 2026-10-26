@@ -1,7 +1,7 @@
 ---
 title: "Kanipakam Vinayaka: the temple where people take oaths"
 description: "Kanipakam in Chittoor district is known for its self-manifested Ganesha and for the tradition of swearing the truth before him."
-date: "2026-11-29T11:00:00+05:30"
+date: "2026-11-29T19:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"

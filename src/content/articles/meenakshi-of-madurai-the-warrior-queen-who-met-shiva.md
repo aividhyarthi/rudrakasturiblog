@@ -1,7 +1,7 @@
 ---
 title: "Meenakshi of Madurai: the warrior queen who met Shiva at Kailash"
 description: "Born from a sacrificial fire with three breasts, Meenakshi ruled Madurai and marched on the worlds. At Kailash, the extra breast vanished. The Madurai legend, retold."
-date: "2026-10-28T07:00:00+05:30"
+date: "2026-10-27T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

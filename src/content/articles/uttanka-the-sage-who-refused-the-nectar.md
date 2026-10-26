@@ -1,7 +1,7 @@
 ---
 title: "Uttanka: the sage who shouted at Krishna and refused nectar"
 description: "Uttanka reproached Krishna for not stopping the war. Krishna showed him the universal form and gave a boon of water. Then a hunter with dogs offered him nectar."
-date: "2026-10-30T07:00:00+05:30"
+date: "2026-11-01T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

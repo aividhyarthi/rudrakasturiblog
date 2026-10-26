@@ -1,7 +1,7 @@
 ---
 title: "Vaishno Devi: the girl born in the South who walked to the hills"
 description: "A young woman born to a family in the South vowed to marry Rama. A pilgrimage of thirteen kilometres up Trikuta now remembers her. The legend of Vaishnavi and Bhairon Nath."
-date: "2026-11-12T07:00:00+05:30"
+date: "2026-11-10T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

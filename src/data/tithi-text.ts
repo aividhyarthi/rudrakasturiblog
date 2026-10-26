@@ -32,6 +32,7 @@ export const COPY: Record<TithiKind, { title: string; te: string; what: string; 
     do: ['Keep a fast through the day, with fruit and milk if you need it, and break it after moonrise.', 'Worship Ganesha in the evening with durva grass, modak and red flowers.', 'Recite the Ganesha Atharvashirsha or the Sankashtanashana Stotram.', 'See the moon, offer water to it and then take the evening meal.'],
     avoid: ['Fasting is voluntary. Those who are unwell, elderly, pregnant or children can pray and eat lightly.', 'Many avoid onion, garlic and non-vegetarian food on this day.'],
     faq: [
+      ['What is Sankashti Chaturthi also called?', 'It is also spelled Sankatahara Chaturthi, Sankashtahara Chaturthi, Sankasta Hara Chaturthi and Sankat Chauth, and in the north it is called Ganesh Chauth or Sakat Chauth. All refer to the Krishna paksha Chaturthi kept for Ganesha.'],
       ['Why is the date based on moonrise?', 'The fast is broken after moonrise, so the day is chosen on which the Chaturthi tithi is present when the moon rises that evening. This can differ from the day the tithi begins.'],
       ['What is Angaraki Sankashti Chaturthi?', 'When Sankashti falls on a Tuesday (Angaraki) it is considered especially meritorious for Ganesha worship.'],
       ['Does the moonrise time change by city?', 'Yes. The time shown is for Hyderabad. Moonrise is a few minutes earlier or later elsewhere, so check your city before breaking the fast.'],

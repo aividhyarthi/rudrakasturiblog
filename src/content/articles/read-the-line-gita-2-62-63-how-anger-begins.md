@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 2.62 and 2.63, how anger really begins"
 description: "Two verses trace how a thought grows into attachment, desire, anger and ruin, step by step. Read them word by word and learn where to step off."
-date: "2026-10-31T07:00:00+05:30"
+date: "2026-10-30T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

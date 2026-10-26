@@ -1,7 +1,7 @@
 ---
 title: "Read the line: Gita 4.7 and 4.8, when dharma declines"
 description: "Krishna says that whenever dharma declines and adharma rises, he sends himself forth. Read the famous verses word by word and learn how not to misread them."
-date: "2026-11-10T07:00:00+05:30"
+date: "2026-11-09T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Read the line"

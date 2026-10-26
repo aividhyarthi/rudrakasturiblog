@@ -1,7 +1,7 @@
 ---
 title: "Baby names by nakshatra: the first letters for all 27 stars"
 description: "A table of the first letter sounds for each of the 27 nakshatras and four padas, with the rashi for each, for choosing a baby name in the traditional way."
-date: "2026-11-22T07:00:00+05:30"
+date: "2026-11-29T07:00:00+05:30"
 category: "astrology"
 author: "Southwala Astrology Desk"
 format: "Guide"

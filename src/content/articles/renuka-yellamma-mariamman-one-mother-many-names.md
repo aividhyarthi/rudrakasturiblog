@@ -1,7 +1,7 @@
 ---
 title: "Renuka, Yellamma, Mariamman: one mother, many names"
 description: "A woman beheaded by her son and restored by a boon, now worshipped across the South as the goddess of healing and rain. The story that links Renuka, Yellamma and Mariamman."
-date: "2026-10-30T11:00:00+05:30"
+date: "2026-10-29T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

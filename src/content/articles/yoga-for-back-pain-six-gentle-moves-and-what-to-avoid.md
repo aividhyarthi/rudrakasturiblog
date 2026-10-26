@@ -1,7 +1,7 @@
 ---
 title: "Yoga for back pain: six gentle moves and what to avoid"
 description: "Most back pain comes from sitting too long and a weak middle. Six gentle yoga moves that often help, how long to hold them and when to see a doctor."
-date: "2026-11-24T11:00:00+05:30"
+date: "2026-11-22T19:00:00+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

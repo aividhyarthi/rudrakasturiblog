@@ -1,7 +1,7 @@
 ---
 title: "Why me? When everyone around you seems to be doing better"
 description: "Friends buying houses, cousins getting promoted, and your own life standing still. What the Mundaka Upanishad, the Gita and Karna can teach about comparison."
-date: "2026-11-13T07:00:00+05:30"
+date: "2026-11-13T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Essay"

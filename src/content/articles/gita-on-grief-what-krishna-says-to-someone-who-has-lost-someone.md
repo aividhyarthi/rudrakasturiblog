@@ -1,7 +1,7 @@
 ---
 title: "Gita on grief: what Krishna says to someone who has lost someone"
 description: "Krishna begins his teaching to a grieving Arjuna in Gita 2.11. What he says about loss, why the soul is not born or killed, and what he does not say."
-date: "2026-11-29T07:00:00+05:30"
+date: "2026-12-04T07:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

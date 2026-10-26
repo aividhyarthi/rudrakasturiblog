@@ -1,7 +1,7 @@
 ---
 title: "Yoga for digestion and acidity: what to do after meals"
 description: "Heavy dinners and late meals cause bloating and acidity. The one pose you can do after eating, poses that help wind and constipation, and what to avoid."
-date: "2026-12-03T07:00:00+05:30"
+date: "2026-12-03T19:00:00+05:30"
 category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"

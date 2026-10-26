@@ -1,7 +1,7 @@
 ---
 title: "King Harishchandra: what he chose when no one was watching"
 description: "Harishchandra lost his kingdom, his family and his name, and still would not lie. The Markandeya Purana story and what it says about truth and karma."
-date: "2026-11-13T15:00:00+05:30"
+date: "2026-11-19T15:00:00+05:30"
 category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"

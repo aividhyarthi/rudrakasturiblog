@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for obstacles and new beginnings: Ganesha"
 description: "When a plan keeps stalling, Hindu tradition turns to Ganesha. The mantras to use, how to pray before a new start, and the practical steps that go with it."
-date: "2026-11-22T15:00:00+05:30"
+date: "2026-11-28T07:00:00+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

@@ -1,7 +1,7 @@
 ---
 title: "Ghatotkacha: the night Krishna smiled as the Pandavas wept"
 description: "Bhima's son fell on the fourteenth night of the war and the Pandavas wept, but Krishna was relieved. Why Karna's one great weapon was spent on the wrong target."
-date: "2026-11-09T07:00:00+05:30"
+date: "2026-11-13T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Mahabharata story"

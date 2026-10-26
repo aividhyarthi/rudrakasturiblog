@@ -1,7 +1,7 @@
 ---
 title: "Sampati: the vulture who lost his wings and showed where Sita was"
 description: "Jatayu's elder brother, burned by the sun, sat on a mountain for years. How he spotted Sita from a hundred yojanas away and got his wings back."
-date: "2026-11-08T11:00:00+05:30"
+date: "2026-11-12T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

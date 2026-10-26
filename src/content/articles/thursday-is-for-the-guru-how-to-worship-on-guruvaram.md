@@ -1,5 +1,5 @@
 ---
-title: "Thursday is for the guru: how to worship on Guruvaram"
+title: "Guruvaram: Thursday puja for Sai Baba, Raghavendra and Dattatreya"
 description: "Why Thursday belongs to the teacher, and how to honour Dakshinamurthy, Dattatreya, Sai Baba and Raghavendra Swami. A simple routine, one verse and one question for you."
 date: "2026-10-24T00:00:52+05:30"
 category: "devotional"
@@ -55,3 +55,22 @@ Most of us do not have a guru in the sense of a spiritual master, and that is fi
 Who is the teacher you would thank, if you could do it today? You do not have to tell us. But if you would like to, write to hello@southwala.com. We read every message.
 
 See also [Dakshinamurthy and the Guru: mantras](/mantras/dakshinamurthy/) and [Read the line: Katha Upanishad, arise and awake](/read-the-line-katha-upanishad-arise-awake/).
+
+## More about the four teachers
+**Dakshinamurthy** is worshipped in a special way at the Shiva temples of Tamil Nadu, where his image faces south on the outer wall of the sanctum. Students go to him before exams. The Dakshinamurthy Stotram, by Adi Shankara, is read on Thursdays: its gist is that the real teaching is silence, and the doubts of the student fall away in that presence.
+
+**Sai Baba of Shirdi,** who lived from the 1800s until 1918, asked his devotees for only two things, *shraddha* (faith) and *saburi* (patience). Thursday is his day in Hyderabad, Chennai and across the South, and many temples hold an evening aarti.
+
+**Raghavendra Swami** (1595 to 1671) is regarded by devotees as a living presence at Mantralayam on the Tungabhadra. The Madhva tradition honours him as a saint who combined scholarship and devotion. Mantralayam is one of the most visited places in Andhra and Karnataka on Thursdays.
+
+**Dattatreya** is told through the story of the [24 gurus](/dattatreya-and-the-24-gurus-what-the-avadhuta-learned/).
+
+## What to do on a Thursday if you have a guru
+If you have a guru, visit them, or call them, or sit in front of their picture for five minutes. Offer yellow flowers and a simple sweet. If your guru has passed, light a lamp for them. If you have no guru, honour your first teacher: the one who taught you to read, or to cook, or to wait.
+
+## Questions people ask
+**Why yellow?** Yellow is the colour of Jupiter in the tradition, and of turmeric, which is auspicious. Many families use yellow flowers and yellow rice on Thursdays.
+
+**Is it a fasting day?** Some families fast. It is entirely optional.
+
+**What if I am not religious?** Then simply thank a teacher. It is the same offering.

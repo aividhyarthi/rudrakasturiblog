@@ -1,7 +1,7 @@
 ---
 title: "Kanaka Durga of Vijayawada: the goddess on Indrakeeladri hill"
 description: "Arjuna prayed here, Mahishasura was slain here, and every Dasara the Krishna river reflects a hill of lamps. The story of Kanaka Durga on Indrakeeladri."
-date: "2026-11-14T11:00:00+05:30"
+date: "2026-11-12T19:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Goddess story"

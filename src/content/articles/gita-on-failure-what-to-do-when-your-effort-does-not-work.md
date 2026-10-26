@@ -1,7 +1,7 @@
 ---
 title: "Gita on failure: what to do when your effort does not work"
 description: "Gita 18.48 says every action is covered with fault as fire is with smoke, and still you should not abandon your work."
-date: "2026-11-30T15:00:00+05:30"
+date: "2026-12-05T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

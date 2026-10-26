@@ -1,7 +1,7 @@
 ---
 title: "Shabari: the old woman who waited for Rama at Pampa"
 description: "A forest woman who had waited for years in the hermitage of Matanga, because her teachers promised Rama would come. What Valmiki says, and what later retellings added."
-date: "2026-11-06T15:00:00+05:30"
+date: "2026-11-10T15:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"

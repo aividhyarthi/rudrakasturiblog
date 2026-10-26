@@ -1,7 +1,7 @@
 ---
 title: "Searching for karma: is it fair? Why do good people suffer?"
 description: "If karma is justice, why do good people suffer and cheats prosper? What the Mahabharata, the Gita and the epics suggest, and how not to blame the sufferer."
-date: "2026-11-28T11:00:00+05:30"
+date: "2026-12-03T11:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Reflection"

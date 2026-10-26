@@ -1,7 +1,7 @@
 ---
 title: "Which god to pray to for children: Santana Gopala and Subramanya"
 description: "Couples hoping for a child turn to Krishna as Santana Gopala and to Subramanya. The mantra, the practices, and why medical advice and kindness to each other come first."
-date: "2026-12-02T15:00:00+05:30"
+date: "2026-11-19T07:00:00+05:30"
 category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"

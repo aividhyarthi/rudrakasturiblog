@@ -1,7 +1,7 @@
 ---
 title: "The three gunas: why you feel restless, dull or calm"
 description: "The Gita says our moods come from three qualities of nature: sattva, rajas and tamas. A plain guide to what each feels like and how food, sleep and company shift them."
-date: "2026-12-05T11:00:00+05:30"
+date: "2026-12-09T11:00:00+05:30"
 category: "gita"
 author: "Southwala Gita Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Arupadai Veedu: the six abodes of Murugan, one by one"
 description: "Six temples in Tamil Nadu are sacred to Murugan above all. What each is known for, what happened there in the stories, and how people plan the pilgrimage."
-date: "2026-11-12T15:00:00+05:30"
+date: "2026-11-11T19:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
