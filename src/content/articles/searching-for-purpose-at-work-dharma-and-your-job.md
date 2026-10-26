@@ -52,6 +52,40 @@ Use the process from [Gita 2.7 on confusion](/gita-on-confusion-when-you-cannot-
 ## A caution about passion
 Many people say "follow your passion." The Gita's version is gentler: do what is in front of you with attention, and find out, step by step, what suits you. Passion often comes after skill, not before.
 
+## Work as an offering
+In 3.9, Krishna says that action done as a sacrifice, an offering, is free, while the world is bound by action done for selfish ends. The word used is *yajna*. You do not need a fire altar. It means work done with the sense that it is for something beyond yourself.
+
+Try this small change. Before you start your day's first task, pause for ten seconds and name who it is for. It may be a customer, a patient, a student, your family or your colleague. Then begin. Nothing about the task has changed, but you have turned it a little away from "what's in it for me" and towards "who is this for."
+
+## Janaka, the king who worked
+The Gita (3.20) points to Janaka and others who reached perfection through action itself. Janaka was a king, with a court and a kingdom to run. The text does not say he left it. It says that doing his work in the right spirit was his path.
+
+This is a useful reminder for those of us in busy jobs. You do not have to wait for retirement or a quieter season to practise. The office, the shop, the kitchen and the classroom are all places where the practice can be done.
+
+## A one-week experiment
+If your work feels flat, try this for a week.
+
+1. **Monday:** Write down who benefits from your work, even indirectly.
+2. **Tuesday:** Pick one task and do it with your full attention, without checking your phone.
+3. **Wednesday:** Help a colleague with something small, without being asked.
+4. **Thursday:** Notice one thing you have learned in this job that you did not know a year ago.
+5. **Friday:** Finish one thing that has been hanging over you.
+6. **Weekend:** Ask whether the week felt different, and why.
+
+Do not expect a transformation. You are looking for a small shift in how the work feels.
+
+## Questions people ask
+**Is the Gita saying I must stay in the family trade or caste work?**
+Many people read 18.45 that way historically. A broader and more helpful reading, and the one most modern teachers give, is that it is about your own temperament and ability. The aim is to do well what suits you, not to be locked into a role.
+
+**What if I have no choice of job right now?**
+Then use what you have. Do the work honestly, learn what you can, and keep looking for a better fit in your spare time. A job you cannot leave can still be done with dignity.
+
+**Is it wrong to want a bigger salary?**
+No. Providing for a family is a duty. The Gita asks that money not become the only thing that moves you.
+
+If you have found meaning in a plain job, we would love to hear how, at hello@southwala.com.
+
 ## When you are burnt out
 If you hate your work and feel tired all the time, see [the Gita on burnout](/gita-on-burnout-the-middle-path-of-eating-sleeping-and-working/). And if it is making you low or anxious, talk to a counsellor.
 

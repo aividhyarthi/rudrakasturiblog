@@ -69,8 +69,6 @@ At the same time, a person who wishes to go deep in a particular path, such as a
 ## Giving it time
 Do not hurry. A good rule is to spend a year or more simply attending a teacher's talks or classes before you make any commitment. Watch how they behave when they are tired, when they are criticised, and when there is no audience. Ask people who have known them for many years, not only those who are new and excited.
 
-Bring a notebook. Write down what you are told and how you feel afterwards. After a few months, read back. Are you becoming steadier, or more tied up in someone else's approval?
-
 ## Questions people ask
 **Do I need initiation (diksha) to begin?**
 Not to read the Gita, to chant, to pray or to meditate quietly. Some specific practices are taught by a teacher with initiation, but you can walk a long way before you need that.
@@ -80,9 +78,6 @@ Many sincere people do not. The tradition says the teacher appears in different 
 
 **Is it wrong to leave a teacher?**
 If you have learned what you came for, or you see signs that worry you, it is fair to move on. A good teacher will not hold you back.
-
-**Is a Thursday special for the guru?**
-Many families honour their teachers on Thursdays, as we explain in [Thursday is for the guru](/thursday-is-for-the-guru-how-to-worship-on-guruvaram/).
 
 If you have had a good teacher, or a hard experience you would like to share, you can write to us at hello@southwala.com. We read every note with care.
 

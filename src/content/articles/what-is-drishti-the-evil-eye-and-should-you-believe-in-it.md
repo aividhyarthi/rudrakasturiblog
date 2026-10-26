@@ -60,4 +60,34 @@ Hindu tradition also offers prayers for protection in place of charms, such as t
 ## A lesson in it
 Perhaps the best use of the belief is a good habit: be generous in your praise but not envious in your heart. If you admire a baby, say *Tatha astu* or *God bless*, and mean it.
 
+## Questions people ask
+**Is it wrong to follow these customs if I do not believe in them?**
+Not at all. Many people keep a black dot or a lemon at the door as a nod to family and memory, not because they fear a glance. You can hold the custom lightly.
+
+**What if my elders insist?**
+Speak kindly. You can say, "We will do the dot, and we are also going to the doctor on Monday." Most grandmothers are happy with that, because what they want is the baby's safety.
+
+**What if I really feel something after a visitor praised my child?**
+A baby may be fussy or unwell for many reasons, from a vaccine to a tooth to an infection. Look first for these. If the cause is not clear, call the doctor. A calm mind helps the baby too.
+
+**Is the evil eye mentioned in the Vedas?**
+Some old texts have protective verses against illness and ill will, but it is not accurate to say that every modern custom is described in scripture. Many of them are family and folk traditions that grew over time.
+
+## For parents of small babies
+A few practical notes that matter more than any charm:
+- If you use a dot, place it on the forehead or cheek, well away from the eyes, and use something clean and skin-safe.
+- Keep burning materials away from the baby's room.
+- Do not give the baby anything by mouth that a doctor has not approved.
+- Wash your hands before touching the baby, and ask visitors to do the same. This protects better than a lemon, and your guests will understand.
+
+## When someone praises you
+It is easy to feel nervous when someone says, "What a lovely child!" Try these instead of silently worrying:
+- Say "thank you" and add "God bless" together.
+- Mentally offer the praise to the deity you pray to. Many people say "it is all by his grace".
+- Remember that most compliments are meant with love.
+
+For a steady prayer that many families say when they feel afraid, see [Gita on fear: even a little practice protects you](/gita-on-fear-even-a-little-practice-protects-you/). If you find yourself worrying every day about other people's looks, [Yoga for anxiety and stress](/yoga-for-anxiety-and-stress-a-ten-minute-reset/) may help.
+
+If your family has a drishti custom that is particular to your region, we would be happy to hear about it at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

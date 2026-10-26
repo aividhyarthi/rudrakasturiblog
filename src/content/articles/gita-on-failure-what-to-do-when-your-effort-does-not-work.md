@@ -49,6 +49,41 @@ The Gita does not say results do not matter. It says you do not control them ful
 ## Talking to yourself
 The way you speak to yourself after a failure matters. [Gita 6.5](/gita-6-5-lift-yourself-by-yourself/) says you are your own friend or your own enemy. Ask: how would I talk to a friend in this situation? Then do that.
 
+## A closer look at the smoke
+Think about a lamp in your own home. When you light it, there may be a thread of smoke at first, from the wick or the oil. You do not throw the lamp away. You trim the wick, wait a moment, and the flame steadies.
+
+Krishna's image is like this. Smoke is not the enemy of fire. It is part of how fire behaves in the real world. Your failed attempt, with all its mistakes, is smoke. It tells you something about the wick. It does not tell you that you should never have lit the lamp.
+
+This also gives a different way to read your own work. Instead of asking, "was it perfect?", which it never will be, ask, "what is the smoke teaching me, and what can I trim?"
+
+## A short review after a setback
+When the first sting has passed, take a page and answer five questions in plain words.
+
+1. What exactly happened? Write facts, not feelings.
+2. What was in my control? Preparation, timing, asking for help.
+3. What was not? Other people's choices, luck, the market.
+4. What is one thing I would do differently?
+5. What is one small action I can take in the next three days?
+
+Keep the answers short. The point is not to punish yourself. It is to turn a heavy cloud into a small list.
+
+## Arjuna also stopped
+It is easy to forget that the Gita begins with a failure of nerve. Arjuna puts down his bow and says he cannot fight. The whole teaching is given to a person at his lowest point. Krishna does not shame him. He listens, he explains, and eventually Arjuna says that his doubt has gone and he will act.
+
+If the greatest archer of the epic could freeze, you can allow yourself a pause. What matters is that the story does not end there.
+
+## Questions people ask
+**Is it all right to give up on something after failing?**
+Sometimes, yes. The verse speaks of work that is natural to you and suited to you. If you have honestly tried, and the work does not fit, it can be wise to change direction. What the Gita warns against is quitting in a rush, only because it hurt.
+
+**How long should I stay low?**
+There is no fixed time. A few days of sadness is normal. If it goes on for weeks and affects your sleep, appetite or work, please talk to a doctor or counsellor.
+
+**Where can I read more?**
+Our essay [Why me? I worked so hard and still did not get the result](/why-me-when-hard-work-brings-no-result/) looks at the same question through Shabari, the Pandavas and Rama.
+
+If you have a story of a failure that turned into something useful, we would love to hear it at hello@southwala.com.
+
 ## When it is more than disappointment
 If after a setback you feel hopeless, cannot function for weeks, or think of harming yourself, please reach out to a doctor, counsellor or someone you trust. In India, Tele-MANAS (14416) is free and open at all hours.
 

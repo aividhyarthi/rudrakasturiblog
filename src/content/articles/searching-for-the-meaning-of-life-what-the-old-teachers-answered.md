@@ -64,4 +64,40 @@ A feeling that life has no point can be a normal passing phase, a sign of a tran
 ## A question to carry
 Instead of "what is the meaning of life?", try asking, "What does this day need from me?" It is easier to answer, and a life is made of days.
 
+## Two roads: the good and the pleasant
+The Katha Upanishad has a young boy, Nachiketa, who meets Yama, the lord of death, and is offered all kinds of pleasures if he will drop his difficult questions. The text lays out two paths: *shreyas*, the good, and *preyas*, the pleasant. Most of the time they lead to the same place. When they do not, the wise person, it says, chooses the good, and the one who is led by desire for comfort loses the goal.
+
+This is not a call to give up enjoyment. It is an invitation to notice when you are choosing something only because it is easy. If you would like to read the call that follows from the same Upanishad, see [Read the line: Katha Upanishad, arise and awake](/read-the-line-katha-upanishad-arise-awake/).
+
+## The four stages of life
+Alongside the four goals, the tradition describes four stages, the *ashramas*:
+1. **Student:** learning, discipline, curiosity.
+2. **Householder:** family, work, building a life.
+3. **Withdrawal:** stepping back from the centre and giving more room to others.
+4. **Renunciation:** letting go of ownership and living lightly.
+
+You do not have to follow these literally to see their sense. They say that meaning changes over the years. What you needed at twenty is not what you need at sixty. A person who is puzzled in the middle of a busy household life is not failing. They may be at the point where the question is supposed to come up.
+
+## Questions people ask
+**Is it selfish to ask what my life is for?**
+No. Almost every teacher in the tradition began with this question. A person who is clear about what matters is often more useful to others.
+
+**What if I do not feel any answer?**
+Then begin with smaller questions. What is one thing I can do today that I will not regret? The big answer often arrives from many small ones.
+
+**Does having a purpose mean I must leave my job or my family?**
+Not at all. Dharma is mostly found inside the life you have. For work, see [Searching for purpose at work: dharma and your job](/searching-for-purpose-at-work-dharma-and-your-job/).
+
+## A small weekly practice
+Once a week, perhaps on Sunday evening, sit for ten quiet minutes with a notebook and answer three lines:
+- Something I did this week that felt worth doing.
+- Something I would do differently.
+- One person I want to be kind to next week.
+
+After a few weeks, you may see a pattern in what feels meaningful to you. That pattern is a better guide than any slogan.
+
+Related questions are explored in [Searching for happiness](/searching-for-happiness-why-enough-is-the-hardest-word/) and [Searching for peace](/searching-for-peace-why-it-keeps-running-away/).
+
+If you have found a way of answering this question that has worked for you, we would be glad to read it at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

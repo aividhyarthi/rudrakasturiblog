@@ -58,4 +58,29 @@ Grief is not an illness. But if months later you cannot function, you feel that 
 
 For related reading see [Parikshit and how to face a known end](/parikshit-and-the-curse-how-to-face-a-known-end/) and [the Gita chapter guide](/bhagavad-gita/chapter-2/).
 
+## A closer look at verse 2.27
+The line "death is certain for one who is born" can sound cold if it is read at the wrong time. Read it slowly and you will see that Krishna is not saying "stop crying". He is describing a law that holds for every living thing, including Arjuna and including you. Some families find a quiet comfort in that. Nobody is singled out. Nobody is being punished. The loss that feels so personal is also the oldest thing in the world, and others have walked the same road.
+
+## Questions people ask
+
+**Should I read the Gita aloud at home after a death?**
+Many families do, and many take comfort in it. If the verses feel heavy or distant, do not force them. Sit in silence or listen to a recording. The aim is comfort, not performance.
+
+**What if I cannot believe in rebirth?**
+You are not alone. Take from the text what is useful. Even without rebirth, Krishna's words about not being confused by the body's changes, and about the love that outlasts a life, may still reach you.
+
+**Is it right to feel relief when someone has died after a long illness?**
+Yes. Relief and sorrow often come together. It does not mean you loved them less.
+
+**What about the grief of children?**
+Children grieve in short bursts. They may ask the same question many times. Answer simply and honestly, let them join the rituals if they wish, and keep their routines steady.
+
+## Different kinds of loss
+Not every loss is a death in the family. You may grieve a friend, a pet, a miscarriage, a job or a home. Grief of this kind is real, even if others do not see it. Give it the same patience you would give any other loss. For a more personal essay on the question *why me*, see [Why me? When death takes someone you love too soon](/why-me-when-someone-you-love-dies/). For the rites that families keep, read [how to honour ancestors](/how-to-honour-ancestors-pitru-mantras-and-family-peace/).
+
+## The first year
+The first festival, the first birthday and the first death anniversary are often the hardest days. Plan a little for them. Invite a friend. Light a lamp in memory. Cook the dish they liked. Many families find that these small acts turn a sharp pain into a gentler remembering.
+
+If you want to share how you or your family held a loss, or a verse that helped, write to us at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

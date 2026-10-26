@@ -62,4 +62,32 @@ It is the same list that the Gita gives for the person dear to Krishna (chapter 
 ## If you have doubts
 Doubt is not the enemy of faith. In the Gita, Arjuna begins with doubt. If you find that you cannot believe, you can still live well, serve and be kind, and the search can wait until you are ready. See [Gita on doubt](/gita-on-suspicion-and-doubt-when-questions-turn-into-poison/).
 
+## A closer look at the Kena question
+The Kena Upanishad is named from its first word, *kena*, which means "by whom". The question is not about a distant being. It is about the ordinary workings of your own mind. Who makes your eyes see? Who makes your thoughts arrive? The Upanishad does not hand over a tidy answer. It says that the one who thinks "I understand it" does not understand it, and the one who thinks "I do not understand it" in the right way has begun to. It is a gentle reminder that God is not an object we can hold up and examine.
+
+## Questions people ask
+
+**Is God a person or a presence?**
+Different schools answer differently. Advaita speaks of Brahman without form. Devotional schools speak of a loving Lord who knows each devotee by name. You can compare these views in [Shankara, Ramanuja and Madhva](/shankara-ramanuja-madhva-three-ways-to-see-god-and-the-soul/). Many families hold both, and move between them depending on the day.
+
+**What if I feel nothing in a temple?**
+That is more common than people admit. Some days the mind is full of noise. Read [going blank when you close your eyes to pray](/going-blank-when-you-close-your-eyes-to-pray/) and be patient with yourself.
+
+**Do I need a guru to find God?**
+The tradition values a teacher highly, but warns against rushing. See [searching for a guru](/searching-for-a-guru-how-to-find-one-and-how-to-know-a-real-one/).
+
+**Can a person who does not believe still live a good life?**
+Yes. Many people of every faith and none are honest, kind and generous. The old texts judge by conduct as much as by belief.
+
+## A simple exercise
+Try this once, for five minutes:
+1. Sit quietly and notice three sounds around you.
+2. Notice the one who is listening.
+3. Without trying to name it, rest in that noticing for a few breaths.
+
+You do not have to call this God. It is only an invitation to look at the place from which looking happens, which is where many of the old teachers say the search ends.
+
+## An open door
+Wherever you are on this road, you are welcome. If you would like to tell us what you have found, or what you are still asking, write to us at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

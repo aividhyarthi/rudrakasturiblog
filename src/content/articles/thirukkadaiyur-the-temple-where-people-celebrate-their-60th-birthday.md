@@ -52,6 +52,35 @@ The tradition says that Bhattar sat in a fire pit, in a sling over the fire, and
 4. **Allow a full day.** The rites take several hours.
 5. **Invite the family, but plan for the heat.**
 
+## A closer look at Kalasamhara Murti
+The form of Shiva who saved Markandeya is called Kalasamhara Murti, the one who ended the work of Kala, or Time and Death. In sculpture, you will see Shiva stepping out of the lingam with a raised foot, and Yama falling back.
+
+Notice what the image says. It does not say that death does not come. It says that devotion has a power that death must respect, for this boy and this time. For families who come to Thirukkadaiyur, the image carries a quiet hope for health and long life, while the wiser version of that hope is gratitude for the years already given.
+
+The name Amritaghateswarar, the lord of the pot of nectar, points in the same direction. The temple is a place for celebrating life.
+
+## What sixty years means
+In the traditional reckoning, a person has lived through a full cycle of the sixty-year calendar. Coming back to the year of birth is seen as a new beginning. So the ceremony is a mix of thanks and renewal.
+
+If you are planning one for your parents, or for yourself, here are some thoughts.
+
+- **Make it about gratitude.** Invite the people who helped most along the way.
+- **Let the couple decide what they want.** Some prefer a quiet rite, others a big family gathering.
+- **Include the young.** Grandchildren who see their grandparents honoured learn something that stays with them.
+- **Think about health.** Keep the day gentle, with rest and shade for older people.
+
+## Questions people ask
+**Is the ceremony only for men and their wives?**
+The traditional form is for a couple, but families adapt. For widows, widowers and others, a simple prayer and a family meal serve the same purpose. Ask a priest you trust how best to do it.
+
+**Can we do it on any day?**
+Families usually fix the date by the husband's birth star or the nearest auspicious day. A priest or the temple office can advise. You may also check the [panchangam](/panchangam/) for the day.
+
+**Is it only for Tamil families?**
+No. Families from Telugu, Kannada and Malayalam communities visit too, as do others who come in good faith.
+
+If your family has held a Shashtiabdapoorthi here or elsewhere, we would be glad to hear about it. Write to hello@southwala.com.
+
 ## If you cannot go
 Many families hold Shashtiabdapoorthi at home or at a local temple. The meaning is gratitude: for sixty years, for a partner and for the people who made it possible.
 
