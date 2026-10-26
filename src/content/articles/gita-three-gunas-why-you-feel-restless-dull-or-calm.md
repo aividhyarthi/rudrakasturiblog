@@ -68,4 +68,36 @@ It is tempting to think of sattva as the goal. The Gita says that even sattva bi
 ## A simple practice
 Each evening, ask: which guna was strongest today? What fed it? That one question, asked every day, teaches more than a book.
 
+## A closer look at the three binders
+The Gita says each guna "binds" the self in its own way (14.6 to 14.8). It is worth noticing how subtle this is. Tamas binds through heaviness and avoidance. Rajas binds through wanting and doing. Sattva binds through attachment to happiness and to knowledge, so a person can become proud of being calm, or pleased with being the wise one in the room.
+
+This is a very honest reading of human nature. It says that even our best moods can become a trap if we cling to them.
+
+## Questions people ask
+
+**Is sattva good and tamas bad?**
+In ordinary life, sattva is a more helpful state than tamas. But tamas has its place. A tired body needs sleep, and sleep is tamasic in the right measure. The trouble starts when a quality takes over.
+
+**Can I change my guna permanently?**
+The gunas shift all day, like weather, so the aim is not to freeze at one. Habits of sleep, food, company and quiet make sattva more likely to appear and stay.
+
+**Does this mean I am calm or restless by birth?**
+The Gita speaks of the gunas as present in all of us. Some temperaments lean one way, but everyone moves between them.
+
+**Is this a medical diagnosis of my mood?**
+No. It is a way of noticing, not a medical label. If you feel low or anxious for weeks, please see a doctor or counsellor.
+
+## Three questions to ask at any moment
+When you are stuck, try these:
+1. Am I rushing, drifting or settled?
+2. What did I last eat, see or do that fed this state?
+3. What is the smallest step that would shift me one notch toward steady?
+
+If you are restless, the step may be a walk. If you are heavy, it may be opening a window. If you are settled, it may be thanking whoever helped you get there, and not clinging.
+
+## A family exercise
+At dinner, ask each person to name the guna of the day in their own words, such as "busy" or "slow" or "clear". Children enjoy it, and it opens an easy way to speak about moods. For related reading, see [the Gita on overthinking](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/) and [the Gita on burnout](/gita-on-burnout-the-middle-path-of-eating-sleeping-and-working/).
+
+If you try the evening question for a week, write and tell us what you noticed at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

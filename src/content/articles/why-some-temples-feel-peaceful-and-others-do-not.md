@@ -59,4 +59,29 @@ If a temple matters to you, you can help. Keep noise low, support quiet hours, d
 ## Beyond temples
 The same feeling can come from a river, a hill or a corner of your own home with a lamp. See [how to start japa](/mantra-japa-how-to-start-count-and-keep-going/).
 
+## A closer look at the sanctum
+Stand for a moment before the sanctum and notice how little there is. One lamp, one image, some flowers. The Agamas describe the small sanctum as the heart of the temple, and the larger halls around it as a way of leading you gently towards that heart. The temple is built, in a sense, like a slow breath in. By the time you reach the deity, the noise of the day has been left behind.
+
+## Questions people ask
+
+**Is it wrong to feel nothing in a temple?**
+No. Some days the mind is simply busy. Read [going blank when you close your eyes to pray](/going-blank-when-you-close-your-eyes-to-pray/) and be gentle with yourself.
+
+**Why do I sometimes cry in a temple?**
+Many people do, without knowing why. Quiet places lower our guard. You can read more in [why people cry in temples](/why-people-cry-in-temples-and-what-it-means/).
+
+**Do bigger temples have less peace?**
+Not always. Some big temples have quiet corners and halls if you know where to look. Early mornings and weekdays make a large difference.
+
+**Should I avoid a temple that feels unpleasant?**
+You can visit at a different time, or choose a smaller temple near you. There is no rule that says you must pray in a particular place.
+
+## What a good visit can look like
+Imagine going on a weekday, an hour after the doors open. You walk a slow circuit around the outer path. You leave your shoes, phone and worries in the right places. You stand in the queue without hurry, and at the sanctum you say a single sentence in your heart. Then you sit in a hall for ten minutes before leaving. Nothing here costs money, and nothing is out of reach for any visitor.
+
+## Making a quiet place at home
+If the temple you love is too crowded or too far, create a small corner at home. A clean shelf, a lamp, a picture and a little silence are enough. Light the lamp at the same time each day. Over weeks, the corner starts to hold a calm of its own, which you carry into the rest of the house. Another useful companion is a little daily chanting, and you can find help in [how to start mantra japa](/mantra-japa-how-to-start-count-and-keep-going/).
+
+If you have a temple that feels like home, tell us about it at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

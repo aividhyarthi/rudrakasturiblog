@@ -51,4 +51,32 @@ To reach Rameswaram, you cross the Pamban bridge. The old railway bridge, opened
 - Be careful about people who offer to arrange the rituals for money; use the temple's official counters.
 - Dress rules apply. Wet clothes after the bath are usual.
 
+## Kashi and Rameswaram
+There is an old pilgrim's journey that joins the north and south of India: Kashi to Rameswaram. Pilgrims have traditionally carried water from the Ganga at Kashi to offer at Rameswaram, and brought sand from the shore here back to Kashi. If you have ever wondered why a river from the Himalayas is poured on a lingam at the tip of the peninsula, this is the answer: the tradition wants the two ends of the land to be joined in one prayer.
+
+## A closer look at the story's meaning
+Notice what troubles Rama in the story. He has won. He has recovered Sita. And still he feels the weight of what has happened, because Ravana, whatever his faults, was a learned man and a devotee of Shiva. The tradition does not say that Rama was wrong to fight. It says he took the weight seriously and sought to set it down in prayer.
+
+Many people find comfort in that. Even when you have done what was necessary, you may need a quiet place to put your burden down. Rameswaram is, for many pilgrims, that kind of place.
+
+It is also worth pausing at the small, human note of the sand lingam. Sita shaping the sand with her own hands is a picture of worship that needs no wealth. You can read a similar story in [Kamakshi of Kanchipuram, the goddess who embraced the sand lingam](/kamakshi-of-kanchipuram-the-goddess-who-embraced-the-sand-lingam/).
+
+## Practical tips for the tirtham bath
+- Bring a change of dry clothes, a towel and a bag for the wet ones.
+- Wear simple clothes that you do not mind getting wet.
+- Carry some small change for the attendants who pour the water, and agree on a fee first.
+- If you have a heart condition, are elderly or are pregnant, go slowly. Cold water on a hot morning is a shock to the body, and the queue can be long.
+
+## Questions people ask
+**Do I need to do all 22 tirthams?**
+Tradition says so, but many pilgrims do what their health allows. A sincere visit with fewer wells is better than an exhausting rush.
+
+**How many days do I need?**
+A day is enough for the temple and the bath. Add a second day for Dhanushkodi and the other nearby places.
+
+**Is it open to all?**
+Temples in Tamil Nadu have their own dress and entry rules. Check the official notices before you go.
+
+If you have been to Rameswaram, or if you carry a family story about the Kashi-Rameswaram journey, we would like to hear it at hello@southwala.com.
+
 The Ramayana's story of Rama and Sita also lives at [Bhadrachalam](/temples/bhadrachalam-sita-ramachandraswamy-temple/), the Rama temple of the Telugu land.

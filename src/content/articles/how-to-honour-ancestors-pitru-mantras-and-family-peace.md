@@ -59,4 +59,32 @@ During the Karthika month, an Akasha Deepam is lit high above the house, to guid
 
 For more on how actions carry on, see [three kinds of karma](/three-kinds-of-karma-sanchita-prarabdha-kriyamana/).
 
+## Questions people ask
+
+**What if I do not know the date of death of an ancestor?**
+Many families honour such ancestors on Mahalaya Amavasya, when all are remembered together. Ask an elder or your family priest for guidance.
+
+**Can daughters and women do tarpanam?**
+Practice varies between families and communities. Many families now include daughters, and some priests are happy to guide them. Ask someone you trust in your own tradition.
+
+**What if we live far from home and cannot do the full ceremony?**
+A lamp, a cup of water with sesame and a few minutes of remembering are enough, and you can phone the elders at home so that they feel included. Tradition values sincerity far more than perfection.
+
+**Is a photograph needed?**
+No. A lamp and a name are enough.
+
+**What if I feel guilty that I was not there when someone died?**
+Many people carry this. A prayer of thanks and of asking forgiveness, said quietly, is accepted. If the weight is heavy, talk to someone you trust, or to a counsellor.
+
+## A closer look at the sesame
+Black sesame appears in many of these rites. Tradition links it with purity and with the ancestors, and it is also a simple, humble seed that is easy to keep at home. You do not have to go searching for rare things. Water, sesame and a sincere heart are the heart of the offering.
+
+## Bringing children into it
+Children often love hearing about the people they come from. On the day you remember an elder, tell the family a story about them: what they cooked, the songs they sang, a funny habit. Let the children place a flower or pour a little water. They will remember the feeling, even if they forget the details. You may also read [what Krishna says to someone who has lost someone](/gita-on-grief-what-krishna-says-to-someone-who-has-lost-someone/) for a gentle way to speak about death with older children.
+
+## Remembering in your own way
+Some families plant a tree in memory of an elder, sponsor a meal at a temple, or give books to a school on the anniversary. These acts honour the same thought as the old rite: that what they gave us should be passed on. Do what is within your means and your heart.
+
+If your family has a lovely way of remembering the ancestors, we would be happy to hear it at hello@southwala.com.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

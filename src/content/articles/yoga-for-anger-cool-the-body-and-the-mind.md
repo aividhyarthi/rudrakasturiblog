@@ -57,6 +57,45 @@ When the heat has dropped, lie down in Shavasana for five minutes. Notice how di
 ## Build the gap over time
 A daily practice of ten minutes of breathing and gentle movement makes you more aware of your body and gives you more of a gap before you react. This is the real gift of yoga for anger. It does not make you passive. It gives you a choice.
 
+## A one-minute check-in you can do anywhere
+You do not need a mat for this. Try it at your desk, in a queue or in the car (when parked).
+
+1. Notice where the anger sits. Is it in the jaw, the chest, the hands?
+2. Put your attention there and let that part soften by about ten per cent. Do not force it.
+3. Breathe out for six counts, in for four.
+4. Ask yourself one question: *what do I actually need right now?* It may be rest, food, an apology or simply a quieter room.
+
+Often anger is the loud cover for something simpler, such as tiredness or hurt. Naming the need takes some of the heat out.
+
+## An evening routine to keep the temper cool
+Anger is easier to meet when the body is rested. For a week, try this before bed.
+
+- Stretch gently for five minutes, with a slow forward fold and a soft twist each side.
+- Do five rounds of humming breath.
+- Lie in Shavasana for five minutes and let each part of the body go heavy.
+- Write down one moment from the day when you stayed calm. It reminds you that you can.
+
+## Things that make anger worse
+- **Skipping meals.** Many people are quicker to snap when they are hungry.
+- **Too little sleep.** A tired body has less patience.
+- **Too much caffeine.** It can make the heart race and the mood sharper.
+- **Replaying the argument.** Going over it again and again feeds it.
+
+## Questions people ask
+**Is it wrong to be angry?**
+No. Anger tells you that something matters to you. The teaching is about what you do with it. Acting from a calm mind usually protects what you care about better than acting in a rage.
+
+**What about punching a pillow or shouting?**
+Some people find a short burst of movement helps. Others find that rehearsing rage keeps it going. Fast walking or slow breathing is a safer choice for most.
+
+**Can I do these practices with children?**
+Yes. Blowing out an imaginary candle or humming like a bee works well with children. Keep it playful, and do it with them rather than at them.
+
+**Should I wait until I am calm to talk?**
+Usually, yes. Say that you need a few minutes, and come back when you can speak without shouting. Then you can say what you feel without blame.
+
+If you have a way of cooling down that works for you, we would be glad to hear about it at hello@southwala.com.
+
 ## What Krishna says
 In the Gita, Krishna traces the path from a thought, to attachment, to desire, to anger, to confusion and ruin (2.62 and 2.63). The earlier you catch it, the easier it is. See [our article on this](/bhagavad-gita-on-anger-krishna-teaching/).
 

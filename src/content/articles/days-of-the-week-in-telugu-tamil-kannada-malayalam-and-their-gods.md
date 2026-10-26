@@ -1,7 +1,7 @@
 ---
 title: "Telugu days of the week: Somavaram to Shanivaram and their gods"
 description: "Somavaram, Mangalavaram, Guruvaram, Shanivaram: what each day is called in four languages, which god and planet it belongs to, and what families do on each day."
-date: "2027-03-01T00:00:00+05:30"
+date: 2026-12-11T07:00:00+05:30
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"

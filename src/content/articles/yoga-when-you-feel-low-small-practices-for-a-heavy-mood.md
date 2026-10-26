@@ -52,6 +52,39 @@ Make the bed. Wash a cup. Water a plant. Small completed tasks give the mind a q
 ## A mantra for the heavy days
 Repeating a short name such as *Om Namo Narayanaya* or *Om Namah Shivaya* gives the mind something steady to lean on. See [how to start japa](/mantra-japa-how-to-start-count-and-keep-going/).
 
+## A gentle morning order
+If you want to string the steps together, here is one order that keeps the effort low.
+
+1. Drink a glass of water.
+2. Open the curtains and stand in the light for a few minutes.
+3. Three slow breaths, with the out-breath longer.
+4. A short walk, even around the building.
+5. One small task, then a small breakfast.
+
+If you do only the first two, that still counts. On the heaviest days, the aim is not to do more. It is to do something kind for yourself.
+
+## A closer look at why small things help
+When the mood is low, the mind tells you that nothing is worth doing. Small tasks answer this quietly. Each one is a small piece of evidence that you can still act. Light, movement and regular meals also support the body's own rhythms of sleep and waking, which low mood tends to disturb. None of this cures anything, but it can give you a little steadier ground to stand on.
+
+The old traditions also valued small, regular acts: lighting one lamp at dusk, offering one flower, saying one name. You may find comfort in a tiny ritual of this sort. A lamp lit in a dim room can lift the feeling of the evening more than you expect. See also [how to keep a mantra going](/mantra-japa-how-to-start-count-and-keep-going/).
+
+## Words to be gentle with
+- Try not to say to yourself, "I should be fine by now."
+- Try not to compare your slow day with someone else's busy one.
+- Try saying, "This is a heavy day. I will do one small thing."
+
+## Questions people ask
+**Can I do this if I have no energy at all?**
+Yes. Begin with the water and the light. Many people find that the rest follows, a little at a time.
+
+**Is it okay to rest?**
+Yes. Rest is not laziness. If you are exhausted, rest first, and add small actions as you are able.
+
+**Should I tell someone?**
+If the heaviness stays, yes. Tell someone you trust, and think about seeing a doctor. Asking for help is a sensible step, and it is a sign of care for yourself.
+
+If you would like to share what has helped you on a hard day, you can write to us at hello@southwala.com.
+
 ## What this is not
 Yoga, prayer and walks are good support. They are not a treatment for depression, and being unable to pull yourself out of it with willpower is not a weakness.
 

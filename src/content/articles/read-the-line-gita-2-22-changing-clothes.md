@@ -62,4 +62,29 @@ It does not say that grief is wrong. It does not say that the person who died di
 ## One thing to try
 Think of one thing you are holding on to that has already worn out: a role, a grievance, an old picture of yourself. Read the verse again. What would it mean to put it down, as one puts down an old coat?
 
+## A closer look at the surrounding verses
+Verse 2.22 is part of a short run of teaching about the self. Just before it, in 2.20, Krishna says that the self is never born and never dies. Just after it, in 2.23, he says that weapons do not cut it and fire does not burn it. Read together, the three verses make one picture: what is essential in a person is not harmed by what happens to the body.
+
+It helps to read the whole run at a gentle pace, and to ask what each image is doing. The clothes image is the homely one. It takes a very large idea and puts it into a thing you do every morning.
+
+## The picture of the coat
+Think about how you treat an old shirt. You may be fond of it. You may have worn it to a wedding or on a long journey. Still, when it wears out, you put it aside, and you do not think that you have ceased to exist. The verse asks you to hold the thought lightly, not to say that the body is worthless.
+
+The image also quietly teaches that the clothes are not you. People who have been ill, or who are growing older, sometimes find this verse a relief for that reason. The body may be changing, but the one who knows the change is steady.
+
+## Different ways teachers have read it
+Teachers of different schools read this verse in their own ways. Advaita teachers stress that the self is one and unchanging. Teachers of the devotional schools stress that the self is a distinct servant of God, who goes on. We have laid out those views in [Shankara, Ramanuja, Madhva: three ways to see God and the soul](/shankara-ramanuja-madhva-three-ways-to-see-god-and-the-soul/). You do not have to choose one to receive comfort from the verse.
+
+## Questions people ask
+**Should I read this verse to someone who is grieving?**
+Usually not at first. The verse works best after the shock has passed, and when the person asks for it. Sit with them, listen, and offer it later if it seems right.
+
+**Does it say we are reborn?**
+Yes, the verse speaks of the embodied one taking up new bodies. Different traditions and different people hold this with different degrees of certainty. You can read the verse as a statement of faith, or as a thought about continuity.
+
+**How do I use it when I am afraid of ageing?**
+Read it slowly, and then do something kind for the body: a walk, a good meal, a rest. The verse asks you to see the body clearly, not to ignore it.
+
+If this verse has helped you in a hard season, you are welcome to tell us at hello@southwala.com.
+
 See also [Gita on grief: what Krishna says to someone who has lost someone](/gita-on-grief-what-krishna-says-to-someone-who-has-lost-someone/) and [Why me? When someone you love dies](/why-me-when-someone-you-love-dies/).

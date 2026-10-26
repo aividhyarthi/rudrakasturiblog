@@ -57,4 +57,29 @@ The idea of acting without obsessing about the outcome helps here. See [Gita 2.4
 ## When it is more than jealousy
 If comparison is making you feel worthless, if you cannot stop checking, or if you feel low most days, please talk to someone. A counsellor or doctor can help.
 
+## A closer look at verse 3.35
+The Sanskrit begins *shreyan sva-dharmo vigunah para-dharmat sv-anushthitat*. The word *vigunah* means "lacking in quality" or imperfect. Krishna is not saying your path is lesser. He is saying that even a clumsy version of your own life is worth more than a polished copy of someone else's. The word for fear in the verse, *bhayavaha*, points to something many of us know: living another person's life is frightening because you are always afraid of being found out.
+
+## Questions people ask
+
+**Is it wrong to feel envious?**
+It is human. The feeling arrives on its own. What matters is what you do with it. You can look at it honestly, learn from it and let it pass.
+
+**What if my envy is about a sibling or close friend?**
+These are the hardest, because they sit close to love. Try telling a trusted person what you feel, and say a kind word to the sibling or friend when you can. Over time the knot often loosens.
+
+**How can I stop comparing on social media?**
+Mute the accounts that leave you feeling small, set a limit on time, and check in with real people. A message to a friend does more for you than an hour of scrolling.
+
+**Can envy ever be useful?**
+Sometimes. It can point to something you value, such as more time with family, creative work or good health. Once you know that, you can plan a small step for yourself.
+
+## Stories that sit well with this verse
+In the Mahabharata, Karna spent much of his life comparing himself with Arjuna and nursing his hurt. His generosity was famous, but the comparison cost him. You can read about him in [Karna: curses and choices](/karna-curses-and-choices-karma-of-the-generous/). Another story is of Ekalavya, who trained alone in the forest and became skilled by his own effort, though his story ends in sorrow. See [Ekalavya, the archer who gave his thumb](/ekalavya-the-archer-who-gave-his-thumb/). Both remind us that the pain of unfair comparison is old, and that people have survived it.
+
+## A small weekly habit
+Once a week, write down three things you did that you are glad of, however small, and one thing you are learning. When envy rises, read the list. It is not a cure, but it reminds you that your life has its own story.
+
+If this helped, or if you have found a better way to deal with comparison, write to us at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

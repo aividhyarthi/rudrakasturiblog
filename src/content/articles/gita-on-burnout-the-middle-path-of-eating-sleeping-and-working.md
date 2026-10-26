@@ -68,6 +68,31 @@ If two or more are off, you have found your starting point.
 ## The other extreme
 The verse also warns against too little effort, too much sleep. Laziness is its own extreme. The Gita's answer is the middle, not rest at all costs. See [the Gita on procrastination](/gita-on-laziness-and-procrastination-just-start-the-task/).
 
+## A closer look at the words
+The verse uses a handful of small words that carry a lot. *Ahara* is food, and in the wider sense, everything you take in: not only meals but also news, conversation and screens. *Vihara* is recreation or movement, the way you go about your day. *Cheshta* is effort. *Svapna* and *avabodha* are sleep and waking. Read this way, the verse asks: what are you taking in, how are you moving, how are you working, and are you resting?
+
+The result, says the text, is that yoga becomes the destroyer of *duhkha*, sorrow or pain. It does not promise that work will become easy. It says that a balanced life takes the sting out of it.
+
+## What the middle path is not
+- **It is not doing everything halfway.** You can work with full attention for a few hours and then rest fully.
+- **It is not the same for everyone.** A student, a farmer, a nurse on night shift and a new parent will each have a different shape of day. Moderation is measured against your own needs.
+- **It is not a failure to have hard seasons.** A busy week or a family emergency can happen. The question is whether you return to balance afterwards.
+
+## If your work will not let you
+Sometimes the job itself is the problem, with long hours, no leave and an unkind manager. In that case, small habits help but do not solve it. It may be time to talk to someone about workload, to look for a different role, or to ask for help at home. The Gita's call to balance is not an instruction to endure unfair conditions silently. Our page on [purpose at work](/searching-for-purpose-at-work-dharma-and-your-job/) looks at this question more closely.
+
+## Questions people ask
+**Is rest selfish when there is so much to do?**
+The verse says the opposite: balance is part of doing the work well. A rested person makes fewer mistakes and treats others better.
+
+**Does fasting count as going against the verse?**
+The verse warns against not eating at all. Light, occasional fasts that suit your health are a separate matter. If you have a health condition, follow your doctor's advice.
+
+**How do I rest when my mind will not stop?**
+Slow breathing with a longer out-breath, a short walk, or a few minutes of quiet prayer can help. See the page on [overthinking](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/).
+
+If you have found your own way to keep the balance, you are welcome to share it at hello@southwala.com.
+
 ## When it is more than tiredness
 If you feel numb, hopeless or very low for weeks, if you can't sleep or sleep all day, or if you think of harming yourself, please see a doctor or counsellor. Burnout and depression can overlap, and both respond to help. See [yoga when you feel low](/yoga-when-you-feel-low-small-practices-for-a-heavy-mood/).
 

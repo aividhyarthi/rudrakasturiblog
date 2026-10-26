@@ -56,6 +56,9 @@ The story is not about guilt as a feeling. It is about the order of the world, i
 **What should I do if I carry a heavy mistake?**
 Name it honestly, make amends in practical ways, and ask for help from a trusted elder, friend or counsellor. Prayer is a support, not a substitute. If guilt is weighing on your sleep and health, please speak to a doctor or counsellor.
 
+## A thought to carry
+The story does not ask you to feel crushed by guilt. It asks you to be honest, to do the slow work of putting things right, and to trust that release comes to those who keep walking. Most of us will never carry anything like a skull, but we all carry small regrets, and the same path applies to them.
+
 If this story has given you a way of thinking about a hard time in your own life, we would like to hear from you at hello@southwala.com.
 
 Related: [Shiva mantras with meaning](/mantras/shiva/) and the temple of [Srisailam](/temples/srisailam-mallikarjuna-temple/).

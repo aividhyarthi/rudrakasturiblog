@@ -68,4 +68,35 @@ In big cities during winter, the air itself can be a problem. On very polluted d
 ## A small test
 Stand with one hand on your belly. If it moves a little when you breathe, you are doing it right. If only your chest and shoulders move, you may be a shallow breather, and the belly breathing practice is a good place to start.
 
+## A two-minute reset at your desk
+You do not need a mat for this.
+1. Sit on the front half of your chair with your feet flat on the floor.
+2. Let your shoulders drop away from your ears.
+3. Put your hands on the sides of your lower ribs and breathe in through the nose. Feel the ribs widen under your hands.
+4. Breathe out slowly, as if fogging a mirror, and feel them close.
+5. Repeat for ten breaths.
+
+Doing this once or twice a day teaches your body what a fuller breath feels like.
+
+## Questions people ask
+
+**Should I breathe deeply all day?**
+No. Your body breathes on its own, and forcing big breaths can make you dizzy. The aim is a relaxed, quiet breath through the nose, with the belly softly moving. Practise for a few minutes, then let it go.
+
+**Is mouth breathing a problem?**
+Many people breathe through the mouth when the nose is blocked, which is common with colds and allergies. If your nose is blocked for weeks, ask a doctor. For daily rest, breathing through the nose is usually more comfortable.
+
+**Why does my chest feel tight when I am anxious?**
+Stress makes the muscles around the ribs tighten, and the breath becomes quick. Slow, longer out-breaths and an easy stretch often help the feeling ease. If chest tightness is new, severe or comes with pain, get medical help straight away.
+
+**How long before I notice a difference?**
+Some people feel calmer after the first session. Changes in posture and habit usually take a few weeks of regular practice.
+
+## Breathing and the mind
+The old yoga texts treat the breath as a bridge between body and mind. When the breath is rough and fast, the mind tends to be too. When it is slow and even, the mind often follows. You can use this in a small way during the day: before a phone call, before opening an email you dread, or when you climb a flight of stairs, take one slow breath out first.
+
+For a fuller programme of breathing exercises, read [pranayama for beginners](/pranayama-for-beginners-three-safe-breathing-practices/). If you sit for long hours, you may also like [yoga for neck and shoulder pain](/yoga-for-neck-and-shoulder-pain-from-sitting-at-a-desk/), since a relaxed upper back gives your breath more room.
+
+If a particular habit changed how you breathe, write to us at hello@southwala.com.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*

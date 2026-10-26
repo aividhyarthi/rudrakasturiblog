@@ -51,6 +51,29 @@ It is a tradition that ties together farming, devotion and gratitude, and it is 
 4. **Use the official counters** for darshan and puja tickets.
 5. **Plan a half-day** and add a stop at Karimnagar's other temples if you have time.
 
+## A closer look at the idea of a vow
+A *mokku* is a promise made to God, and it sits at the heart of many village traditions in Telangana and Andhra. The pattern is simple: you ask, you wait, and when the wish is fulfilled, you return to give thanks. The Kode Mokku adds something special: you bring something living and valuable to farmers, a bull, and offer it with respect.
+
+It is worth noticing what the vow does for the person who makes it. It gives a worry a place to go. And it ties a family to a place and a time of return. Many families make the trip together, so that the vow becomes a story the children remember.
+
+## Why the bull?
+The bull is Nandi, the faithful companion of Shiva, who sits facing the sanctum in almost every Shiva temple. In a farming society the bull is also the strength of the farm: it ploughs the field and pulls the cart. To offer a bull is to offer something close to the heart of the family's livelihood. It is also a reminder of how closely the land and worship were bound.
+
+## Questions people ask
+**Is Vemulawada connected to Kashi?**
+The town is called Dakshina Kashi, meaning "Kashi of the South". The name expresses how much the people hold the temple in esteem.
+
+**Do I need to bring a bull to visit?**
+No. Most visitors do not. The bull is part of a specific vow. You may come for ordinary darshan.
+
+**Is it a good place for children?**
+Yes, but festival days are very busy. Visit on a weekday if you have small children or elderly relatives.
+
+**Does the town welcome people of other faiths?**
+The town has a dargah as well as the temple, and local people of both faiths visit each other's festivals. Visitors are welcome so long as they come with respect.
+
+If you have made a Kode Mokku, or your family has a vow story, write to us at hello@southwala.com. We would be honoured to read it.
+
 ## For more on Shiva
 If you are curious about the god behind it all, read [who Shiva is](/who-is-shiva-five-things-most-people-get-wrong/) and see our guide to [Srisailam](/temples/srisailam-mallikarjuna-temple/).
 

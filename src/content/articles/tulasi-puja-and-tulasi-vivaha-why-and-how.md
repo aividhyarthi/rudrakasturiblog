@@ -65,6 +65,8 @@ No. Many families do it at home with their own songs and a simple puja. A priest
 ## Making it a family occasion
 Children enjoy Tulasi Vivaha. Let them decorate the platform, draw rangoli and help dress the plant. Some households invite neighbours and friends to the evening ceremony, and the tradition of giving fruit and sweets to guests turns it into a small festival. Lamps are lit around the platform, and you can link it to the lamp-lighting of the month in [Karthika Deepam](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/). For the fasting day on which Vishnu wakes, see the [Ekadashi page](/ekadashi/).
 
+Even a small pot on a flat roof or a window sill can be the centre of a lovely evening. What matters is that you pause, light a lamp and give the plant your attention for a few minutes.
+
 If your family has a special Tulasi song or custom, write to us at hello@southwala.com.
 
 *Traditions vary by region and family.*
