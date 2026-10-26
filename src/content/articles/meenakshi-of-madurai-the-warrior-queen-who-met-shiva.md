@@ -51,4 +51,27 @@ The Meenakshi Sundareswarar temple in Madurai is one of the great temples of Ind
 ## Visiting
 Visit early in the morning, or after sunset when the evening *palliyarai* procession takes place. Many visitors start with the Potramarai tank, then Meenakshi and then Sundareswarar. Dress modestly, and expect crowds on Fridays and during festivals.
 
+## A closer look at the parrot
+In the sanctum, Meenakshi stands with a parrot resting on her hand. Why a parrot? The temple tradition does not give one fixed answer, so here is a gentle way to think about it.
+
+A parrot repeats what it hears, and carries words from one place to another. Many devotees see in it the goddess as the one who listens to every prayer and carries it onward. Others simply enjoy it as a sign of her youth and sweetness. You do not have to choose. Stand before her, look at the bird, and let your own thought come.
+
+## Questions people ask
+**Is this a historical account?** No. It is a temple legend, told in the sthala purana of Madurai. The Pandya kings were real rulers of this region, but the story of the girl from the fire belongs to devotion, not to the history books.
+
+**Why does Vishnu give the bride away?** In the Tamil tradition, Vishnu is seen as Meenakshi's brother, so he takes the brother's place at the wedding. This is one reason Shaiva and Vaishnava devotees both feel at home at the festival.
+
+**Should I visit her before Sundareswarar?** Many pilgrims do, as the text above says. If you are in a crowd and cannot manage the order, do not worry. A prayer said sincerely is not spoiled by the queue.
+
+## How you can keep the story at home
+You do not need to travel to Madurai to honour her.
+- Tell the story to a child in your own words, stopping at the moment she lowers her eyes.
+- On a Friday evening, light a lamp and say her name with a short prayer of your own.
+- In the Tamil month of Chithirai, remember the wedding. A simple sweet offered at home is enough.
+
+## Reading it with modern eyes
+It is easy to read the legend as a fairy tale. Try reading it as a story about a woman who never doubted her own strength and still had the grace to recognise someone she could trust. She did not shrink to meet Shiva, and he did not demand that she shrink. That is a picture of partnership that many families could learn from.
+
+If this legend, or a family memory of Madurai, means something to you, write to us at hello@southwala.com. We would love to hear it.
+
 See also [Meenakshi Amman temple, Madurai: guide and stories](/meenakshi-amman-temple-madurai-guide-and-stories/) and [Kamakshi of Kanchipuram](/kamakshi-of-kanchipuram-the-goddess-who-embraced-the-sand-lingam/).

@@ -63,4 +63,29 @@ For a week, give the mind five minutes. Sit, close your eyes, and count ten brea
 ## A word on patience
 The Gita does not promise results in a week. The next verse (6.36) adds that yoga is hard for the one who cannot control himself, but is attained by the one who strives by right means. Think in months, not days.
 
+## A closer look at the word calam
+*Calam* means moving, shaking, unsteady. The same word is used in Sanskrit for the flicker of a flame in the wind or the ripple on water. It does not mean evil or broken. The mind is described as restless by nature, in the same way that water flows downhill. Seen this way, a wandering mind is not a personal failing. It is how minds behave, and Krishna says so plainly.
+
+## What practice looks like
+Abhyāsa is a word you will meet again in the Yoga Sutras of Patanjali, where practice and non-clinging are also named together as the two ways to still the mind. Here are a few ordinary forms it can take:
+- Sitting at the same time each day, even for five minutes.
+- Chanting a short mantra, such as the one you learned as a child. See our guide to [mantra japa](/mantra-japa-how-to-start-count-and-keep-going/).
+- Reading one verse slowly each morning.
+- Counting breaths before sleep.
+
+## What non-clinging looks like
+Vairāgya is easy to misunderstand as coldness. In daily life it can be quite small. You notice a worry arriving, you say "I see you", and you do not follow it down the road. You stay kind to the people around you. You do the job in front of you. You let the result be what it will be.
+
+## Questions people ask
+**Does everyone have this problem?**
+Yes. Arjuna, a great warrior, said it first. If you feel your mind will not behave, you are in good company.
+
+**How long before it gets easier?**
+Everyone is different, and the text does not give a number. Many people find that after a few weeks of steady practice they recover from distraction a little faster. That is a good sign.
+
+**Is this a medical solution for anxiety?**
+No. This is a spiritual teaching about attention. If your restlessness comes with panic, low mood or sleeplessness that is hard to bear, please speak to a doctor or counsellor. It is not a weakness to ask for help.
+
+If this verse has become your companion on difficult days, we would be glad to hear how at hello@southwala.com.
+
 See also [Gita on overthinking](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/) and [Yoga for overthinking: how to quiet a busy mind](/yoga-for-overthinking-how-to-quiet-a-busy-mind/).

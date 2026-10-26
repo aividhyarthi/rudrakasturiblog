@@ -56,4 +56,30 @@ All three are in the text, and none excludes the others.
 ## Where to think of it
 The forest of Dandaka covered a vast area of central and southern India, and traditions attach Rama's stay to many places, from Panchavati near Nashik to Bhadrachalam on the Godavari, where the Rama temple draws crowds at Sri Rama Navami.
 
+## A closer look at the moment of refusal
+The most delicate moment in this scene is Rama's gentle no. Sharabhanga offers the fruit of a lifetime of austerity, and Rama declines. Yet the text does not read as a rejection. It reads as respect.
+
+In the story Rama is a young man in exile, with nothing in his hands. A gift of heavenly worlds is the kind of thing a person might be tempted to accept. He says, in effect, that he would rather earn his own way. The old man understands, and is not hurt. He sends Rama onward to Sutikshna instead, which is a more useful gift than any heaven.
+
+Think of the last time someone offered you something that was not really yours to take. How hard it is to refuse without wounding them! Rama shows one way.
+
+## Questions people ask
+**Why does Sharabhanga enter the fire?** In the text this is his chosen way of leaving the body, a final act of an ascetic. We do not recommend or imitate such things, and the story is not an instruction. It is a picture of a man who is entirely at peace with his ending.
+
+**Who is Sutikshna?** Another sage of the Dandaka forest, to whom Sharabhanga sends Rama. The Aranyakanda continues with Rama visiting a chain of hermitages.
+
+**Does Indra get angry at being kept waiting?** The text does not show anger. It shows Indra stepping aside and letting the meeting happen.
+
+**Is waiting always a virtue?** Not always. The story praises waiting for a right and meaningful meeting, not putting off every duty.
+
+## How you can use this in daily life
+- Think of one person you want to meet, thank or forgive before a year ends. Do not let the busy days push them aside.
+- When someone offers you help you do not need, practise saying no with warmth, and thank them for the thought.
+- If an older relative is waiting for a visit, go. Sharabhanga would understand.
+- Pass something on: a skill, a recipe, a phone number of someone useful. His last act was to point Rama to the next door.
+
+Read the Ramayana characters who wait with the same patience, such as [Shabari](/shabari-the-old-woman-who-waited-for-rama-at-pampa/), whose story is a close companion to this one.
+
+If a story of waiting, in your own family, comes to mind, write to us at hello@southwala.com.
+
 See also [Bhadrachalam: Rama Navami and Ramadasu](/bhadrachalam-sri-rama-navami-kalyanam-and-the-story-of-ramadasu/) and [Guha, the boatman king](/guha-the-boatman-king-who-hosted-rama/).

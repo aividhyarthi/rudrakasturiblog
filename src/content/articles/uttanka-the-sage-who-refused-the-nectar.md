@@ -53,4 +53,35 @@ Krishna then told him that the water could still come to him. When Uttanka next 
 ## A note
 This is one of the Mahabharata's less told stories, and the text calls the dogs and the hunter by names that show the caste prejudice of the time. Readers today often find in it a warning rather than a model: the sage's refusal is the mistake.
 
+## A closer look at the vishvarupa
+The *vishvarupa* is the universal form of Krishna, shown to Arjuna on the battlefield in the Gita (chapter 11) and, in this story, to Uttanka. In both cases the person who sees it is not the same afterwards.
+
+Look at what it does in each case. Arjuna is shaking with doubt, and the vision gives him a way to go on. Uttanka is shaking with anger, and the vision dissolves it. The form does not give a neat argument. It gives a wider view, and the question "why did you let this happen?" looks different from there.
+
+You may notice something in your own life. When you are furious with someone, a longer view, perhaps a night's sleep, or a talk with an older friend, often does what Uttanka's vision did. It does not erase what happened, but it changes the size of it in your mind.
+
+## Reading it with modern eyes
+This story asks us to be honest about two things.
+
+**Our anger.** Uttanka does not hide it. Many people feel they must not be angry with God or fate. The story suggests that it is better to say the feeling aloud and to listen for a reply than to bury it.
+
+**Our blind spots.** Uttanka's refusal of the hunter shows how habit and prejudice can sit inside a person who is otherwise wise and disciplined. Austerity does not automatically cure that. It takes a second look, and sometimes a painful one.
+
+A few questions you can ask yourself:
+- Who or what do I turn away from because of how it looks?
+- Have I ever refused help because it arrived in a form I did not like?
+- Am I willing to stay and listen when I am angry with someone I trust?
+
+## Questions people ask
+**Is this story in the Bhagavad Gita?**
+No. It is told in the Mahabharata, in the Ashvamedhika Parva, which comes after the war. The Gita is in the Bhishma Parva.
+
+**Did Krishna really not stop the war?**
+In the epic, he does try, for instance by going to the Kauravas as a messenger of peace before the fighting. That is why the story is read as a conversation about responsibility and not as a simple answer.
+
+**Where do Uttanka's clouds appear?**
+The story places them in the dry lands of the west. It is a memory of a desert that sometimes receives rain.
+
+If this story spoke to you, or you read it differently, you are welcome to write to hello@southwala.com.
+
 See also [Ekalavya, the archer who gave his thumb](/ekalavya-the-archer-who-gave-his-thumb/) and [Gandhari's curse and Krishna](/gandharis-curse-and-krishna-karma-of-the-yadavas/).

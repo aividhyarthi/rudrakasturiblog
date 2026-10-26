@@ -67,4 +67,33 @@ The sage Mudgala, in the Mahabharata, was offered heaven and said no. He lived o
 ## One thing to try
 Choose one possession or privilege that you tend to grip: a title, a gadget, a seat at the table. Hold it for a day as if it were on loan. Notice how that changes the way you feel when it is not there.
 
+## Where this verse sits
+The Isha Upanishad is short. It has eighteen verses and forms the last chapter, the fortieth, of the Vajasaneyi Samhita of the Shukla Yajurveda. Most Upanishads sit in a section of explanation attached to the Vedas. This one is part of the Samhita itself, which is one reason it is treated with such respect.
+
+It begins with the peace invocation many people know: *pūrṇam adaḥ pūrṇam idam*, "that is full, this is full." Then, straight away, comes the verse we are reading. It is as if the teacher says: here is the whole lesson, and the rest is explanation.
+
+## The very next verse
+The second verse is a useful companion. It says that a person should go on doing their work and wish to live a hundred years, and that this way, and no other, the action does not cling to you.
+
+So the Upanishad does not ask you to leave your job, your family or your duties. It asks you to carry them lightly. Verse 1 tells you how to think about what you have. Verse 2 tells you how to act.
+
+## Questions people ask
+**Is "tyaktena" about giving things away?**
+Teachers take it in more than one way: giving up the sense of "mine", or enjoying what has been given to you. Either way, the emphasis is on the inner grip, not only on the outer object.
+
+**Can a householder follow this?**
+Yes, and the verse seems written for exactly that person. A hermit with nothing has little to cling to. A householder has to learn it while the things are still in the room.
+
+**Does "do not covet" only mean other people's money?**
+The word is about wealth, but you can stretch it. Many of us envy another person's praise, health or peace of mind. The same lesson applies.
+
+## A small daily practice
+At the end of the day, think of three things you used or enjoyed: a meal, a conversation, a warm bed. Say quietly, *this was given.* You are not trying to feel guilty or to feel holy. You are only practising the first half of the verse, that things come to us, and that we do not make them.
+
+Over time many people find they enjoy things more, not less, because they are no longer afraid of losing them.
+
+You may also like [Bhagavad Gita 2.47](/bhagavad-gita-2-47-meaning-karmanye-vadhikaraste/), which asks for a similar lightness in action.
+
+If this verse has meant something in your own life, write to us at hello@southwala.com.
+
 See also [Mudgala: the sage offered heaven who asked what the catch was](/mudgala-the-sage-who-said-no-to-heaven/) and [The ten principal Upanishads: a beginner's map](/the-ten-principal-upanishads-a-beginners-map/).

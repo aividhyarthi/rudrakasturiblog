@@ -65,4 +65,24 @@ Don't turn it into a competition or a source of stress. If you cannot rise at fi
 ## What follows
 This month we will look at Damodara, Karthika Somavaram, the story of Ambarisha, Tripura Pournami and the lamp tradition. Start with [Karthika Damodara](/karthika-damodara-krishna-the-rope-and-the-month-of-lamps/) if you are curious about Vishnu's side of the month.
 
+## Questions people ask
+**Do I have to be Telugu to keep Karthika?** No. The month is kept widely in the South and across India, under various names and customs. Take what suits your family.
+
+**Must I fast every Monday?** The tradition praises it, but a fast is a personal choice. If you have a health condition, are pregnant, elderly or on medicines, eat as your doctor advises. This is not medical advice, and no fast is worth harming your health.
+
+**Is a lamp enough if I cannot do anything else?** Yes. Of all the things of the month, the lamp is the one that almost everyone agrees on.
+
+**Which oil should I use?** Families use sesame oil, ghee or castor oil, depending on custom. Use what your family does and what you can afford.
+
+## Making the month your own
+The month is long, and it is easy to start with energy and lose it in the second week. A few ideas:
+- Choose one small thing and keep it every day, such as a single lamp at dusk.
+- Add a second thing only on Mondays.
+- Keep the last week for something generous, such as sharing a meal or helping a neighbour.
+- Write down, on the last day, what you noticed. You may find that the lamp lit your own mind a little too.
+
+You may also like to read [Karthika Somavaram, the Monday fast](/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/) for the Shiva side of the month.
+
+If your family has a Karthika custom that we have not mentioned, write to us at hello@southwala.com.
+
 *Customs differ by family and region. If your family follows a different practice, follow it.*

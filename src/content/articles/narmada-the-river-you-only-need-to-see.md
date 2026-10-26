@@ -47,5 +47,28 @@ Local villagers along the route often offer food and shelter to the parikramavas
 ## A modern concern
 The river has been at the centre of a long debate on dams, such as the Sardar Sarovar, and on displacement of villages. Many families worship her and also worry about what is happening to her. Both are part of the story today.
 
+## A closer look at the Narmadeshwar stones
+Bana lingas are naturally shaped stones, often with reddish-brown bands or markings, polished smooth by the water over a very long time. People say they are special because no human hand made them. The belief that they need no formal installation is an old and widespread one among Shaiva families, and it is why a small stone can sit in a home shrine and be treated with full reverence.
+
+If you buy one, buy from a reliable source and ask the seller about it. Some stones sold in tourist places are carved or painted. A river-polished stone has a natural, uneven feel.
+
+## Questions people ask
+**Why is she said to purify by sight alone?**
+It is a devotional way of saying that the Narmada is especially dear to Shiva. You do not have to read it as a rule. It tells you how much the river is loved.
+
+**Do I have to do the whole Parikrama?**
+No. Many people simply visit Omkareshwar or Maheshwar, bathe at a ghat, offer a lamp and sit by the water. A short visit made with a quiet heart is not lesser.
+
+**Is it a good time to visit in the monsoon?**
+The river runs very full in the rains, and ghat steps can be slippery or closed. Winter, from October to February, is more comfortable for most travellers. Always follow local advice near the water.
+
+## How to remember her at home
+You do not need to travel to feel close to the river. Keep a small bowl of clean water on your prayer shelf, and when you pour it out, say the river's name, Narmada, Reva, with thanks for all the water that reaches you. Many families also keep a little water from a river pilgrimage in a clean vessel. It is a gentle way of carrying a place home.
+
+If you have walked any part of the Narmada, or have a family story of the river, we would love to hear it at hello@southwala.com.
+
+## Keeping the river clean
+Because she is loved so much, many devotees now take care when they visit. Offer flowers and lamps in the places set aside for them, and avoid throwing plastic, clothes or old puja items into the water. Taking a bag to carry your waste back is a small act that honours a mother. Local groups along the banks often welcome volunteers for clean-up days, and that too can be a form of seva.
+
 ## Related
 If you enjoy river stories, read about [the Ganga](/ganga-why-a-river-is-a-goddess/) and the [Kaveri](/kaveri-the-ganga-of-the-south-and-the-story-of-the-crow/).

@@ -58,4 +58,28 @@ Kahoda embraced his son, and told him to bathe in the river Samanga. When he cam
 ## The other Ashtavakra
 A famous Advaita text, the *Ashtavakra Gita*, is a conversation between Ashtavakra and Janaka. It is a later work, and scholars do not take it as the work of the boy in this story, though it takes his name. It is worth reading for its radical statement of non-duality.
 
+## A closer look at the name
+*Ashta* means eight and *vakra* means bent or crooked. So the boy's name simply describes his body. It is worth pausing on that. In the story, the very thing that made the scholars laugh became the name by which the world remembers him.
+
+The tradition does not say the bends were a punishment he deserved. It says they came from his father's anger. The boy carried the cost of a grown man's wounded pride, and then, at twelve, carried the family's honour as well.
+
+## Questions people ask
+**Was Ashtavakra really only twelve?**
+That is how the Vana Parva account is told: a boy, not a grown scholar. This is why the gatekeeper's surprise is the heart of the scene.
+
+**Why did Bandin's custom last so long?**
+The story gives no excuse for it. It shows how easily a clever person can mistake winning for wisdom, and how nobody in the court dared to question him until a child did.
+
+**Did the scholars who were "drowned" really die?**
+In the text, Bandin explains that they had been sent to Varuna's sacrifice and would return. They did return, and the story treats this as a joyful reunion rather than a puzzle to be solved.
+
+## Reading it with modern eyes
+This is an old story, but you may know its small versions. A young person is dismissed in a meeting because of how they look or how little they have studied. A senior person is corrected by someone junior and feels the sting.
+
+If you are the one being laughed at, remember how Ashtavakra answered: calmly, and with the work already done. If you are the one with experience, remember Kahoda. Being corrected is not an insult. The voice from the womb was right, and the father lost years because he could not hear it.
+
+You might also like the story of [Ekalavya, the archer who gave his thumb](/ekalavya-the-archer-who-gave-his-thumb/), another young person judged on the wrong things.
+
+If this story reminds you of someone in your own family, you are welcome to write to us at hello@southwala.com.
+
 See also [Advaita Vedanta in plain words](/advaita-vedanta-in-plain-words/) and [Bhaja Govindam, Shankara's song for the confused mind](/bhaja-govindam-shankaras-song-for-the-confused-mind/).

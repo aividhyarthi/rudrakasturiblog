@@ -44,4 +44,37 @@ Mylapore is also a cultural district. It has old agraharam houses, the December 
 - Fridays and Pradosham evenings are busy. Weekday mornings are quiet.
 - Footwear stays outside, and dress should be modest.
 
+## A closer look at the Nayanmars
+The 63 Nayanmars were Shaiva saints who lived over many centuries in Tamil lands. They came from every walk of life: kings, farmers, potters, hunters and washermen. What joins them is the way they loved Shiva.
+
+The *Tevaram* is the collection of hymns by three of the greatest of them, Sambandar, Appar and Sundarar. When you stand in the temple and hear the verses sung in Tamil, you are hearing a tradition that has been passed from voice to voice for a very long time. You do not need to follow every word. The tune and the feeling carry a lot.
+
+That is also why the Arubathu Moovar procession moves people so much. The saints are not carried as distant figures. They are carried as members of the family, round the streets where people live.
+
+## How to spend a morning here
+Here is a simple plan, if you are visiting from far away.
+
+1. **Arrive early.** The streets are cool, and the flower and fruit sellers are setting up.
+2. **Walk round the tank first.** Sit a while on the steps and let the noise of the city fade.
+3. **Enter the temple slowly.** Look up at the gopuram figures before you go in. Ask someone to point out the peahen sculpture.
+4. **Visit both shrines.** Pray at the Shiva shrine and at the goddess Karpagambal's shrine.
+5. **Sit quietly before you leave.** Even five minutes in the courtyard is enough to feel the place.
+
+Afterwards, a walk around the four streets, where the festival procession passes, shows you how much a temple can shape a neighbourhood.
+
+## Questions people ask
+**Is it only a Shiva temple?**
+Shiva as Kapaleeshwarar is the main deity, with the goddess Karpagambal beside him. As in most Tamil Shiva temples, there are also other shrines within the walls.
+
+**Do I have to know Tamil?**
+No. Priests and volunteers are used to visitors from all over India. A short prayer in your own language is welcome.
+
+**What is the best time of year?**
+Panguni, in March or April, is the most colourful, but also the most crowded. For a calm visit, choose an ordinary weekday morning.
+
+**Is photography allowed?**
+Rules differ by area and change from time to time. Look for signs, and ask before you take a photograph inside the inner shrines.
+
+If you grew up near this temple, or have your own memory of the Arubathu Moovar procession, write to us at hello@southwala.com. We would be glad to hear it.
+
 To place it in a bigger picture, see our [list of key Shiva temples](/temples/) and the story of [who Shiva is](/who-is-shiva-five-things-most-people-get-wrong/).

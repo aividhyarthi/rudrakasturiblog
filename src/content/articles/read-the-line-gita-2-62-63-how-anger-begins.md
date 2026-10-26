@@ -70,4 +70,29 @@ Next time you catch yourself going over a conversation or a grievance for the th
 ## A line to follow
 The verse after these (2.64) says that the one who moves among objects with the senses controlled, free from liking and disliking, attains peace.
 
+## Where these verses sit
+These two verses come in the middle of Krishna's answer to a question from Arjuna at 2.54: how does a person of steady wisdom speak, sit and walk? Krishna describes such a person at length. Just before our lines, in 2.58, he gives the picture of a tortoise drawing its limbs inside its shell. In 2.61 he says that the one who holds the senses in check should sit steadied, with the mind turned toward him.
+
+So the staircase is not a random warning. It is the other side of the picture. First he shows what steadiness looks like, then he shows how it is lost.
+
+## A closer look at two small words
+**Dhyāyataḥ.** The root is the same one that gives us *dhyāna*, meditation. In everyday Sanskrit it simply means to think about, to fix the mind on something. The Gita is pointing out that the mind is always meditating on something. The only question is on what. Most of us are practising a meditation on our grievances without knowing it.
+
+**Smṛti.** This is memory, but more than facts. It is remembering who you are, what you care about and what you promised. When anger takes over, we say things we do not mean. The verse says that is because memory has been muddled. You have not become a new person. You have temporarily forgotten yourself.
+
+## Questions people ask
+**Does this mean desire is always bad?**
+No. The chain begins with dwelling and clinging. A wish to feed your family or to learn is not what is being warned against. The trouble starts when a wish becomes something you cannot do without, so that any obstacle brings rage.
+
+**Is anger ever right?**
+The Gita does not say you must never feel it. It shows what anger does when it is allowed to grow: it clouds judgment. You can act firmly and fairly without being swept away.
+
+**What if I am already at step 4 or 5?**
+Then the best move is to pause. Walk away for ten minutes, drink water, breathe out slowly. Return to the matter only when you can remember what you value.
+
+## Reading it with kind eyes
+It is easy to read these verses as a scolding. They are better read as a map. A map does not blame you for being at the wrong place. It simply tells you where you are and how to get back. Each step on the staircase is also a step on the way up. If you reverse it, a calmer memory brings clearer discernment, and that brings peace.
+
+If these lines helped you catch a thought early, write and tell us at hello@southwala.com.
+
 See also [Gita on overthinking: the restless mind and how to hold it](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/) and [Yoga for anger: cool the body and the mind](/yoga-for-anger-cool-the-body-and-the-mind/).

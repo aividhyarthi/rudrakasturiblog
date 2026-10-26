@@ -51,4 +51,25 @@ The Puranas tell other stories about Anasuya. In one, the three gods, Brahma, Vi
 ## Where it connects today
 Chitrakuta, where Atri and Anasuya are said to have lived, still has a place called Sati Anasuya Ashram on the banks of the Mandakini. Dattatreya Jayanti is celebrated on Margashira Pournami.
 
+## A closer look at her name
+The name Anasuya is worth pausing on. In Sanskrit it means someone without *asuya*, which is the habit of finding fault, grudging, or looking at another person's good fortune with a sour heart. The same word turns up in the Gita, where Krishna begins a teaching by saying that he will share a deep secret with Arjuna because Arjuna is *anasuya*, one who does not carp (Gita 9.1).
+
+Seen this way, the scene in the hermitage makes sense. An old woman with great spiritual power could easily have been stern or proud with a young princess. Instead she is generous, curious and kind. The name and the behaviour match.
+
+## Questions people ask
+
+**Was Anasuya really that old?**
+Yes, in Valmiki's telling she is aged, frail and white-haired. The story seems to want us to see that goodness and strength do not depend on youth.
+
+**Are the Puranic stories about her part of the Ramayana?**
+No. The tale of the three gods turned into infants comes from later Puranic tradition. In Valmiki, she is a sage's wife who welcomes Sita. Both are loved, but it helps to know which is which.
+
+**Why is Dattatreya connected to her?**
+Tradition names Dattatreya as her son. You can read about his teaching in [Dattatreya and the 24 gurus](/dattatreya-and-the-24-gurus-what-the-avadhuta-learned/).
+
+## What you can take from it
+Think of the last time a young person, a new neighbour or a newcomer at work was struggling. Anasuya's example is simple: make time, give something useful, and then ask them to tell you their story. Listening is a gift that costs nothing.
+
+If a scene from the Ramayana has stayed with you, or an elder in your own family has treated you the way Anasuya treated Sita, we would love to hear about it at hello@southwala.com.
+
 See also [Pournami dates](/pournami/) and [Shabari, the old woman who waited](/shabari-the-old-woman-who-waited-for-rama-at-pampa/).

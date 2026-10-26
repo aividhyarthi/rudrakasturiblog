@@ -62,4 +62,22 @@ What this shows is that dharma does not tell you to stay silent and let injustic
 ## If you are in a harmful situation
 If the harm is ongoing, such as violence, threats or control, please seek real help. In India, you can call 112 in an emergency, and Women Helpline 181. Tele-MANAS (14416) is free for emotional support.
 
+## Questions people ask
+**What if the family member never apologises?**
+Many never do. Waiting for an apology can keep you tied to the person for years. You can decide for yourself that you are done carrying it, even if they never say sorry.
+
+**Can I still go to family functions?**
+Yes, if it is safe. You may go for a short time, speak politely and leave. Courtesy is not the same as closeness.
+
+**Is it selfish to put myself first?**
+Not when the other choice is being harmed again and again. Vibhishana was not selfish. He simply could not go on helping a wrong he had warned against.
+
+**Should I pray for them?**
+If it comes naturally, yes. But you do not have to feel warm towards them. Praying for them to be given understanding is enough.
+
+## A small practice for heavy evenings
+Sit for five minutes with a lamp or a quiet corner. Breathe slowly. Say to yourself, *this hurts, and I am still here.* Then write one sentence about what you want your own behaviour to be, not theirs. Keep it simple, such as "I will speak calmly" or "I will not reply tonight". Do this for a week and see what changes.
+
+If you would like to share how you have walked through such a time, you are welcome to write to hello@southwala.com. We read every letter.
+
 See also [Gita 6.5: lift yourself by yourself](/gita-6-5-lift-yourself-by-yourself/) and [Gandhari's curse and Krishna](/gandharis-curse-and-krishna-karma-of-the-yadavas/).

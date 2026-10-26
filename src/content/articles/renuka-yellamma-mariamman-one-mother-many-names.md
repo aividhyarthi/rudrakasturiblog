@@ -56,4 +56,23 @@ The devadasi system, in which girls were dedicated to Yellamma and often exploit
 ## Visiting
 Samayapuram is a major pilgrimage and best visited on weekdays. Saundatti holds large fairs on full-moon days. Follow the local customs about offerings, and avoid any practice that harms people.
 
+## A closer look at the neem and the pot
+Walk into a Mariamman festival and you will see two things again and again: neem leaves and pots.
+
+Neem is bitter, and it is cooling. In the hot months, when fevers and skin troubles used to spread through villages, people hung neem leaves at doorways and offered them to the goddess. Whatever you believe about the goddess, the link makes human sense: the village asked its mother for coolness when the heat was at its worst.
+
+The pot is the other symbol. It echoes the unbaked clay pot in the story, and in many festivals devotees carry pots on their heads in procession. A pot holds water, and water is what a dry land asks of its mother. So the same object speaks of the old story and of the plain need for rain.
+
+## Questions people ask
+**Is it right to say Renuka, Yellamma and Mariamman are one goddess?** Many devotees say so, and the FAQ above reflects that. But villages also have their own goddesses with their own histories. It is kinder to say that the traditions overlap than to insist they are identical.
+
+**Why do villages have a goddess at all?** The tradition calls her a *grama devata*, a deity of the village. She guards the boundary, keeps away illness and answers the people who live closest to her.
+
+**Is the story of the beheading meant to be taken as a model?** No. Even in the tradition, it is a hard story, and many tellers are critical of the father's order. It is remembered because the mother returns, not because the deed is admired.
+
+## What this teaches us
+The deepest note in Renuka's story is not the order or the pot, but the return. A mother is lost and restored, and from then on she belongs to everyone. That is why her many names are less a puzzle than a sign of how widely she is loved.
+
+If your family has its own way of honouring a village mother, we would be glad to hear it at hello@southwala.com.
+
 See also [Poonakam: why drums bring on a trance at temples](/poonakam-why-drums-bring-on-a-trance-at-temples/) and [Kali: the goddess people fear](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).

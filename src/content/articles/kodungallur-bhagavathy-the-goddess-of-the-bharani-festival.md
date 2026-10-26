@@ -51,4 +51,23 @@ The old customs are changing. The trance, the blood and the animal offerings hav
 ## Visiting
 The temple is in Kodungallur, in Thrissur district, about 40 km from Kochi. Bharani is extremely crowded, and not for everyone. On ordinary days the temple is quiet. Dress modestly and follow the instructions of temple staff.
 
+## A closer look at Muziris
+The old port that the article mentions is worth a moment. Muziris is named in ancient Greek and Roman writings as a busy centre where pepper from the Kerala coast was traded. When you stand in Kodungallur today, you are in a place the wider world has known about for two thousand years. That long meeting of cultures may be one reason the goddess here has so many stories: traders, sailors and travellers from different lands each left something behind.
+
+## Questions people ask
+**Is Kodungallur only a temple for the fierce goddess?** The main shrine is of the goddess in her fierce form, but the town has other places of worship and a mixed history. It is also known in connection with the early Christian and Jewish communities of the Kerala coast. Local people can tell you which sites to see.
+
+**Why do people wear red?** Red is the colour of the goddess in her fierce form, and of power and blood. It is common in goddess festivals across the South.
+
+**Is the Bharani trance meant to be copied?** No. It belongs to those who are chosen by their community to serve as oracles. Visitors come to watch with respect, and should not try to imitate it.
+
+**Is it safe to visit during Bharani?** The crowds are very large. If you are elderly, with children, or not used to crowds, consider a visit on a quieter day.
+
+## How to approach a goddess like this
+Not every goddess is gentle at first sight. The tradition says the fierce form is the protective one: she is fierce against what harms her children. If you find Kodungallur intimidating, remember that your own mother may also have been loud when you were in danger.
+
+You can also read about another strong goddess in [Kali: the goddess people fear and the mother they pray to](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).
+
+If you have visited Kodungallur, or your family keeps a tradition about the goddess, we would be glad to hear from you at hello@southwala.com.
+
 See also [Poonakam: why drums bring on a trance at temples](/poonakam-why-drums-bring-on-a-trance-at-temples/) and [Meenakshi of Madurai](/meenakshi-of-madurai-the-warrior-queen-who-met-shiva/).

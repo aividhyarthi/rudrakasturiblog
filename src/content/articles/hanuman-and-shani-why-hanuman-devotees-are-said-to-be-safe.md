@@ -62,6 +62,19 @@ If you are told you are in Sade Sati, or any hard period, three things matter mo
 
 Light the lamp, say the Chalisa, give charity: all fine. But the true Shani puja is a well-kept life.
 
+## Questions people ask
+**Do I have to be in Sade Sati to worship Hanuman on Saturday?**
+Not at all. Many families go every Saturday for strength and calm, whatever the planets are doing.
+
+**Should I buy a ring or an expensive remedy?**
+You do not need to. Be wary of anyone who asks for large sums to "remove" Shani's effect. The traditional practices above cost almost nothing.
+
+**Is it right to be afraid of Shani?**
+Most teachers say no. Shani is described as strict but fair. If you are honest and hardworking, there is little to fear in that picture.
+
+**Where can I read more about Hanuman's own words and deeds?**
+The Hanuman Chalisa is the easiest start. Our line-by-line pages on the [first five verses](/hanuman-chalisa-meaning-first-five-verses/) are a gentle way in.
+
 ## One question
 Have you been through a hard season that taught you something? If you would like to tell us what it was, we are listening. hello@southwala.com
 

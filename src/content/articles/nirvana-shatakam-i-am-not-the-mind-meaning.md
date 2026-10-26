@@ -54,4 +54,38 @@ Part of its charm is that it does not ask you to believe anything. It asks you t
 ## Listening and reading
 There are many recordings, and people often learn it by ear first. When you read the Sanskrit, note how the rhythm carries you. When you read the meaning, let it be slow.
 
+## A closer look at the first verse
+The first line lists the four parts of what Vedanta calls the inner instrument: *manas* (the thinking, doubting mind), *buddhi* (the deciding intellect), *ahankara* (the sense of "I") and *chitta* (memory and the stored impressions). Then come the five senses and the five elements. In just a few words, Shankara sets aside nearly everything you use to describe yourself.
+
+Verse 2 does the same for the body. The "five sheaths" are a picture from the Taittiriya Upanishad: the self is like something wrapped in layers, from the food body on the outside, through the breath, the mind and the understanding, to the sheath of bliss. The hymn says you are not even the innermost sheath. What remains is the one who knows all of them.
+
+## Where "not this, not this" comes from
+The phrase *neti neti* is much older than Shankara. It appears in the Brihadaranyaka Upanishad, where the self is described by denying every limited description. Shankara's hymn is a short, singable version of that old method.
+
+## A small way to try it
+You do not need to be an expert. Here is a quiet practice, ten minutes at most.
+
+1. Sit comfortably and close your eyes.
+2. Notice a thought arriving. Say silently, *this is a thought.*
+3. Notice a feeling, such as worry or tiredness. Say, *this is a feeling.*
+4. Notice the sounds around you and the weight of your body. Name them too.
+5. Then ask gently: *who is noticing all this?* Do not hunt for an answer. Just rest in the asking.
+
+Some days nothing special happens. That is fine. The practice is in the looking, not in a result.
+
+## Questions people ask
+**Is it a hymn to Shiva the god or to the self?**
+Both, and that is the point. The tradition teaches that the Shiva you worship in the temple and the awareness within you are not two different things. The word *Shiva* here means pure auspicious consciousness.
+
+**Can I sing it without knowing Sanskrit?**
+Yes. Many people learn the sound first and the meaning later. Read the meaning once a week and it will slowly come alive.
+
+**Is it only for monks?**
+No. It is for anyone who has felt, even for a moment, that they are more than their worries. Householders have loved it for centuries.
+
+**Is the story of the eight-year-old Shankara certain history?**
+It comes from the tradition and its biographies, and the hymn is *attributed* to him. Scholars debate how much can be proved, but it has been treasured as his for a very long time.
+
+If this hymn has meant something to you, or you first heard it in a particular place, write to us at hello@southwala.com. We would like to hear about it.
+
 It is a good companion to [Advaita in plain words](/advaita-vedanta-in-plain-words/) and to the Gita's picture of the steady mind in [Gita 2.14](/gita-2-14-heat-and-cold-pleasure-and-pain-come-and-go/).

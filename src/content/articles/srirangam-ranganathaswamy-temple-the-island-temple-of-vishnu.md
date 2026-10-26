@@ -45,4 +45,28 @@ The temple's biggest celebration is Vaikuntha Ekadashi, in the Tamil month of Ma
 - Several ticketed darshan options exist. Use the official counter.
 - Allow half a day, or more.
 
+## A closer look at the reclining Lord
+Ranganatha lies on the coils of Adisesha, facing south. For many devotees the south-facing posture carries a special meaning, and the old tradition says the Lord looks toward Lanka out of kindness to Vibhishana. A beloved idea in the Sri Vaishnava tradition is that Vishnu rests here not out of tiredness, but as a host who stays available to anyone who comes.
+
+## The Alwars and Srirangam
+Many of the twelve Alwar saints sang about Srirangam. Their Tamil hymns are gathered in the Nalayira Divya Prabandham, and the Margazhi recitations in this temple are among the most important in the tradition. Andal, the girl-poet of Srivilliputtur, is remembered for her love of Ranganatha, and her Tiruppavai is sung across Tamil Nadu in the same month. Thondaradippodi Alwar is also known for his hymns here. If you are curious about the Alwars, listen to a recording of the Tiruppavai before your visit. It will make the temple feel familiar.
+
+## Questions people ask
+**Why do people call it the first Divya Desam?**
+Because in the traditional list of 108 sacred Vishnu temples, Srirangam comes first. It is often called Bhuloka Vaikuntha, meaning Vaikuntha on earth.
+
+**Can non-Hindus enter?**
+Rules differ between parts of large temples, and they can change. Check at the entrance or the official office before you go.
+
+**What should I wear?**
+Simple, modest clothes. Many temples in Tamil Nadu ask men and women to follow a dress code, so ask on arrival.
+
+**Is it crowded?**
+It can be, especially on festival days and around Vaikuntha Ekadashi. On an ordinary weekday morning it is far calmer, and the sheer size of the place means you can find quiet corners.
+
+## Seeing it with patience
+Do not try to see every gopuram. Walk slowly, sit for ten minutes in a pillared corridor, and watch families come and go. Srirangam is more a place to be in than a list of things to tick off.
+
+If you have visited, or if Ranganatha is your family deity, write to us at hello@southwala.com and tell us what stayed with you.
+
 For the Telugu country's equivalent, the temple at Tirumala, read our [Balaji guide](/balaji-venkateswara-of-tirumala-seven-hills-one-lord/).
