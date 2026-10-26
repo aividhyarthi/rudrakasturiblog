@@ -55,4 +55,28 @@ In Anantapur district of Andhra Pradesh stands the village of Lepakshi, famous f
 - **Honour belongs to what a person does, not to what they are.** A bird received a prince's funeral.
 - **Old people have a great deal of courage that no one notices.**
 
+## A closer look at Rama's grief
+It is worth slowing down at this moment in the text. Rama has just lost Sita, and he is half mad with sorrow. Yet when he sees the wounded bird, his first act is to care for him. In the Ramayana he treats Jatayu with the same love he would show his own father, Dasharatha. Even in his own worst hour, Rama has room for someone else's pain.
+
+That is part of why people hold this scene so dear. It shows that real goodness is not something you keep for easy days.
+
+## Jatayu's family
+The Ramayana places Jatayu in a family of great birds. His father was Aruna, the charioteer of the sun, and his elder brother was Sampati. Sampati also lost his wings, and later, as the Kishkindha Kanda tells, it was he who told the search party that Sita was in Lanka. The two brothers, one giving the first clue and the other the second, quietly hold the whole search together. You can read his story in [Sampati, the vulture who lost his wings and found Sita](/sampati-the-vulture-who-lost-his-wings-and-found-sita/).
+
+## Another place named for him
+In Kerala, at Chadayamangalam in Kollam district, there is a hilltop park built around a very large sculpture of Jatayu, with the rock below said by local tradition to be where he fell. As with Lepakshi, this is a place-memory and not a line in Valmiki. Still, it shows how widely the old bird has travelled, from Andhra to Kerala, in the hearts of ordinary people.
+
+## Questions people ask
+**Was Jatayu really a vulture?**
+The Ramayana describes him as a huge bird, and tradition calls him a vulture. He speaks and acts like a person, which is how the epics often draw their animal characters.
+
+**Did Sita see the fight?**
+Yes, the text says she cried out for help as Ravana carried her away, and Jatayu heard her.
+
+**Why did Rama perform his last rites?**
+Because Jatayu had given his life for Sita, and had been a friend of Rama's father. In the text, Rama treats him as family.
+
+## A thought for today
+Next time you see something unfair and feel too small to act, remember the old bird. You may not win. But the small thing you do, a word, a witness, a call for help, can be the clue someone else uses later.
+
 See also [the hills of Andhra where the gods live](/hills-of-andhra-where-the-gods-live-simhachalam-ahobilam-srisailam/) and [Sampati, the brother who lost his wings](/sampati-the-vulture-who-lost-his-wings-and-found-sita/).

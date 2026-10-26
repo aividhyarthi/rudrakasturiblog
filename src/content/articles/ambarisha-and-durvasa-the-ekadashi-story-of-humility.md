@@ -54,6 +54,30 @@ Durvasa returned, a year later by the telling, to find that Ambarisha had not ea
 ## For Ekadashi days
 This is why Ambarisha is often remembered on Ekadashi. For the rules of the fast, read [Ekadashi fasting in plain words](/ekadashi-fasting-rules-in-plain-words/). Prabodhini Ekadashi falls around 20 to 21 November 2026, so check the panchangam.
 
+## A closer look at the source
+The story of Ambarisha is told in the ninth canto of the Bhagavata Purana, in chapters 4 and 5. Many later poets have retold it, and you will hear small differences in how the days and the vow are described. The core is always the same: a king, a guest, a sip of water and a discus.
+
+In the tradition, Durvasa is remembered as a sage of great austerity and great temper, who appears in several other stories as well. Later tradition treats him as a partial form of Shiva, which is one reason the tale is read as a gentle lesson and not as a defeat of a villain. The sage is not wicked. He is a powerful man who forgot that power has to be carried lightly.
+
+## Reading it with modern eyes
+Two parts of this story speak to ordinary life.
+
+**The dilemma.** Ambarisha is caught between a rule and a person. If he finishes the fast, he insults a guest. If he waits, he breaks the rule. He does not choose one by force. He asks for advice and takes a middle way that respects both. Many of our daily problems at home look like this: two good things that pull against each other.
+
+**The reaction.** When Durvasa attacks him, Ambarisha does not fight back, and he does not run. He stays where he is. After the sage is humbled, the king does not gloat. He apologises. It is a model of how to behave when you are in the right and the other person is angry: keep your calm, and do not make them smaller.
+
+## Questions people ask
+**Is a sip of water really allowed to break an Ekadashi fast?**
+In the story, learned advisers say so, and it is the reason the tale is told. For your own practice, follow your family's custom and the guidance of your elders. Our [Ekadashi fasting rules in plain words](/ekadashi-fasting-rules-in-plain-words/) goes through the usual practice.
+
+**Do I have to fast fully?**
+No. Many people eat fruit and milk, or simple food without grain. If you are ill, pregnant, elderly or on regular medicine, please speak to your doctor and keep the fast gentle. This is not medical advice.
+
+**Which Ekadashi is linked to this story?**
+Ambarisha is remembered on all Ekadashis. For another one in this season, with its own story, see [Papankusha Ekadashi 2026](/papankusha-ekadashi-2026-date-parana-time-and-story/).
+
+If your family tells this story at Ekadashi, or has a different version, we would enjoy hearing it at hello@southwala.com.
+
 ## Related
 See the Karthika series, beginning with [why Karthika Masam](/why-karthika-masam-what-the-month-means-and-who-to-worship/).
 

@@ -41,5 +41,40 @@ His method was called *atma vichara*, self-enquiry. When a thought arises, ask, 
 ## Visiting
 The Sri Ramanasramam at Tiruvannamalai is open to visitors and is a place of quiet. There is an old hall where Ramana sat, a library and a guesthouse. Many people spend a few days there and walk the Girivalam. See [our Arunachala guide](/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/).
 
+## Why their books mattered
+Before these two men wrote, most English-language books about India's sages either mocked them or made them into wonder-workers. Brunton and Osborne wrote in a different way. They did not claim to have understood everything. They described a quiet room, a few simple answers and what changed in the person who sat there.
+
+Brunton went on to write more books on the inner life, including *The Secret Path* and *A Message from Arunachala*, and he died in 1981. Osborne, born in 1906, died in 1970 at Tiruvannamalai, the place he had chosen to live. He also began the ashram's journal, *The Mountain Path*, in 1964, which is still published. Between them, they left readers a record of a time and a place that might otherwise have been lost.
+
+## A simple way to try self-enquiry
+Ramana's method is easy to describe and hard to do. Here is a gentle way to try it, as a quiet experiment and not a technique to master.
+
+1. Sit comfortably for five or ten minutes.
+2. When a thought comes, such as a worry or a plan, ask yourself, *to whom does this thought come?*
+3. The honest answer will be, *to me*.
+4. Then ask, *who is this "me"?* Do not hunt for a clever answer. Just stay with the question and notice what is aware of the thought.
+5. When the mind wanders, come back gently. Do not scold yourself.
+
+Some people feel nothing the first few times. Others feel a little more space. Neither is a failure. If you find the practice upsetting, or if you live with anxiety or depression, please stop and speak to a doctor or counsellor. Quiet inquiry is not a replacement for medical care.
+
+## Reading it with modern eyes
+It is easy to think a story like this is about "foreigners discovering India". The better reading is about listening. Both men came with training, opinions and doubts. What they report is that Ramana did not argue with them. He let the question do the work.
+
+In a time when everyone is talking, that is worth noticing. Sometimes the most useful thing a teacher can do is to say little and be steady.
+
+## Questions people ask
+**Do I need to read Brunton's book to understand Ramana?**
+No. It is a good first picture of the time, but Ramana's own short writings, and Osborne's biography, are better places to find his teaching.
+
+**Did Ramana speak English?**
+He understood some English, but he mostly spoke Tamil and Malayalam, and answered visitors through translators or in writing. Many exchanges, by all accounts, were silent.
+
+**Is it worth visiting the ashram if I am not a devotee?**
+Many visitors are simply curious. The hall is quiet, and people sit as they wish. Be respectful, keep your phone away and follow the ashram's guidelines.
+
+To think about how to choose a teacher at all, you may like [Searching for a guru](/searching-for-a-guru-how-to-find-one-and-how-to-know-a-real-one/).
+
+If you have visited the ashram, or read one of these books, write to us at hello@southwala.com. We would love to hear what it meant to you.
+
 ## What it shows
 These two stories are not about conversion. They are about two men who went in search of something and found a place where the search could stop for a while.

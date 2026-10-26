@@ -61,4 +61,28 @@ Many patients say prayer gave them calm and courage, and many families say it ga
 
 For the other side, see [the Gita on grief](/gita-on-grief-what-krishna-says-to-someone-who-has-lost-someone/) and [yoga for anxiety](/yoga-for-anxiety-and-stress-a-ten-minute-reset/).
 
+## A closer look at the physicians of the gods
+The idea of divine healers is very old. The Vedas speak of the Ashvins, twin gods who are physicians of the heavens. Dhanvantari, in the later Puranic story, carries on that tradition and is remembered as the teacher of Ayurveda. If you or your family use Ayurvedic medicine, many practitioners begin their day with a prayer to him. You can do the same whatever kind of treatment you follow.
+
+## Questions people ask
+**Should I chant for myself or for the patient?** Either. Many people find it steadies them to chant for the person they love, in the same room if the hospital allows, or at home.
+
+**How many times should I chant?** Eleven, twenty-one or one hundred and eight are the usual counts. A smaller number said with attention is better than a large number said in a rush.
+
+**Does it matter which god I choose?** Pray to the one you feel closest to. The tradition does not ask you to pick the one that sounds strongest.
+
+**What if the person does not recover?** Then prayer was still not wasted. It stayed with you in the hardest time and gave you something to do with your love. The Gita's words to the grieving may help; see the article linked above.
+
+## For the one who is ill
+If you are the patient, you may feel too tired to chant. That is fine. You can simply say the name of the god in your mind, or listen to someone else say it. Rest is not a failure of devotion.
+
+A few kind things you can do:
+- Ask a family member to sit with you for a few minutes and read something gentle.
+- Keep a small lamp or a picture of the deity within sight.
+- Accept help without feeling that you owe an explanation.
+
+Please remember that this article is not medical advice. Speak to your doctor about your treatment, and let prayer sit beside it.
+
+If prayer has helped your family through an illness, and you wish to share, write to us at hello@southwala.com.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

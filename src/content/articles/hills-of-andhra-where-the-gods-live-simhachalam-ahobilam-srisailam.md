@@ -42,4 +42,35 @@ The Indian tradition has long linked a hill with a god. A hill is closer to the 
 ## For a trip
 Simhachalam is a day trip from Visakhapatnam, and Annavaram can be combined with a visit to Rajahmundry. Mangalagiri is minutes from Vijayawada. Ahobilam and Srisailam each take at least a day. Be careful with the heat in summer.
 
+## A closer look at the Narasimha story
+Two of these hills, Simhachalam and Ahobilam, are linked with Narasimha. The story is told in the Bhagavata Purana (canto 7). A king named Hiranyakashipu had been granted a boon that made him almost impossible to kill: not by day or night, not indoors or outdoors, not by man or beast. His young son Prahlada, however, was a devotee of Vishnu, and would not give up his prayers.
+
+When the king mocked him and asked whether his God was in a pillar, Vishnu appeared from it as Narasimha, half man and half lion, at twilight, on the threshold, and ended the tyrant. Prahlada, who had suffered for his faith, was safe.
+
+Each temple tells the story in its own setting. At Ahobilam, the place itself, with its caves and forest, is part of the telling. At Simhachalam, the deity combines two forms of Vishnu, the boar and the man-lion, which is unusual.
+
+## Questions people ask
+**Do I need to be fit to visit these hills?**
+Simhachalam, Annavaram and Mangalagiri have road access or steps that most people can manage. Ahobilam's upper shrines and the forest paths are harder. If you are elderly or have heart or joint problems, plan carefully and ask local guides which shrines suit you.
+
+**What should I wear?**
+Simple, modest and comfortable clothes. Temples have their own dress rules, so check before you go. You will leave your footwear outside, so carry a bag for it and be careful on hot stone.
+
+**When is the best time?**
+Most people prefer the cooler months, from about November to February. Festival days bring wonderful atmosphere and huge crowds, so decide which you prefer.
+
+## Small things that make the climb easier
+- Start early, before the sun is high.
+- Carry water and a light snack, but check what the temple allows.
+- Walk at your own pace. Nobody is timing you.
+- Keep your phone in your bag at the top. The quiet is the point.
+- Be gentle with the place: no plastic, and no leaving offerings on the path.
+
+## A thought for the road
+Many of these temples were once reached only on foot, through forest or over rock. The effort changed the traveller before they arrived. If you go today by car, you can still keep a little of that old spirit by pausing at the last stretch and walking it slowly.
+
+Read more about two of the hills in [Simhachalam, the temple where the Lord is covered in sandalwood](/simhachalam-the-temple-where-the-lord-is-covered-in-sandalwood/) and [Annavaram Satyanarayana Swamy, the hill temple of the vratam](/annavaram-satyanarayana-swamy-the-hill-temple-of-the-vratam/).
+
+If you have a favourite hill temple in Andhra, tell us at hello@southwala.com.
+
 Related: [Balaji of Tirumala](/balaji-venkateswara-of-tirumala-seven-hills-one-lord/) and [Arunachala](/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/).

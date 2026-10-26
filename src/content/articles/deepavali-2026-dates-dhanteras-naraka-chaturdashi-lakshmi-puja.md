@@ -63,7 +63,7 @@ No. The Narakasura story is told widely, but the details differ. In many Telugu 
 - **Before Dhanteras:** clean the home, wash the lamps, and buy oil, wicks and flowers.
 - **On Dhanteras:** light a lamp at the entrance in the evening. A small purchase, even a steel spoon, is enough.
 - **On Naraka Chaturdashi:** wake early, take the oil bath, wear fresh clothes and light lamps.
-- **On Amavasya evening:** do the puja after sunset, and keep time to remember family members who have passed.
+- **On Amavasya evening:** do the puja after sunset, and take a quiet moment to remember family members who have passed.
 - **After the puja:** share sweets with neighbours, including those you do not often speak to.
 
 ## Keeping it safe

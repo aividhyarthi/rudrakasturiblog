@@ -41,5 +41,31 @@ Talk to people who have been and the word you hear again and again is *energy*. 
 ## Visiting
 Guwahati is well connected by air and rail. The temple is a short drive up the hill. Queues are very long in June and during Navaratri, so many people go on ordinary days. Check the current rules for entry and offerings with the temple administration before travelling.
 
+## The ten Mahavidyas
+The smaller shrines around Kamakhya are for the Mahavidyas, the "ten great wisdoms", forms of the goddess each with her own character. They are Kali, Tara, Tripura Sundari (also called Shodashi), Bhuvaneshwari, Bhairavi, Chinnamasta, Dhumavati, Bagalamukhi, Matangi and Kamala.
+
+Some of these forms look fierce on first meeting, and some are gentle. Teachers of the tradition say that together they show the many sides of the one Mother: creation, time, speech, hunger, loss, abundance. You do not need to know all ten to visit, but it helps to know that the hill is a place where all of them are honoured together. For a form you may know already, read [Kali: the goddess people fear and the mother they pray to](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).
+
+## The old text of the region
+The Kalika Purana, a text connected with the old region of Kamarupa, which includes present-day Assam, is closely tied to the traditions of this hill. It tells of the goddess and her worship in this land. If you ever want to read about the temple's own tradition, that is a good place to begin, though a local scholar or temple guide will help you understand how it is read.
+
+## Questions people ask
+**Why is there no image?**
+In this tradition the goddess is the source of life itself, and the stone with the spring is worshipped as that. Many Shakti temples have images, and this one has a more ancient and abstract form.
+
+**Is the temple only for tantric practitioners?**
+No. It is open to all devotees, and most who come are ordinary families. Tantra is part of the tradition, but not the only part.
+
+**What is the best way to prepare?**
+Go with an open mind and without too many expectations. Wear simple clothes, carry little, and be ready to wait. If you go in June, plan ahead for the heat and crowds.
+
+## Other places near Guwahati
+While you are in the city, you could also visit Umananda, a small Shiva temple on a river island in the Brahmaputra, reached by boat. The river itself, wide and slow, is part of the experience of Assam. Take time to sit on its bank at sunset.
+
+## A thought about the mother
+We talk about the Mother of the universe in many ways: as Annapurna who feeds, as Kali who ends, as Durga who protects. Kamakhya reminds us that she is also the one who gives life and carries it. For more of her forms in the South, read [Annapurna](/annapurna-the-goddess-of-food-and-why-shiva-begged-her/) and [Kanaka Durga of Vijayawada](/kanaka-durga-of-vijayawada-the-goddess-on-the-hill-of-indra/).
+
+If you have been to Nilachal Hill, or hope to go, write to us at hello@southwala.com.
+
 ## Related
 Kamakhya is one of the Shakti Peethas. See our list of the [18 Maha Shakti Peethas](/temples/shakti-peethas/), and read how the [Navaratri goddess Durga](/mantras/durga/) is worshipped in the Telugu states, at [Kanaka Durga in Vijayawada](/temples/kanaka-durga-temple-vijayawada/).

@@ -59,4 +59,30 @@ Children, elders, pregnant and nursing women, people with diabetes, those on reg
 ## Begin here
 If you are new to the month, read [why Karthika Masam](/why-karthika-masam-what-the-month-means-and-who-to-worship/), and for a short, simple version of the Monday routine see [how to worship Shiva](/monday-shiva-worship-panchakshari-and-pournami/).
 
+## Questions people ask
+
+**What if I wake up late and miss the dawn lamp?**
+Light it when you can. The lamp is an offering of light, and tradition cares more about sincerity than the minute on the clock.
+
+**Why bilva leaves?**
+Bilva (bael) leaves, with their three leaflets, are the leaf most dear to Shiva in the worship traditions of the South. Many devotees offer them with water at the lingam. If you cannot get them, a flower or just water with a prayer is accepted.
+
+**Can I keep the fast on only some Mondays?**
+Yes. Many families keep the first and last Monday, or only the ones they can manage. Do what is comfortable for your health and your work.
+
+**Is it different from the usual Monday worship?**
+The practice is the same in spirit. The month adds the lamps and the larger crowds. For the ordinary Monday routine, see [Monday Shiva worship](/monday-shiva-worship-panchakshari-and-pournami/).
+
+## A simple routine for a busy Monday
+If you work early or travel, you can still keep the day in a quiet way:
+1. Before leaving home, light a small lamp and say *Om Namah Shivaya* three times.
+2. Carry a short prayer in your mind during the day. Even a pause of a minute at noon is worth it.
+3. In the evening, when you return, light a second lamp at the door or on the tulasi.
+4. Eat a simple meal and close the day with a few minutes of silence or a few rounds of japa. If you want help with counting and keeping going, read [how to start mantra japa](/mantra-japa-how-to-start-count-and-keep-going/).
+
+## The month of lamps
+Karthika Somavaram sits inside a whole month of lamps. If you would like to understand why we light them and how to do it well, see [Karthika Deepam](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/). The full moon of the month is also kept separately, and you can see the days on the [Pournami page](/pournami/).
+
+If your family has a special way of keeping Karthika Somavaram, a song, a sweet or a story, write to us at hello@southwala.com. We would love to share it with other readers.
+
 *Customs differ by family and region. If your family follows a different practice, follow it.*

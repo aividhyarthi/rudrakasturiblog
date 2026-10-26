@@ -52,4 +52,30 @@ At the top, devotees climb the 18 holy steps, the Pathinettampadi. Each of the s
 ## Where else to see Ayyappa
 Temples to Ayyappa exist in almost every city in the South, and in many of them the season begins with a ceremony called Mala Dharana, taking the mala, on the first day of Karthika or Vrischikam.
 
+## A closer look at the greeting
+*Swamiye Saranam Ayyappa* means, roughly, "Lord, I take refuge in you, Ayyappa." Devotees call each other *Swami* for the whole season, and a first-time pilgrim is often called a *Kanni Swami*. The point is to drop rank. A rich man and a labourer, a child and an elder, all walk under the same name for the same weeks. Many people say that this equality is what they remember most.
+
+## Makaravilakku
+The season ends with Makara Sankranti in mid-January, when a ceremonial lamp-lighting, the Makaravilakku, draws large crowds at Sabarimala. It is a deeply loved event and many pilgrims time their visit to it. Since crowds are very heavy, please follow official guidance if you plan to attend.
+
+## Questions people ask
+**Do I have to be a lifelong devotee to take the mala?**
+No. Many first-timers take the mala with a guide, often called a Guru Swami, who explains the rules and helps them through the 41 days.
+
+**What if I break a rule during the vratam?**
+Different families answer this differently. Many ask a Guru Swami or elder, and some say the best response is sincere regret and a fresh start. Speak to someone in your own tradition.
+
+**Is the black clothing important?**
+It is the common choice. It is said to remove the idea of fashion and status, and to remind the wearer that he is on a vow. Some wear dark blue, as the article says.
+
+**Is it hard on the body?**
+It can be. The trek is uphill, the weather can be warm, and the diet and sleep may differ from what you are used to. This is not medical advice, but if you have heart, breathing or knee problems, please check with your doctor before you commit.
+
+## The spirit of the vratam
+Ayyappa's name Dharmasastha means the protector or teacher of dharma. The 41 days are not meant to be a test of how much hardship you can bear. They are an invitation to practise a simple, honest life for a short while, and see what remains afterwards. Many devotees say they come down the hill gentler than they went up.
+
+You can also read what makes this month special in [why Karthika Masam is special](/why-karthika-masam-what-the-month-means-and-who-to-worship/).
+
+If you have kept the vratam and want to share what it taught you, write to hello@southwala.com.
+
 For the broader traditions of the month, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/).

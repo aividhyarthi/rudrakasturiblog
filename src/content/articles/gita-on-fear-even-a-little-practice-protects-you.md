@@ -60,4 +60,26 @@ Many people turn to Hanuman or Narasimha for courage. See our guide to [which go
 ## When fear is more than a thought
 If you have panic attacks, if you avoid places or people because of fear, or if fear is taking over your days, please see a doctor or counsellor. There is good treatment, and getting it is a strength.
 
+## A closer look at verse 2.40
+The Sanskrit is *svalpam apy asya dharmasya trayate mahato bhayat* (Bhagavad Gita 2.40). The word *svalpam* means "even a little", and *trayate* means "protects" or "rescues". It is a promise made to ordinary people. It does not say that you will never feel afraid. It says that a small honest effort keeps a great fear from swallowing you.
+
+## How fear looked in Arjuna's body
+In the first chapter (1.29 and 1.30), Arjuna describes what is happening to him: his limbs fail, his mouth dries, his body trembles, his hair stands on end, the bow Gandiva slips from his hand and his skin burns. These are exactly the signs of anxiety that people describe today. The Gita does not pretend that brave people do not feel this. It places fear at the very start of the book and then walks with the fearful person.
+
+## Questions people ask
+
+**Is fearlessness a virtue I must be born with?**
+No. The Gita lists it among qualities that can be cultivated by practice, like generosity and self-control.
+
+**Why do people turn to Narasimha and Hanuman for fear?**
+Narasimha protects his young devotee Prahlada from a cruel father, and Hanuman crosses an ocean and enters an enemy city. Both are loved as protectors. You can read more in the [guide to praying for courage](/which-god-to-pray-to-for-fear-and-courage-hanuman-narasimha-durga/).
+
+**What if my fear is about something real?**
+Then it is doing its job, which is to make you pay attention. The Gita's teaching is that you act, take sensible steps and then loosen the hold of the worry. See also [the restless mind](/read-the-line-gita-6-35-the-restless-mind/).
+
+## A gentle practice for a bad moment
+When fear rises, try this: put both feet on the floor, breathe out slowly, and say to yourself the name of the one you pray to. Then do the next small step in front of you. It is not a cure. It is a way of reminding yourself that you can still act.
+
+If you have a story of getting through a fear, we would like to hear it at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

@@ -56,4 +56,30 @@ Many families, especially unmarried youth and couples, pray for a good marriage 
 ## For more
 Read about the [Ramayana connection of Rameswaram](/rameswaram-ramanathaswamy-temple-where-rama-prayed-to-shiva/), our [Bhadrachalam temple guide](/temples/bhadrachalam-sita-ramachandraswamy-temple/), and the [Godavari river](/godavari-the-ganga-of-the-south-and-the-englishman-farmers-still-thank/).
 
+## A closer look at the pearls
+The Telugu word *talambralu* refers to rice, often mixed with turmeric or coloured red, that is showered on a bride and groom in a Telugu wedding. At Bhadrachalam, the same custom is followed for the divine couple, and the rice is mixed with pearls. Families who watch the ceremony on television or at the temple often take a few grains home as prasadam, and some keep them for a wedding in the family. It is a good example of how the temple's ritual mirrors the wedding customs in homes across the Telugu country.
+
+## Why Ramadasu is remembered
+Ramadasu's songs are still sung today in homes, temples and concerts. What makes them last is how honest they are. He does not only praise Rama. He complains, he pleads and he asks questions out of pain. Many people find comfort in this, because it shows that a devotee does not have to hide their feelings from God.
+
+The tale of the coins is told with affection in Telugu families, as a story of how the Lord stands by a devotee who has trusted him. It is a tradition and a story, so we tell it as one. What is beyond doubt is that Bhadrachalam is a living centre of Rama devotion, and that Ramadasu's name is part of its identity.
+
+## Questions people ask
+**Why is Bhadrachalam sometimes called Dakshina Ayodhya?**
+Because for many Telugu devotees it is the Ayodhya of the south, the place where Rama is closest to them.
+
+**Do I need to attend in person on Rama Navami?**
+No. The ceremony is widely broadcast, and many families watch it together and hold their own small Kalyanam at home with a picture of Sita and Rama.
+
+**Is it a good place to take children?**
+Yes, if you go on a calm day. They will enjoy the river, the hill and the stories. On Rama Navami itself, the crowd can be overwhelming for small ones.
+
+**What else can I read to understand the Rama stories?**
+Try the tale of [Guha, the boatman king who hosted Rama](/guha-the-boatman-king-who-hosted-rama/) and of [Shabari, who waited for Rama at Pampa](/shabari-the-old-woman-who-waited-for-rama-at-pampa/). Both show the same warm hospitality that Bhadrachalam stands for.
+
+## Keeping Rama Navami at home
+On the day, offer a drink of jaggery and pepper water (panakam) and a simple pulse dish, which many Telugu families make. Place a picture of Sita and Rama on a clean cloth, light a lamp and read a few verses from the Ramayana or sing a song of Ramadasu. Even a short, quiet puja is a fine celebration.
+
+If your family has a special way of celebrating Rama Navami, tell us at hello@southwala.com.
+
 *Beliefs and customs differ from family to family and temple to temple. Check timings, rules and costs on the temple’s official channels before you travel, and be careful with agents who offer to arrange rituals for large sums.*

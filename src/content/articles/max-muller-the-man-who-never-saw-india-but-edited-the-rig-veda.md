@@ -42,5 +42,28 @@ He is still the subject of arguments. Some scholars say his dating of the Vedas 
 ## What remains
 He died in Oxford in 1900. His library and papers are in the Bodleian. In Delhi and elsewhere, there are institutions named after him, Max Mueller Bhavan, the German cultural centre, though the name has often been debated.
 
+## What the Rig Veda is
+The Rig Veda is a collection of hymns, about a thousand in number, arranged in ten books called *mandalas*. The hymns praise Agni, Indra, the Maruts, Ushas the dawn and many other powers, and they also include questions about how the world began. For centuries it was not written down for study. It was learned by heart, word by word and syllable by syllable, and handed from teacher to student. This oral tradition is so exact that the chanting of the Vedas has been recognised by UNESCO as part of the world's living heritage.
+
+That helps to see what Max Muller actually did. He did not discover the Veda. He printed a text that Indian families had kept alive by memory, and he put it in the hands of readers who could not have reached a Vedic chanter.
+
+## Questions people ask
+
+**Was Max Muller a missionary?**
+He was a scholar, not an ordained missionary, but he moved among people who hoped that Christianity would spread in India, and some of his early words reflect that. His later writing is much warmer toward Indian thought.
+
+**Should I read his translations?**
+They are historically important, and the Upanishad volumes are still found in libraries. Language and ideas have moved on, so many readers now prefer newer translations and Indian commentaries, and read his work as a piece of history.
+
+**What did Indians think of him?**
+Opinions were mixed then and are mixed now. Some scholars and reformers valued his work. Others felt that outsiders should not be telling Indians what their own texts mean. Both views deserve a hearing.
+
+## Reading history with a steady eye
+It is tempting to call a person a hero or a villain and be done. Max Muller is a reminder that most lives are mixed. He worked for decades on a text most Europeans ignored, and he was also shaped by the prejudices of his time. You can hold both facts without having to pick one.
+
+You may also like the stories of two other scholars who read India closely: [Sir William Jones, the judge who fell for Sanskrit](/sir-william-jones-the-judge-who-fell-for-sanskrit/) and [Sir John Woodroffe, who defended Tantra](/sir-john-woodroffe-the-calcutta-judge-who-defended-tantra/).
+
+If you have been taught the Vedas by a family elder, or have heard them chanted, we would love to hear about it at hello@southwala.com.
+
 ## Why it fits here
 This series started with a judge who wished to understand, and it ends this round with a scholar who wished to publish. Neither became a devotee, but both opened a door. If you want to read what he spent his life on, start with our [map of the Upanishads](/the-ten-principal-upanishads-a-beginners-map/).

@@ -54,4 +54,26 @@ Many readers notice that the hawk had a point. It is a very honest part of the s
 ## Where it appears
 The Shibi story appears in Buddhist Jataka tales and in Indian sculpture. It is carved at Amaravati in Andhra Pradesh and at Nagarjunakonda in the Krishna valley, where it is among the stories shown on ancient Buddhist reliefs.
 
+## A closer look at the balance
+Notice the picture of the scale. A dove weighs very little, yet every time the king added flesh, the pan with the dove stayed down. Readers over the centuries have felt that this is the heart of the tale: the life of one frightened creature seems to weigh more than anything a person can easily give. The scale is also how the story stays honest. Shibi never claims his sacrifice is large. He simply keeps adding to the pan until the account is settled.
+
+In the end the king puts himself on the scale. The text does not say he did it with a show of courage. It says he did it because nothing less would fulfil his word.
+
+## Questions people ask
+**Is this a story about hurting yourself?**
+No. It is a story about the seriousness of a promise of protection. Nobody is asked to harm their body today. What you can learn from it is to take your word seriously, even when keeping it is inconvenient.
+
+**Why did the gods test him?**
+In the epics, the gods often test kings and sages. It is a way of showing the reader what a person is made of when nobody is watching. The test is also a gift, since it reveals the truth of a person's character.
+
+**Is the hawk the villain?**
+Not at all. The hawk speaks calmly and argues from its own needs. That is why the story is remembered, because it shows a choice between two real claims, not between good and evil.
+
+## Keeping your word in small things
+You will probably never be asked to give up your body. But most of us are asked to give up comfort for a promise: staying with a sick relative, keeping an appointment, standing by a friend who is in trouble. Those are our scales, and they are quiet.
+
+Try this: this week, make one small promise and keep it exactly, even if you would rather not. Notice how it feels afterwards.
+
+If this story speaks to a time when you had to keep your word at a cost, we would be glad to hear about it at hello@southwala.com.
+
 See also [Vibhishana, the brother who chose dharma](/vibhishana-the-brother-who-chose-dharma-over-his-brother/) and [Harishchandra: truth under trial](/harishchandra-truth-and-karma-under-trial/).

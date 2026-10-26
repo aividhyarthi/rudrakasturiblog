@@ -53,4 +53,23 @@ There is also a story from Valmiki (Kishkindha Kanda) that connects to this herm
 ## Where to see it
 Hampi in Karnataka is traditionally identified with the Kishkindha of the Ramayana. Matanga Hill, Lake Pampa and the Anjanadri hill are within a short distance, and many pilgrims visit them every year.
 
+## Questions people ask
+**Was Shabari a tribal woman?** In many retellings she is described as being from a forest community, and she is loved as a symbol that devotion has no caste. Valmiki simply calls her an ascetic woman of the hermitage. The forest-community detail comes from the later tradition.
+
+**Why did Rama accept the berries?** In the retelling, because of the love with which they were offered. Whether or not you take the berries literally, the point stays.
+
+**What did Shabari ask for?** In Valmiki, she asks only to leave the body when she has seen him and to be with her teachers. She does not ask for a boon for herself in the worldly sense.
+
+## How to remember her
+Shabari is a good saint for ordinary days. If you are a person who feels overlooked, or whose service goes unseen, think of her at the door of a quiet hermitage.
+
+- Sweep a corner of your home, or the entrance, with care, as a small offering.
+- Offer your family a simple meal made with attention, thinking of it as service.
+- Think of an older person you know who has been waiting for a visit, and go.
+
+## A line to carry
+Her story says that the one who is ready does not need to be famous. She had her place, her work and her patience, and when the guest came, she knew what to do. That is a life many of us can understand.
+
+If your family sings or tells a song of Shabari, we would love to hear about it at hello@southwala.com.
+
 See also [Kabandha, the cursed demon who pointed Rama to Sugriva](/kabandha-the-headless-demon-who-showed-rama-the-way/) and [Tungabhadra and Hampi](/tungabhadra-hampi-and-the-river-of-the-vijayanagara-kings/).

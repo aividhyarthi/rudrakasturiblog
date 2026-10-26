@@ -51,6 +51,37 @@ As with other beliefs of this kind, it is entirely a personal choice. Astrology 
 - Avoid festival days and weekends if you want quiet.
 - Combine with Tirupati, Tiruchanur and the Tirumala temple.
 
+## A closer look at Kannappa's lesson
+Many temple stories praise perfect ritual. This one praises something else. Thinnadu knows no mantras, no purity rules, no proper offerings. What he has is a child's directness: he sees a god who seems to be in pain, and he cannot leave.
+
+Look at how the story sets up the contrast. The priest has done everything right, and he is shocked. The hunter has done everything "wrong", and he is the one the god calls his own. The tradition does not say the priest was bad. It says that love without form can reach as far as form without love. Both have a place, and the story asks us to remember which one is the root.
+
+If you read the tale with a young person, it makes a good starting point for a talk about what we really give when we give something: a gift, a favour or a prayer.
+
+## The festival to know
+Srikalahasti is especially lively around Maha Shivaratri, when the temple holds a long festival with processions and large crowds. If you prefer a quiet visit, avoid this period. If you enjoy atmosphere, it is memorable.
+
+## A calm way to think about Rahu and Ketu
+In Vedic astrology, Rahu and Ketu are not planets in the usual sense. They are the two points where the Moon's path crosses the Sun's path in the sky, and tradition treats them as shadowy influences. You can read more in [Navagraha: the nine planets in Vedic astrology](/navagraha-the-nine-planets-in-vedic-astrology/).
+
+If you have been told that these two are troubling you, remember three things.
+
+- **Astrology is a belief,** not a proven science, and you are free to take it or leave it.
+- **Nobody should frighten you** or ask for large sums to put you right.
+- **Ordinary effort helps most.** Work, health care, patience and kind relationships matter far more than any ritual.
+
+## Questions people ask
+**Do I have to do the Rahu-Ketu pooja to visit?**
+No. Many pilgrims come only for darshan of Shiva and Gnanaprasunambika, the goddess of the temple, and for the story of Kannappa.
+
+**Is it only for people with a chart problem?**
+No. Families of all kinds visit, some for the pooja, some for the Pancha Bhoota circuit, some for the hill and the river.
+
+**Is there a similar temple in Karnataka?**
+Kukke Subramanya is the best-known place for serpent-related worship in the region. Read about it in [Kukke Subramanya and the snake worship of the south](/kukke-subramanya-temple-sarpa-dosha-and-the-snake-worship-of-the-south/).
+
+If you have visited Srikalahasti, or grew up hearing the story of Kannappa, write to us at hello@southwala.com.
+
 ## Part of a bigger set
 Srikalahasti is the only one of the five Pancha Bhoota temples outside Tamil Nadu. For the others, read [our guide to all five](/pancha-bhoota-sthalams-five-temples-five-elements/).
 

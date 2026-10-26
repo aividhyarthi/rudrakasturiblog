@@ -67,4 +67,35 @@ On the day before you begin something, place a coconut before Ganesha, say the V
 ## Related
 If you want to know where to go, see [Kanipakam Vinayaka](/kanipakam-vinayaka-the-temple-where-people-take-oaths/).
 
+## A closer look at the form of Ganesha
+Teachers often read his form as a set of lessons.
+- **Large head and big ears** suggest thinking deeply and listening more than you speak.
+- **Small mouth** suggests speaking little.
+- **The trunk** can move a mountain and pick up a needle. That is strength with fine care.
+- **The big belly** holds all experience, good and bad, with calm.
+- **The mouse** that he rides is small and restless. Some say it stands for the wandering mind that he rides and steers.
+- **The broken tusk** is linked in tradition with the story that he broke it to write down the Mahabharata as Vyasa dictated.
+
+These are traditional readings, and your family may have its own. They remind us that the form is a teaching as much as an image.
+
+## Questions people ask
+**Why Wednesday?**
+It is a day many families associate with Ganesha, along with Chaturthi, the fourth day of each lunar fortnight. If Wednesday is not possible, any day will do.
+
+**Do I have to offer durva exactly 21 times?**
+The number 21 is a common custom. If you have only a few blades of grass or even just a flower, offer what you have with a sincere heart.
+
+**What do I do if the obstacle is another person?**
+Pray, but also speak to them clearly and politely. Ganesha is said to open paths, and sometimes the path is a conversation.
+
+**Is it all right to pray to Ganesha for things unrelated to starting?**
+Yes. Many people pray to him for clear thinking, safe travel and good beginnings in a general sense.
+
+For a deeper text, see the [Ganapati Atharvashirsha](/ganapati-atharvashirsha-the-upanishad-of-ganesha/), which many families recite on Chaturthi.
+
+If a mantra or custom on this page has helped you begin something, tell us at hello@southwala.com.
+
+## A short morning habit
+You do not have to wait for a big event. Many families say one line to Ganesha at the start of every working day: *Om Gam Ganapataye Namah*, once, before opening the laptop, the shop or the kitchen. It takes ten seconds. Over months it becomes a quiet signal to the mind that now the day begins, and that you begin it with care.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

@@ -54,4 +54,31 @@ Frequent nightmares, dreams that repeat a trauma, or sleep that is disturbed mos
 ## A simple evening prayer
 Many families have a verse to say before sleep. *Shantakaram Bhujagashayanam* is a good one. See [which god to pray to for peace and sleep](/which-god-to-pray-to-for-peace-of-mind-and-sleep/).
 
+## Dreams in the epics
+The old stories treat dreams with respect, but they never treat them as the last word.
+
+In the Ramayana (Sundara Kanda), the demoness Trijata, who guarded Sita in Lanka, told the other guards about a dream she had had: Lanka falling and Rama victorious. It gave Sita some comfort. You can read her story in [Trijata, the demoness who dreamed of Rama](/trijata-the-demoness-who-dreamed-of-rama/).
+
+In the Ayodhya Kanda, Bharata, far away in his mother's family home, has a disturbing dream before any news arrives from Ayodhya. His worry is real, and it does turn out that something terrible has happened. The poet uses it to show Bharata's close bond with his father, not to teach us to read omens in our own sleep.
+
+## Questions people ask
+**Is a dream just before waking more meaningful?**
+There is a traditional belief that dreams near dawn are the ones that "bear fruit". It is a belief and not a certainty. If you rise early for prayer, see [Brahma Muhurtham: time and meaning](/brahma-muhurtham-time-and-meaning/).
+
+**I keep dreaming of the same temple. What does that mean?**
+Perhaps you miss it, or perhaps it stands for the quiet you want. Consider simply going, or visiting a similar temple nearby. If a dream repeats and troubles you, speak to someone you trust.
+
+**Does dreaming of a god mean I am being called?**
+Many people feel it that way, and it can be a lovely feeling. A good test of whether to act on it is whether it makes you kinder and steadier in daily life.
+
+## Four states of mind
+The Mandukya Upanishad names four states: waking, dreaming, deep sleep, and a fourth, called *turiya*, which is the awareness behind them all. It is a very short text, and it is read in many traditions. You will find it in our [beginner's map of the ten principal Upanishads](/the-ten-principal-upanishads-a-beginners-map/).
+
+The lesson is not that dreams are tricks. It is that the one who watches the dream is the same one who watches the waking world, and that watcher stays calm when the scenery changes. This thought can comfort you when a dream has shaken you.
+
+## If you want to try a dream diary
+Keep a notebook by your bed. On waking, write three lines before you stand: what happened, how you felt, and what was on your mind the day before. After two weeks, read it back. You may find that the dreams follow your days more closely than you expected.
+
+If a dream of a temple or deity has stayed with you, and you wish to share it, write to us at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

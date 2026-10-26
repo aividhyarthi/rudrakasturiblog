@@ -45,4 +45,30 @@ People disagree about Danielou. His supporters say that he respected Indian trad
 ## What it shows
 He is a good reminder that the encounter between Europe and India produced many different kinds of people. Some came to rule, some came to teach and some came to listen. Danielou, in his own way, came to listen.
 
+## Why Banaras?
+If you wanted to live inside a living tradition in the 1930s, Banaras, also called Kashi, was an obvious choice. It has been a city of Shiva for a very long time, with temples, ghats, scholars and musicians in the same few lanes. Danielou lived on the river, and the Ganga was the background to his daily life. If you would like to understand what the river means to the people who live beside it, read [Ganga: why a river is a goddess](/ganga-why-a-river-is-a-goddess/).
+
+## What "Shaiva" means
+A Shaiva is a follower of Shiva as the supreme God. Shaivism has many schools, from the temple worship of the South to the philosophy of Kashmir. When a person takes initiation, called *diksha*, a teacher gives a mantra and a way of practice, and the student promises to follow it. Danielou's name, Shiva Sharan, means "one who has taken refuge in Shiva". It was not a costume. It was a statement of what he wanted his life to be about.
+
+## Questions people ask
+**Which of his books should I begin with?**
+Most readers start with the book on Hindu polytheism, known in later editions as *The Myths and Gods of India*. It is clear and easy to dip into. He also wrote on music, and an autobiography, *The Way to the Labyrinth*, which tells his own side of the story.
+
+**Was he the only European to settle in Banaras?**
+No. Many scholars, travellers and seekers came to India in the last two centuries. On Southwala you can meet [Sir William Jones](/sir-william-jones-the-judge-who-fell-for-sanskrit/), [Max Muller](/max-muller-the-man-who-never-saw-india-but-edited-the-rig-veda/) and [Sir John Woodroffe](/sir-john-woodroffe-the-calcutta-judge-who-defended-tantra/). Their motives and their results were different.
+
+**Does his story mean a person can "become" Hindu?**
+Different families and communities answer this question in different ways. Danielou's own account is that Shaiva teachers in Banaras accepted him. That is his story, and others may have different views.
+
+## How to read someone like him
+When you read an author who writes with such confidence, it helps to keep three habits:
+- Enjoy the detail and the love of the subject.
+- Check big claims against other books, and against what your own family teaches.
+- Remember that one writer's view of the gods is one view among many.
+
+Reading in this way is the best form of respect, for the author and for the tradition.
+
+Have you read any of his books, or have you visited Kashi? Write to us at hello@southwala.com and tell us how it was for you.
+
 For the god he followed, read [Who is Shiva](/who-is-shiva-five-things-most-people-get-wrong/) and the story of [Kalabhairava](/kalabhairava-the-guardian-of-time-and-kashi/), the guardian of the city where he lived.

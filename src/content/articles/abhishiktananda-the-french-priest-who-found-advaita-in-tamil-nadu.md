@@ -42,5 +42,28 @@ He never left the Church and said Mass until the end. But he described his own e
 ## The end
 In July 1973, he had a heart attack in Rishikesh. He recovered, but he said later that the experience had been a form of awakening. He died in Indore on 7 December 1973, at the age of 63.
 
+## A closer look at Shantivanam
+The ashram that Le Saux and Monchanin began did not stay small. After Monchanin died in 1957, Abhishiktananda carried on for some years, and later the English Benedictine monk Bede Griffiths came to Shantivanam and led it for many years. Through him, the ashram became known to visitors from across the world. Today it is a quiet place of prayer where guests are invited to join the morning and evening worship, which includes readings from the Upanishads and the Gita beside readings from the Bible.
+
+Notice how deliberately simple it is. Banana leaf meals, sitting on the floor, bare feet, a river nearby. The idea was that a faith could be at home in the soil of Tamil Nadu without being a stranger there.
+
+## Questions people ask
+**Did he convert to Hinduism?** No. He remained a Catholic priest all his life. He called his path an attempt to live the inner meaning of both traditions.
+
+**Why did he take the name Abhishiktananda?** It is a Sanskrit name that blends *abhishikta*, anointed, which points to Christ, with *ananda*, bliss. He wanted the name to carry both worlds.
+
+**Which of his books should I read first?** Many readers find *Guru and Disciple*, his account of his years with his own teacher and of the feeling of surrender, a good doorway. It is honest and personal.
+
+**What did he learn from Ramana?** Not a new doctrine, but the habit of turning attention inward and asking who it is that is asking.
+
+## What a visitor can take from him
+You do not have to be a monk or a seeker to learn from him.
+- Be a guest in another tradition before you judge it.
+- Notice where your own faith feels narrow, and ask whether that is the faith or your habit.
+- Let a question stay open for a while, instead of rushing to close it.
+- Respect those who find the boundary between traditions important. His own diaries admit how hard this was.
+
+If you have visited Shantivanam, or have a story of two traditions meeting in your own family, write to us at hello@southwala.com.
+
 ## What it says
 Not everyone who comes to India converts. Some, like Abhishiktananda, stay where they are and find that the ground has shifted. If you want to see what he saw, read [Advaita in plain words](/advaita-vedanta-in-plain-words/) and the [Nirvana Shatakam](/nirvana-shatakam-i-am-not-the-mind-meaning/).

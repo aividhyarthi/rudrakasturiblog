@@ -64,4 +64,33 @@ A mantra is not a substitute for preparation. Teachers often say that Saraswati 
 ## If you feel anxious
 For nerves, see [yoga for anxiety and stress](/yoga-for-anxiety-and-stress-a-ten-minute-reset/). If anxiety about exams is overwhelming, talk to a teacher, a parent or a counsellor.
 
+## A closer look at the two verses
+The Saraswati verse above is the one many children are taught before they open a new book. It is short enough to say in a breath. The word *vidyarambham* means "the beginning of learning", and it is the same word used for the ceremony in which a small child writes the first letters. If you have a little one at home, read [Saraswati and the first letter](/saraswati-and-the-first-letter-aksharabhyasam-at-home/).
+
+The Hayagriva verse is widely sung and is associated with the Hayagriva Stotra of the great teacher Vedanta Desika. Its picture is of a god pure as crystal, which suggests a clear, quiet mind. Many students find it helps to picture that clarity for a moment before they begin.
+
+## Questions people ask
+
+**Do I need to fast for the exam?**
+No. Fasting can leave you light-headed. Eat well and drink water. A prayer will be just as welcome.
+
+**Which day is best?**
+Thursday is dear to teachers and Friday to Saraswati in some homes, but any morning is fine. Hayagriva Jayanti is kept on the full moon of the month of Shravana, and many students make a point of praying then. Saraswati Puja falls during Navaratri.
+
+**What if I do not feel anything when I pray?**
+That is common. Prayer is not a feeling you have to produce. Say the verse slowly, and give your full attention to the words for a minute. That is enough.
+
+**What about children who are not good at exams?**
+Marks measure one kind of ability. The old tradition honours singers, craftspeople, healers and farmers as much as scholars. Please be gentle with a child who is struggling, and look for help with the subject itself.
+
+## Study habits that go with prayer
+- Study in short blocks of 25 to 45 minutes, with five minutes of rest.
+- Keep your phone in another room.
+- Write answers out by hand once; it shows you what you really remember.
+- Tell someone what you have learned. Explaining is the best test.
+
+A small ritual and a good habit work together. Ask a parent to keep the house quiet for an hour. That is a form of seva too.
+
+If a particular prayer or habit helped you through a hard exam, write to us at hello@southwala.com. Your note may help another student.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

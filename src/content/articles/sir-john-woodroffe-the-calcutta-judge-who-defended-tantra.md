@@ -44,4 +44,25 @@ He retired in 1922 and taught Indian law at Oxford from 1923 to 1930. He died in
 ## What it shows
 It is easy to read the past as a story of Europeans looking down on India. Woodroffe is a reminder that there were also those who looked more closely, and that the best of them did so with the help of Indian teachers.
 
+## A closer look at The Serpent Power
+Of all his books, *The Serpent Power* is the one most readers have heard of. It is not a work Woodroffe wrote from scratch. It is a translation, with a long introduction and commentary, of two Sanskrit texts about the subtle centres of the body, called *chakras*: the *Shat-chakra-nirupana* and a shorter companion text. The introduction is where Woodroffe tried to explain, in careful English, what Indian readers had long taken for granted: that the chakras and the rising of kundalini are described as a map of inner practice, not a physical anatomy lesson.
+
+This matters because many popular books today repeat the words without the context. If you want to understand what the old writers meant, it helps to know that they wrote for students who had a teacher beside them.
+
+## Questions people ask
+
+**Was Woodroffe the first Westerner to study Sanskrit?**
+No. Others came before him, such as [Sir William Jones](/sir-william-jones-the-judge-who-fell-for-sanskrit/), who was also a judge in Calcutta, and [Max Muller](/max-muller-the-man-who-never-saw-india-but-edited-the-rig-veda/), who edited the Rig Veda in Oxford. Woodroffe's special field was Tantra, which many scholars of his time avoided.
+
+**Why did he use a pen name?**
+As a sitting High Court judge, he did not want his private scholarship tied to his public office. The name Arthur Avalon appeared on his books for many years.
+
+**Is it safe to try the practices he describes?**
+Woodroffe himself said that such practices should be learned from a qualified teacher. Reading about them is one thing. Doing breathing and concentration exercises that you do not understand can be unsettling. If you are curious, begin with gentle and well-known practices such as [pranayama for beginners](/pranayama-for-beginners-three-safe-breathing-practices/).
+
+## Why his story still matters
+There is a lesson here that has nothing to do with Tantra. Woodroffe changed his mind because he did the work of reading. He did not need to agree with everything, but he refused to judge a tradition he had not studied. Many of us carry opinions about other people's beliefs that we have never examined. His example is a small, steady invitation to look first.
+
+Do you know of a scholar, teacher or neighbour who helped you see your own tradition with fresh eyes? Tell us about them at hello@southwala.com.
+
 For a contemporary look at the goddess traditions, see [Kamakhya](/kamakhya-devi-the-shakti-peetha-of-assam/) and [Kali](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).

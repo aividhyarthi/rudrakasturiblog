@@ -49,6 +49,31 @@ As a reader, it is useful to be able to separate three layers:
 
 None is "wrong". But it helps to know which one you are reading, and to be honest about it when you retell it. That is the approach we try to follow on this site.
 
+## The little animal behind the story
+The squirrel in the tale is the Indian palm squirrel, a common creature in gardens and temple compounds across the South. It has pale stripes running along its back, usually three, which makes the story easy to retell: a child only has to look at the animal to see the evidence. That is one reason the story has lasted. It sits in the everyday world, not in a far-off forest.
+
+## The bridge in the real world
+Today, the chain of shoals between Pamban island near Rameswaram and the island of Mannar off Sri Lanka is known as Rama Setu, or Adam's Bridge on many maps. People in India regard it with deep reverence, and the ideas people hold about how it formed differ. We will not argue that here. What can be said simply is that Rameswaram and Dhanushkodi are places where the bridge story is remembered with great feeling. If you plan to go, the [Rameswaram guide](/rameswaram-ramanathaswamy-temple-where-rama-prayed-to-shiva/) tells you more.
+
+## How to tell the story to a child
+- Begin with the child's own experience: "Have you ever wanted to help, but felt too small?"
+- Tell the squirrel's part gently, with the sand and the shaking.
+- Pause where Rama picks up the squirrel. Let the child imagine how it felt.
+- Say honestly that this is a story people have told for a very long time, and that it is not in Valmiki's text. Children handle that well.
+- Ask at the end: "What is a small thing you can do today?"
+
+## Questions people ask
+**Is the squirrel story in any written Ramayana?**
+It appears in later retellings and folk tradition. Some regional versions give it more detail than others. Valmiki himself does not mention it.
+
+**Why do so many people believe it?**
+Because it feels true to the heart. Even without a text, the idea that a sincere small effort counts is one the whole tradition agrees with.
+
+**Does it mean small efforts always change the outcome?**
+Not necessarily. The story's claim is gentler: the effort is seen and valued. The squirrel did not build the bridge. It took part.
+
+If someone told you this story as a child, or you have your own squirrel moment, write to us at hello@southwala.com.
+
 ## What it teaches
 - **Do what you can.** The squirrel did not wait to be a vanara.
 - **A small effort, offered sincerely, is seen.**

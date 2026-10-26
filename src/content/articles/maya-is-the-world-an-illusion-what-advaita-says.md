@@ -52,4 +52,31 @@ If you do not take the world to be the final reality, you can treat it more ligh
 ## A common mistake
 Some people say that if the world is illusory, then suffering is imaginary. Teachers reject that. Compassion and service are part of Advaita life. Shankara himself spent his short life working for others.
 
+## A closer look at one verse
+In the Gita, Krishna gives a line that Advaita teachers love to quote: of the unreal there is no being, and of the real there is no non-being (Gita 2.16). In plain words, what truly is cannot cease to be, and what is only a passing form does not have lasting existence. You can see why Advaita readers hear mithya in that line. Bodies, houses and seasons come and go. The awareness in which all of it appears does not.
+
+## Questions people ask
+
+**If the world is mithya, why did Shankara bother to teach?**
+Because the person who suffers from the mistake is real at their own level. The teacher, the student and the lamp that shows the rope all belong to the ordinary level. Teaching is the lamp.
+
+**Do all schools of Vedanta agree?**
+No. Ramanuja and Madhva both disagree strongly, and hold that the world and the souls are real and are not merely dependent on Brahman in the way Advaita says. You can compare them in [Shankara, Ramanuja and Madhva](/shankara-ramanuja-madhva-three-ways-to-see-god-and-the-soul/).
+
+**Is Maya the same as a trick or a fraud?**
+Not in this teaching. Maya is the power by which the one appears as many. It is not a lie told to you. It is more like the way a single actor can play many parts and you still enjoy the play.
+
+**Do I have to believe this to follow Hindu practice?**
+No. Millions of devotees worship God with form and never study Advaita. It is one way of seeing, an old and respected one, but not the only one.
+
+## Trying it in daily life
+Here is a gentle way to test the idea without any belief at all:
+1. Notice a worry that is taking over your evening.
+2. Ask: what is solid here, and what is my mind adding?
+3. Like the rope in the dusk, the fear may shrink once you look at it with a lamp.
+
+This does not make real problems vanish. The bills still need to be paid. It only shows how much of our suffering is the extra story we add. For a short hymn that expresses the same freedom, see [Nirvana Shatakam](/nirvana-shatakam-i-am-not-the-mind-meaning/).
+
+If this explanation helped, or if you still have a question about Maya, write to us at hello@southwala.com.
+
 For the basics, start with [Advaita in plain words](/advaita-vedanta-in-plain-words/).

@@ -60,6 +60,21 @@ Another hymn that many Tamil families know by heart is the *Kanda Sashti Kavacha
 ## Palani and the six abodes
 Palani, with its hilltop temple of Dandayudhapani, the Murugan who holds a staff, is the third of the six abodes. Tiruchendur is the second. Swamimalai is where, in the tradition, Murugan taught his father Shiva the meaning of *Om*. Each of the six has its own story and its own mood. If you cannot visit them all, reading about them is a start.
 
+## Questions people ask
+**Do I need to know Sanskrit to read the Bhujangam?**
+No. Read a translation first, then listen to a recording a few times. The rhythm slowly becomes familiar, and you can join in at your own pace.
+
+**Is it only for Tuesdays and Shashti?**
+Those days are traditional, but the hymn is sung at any time. Many people read it when they feel weak, afraid or low in spirit.
+
+**Is it a replacement for medical care?**
+No. The hymn is a comfort and a prayer. If you are unwell, see a doctor, and let the hymn sit beside the treatment as a support for your mind.
+
+**What should I wear and bring to Tiruchendur?**
+Dress modestly, carry little, and plan extra time, since the temple is crowded around festivals. The sea is rough at places, so follow local signs and do not bathe in unsafe spots.
+
+You can also look at our page on [Arupadai Veedu](/arupadai-veedu-the-six-abodes-of-murugan/) to see how Tiruchendur fits into the larger story.
+
 ## An invitation
 Do you go to Tiruchendur or Palani or Swamimalai? If you have a Murugan memory, a journey, a vow, a prayer, write and tell us. hello@southwala.com
 

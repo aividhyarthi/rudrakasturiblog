@@ -62,4 +62,30 @@ It is important to say: there is a difference between laziness and rest. Krishna
 ## When it is more than procrastination
 If you find that you cannot start anything for weeks, that you have lost interest in things you used to enjoy, or that everything feels heavy, talk to a doctor or counsellor. It can be a sign of depression, and it is treatable.
 
+## The other half of the teaching
+Krishna also warns against the opposite error. In chapter 3, verse 4, he says that one does not reach freedom just by staying away from action. And in verse 5 he says that no one can remain even for a moment without acting. So doing nothing is not really an option. The mind is still working, usually in worry. The question is only whether we act on purpose.
+
+## A closer look at "lift yourself"
+There is a verse that suits this subject very well. In chapter 6, verse 5, Krishna says, in effect, that you should lift yourself by your own effort and not let yourself sink, because you can be your own friend or your own enemy. We look at it in [Gita 6.5](/gita-6-5-lift-yourself-by-yourself/). When you put things off, you are treating yourself as an enemy, and the task as a monster. A friend would help you take the first step.
+
+## Questions people ask
+**Is procrastination a sin?** No. The Gita is not scolding. It is describing a pattern and showing a way out.
+
+**What if I have too much to do?** Then pick the one thing that matters most, and write the rest down so the mind is not holding it. Starting with one is better than being frozen by ten.
+
+**How do I help a child who delays homework?** Sit with them for the first five minutes. Make the first step small. Praise the beginning, not only the finish.
+
+**What if I start and quit again?** That happens. Begin again without making a drama of it. Each beginning is a new try, and you build the habit by returning.
+
+## A small plan for tomorrow
+1. Tonight, choose the one task you have been avoiding.
+2. Write the first step on a piece of paper in one line.
+3. Put the paper where you will see it in the morning.
+4. In the morning, do that step for ten minutes before anything else.
+5. In the evening, notice how you feel. Often it is lighter.
+
+You may smile at how small this is. That is the point. Krishna's call to action is not a demand for greatness, it is an invitation to start where you are.
+
+If you have a trick that helps you begin, write to us at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

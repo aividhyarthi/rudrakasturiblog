@@ -64,4 +64,32 @@ Arjuna told Krishna that the mind is restless and stubborn, harder to hold than 
 ## When it is more than overthinking
 If you cannot sleep for weeks, if worry affects your work or your relationships, if you have panic attacks or feel hopeless, please talk to a doctor or counsellor. In India, Tele-MANAS (14416) is a free helpline. Needing help is not a failure of discipline or faith.
 
+## A ten-minute evening routine
+If you want something you can follow without thinking, try this order.
+1. **Two minutes of standing.** Mountain pose, feet pressed down, five slow breaths.
+2. **Two minutes of tree pose**, one minute on each side. If you wobble, smile and start again.
+3. **Two minutes of forward fold or child's pose**, whichever is kinder to your back.
+4. **Three minutes of long exhales.** In for four, out for six.
+5. **One minute of silence**, or a mantra repeated in the mind.
+
+Do it at about the same time each day. The regularity matters more than how well you do each pose.
+
+## Questions people ask
+**Why does the mind get louder when I try to stop it?**
+Because trying to push a thought away keeps your attention on it. It helps more to give the mind something else to hold, such as a breath, a flame or a word.
+
+**Should I do this in the morning or at night?**
+Both work. Morning practice sets the tone. Evening practice helps you put the day down. Choose the time you can actually keep.
+
+**What if I fall asleep during the body scan?**
+That is fine, especially at night. If you want to stay awake, try it sitting up or in the daytime.
+
+**Is it all right to do this with a back or knee problem?**
+Use a chair, skip the standing balance or keep your hand on a wall. Go gently and ask a qualified teacher if you are unsure.
+
+## One small change to try this week
+Pick the hour in which your mind is loudest, and place one of these practices just before it. If it is the bus ride home, do your long exhales on the bus. If it is bedtime, do your body scan in bed. You are not fixing your mind. You are giving it a softer place to land.
+
+If something here helped you, or if you have found a better way, we would be glad to hear it at hello@southwala.com.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*

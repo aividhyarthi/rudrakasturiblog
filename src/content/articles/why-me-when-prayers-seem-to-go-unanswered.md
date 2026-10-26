@@ -67,4 +67,16 @@ Prahlada (Bhagavata, Canto 7) prayed through poison, elephants and fire. His fai
 ## If you feel hopeless
 If there is no relief from a heavy mood, or you have thoughts of harming yourself, please talk to a doctor or counsellor today. Tele-MANAS (14416) is free in India. Faith and help are not enemies.
 
+## A simple routine for a dry season
+When you feel nothing, shrink the practice instead of dropping it.
+1. Light one lamp, or just sit near a window.
+2. Say one name of God, three times, slowly.
+3. Tell God, in your own words, exactly how you feel, including anger. The saints did this.
+4. Sit in silence for one minute.
+5. Get up and do one useful thing for someone else.
+
+You may not feel anything for weeks. The practice is not a payment. It is a way of staying in touch with something you hope is listening.
+
+If you would like to tell us how you have lived through a long wait, write to hello@southwala.com.
+
 See also [why me: I am a good person](/why-me-i-am-a-good-person-so-why-am-i-suffering/) and [which god to pray to for peace of mind](/which-god-to-pray-to-for-peace-of-mind-and-sleep/).

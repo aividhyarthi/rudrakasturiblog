@@ -28,4 +28,33 @@ In the Svargarohana Parva, at the end of the great journey, Yudhishthira alone e
 ## For today
 The half-true statement in a meeting, the selective report, the message that leaves something out: these are our small Ashwatthama moments. Say the whole thing, or say nothing.
 
+## A closer look at the lie
+The episode is told in the Drona Parva. Before Yudhishthira spoke, Bhima had killed an elephant that shared the name Ashwatthama, so that there would be something true in what was said. Drona, according to the text, would believe the news only from Yudhishthira, because he trusted his truthfulness above all others. Yudhishthira hesitated, and the epic records his struggle before he spoke. Many tellers add that the chariot which had moved above the ground came down to earth after that moment. That detail is part of the tradition around Yudhishthira's pride in truth, and you will meet it in popular retellings.
+
+Notice the scale of the moment. Yudhishthira did not say something that was obviously false. He arranged a sentence so that a grieving father would hear what he wanted him to hear. The epic treats this as a lie in all but name.
+
+Krishna had advised it, and Arjuna did not like it. The text does not hide that the Pandava side was uneasy about it. Dharma in the Mahabharata is rarely simple, and even the winners carry their wounds.
+
+## The dog at the gate
+Earlier on the same last journey, a dog follows Yudhishthira as his brothers and Draupadi fall one by one. When Indra arrives with a chariot to take him to heaven, he says the dog must be left behind. Yudhishthira refuses to enter heaven without the dog who has stayed loyal to him. The dog then turns out to be Dharma himself. You can see how this episode connects with the hell scene: the same man who once bent the truth later gives up heaven rather than abandon a faithful creature.
+
+## Questions people ask
+**Was Yudhishthira wicked?**
+No. The epic shows a man who tried all his life to stay true, and who slipped once, at the worst possible time. That is why the lapse is remembered.
+
+**Why did he have to see hell if he was so good?**
+In Indra's words in the text, a king must see hell, and he sees it briefly because of the deceit about Drona. It reads as a lesson that goodness does not erase a particular wrong.
+
+**What is the point of the voices of his family in hell?**
+They test his compassion. He is offered comfort in heaven, but he prefers to stay where others are suffering. The epic says this is the real measure of him.
+
+## Reading it with modern eyes
+We often defend ourselves with exact wording: "I didn't say that", "I only said what was asked". The story invites us to stop doing that. Truth is not just the sentence. It is also the impression we mean to leave.
+
+Here is a small practice: this week, if you notice yourself choosing words so that someone will misunderstand, stop and say the clear version instead. You may find it costs less than you feared.
+
+For another story of truth under pressure, read about [Karna's curses and choices](/karna-curses-and-choices-karma-of-the-generous/).
+
+If this story reminds you of your own moment of honesty or regret, you can write to hello@southwala.com.
+
 Related: [Harishchandra and the price of truth](/harishchandra-truth-and-karma-under-trial/).

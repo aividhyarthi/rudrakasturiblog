@@ -53,4 +53,22 @@ In Bengal, Kali is not primarily a goddess of fear. Poets such as Ramprasad Sen 
 ## Visiting
 The temple is on the east bank of the Hooghly, in North Kolkata, easily reached by metro. Early morning and evening arati are the best times. It can be extremely crowded on weekends and during festivals such as Kali Puja.
 
+## More to know about the place
+Rani Rasmani lived until 1861, so she saw her temple become a living centre of worship. Ramakrishna's wife, Sarada Devi, later stayed at Dakshineswar too, in the Nahabat, the music tower near the temple. She is revered by his followers as the Holy Mother. Sri Ramakrishna passed away in 1886, and the order founded in his name by Vivekananda continues today.
+
+## Kali Puja and Deepavali
+In Bengal the great night of Kali is the Amavasya of the Deepavali season, called Kali Puja or Shyama Puja. While much of India lights lamps for Lakshmi on the same night, Bengal honours the dark Mother. This year the Deepavali Amavasya falls on 8 November, as you can see in our [Deepavali 2026 dates guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). Dakshineswar is especially busy at this time.
+
+## Questions people ask
+**Is it right to say Ramakrishna "saw" the goddess?**
+This is how he and his biographers describe it. Whether you take it as a literal vision or as the peak of a prayer, it is part of what people mean when they say Dakshineswar is alive.
+
+**Why do people call Kali "Mother"?**
+In Bengal the poet-saints such as Ramprasad sang to her in the language of a child, with complaint, trust and affection all at once. Fear is not the main feeling in these songs.
+
+**Can anyone visit?**
+Yes, it is open to all. Dress modestly, go early if you want a calmer visit, and expect queues on festival days.
+
+Whether you have been to Dakshineswar or hope to go, we would love to hear what it meant to you at hello@southwala.com.
+
 See also [Kali: the goddess people fear and the mother they pray to](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/) and [Kamakhya Devi, the Shakti peetha of Assam](/kamakhya-devi-the-shakti-peetha-of-assam/).

@@ -55,4 +55,27 @@ This is not an easy passage to read. A young man died, and in the text it is Kri
 ## Remembered today
 Ghatotkacha is worshipped as a protective figure in some regions, and a temple in Himachal Pradesh near Manali is dedicated to Hidimba, his mother.
 
+## A closer look at the spear
+The story of the spear begins much earlier, in the Vana Parva, in the section about the armour and earrings Karna was born with. Indra, knowing that they made Karna nearly unbeatable and wishing to protect his son Arjuna, went to Karna in the form of a Brahmin and asked for them as alms. The Sun god had warned Karna in a dream, but Karna had made it a rule never to refuse a request from a Brahmin. He cut the armour and earrings from his own body and gave them. Indra gave him the Vasavi spear in exchange, with the condition that it could kill one enemy only.
+
+So on the fourteenth night, the spear is the last thing separating Arjuna from the man who had waited his whole life to face him. When Karna throws it at Ghatotkacha, he gives up his chance. Tradition reads this as the moment he let go of his one great chance.
+
+## Questions people ask
+
+**Was Ghatotkacha's mother a demon?**
+Hidimbi was a rakshasi who met Bhima in the forest, and she chose to marry him with Kunti's blessing. In the epic, rakshasas are not simply evil; the word describes a people of the forest with their own powers.
+
+**Did Ghatotkacha have a son?**
+In the Mahabharata, a son named Anjanaparvan fights in the war and is killed by Ashvatthama, in the Drona Parva. Other sons, such as Barbarika, belong to folk tradition and are not in the epic text.
+
+**Why was the fighting at night?**
+On the fourteenth day, the armies broke the usual rule and fought on in the dark, with torches lit. The epic describes it as one of the most unusual nights of the war.
+
+## Reading it with modern eyes
+It is a hard passage for a reason. Nobody here is simply right. Duryodhana demands what he should not; Karna gives up what he had saved; Krishna chooses between a loved one and a greater plan. If you have ever been a manager, a parent or an elder who had to make a choice where someone would be hurt, you know the feeling. The epic does not tell you it was painless. It only says that people made such choices, and wept after.
+
+This was the same war that took the life of Drona by a half-truth. For that see [Yudhishthira and the weight of one lie](/yudhishthira-glimpse-of-hell-the-weight-of-one-lie/).
+
+Which character in this scene stays with you most? We would love to hear your thoughts at hello@southwala.com.
+
 See also [Karna: curses and choices](/karna-curses-and-choices-karma-of-the-generous/) and [Bhishma on the bed of arrows](/bhishma-on-the-bed-of-arrows-what-karma-did-he-carry/).

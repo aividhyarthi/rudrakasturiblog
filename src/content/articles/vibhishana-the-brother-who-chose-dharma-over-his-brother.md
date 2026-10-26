@@ -61,4 +61,25 @@ Tradition places the coronation at Dhanushkodi, near Rameswaram, where the templ
 ## A note for those who have had to leave
 Many people have had to walk away from a family business, a home or a way of life that was no longer right. Vibhishana is sometimes called a traitor by those who find it comforting. The tradition does not. It remembers him as the man who chose truth at a price.
 
+## A closer look at where Vibhishana began
+Vibhishana was born into a family of great power. In the Uttara Kanda, the three brothers, Ravana, Kumbhakarna and Vibhishana, perform austerities and are granted boons. According to the text, when Brahma offered Vibhishana a boon, he asked that his mind always remain fixed on dharma, even in the hardest times. It is a beautiful request from a man whose life was to be tested in exactly that way.
+
+That is why his later choice is not a sudden break. He was the same person all along. The family around him changed, and he did not.
+
+## Questions people ask
+**Was he a traitor?** Some people say so, and the phrase "a Vibhishana in the house" is sometimes used for a betrayer. The epic itself does not treat him that way. He spoke first, in open council, and only left when he was thrown out. Compare him with [Kumbhakarna](/kumbhakarna-the-brother-who-knew-it-was-wrong-and-fought-anyway/), who agreed with him and stayed to fight.
+
+**Why did Rama trust him so quickly?** The text shows that Rama weighed the advice of his friends, and decided by the principle he stated. Hanuman's judgement of the way Vibhishana came also counted.
+
+**What is the Srirangam connection?** A well-known tradition says that Rama gave Vibhishana an image of Vishnu as Ranganatha, and that it came to rest on the island of Srirangam, where it faces south, toward Lanka. This comes from later temple tradition and not from Valmiki. See [Srirangam](/srirangam-ranganathaswamy-temple-the-island-temple-of-vishnu/).
+
+## Facing your own Ravana
+Most of us will never face a king. But there are smaller versions: a workplace that cuts corners, a relative who wants us to help hide something, a group that is doing something unkind. Vibhishana teaches a clear order of steps.
+1. Speak the truth first, plainly and with respect.
+2. Try again, if you can.
+3. If you are cast out, go without hatred.
+4. Look for a place where you can still do right.
+
+There is no pleasure in the story, only the sense of a man who kept faith with what he knew. If you have faced a choice like this, you are welcome to tell us about it at hello@southwala.com.
+
 See also [Why me? When your own family is the one that hurts you](/why-me-when-your-own-family-betrays-you/) and [Trijata, the demoness who dreamed of Rama](/trijata-the-demoness-who-dreamed-of-rama/).

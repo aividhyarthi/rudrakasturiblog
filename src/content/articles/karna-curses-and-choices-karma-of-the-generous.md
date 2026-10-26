@@ -31,4 +31,30 @@ He also stood in the assembly when Draupadi was insulted, and spoke words of con
 ## For today
 If you are kind, do not assume that is enough, and if you were wronged, do not assume that gives permission. Each action is weighed on its own.
 
+## A closer look at his birth
+Karna was born to Kunti before her marriage, as the gift of the sun god Surya, and he came with a natural armour and earrings. Kunti, afraid of what people would say, set the baby afloat on a river in a basket. He was found and raised by a charioteer, Adhiratha, and his wife Radha, which is why he is also called Radheya. The wound of that start runs through his life. He was always a little outside, always having to prove himself.
+
+## The offer and the refusal
+In the Udyoga Parva, just before the war, Krishna goes to Karna and tells him the truth about his birth. He suggests that Karna, as the eldest son of Kunti, could join the Pandavas and be king. Karna refuses. He says he owes everything to Duryodhana, who raised him in honour when others sneered, and he will not betray him. When Kunti herself comes, he promises her that she will still have five sons: he will not kill any of the four younger Pandavas, but one of the two, himself or Arjuna, will fall. The epic does not make the choice easy for us to judge. It makes us feel its weight.
+
+## Questions people ask
+**Was Karna a hero or a villain?**
+The text refuses to give a single answer. He is generous, brave and loyal, and he also takes part in the humiliation of Draupadi and in the killing of Abhimanyu. Readers have argued about him for centuries because both are true.
+
+**What is the meaning of "daanveer"?**
+It means one who is a hero in giving. Karna is the model of this in Indian tradition.
+
+**Is the story of the gold tooth in the epic?**
+A well-loved folk story says that when Karna was dying, Krishna in disguise asked him for a gift, and Karna broke his gold tooth to give it. This is a later folk telling, and it is not in the Sanskrit text. It shows how deeply the idea of Karna as a giver has settled in people's hearts.
+
+## What this teaches us about giving
+Real generosity is not only about the amount. It is also about how we give: without being asked twice, without keeping accounts, without needing praise. At the same time, the story warns that giving cannot be a way of avoiding responsibility. What you do with your power, and who you stand beside, still counts.
+
+Here is a small exercise: this week, give something quietly, without telling anyone. Then ask yourself whether your day-to-day choices match the kindness of that one act.
+
+If you have a view on Karna that we have not covered, we would be glad to hear it at hello@southwala.com.
+
+## How to read the curses
+It is tempting to see the curses as pure bad luck. Look again. The first came after Karna concealed his birth from his teacher, and the second after he harmed an innocent animal, even by accident. The epic is not saying that Karna was unlucky. It is saying that deeds leave marks, and that a hidden lie, however understandable, can come back at the hardest moment. You can read more on that idea in our [three kinds of karma](/three-kinds-of-karma-sanchita-prarabdha-kriyamana/) piece.
+
 Related: [Gandhari's curse](/gandharis-curse-and-krishna-karma-of-the-yadavas/) and [three kinds of karma](/three-kinds-of-karma-sanchita-prarabdha-kriyamana/).

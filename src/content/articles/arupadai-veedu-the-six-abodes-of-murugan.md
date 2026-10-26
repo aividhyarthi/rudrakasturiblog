@@ -42,5 +42,40 @@ These are the Arupadai Veedu, the six abodes. The poet Nakkirar, in the ancient 
 - Palani's hill has steps, a winch train and a ropeway. Pick whichever you prefer.
 - Check each temple's timings, because most close in the afternoon.
 
+## A closer look at the poem
+The old poem that praises these places, the *Thirumurugatruppadai*, is part of the early Tamil collection known as the Pathupattu, the Ten Idylls. The word *aruppadai* in its title means "guiding", as if the poem were a signpost. In the poem, a poet who has already been blessed by Murugan meets another traveller and tells him which road to take to find the same grace.
+
+That framing is lovely. The poem is not a boast. It is one traveller helping another, and the six abodes are the stops on the road.
+
+## What each place seems to teach
+It is not part of any rulebook, but many devotees feel that each abode has its own mood.
+
+- **Thiruparankundram:** joy, a wedding, a home that is welcoming.
+- **Tiruchendur:** courage and victory by the open sea.
+- **Palani:** letting go, the ascetic who gave up everything.
+- **Swamimalai:** the humility of a teacher who is also a child.
+- **Thiruthani:** peace after a struggle.
+- **Pazhamudircholai:** the humbling of cleverness, as Avvaiyar found.
+
+If you are going through a hard time, you might find one of these moods speaks to you more than the others. Starting with that one is a perfectly good way to begin.
+
+## Kavadi and Thai Poosam
+At Palani and other Murugan temples, many devotees carry a *kavadi*, a decorated frame or pot carried on the shoulders as a vow. It is most visible at Thai Poosam. If you see kavadi-bearers, give them room. They often walk long distances, sometimes barefoot, and fast or keep a simple diet beforehand.
+
+## Questions people ask
+**Do I have to visit all six in one trip?**
+No. Many families visit them over several years, one or two at a time. A pilgrimage is a long relationship, not a checklist.
+
+**Is there a right order?**
+The list above is the one commonly given, but travel plans differ. Go in whatever order your journey allows.
+
+**What should I carry?**
+Water, light clothes you can walk in, and a little cash for offerings. Footwear is left outside, so wear something easy to slip off. Hill temples can be hot by midday, so go early.
+
+**Is there something to read first?**
+The [Subramanya Bhujangam page](/subramanya-bhujangam-and-tiruchendur-shankaras-prayer-to-murugan/) is a gentle introduction to the hymns of Murugan.
+
+If you have made this pilgrimage, or would like to, tell us about it at hello@southwala.com.
+
 ## In the Telugu states
 Telugu devotees visit Subramanya temples such as the one at Mopidevi. See our guide to [the god and his names](/murugan-kartikeya-subramanya-one-god-many-names/), and the mantras in [Subramanya mantras](/mantras/subramanya/).

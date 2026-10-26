@@ -46,4 +46,32 @@ The Kalabhairava Ashtakam, a set of eight verses traditionally attributed to Adi
 ## A caution
 You will see Bhairava worship linked with tantric practices in videos and articles online, and it makes the god sound more dangerous than most families treat him. Most families do nothing so dramatic: a lamp, black sesame, feeding a dog and a short prayer on Kalashtami is the usual form. If you are curious about stricter practices, speak to a teacher rather than copying something you read online.
 
+## A closer look at the eight Bhairavas
+Tradition speaks of eight forms of Bhairava, the Ashta Bhairavas, often listed as Asitanga, Ruru, Chanda, Krodha, Unmatta, Kapala, Bhishana and Samhara. Each is linked with a direction. Kalabhairava is the form most families know, and he is the one the Kashi story is about. You will also meet Bhairava as a protector in the Shakta tradition, where he stands beside the goddess as the guard at her gate. If you want to read about the fierce and the tender sides of the Mother herself, see [Kali](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).
+
+## Questions people ask
+
+**Why is a fierce god the guardian of a gentle, holy city?**
+A door needs a watchman. The tradition pictures Kashi as the place where Shiva himself lives, and Bhairava as the one who keeps order at its gate. The fierceness is turned outward, towards harm, and not towards the devotee.
+
+**Why do people feed a dog on his day?**
+The dog is his companion. Feeding a hungry animal is a simple, kind act, and it needs no special knowledge.
+
+**Do I have to visit Kashi to worship him?**
+No. A lamp at home and a short prayer on Kalashtami is fully accepted. Many Shiva temples have a small Bhairava shrine where you can offer a prayer.
+
+**Is it right to be afraid of him?**
+Not really. Devotees describe him as the one who removes fear. If you find yourself frightened by an online video, close it and read the story again here.
+
+## A simple Kalashtami at home
+1. In the evening, light a lamp with sesame oil in front of a picture of Shiva or Bhairava.
+2. Offer a flower and a little cooked rice or a sweet.
+3. Say *Om Namah Shivaya*, or a short prayer in your own words, asking for protection and courage.
+4. Give some food to a dog, or to someone who is hungry.
+5. Keep the day quiet and kind. Avoid anger.
+
+You can check the days of the dark-fortnight Ashtami in the [Panchangam](/panchangam/). Prayer brings calm, but it does not replace practical care. If you fear something real, take practical steps too.
+
+If you have been to the Kal Bhairav temple in Varanasi or Ujjain, we would love to hear what it was like. Write to us at hello@southwala.com.
+
 To go back to the beginning, read [Who is Shiva](/who-is-shiva-five-things-most-people-get-wrong/).

@@ -54,4 +54,28 @@ The disguises are acts of worship. Visitors to the jatara should be respectful: 
 ## Visiting
 The temple is in the Tatayyagunta area of Tirupati, a short ride from the railway station. It is open daily, and especially busy on Fridays and during the jatara.
 
+## Village goddesses across the South
+Gangamma is one of many *grama devatas*, the goddesses who guard a single town or village rather than the whole world. You will find them under many names: Mariamman in Tamil Nadu, Yellamma in Karnataka and Andhra, Mahankali in Hyderabad and Secunderabad, and others. They tend to sit close to the people, often in small shrines at the edge of the settlement, and they are asked for the practical things: rain, health, safety for children, protection from disease.
+
+If this world interests you, read [Renuka, Yellamma and Mariamman: one mother, many names](/renuka-yellamma-mariamman-one-mother-many-names/). You will see the same pattern again and again: a woman wronged or hunted, a terrible form, a town saved, a yearly festival that remembers.
+
+## Why the town goddess comes first
+There is an old habit in Tirupati of paying respects to the local goddess alongside the big pilgrimage. For people of the town, Venkateswara on the hill is the great Lord, and Gangamma is the one who lives in the next street. Both matter, in different ways, a bit like the difference between a famous uncle who lives far away and a sister you see every week.
+
+## Questions people ask
+**Is Gangamma the same as Ganga, the river goddess?**
+The names sound alike, but the Gangamma of Tirupati is a local village goddess with her own story. Do not mix the two.
+
+**Is it right for men to dress as women during the jatara?**
+It is part of the vesham tradition here. Those who take it up usually do so as a vow, and it is done with seriousness. Treat it with the same respect as any other act of worship.
+
+**When is the jatara?**
+It is usually held in May, but the exact days change from year to year, so check with the temple or local notices before you travel.
+
+**Can I visit if I am not from Tirupati?**
+Yes. Temples of this kind are open to anyone who comes with respect. Go early in the day if you want a calmer visit.
+
+## A thought to carry
+We often hunt for the grand and distant, and pass the small shrine near our own home. Gangamma's story is a reminder that care starts nearby. If you have a local goddess or a village temple that your family has always visited, we would like to hear about it at hello@southwala.com.
+
 See also [Balaji, Venkateswara of Tirumala](/balaji-venkateswara-of-tirumala-seven-hills-one-lord/) and [Poonakam: why drums bring on a trance at temples](/poonakam-why-drums-bring-on-a-trance-at-temples/).

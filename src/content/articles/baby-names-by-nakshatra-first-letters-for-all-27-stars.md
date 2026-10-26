@@ -56,4 +56,33 @@ Many families choose a baby's name from the nakshatra the Moon was in at birth. 
 - **The name need not be the only one.** Many families keep a nakshatra name for ceremonies and a different everyday name.
 - **Choose a good meaning.** The syllable is the start, and the meaning is what the child will carry.
 
+## A worked example
+Suppose your baby was born when the Moon was in Rohini, in the third pada. The table gives *Vi* for that pada. So you would look for a name that begins with the sound "Vi", such as Vidya, Vinay or Vihaan, and then choose among them by meaning and by what sounds good with your family name. That is all the method asks of you.
+
+## Questions people ask
+
+**Do we have to follow the syllable?**
+No. It is a long-standing custom in many families, especially in the South, but it is a custom and not a rule of law. Many families follow it for the ceremonial name and use a different name day to day.
+
+**What if the sound I like is not in the table?**
+You can choose an everyday name that you love, and keep the nakshatra name for the naming ceremony and for temple records. Or ask your priest whether a close variant is accepted in your family tradition.
+
+**When is the naming ceremony held?**
+The *namakarana* is traditionally held on the eleventh or twelfth day after birth, though many families choose another auspicious day that suits them.
+
+**What if my baby's pada is unclear?**
+If the birth time is not exact, a priest or an astrologer you trust can help. Please do not let it become a source of worry. A name is a gift, not a verdict.
+
+## Tips for choosing a name you will not regret
+- **Check the meaning** in Sanskrit and in your own language, and make sure it is a good one.
+- **Say it aloud** with your surname and with likely nicknames.
+- **Think about spelling.** It will appear on school and official documents for life, so choose a spelling that is easy to write.
+- **Ask the elders.** Grandparents often know a family name or a deity's name that deserves to be passed on.
+- **Take your time.** There is no prize for choosing fast.
+
+## Where to learn more
+To see how the Moon sign and nakshatra are found, read [how to read a panchangam](/how-to-read-a-panchangam-tithi-nakshatra-yoga-karana/) and look at the [Panchangam page](/panchangam/) for daily nakshatra.
+
+If you chose a name for your child in a way that was special to your family, or if you have a question about a pada, write to us at hello@southwala.com.
+
 *Traditions vary by family and region.*

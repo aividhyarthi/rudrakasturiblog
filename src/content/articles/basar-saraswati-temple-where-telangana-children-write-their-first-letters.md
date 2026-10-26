@@ -63,4 +63,32 @@ Many families do the aksharabhyasam at home, with a family priest and a small la
 ## Something to remember
 The point of this ceremony is love of learning. It is a way of telling a child that knowledge is worth honouring. A parent who sits with the child every evening, after the ceremony, does the second half.
 
+## A closer look at Vasant Panchami
+Vasant Panchami falls on the fifth day of the bright fortnight of the month of Magha, around the start of spring. In many parts of India it is also Saraswati's day, and children place their books and pens before her. At Basar, it is one of the busiest days of the year. If you want a calmer visit, choose a weekday in another month.
+
+## Questions people ask
+**How old should my child be?**
+Families commonly do aksharabhyasam between the ages of three and five, but there is no strict rule. Many families simply choose a time when the child is ready to sit and enjoy it.
+
+**Do I need to go to Basar?**
+No. The ceremony can be done at home or at any Saraswati, Ganesha or local temple. For the home version, see [Saraswati and the first letter: aksharabhyasam at home](/saraswati-and-the-first-letter-aksharabhyasam-at-home/).
+
+**What should the child wear?**
+Something simple and comfortable. Many families choose new clothes. Remember that the child may have to sit for a while.
+
+**Can adults visit and pray for their own studies?**
+Yes. Students of all ages come before exams and interviews. It is a place where people ask for clarity of mind.
+
+## Making the day easy for a small child
+- Feed the child beforehand so that they are not hungry during the ceremony.
+- Bring water, a small snack and a change of clothes.
+- Keep the visit short. Little ones tire quickly in queues.
+- Let the child hold the pen or chalk and enjoy the moment, even if the letters are wobbly.
+- Take a photograph for the family album, if the temple allows it.
+
+## What comes after
+The ceremony is a doorway. What matters most is what the family does next: reading to the child, keeping books at home, praising effort and not only marks. Many parents choose a short evening routine of reading together for ten minutes. It is a modest practice, and it may be the best gift of all.
+
+If your child began learning at Basar, or if you have a family custom for the first letters, please share it with us at hello@southwala.com.
+
 *Beliefs and customs differ from family to family and temple to temple. Check timings, rules and costs on the temple’s official channels before you travel, and be careful with agents who offer to arrange rituals for large sums.*

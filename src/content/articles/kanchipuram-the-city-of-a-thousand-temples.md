@@ -44,4 +44,31 @@ The Kanchi Kamakoti Peetham, whose heads are called Shankaracharyas, has its sea
 - Use auto-rickshaws or hire a car for the day, and agree on a rate beforehand.
 - Dress modestly and carry change for shoe stands.
 
+## Two Kanchis in one town
+Locals speak of two parts of the old city. Shiva Kanchi, also called Periya Kanchi, is the larger part, where Ekambareswarar stands. Vishnu Kanchi, or Chinna Kanchi, is the smaller part where the Varadaraja temple and several other Vishnu temples are found. The two halves have lived side by side for centuries, which is part of why the town feels so open to every kind of devotion.
+
+## More temples worth knowing
+If you have a second day, there are quieter places that reward the visitor.
+- **Kachapeswarar.** A Shiva temple linked with the story of Vishnu in his tortoise form, *kurma*, worshipping Shiva here.
+- **Vaikuntha Perumal.** An early Pallava temple of Vishnu, also from around the 8th century, known for its sculpted panels on the inner walls.
+- **Ulagalanda Perumal.** A Vishnu temple in the town where the Lord is shown in his giant form, with one foot raised to the sky.
+
+You do not need to see them all. One temple seen slowly is better than five seen in a rush.
+
+## Questions people ask
+**Why is Kanchi called a Moksha Puri?** Because the tradition lists it among the seven cities where death or devotion is said to lead to liberation. For most visitors it simply means a place with a very old sense of the sacred.
+
+**Is Kanchi connected with the great teachers?** Yes. Tamil Shaiva saints sang in praise of the Shiva temples here, the Alvars sang of the Vishnu temples, and the Vaishnava teacher Ramanuja is remembered in Kanchi in connection with the Varadaraja temple, where a devotee named Kanchipurna served.
+
+**Is it only for Hindus?** The old city was a meeting point of Buddhists, Jains and Hindus, as the article says. Visitors of any background are welcome to walk the streets and see the architecture. Each temple has its own rules about who may enter the sanctum, so ask.
+
+**What should I eat?** Temple prasadam such as the idli of Kanchipuram is famous. Prasadam is offered at many temples, so ask what is available that day.
+
+## Reading the town slowly
+Kanchi is not a place to tick off. Try to have one unhurried hour in it. Sit in a temple courtyard and notice what the stones look like at different times of day. Watch the weavers at work if you can. Look at the sculpture of the Kailasanathar temple and imagine the Pallava craftsmen at the same task more than twelve hundred years ago.
+
+If you visit Kanchipuram and find a corner that moved you, write to us at hello@southwala.com, and we may share it with other readers.
+
+For the Shakti side of the town, read [Kamakshi of Kanchipuram, the goddess who embraced the sand lingam](/kamakshi-of-kanchipuram-the-goddess-who-embraced-the-sand-lingam/).
+
 Kanchi is also on the list of [Pancha Bhoota temples](/temples/pancha-bhoota-sthalams/), and the Shakti worship ties in with the [Shakti Peethas](/temples/shakti-peethas/).

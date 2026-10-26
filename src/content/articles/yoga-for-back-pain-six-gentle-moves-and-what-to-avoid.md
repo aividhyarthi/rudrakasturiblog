@@ -63,4 +63,26 @@ See a doctor soon if you have numbness or tingling in a leg or foot, weakness in
 ## A word on the mind
 Back pain and stress often travel together. Slow breathing during the poses does as much good as the stretch. If you want to add a breathing practice, read [our beginner guide to pranayama](/pranayama-for-beginners-three-safe-breathing-practices/).
 
+## Questions people ask
+
+**Should I rest in bed until the pain passes?**
+For ordinary back pain, many doctors advise staying gently active rather than lying in bed for days. Short walks and easy movement usually help more than rest alone. If you are unsure, ask your doctor.
+
+**How long before I feel better?**
+It varies. Some people feel easier within a week of daily practice, and some take longer. If nothing changes in a few weeks, get it checked.
+
+**Can I do these moves in the morning?**
+Yes, but the back is often stiff on waking. Move more slowly, and warm up with a few minutes of walking.
+
+## Small habits through the day
+- **When lifting,** bend at the knees, hold the load close to your body and avoid twisting as you lift.
+- **When sleeping,** try lying on your side with a pillow between the knees, or on your back with a pillow under the knees.
+- **When sitting,** keep your feet on the floor, and put a small rolled towel behind your lower back if it helps.
+- **When driving,** take a break every hour to walk.
+- **When standing,** shift your weight now and then instead of locking your knees.
+
+If your neck and shoulders are also tight from desk work, you might like [yoga for neck and shoulder pain](/yoga-for-neck-and-shoulder-pain-from-sitting-at-a-desk/).
+
+Did one of these moves help, or did you find a change that suited your own back? Write to us at hello@southwala.com.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*

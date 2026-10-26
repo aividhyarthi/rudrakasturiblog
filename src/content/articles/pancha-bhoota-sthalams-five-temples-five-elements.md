@@ -47,5 +47,27 @@ There is no fixed rule, though many people go in the order of the elements as th
 ## The idea behind it
 The temples remind a visitor that the divine is not separate from the world. The ground you walk on, the water you drink, the fire that cooks, the air and the sky around you are all part of the same thing. It matches the teaching of the Upanishads that we looked at in [our Upanishad map](/the-ten-principal-upanishads-a-beginners-map/).
 
+## A closer look at the five elements
+The idea of five great elements, the *pancha mahabhuta*, is very old. The Taittiriya Upanishad describes creation as unfolding in order: from the Self came space, from space air, from air fire, from fire water, and from water earth. Ayurveda also uses the five elements to talk about the body and food. So when a temple is linked to an element, it is a way of saying that the whole world, inside and outside you, is the lord's body.
+
+Notice, too, that each temple tries to *show* its element in a way the senses can grasp: sand and earth, water at the base, a hill of fire, a flickering lamp, and an empty space. The teaching is meant to be felt as well as understood.
+
+## Questions people ask
+**Which temple should I begin with if I can only go to one?**
+Go to whichever is closest to your home or to your family's tradition. Each stands for one element, and none is greater than the others. If you are in Andhra, Srikalahasti is the natural choice. If you are near Chennai, Kanchipuram is only a short way away.
+
+**How many days does the full circuit take?**
+Four of the five are in Tamil Nadu and the fifth in Andhra Pradesh, so most people plan several days by road, with rest in between. Plan according to your own pace and the season.
+
+**Do I have to be a Shaiva to go?**
+No. Anyone who wishes to visit with respect is welcome, subject to each temple's rules. Check dress codes and timings before you go.
+
+## Making it a journey, not a checklist
+Many pilgrims treat the circuit as a series of small retreats. At each place, sit for a few minutes and think of the element it represents. At the sand lingam, think of the ground beneath your feet. At the water temple, drink slowly. At the hill of fire, watch the light. At the air temple, breathe. At the temple of space, sit in silence.
+
+You can also read about two of these places in more depth: [Arunachala](/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/) and [Srikalahasti](/srikalahasti-the-rahu-ketu-temple-and-the-story-of-kannappa/).
+
+If you have walked the circuit, or one part of it, we would love to hear about it at hello@southwala.com.
+
 ## For a full list
 See the Pancha Bhoota Sthalams page in our [temple lists](/temples/pancha-bhoota-sthalams/), and our guide to the [Shiva mantras](/mantras/shiva/).

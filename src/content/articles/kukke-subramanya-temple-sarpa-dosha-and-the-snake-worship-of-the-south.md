@@ -60,6 +60,31 @@ The temple has a large annual festival, Champa Shashti, in the month of Margashi
 
 For the god himself, see [Murugan, Kartikeya, Subramanya](/murugan-kartikeya-subramanya-one-god-many-names/).
 
+## A closer look at snake worship in the south
+Long before any horoscope, the people of the south honoured snakes. Look under an old peepal or neem tree at a village crossing, and you will often see carved stones of entwined serpents, set up by families and tended with turmeric, kumkum and milk. In Kerala, many old homes keep a small grove, the *sarpa kavu*, left wild for the serpents.
+
+Why? In farming life, snakes keep rats away from the grain, and they also bring fear. Worship was a way of living alongside them with respect. The festivals reflect this. Naga Panchami is observed in many regions, and in Andhra the day called Nagula Chavithi, soon after Deepavali, is kept by many families who pour milk at anthills. The myth of Astika, who saved the serpents from a sacrifice, is told in the Mahabharata and is the subject of [Astika and the snake sacrifice](/astika-and-the-snake-sacrifice-how-a-boy-saved-the-nagas/).
+
+## Practical kindness to snakes
+If you want to follow the spirit of the tradition, here are simple things you can do.
+
+- **Do not kill snakes** that wander into a garden or home. Call a trained local rescuer or the forest department.
+- **Keep the garden tidy.** Piles of wood and rubble attract rats and then snakes.
+- **Learn which snakes in your area are venomous,** and teach children to stay away and call an adult.
+- **If someone is bitten,** take them to a hospital at once. Do not rely on rituals, charms or home remedies. Medical care is the answer to a snakebite.
+
+## Questions people ask
+**Do I have to be a Subramanya devotee to go?**
+No. Families of many traditions visit. The temple welcomes pilgrims who come in good faith.
+
+**Is the ritual compulsory if my chart shows the dosha?**
+No. Astrology is a matter of belief, and no priest or astrologer can force a ritual on you. Take time to decide, and ask an elder you trust.
+
+**What if I cannot travel?**
+Many families light a lamp for Subramanya at a nearby temple, offer milk at a snake stone on a festival day, or simply read a short prayer at home. For ideas, see [Murugan, Kartikeya, Subramanya](/murugan-kartikeya-subramanya-one-god-many-names/).
+
+If you have visited Kukke or have a family tradition of serpent worship, write to us at hello@southwala.com. We are happy to listen.
+
 ## A balanced word
 Many people go to Kukke out of fear, and come back with a sense of calm. For some, the visit is simply a way of saying, "I did what tradition asks." That is a good outcome. If you are anxious about a horoscope, remember that astrology is a belief, that you are free to choose, and that kindness to living beings is the best practice of all.
 

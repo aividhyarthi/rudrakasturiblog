@@ -46,5 +46,31 @@ Think of a drop of water and the sea.
 ## Why it matters to ordinary people
 You may meet these schools without knowing it. A Smarta family in Andhra will usually follow Shankara. A Sri Vaishnava family will follow Ramanuja. Many Kannada Madhva families follow Madhva. They worship in similar ways, but their explanations differ.
 
+## Where the three agree
+Before the differences, it is worth knowing what they share. All three accept the Veda and the Upanishads as authority. All three wrote commentaries on the same three sources, known as the *prasthana traya*, the "three starting points": the Upanishads, the Bhagavad Gita and the Brahma Sutras. All three believe that human beings are not finished at death, and that there is a state of liberation worth seeking.
+
+They differ on what that liberation is and how to reach it. So the quarrel is between friends who share a house, not strangers.
+
+## The commentaries to look for
+Each teacher wrote a commentary on the Brahma Sutras, the short, dense text that tries to summarise the teaching of the Upanishads. Ramanuja's is known as the *Sri Bhashya*. These commentaries are where the arguments are made carefully, line by line. You do not need to read them to benefit from the story, but it helps to know that these were not casual opinions. They were long and reasoned books.
+
+## When and where
+Traditional dates place Shankara in the 8th century, Ramanuja in the 11th and 12th, and Madhva in the 13th. Scholars sometimes adjust the exact years, so it is safer to think of them as "about". Shankara came from Kerala, Ramanuja from Tamil Nadu and Madhva from Karnataka. Three South Indian regions, three schools, one shared language of Sanskrit.
+
+## Questions people ask
+**Do the schools worship different gods?**
+Not necessarily. Many Smartas worship several deities and see all as forms of one reality. Sri Vaishnavas and Madhvas centre their worship on Vishnu. The difference lies more in how they explain God than in which temple they enter.
+
+**Is one school more devotional than the others?**
+Ramanuja and Madhva place devotion at the very centre of liberation. Shankara also sang devotional hymns, but in his philosophy knowledge is the final means. In practice, many Advaitins are deeply devout.
+
+**Which should I follow?**
+Our suggestion is gentle. Start with what your family does, and read widely. Tradition holds that a sincere teacher will not mind if you ask questions.
+
+## If you want to read more
+For Shankara's own song, see [Bhaja Govindam](/bhaja-govindam-shankaras-song-for-the-confused-mind/). For the Advaita idea of *maya*, which often confuses new readers, see [Maya: is the world an illusion?](/maya-is-the-world-an-illusion-what-advaita-says/). To see where Ramanuja taught, read about [Srirangam](/srirangam-ranganathaswamy-temple-the-island-temple-of-vishnu/).
+
+Which of the three speaks to you? We would like to hear at hello@southwala.com.
+
 ## Which one is right?
 There is no easy answer, and the tradition does not ask you to choose in a hurry. Many people find that devotion comes first and philosophy follows. If you would like to start with the most radical of the three, read [Advaita in plain words](/advaita-vedanta-in-plain-words/).

@@ -62,4 +62,27 @@ Keep communication open. Ask your child what they want, and listen. A child who 
 ## If you are feeling low about it
 Waiting can be painful, and loneliness is real. Talk to a friend, and if the feeling lingers, to a counsellor. See [yoga when you feel low](/yoga-when-you-feel-low-small-practices-for-a-heavy-mood/).
 
+## A closer look at Parvati's penance
+In the Puranas, Parvati did not simply wait for Shiva to notice her. She went to the forest and practised long austerities to win him. The Gauri prayer above remembers that story. What many women take from it is not the idea of waiting for a husband to appear, but the idea of becoming steady, patient and clear about what one wants. Her prayer is about inner strength first.
+
+Another marriage story you may enjoy is that of [Meenakshi of Madurai](/meenakshi-of-madurai-the-warrior-queen-who-met-shiva/), a bride who was also a queen, and whose wedding to Shiva is still celebrated in Madurai every year.
+
+## Places families visit
+Some families visit particular temples when a wedding is awaited. Thirumanancheri, near Mayiladuthurai in Tamil Nadu, is widely known as a temple of marriage prayers. Bhadrachalam, mentioned above, is another, especially around Sri Rama Navami. Many families simply go to their own kuladevata or the nearest Shiva or Devi temple. Where you pray matters less than the steadiness with which you go.
+
+## Questions people ask
+**Is it all right for a man to use these prayers?**
+Yes. The Sita and Rama prayer is especially popular with both sons and daughters, and many young men pray to Parvati and Shiva for a good partner.
+
+**What if the wait lasts for years?**
+Many people marry later than expected and are happy. A delay is not a verdict on you. Keep living your life: study, work, friendships, service.
+
+**Should I fast?**
+Some families keep a Monday fast. If you do, keep it gentle and eat enough. This is not medical advice, and anyone with a health condition should not fast without their doctor's guidance.
+
+**Can parents pray on behalf of a child?**
+Yes. Many parents light a lamp and offer a verse every week. Just make sure you also talk with your child, and do not turn the prayer into pressure.
+
+If you would like to share how your family handled a long wait, write to hello@southwala.com.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

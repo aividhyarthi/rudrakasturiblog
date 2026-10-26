@@ -63,4 +63,28 @@ It does not say that anxious thoughts are a sign of weak faith. If your mind wil
 
 For the first chapter of this series, read [what the Gita says about anger](/bhagavad-gita-on-anger-krishna-teaching/).
 
+## Overthinking at night
+The mind gets loudest when the room is quiet. If you lie awake replaying the day, try a few small things before you blame yourself.
+- Put the worry on paper earlier in the evening, with one line about what you will do about it tomorrow.
+- Dim the lights and put the phone away half an hour before bed.
+- Say a short mantra slowly, or count breaths from one to ten and begin again.
+- If your mind races, get up, drink water and sit for a few minutes, then try again.
+
+The Gita (6.17) also reminds us that yoga is for the one who is moderate in eating, recreation, work and sleep. A tired mind is a more anxious mind, so protect your rest. Our piece on [the middle path of eating, sleeping and working](/gita-on-burnout-the-middle-path-of-eating-sleeping-and-working/) goes deeper.
+
+## Questions people ask
+**Is overthinking a sin or a fault?**
+No. The Gita treats the restless mind as a normal condition that needs training, not a moral failing.
+
+**How is this different from simply being careful?**
+Careful thinking leads to a decision. Overthinking goes round the same circle without one. If the thought gives you no new step to take, you have probably left careful thinking behind.
+
+**Do I need a teacher?**
+A teacher or an experienced friend helps, especially for longer meditation practices. For the small practices here, you can begin on your own. If you want to read the two key verses slowly, see [Gita 6.35, word by word](/read-the-line-gita-6-35-the-restless-mind/).
+
+**What if I fail for a few days?**
+Begin again. The verse itself says practice, which means repetition, including the repetition of starting over.
+
+If one of these ideas has helped you, we would be glad to hear it at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

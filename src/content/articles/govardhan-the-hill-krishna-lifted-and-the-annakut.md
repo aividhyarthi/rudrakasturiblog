@@ -42,5 +42,40 @@ On the day after Deepavali, the first day of the bright fortnight of Kartika, Go
 
 In 2026 Govardhan Puja is on **Tuesday, 10 November**, the day after Deepavali Amavasya. The full list of Deepavali dates is in [our Deepavali guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). Bali Padyami, the same day, begins Karthika Masam in the Telugu calendar.
 
+## A closer look at the story's source
+The lifting of Govardhana is told in the tenth canto of the Bhagavata Purana, in chapters 24 and 25. It is also recalled in the Harivamsha and in many later poems and songs. In the telling, Krishna is a young boy, and the people of Vraj are simple cowherds. That detail matters. The hero of the story is not a king or a warrior but a child who asks a simple question: why do we do what we do?
+
+The name *Govardhana* is often explained as "the one that nourishes the cows." Whether or not you take that as an exact meaning, it fits the story well.
+
+## Tips if you plan the parikrama
+These are practical notes, not rules.
+
+- **Choose the hours.** Early morning or evening is kinder than the midday heat.
+- **Carry water and a cap.** Barefoot walking on hot stone is hard. Some people wear light socks or take the walk in stages.
+- **Go slowly.** Five or six hours is a long walk. Rest at the lakes along the way.
+- **Keep it clean.** Take your leaves, flowers and wrappers with you.
+- **Walk with a group or a friend** if you can, especially if you are older or travelling for the first time.
+- **If you cannot walk the whole path,** do a smaller part. Devotion is not measured by kilometres.
+
+## Govardhan Puja at home
+You do not need to be in Vraj to take part. A simple way:
+
+1. Make a small hill on a clean plate or a patch of ground, from cooked rice, or from clean earth or cow dung if that is your family custom.
+2. Decorate it with flowers, a lamp and a few leaves of tulasi.
+3. Offer fruit, sweets and the food you have cooked that day.
+4. Walk around the little hill slowly, once or three times.
+5. Share the food with family, neighbours and, if you can, someone who has little.
+
+That last step is the heart of Annakut. A mountain of food means nothing unless it is shared.
+
+## Questions people ask
+**Is the hill really shrinking?**
+Local belief says so, and pilgrims treat it with great care. Whatever the cause, it is a good reason to walk gently and not take stones away.
+
+**Why is cow dung used?**
+In village homes, it is a clean and humble material that has been used for floors and fires for centuries, and it connects the puja to the cows of the story. Many families today use food or clay instead.
+
+If you have walked the parikrama or made Annakut in your own home, write to us at hello@southwala.com and tell us how it felt.
+
 ## Related
 If you want to know more about Krishna, read [Krishna: the cowherd, the king and the teacher](/krishna-the-cowherd-the-king-and-the-teacher/), and for another hill, see [Arunachala](/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/).

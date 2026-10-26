@@ -54,6 +54,35 @@ The honest teaching of the tradition is that prayer and medicine are not rivals.
 
 For health prayers, see [which god to pray to for health](/which-god-to-pray-to-for-health-and-recovery-dhanvantari-and-shiva/) and the [Shiva mantras](/mantras/shiva/).
 
+## A closer look at the temple's place in Tamil devotion
+Vaitheeswaran Koil is one of the Paadal Petra Sthalams, the Shiva temples praised in the Tevaram hymns of the Tamil saints. These hymns, sung for more than a thousand years, are one reason the place has been loved for so long. You may hear them in the temple as you walk the corridors.
+
+The temple also has a well-known shrine for Murugan, here known as Selvamuthukumaraswamy. Tamil devotees often visit him after offering prayers to the main deity, and the shrine has links with the poet-saint Arunagirinathar. If you enjoy the stories of Murugan, our pages on [the six abodes of Murugan](/arupadai-veedu-the-six-abodes-of-murugan/) will interest you.
+
+## The meaning of "Vaidya"
+The Sanskrit word *vaidya* means physician. In many South Indian families the word has a warm, almost family-like sound, because the local vaidya was a person who knew everyone's history. Calling Shiva *Vaidyanatha*, the Lord of Physicians, says something gentle about how people feel about illness and the divine. Sickness is frightening and lonely. The name offers company.
+
+## If you are going for someone who is ill
+1. **Check the patient's condition first.** Do not travel with someone who is very weak, and never delay a hospital visit for a pilgrimage.
+2. **Go yourself if the patient cannot.** Many families make the vow and carry out the offering on the patient's behalf, which the tradition accepts.
+3. **Keep the vow simple.** A small, honest offering is better than a vow you cannot keep.
+4. **Pray for the doctors too.** Many families include a thought for the nurses, doctors and carers.
+
+## Questions people ask
+**Is the thiruchandu urundai medicine?**
+No. It is prasadam, a sacred offering. Treat it as a blessing and continue any medical treatment as advised by your doctor.
+
+**Can I offer the salt and pepper even if I am not ill?**
+Yes. Some people do so as a thanksgiving after recovery or for the health of someone dear.
+
+**Is it linked to Mars in astrology?**
+Yes, the temple is the Angaraka (Mars) place among the nine Navagraha temples. Visiting is a matter of faith, and you should not be frightened by anyone who tells you that your chart demands it.
+
+**When is the best time to go?**
+Early morning is calmer. Tuesdays and festival days are very crowded.
+
+If you or your family have a Vaitheeswaran Koil story, we would be glad to hear it at hello@southwala.com.
+
 ## Visiting
 The temple is open from early morning, closes for several hours in the afternoon and reopens in the evening. It is crowded on Tuesdays. Dress modestly. Use the official counter and beware of agents.
 

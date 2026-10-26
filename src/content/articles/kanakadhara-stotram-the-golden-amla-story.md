@@ -44,4 +44,31 @@ The hymn is recited on Fridays, the day of Lakshmi, and at the festival of Deepa
 ## What to take from it
 There are two lessons in the story. The first is that generosity does not depend on how much you have. The second is that a great teacher shows respect to a small gift.
 
+## A closer look at the amla
+Amla, the Indian gooseberry, is an everyday fruit in South Indian kitchens, sour and a little bitter. A dried one is humble, almost nothing. That is the point. The woman gave the least valuable thing in her house, and yet it was everything she had. The amla is also honoured in the month of Karthika, when lamps are lit near the amla tree in many homes. You can read about the month in [why Karthika Masam](/why-karthika-masam-what-the-month-means-and-who-to-worship/).
+
+## Questions people ask
+
+**Is it certain that Shankara wrote the hymn?**
+Tradition attributes it to him, and the story is told as his. Scholars are careful about which devotional hymns can be firmly assigned to him, so it is fair to say "traditionally attributed". The story is loved either way.
+
+**Does chanting it make a person rich?**
+Please be careful here. The hymn asks for Lakshmi's kindness, and the story is about generosity. No hymn guarantees money, and no one should pay for a special copy or a "golden" yantra that promises wealth. If you are in debt, see [which god to pray to for money troubles](/which-god-to-pray-to-for-money-troubles-and-debt-lakshmi-kubera-narasimha/) and seek practical help as well.
+
+**Do I need to understand Sanskrit to chant it?**
+No. Read the meaning once, then chant slowly. Understanding grows with repetition.
+
+## How to chant it at home
+1. Choose a Friday morning after a bath, or any quiet time.
+2. Light a lamp before a picture of Lakshmi.
+3. Read the meaning of a verse or two, then chant.
+4. End with thanks, and give something small to someone who needs it, because that is the lesson of the story.
+
+For the festival of lamps, see [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/), and for the eight forms of the goddess, read [Ashtalakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/).
+
+## Reading the story with modern eyes
+It is easy to read this as a tale about sudden wealth. A better reading may be about attention. A boy on his begging round noticed how much it cost one poor woman to give him one dry fruit, and he did not walk past. Most of us have a version of that doorstep: a neighbour, a cook, a driver or a relative who gives more than they can spare. The story asks us to notice them, to thank them properly, and to ask what we can do in return.
+
+If your family has a way of reciting the Kanakadhara, we would like to hear about it at hello@southwala.com.
+
 For the day of the goddess, see [Friday Lakshmi worship](/friday-lakshmi-worship-mantras-and-how-to-do-it/) and [Lakshmi mantras with meaning](/mantras/lakshmi/). To read about the author, see [Shankara’s story](/adi-shankaracharya-the-boy-from-kaladi-who-walked-across-india/).

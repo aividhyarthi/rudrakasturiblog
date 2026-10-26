@@ -60,4 +60,30 @@ There is something touching about falling asleep in front of God. Many families 
 
 For a good beginning, see [how to start japa](/mantra-japa-how-to-start-count-and-keep-going/).
 
+## Questions people ask
+**Is it disrespectful to doze off in front of the deity?** The tradition does not treat it so. Teachers speak of dull drowsiness as something to work with, not as an insult to God. If it happens, wake gently, sit up, and go on.
+
+**Can I pray lying down if I am unwell?** Yes. Illness changes the rules. A prayer in bed, with the name of God in your mind, is fine.
+
+**Does it help to have a cup of tea first?** Some people find a warm drink helps them feel alert. If you are sensitive to caffeine or have trouble sleeping, you may prefer plain water. Do what suits your body.
+
+**Why am I fine while chanting, but sleepy in silence?** Voice and movement keep the body engaged. Silence gives a tired body nothing to do. That is why many teachers suggest beginners chant or sing before they sit in quiet.
+
+## A short routine for an evening prayer
+If your only time is at night, here is a way to make it kinder to a tired body.
+1. Wash your face and hands, and drink a glass of water.
+2. Sit on a firm seat or stand for the first minute.
+3. Light the lamp and look at it for a few breaths.
+4. Chant aloud, softly, for five minutes, with the beads or on your fingers.
+5. Sit quietly for a minute or two, and then say thank you.
+6. End before you are too tired. A short, awake prayer is better than a long, sleepy one.
+
+## A closer look at the morning hours
+Many traditions recommend the early morning for prayer and study, and the reason is partly practical. The mind is fresh, the house is quiet and you have not yet been pulled in many directions. You can read more in [Brahma muhurtham: time and meaning](/brahma-muhurtham-time-and-meaning/). But if early mornings do not work for you because of your work or family, do not feel you have failed. A prayer you can actually stay awake for is better than a perfect time you cannot keep.
+
+## Resting on purpose
+Some people find that a few minutes of deliberate rest before prayer helps them stay awake during it. Our piece on [yoga nidra](/yoga-nidra-the-practice-of-resting-while-awake/) explains a practice of resting while staying aware, which is a different thing from falling asleep.
+
+If you have found a way to keep awake during your own prayer, we would love to hear it. Write to hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

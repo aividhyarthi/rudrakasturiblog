@@ -61,4 +61,33 @@ In India, call Tele-MANAS on 14416, free and open at all hours. If you or someon
 
 Treatment for anxiety works well, and many people use yoga alongside it.
 
+## Why the out-breath matters
+Many people find that a longer out-breath helps the body feel slower and safer, which is why this routine asks you to breathe out for six counts. You do not need to force it. If six feels too long, use three in and four out, and let it grow.
+
+## Questions people ask
+
+**What if I cannot lie on the floor at work?**
+Skip the wall pose and the final rest. Do the grounding, the breathing and a seated forward fold with your hands on your thighs.
+
+**How often should I do this?**
+Once a day is plenty, and many people like to do it at the same time each day. A short routine you actually repeat is better than a long one you skip.
+
+**Can I do it when I am panicking?**
+Start with the grounding and slow breathing only. Keep the poses for later. If panic keeps coming back, please see a doctor.
+
+**Does it replace treatment?**
+No. It is a gentle support alongside whatever your doctor or counsellor advises.
+
+## Two quick resets at your desk
+- **Shoulder drop.** Breathe in and lift the shoulders to the ears, then breathe out and let them fall. Do it five times.
+- **Hands on the heart.** Place one hand on your chest and the other on your belly, and take three slow breaths. Feel the body move.
+
+## An evening wind-down
+Anxiety often gets louder at night. Dim the lights an hour before sleep, keep your phone away from your bed and try the routine in [yoga for sleep](/yoga-for-sleep-an-evening-routine-that-helps-you-wind-down/). If your thoughts race, you may like [yoga for overthinking](/yoga-for-overthinking-how-to-quiet-a-busy-mind/) and the simple breathing practices in [pranayama for beginners](/pranayama-for-beginners-three-safe-breathing-practices/).
+
+## On the days it does not work
+Some days you will do the whole routine and still feel jittery. That is normal and does not mean you did it wrong. Anxiety is not a test you pass. Be as kind to yourself as you would be to a friend, drink some water, step outside for a few minutes of daylight, and try again tomorrow. Small, repeated visits to calm do more than one perfect session.
+
+If this routine helped you, or you changed it to suit your own day, write to us at hello@southwala.com.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*

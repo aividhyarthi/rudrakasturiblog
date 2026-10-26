@@ -64,6 +64,23 @@ Rama had waited his whole life to be king. Everything was ready, and by evening 
 - **Keep one small daily action.** The Gita's yoga is to keep working steadily.
 - **Look at the plan, not at yourself.** *What should I change?* is a better question than *what is wrong with me?*
 
+## A simple monthly review
+When a result does not come, it helps to sit down once a month and look at the work calmly. Take a page and write three headings: *What I did*, *What I learned*, *What I will change*.
+
+Under the first, list actions, not feelings. "Studied four hours a day for three weeks" is an action. "Failed again" is a feeling. Under the second, write even small things: a better method, a weak topic you have now found, a person who helped. Under the third, pick only one or two changes. Too many changes at once become another reason to feel defeated.
+
+This is the Gita's idea in everyday clothes. You look at the part that is yours, the effort, and you let it be improved. You do not argue with the other four factors.
+
+## Questions people ask
+**Is it wrong to want the result badly?**
+No. Wanting is human. The verse asks you not to let the wanting run your whole mind while you are working, because that makes the work worse.
+
+**What if I have tried everything?**
+Then rest, and ask someone you trust to look at your plan with fresh eyes. Sometimes the missing piece is information, not effort.
+
+**Does prayer help here?**
+Many people find it steadies them. Praying does not replace effort, and effort does not replace prayer. Keep both.
+
 ## If the low mood does not lift
 Repeated failure can wear a person down. If you feel hopeless for more than two weeks, or sleep and appetite suffer, please talk to a doctor or counsellor. Tele-MANAS (14416) is free in India.
 

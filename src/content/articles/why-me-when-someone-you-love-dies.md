@@ -64,4 +64,27 @@ If weeks pass and you cannot eat, sleep or work, if you feel that life has no po
 ## A thought
 The Gita does not promise that the pain will leave. It says that the one you lost was never only a body, and that love does not end where the body does. You may not believe it today. Keep the verse. Some day it may come back to you in a different voice.
 
+## Questions people ask
+
+**Should I feel guilty that I am not crying?**
+No. People grieve in very different ways. Some weep at once, some feel numb for weeks and then are caught by a smell or a song. Neither is wrong.
+
+**Is it a sin to feel angry at God?**
+The old texts do not say so. Arjuna argues with Krishna, and the Gita is the result. Being honest in prayer, even angry, is a way of staying in conversation.
+
+**What about the rituals when I am too tired to do them?**
+Do what you can and let your family carry the rest. The rites are meant to hold you up, not to add a burden. If you want to understand what they mean, read [how to honour ancestors](/how-to-honour-ancestors-pitru-mantras-and-family-peace/).
+
+## If someone near you is grieving
+You may be reading this for another person. A few simple things help more than any wise sentence:
+- Sit with them. You do not have to speak.
+- Avoid saying "it was God's will" or "at least they lived a full life" unless they say it first.
+- Bring food, and keep coming back after the first fortnight, when the visitors have gone home.
+- Remember the dates that will be hard, such as the first birthday and the first festival without them, and send a message.
+
+## A small practice
+Some families light one lamp in the evening for the person they have lost and sit for a minute in silence. You can say their name, or say nothing. It is not a ritual you have to perform correctly. It is a way of keeping a place for them in the day.
+
+If you have walked this road and something helped you, we would be glad to hear it at hello@southwala.com. Your words may reach someone who needs them.
+
 See also [what Krishna says to someone who has lost someone](/gita-on-grief-what-krishna-says-to-someone-who-has-lost-someone/) and [Parikshit and the curse](/parikshit-and-the-curse-how-to-face-a-known-end/).

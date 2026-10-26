@@ -53,4 +53,32 @@ The king, who had given his word, was reluctant. The priests pleaded to wait unt
 ## How it lives today
 Naga Panchami, in the month of Shravana, is a day for worshipping snakes with milk and turmeric. In Andhra and Telangana the same spirit is seen at Nagula Chavithi, in Karthika masam, when people pour milk on anthills. The line *Astikasya vachah shrutva* is chanted by some families for protection from snakes. At Kukke Subramanya in Karnataka, the snake worship of the coast has a strong place in practice.
 
+## Where this story fits in the epic
+There is a beautiful detail that is easy to miss. In the Mahabharata, the whole epic is first recited at Janamejaya's snake sacrifice. The sage Vaishampayana, a pupil of Vyasa, tells the long story to the king there. So the great war, the dice game and the Gita all reach us framed by a story of a king's grief and a boy's mercy.
+
+It tells you something about how the tradition sees itself. The epic is not told in a time of triumph. It is told in a hall of anger, to a king who needs to learn how to put the anger down.
+
+## Questions people ask
+**Are the nagas simply snakes?**
+In the epic they are a people as well as creatures, with names, families and kings like Vasuki and Takshaka. That is why the story can be moving rather than only frightening.
+
+**Why does a boy succeed where the priests could not?**
+The text does not make Astika powerful by force. He succeeds through humility, knowledge and a well-timed request. It is a story about the power of asking for the right thing.
+
+**Should I pour milk on a snake or an anthill?**
+Many people do this as part of the festival. Wildlife experts point out that snakes do not drink milk and that it can harm them. If you want to keep the spirit of the day, offer the milk at a shrine or an image of the Naga, and do not disturb live snakes.
+
+## How a family can keep Nagula Chavithi or Naga Panchami
+- Clean the place of worship and draw a small rangoli.
+- Offer milk, flowers and turmeric to an image or stone of the Naga at a temple.
+- Tell the story to the children at home, especially the part where Janamejaya keeps his promise.
+- Spend a moment thinking of an old anger you are carrying. Is there a "sacrifice" you could stop?
+
+Fear of snakes is natural, particularly in villages. The tradition teaches respect rather than hatred, and respect keeps people careful.
+
+## Reading it with modern eyes
+Janamejaya's wish for revenge is something we see in news and in families. A hurt becomes a grudge, the grudge becomes a plan, and soon many people are caught in it. Astika's one request reminds us that sometimes the bravest act is to say, *enough.*
+
+If this story is told in your family in a different way, we would love to hear at hello@southwala.com.
+
 See also [Kukke Subramanya: sarpa dosha and snake worship](/kukke-subramanya-temple-sarpa-dosha-and-the-snake-worship-of-the-south/) and [Parikshit and the curse](/parikshit-and-the-curse-how-to-face-a-known-end/).

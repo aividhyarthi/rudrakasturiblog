@@ -44,4 +44,36 @@ The Tungabhadra Dam, near Hosapete, was built in the 1950s and irrigates parts o
 ## Planning
 Hampi is about 350 km from Bengaluru and a few hours from Hyderabad by train and road. The best months are October to February. Allow two days. Mantralayam is about 50 km from Raichur and Adoni.
 
+## A closer look at what to see in Hampi
+Hampi is spread over many square kilometres, so it helps to know a few places by name.
+
+- **Virupaksha temple and Hemakuta hill.** The temple stands at the head of the old bazaar street. Behind it, Hemakuta hill has small early temples and gives a wide view over the ruins.
+- **Vittala temple.** Famous for its stone chariot and for its carved halls. Visitors are asked not to tap the musical pillars, as they are old and delicate.
+- **Lakshmi Narasimha.** A very large carved figure of Narasimha seated on a coiled serpent, cut from a single boulder. It is damaged but still powerful.
+- **Hazara Rama temple.** Its walls carry carved scenes from the Ramayana, which you can follow like a picture-book.
+- **Lotus Mahal and the elephant stables.** These show a different side of the city, with arches and domes that blend several building styles.
+- **Matanga hill.** A steady morning climb, popular for sunrise.
+
+Hampi is a UNESCO World Heritage Site, so please follow the rules at each monument and carry your litter out.
+
+## The river at work
+The Tungabhadra is not only scenery. Her water feeds fields on both sides, and the old rulers built canals and channels from her to irrigate land near the city. Even today, you can see stretches of green paddy and banana fields squeezed between the boulders, and the contrast is striking.
+
+At Hampi you may be offered a ride in a coracle, the round basket-shaped boat that boatmen have used on this river for generations. If you take one, wear the life jacket, go with a reliable boatman and choose calm weather. In the monsoon the river runs high and fast, and crossings may be closed.
+
+## Bathing and offerings
+Many pilgrims touch the river water or sprinkle it on their heads before visiting the temples. If you do this, keep the river clean: do not leave flowers in plastic bags, soap, or leftover food at the ghat. The old teaching that a river is a goddess is a good reason to treat her gently.
+
+## Questions people ask
+**Is Hampi a place for pilgrims or tourists?**
+Both. The Virupaksha temple is a living place of worship, and many monuments are ruins. Dress modestly and be quiet inside the active temples.
+
+**How many days do I need?**
+Two days is enough for the main sights. If you like walking and photography, a third day is rewarding.
+
+**Is Anjanadri the only claim to Hanuman's birthplace?**
+No. Other places also claim it, and traditions differ. The Anjanadri hill near Anegundi is the one most often named in Karnataka.
+
+If you have been to Hampi or Mantralayam and have a memory to share, you are welcome to write to hello@southwala.com.
+
 Related: [the Krishna river](/krishna-river-krishnaveni-srisailam-vijayawada-and-the-pushkaralu/), where the Tungabhadra ends, and our [Pancha Bhoota guide](/temples/pancha-bhoota-sthalams/).

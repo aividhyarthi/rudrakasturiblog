@@ -52,4 +52,23 @@ The Gita does not tell us to stop wanting. It tells us not to make our peace hos
 ## When it weighs on your mind
 Years of waiting can bring low mood, anger at your own body or your family, even a feeling that life has no direction. If you notice that, please speak to a counsellor or doctor. Tele-MANAS (14416) is free in India. This article is not medical or astrological advice.
 
+## Parvati's long wait
+There is another waiting story that is often told to people in your position. In the tradition, the goddess Parvati longed to marry Shiva, who was deep in meditation and did not turn towards her. She did not give up and she did not complain. She took up austerities in the forest and kept at them for a very long time. In the Puranic accounts, Shiva finally came, and they were married.
+
+You do not need to copy her penance, and no one is asking you to. What is worth taking from the story is the steadiness. She went on being herself, and she did not treat the delay as a verdict on her worth.
+
+## Questions people ask
+**Is it wrong to feel angry about this?** No. Anger and grief are normal when something you want deeply does not come. Let yourself feel them, and speak to someone you trust.
+
+**Should I do every ritual that is suggested?** Choose the ones that give you peace and that your family can do without strain. If a ritual costs more than you can afford, or leaves you more afraid, put it down.
+
+**Does a delay mean something is wrong with me?** No. People marry and have children at very different times for reasons of health, work, circumstance and plain chance. Only a doctor can tell you about your health, and it is wise to ask.
+
+**What do I say to a relative who keeps asking?** You can say, kindly, that you would rather not discuss it, and change the subject. You are allowed to protect your privacy.
+
+## For the family around you
+If you are the parent, aunt or friend of someone who is waiting, you matter more than you know. Please do not count the years out loud, compare, or offer remedies uninvited. Ask how they are, and then simply listen. A calm home is the best help a person can have in a long wait.
+
+If you would like to share how you found strength in this season, you can write to us at hello@southwala.com. Your words may help someone who feels alone tonight.
+
 See also [which god to pray to for marriage](/which-god-to-pray-to-for-marriage-katyayani-gauri-and-sita-rama/) and [which god to pray to for children](/which-god-to-pray-to-for-children-santana-gopala-and-subramanya/).

@@ -51,6 +51,40 @@ Many people think of religion as a way to get something: better health, a better
 - **Look for what does not run out.** The tradition keeps pointing to it.
 - **Contentment is a form of wealth.** He lived on gleanings and was never poor.
 
+## A closer look at unchha-vritti
+*Unchha-vritti* is the old practice of living on grains left behind in the field after the harvest. It is among the humblest ways of living in the tradition: you take no more than the earth offers freely, and you ask no one for anything.
+
+Mudgala did more than live this way. He gave from what little he had. This is the point to hold on to. His detachment was not the cold kind of someone who has nothing to lose. He had a small meal, and he shared it, and he did so again and again, even when it cost him.
+
+## The same idea elsewhere
+The idea that heaven is temporary appears often in Indian thought. In the Gita (9.21), Krishna says in effect that those who enjoy the vast heaven, when their merit is exhausted, return to the world of mortals. Mudgala's question, "what happens after?", is the same question asked as a story.
+
+This does not mean that doing good is pointless. The Gita is clear that good action is the path. It only says that if you do good for the reward of a pleasant place, the place will end. If you do good as an offering, and turn towards knowledge of the Self, the matter is different.
+
+For a way into the Gita that does not require long study, see [which Bhagavad Gita chapter to read first](/which-bhagavad-gita-chapter-to-read-first/).
+
+## Reading it with modern eyes
+We seldom think about heaven in these terms today, but we have our own versions of it: the dream job, the dream house, the day when all our worries will be over. Mudgala's question works for those too.
+
+Try asking yourself:
+- If I get this, what comes after?
+- Is it something that lasts, or something I will need to keep earning?
+- Would I still be myself if I lost it?
+
+These questions are not meant to make you give up your goals. They help you hold them lightly.
+
+## Questions people ask
+**Was Mudgala rude to the gods?**
+No. In the text he is polite and curious. He listens to the messenger and thanks him. He simply declines.
+
+**Why did Durvasa test him?**
+Durvasa appears in many stories as a sage who tests the patience of others. Here the test shows what Mudgala is made of.
+
+**Does the story say heaven is bad?**
+No. It says that heaven is not the final goal. It is a pleasant stop on a longer road.
+
+If this story made you think, or you want to share how your family tells it, write to hello@southwala.com.
+
 ## A question for you
 What would you have done? Many of us would have taken the chariot and thought about the rest later. The value of the story is that it makes you ask.
 

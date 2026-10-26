@@ -51,4 +51,29 @@ In most retellings, the Kauravas are one block of villains. But the epic does no
 ## A thought for today
 Many of us belong to a family, a workplace or a group that is doing something we cannot support. The story does not tell us it is easy. It tells us that a person can stand at the line, hear a call and step across.
 
+## A closer look at the name
+*Yuyutsu* comes from a Sanskrit word that means "one who wishes to fight". It is a curious name for a man remembered for choosing to fight on the side of right. The name suggests a fighter, but his story is about a different kind of courage: the courage to leave a place where everyone around you expects you to stay.
+
+## What the elders said
+There is a quiet detail in Yudhishthira's walk across the field. When he bowed to the elders, each of them answered in a way that tells us about their own struggle. Bhishma and Drona said, in effect, that they were bound to the Kauravas by the support they had received for years, and so had to fight on that side, but that they wished Yudhishthira victory. The text lets us see that these were people who knew what was right and were held back by loyalty.
+
+Yuyutsu is the other case: he broke with his family. It reminds us that loyalty and conscience can pull in different directions, and that the epic takes both seriously.
+
+## Questions people ask
+**Was Yuyutsu a traitor?**
+The epic does not treat him that way. He was not betraying a promise to an elder, and he did not strike in secret. He announced his choice in the open, at the moment it was invited.
+
+**Did he fight his brothers?**
+He joined the Pandava army, and the tradition counts him among the few who survived the war on either side. The details of his battles are less prominent than those of the great warriors.
+
+## If you ever stand at a line
+Most of us will not face a battlefield. We may face a smaller version: a family business that cuts corners, a group that mocks someone, a decision at work we are asked to stay quiet about. Some questions that may help:
+- What do I really think is right, when I am alone and quiet?
+- Is there an honest invitation to do the right thing, or am I looking for a dramatic exit?
+- Can I leave without hating the people I leave behind?
+
+Notice that Yuyutsu did not insult his brothers on his way across. He simply crossed. You can see a related choice in [Kumbhakarna, the brother who knew it was wrong and fought anyway](/kumbhakarna-the-brother-who-knew-it-was-wrong-and-fought-anyway/), which makes a good companion read.
+
+Has someone in your family made a hard choice like this? We would be glad to hear how you think about it, at hello@southwala.com.
+
 See also [Why me? When your own family betrays you](/why-me-when-your-own-family-betrays-you/) and [Vibhishana, the brother who chose dharma](/vibhishana-the-brother-who-chose-dharma-over-his-brother/).

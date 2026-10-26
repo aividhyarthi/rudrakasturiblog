@@ -35,4 +35,42 @@ It is also an unusual comfort. The enemy is not outside. The same mind that proc
 ## A practice for this week
 Pick one small act of self-friendship: sleeping at a fixed time, ten minutes of [pranayama](/pranayama-for-beginners-three-safe-breathing-practices/) in the morning, or a daily walk. Do it for seven days, and note how you feel.
 
+## A closer look at the words
+The verse repeats one word, *ātman*, again and again. In this verse it means the self in the ordinary sense, the person, with their mind and will. The sentence plays on it: lift the self by the self, do not let the self sink. The same self is helper and hindrance.
+
+**Uddharet** means "should lift up", like drawing a bucket from a well. It is a word of effort and gentle rescue.
+
+**Na avasādayet** means "should not make sink". The word comes from the same family as the sinking Arjuna describes in the first chapter, when he says his limbs are giving way. Krishna is, in a sense, answering that very feeling: do not let yourself sink.
+
+**Bandhu** is a friend or a relative, someone close. **Ripu** is an enemy. Both describe the same person.
+
+## The context
+Notice that early in the second chapter (2.3), Krishna urges the despairing Arjuna to give up this faintness of heart and stand up. Chapter 6 returns to the same idea, now in a calmer voice. Arjuna is no longer shaking on a battlefield but learning how to hold himself steady. The message grows from "stand up" to "be your own friend".
+
+## Questions people ask
+**Does this mean I must do everything alone?**
+No. The verse is not against help. It says that nobody can do the inner work for you. A good teacher, a doctor, a friend or a counsellor can walk beside you. The decision to go on is still yours.
+
+**What if I am too low to lift myself?**
+Then lift yourself a little. Wash your face, step outside, send one message to someone. Small acts count. If the heaviness lasts for weeks, please see a doctor or counsellor. This is not medical advice, and reaching out for help is itself a way of lifting yourself.
+
+**Is it selfish to focus on myself?**
+Being your own friend is not selfishness. It is the base for caring for others. Someone who is calm and steady helps their family more than someone who is worn out and bitter.
+
+**How do I know if my mind is acting as a friend or an enemy?**
+Ask whether your habits move you toward the person you want to be. A friend nudges you toward rest, work and kindness. An enemy feeds you excuses and worry.
+
+## Putting it with other teachings
+This verse sits well with the Gita's lessons on [laziness and procrastination](/gita-on-laziness-and-procrastination-just-start-the-task/) and [failure](/gita-on-failure-what-to-do-when-your-effort-does-not-work/). Read them together when you need a push or a gentle word.
+
+## A line to carry
+Before you sleep, say softly to yourself: *Today I tried to be my own friend.* Then think of one thing you did well, even if it was small. That is enough for tonight.
+
+If this verse has given you strength, write to us at hello@southwala.com.
+
+## Two small exercises
+**The friend test.** Think of a close friend who is going through what you are going through. What would you say to them? Now say the same words to yourself. Most of us are far gentler with others than with ourselves.
+
+**The evening check.** Before bed, ask just two questions: what did I do today that helped me, and what is one thing I can do tomorrow? Keep the answers short and kind.
+
 Read the whole of [Chapter 6, Dhyana Yoga](/bhagavad-gita/chapter-6/), and the earlier verse on [enduring pleasure and pain](/gita-2-14-heat-and-cold-pleasure-and-pain-come-and-go/).

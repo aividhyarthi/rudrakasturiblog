@@ -61,4 +61,27 @@ A visa depends on documents, funds, interviews and policy. Prayer can give calm 
 
 For the god at the heart of it, read [Balaji of Tirumala](/balaji-venkateswara-of-tirumala-seven-hills-one-lord/) and our [Venkateswara mantras](/mantras/venkateswara/).
 
+## Why we walk around the sanctum
+The circling that devotees do here is called *pradakshina*. You walk clockwise, so that the shrine is always on your right. The idea is that you keep the deity at the centre of your life, and move around it. When you do your eleven rounds, you can use the time to say a name, or simply to hold your wish quietly in mind. Many people say the walking itself calms the nerves before an important decision.
+
+## Questions people ask
+**Do I have to make a wish?** No. Some visitors go simply to see a quiet old temple on the lakeside, and to pray for their family's wellbeing.
+
+**Why 11 and 108?** These numbers are popular in Hindu practice, and 108 is used widely for chants and rounds. The tradition at Chilkur follows that habit. It is a custom of the temple, and not something laid down in an ancient text.
+
+**Is it only for visa seekers?** No. As the article says, people come for exams, jobs, marriage and health too. Anyone is welcome.
+
+**What if my visa is refused?** Then the prayer has not failed you any more than the paperwork has. Visa decisions depend on rules and offices. Many people reapply after a rejection with better documents. Please look after your mind during the wait, and talk to family and friends.
+
+## A sensible plan for the nervous applicant
+- Prepare your documents carefully. Ask an honest, qualified adviser if you need one.
+- Do not pay agents who promise a certain result.
+- Visit the temple if it gives you calm, and then go back to the work.
+- On the day of the interview, breathe slowly. A short prayer in your mind costs nothing.
+
+## About the lake
+The Osman Sagar lake beside the temple was built in the early twentieth century to protect Hyderabad from floods and to supply water, and it is a pleasant place to sit after the darshan. Keep it clean if you stop there, and carry back your litter.
+
+If your family has had an experience at Chilkur, whether the visa came or not, we would be glad to hear it at hello@southwala.com.
+
 *Beliefs and customs differ from family to family and temple to temple. Check timings, rules and costs on the temple’s official channels before you travel, and be careful with agents who offer to arrange rituals for large sums.*

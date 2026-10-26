@@ -61,6 +61,31 @@ You do not need to find the perfect guru before you start.
 5. **Be patient.** The old saying is that when the student is ready, the teacher appears.
 6. **Remember the first guru.** In Hindu tradition, Dakshinamurthy teaches by silence and is the first teacher. And the inner voice you learn to trust is also a teacher.
 
+## Learning from many teachers
+The tradition does not say you must have only one. Dattatreya, in the old stories, is said to have learned from twenty-four teachers, among them the earth, the wind, a bee and a child. The point is not the number. It is that a person who is ready to learn can find teaching in many places. You can read his story in [Dattatreya and the 24 gurus](/dattatreya-and-the-24-gurus-what-the-avadhuta-learned/).
+
+At the same time, a person who wishes to go deep in a particular path, such as a form of meditation or a line of Vedanta, usually finds that one steady teacher helps. Both things are true. Learn widely, and when you go deep, go with someone you have had time to know.
+
+## Giving it time
+Do not hurry. A good rule is to spend a year or more simply attending a teacher's talks or classes before you make any commitment. Watch how they behave when they are tired, when they are criticised, and when there is no audience. Ask people who have known them for many years, not only those who are new and excited.
+
+Bring a notebook. Write down what you are told and how you feel afterwards. After a few months, read back. Are you becoming steadier, or more tied up in someone else's approval?
+
+## Questions people ask
+**Do I need initiation (diksha) to begin?**
+Not to read the Gita, to chant, to pray or to meditate quietly. Some specific practices are taught by a teacher with initiation, but you can walk a long way before you need that.
+
+**What if I never find a guru?**
+Many sincere people do not. The tradition says the teacher appears in different forms: a book, a parent, a friend, a hard experience. Keep practising and keep your eyes open.
+
+**Is it wrong to leave a teacher?**
+If you have learned what you came for, or you see signs that worry you, it is fair to move on. A good teacher will not hold you back.
+
+**Is a Thursday special for the guru?**
+Many families honour their teachers on Thursdays, as we explain in [Thursday is for the guru](/thursday-is-for-the-guru-how-to-worship-on-guruvaram/).
+
+If you have had a good teacher, or a hard experience you would like to share, you can write to us at hello@southwala.com. We read every note with care.
+
 ## The three rare things
 In the second verse of the *Vivekachudamani*, Shankara says that three things are very rare and come only by grace: a human birth, the desire for liberation, and the refuge of a great teacher. If you have the first two, you are already ahead.
 

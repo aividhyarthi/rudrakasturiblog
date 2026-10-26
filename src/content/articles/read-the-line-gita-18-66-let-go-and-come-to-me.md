@@ -68,4 +68,31 @@ He gets up, and he fights. Surrender in the Gita is not retirement. It is acting
 ## One thing to try
 Think of one burden you are carrying as if all of it depends on you: a decision, a worry, someone else's choices. Do your part today. Then say, in your own words, that the rest is not yours to carry.
 
+## A closer look at the verse before it
+Just before this line, in 18.65, Krishna says something simpler: fix your mind on me, be devoted to me, worship me, bow to me, and you will come to me. He adds that this is a true promise, because Arjuna is dear to him. Verse 66 then goes one step further. It is as if Krishna, having given the practice, now gives the permission to rest.
+
+In the Sri Vaishnava tradition, 18.66 is called the *charama shloka*, the final verse, and many families keep it close as the heart of the Gita. Elsewhere in the Gita, the word *sharana*, refuge, appears when Arjuna, in the second chapter, asks Krishna to teach him because he is his student and has come to him for refuge. So the book opens with Arjuna seeking shelter and closes with Krishna offering it.
+
+## Questions people ask
+
+**Does this mean I can stop trying?**
+No. Arjuna rises and fights. The verse speaks of giving up the grip of ego over the outcome, not giving up effort.
+
+**What are the "sins" he promises to release?**
+Teachers explain them as the accumulated weight of past actions and the guilt we carry. You may hear it explained in different ways depending on the school. The common thread is that the burden can be put down.
+
+**Is this only for people who feel strongly devoted?**
+It is for anyone who is tired of carrying everything alone. Devotion can begin small, as a single honest prayer.
+
+**How does the Gita end?**
+After Arjuna says he will act (18.73), Sanjaya concludes with the last verse (18.78): wherever there is Krishna, lord of yoga, and Arjuna the archer, there will be fortune, victory and steady purpose. You can read more about the book in [which Gita chapter to read first](/which-bhagavad-gita-chapter-to-read-first/) or the [Bhagavad Gita section](/bhagavad-gita/).
+
+## A way to read it each day
+1. Say the first half of the verse slowly, once.
+2. Ask yourself what you are gripping today.
+3. Say the second half, and imagine setting that thing down for a minute.
+4. Then go and do your work.
+
+If this verse has met you in a hard moment, tell us at hello@southwala.com. We read every note.
+
 See also [Vibhishana, the brother who chose dharma](/vibhishana-the-brother-who-chose-dharma-over-his-brother/) and [Why me? When prayers seem to go unanswered](/why-me-when-prayers-seem-to-go-unanswered/).

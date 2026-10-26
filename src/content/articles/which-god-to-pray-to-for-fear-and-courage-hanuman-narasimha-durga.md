@@ -66,6 +66,37 @@ Friday and Tuesday are her days, and Navaratri is her festival. See [Durga mantr
 ## What Krishna says
 In the Gita, Krishna says that even a little practice protects from great fear. See [the Gita on fear](/gita-on-fear-even-a-little-practice-protects-you/).
 
+## A closer look at why these three
+**Hanuman** is the god of courage that is not loud. In the Sundara Kanda he enters a city of enemies alone, carrying no weapon but his wits and his devotion. And before that, he had to be reminded of his own strength by the old bear Jambavan. If you often feel that you cannot do the thing in front of you, read [Jambavan, the old bear who reminded Hanuman of his strength](/jambavan-the-old-bear-who-reminded-hanuman-of-his-strength/). It is a story about remembering what you already have.
+
+**Narasimha** appears in the Bhagavata Purana (Canto 7) when the boy Prahlada is threatened by his father Hiranyakashipu. The father had a boon that he could not be killed by man or beast, indoors or outdoors, by day or night. So Narasimha comes at dusk, on the threshold, in a form that is neither man nor animal, and the story says he lifts the demon onto his lap. The lesson people draw is that help can arrive in a way you could not have planned, once you stop trying to control every detail. Another is that Prahlada was not shielded from fear. He stayed steady through it.
+
+**Durga** is the mother who is not afraid to fight. Her weapons are given by the gods, which many readers take to mean that courage is something shared: when you gather your own strengths, you are stronger than any one of them alone.
+
+## A short routine for a frightening day
+This takes about five minutes.
+
+1. Wash your face and hands, and stand or sit where you will not be disturbed.
+2. Breathe in slowly through the nose for a count of four, and out for a count of six. Do this five times.
+3. Say your chosen verse slowly, once or three times. If you do not know it by heart, read it from the page.
+4. Think of the first small action you will take, not the whole mountain. Say it aloud in your own words.
+5. Go and do that one thing.
+
+## Questions people ask
+**Can I pray to all three?**
+Yes. Many people turn to Hanuman for courage in work, Narasimha in moments of sudden fear and Durga when they feel unprotected. Choose the one you feel close to, and do not worry about doing it perfectly.
+
+**Do I need to fast or follow strict rules?**
+No. The verses are short and the tradition is gentle. A clean place, a lamp if you wish and a quiet mind are enough.
+
+**What if I forget the words?**
+Say the name: Hanuman, Narasimha or Durga, slowly. Many families do just this.
+
+**Is it all right to be afraid?**
+Of course. Even in the stories, the heroes feel fear. Courage is what you do while afraid.
+
+If a prayer helped you through a frightening day, you are welcome to tell us about it at hello@southwala.com.
+
 ## When it doesn't go away
 Constant worry, panic attacks, avoiding places or people, or a feeling of dread that does not leave can be signs of an anxiety disorder, which is common and treatable. Please see a doctor or counsellor, or call Tele-MANAS on 14416.
 

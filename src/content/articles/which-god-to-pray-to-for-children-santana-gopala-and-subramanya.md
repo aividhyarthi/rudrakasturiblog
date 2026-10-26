@@ -65,4 +65,31 @@ The Gita says you have a right to your effort but not to the fruits of it (see [
 
 If you feel very low, speak to a counsellor. In India, Tele-MANAS (14416) is free and open at all hours.
 
+## An old story of a king who waited
+You are not the first to wait, and the epics know it. In the Ramayana (Bala Kanda), King Dasharatha of Ayodhya had no children for many years, even though he ruled well. On the advice of his counsellors, a sacrifice for the birth of sons was held, with the sage Rishyashringa as its priest. The tradition says that a divine being rose from the fire and gave a bowl of sweet payasam to be shared among the queens. In time, the four princes were born.
+
+Notice what the story shows. The king did not give up his kingdom, or his marriage, or his dignity. He asked for help, took advice, did what was possible and waited. It also tells you that even a king could not decide the hour. That may be a small comfort when others seem to receive what you are waiting for.
+
+## Questions people ask
+**Which of these should we choose?**
+There is no rule. Some couples feel close to Krishna as a child, some to Murugan, some to the goddess. Choose the one your heart goes towards and that your family already prays to. Prayer works through steadiness, not through changing deities every month.
+
+**Should both of us pray?**
+If both are willing, yes. If one partner is not religious, do not force it. The other can pray alone, and the couple can find other ways to be together: a walk, a meal, a quiet evening.
+
+**How do I answer relatives who ask?**
+A simple line works: *we are taking care of it, thank you.* You do not owe anyone a long explanation. Having a sentence ready means you are not caught off guard.
+
+## For the couple who wait together
+- **Choose one day a week** when you do not talk about treatment, dates or results. Cook something you enjoy.
+- **Keep your friendships alive.** Pain grows in isolation.
+- **Learn about other forms of family.** Many couples find joy through adoption or fostering. It is a path to parenthood, not a second prize.
+
+## If you are a friend or relative
+If someone close to you is waiting, do not offer advice unless asked. Do not say "relax and it will happen," and do not compare. Ask, "How are you doing?" and listen. Remember them on festival days, when baby-related rituals may be painful for them. You can send a message that says only, "Thinking of you."
+
+For a gentler look at asking for help when things feel stuck, see [Why me? When marriage or children are delayed](/why-me-when-marriage-or-children-are-delayed/).
+
+If you would like to share what has helped you, in a way that might help another couple, write to hello@southwala.com.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

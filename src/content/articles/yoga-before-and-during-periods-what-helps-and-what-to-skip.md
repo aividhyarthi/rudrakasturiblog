@@ -61,4 +61,31 @@ Period pain that stops you from going to work or school, pain that is getting wo
 ## On festival days
 If your period falls on a festival, take a look at our piece on [periods on festival days](/periods-on-festival-days-why-it-happens-and-what-to-do/). Gentle yoga and quiet prayer fit well together.
 
+## A gentle fifteen-minute sequence
+If you want something simple to follow on a heavy day, try this order and stop at any point if it does not feel right.
+1. Child's pose, one to two minutes.
+2. Cat and cow, eight slow rounds.
+3. Knees to chest, rocking softly for a minute.
+4. Reclined butterfly, three to five minutes, with pillows under the knees.
+5. Gentle twist, five breaths each side.
+6. Rest pose, five minutes, with a warm cloth on the belly if you like.
+
+## Questions people ask
+**Should I stop exercising altogether on my period?**
+Not necessarily. Many women feel better with light movement such as walking. Listen to your body: if you are tired, rest is a good choice too.
+
+**Does warmth help?**
+Many women find a hot water bottle or a warm drink soothing. Keep it comfortably warm and not hot on the skin.
+
+**Can I do Surya Namaskar?**
+Some women do a slow, gentle version, and others prefer to skip it on heavy days. Let your comfort guide you.
+
+**Is rest lazy?**
+No. Rest is part of care for the body. A tradition that values balance has always included it.
+
+## Being kind to yourself
+Take the pressure off. Some months your body will ask for more rest, and some months you will feel strong. Neither is wrong. You might like our pieces on [yoga for sleep](/yoga-for-sleep-an-evening-routine-that-helps-you-wind-down/) and [yoga when you feel low](/yoga-when-you-feel-low-small-practices-for-a-heavy-mood/) for the days when the mood dips.
+
+If you have a routine that helps you, please share it with us at hello@southwala.com.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*

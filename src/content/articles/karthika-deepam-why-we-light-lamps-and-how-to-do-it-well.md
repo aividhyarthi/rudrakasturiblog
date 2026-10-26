@@ -66,6 +66,40 @@ A lamp raised on a long pole, high above the house or temple, is called Akasha D
 - Put a metal tray under every lamp.
 - Don't pour oil near the flame.
 
+## Looking after your lamps
+A lamp that is clean is a joy to light. Over a month of daily use, brass and silver lamps turn dark with oil and soot.
+
+- **Wipe after each day.** Once the lamp has cooled, clear the old wick and extra oil with a soft cloth.
+- **Wash weekly.** Many families scrub brass with tamarind, lemon or a little ash, then rinse with water. Dry well before the next use.
+- **Clay lamps** can be soaked in water for a short time before the first use, which reduces how much oil they drink. Use each clay lamp for the day and replace it.
+- **Keep a small box** with wicks, matches, a spoon for oil and a cloth, so lighting is quick and calm.
+
+## A simple dawn and dusk routine
+If you are new to the month, here is an easy way to begin.
+
+1. Before sunrise, bathe or at least wash your face and hands.
+2. Clean the place where the lamp will stand, and draw a small kolam or place a flower.
+3. Light a single lamp. Say the verse you know, or simply a few words of thanks.
+4. Sit for one minute and watch the flame.
+5. At dusk, repeat the same steps. A second lamp at the doorway is a lovely addition.
+
+Keep it small and keep it daily. A steady habit through the month is worth more than a grand effort on one day.
+
+## Questions people ask
+**Do I need a priest?**
+No. This is a home practice. Anyone in the family can light the lamp.
+
+**Can I use an electric lamp?**
+If an open flame is not safe where you live, a small electric lamp placed with a prayer is better than no lamp at all. Many people also light a real lamp at a temple.
+
+**What if the lamp goes out?**
+Don't worry. Relight it calmly. A lamp that goes out in a draught is not a bad sign.
+
+**Which lamp do I light on which day?**
+Follow your family's custom. For the dates of the special days, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/), and for the Monday observance, see [Karthika Somavaram](/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/).
+
+If your family has a special way of lighting Karthika lamps, or a lamp that has been in the house for generations, write to us at hello@southwala.com.
+
 ## What matters most
 It is the intention. A single clay lamp with a few drops of oil, lit with attention, is as good as a hundred. See [why Karthika Masam](/why-karthika-masam-what-the-month-means-and-who-to-worship/) for the larger picture, and [Tulasi puja](/tulasi-puja-and-tulasi-vivaha-why-and-how/) for the plant where the lamp is most often lit.
 

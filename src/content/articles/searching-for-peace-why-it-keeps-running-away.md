@@ -51,6 +51,35 @@ The oldest peace prayers in Sanskrit are very short. One is from the Brihadarany
 *Lead me from untruth to truth, from darkness to light, from death to immortality.*
 It is followed by *Om Shanti Shanti Shanti*, peace thrice repeated, for the three kinds of disturbance: from within, from other beings and from nature.
 
+## A closer look at the calm mind
+A few verses before the ocean picture, in 2.65, Krishna says that when the mind is serene, it brings an end to sorrow, and the intelligence of such a person soon becomes steady. The word used for serenity is *prasada*, the same word we use for the food offered in temples and shared afterwards. Peace, in this sense, is not something you capture. It is something received, like prasad, when you are ready and quiet enough to take it.
+
+That fits what many people notice. Peace rarely arrives when you chase it. It tends to appear in the gaps: after a walk, a bath, a prayer, a good conversation, when you are not busy hunting for it.
+
+## A five-minute evening practice
+You can try this tonight.
+
+1. Put the phone in another room.
+2. Sit in a chair or on the floor, wherever you can be still.
+3. Breathe in slowly and let the breath out longer than you took it in. Do this ten times.
+4. Say the lines of the peace prayer once, in your own language if you prefer.
+5. Think of one thing from the day that went well, however small.
+6. Sit for another minute without doing anything. Then go on with your evening.
+
+You will not feel transformed. That is fine. What you are doing is training the ocean to be a little wider, one evening at a time. For a deeper look at the prayer, read [Asato ma sad gamaya](/read-the-line-asato-ma-sad-gamaya-lead-me-from-untruth/).
+
+## Questions people ask
+**Is wanting things the opposite of peace?**
+Not exactly. The ocean picture does not say you must have no desires. It says desires can come and go without knocking you over. Wanting a good job or a happy family is natural. Needing them to be settled before you can breathe is the trouble.
+
+**Why do I feel peaceful in a temple and lose it at home?**
+That is common. A temple is arranged to help you slow down. At home we are surrounded by tasks. A small corner for a lamp and a few quiet minutes can carry a little of the temple into the house. Our piece on [why some temples feel peaceful](/why-some-temples-feel-peaceful-and-others-do-not/) goes into this.
+
+**Can exercise or yoga help?**
+Many people find so. A gentle routine like [yoga for anxiety and stress](/yoga-for-anxiety-and-stress-a-ten-minute-reset/) can help the body settle first, which makes it easier for the mind to follow.
+
+If you have found a small habit that brought you peace, we would be glad to hear it at hello@southwala.com.
+
 ## When you can't find it
 Sometimes peace stays away because of something that needs attention, such as depression, anxiety, grief or a harmful situation. These are not spiritual failures. If the restlessness does not lift, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.
 

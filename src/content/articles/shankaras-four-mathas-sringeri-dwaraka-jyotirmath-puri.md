@@ -52,4 +52,32 @@ You may also hear about the Kanchi Kamakoti Peetham in Tamil Nadu, whose followe
 ## Visiting
 Sringeri is a few hours from Mangaluru or Bengaluru. The matha provides free meals to visitors, and dress and timing rules apply. If you plan to go, check them ahead of time.
 
+## What the four sayings mean
+The last column of the table lists a *mahavakya*, a great saying from the Upanishads, one for each matha. In plain words:
+- **Aham Brahmasmi**: I am Brahman, the ultimate reality.
+- **Tat Tvam Asi**: That you are.
+- **Ayam Atma Brahma**: This Self is Brahman.
+- **Prajnanam Brahma**: Consciousness is Brahman.
+
+All four point to the same idea, that the deepest part of you is not different from the ground of everything. If that is new to you, [Advaita Vedanta in plain words](/advaita-vedanta-in-plain-words/) is a gentle place to begin.
+
+## The ten orders
+Tradition links the monks who follow Shankara with ten names, the *Dashanami*, such as Saraswati, Bharati, Giri, Tirtha and Vana. Each of the four mathas is traditionally connected with some of these names. So when you meet a renunciant whose name ends in one of them, you are seeing a thread that goes back to this arrangement.
+
+## Questions people ask
+**Why four?** One for each direction, so that the teaching would be tended in every part of the land. Tradition also pairs each with a Veda, as in the table.
+
+**Did Shankara really found all four?** The mathas themselves say so, and the tradition holds it firmly. Historians discuss the details of dates and early history, and the evidence for some early periods is thin. It is fair to say that these are very old institutions that honour Shankara as their source.
+
+**Do I need to be a member to visit?** Not generally. Most mathas welcome visitors for darshan. Rules on dress and timings differ, so check ahead.
+
+**What do they do apart from teaching?** In many places they run schools, libraries, temples and charitable kitchens. That, too, is part of keeping the teaching alive.
+
+## Why it still matters
+Think of what Shankara was trying to do. A teaching can disappear in a single generation if no one is responsible for it. By giving it homes and heirs, he made sure that a person in the south, the west, the north or the east would have a place to go and ask a question of someone who had spent a life on the answer.
+
+That is also the best way to use a matha today: go with a question, listen more than you speak, and leave with something to think about.
+
+If your family has a link to one of these mathas and wishes to share what it means to you, write to us at hello@southwala.com.
+
 Read more about the founder in [Shankara’s story](/adi-shankaracharya-the-boy-from-kaladi-who-walked-across-india/).

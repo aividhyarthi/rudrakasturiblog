@@ -52,4 +52,31 @@ This is not in the Mahabharata. It is a devotional tale, and it carries a point 
 - **Love is the real offering.** The same lesson appears in the Gita: *a leaf, a flower, a fruit, or water offered with love, I accept* (9.26).
 - **A true counsellor keeps speaking even when no one listens.**
 
+## A closer look at Vidura's counsel
+Vidura is not only a good host in this story. He is the speaker of a famous body of advice, the *Vidura Niti*, which appears in the Udyoga Parva, the same book as Krishna's mission. In it he talks to the troubled Dhritarashtra at night about how a wise person lives: how to speak, whom to trust, and why anger and greed ruin kings.
+
+The scene is worth imagining. A king cannot sleep, so he calls the one man he knows will not flatter him. That tells you something about Dhritarashtra as well. He knew what honesty sounded like, and he still did not act on it.
+
+## What Krishna did next
+After the visit to Vidura, the embassy went on. In the epic's account Krishna put the Pandavas' case in the Kuru court, asked for a modest settlement, and was refused. Duryodhana even tried to seize him. The text describes Krishna then showing a vast form that frightened the court into silence. We are not told that he returned to the palace for a meal.
+
+This helps you see why the choice of Vidura's house mattered. It was not a small act of manners. It showed the court, before the war began, where Krishna's trust lay.
+
+## Questions people ask
+**Did Vidura take part in the war?**
+He did not fight. He is remembered as a counsellor who tried to prevent the war and then stood apart from it.
+
+**Is the banana-peel story wrong, then?**
+It is not in the epic, but it is not meant as history. Folk tradition uses it to make a gentle point about love in giving. You can enjoy it as a story without mistaking it for the text.
+
+**What should I take from this for my own home?**
+Think of how you receive guests. A plain meal given warmly can mean far more than an elaborate one given for show.
+
+## At your own table
+Many families have a saying that the guest is a god. You can practise it in small ways: greeting a visitor at the door, offering water first, and putting your phone away while they eat.
+
+Notice also who you invite. It is easy to feed the people who can do something for us. The story nudges us to also remember the old neighbour, the teacher, the helper who rarely sits at anyone's table.
+
+If you have a hospitality story from your own family, we would love to read it at hello@southwala.com.
+
 See also [Read the line: a leaf, a flower, a fruit, water (Gita 9.26)](/read-the-line-gita-9-26-a-leaf-a-flower-a-fruit-water/) and [Why me? When you are blamed for something you did not do](/why-me-when-you-are-blamed-for-something-you-did-not-do/).

@@ -58,4 +58,32 @@ Tears in a temple are a good thing. But if you are crying often and without caus
 ## A thought
 Many people say that they went to the temple with a heavy heart and came out lighter, without a word being said. Whatever one believes about God, that is the gift of the place. See [what the Gita says about grief](/gita-on-grief-what-krishna-says-to-someone-who-has-lost-someone/).
 
+## A closer look at tears in the stories
+Ramakrishna, the priest of the Kali temple at Dakshineswar, is remembered as a man who wept openly before the Mother, longing to see her. His devotees did not take it as a weakness. The tears were part of his worship. You can read about him in [Dakshineswar Kali](/dakshineswar-kali-the-temple-a-widow-built-and-ramakrishna-served/).
+
+The Tamil hymns of the saint Manikkavacakar, the Tiruvasagam, are known for the way they melt the reader. They speak of longing, of confession and of the sweetness of God, and generations of singers have wept while singing them. If you ever feel tears at a hymn, you are in a very old company.
+
+## Not every tear means the same thing
+It is helpful to be gentle with the question of meaning.
+- Sometimes tears are of joy, when the heart feels full.
+- Sometimes they are of grief, finally allowed to come.
+- Sometimes they are of relief, the body saying that it is safe to rest.
+- Sometimes they are just tiredness.
+
+You do not need to decide which it is. The tradition does not ask you to explain your tears. It only asks you to be honest, and to let them pass.
+
+## Questions people ask
+**Does crying mean God is calling me?** Some devotees feel so, and you are free to hold that idea. But you do not need to read any special message into it. Tears are enough as they are.
+
+**I have never cried in a temple. Is something wrong with me?** No. Devotion shows itself in many ways: quiet, service, singing, steady habit. Some of the deepest devotees are dry-eyed.
+
+**Should I cry in front of my children?** There is nothing wrong with letting a child see that you are moved. You can tell them simply that sometimes the heart feels full.
+
+**What do I carry for such moments?** A clean handkerchief is quite enough.
+
+## Making room for it at home
+If you find that tears come easily in the temple but never at home, you may wish to make a small corner where it is safe to feel. A lamp, a picture, a quiet ten minutes at the end of the day. Many people find that the feelings they could not bring up in company come up there.
+
+If you have a memory of a temple moment that moved you, you are welcome to tell us at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

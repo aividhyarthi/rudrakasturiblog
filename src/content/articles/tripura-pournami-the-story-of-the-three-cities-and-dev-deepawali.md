@@ -56,6 +56,27 @@ Kartika Pournami is on **Tuesday, 24 November 2026**. The tithi begins on 23 Nov
 ## A safety note
 Lamps are lovely, but they are also fire. Keep them away from curtains and dry leaves, don't leave small children near them, and use a tray.
 
+## A closer look at the name "Karthika"
+The month of Karthika is named after the star Krittika (the Pleiades), because the full moon of this month falls near that group of stars. That is why the full moon is also called Karthika Pournami. The six Krittika women who raised the infant Kartikeya, in the Puranic story, give the star its link to Murugan, which is why this night is also dear to his devotees. Read more in [Murugan, Kartikeya and Subramanya: one god, many names](/murugan-kartikeya-subramanya-one-god-many-names/).
+
+## Why lamps, and why on water?
+The festival is called Dev Deepawali, "the Diwali of the gods", because it falls about fifteen days after the Diwali lamps of Amavasya. The traditional picture is that the gods themselves come down to bathe in the Ganga and light lamps in joy at Shiva's victory.
+
+Floating a small lamp on a river or pond is a way of sending your wish out gently. It also reminds you that a light can travel. If you do this, use a small leaf boat or a clay lamp that will not pollute the water, take it out afterwards if you can, and never throw plastic into the water.
+
+## Other lessons from the story
+- **Pride builds cities in the air.** The brothers were not evil at the start. Their arrogance grew with their power.
+- **Even the gods needed help.** Shiva alone is the one who ends the cities, but the story shows all the gods giving what they have. Cooperation is part of the victory.
+
+## Questions people ask
+**Do I need to fast?**
+A light fast is common, but not required. If you have a health condition, are pregnant or elderly, eat as your doctor advises. A simple meal and an honest prayer are enough.
+
+**Can I do this if I live in a flat?**
+Yes. Light lamps on a tray at the window, the balcony or the prayer shelf. A few lamps lit with attention are better than many lit in a hurry.
+
+If your family has a special way of marking this night, we would love to hear it at hello@southwala.com.
+
 ## Where it fits
 This is the high point of the month. See [why Karthika Masam is special](/why-karthika-masam-what-the-month-means-and-who-to-worship/) and the [Karthika Somavaram guide](/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/).
 

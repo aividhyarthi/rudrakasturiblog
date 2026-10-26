@@ -57,6 +57,21 @@ Think of the great villains of the stories: Ravana, Kamsa, Hiranyakashipu. Each 
 - **Seek justice where there is a lawful way.** Dharma does not ask you to be a doormat. File the complaint, make the record, talk to a lawyer where needed.
 - **Do not let their story become yours.** If you spend your life tracking someone else's fortune, they have taken something that you did not agree to give.
 
+## Questions people ask
+**Does karma always pay back in this life?**
+The tradition says no. It speaks of old actions whose results arrive later, which is why the account can look unfair from where you stand. We explain the idea in [three kinds of karma](/three-kinds-of-karma-sanchita-prarabdha-kriyamana/). It is a way of seeing, not a promise of a date.
+
+**Is it wrong to want a bad person to suffer?**
+It is human. The danger is that wishing harm keeps your own mind busy and bitter. Many teachers suggest turning that energy into doing your own work well, and leaving the rest to time and, where possible, to the law.
+
+**Is wealth a sign that someone is good?**
+No. The old stories are clear that money and virtue are separate things. Some good people were rich and some were poor, and the same is true of those who were not.
+
+**What if I am the one who feels cheated?**
+Write down what is actually in your control this month: one bill, one conversation, one habit. Start there. It will not fix the world, but it will give your day back to you.
+
+If this question has been weighing on you, and you want to share what you are going through, write to us at hello@southwala.com. You will be heard.
+
 ## One thought
 Yudhishthira's answer was never that justice is certain by Friday. It was that *you do not give up the thing that makes you who you are because someone else got away with giving it up*. That is a hard thing to hear, and a hard thing to practise. But many who have tried say it is the only thing that gives a quiet night.
 

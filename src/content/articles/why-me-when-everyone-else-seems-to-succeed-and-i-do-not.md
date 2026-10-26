@@ -59,6 +59,35 @@ He found a friend in Duryodhana, who gave him a kingdom when no one else would. 
 - **Be glad in the way you can.** Sending a sincere message of congratulations to a friend, even a small one, loosens envy more than any argument.
 - **Remember what you cannot see.** Behind every photograph is a life with its own storms.
 
+## A simple evening practice
+Try this for a week. It takes five minutes and costs nothing.
+
+1. Sit quietly at the end of the day with a notebook.
+2. Write down one moment when you felt the sting of comparison today.
+3. Next to it, write what you actually wanted in that moment. Was it money, rest, respect, a feeling of being seen?
+4. Write one small thing you can do tomorrow toward that need, not toward the other person's life.
+5. Close the book. Say a short prayer or simply breathe slowly three times.
+
+After a few days you may notice a pattern. Often the envy is pointing to something real in you, a need you have been ignoring. That is useful information, and it is yours.
+
+## A closer look at "sva-dharma"
+The word *sva-dharma* in the Gita verse is often translated as "one's own duty", but it is wider than a job. It includes your temperament, your stage of life, the people who depend on you and the gifts you actually have. A student, a mother caring for elders, a shopkeeper and a teacher each have a different road. The verse does not rank them. It only says that walking someone else's road well will not make you feel at home.
+
+## Questions people ask
+**Is it wrong to feel envy?**
+No. Feeling it is human. What you do next matters. The old teachers asked people to notice it, name it and not feed it.
+
+**Does this mean I should not try to do better?**
+Not at all. The Gita asks for effort. It only asks that your effort be measured against your own path and not against someone else's headlines.
+
+**What if my situation really is unfair?**
+Some comparisons point to real injustice, such as unequal pay or a closed door. Then it is right to ask for a fair hearing through proper channels. Seeing clearly is different from drowning in envy.
+
+**Can prayer help?**
+Many people find that quiet prayer steadies the mind, even when nothing else changes. Pray for contentment and for the strength to do your work well, not only for results.
+
+If you would like to share your own way of handling this, write to us at hello@southwala.com.
+
 ## When it becomes heavy
 If comparison is bringing you low moods, sleeplessness or a sense that your life is worthless, please talk to a counsellor. Tele-MANAS (14416) is free in India.
 

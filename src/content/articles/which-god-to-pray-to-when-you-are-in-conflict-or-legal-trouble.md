@@ -61,4 +61,35 @@ Conflict makes the mind loop. [Yoga for anger](/yoga-for-anger-cool-the-body-and
 ## A thought from the epics
 The Mahabharata is a long story of a family dispute that went to war, and nobody comes out of it happy. Krishna himself went to the Kauravas as a peace envoy before the war. The epic does not say that conflict can always be avoided. It does say that it should be the last resort.
 
+## Questions people ask
+
+**Is it wrong to pray that I win?**
+Many teachers suggest asking for justice and a fair outcome rather than for victory over a person. You can also ask that the dispute end soon and with the least damage on both sides.
+
+**What if the other person is clearly in the wrong?**
+Then let the facts and the process speak. Anger gives the other side a weapon. A calm record is your best friend.
+
+**Can a mantra help me in court?**
+A mantra can help you stay steady while you wait and while you speak. It cannot change the evidence. Please be wary of anyone who promises a result in exchange for money.
+
+## A line from the Gita
+Krishna's advice to Arjuna as he prepares for battle is to treat gain and loss, victory and defeat alike, and then take up the work (Gita 2.38). It is not an instruction to be careless. It means to do what is right without letting the outcome control your mind. That is a great help in a long case.
+
+## Talking to family in a dispute
+When the conflict is within your family, try a few things:
+1. Speak one to one, not in a group.
+2. Begin with what you value in the person.
+3. Write down what you want and what you can give up.
+4. Ask a respected elder or neutral relative to mediate.
+5. Agree on a time to talk again, so no one feels brushed off.
+
+Not every dispute can be solved this way, but many soften when people feel heard.
+
+## On the day of a hearing
+Sleep early, eat a light meal and carry your papers in order. Light a lamp, say a short prayer to the deity you love, and leave home with time to spare. In the court, speak politely and briefly. Afterwards, whatever the outcome, take a walk and have some food. For truthfulness as a strength, read [Satyameva Jayate](/read-the-line-mundaka-upanishad-satyameva-jayate/).
+
+This article is general information and not legal advice. Please consult a qualified lawyer for your case.
+
+If a prayer or a practical step helped you through a long dispute, we would be glad to hear it at hello@southwala.com.
+
 *Prayer brings calm and hope, and many people find it a real strength. It works best alongside practical steps. No mantra guarantees an outcome, and no one should pay large sums to anyone who promises one.*

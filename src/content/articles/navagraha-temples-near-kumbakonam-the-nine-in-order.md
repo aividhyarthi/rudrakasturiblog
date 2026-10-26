@@ -52,4 +52,33 @@ People go for relief from planetary difficulties as they believe them, and for p
 ## A reminder
 Planetary periods are part of a belief system, and nobody has to visit a temple for a medical, financial or legal problem. See a doctor, adviser or lawyer first.
 
+## Questions people ask
+**Do I have to follow the order?** Many pilgrims do, but nobody will turn you away for visiting in another order. If the distances are hard, choose one or two temples and spend real time there.
+
+**Can I do it in a day?** It is a long day, and most people prefer two. The temples are spread over villages, and rushing takes the peace out of it.
+
+**Is it only for people with astrological troubles?** No. Plenty of visitors go for the architecture, the Kaveri countryside and the pleasure of a pilgrimage. You can go with no belief in astrology at all.
+
+**Is it all right to go alone, or with elderly parents?** Both are common. If you travel with older relatives, plan fewer temples, hire a car for the whole day, and keep rests between the stops. Comfort matters more than completing the list.
+
+**What should I carry?** Water, a cap or scarf for the sun, a little cash for offerings, and shoes you can slip off easily. Temple floors can be hot at midday.
+
+## Other places on the way
+The Kaveri delta is rich in temples and traditions, and the circuit passes places worth a stop.
+- **Kumbakonam** itself has many large temples, and is known for the Mahamaham tank, which draws great crowds on a special occasion that comes once in twelve years.
+- **Swamimalai**, near Kumbakonam, is one of the six abodes of Murugan, described in [Arupadai Veedu](/arupadai-veedu-the-six-abodes-of-murugan/).
+- **Thiruvaiyaru** is associated with the composer Tyagaraja, and a music festival is held there every year in his memory.
+- **Vaitheeswaran Koil** is described in [its own article](/vaitheeswaran-koil-the-temple-of-the-divine-healer/).
+
+## How to make it a journey and not a checklist
+1. Decide beforehand how many temples you can really visit with attention.
+2. Start the day early, since many temples close in the afternoon.
+3. At each, spend a few minutes sitting after the darshan, instead of rushing out.
+4. Eat simply, and carry a small gift for anyone who helps you on the way.
+5. At the end, write down one thing you noticed at each place. You will be surprised how different they feel.
+
+Wherever you go, treat the planets as teachers about time and change, not as enemies. Nothing in the tradition asks you to live in fear of them.
+
+If you complete the circuit and want to tell us how it went, write to us at hello@southwala.com.
+
 For a deeper look at the planets, see [our Navagraha guide](/navagraha-the-nine-planets-in-vedic-astrology/) and the [Navagraha mantras](/mantras/navagraha/).

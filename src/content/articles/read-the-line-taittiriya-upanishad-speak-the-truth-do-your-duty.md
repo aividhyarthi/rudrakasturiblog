@@ -75,4 +75,27 @@ This is a farewell speech. In the ancient system, a student lived with his teach
 ## One thing to try
 Pick one of the first three: speak one true thing you have been avoiding saying, do one right thing you have been delaying, or spend half an hour on something you want to learn. Do it today.
 
+## What comes next in the same speech
+The teacher does not stop at the lines above. In the same passage (Taittiriya Upanishad 1.11) he turns to the question of giving. In effect, he says: give with faith and not without it; give generously; give with modesty and with a sense of respect; give with understanding. Giving here is not a show. It is a skill of the heart.
+
+He also tells the student what to do when he is unsure how to act. Look at wise, calm and fair-minded people in your community who are not harsh, and act the way they would act. Once again, the Upanishad gives the student a way to think and not only a rule to obey.
+
+## Why this speech matters
+Most of the famous Upanishad lines are about the Self, Brahman and liberation. This one is about Monday morning. It says, in effect, that before you ask who you are, you should be a person others can trust. Many teachers say that the high teachings of the Upanishads only take root in ground that has been prepared by honesty and kindness.
+
+## Questions people ask
+**Does it mean I must obey my parents in everything?**
+No. The text asks for an attitude of respect and gratitude. The last line then reminds you to follow what is blameless and to leave aside what is not. Respect and discernment sit together.
+
+**What does "dharmam cara" look like in an ordinary day?**
+It can be small: paying what you owe on time, not gossiping, giving a fair day's work, looking after an elderly neighbour.
+
+**Why is study mentioned in the same breath as truth?**
+Because the tradition treats learning as part of a good life. An uninformed mind finds it hard to act rightly, however kind its wish.
+
+**Is there a link with "Satyameva Jayate"?**
+That phrase comes from the Mundaka Upanishad, a different text. You can read it on our page [Read the line: Mundaka Upanishad, Satyameva Jayate](/read-the-line-mundaka-upanishad-satyameva-jayate/). The idea of truth as the first duty runs through both.
+
+If this teaching has guided you in a decision, or someone taught you these lines as a child, we would be happy to hear about it at hello@southwala.com.
+
 See also [The ten principal Upanishads: a beginner's map](/the-ten-principal-upanishads-a-beginners-map/) and [Read the line: Isha Upanishad 1](/read-the-line-isha-upanishad-1-enjoy-by-letting-go/).

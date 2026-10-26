@@ -60,6 +60,35 @@ Traditional teaching ties wealth to a few habits: earn honestly, save a part of 
 - Lotteries and betting as a way out.
 - Hiding the problem from family.
 
+## A closer look at what Lakshmi stands for
+In the old pictures, Lakshmi sits on a lotus and gold coins fall from her hand. Many people stop there. But her lotus is a quiet reminder too: it grows in mud and stays clean. The tradition has often said that wealth is welcome, but it should be earned in clean ways. The eight forms of Lakshmi include not only money but also courage, learning, victory, food and family. If you would like to know them, read [Ashtalakshmi, the eight forms of Lakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/).
+
+When money is tight, it can feel as if wealth is the only thing that matters. Taking time to remember the other forms, such as courage and learning, can help you see that you still have resources.
+
+## A simple Friday routine
+1. Clean the place where you pray, even a small corner.
+2. Light a lamp and sit quietly for a minute.
+3. Say the Lakshmi mantra above, slowly, 11 or 108 times, as you can.
+4. Sit down afterwards with your notebook and look at one number: what you owe, what you earn, or what you can pay this month.
+5. Write one action for the week, such as calling the lender or cancelling an unused subscription.
+
+The prayer calms you, and the notebook moves you. Together they make a real week.
+
+## Questions people ask
+**Should I pray to all three?**
+You can, but there is no need. Choose the one that feels closest. Many people pray to Lakshmi on Fridays and to Narasimha on Saturdays, as the verses above suggest.
+
+**Is it all right to ask for money in prayer?**
+Yes. The tradition has always allowed people to pray for their needs. Pray also for wisdom, because the right decisions matter more than a sudden windfall.
+
+**What about Deepavali?**
+Deepavali and Dhanteras are times when many families honour Lakshmi and Kubera, clean the home and settle accounts. If you want the dates, see our [Deepavali 2026 guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/).
+
+**What if I owe a family member?**
+Be honest with them early and offer a plan, even a small one. A clear conversation is often kinder than silence, and it protects the relationship.
+
+If this page helped, or if you found something that worked for you, we would be glad to hear about it at hello@southwala.com.
+
 ## If it feels too heavy
 Financial stress can lead to despair. If you have thoughts of harming yourself, please call Tele-MANAS on 14416, free and open at all hours, or the emergency number 112. Debt problems can be solved, and many people have come through worse.
 

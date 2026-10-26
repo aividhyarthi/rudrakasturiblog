@@ -49,4 +49,27 @@ The other guards were afraid, and for the moment they held back. The dream also 
 ## The daughter of Vibhishana?
 Some later traditions, including Kamban's Tamil *Ramayana* and the *Adhyatma Ramayana*, make Trijata the daughter of Vibhishana, which would explain her good heart. In Valmiki, she is simply an old rakshasi. You may hear either version, and it is fair to say that the tradition is not unanimous.
 
+## A closer look at the dream
+In the Indian tradition, dreams seen towards the end of the night are said to come true more often than those of early evening, and Valmiki places Trijata's dream in just that hour. Notice also how the dream is told. It is not a vision of battle. It is a picture of colours and directions: white clothes, red clothes, a southern road. Everyone listening knew what these meant. A king shaved and smeared with oil was marked for ruin. A man under a white umbrella was marked for the throne.
+
+The poet is giving the reader a promise before the story of the war has even begun. For Sita, it is the first sign in months that she will not be forgotten.
+
+## Questions people ask
+
+**Did Ravana's guards stop being cruel after the dream?**
+Not entirely. The text says they were frightened, but the ordeal continued until Hanuman came. Trijata's words were a pause, not an end.
+
+**Is Trijata a hero?**
+She is a minor character, but she is remembered because of one brave act. She spoke up for someone who could not help her in return, and she did it in front of people who could have turned on her.
+
+**Is it true that dreams predict the future?**
+Opinions differ. In the story, the dream matters as encouragement more than as proof. If you want to read what traditions say about dreams of gods and temples, see [dreams of gods and temples](/dreams-of-gods-and-temples-what-do-they-mean/). Please do not make big decisions only on the basis of a dream.
+
+## What you can do with this
+Think of the person in your own life who stands in a crowd and says the one kind thing. It might be a colleague, a relative or a stranger on a bus. Trijata reminds us that this is how courage often looks: not a sword, but a few words said when everyone else is silent. And if you are the one who is surrounded by pressure, remember that there may be someone nearby waiting for a chance to help.
+
+To see what happens next to Sita, read about [Sundara Kanda](/sundara-kanda-why-people-read-it-in-hard-times-and-how/).
+
+Have you ever been helped by a person who was on the "wrong side"? Write to us at hello@southwala.com.
+
 See also [Vibhishana, the brother who chose dharma](/vibhishana-the-brother-who-chose-dharma-over-his-brother/) and [Sampati, the vulture who showed where Sita was](/sampati-the-vulture-who-lost-his-wings-and-found-sita/).

@@ -55,4 +55,32 @@ Don't use the idea of detachment to feel superior to people who like nice things
 ## For days when nothing seems to help
 If you feel no pleasure in anything, for weeks, it may not be a spiritual question. It can be depression, and it can be treated. Please speak to a doctor. See [yoga when you feel low](/yoga-when-you-feel-low-small-practices-for-a-heavy-mood/).
 
+## The contented person in the Gita
+In the twelfth chapter, verse 14, Krishna describes the devotee who is dear to him, and one of the signs is that the person is always content, *santushta*. Not content because everything is perfect, but content in a way that does not shake easily.
+
+In the second chapter, verse 70, he gives a picture. The ocean is always being filled by rivers, and yet it stays still. In the same way, the person into whom all desires flow, without disturbing them, finds peace, and not the one who runs after desires. It is a lovely image for the person who has "enough".
+
+## A closer look at the Isha Upanishad
+The very first verse of the Isha Upanishad says, in effect, enjoy by renouncing, and do not covet anyone's wealth. We explain it in [Enjoy by letting go](/read-the-line-isha-upanishad-1-enjoy-by-letting-go/). The point is not to stop having things. It is to hold them as if borrowed, and to feel free to put them down. The less tightly you hold, the more you can enjoy.
+
+## Questions people ask
+**Is it wrong to want a better life?** No. Wanting safety, health and comfort is natural. The trouble begins when wanting has no end and takes over your peace.
+
+**How much is enough?** Only you can say. A useful test: if you got the next thing on your list, would your day change for longer than a month?
+
+**What if I really do not have enough?** Then your wish for more is not greed, it is need. The advice in this article is for people whose basic needs are met. If you are struggling, practical help comes first, and talking to someone you trust is part of that.
+
+**Does contentment mean I should not ask for anything in prayer?** Not at all. The tradition is full of prayers for health, family and livelihood. It asks only that your peace should not depend on the answer.
+
+## A week of practising "enough"
+- **Day one:** write your list of what would be enough.
+- **Day two:** notice every time you say "I need" and ask if you mean "I want".
+- **Day three:** give away something you have not used in a year.
+- **Day four:** eat one meal with no screens.
+- **Day five:** thank one person in person.
+- **Day six:** spend an hour without buying anything.
+- **Day seven:** sit quietly and ask what you already have.
+
+You may not feel transformed, but you will probably notice something. If you do, write to us at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

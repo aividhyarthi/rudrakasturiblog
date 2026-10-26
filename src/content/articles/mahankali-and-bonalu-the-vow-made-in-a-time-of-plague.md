@@ -51,4 +51,23 @@ It is a rare example of a ritual in which a woman speaks for the goddess in publ
 ## Visiting
 Bonalu has several Sundays. The big temples are crowded. Follow police and temple instructions, and carry water. In the middle of the festival, public transport and roads around Secunderabad and Lal Darwaza are busy, so plan ahead.
 
+## Questions people ask
+
+**Is Bonalu only for Mahankali?**
+No. Bonalu is offered to many forms of the Mother across Hyderabad and Telangana, among them Yellamma, Pochamma and Maisamma, depending on the locality. The festival starts at Golconda and moves through the twin cities in a fixed order.
+
+**What does the bonam contain?**
+Cooked rice, often with milk and jaggery, carried in a decorated pot. After the offering, the food is shared as prasadam with the family and neighbours.
+
+**Why is a goddess prayed to in a time of disease?**
+In many villages across South India, epidemics were understood as the presence or displeasure of the Mother. Prayers to her were prayers for mercy. Today we also rely on medicine and public health, and the two sit side by side. Please see a doctor when you are unwell.
+
+## How families keep Bonalu
+Many families make bonam at home even if they do not go to a big temple. The cooking is done after a bath, in clean vessels, with a small lamp placed on top. Daughters who have married and moved away are often invited back home for the festival, so it becomes a reunion as well as a worship. The food is offered first and eaten afterwards. Even if you are far from Telangana, you can keep the spirit by cooking a simple dish of rice and jaggery, lighting a lamp, and sharing it with someone who lives alone.
+
+## Other mother goddesses to read about
+If the energy of Bonalu interests you, read about the goddess traditions that sit alongside it: [Renuka, Yellamma and Mariamman](/renuka-yellamma-mariamman-one-mother-many-names/), who are worshipped by different names across the South, and the fierce and tender sides of [Kali](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).
+
+Have you carried a bonam, or watched the procession at Lal Darwaza or Secunderabad? We would love to read your memories at hello@southwala.com.
+
 See also [Poonakam: why drums bring on a trance at temples](/poonakam-why-drums-bring-on-a-trance-at-temples/) and [Kali: the goddess people fear](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).

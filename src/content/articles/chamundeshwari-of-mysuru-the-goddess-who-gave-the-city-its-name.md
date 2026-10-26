@@ -48,4 +48,32 @@ The royal Dasara began when Raja Wodeyar in 1610 held it at Srirangapatna, conti
 ## Visiting
 The temple is open daily and is busiest on Fridays and during Ashadha, when the goddess is especially honoured, and during Dasara. Cars and buses go up from the city. Walking up in the early morning is a popular choice. Photography is not allowed inside the sanctum.
 
+## A closer look at the Devi Mahatmya
+The *Devi Mahatmya* is a text of seven hundred verses in thirteen chapters, and it is chanted in many homes as the *Chandi Path* during Navaratri. The Mahishasura story fills chapters two to four. The slaying of Chanda and Munda, from which the goddess takes the name Chamundi, comes later, in chapter seven.
+
+Many readers like that the text does not see the goddess as one person with one name. She is the combined strength of all the gods, and she appears in several forms. That is why Chamundi, Durga, Kali and Mahishasura Mardini are often spoken of as one Mother. For a fuller picture of that idea, see [Kali, the goddess people fear and the mother they pray to](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).
+
+## Mysuru Dasara in a few lines
+Dasara is the nine nights of Navaratri followed by Vijayadashami. In Mysuru it is a state-level celebration with palace durbar traditions, cultural programmes, lights on the Mysuru Palace and the grand procession on the last day. The dates change every year with the lunar calendar, so check our [calendar](/calendar/) or the official notices before you plan a trip.
+
+If you want to see Dasara without the largest crowds, go in the days before the final procession. Those days still have music, dance and the glowing palace, and the pace is gentler.
+
+## Reading the temple on your visit
+- **The gopuram** is often the first thing to catch your eye, and it can be seen from the plain below.
+- **The Nandi** halfway up the steps is a favourite place for a short pause. Many pilgrims touch the base and bow.
+- **The statue of Mahishasura** near the temple reminds you of the story that gave the city its name.
+- **The view from the top** over Mysuru is wide, and on clear days you can see the palace and the city spread out below.
+
+## Questions people ask
+**Is Chamundeshwari the same as Durga?**
+Chamundi is regarded as a fierce form of Durga. Many people use the names interchangeably, and the temple's presiding goddess is also shown as Mahishasura Mardini.
+
+**Do I have to climb the steps?**
+No. Roads go to the top. The steps are for those who want to walk as a vow or for the exercise. Start early and carry water if you climb.
+
+**Is it only a Dasara temple?**
+Not at all. Local families visit on Fridays and special days all year.
+
+If you have a Chamundi Hill memory, a first climb, a family tradition or a Dasara night, we would be glad to read it at hello@southwala.com.
+
 See also [Kanaka Durga of Vijayawada](/kanaka-durga-of-vijayawada-the-goddess-on-the-hill-of-indra/) and [Shakti peethas](/temples/shakti-peethas/).

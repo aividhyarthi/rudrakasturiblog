@@ -66,4 +66,29 @@ If you find that you suspect almost everyone, or that you cannot stop checking, 
 
 For a related teaching, see [what Krishna says about fear](/gita-on-fear-even-a-little-practice-protects-you/).
 
+## Arjuna's doubt, and how Krishna answered
+It helps to remember how the Gita begins. Arjuna is full of doubt, so much so that he puts down his bow. Krishna does not scold him. In chapter 2 Arjuna says, in effect, that he is confused about his duty and asks to be taught as a disciple. That honest asking is where the teaching begins.
+
+At the end of chapter 4, Krishna comes back to doubt, and speaks of cutting through it with the sword of knowledge (verse 42) and then standing up to act. Notice the order. Doubt is not simply ignored. It is met with understanding, and then you move.
+
+## Questions people ask
+**How do I know if my suspicion is right?** Look for evidence you could show another person. If you have only a feeling, treat it as a question, not a conclusion.
+
+**What if I asked and they denied it?** Then you have two choices: to believe them for now, or to watch calmly over time. Either is more peaceful than interrogating them again and again.
+
+**Is trusting people foolish?** Trust is not the same as giving up judgement. The Gita values clear sight. You can trust in steps, as the article says, and still be kind.
+
+**What about suspicion of God, or of teachers?** The same advice applies. Ask your question with respect, look for a good answer, and be patient with yourself.
+
+## A small exercise for the next time
+When the story starts in your mind, try this:
+1. Write one line: *What I know is...*
+2. Write another: *What I am guessing is...*
+3. Write a third: *One kind question I could ask is...*
+4. Wait one night before you act.
+
+You will often find the guess column longer than the know column. That is not a flaw. It is just information about how the mind works.
+
+If you want to read more on a restless mind, see [the Gita on overthinking](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/). And if you have found your own way through a season of suspicion, write to us at hello@southwala.com.
+
 *The Gita is a source of wisdom, not a replacement for medical care. If this is affecting your sleep, work or safety for weeks, please speak to a doctor or counsellor. In India, Tele-MANAS (14416) is free and open at all hours.*

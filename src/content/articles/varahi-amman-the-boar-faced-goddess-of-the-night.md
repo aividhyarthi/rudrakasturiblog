@@ -44,4 +44,44 @@ There are Varahi shrines throughout India. The Chaurasi Varahi temple in Odisha 
 ## A simple prayer
 Many people simply recite her name with a lamp. Varahi's own mantras are traditionally taken from a teacher, and we have not printed them here for that reason. If you are new, it is better to start with the common prayers to the Devi, such as the [Durga mantras](/mantras/durga/).
 
+## A closer look at the seven mothers
+The Saptamatrikas are usually named Brahmani, Maheshvari, Kaumari, Vaishnavi, Varahi, Indrani and Chamunda. Each is the shakti, the active power, of a god, and each carries something of that god's form and weapons. You will often see them carved together in a row on temple walls, sometimes with Ganesha and Virabhadra at the ends.
+
+Seeing Varahi among them helps make sense of her. She is not a lone, strange figure. She is part of a family of powers that protect the world. In many old temples, the Matrikas are placed near the entrance or on the outer walls, which fits her role as a guard.
+
+## The Varaha connection
+Varaha is the boar avatar of Vishnu, who, in the Puranas, lifts the Earth from the waters after the demon Hiranyaksha drags her down. Varahi is his shakti, and she takes his boar face. If you look at it plainly, a boar digs the earth and finds what is buried. Devotees sometimes say that she helps one dig through confusion to find what is real.
+
+## Reading it with modern eyes
+It is easy to approach a fierce goddess with fear. A calmer way is to ask what she stands for. A guardian protects a boundary. In daily life, most of us struggle to say no, to protect our time, our health and our peace from things that keep wearing them down.
+
+You might think of her as a reminder to keep your own gates:
+- Notice what you let in through the day.
+- Keep one hour quiet, with no messages.
+- Do not carry anger out of your house.
+
+This is a gentle, practical reading. If your family's tradition sees her differently, follow that.
+
+## A simple way to remember her at home
+You do not need an elaborate ritual.
+
+1. Wake a little before sunrise, wash, and light a lamp.
+2. Offer a flower and a pinch of jaggery or a fruit.
+3. Fold your hands and ask for protection for your family and strength for your work.
+4. Sit for a minute in silence.
+
+Please do not use any goddess to wish harm on another person. The old teachers are very clear that a prayer for someone's ruin turns back on the one who prays.
+
+## Questions people ask
+**Is Varahi worship dangerous if done wrongly?**
+Simple prayer and lamp worship are fine for anyone. Elaborate rites and mantras are traditionally learned from a teacher, so it is wise not to copy them from random sources.
+
+**Can women and men both worship her?**
+Yes. There is no such restriction in the common forms of worship.
+
+**How is she different from Kali or Durga?**
+All are forms of the Devi. Varahi is mainly linked with command, protection and the army of the goddess, while Kali is linked with time and transformation, and Durga with the victorious defender. The traditions overlap and are not strict categories.
+
+If Varahi is your family's deity, or you have visited a shrine you would like to tell us about, please write to hello@southwala.com.
+
 See also the story of [Kali](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/) in this series.

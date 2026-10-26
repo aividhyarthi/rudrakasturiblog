@@ -45,4 +45,32 @@ The big day is Arudra Darshan, held on the day of the Arudra nakshatra in Margaz
 - Dress should be modest, with traditional wear preferred for men inside the sanctum.
 - Nearby: the Gangaikonda Cholapuram temple and the Annamalai University campus.
 
+## A closer look at the golden hall
+The Chit Sabha is only one of several halls inside the temple. The tradition speaks of five *sabhas*, or assemblies: the Chit Sabha, Kanaka Sabha, Nritta Sabha, Deva Sabha and Raja Sabha. The Chit Sabha, where the Nataraja stands, has a roof covered with gold, and people often call it the *Ponnambalam*, the golden hall in Tamil.
+
+The old name of the place, Thillai, comes from a kind of tree that grew in the area, and Nataraja is often called Thillai Nataraja. Look at the roof and then at the name, and you will see that the temple is also a memory of a forest.
+
+## The story of the dance
+Temple tradition tells of two sages, Patanjali and Vyaghrapada, who longed to see Shiva dance. In the tale, the Lord performed the dance for them here, and this is why the place became the seat of Nataraja. Treat this as sacred legend, not history. It tells you what the people who built and kept this temple believed it was for.
+
+## Questions people ask
+**Is there really nothing behind the curtain?** What you see is an empty space with a garland of golden bilva leaves. The temple explains this as the formless form of Shiva. The meaning is for each visitor to take in.
+
+**Is Chidambaram a Shaiva or Vaishnava place?** It is a great Shiva temple. There is also a shrine of Vishnu as Govindaraja inside the complex, which many visitors find surprising.
+
+**Why do dancers come here?** Nataraja is the lord of dance, and the carvings of the dance poses on the gopurams are a living lesson. Many classical dancers see a visit as a blessing on their art.
+
+**When is the best time to go?** For the big festivals, the Margazhi Arudra Darshan in winter and the Ani Tirumanjanam in the summer months are the best known. For quiet, go on an ordinary weekday morning.
+
+## How to look at the Nataraja
+Don't try to understand everything in one visit. Try this:
+1. Look first at the face. It is calm even while the body dances.
+2. Look at the ring of fire around the figure, and let your eyes follow it.
+3. Look at the foot that is lifted. The tradition says it shows release.
+4. Close your eyes for a breath, and remember the empty space behind the curtain.
+
+There is also a very old tradition of Tamil devotional poetry about this temple, from the Nayanars and from Manikkavacakar, whose hymns are still sung. If you hear singing as you enter, stop and listen.
+
+If you have visited Chidambaram and something stayed with you, write to us at hello@southwala.com.
+
 If you want to see the other Pancha Bhoota temples, see our [guide to all five](/temples/pancha-bhoota-sthalams/).

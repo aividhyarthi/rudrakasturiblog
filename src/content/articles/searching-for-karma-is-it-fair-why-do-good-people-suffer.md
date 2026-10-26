@@ -62,6 +62,36 @@ It may help to know that:
 
 If the pain is heavy, please speak to someone. Tele-MANAS (14416) is free in India.
 
+## What to say, and what not to say
+When someone near you is suffering, the idea of karma can slip out of your mouth before you think. Here are a few gentle suggestions.
+
+**Try:**
+- "I am here."
+- "That sounds so hard. Tell me what would help."
+- Simple acts: a meal, a ride to the hospital, a phone call at night.
+
+**Avoid:**
+- "It must be your karma."
+- "Everything happens for a reason." Even if you believe it, a person in pain cannot hear it yet.
+- Comparing their trouble to someone else's.
+
+A great deal of what the tradition calls dharma is simply showing up. The deeper questions can wait until the person is ready.
+
+## Questions people ask
+**Do the epics ever say that a good person's suffering is deserved?**
+Sometimes a character's past is described, as with Bhishma, but the epics do not use it to blame. They use it to show that actions have long roots. For more on this, read [Bhishma on the bed of arrows](/bhishma-on-the-bed-of-arrows-what-karma-did-he-carry/).
+
+**Why do bad people seem to prosper?**
+The tradition offers several answers, but none of them removes the sting. We look at it fully in [Why do bad people prosper while good people struggle](/why-do-bad-people-prosper-while-good-people-struggle/).
+
+**What if I am the one asking, in the middle of my own pain?**
+Then be gentle with yourself. The question "why me?" is natural and not a sign of weak faith. You may find [Why me, I am a good person, so why am I suffering](/why-me-i-am-a-good-person-so-why-am-i-suffering/) a good companion.
+
+**Is it all right to be angry at God?**
+Yes. Many of the great devotees in the tradition spoke to God in anger and in tears. Honest feeling is better than a polite silence.
+
+If you want to share how this question has shaped your own life, you are welcome to write to hello@southwala.com. We read every message.
+
 ## The short version
 The universe may well be fair in a long run that we cannot see. What we can see is our own next action. That is the piece we hold. See [karma and free will](/karma-and-free-will-what-the-gita-says/).
 

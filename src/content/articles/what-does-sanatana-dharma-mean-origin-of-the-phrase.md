@@ -54,5 +54,38 @@ Beyond these, each person has their own duties by age, work and role, called *sv
 ## What it does not require
 The phrase does not demand that you agree with a single book, a single god or a single practice. Hindu tradition has space for devotion to Shiva or Vishnu or the Goddess, for philosophy like [Advaita](/advaita-vedanta-in-plain-words/), and for people who follow the path of karma or knowledge or devotion. That variety is, for many of its followers, a feature and not a flaw.
 
+## Four aims of a human life
+Another old idea helps make the phrase concrete. Tradition speaks of four aims of life, the *purusharthas*:
+
+- **Dharma:** living rightly.
+- **Artha:** earning and security, the means to live.
+- **Kama:** healthy desire, joy, art, love and family.
+- **Moksha:** freedom, the settling of the heart into peace.
+
+Notice that wealth and pleasure are not thrown out. They are welcomed, but placed inside dharma. A person who earns honestly and enjoys life gently is, in this view, living the eternal dharma as much as a monk is.
+
+## One truth, many names
+The Rig Veda has a line that many Indians know: *ekam sat vipra bahudha vadanti*, "the truth is one, the wise speak of it in many ways" (Rig Veda 1.164.46). It is often quoted to explain why the tradition has room for so many gods, paths and teachers. You can see this wide space in how people pray: one family may worship Venkateswara, another Shiva at the village temple, another the Mother, and each calls the practice by the same larger name.
+
+## Common misunderstandings
+- **"It is a fixed rulebook."** The texts repeatedly say that dharma must be understood by time, place and situation. In the Mahabharata, even great figures argue over what is right in a hard case. That argument is part of the tradition.
+- **"It is only about ritual."** Rituals matter to many families, but the old lists of dharma put truth, non-violence and compassion first.
+- **"It means the same for everyone."** The common duties are shared, but a student, a parent, a farmer and a ruler each carry different duties.
+
+## A simple way to live it
+You do not need a large programme. Pick one item from the common list above and watch it for a week. For example, try speaking only what is true and kind. At the end of the week, ask yourself what got in the way. That small, honest exercise is closer to the spirit of the phrase than any slogan.
+
+## Questions people ask
+**Is Sanatana Dharma the same as Hinduism?**
+Many people use them as equal terms. Others say Sanatana Dharma is the older and wider idea, and Hinduism the modern English label. Both views are common.
+
+**Does the phrase appear in the Vedas?**
+The exact words are found in later texts such as the Mahabharata and the Puranas. The ideas of *rita* (cosmic order) and *dharma* are far older.
+
+**Where should a beginner start reading?**
+The Gita is a good door. Our guide to [the ten principal Upanishads](/the-ten-principal-upanishads-a-beginners-map/) and the page on [karma and free will in the Gita](/karma-and-free-will-what-the-gita-says/) are also gentle starting points.
+
+If the phrase has meant something different in your family or your village, write and tell us at hello@southwala.com.
+
 ## Where to go next
 If this made you curious, read [which Gita chapter to read first](/which-bhagavad-gita-chapter-to-read-first/) and our series on [karma stories](/karma-stories/), which show how these ideas are told in the epics.

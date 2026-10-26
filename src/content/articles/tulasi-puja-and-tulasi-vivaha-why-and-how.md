@@ -36,4 +36,35 @@ It marks the end of Chaturmasya and the start of the marriage season in many fam
 3. Perform the puja, with a thread (mangalsutra) tied round the plant, and sing the marriage songs.
 4. Share prasad and sweets with everyone.
 
+## What you will need for the Vivaha
+- A clean, decorated Tulasi plant, with the platform swept and a rangoli drawn around it.
+- A Shaligrama, a small Vishnu or Krishna picture, or an amla branch with fruit.
+- Turmeric, kumkum, flowers, a garland and a few new cloths for the bride and groom.
+- In many homes, sugarcane stalks are tied to make a small wedding canopy. This varies by region, so follow what your family does.
+- Lamps, fruit, sweets and a few friends to share them with.
+
+## Caring for the plant
+A Tulasi that is looked after is easier to worship with a glad heart. Some simple tips from gardeners:
+- **Give it sun.** Tulasi likes four to six hours of direct light each day.
+- **Water regularly, but do not drown it.** Let the top of the soil dry slightly between watering.
+- **Pinch off the flower spikes** (called *manjari*) when they appear. The plant then stays bushy and produces more leaves. The spikes themselves are also offered to Vishnu in many homes.
+- **No garden?** A good-sized pot on a balcony or window sill is fine.
+- **If it dies,** do not feel guilty. Plants die. Many families immerse the dried plant respectfully in running water or place it at the foot of a tree, and start a fresh one.
+
+## Questions people ask
+
+**Why is Tulasi offered to Vishnu and not to Ganesha?**
+The tradition says Vishnu accepts nothing without her, as in the story above. In many homes, a different set of flowers or leaves is used for Ganesha, and Tulasi is kept for Vishnu and Krishna. Customs vary by family.
+
+**Is Tulasi good for health?**
+Many households make a warm drink with a few Tulasi leaves, and the plant is widely used in traditional home care. This is a custom, not medical advice. If you are unwell, please see a doctor.
+
+**Do I need a priest for the Vivaha?**
+No. Many families do it at home with their own songs and a simple puja. A priest can be invited, but love matters more than ritual.
+
+## Making it a family occasion
+Children enjoy Tulasi Vivaha. Let them decorate the platform, draw rangoli and help dress the plant. Some households invite neighbours and friends to the evening ceremony, and the tradition of giving fruit and sweets to guests turns it into a small festival. Lamps are lit around the platform, and you can link it to the lamp-lighting of the month in [Karthika Deepam](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/). For the fasting day on which Vishnu wakes, see the [Ekadashi page](/ekadashi/).
+
+If your family has a special Tulasi song or custom, write to us at hello@southwala.com.
+
 *Traditions vary by region and family.*

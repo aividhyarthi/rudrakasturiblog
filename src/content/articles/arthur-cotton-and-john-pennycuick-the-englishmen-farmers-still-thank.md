@@ -42,5 +42,28 @@ Farmers of the area still celebrate his birthday, 15 January, which coincides wi
 ## A note on complexity
 It is worth being honest about the other side. These works were built under colonial rule, and they served the colonial government as well. The Mullaperiyar Dam is also at the centre of a bitter dispute today between Tamil Nadu, which uses the water, and Kerala, which is worried about the dam's age. But for the families who farm the land, the original gift is not forgotten.
 
+## Questions people ask
+**Why do farmers honour engineers like gods?**
+In an agricultural country, water decides whether a family eats or goes hungry. When one person's work brings regular water to a whole region, people reach for the language of devotion to say thank you.
+
+**Did these men become Hindus?**
+No. They remained Christians and Englishmen. The gratitude of the farmers does not depend on that. It rests on what they did.
+
+**How long did Cotton live?**
+He lived to the age of 96, as noted above, and kept pressing for irrigation schemes in India well into old age.
+
+**Is the Pennycuick story about selling property proven?**
+The text says it is a story families tell, and it is wise to treat it as such. What is not in doubt is the dam's effect on the farmland of the dry districts.
+
+## Gratitude in our own tradition
+Hindu thought has always taught that we are born in debt. The old idea of the three debts speaks of what we owe to the gods, to the sages and teachers, and to our ancestors. Many families extend that to the earth and the rivers that feed us. The Taittiriya Upanishad tells the student not to look down on food, and to see that plenty of it is produced. In a land of rivers, being grateful to those who made the water reach the field is quite natural.
+
+## A small thing to try
+Next time you eat rice, sit for a moment before the first bite. Think of the farmer, the water, the people who carried the grain and the whole chain of hands. You do not need to say anything aloud. It is a quiet way of saying thank you for something we usually take for granted.
+
+You might also like our piece on the [Kaveri](/kaveri-the-ganga-of-the-south-and-the-story-of-the-crow/), another river whose waters shape the lives of millions.
+
+If your family has a story about water, a canal or a village that was changed by one, please write to hello@southwala.com.
+
 ## What it tells us
 Devotion, in India, has always included gratitude. A river is a goddess in the Hindu tradition, and someone who makes her serve people has, in the eyes of the farmers, done something sacred. See our pieces on the [Godavari](/godavari-the-ganga-of-the-south-and-the-englishman-farmers-still-thank/) and the [Krishna river](/krishna-river-krishnaveni-srisailam-vijayawada-and-the-pushkaralu/).

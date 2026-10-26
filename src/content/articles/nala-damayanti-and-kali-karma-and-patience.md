@@ -29,5 +29,38 @@ In the Mahabharata it is Kali who afflicts Nala. In Tamil tradition, and at the 
 - **Steadfastness is a form of strength.** Damayanti never doubts Nala's worth, even when he has failed her.
 - **Do not blame the planets.** The tradition itself is clear that Nala's actions let the difficulty in, and his learning ended it.
 
+## The story in a little more detail
+The tale is known as the Nalopakhyana, the story of Nala, and the sage Brihadashva tells it to Yudhishthira in the forest. Yudhishthira has lost his own kingdom at dice, so the choice of story is no accident. It says: someone has been where you are, and came back.
+
+Nala and Damayanti first fall in love through a swan, who carries word of each to the other. At her swayamvara, four gods, Indra, Agni, Varuna and Yama, take Nala's own form to confuse her. Damayanti prays, and she is able to see which one is the real Nala. That is the moment Kali loses his chance, and he swears revenge.
+
+When Nala finally loses everything at dice, the text tells us that Kali had entered him and that another force, Dvapara, entered the dice. The weak point was a lapse in purity, but the real break came from Nala's own unsteady mind.
+
+## Damayanti, the heart of the tale
+It would be easy to see this as Nala's story, but Damayanti is the one who does most of the work. She is left alone in the forest, passes through danger, and lives for a time at the palace of the king of Chedi. All this time she is looking for him.
+
+Her cleverest move comes near the end. Hearing that a charioteer named Bahuka is unusually skilled, she announces a second swayamvara at short notice, knowing that only Nala could drive a chariot so fast to reach her in time. Rituparna and Bahuka arrive, and Nala's skill with horses gives him away. She is not tricking him for the sake of it. She is calling him home.
+
+## The exchange of knowledge
+Bahuka, who is Nala after the snake Karkotaka's bite changed his appearance, teaches Rituparna the science of horses. Rituparna teaches him the secret of dice in return. This is how Nala is able to regain his kingdom. As Nala masters the secret, Kali leaves his body. The story shows that a weakness can be healed by learning the thing that once undid you.
+
+## Reading it with modern eyes
+- **Notice the small slip.** The text does not say Nala was wicked. It says he missed a small step, and that a darker force was waiting. Most big falls in life have a long line of small ones behind them.
+- **Do not pretend you are alone.** Damayanti searched, asked and listened. Asking for help is part of her strength.
+- **Recovery takes learning.** Nala did not just wait for time to pass. He learned the very skill that had ruined him.
+- **Love can be stubborn without being foolish.** Damayanti never gave up on him, and yet she used all her wits.
+
+## Questions people ask
+**Is Kali the same as the goddess Kali?**
+No. This Kali is the spirit of the age of strife, Kali Yuga, and he is a separate figure from the goddess.
+
+**Why does the Tamil version mention Shani?**
+Local tradition at Tirunallar tells the story with Shani, the planet Saturn. The Mahabharata names Kali. Both versions agree on the lesson, that a hard time can test a person and then end.
+
+**Should I be afraid of Saturn?**
+No. The story is meant to give courage. If you want to understand how planetary periods are read, our piece on [Sade Sati](/sade-sati-2026-which-rashis-are-affected/) is a calm place to start.
+
+If this story helped you in a hard season, write to us at hello@southwala.com.
+
 ## For today
 Keep the small disciplines: the morning routine, the promise kept, the work finished. They are what holds a life steady when the larger things shake. If you are in a hard period, see our guide to [Saturn's transit and Sade Sati](/sade-sati-2026-which-rashis-are-affected/).

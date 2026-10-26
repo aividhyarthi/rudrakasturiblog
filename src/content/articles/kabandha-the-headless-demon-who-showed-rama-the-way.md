@@ -52,4 +52,34 @@ So the monster who attacked them is the one who sends them on their path. Withou
 ## Where to think of it
 Pampa is the lake and river at Hampi in Karnataka, which gave Hampi its name. The Anjanadri hill, said to be Hanuman's birthplace, and Rishyamukha are close by, and the whole landscape is part of the Kishkindha of the story.
 
+## Where it sits in the Ramayana
+It helps to see the order of events, so the meeting does not feel like an accident.
+
+1. Ravana carries Sita away, and Jatayu is wounded trying to stop him.
+2. Rama and Lakshmana find the dying Jatayu and perform his last rites.
+3. Moving south, they meet Kabandha, who sets them on the path.
+4. They reach the hermitage of Matanga, where the old Shabari welcomes them (see [Shabari, the old woman who waited for Rama at Pampa](/shabari-the-old-woman-who-waited-for-rama-at-pampa/)).
+5. Near Pampa, they meet Hanuman, and through him, Sugriva. This opens the Kishkindha Kanda.
+
+Each stop is a person who gives something: Jatayu gives news, Kabandha gives direction, Shabari gives love and her own long faith, and Hanuman gives friendship. The brothers lose a great deal in the forest, but the forest also keeps sending them help.
+
+## Reading it with modern eyes
+Most of us meet our own Kabandha at some point. It may be a job loss, an illness, a sudden change in the family. It grabs us, drags us towards something we fear, and we cannot see what good could come of it.
+
+The story does not say that every hardship hides a gift. That would be unkind. What it says is smaller and more honest: do not decide in the first minute what the thing in front of you is. Rama fights, because he must. But when the creature speaks, he listens. That second step, to stop and hear what the thing has to say, is the part worth copying.
+
+Another point is easy to miss. Kabandha is not saved because Rama is powerful. He is saved because Rama is willing to deal with him as a person once he speaks. Even a frightening figure can have a past, a curse and a sorrow.
+
+## Questions people ask
+**Why is he called Kabandha?**
+In Sanskrit, the word means a headless trunk. The name describes his body in the story.
+
+**Is this story found in other Ramayanas?**
+Many retellings in different languages include Kabandha, with some differences in detail, such as how he came to be cursed. Here we follow the Valmiki Ramayana and mention variations only where we are sure they exist.
+
+**Why does Rama let himself be caught?**
+In the text, the brothers do not choose it. They are seized and have to act quickly. The deeper reading, that this was the way the curse was meant to end, comes from the monster's own account afterwards.
+
+If this story has meaning for you in a difficult time, we would be glad to hear about it at hello@southwala.com.
+
 See also [Tungabhadra, Hampi and the river of the Vijayanagara kings](/tungabhadra-hampi-and-the-river-of-the-vijayanagara-kings/) and [Jatayu, the old bird who fought Ravana](/jatayu-the-old-vulture-who-fought-ravana/).

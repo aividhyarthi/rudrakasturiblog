@@ -69,4 +69,29 @@ You will not meet a battlefield. But you will meet small declines of dharma: a l
 ## One thing to try
 Think of one small place around you where something is slipping, in your family, workplace or street. Do one concrete thing about it this week, however small.
 
+## Where these verses sit
+These lines come in Chapter 4, which the tradition calls the yoga of knowledge and action. Just before them, in 4.5 and 4.6, Krishna tells Arjuna that both of them have passed through many births, but only he remembers them, and that though he is unborn, he takes form by his own power. The verses we are reading explain *why* he does so.
+
+Right after them, in 4.9, he says that one who truly understands his divine birth and work does not take birth again after leaving the body. So the idea of an avatar is not a decoration in the Gita. It is part of a larger lesson about knowing the Lord.
+
+## Questions people ask
+**Is this where the idea of the ten avatars comes from?**
+The list of ten avatars of Vishnu is developed in the Puranas, not in the Gita. This verse is often quoted as the root idea: that the divine descends when the world needs it. The Gita itself does not list them.
+
+**Does "destruction of the wrongdoers" mean we should punish people?**
+The verse speaks of what Krishna does. It does not give any of us a licence to judge others. If you read on, the Gita keeps pointing to restraint, steadiness and absence of hatred.
+
+**What does "sādhu" mean here?**
+It means a good person, one who lives rightly. It is not limited to monks. Anyone trying to live with honesty and care is a sādhu in this sense.
+
+**Why "yuge yuge"?**
+It means "in age after age". Indian thought sees time as moving in great cycles called yugas, and this phrase says that the divine response to injustice is not a one-time event.
+
+## Reading it in a hard season
+Many of us read these lines when the news is bad, or when something in our own lives feels unfair. The verse offers comfort: the world is not left alone. It also leaves us with a question: *if good people are protected, what am I doing to be one?*
+
+Some families recite this verse on Krishna Janmashtami, when the birth of Krishna is remembered. You may like to do the same, and then tell the children what the words mean.
+
+If these lines have been a support to you, write to us at hello@southwala.com.
+
 See also [Krishna: the cowherd, the king and the teacher](/krishna-the-cowherd-the-king-and-the-teacher/) and [Gita on confusion: when you cannot decide what is right](/gita-on-confusion-when-you-cannot-decide-what-is-right/).

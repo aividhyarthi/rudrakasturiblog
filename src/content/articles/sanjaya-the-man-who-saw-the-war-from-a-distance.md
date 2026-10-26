@@ -50,4 +50,31 @@ Sanjaya, in the end, lost his gift. Near the end of the war he was captured by t
 ## Where to connect
 Some scholars call Sanjaya the first war correspondent in world literature. A famous verse, the last of the Gita, ends with his own conclusion, and it is chanted at the close of many recitals.
 
+## More about Sanjaya
+Sanjaya is described in the epic as the son of Gavalgana, a charioteer by background. His rank at court was modest, but his role was large. He was not only Dhritarashtra's driver and companion. He was a counsellor whose words the king both trusted and avoided.
+
+Even before the war, in the Udyoga Parva, it is Sanjaya whom Dhritarashtra sends as a messenger to the Pandavas. He returns with their message, and it is Sanjaya who tells the king, plainly, what the consequences are likely to be. Again the king listens and does not act.
+
+## After the war
+The story does not stop when the divine sight ends. In the Ashramavasika Parva, Dhritarashtra and Gandhari retire to the forest in their old age, and Sanjaya goes with them to serve. According to the epic, when the old king died in a forest fire, Sanjaya, who had been told to leave, went on to the Himalayas. A man who saw every death in the war ended his days in quiet.
+
+For another story of what the war left behind, read [Gandhari's curse and Krishna](/gandharis-curse-and-krishna-karma-of-the-yadavas/).
+
+## Questions people ask
+**Why did Dhritarashtra refuse the gift of sight?**
+The text lets us wonder. It may have been grief, or love, or fear of seeing what his own choices had caused. Sanjaya's version is a middle path: the king can hear the war without watching it.
+
+**Is the "divine sight" like a live broadcast?**
+Many people enjoy the comparison. The epic treats it as a gift from a sage, the power to see what is far away.
+
+**Where can I read what Sanjaya said to the king?**
+The Bhishma Parva includes the Bhagavad Gita. You can start with our guide to the [Bhagavad Gita](/bhagavad-gita/) and with [Which Bhagavad Gita chapter to read first](/which-bhagavad-gita-chapter-to-read-first/).
+
+## Reading it with modern eyes
+Think of the people in your own life who play Sanjaya's role. A friend who tells you what you do not want to hear. A colleague who reports honestly even when it is awkward. A child who says what they see.
+
+And think of how often we play Dhritarashtra: we want the report, but in softer words. The story invites us to listen when the news is hard, and to be, when our turn comes, the person who tells.
+
+Have you ever been the honest messenger in your family? We would like to hear about it at hello@southwala.com.
+
 See also [Gita on confusion: when you cannot decide what is right](/gita-on-confusion-when-you-cannot-decide-what-is-right/) and [Bhishma on the bed of arrows](/bhishma-on-the-bed-of-arrows-what-karma-did-he-carry/).

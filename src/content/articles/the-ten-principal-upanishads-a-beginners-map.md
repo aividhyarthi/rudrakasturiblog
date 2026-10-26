@@ -42,6 +42,50 @@ If you try to read them cold, the language can feel strange. Here is a gentler w
 - Look for a translation with a short commentary, from a traditional teacher or a modern one you trust.
 - Read a few verses at a time and think about them.
 
+## Where the Upanishads sit in the Vedas
+Each Veda has several layers. First come the hymns, then the texts on ritual, then the forest texts, and last the Upanishads. That is why they are called *Vedanta*, the end of the Veda. They are also the part of the Vedas that most readers meet today, because they speak directly about life.
+
+Each of the ten belongs to one Veda in the traditional arrangement:
+- **Rigveda:** Aitareya.
+- **Samaveda:** Kena and Chandogya.
+- **Shukla Yajurveda:** Isha and Brihadaranyaka.
+- **Krishna Yajurveda:** Katha and Taittiriya.
+- **Atharvaveda:** Prashna, Mundaka and Mandukya.
+
+You do not need to memorise this. It simply shows that the ten come from all four streams of the tradition.
+
+## The four great sayings
+Teachers often point to four short lines, the *mahavakyas*, as the heart of the Upanishads. Each comes from a different text:
+
+1. *Prajnanam brahma*, consciousness is Brahman (Aitareya).
+2. *Aham brahmasmi*, I am Brahman (Brihadaranyaka).
+3. *Tat tvam asi*, you are that (Chandogya).
+4. *Ayam atma brahma*, this self is Brahman (Mandukya).
+
+Each is a way of pointing to one idea, that what you are at the deepest level is not different from what holds the world. How that is understood is a matter of debate among schools, as you will see in the Advaita and Vishishtadvaita pieces linked below.
+
+## A way to read one line a week
+Reading a whole Upanishad can feel heavy. Try one line a week instead.
+
+1. Pick a line, for example from [Katha: arise, awake](/read-the-line-katha-upanishad-arise-awake/) or [Mundaka: Satyameva Jayate](/read-the-line-mundaka-upanishad-satyameva-jayate/).
+2. Read it aloud in the morning.
+3. Carry it through the day and notice where it fits.
+4. At night, write one sentence about what you saw.
+
+This is close to how the old teachers worked: a few words, a lot of thought.
+
+## Questions people ask
+**Do I need a guru to read them?**
+A teacher helps, especially with difficult passages. But many people begin on their own with a good translation, and find a teacher later.
+
+**Are the Upanishads only for monks?**
+No. Yajnavalkya, who teaches in the Brihadaranyaka, was a householder with two wives, and the Chandogya has the story of a young student returning home to his father. They are for anyone who is willing to ask serious questions.
+
+**Which language should I read in?**
+Whichever you understand best. The meaning matters more than the language. If you like the sound, learn a few verses in Sanskrit by ear.
+
+If there is an Upanishad line that has stayed with you, tell us at hello@southwala.com.
+
 ## How they connect to what you may already know
 The Bhagavad Gita is often described as the essence of the Upanishads. You will find its teaching on the self, on action and on steadiness of mind echoed in them. If you have read [Gita 2.14](/gita-2-14-heat-and-cold-pleasure-and-pain-come-and-go/), the Katha Upanishad will feel familiar.
 

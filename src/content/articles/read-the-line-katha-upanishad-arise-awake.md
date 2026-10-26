@@ -73,4 +73,26 @@ W. Somerset Maugham took *The Razor's Edge* as the title of a novel from this ve
 ## One thing to try
 Ask yourself: *what am I half-asleep about?* A habit, a relationship, a question I keep putting off. Then ask: *who could I learn from?* Write down one name, and contact them this week.
 
+## A closer look at the three days at the door
+The setting of this verse is worth a second look. Nachiketa was a boy who had been sent away by his angry father, and in the story he came to Yama's house when Yama was away. He waited without food for three nights. When Yama returned, he offered three boons to make up for the neglect of a guest. This is in the first chapter of the Katha Upanishad.
+
+Notice what that tells us about the line at the end. The person who is told to wake up is the one who was willing to wait, to refuse comfort, and to ask the real question. The call to awake follows the readiness.
+
+## Questions people ask
+**Did Vivekananda change the verse?** He used it as a call to action, and gave it a form that suited his audience. It is a loose rendering of the first line with an added thought. Both the original and his version are worth knowing.
+
+**What is the razor's edge supposed to mean?** That the path to understanding the Self needs balance and attention. One does not drift into it. It does not mean that the path is cruel, only that it asks for care.
+
+**Do I need a guru to read this Upanishad?** The verse itself recommends a guide. You can begin with a good translation, and if a real teacher appears in your life, listen well.
+
+## How to read it in the morning
+Try this for a week:
+1. When you wake, say *uttiṣṭhata* quietly, and stand up.
+2. Say *jāgrata* and take three slow breaths, trying to be awake in the whole body.
+3. Say *nibodhata* and ask one question for the day: what do I need to understand today?
+
+Keep it light. You do not need to make it a heavy discipline.
+
+If this verse has woken something in you, tell us at hello@southwala.com.
+
 See also [Searching for a guru: how to find one](/searching-for-a-guru-how-to-find-one-and-how-to-know-a-real-one/) and [The ten principal Upanishads: a beginner's map](/the-ten-principal-upanishads-a-beginners-map/).

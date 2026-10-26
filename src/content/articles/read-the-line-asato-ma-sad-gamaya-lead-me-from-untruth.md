@@ -63,4 +63,33 @@ The verse is from the *Pavamana mantras*, chanted during the Soma sacrifice. The
 ## One thing to try
 Say the three lines slowly, once, in the morning. Then pick one pair and ask: *what is one thing I take as lasting that is not?* Or *one thing I do not see clearly?* Write it down.
 
+## A closer look at the word "mā"
+It is a small word and easy to miss. *Mā* here means "me". But in the Sanskrit the same syllable also means "not", and a student learns early to tell the two apart by context. In this line it is simply "me", the one who asks.
+
+Because the prayer is so short, each word has to carry weight. The first word of each line is the thing we leave (*asataḥ*, *tamasaḥ*, *mṛtyoḥ*), and the last word is the action of being led (*gamaya*). The goal sits in the middle. It is like a three-step staircase.
+
+## Where the Upanishad sits
+The Brihadaranyaka is one of the oldest and longest of the principal Upanishads. Its name means "the great forest teaching", and it is usually linked with the Shukla Yajurveda. You can find it in our [beginner's map of the ten principal Upanishads](/the-ten-principal-upanishads-a-beginners-map/).
+
+The word *pavamāna* in "Pavamana mantras" means "purifying". These verses were sung while the sacred Soma was purified in the old rite. That shows how the verse was first used: not as a school song, but as part of a ritual of cleansing and offering.
+
+## Questions people ask
+**Is it a prayer for the dead?**
+No. It is said by the living. The "death" in the third line is the fear that follows us in life, as much as the end of life.
+
+**Do I need to know Sanskrit to say it?**
+Not at all. Say it slowly, with the English alongside if you wish. Over time the sounds become familiar.
+
+**Why do so many schools use it?**
+It is short, easy to learn and speaks of something almost everyone wants: to see clearly. Children can say it without understanding every layer, and grow into it later.
+
+## Three small ways to live it
+- **From the unreal to the real:** before an important decision, ask yourself what will still matter in a year.
+- **From darkness to light:** when you feel confused, say *I do not yet know.* That honest sentence is already a first step into light.
+- **From death to deathlessness:** sit quietly for two minutes and notice the part of you that is aware, which does not seem to change with your mood.
+
+Another short Upanishad verse about right living is [Taittiriya Upanishad: speak the truth, do your duty](/read-the-line-taittiriya-upanishad-speak-the-truth-do-your-duty/).
+
+Tell us which of the three lines speaks most to you, at hello@southwala.com.
+
 See also [Read the line: Katha Upanishad, arise and awake](/read-the-line-katha-upanishad-arise-awake/) and [Nirvana Shatakam: I am not the mind](/nirvana-shatakam-i-am-not-the-mind-meaning/).

@@ -54,4 +54,29 @@ Many visitors from the south are surprised to learn that the goddess of this nor
 ## Visiting
 Register at Katra before the climb. The best months are March to October, though winters are also popular and cold. Carry water and rain protection, and take your time. Elderly pilgrims can take ponies or palanquins. The shrine is also reachable by helicopter from Katra.
 
+## Questions people ask
+**Is the story of Vaishnavi found in the Puranas?**
+It is mainly a regional legend carried by local tradition and the shrine's own account, as the note at the top says. It is best read as a story that people love, and not as a historical record.
+
+**Why do pilgrims call out Jai Mata Di?**
+It means "Victory to the Mother". The cry helps people keep walking on the long climb, and it gives a sense of togetherness among strangers.
+
+**Why is Bhairon Nath's temple part of the journey?**
+In the legend, the goddess granted him that no pilgrimage would be complete without visiting him. Many pilgrims therefore climb on to his temple after the darshan at the cave.
+
+**Who is the goddess, really?**
+In the legend she holds the powers of Kali, Lakshmi and Saraswati. Readers from the south may enjoy comparing this with [the eight forms of Lakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/) and the hill goddess traditions elsewhere.
+
+## Planning with care
+- Check the shrine board's official information before you travel, since registration rules, timings and transport options can change.
+- Wear comfortable, broken-in shoes. The path is long, and the stones can be hard on new footwear.
+- Carry a light jacket even in warm months, since the hills cool quickly after sunset.
+- Walk at your own pace. There are many resting places, and nobody is counting.
+- Travel with a companion if you can, especially if you are older or walking at night.
+
+## What the journey gives
+Many people say that the journey matters as much as the arrival. Hours of walking with strangers who repeat one phrase over and over has a way of emptying the mind. If you cannot go, you can keep the spirit at home: take a quiet evening walk, repeat a name of the Mother, and think of the girl who set out from the south with only a wish.
+
+If you have made the climb and want to share what it was like, you are welcome to write to hello@southwala.com.
+
 See also [Kamakhya Devi, the Shakti peetha of Assam](/kamakhya-devi-the-shakti-peetha-of-assam/) and [Kali: the goddess people fear](/kali-the-goddess-people-fear-and-the-mother-they-pray-to/).

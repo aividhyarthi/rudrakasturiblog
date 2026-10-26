@@ -42,5 +42,39 @@ In 1896, a 16-year-old boy named Venkataraman came to Tiruvannamalai, after a su
 
 We will meet a few of the Westerners who came to meet him in our [faith stories](/faith-stories/).
 
+## A closer look at the eight lingams
+Along the Girivalam path stand eight lingams, the Ashta Lingams, each guarding one direction. They are linked with the guardians of the directions in Hindu tradition: Indra for the east, Agni for the south-east, Yama for the south, Nirruti for the south-west, Varuna for the west, Vayu for the north-west, Kubera for the north and Ishana for the north-east.
+
+Many walkers stop for a moment at each one, touch the ground, bow and walk on. This gives the long walk a rhythm. You are not just covering distance. You are greeting the hill from every side, as you might greet an elder by going round the room.
+
+## How to walk the Girivalam
+Here is a gentle way for a first-timer.
+
+1. **Start in the evening or before dawn.** The tarmac is hot in daytime, and the night walk is the traditional one.
+2. **Bow to the hill first.** Many begin with a visit to the Arunachaleswarar temple or a simple bow at the start of the path.
+3. **Walk with the hill on your right.** The circuit is clockwise.
+4. **Walk at a slow, steady pace.** Some chant a name of Shiva, and some are silent. Both are fine.
+5. **Carry water, and wear comfortable clothes.** If you find walking barefoot hard, go gently and rest. Do not hurt yourself for the sake of a vow.
+6. **Finish with thanks.** A cup of tea at the end, shared with a stranger, is part of the pleasure.
+
+If you have a medical condition or are elderly, consult your doctor before a long walk, and consider doing just a part of the circuit.
+
+## Ramana's own words for the hill
+Ramana Maharshi composed songs of love for Arunachala in Tamil, including the *Akshara Mana Malai*, often translated as the *Marital Garland of Letters*. In them he speaks to the hill as to a beloved, a father and a guru all at once. For him, Arunachala was not a place for getting things. It was the place where the question *Who am I?* found its answer.
+
+You do not have to share his path to see the point. A hill that stays the same through all the changing seasons, and all the crowds, is a good teacher of steadiness.
+
+## Questions people ask
+**Is it all right to climb the hill itself?**
+Local rules and access change from time to time, and the slopes are fragile and respected as sacred. Check current guidance at the town before planning a climb, and keep to marked paths.
+
+**Do I need to know Tamil?**
+No. Pilgrims come from all over India and the world.
+
+**Can I visit outside the full moon?**
+Yes. Many people prefer quiet days, when the paths are open and the temple is calm.
+
+If you have walked the hill, or sat in the Ramanasramam hall, we would love to hear what you found. Write to hello@southwala.com.
+
 ## Planning
 Tiruvannamalai is about 200 km from Chennai, and well connected by road. The weather is mild from November to February. Book accommodation early for Karthigai Deepam and full moon days.

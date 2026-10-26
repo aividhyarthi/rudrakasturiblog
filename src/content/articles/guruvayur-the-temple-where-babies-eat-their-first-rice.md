@@ -59,4 +59,27 @@ The work is still recited in the temple, and in many homes in Kerala, and is kno
 ## For the god at the heart
 Guruvayurappan is Krishna as a child. If you would like to read about the god and his three roles, see [Krishna: the cowherd, the king and the teacher](/krishna-the-cowherd-the-king-and-the-teacher/).
 
+## Planning the first-rice ceremony
+- **Check the process with the temple office.** Booking methods and slots can change, so use the temple's official channels rather than agents.
+- **Plan around the baby.** Babies get sleepy and cranky. Choose a time when yours is usually fed and awake, and carry a spare set of clothes.
+- **Keep it simple.** The ritual itself is short. What the family remembers is usually the feeling of being together.
+- **Bring only a few people if you can.** The temple area is busy, and fewer people make it calmer for the child.
+
+If you would like to understand the same ritual in a Telugu household, read our guide to [writing the first letter](/saraswati-and-the-first-letter-aksharabhyasam-at-home/), another milestone that families celebrate.
+
+## Questions people ask
+**Why is Guruvayur called the Dwaraka of the South?**
+Because Guruvayurappan is Krishna, the lord of Dwaraka, and the town is held to be as dear to him as that city. It is a devotional title, not a geographical one.
+
+**Do I need to visit other places nearby?**
+Many pilgrims also visit the Mammiyur Mahadeva temple close to Guruvayur, which tradition links with the pilgrimage. Check local advice about timings.
+
+**Is the temple suitable for elderly relatives?**
+Queues can be long, and the floor is stone. Ask the temple office about arrangements for elders, take it slowly and carry water.
+
+**What if I cannot travel there?**
+Many families hold a small ceremony at home or at a nearby Krishna temple and offer a spoon of sweet payasam to the child with a prayer. The feeling of gratitude matters more than the place.
+
+If your baby had their first rice at Guruvayur, or if you have a family story about the temple, we would love to read it at hello@southwala.com.
+
 *Beliefs and customs differ from family to family and temple to temple. Check timings, rules and costs on the temple’s official channels before you travel, and be careful with agents who offer to arrange rituals for large sums.*

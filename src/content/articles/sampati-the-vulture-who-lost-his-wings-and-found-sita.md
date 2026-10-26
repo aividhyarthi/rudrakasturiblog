@@ -48,4 +48,29 @@ With that, the search party had what it needed: *she is alive, and she is in Lan
 ## The two brothers
 It is moving to see Jatayu and Sampati together: one gave his life to stop Ravana, the other gave the information that led Rama to him. The Ramayana does not say so, but it invites us to notice that what each did came out of what he had lost.
 
+## What happens next
+Sampati's news changes the mood of the whole camp. The vanaras had been ready to give up. Now they had a direction. But a hundred yojanas of sea still lay in front of them, and each of them in turn named how far he could leap. It was the elder Jambavan who turned to Hanuman, who had been sitting quietly, and reminded him of what he was capable of. You can read how that moment unfolds in our piece on [Jambavan](/jambavan-the-old-bear-who-reminded-hanuman-of-his-strength/). After that begins the Sundara Kanda, the book of Hanuman's journey.
+
+So the chain is this: Jatayu's death, Sampati's sight, Jambavan's words, Hanuman's leap. No single link is the hero. The story is carried by many hands.
+
+## A closer look at the waiting
+The sage Nishakara, according to the text, told Sampati to wait. It is easy to skim over this, but think what it meant. Sampati lived on a mountain without wings, with a promise that might never come true. He did not know when, or whether, anyone would arrive. The Ramayana says he waited a very long time and does not hurry the story.
+
+Many of us know that kind of waiting: for a result, for a person, for a change in a family. Sampati does not give us a technique. He gives us company. He shows that someone can spend long years in uncertainty and still be ready when the moment comes.
+
+## Questions people ask
+**Why did Sampati ask for water to be offered for Jatayu?**
+In the tradition, offering water is a way of honouring the dead. By asking for it, Sampati treats his brother's passing with the full respect due to a family member. It is a small, human detail in a story full of large ones.
+
+**Was Sampati punished for being proud?**
+Some later tellings suggest the flight to the sun was a youthful boast. The core of the story, as the text gives it, is that he shielded his brother. Read it as a story of protection, not pride.
+
+**Why do people read this part of the Ramayana?**
+Because many readers feel like the vanaras at the seashore: tired, short of time, and unsure how to go on. Sampati's appearance shows that help can arrive from the least expected corner.
+
+## Reading it with your own life
+Think of someone who once told you something small that turned out to be the missing piece: a neighbour, an aunt, a teacher. You may have forgotten to thank them. This week, find a way to say thank you.
+
+If this story reminds you of an unexpected helper in your own life, write to us at hello@southwala.com.
+
 See also [Jatayu, the old bird who fought Ravana](/jatayu-the-old-vulture-who-fought-ravana/) and [Shabari, the old woman who waited](/shabari-the-old-woman-who-waited-for-rama-at-pampa/).

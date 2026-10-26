@@ -62,4 +62,31 @@ Teachers say that bhava, the feeling in the heart, is the main thing. Rules are 
 
 For a simple way to pray, see [how to chant a mantra](/mantra-japa-how-to-start-count-and-keep-going/).
 
+## What Krishna says about a simple offering
+In the Gita, Krishna says that if someone offers him a leaf, a flower, a fruit or water with devotion, he accepts it, because it was offered with love. The emphasis is on the devotion and not on the grandness or the correctness of the offering. We look at this in [A leaf, a flower, a fruit, water](/read-the-line-gita-9-26-a-leaf-a-flower-a-fruit-water/). It is one of the gentlest answers to the worry that you have not done everything perfectly.
+
+## A short routine for busy mornings
+If you often feel you have no time to prepare properly, try this:
+1. Wash your face and hands, if you can. If you cannot, skip it.
+2. Stand or sit where you are, and close your eyes for a breath.
+3. Say the verse above, or just the name of God you love.
+4. Ask for one thing: for example, steadiness through the day.
+5. Go on with your day.
+
+That takes less than a minute, and no one can say you have done it wrongly.
+
+## Questions people ask
+**If I miss my usual puja, have I sinned?** There is no such rule in the texts that we know of. Missing a routine is not a sin. Start again the next day without guilt.
+
+**Is a puja without a bath worthless?** For a formal puja with offerings, bathing is the family custom, and it is good to follow. For a silent prayer or a mantra in the mind, it is not required. Many elders themselves say so.
+
+**What do I tell a relative who scolds me for these things?** You can say, politely, that you respect the custom and are doing what you can. You are not obliged to argue.
+
+**How do I help a child who worries about these rules?** Tell them that God loves them in every state. Teach the rules as habits of care, not as threats.
+
+## A closer look at manasika puja
+The mind-puja is worth trying even when you are at home and have time. Sit quietly, imagine the deity before you, and offer in your mind a seat, water to wash the feet, flowers, a lamp and food. Do each slowly, one at a time. Many people find that it brings more attention than the outward ritual does on a rushed day.
+
+If you have a purity worry that you would like to talk through, or a custom from your own family, write to us at hello@southwala.com.
+
 *These are reflections drawn from the old texts, offered for thought. They are not a replacement for medical or professional advice.*

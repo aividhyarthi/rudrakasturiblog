@@ -59,4 +59,27 @@ The great verse of the hymn says that the child's mother ran after him, and "the
 ## Related
 Read the [Krishna guide](/krishna-the-cowherd-the-king-and-the-teacher/), the [Krishna mantras](/mantras/krishna/) and [why Karthika Masam is special](/why-karthika-masam-what-the-month-means-and-who-to-worship/).
 
+## A closer look at the sequel
+The two trees are worth a second thought. Nalakuvara and Manigriva, in the Bhagavata Purana (Canto 10), were sons of Kubera, the lord of wealth. They were proud and careless, and the sage Narada cursed them to stand as trees. His curse also carried a mercy: Krishna would one day set them free. The mortar that so humbly held the child became the tool of that blessing.
+
+Notice how the story moves. A mother's small anger, a broken pot, a rope that will not reach, and suddenly two cursed beings are released. Teachers like to say that in the Lord's hands, even a household quarrel becomes a door to grace.
+
+## Questions people ask
+**Why is a lamp the centre of this month?**
+Karthika comes as the days grow shorter and the evenings darker. A lamp offered to Damodara is a way of saying that light is something we give, not only something we wait for. You can read more in our piece on [why we light lamps in Karthika](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/).
+
+**What if I cannot recite the Damodarashtakam?**
+Then say the name. *Damodara, Damodara* repeated a few times with a lamp in front of you is enough. The tradition values love over perfect pronunciation.
+
+**Is this only for Vaishnavas?**
+No. In many South Indian homes, Karthika is both a Shiva and a Vishnu month. Families light lamps for both, and nobody feels they have to choose.
+
+**Do children enjoy this?**
+Very much. The story of the rope is one of the easiest to tell to a child. Ask them how many ropes they think Yashoda used, and watch their faces.
+
+## Telling the story at home
+Gather the family near the lamp, and tell the story in your own words. Pause at the two fingers and ask, "What do you think was missing?" Let everyone answer. Some will say strength, some will say patience. A grandmother may say, "Only love." There is no wrong answer, and the question is what keeps the story alive.
+
+If your family has a way of keeping Karthika that we have not mentioned, please write to us at hello@southwala.com. We would like to learn it.
+
 *Customs differ by family and region. If your family follows a different practice, follow it.*

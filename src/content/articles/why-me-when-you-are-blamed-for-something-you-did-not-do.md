@@ -58,4 +58,26 @@ The honour was not for the accusation. It was for the way they carried it: with 
 ## If you are in distress
 Being publicly blamed can lead to dark thoughts. If that is happening to you, please speak to someone now. Tele-MANAS (14416) is free in India, and 112 is for emergencies. This article is not legal advice.
 
+## Questions people ask
+
+**Should I confront the person who started the rumour?**
+Sometimes, yes, but not when you are angry. Wait until you can speak plainly. If you must, ask one clear question, such as "What did you hear, and from whom?" Then listen. Often a rumour has lost its source by the time it reaches you.
+
+**What if some people never believe me?**
+Some will not. That is painful, but you cannot control it. Concentrate on the people whose trust matters, and on living in a way that, over time, makes the rumour look strange.
+
+**Is it wrong to feel angry or humiliated?**
+Not at all. Even Krishna was hurt by the Syamantaka rumour, as the text says. Feelings are not the problem. What you do while carrying them is what counts.
+
+**Is there a prayer that helps?**
+Many families say a quiet prayer to the deity they love and ask for steadiness. Prayer does not replace gathering facts or asking for help, but it can bring calm while you do both.
+
+## If someone you know is being blamed
+You can be the person who stands beside them. Do not repeat what you have heard. Ask them gently what happened. Say, "I believe you," if you do, and say it where others can hear. Being believed by one person can be the thing that keeps a person upright.
+
+## Night-time thoughts
+Rumour is loudest at night. If you are lying awake rehearsing arguments, try this small practice: write down the facts on a sheet of paper, then write the one next step for tomorrow, and put the paper away. Say a short prayer or a favourite verse, and breathe out slowly a few times. For more on a mind that will not rest, see [Gita on overthinking](/gita-on-overthinking-the-restless-mind-and-how-to-hold-it/) and [why me when your own family betrays you](/why-me-when-your-own-family-betrays-you/).
+
+If you have lived through a false accusation and found a way through, we would be grateful to hear what helped at hello@southwala.com. You may help someone who is in that dark place today.
+
 See also [Nala, Damayanti and patience](/nala-damayanti-and-kali-karma-and-patience/) and [Gita on suspicion and doubt](/gita-on-suspicion-and-doubt-when-questions-turn-into-poison/).

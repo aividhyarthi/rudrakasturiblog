@@ -50,4 +50,26 @@ The Bhadrakali temple near Hanamkonda in Warangal is among the oldest and best-l
 ## When people worship her
 Amavasya, the new moon, is traditionally her night, and so are Fridays and Navaratri. Kali Chaudas, the day before Deepavali Amavasya, is also linked to her in some regions.
 
+## A closer look at fear
+Why does the tradition give the Mother such a frightening face? One answer, given by devotees, is that life itself has a frightening face: illness, loss, change and death. Kali does not hide it. She stands in the middle of it, and dances.
+
+A child who runs to its mother in the dark is not afraid of the mother. It is afraid of the dark, and runs to her. In this reading, Kali's fierce face is turned outward, towards whatever frightens us, and her open hand is turned towards the devotee.
+
+## Questions people ask
+**Is Kali evil?** No. She is a form of the Divine Mother, fierce against evil and tender with her devotees.
+
+**Is it safe to keep her picture at home?** Many families do, and there is no rule against it. Some prefer to keep a gentler form of the Goddess in the main shrine, and that is a matter of family custom. Follow what your elders do.
+
+**Is Kali the same as Durga?** In the Devi Mahatmya, Kali emerges from the goddess's own anger during the battle with the demons. Many traditions treat all of them as forms of one Shakti. Others keep them distinct. Both views are held by sincere devotees.
+
+**Can I chant her seed syllable?** Seed syllables, called *beeja* mantras, are traditionally taken from a teacher, because they are said to need guidance. If you do not have one, a simple prayer to the Mother, in your own words, is enough.
+
+## A gentle way to begin
+If Kali seems too much for you, begin with a prayer like this, in your own words: *Mother, take away my fear.* Say it at dusk, with a lamp. You do not need to learn anything else.
+
+You might also read about [Dakshineswar Kali and Ramakrishna](/dakshineswar-kali-the-temple-a-widow-built-and-ramakrishna-served/), where the fierce face and the loving heart meet.
+
+## What this teaches us
+Fear and love are not opposites in this tradition. The Mother who frightens is the Mother who protects, and the person who can look at her face without turning away has learned something about courage. If you have had a moment when the fierce form of the Goddess comforted you, you are welcome to write to us at hello@southwala.com.
+
 If you would like a simple prayer, our page on [Durga mantras](/mantras/durga/) is a good place to begin.

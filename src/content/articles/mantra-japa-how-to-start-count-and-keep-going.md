@@ -44,4 +44,42 @@ Slowly, clearly, without rushing. If you cannot pronounce a longer mantra well, 
 
 Pair it with a few minutes of [breathing practice](/pranayama-for-beginners-three-safe-breathing-practices/) beforehand to settle the mind.
 
+## Three ways to say it
+Traditional teachers describe three ways of doing japa.
+- **Aloud.** Good for beginners, since the sound helps the mind stay put.
+- **In a whisper.** The lips move, and only you can hear it. Many people settle here.
+- **In the mind.** Silent, with no movement of the lips. Teachers describe this as the subtlest form, and it is useful on a bus, in a queue or at night.
+
+You do not need to rush from one to another. Use whichever lets you keep your attention.
+
+## A line from the Gita
+In the tenth chapter (verse 25), Krishna says that among sacrifices he is *japa-yajna*, the sacrifice of quiet repetition. Whatever else you read into it, it shows that this simple practice was held in high regard.
+
+## Questions people ask
+**Do I need to be given a mantra by a guru?**
+Some mantras are traditionally given by a teacher in an initiation, and families follow that. But short name mantras such as *Om Namah Shivaya* or *Om Namo Narayanaya* are used by people everywhere without it. If you have a family guru, ask. If not, begin with a simple name mantra and keep your heart in it.
+
+**Which mala should I use?**
+By custom, rudraksha is used for Shiva mantras and tulasi for Vishnu mantras, but many families simply use what they have. Keep it clean and keep it for japa only.
+
+**Can I do japa lying in bed?**
+Better to sit, but if you are ill or very tired, a gentle silent repetition is better than none. Listen to your body.
+
+**Is it all right to count on my phone?**
+Yes, if a mala is not at hand. However, put the phone on silent so that it does not call you away.
+
+**How long until I feel something?**
+The tradition says to be patient and not to measure. Many people notice a steadier mood after some weeks, but do not expect fireworks. A quiet, regular practice is the goal.
+
+## How to keep going
+- **Tie it to something you already do**, such as brushing your teeth, lighting the lamp or making tea.
+- **Keep a small notebook** and put a tick each day. Seeing a row of ticks encourages you.
+- **If you miss a day, begin the next.** Do not try to make up for it with a huge round.
+- **Practise with someone.** A family member or friend who also does japa makes it easier.
+- **Keep the mala in a clean cloth** near your seat so that it is ready.
+
+Once you have settled with a short mantra, you may like to read about the meaning of a longer one, such as the [Maha Mrityunjaya mantra](/maha-mrityunjaya-mantra-word-by-word-and-what-it-really-asks/).
+
+If you have a japa routine that works for you, please share it at hello@southwala.com. Other readers will be glad of it.
+
 *This article is general guidance. If a spiritual practice causes distress, stop and speak to a trusted teacher or a doctor.*

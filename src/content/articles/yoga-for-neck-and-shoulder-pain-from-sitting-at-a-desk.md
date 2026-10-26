@@ -59,4 +59,33 @@ See a doctor if you have:
 ## A final tip
 The best stretch is the one you actually do. Set a reminder on your phone every hour, and use it for a minute.
 
+## Two more easy stretches
+**Wrist and forearm release.** Typing all day tightens the forearms, and the tension travels up to the shoulders. Hold one arm straight in front of you with the palm facing up. With the other hand, gently draw the fingers down and back. Hold for five breaths, then switch. Keep the stretch mild.
+
+**Doorway chest opener.** Stand in a doorway with your forearm against the frame and the elbow a little below shoulder height. Step forward slowly until you feel a gentle stretch across the chest. Hold for five breaths each side. Most desk workers have a tight chest and weak upper back, and this helps to balance it.
+
+## A five-minute routine for the middle of the day
+You can string the moves together:
+1. Chin tucks, ten times.
+2. Shoulder rolls, ten each way.
+3. Gentle side neck stretch, five breaths each side.
+4. Doorway chest opener, five breaths each side.
+5. Three slow breaths, with the exhale longer than the inhale.
+
+Do it slowly. If something pinches or burns, stop. A good stretch feels like pulling, not like pain.
+
+## Questions people ask
+**How often should I do these?** A little and often is better than a long session once a week. Many people like once in the morning and once after lunch.
+
+**Will this fix my posture?** It can help you notice and change habits, and many people feel looser. But posture is also about your chair, screen and how long you sit. Treat the stretches as one part of the answer.
+
+**Can I do them if I already have a diagnosed neck problem?** Please ask your doctor or physiotherapist first. They can tell you which moves are right for you and which to avoid.
+
+**What about pregnancy?** Gentle moves are often fine, but check with your doctor, and skip the floor moves if they do not feel comfortable.
+
+## A small mindful habit
+Several times a day, ask yourself: *where are my shoulders?* Most of the time they are up near the ears. Let them drop, and unclench the jaw. That costs nothing and takes two seconds. If you add a slow breath, you have done a little yoga in the middle of a meeting.
+
+If you have a desk routine that has helped you, write to us at hello@southwala.com. We will gladly share what works.
+
 *This is general information, not medical advice. If you have an injury, a long-term condition or you are pregnant, check with your doctor before you start.*
