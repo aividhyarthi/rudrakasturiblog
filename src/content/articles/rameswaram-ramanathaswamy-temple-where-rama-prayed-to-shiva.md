@@ -1,7 +1,7 @@
 ---
 title: "Rameswaram: where Rama prayed to Shiva, and the corridor with 1,200 pillars"
 description: "Rameswaram is a Jyotirlinga, a Char Dham and an island. The story of the two lingas, the 22 tirthams and the famous corridors."
-date: "2026-10-26T19:00:00+05:30"
+date: "2026-10-26T20:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
