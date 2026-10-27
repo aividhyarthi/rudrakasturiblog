@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "Sundara Kanda, the fifth book of the Valmiki Ramayana, tells of Hanuman's leap to Lanka, his meeting with Sita and his return. Families read it, often over several days, when facing difficulty. It is about someone who does a hard thing for another with no thought for himself. Reading it slowly, even a few verses a day, is traditional."
-hero: "hill-sacred"
+hero: "hanuman-symbols"
 imageAlt: "A hill by the sea at dawn"
 tags: ["sundara kanda", "hanuman", "ramayana", "valmiki", "tuesday", "parayanam"]
 faq:

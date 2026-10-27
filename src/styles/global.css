@@ -387,7 +387,7 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 
 /* Phones: horoscope and panchangam blocks become swipeable cards (scroll-snap, no script) */
 @media (max-width:640px){
-  .sign-tiles,.facts,.pgrid,.limbs,.timing,.gfor{display:grid!important;grid-auto-flow:column;grid-template-columns:none!important;grid-template-rows:auto;grid-auto-columns:78%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-24px;margin-right:-24px;padding:4px 24px 12px;scroll-padding:0 24px}
+  .sign-tiles,.facts,.pgrid,.limbs,.timing,.gfor{display:grid!important;grid-auto-flow:column;grid-template-columns:none!important;grid-template-rows:auto;grid-auto-columns:78%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-18px;margin-right:-18px;padding:4px 18px 12px;scroll-padding:0 18px;max-width:100vw}
   .sign-tiles::-webkit-scrollbar,.facts::-webkit-scrollbar,.pgrid::-webkit-scrollbar,.limbs::-webkit-scrollbar,.timing::-webkit-scrollbar,.gfor::-webkit-scrollbar{display:none}
   .sign-tiles>*,.facts>*,.pgrid>*,.limbs>*,.timing>*,.gfor>*{scroll-snap-align:start}
   .sign-tiles{grid-auto-columns:38%}
@@ -414,3 +414,19 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .cal-row s{text-decoration:none;display:flex;flex-direction:column;gap:3px;align-items:flex-end}
 .ctag{font:700 11px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;border-radius:5px;padding:4px 7px;color:#fff}
 .ctag.ek{background:#2a5db0}.ctag.pr{background:#6b3fa0}.ctag.sk{background:#d9792b}.ctag.am{background:#222}.ctag.po{background:#c9971c}
+
+@media (max-width:640px){.band .wrap>div,.lead-grid>*,.page>*{min-width:0}html,body{overflow-x:clip}}
+.swp-sec{border-top:1px solid var(--hair);padding:14px 0 4px;margin-top:12px}
+.swp-sec>small{display:block;font:700 10.5px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#b4530a;margin-bottom:6px}
+.swp-sec p{font-size:15px;line-height:1.45;margin:0 0 8px}.swp-mantra{font-style:italic;color:var(--ink2)}
+.swp-signs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.swp-signs a{border:1px solid var(--hair);border-radius:99px;padding:5px 10px;font:600 13px var(--sans);text-decoration:none;color:var(--ink)}
+.swp-go{display:inline-block;font:700 13.5px var(--sans);text-decoration:underline;margin-bottom:6px;color:var(--ink)}
+.calcta{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:#fdf1df;border:1px solid #f0d9b0;border-radius:12px;padding:16px 18px;margin:18px 0}
+.calcta b{display:block;font:700 18px var(--display);margin-bottom:3px}.calcta span{font-size:14px;color:var(--ink2);line-height:1.45;max-width:46ch;display:block}
+.calcta-b{display:flex;gap:8px;flex-wrap:wrap}
+.ctag.fe{background:#a31650}.ctag{max-width:150px;text-align:right;line-height:1.2}
+.fest-today{display:grid;gap:8px;margin:14px 0}.fest-today a{display:block;background:#fbe9ef;border:1px solid #f1c6d6;border-left:5px solid #a31650;border-radius:10px;padding:12px 14px;text-decoration:none!important;color:var(--ink)}
+.fest-today b{display:block;font:700 17px var(--display)}.fest-today span{font-size:13.5px;color:var(--ink2)}
+.fest-next{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 4px}.fest-next>b{font:700 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+.fest-next a{border:1px solid var(--hair);border-radius:99px;padding:6px 12px;font:600 13.5px var(--sans);text-decoration:none!important;color:var(--ink)}.fest-next a small{font-weight:400;color:var(--muted);margin-left:6px}
+.answer{font-size:17px;line-height:1.5;margin:8px 0 6px}.answer.te{font-size:15px;color:var(--ink2)}

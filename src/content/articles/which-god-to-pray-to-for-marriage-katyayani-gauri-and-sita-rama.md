@@ -6,7 +6,7 @@ category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "For marriage, tradition turns to Katyayani (as the gopis did), to Gauri-Shankara and to Sita and Rama. Mondays and Fridays are common days. Say the Katyayani verse or the Gauri-Shankara verse, while also taking practical steps and not letting a delay define you."
-hero: "devi-symbols"
+hero: "rama-symbols"
 imageAlt: "A kalasha and lotus, symbols of the goddess"
 tags: ["marriage", "Katyayani", "Parvati", "Sita Rama"]
 faq:

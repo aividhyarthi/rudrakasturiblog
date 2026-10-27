@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "In the Aranyakanda, the sage Sharabhanga is about to enter the world of Brahma when he learns that Rama is on his way. He asks Indra to wait. When Rama arrives, Sharabhanga offers him the merit of his austerities, Rama gently declines, and the sage enters the fire and ascends. He sends Rama onward to Sutikshna."
-hero: "hill-sacred"
+hero: "rama-symbols"
 imageAlt: "A sacred hill in a forest"
 tags: ["sharabhanga", "ramayana", "aranyakanda", "sage", "waiting", "valmiki"]
 faq:

@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "Sunday (Adivaram) belongs to Surya, the Sun. Families offer water to the rising Sun, say Om Suryaya Namah or the Gayatri, and read the Aditya Hridayam, the 31-verse hymn the sage Agastya taught Rama on the battlefield (Valmiki Ramayana, Yuddha Kanda 107). A bath, a lamp, red or orange flowers and ten quiet minutes are enough."
-hero: "temple-sunrise"
+hero: "surya-symbols"
 imageAlt: "A temple at sunrise with the Sun rising behind the tower"
 tags: ["sunday", "surya", "aditya hridayam", "adivaram", "surya puja", "arghya"]
 faq:

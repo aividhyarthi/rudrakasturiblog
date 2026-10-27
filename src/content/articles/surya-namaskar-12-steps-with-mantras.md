@@ -6,7 +6,7 @@ category: "spiritual"
 author: "Southwala Yoga Desk"
 format: "Guide"
 tldr: "Surya Namaskar is a flowing sequence of twelve poses, each with a name of the Sun. Bend back as you breathe in and forward as you breathe out. People with back, heart or blood pressure problems should check with a doctor first."
-hero: "yoga-sunrise"
+hero: "surya-symbols"
 imageAlt: "A figure sitting in meditation in front of the rising sun"
 tags: ["Surya Namaskar", "yoga", "sun salutation", "morning routine"]
 draft: false

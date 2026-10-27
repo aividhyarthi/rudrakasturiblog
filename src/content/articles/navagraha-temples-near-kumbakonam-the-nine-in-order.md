@@ -6,7 +6,7 @@ category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
 tldr: "The Navagraha temples near Kumbakonam in Tamil Nadu are Suryanar Koil (Sun), Thingalur (Moon), Vaitheeswaran Koil (Mars), Thiruvenkadu (Mercury), Alangudi (Jupiter), Kanjanur (Venus), Thirunallar (Saturn), Thirunageswaram (Rahu) and Keezhperumpallam (Ketu)."
-hero: "gopuram-tn"
+hero: "navagraha-symbols"
 imageAlt: "A tall gopuram at dusk with lit lamps and a temple tank"
 tags: ["Navagraha temples", "Kumbakonam", "Thirunallar", "Suryanar Koil"]
 faq:

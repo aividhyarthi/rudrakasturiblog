@@ -1,0 +1,56 @@
+---
+import Base from '../../layouts/Base.astro';
+import CalendarCta from '../../components/CalendarCta.astro';
+import { allFestivals, type Fest } from '../../lib/festivals';
+import { allArticles } from '../../lib/articles';
+import { fmtTime, WEEKDAYS, istParts } from '../../lib/panchang';
+import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
+export function getStaticPaths() { return allFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
+const { f } = Astro.props as { f: Fest };
+const all = allFestivals();
+const pub = new Set((await allArticles()).map((a) => a.slug));
+const mName = EN_MONTH_NAMES[f.ymd.m - 1];
+const pretty = `${WEEKDAYS[f.weekday]}, ${f.ymd.d} ${mName} ${f.ymd.y}`;
+const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(d)}`; };
+const title = `${f.name} ${f.ymd.y}: Date, Puja Time and Significance`;
+const nextOnes = all.filter((x) => x.key > f.key && x.id !== f.id).slice(0, 4);
+const sameFest = all.filter((x) => x.id === f.id && x.slug !== f.slug);
+const faq: [string, string][] = [
+  [`When is ${f.name} in ${f.ymd.y}?`, `${f.name} in ${f.ymd.y} is on ${pretty}.${f.start && !f.solar && f.end ? ` The tithi begins ${dt(f.start)} and ends ${dt(f.end)} (IST).` : ''}`],
+  [`What is ${f.name}?`, f.about],
+  [`How is ${f.name} celebrated?`, f.how],
+  [`Which god is worshipped on ${f.name}?`, `${f.god}${f.alt ? `. It is also known as ${f.alt}.` : '.'}`],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f.name} ${f.ymd.y}`, startDate: f.key, endDate: f.key, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: 'Temples and homes across India', address: 'India' }, description: f.about };
+const read = f.link && pub.has(f.link) ? f.link : null;
+---
+<Base rail="religion" title={title} description={`${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: `${f.name} ${f.ymd.y}`, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/festivals/">Hindu festivals</a></div>
+    <h1>{f.name} {f.ymd.y}: {pretty}</h1>
+    {f.alt && <p class="dek" style="margin:0 0 6px">Also known as {f.alt}</p>}
+    <div class="pgrid">
+      <div class="pcard"><b>Date</b><span>{f.ymd.d} {mName.slice(0, 3)} {f.ymd.y}</span><small>{WEEKDAYS[f.weekday]}</small></div>
+      {f.start && !f.solar && <div class="pcard"><b>Tithi begins</b><span style="font-size:19px">{dt(f.start)}</span></div>}
+      {f.end && !f.solar && <div class="pcard"><b>Tithi ends</b><span style="font-size:19px">{dt(f.end)}</span></div>}
+      {f.month !== undefined && <div class="pcard"><b>Lunar month</b><span style="font-size:20px">{MONTHS[f.month]}</span></div>}
+      {f.solar && f.start && <div class="pcard"><b>Sun enters the sign</b><span style="font-size:19px">{dt(f.start)}</span></div>}
+      <div class="pcard"><b>Deity</b><span style="font-size:20px">{f.god}</span></div>
+    </div>
+    <h2>What is {f.name}?</h2>
+    <p>{f.about}</p>
+    <h2>How is {f.name} observed?</h2>
+    <p>{f.how}</p>
+    {read && <p>Read more: <a href={`/${read}/`} style="text-decoration:underline">our story on this</a>.</p>}
+    <CalendarCta />
+    <h2>Common questions</h2>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    {sameFest.length > 0 && <p>Other years: {sameFest.map((x, i) => <>{i > 0 ? ', ' : ''}<a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name} {x.ymd.y}</a></>)}.</p>}
+    <div class="sect"><h2>Festivals coming up</h2></div>
+    <ul>{nextOnes.map((x) => <li><a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name}</a>, {WEEKDAYS[x.weekday]} {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</li>)}</ul>
+    <div class="chips"><a href="/festivals/">All festivals</a><a href="/panchangam/">Today's panchangam</a><a href="/ekadashi/">Ekadashi dates</a><a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a></div>
+    <p class="disc">Dates are calculated for Hyderabad from the positions of the Sun and Moon. Some temples and traditions keep a festival a day earlier or later. For a vratam or a ceremony, please confirm with your family priest or temple.</p>
+  </div>
+</Base>

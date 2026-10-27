@@ -6,7 +6,7 @@ category: "prayer"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "For fear and courage, pray to Hanuman, Narasimha or Durga. Say Buddhir Balam Yasho Dhairyam for Hanuman, Ugram Viram for Narasimha or Durge Smrita for Durga. Tuesdays and Saturdays suit Hanuman. Fear that rules your life needs a doctor or counsellor as well."
-hero: "shakti-night"
+hero: "hanuman-symbols"
 imageAlt: "A trident and red moon under a dark night sky with lit lamps"
 tags: ["courage", "Hanuman", "Narasimha", "Durga", "fear"]
 faq:

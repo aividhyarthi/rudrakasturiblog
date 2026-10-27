@@ -6,7 +6,7 @@ category: "karma"
 author: "Southwala Gita Desk"
 format: "Karma story"
 tldr: "In the Ramayana Rama kills Vali from hiding, and in a popular tradition Vali is born again as the hunter Jara who shoots Krishna. The story says even a righteous act has a consequence that must be accepted."
-hero: "temple-bhadrachalam"
+hero: "rama-symbols"
 imageAlt: "The Bhadrachalam temple with lamps at dusk"
 tags: ["karma", "Rama", "Krishna", "Vali", "Jara"]
 draft: false

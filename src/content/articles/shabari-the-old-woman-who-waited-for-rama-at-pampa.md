@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Shabari was a disciple of the sage Matanga. In Valmiki (Aranyakanda 74) her teachers had told her Rama would visit, and she welcomed him with fruits and roots and then entered the fire to join her gurus. The tasting of berries and the nine kinds of devotion come from later retellings. The hermitage is traditionally placed near Pampa, by Hampi."
-hero: "hill-sacred"
+hero: "rama-symbols"
 imageAlt: "A sacred hill in a forest near a lake"
 tags: ["shabari", "ramayana", "pampa", "hampi", "matanga", "valmiki"]
 faq:

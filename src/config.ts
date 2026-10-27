@@ -40,6 +40,7 @@ export const SECTIONS = [
 export const SUBNAV: Record<string, { label: string; href: string }[]> = {
   religion: [
     { label: 'Panchangam', href: '/panchangam/hyderabad/' },
+    { label: 'Festivals', href: '/festivals/' },
     { label: 'Rahu Kalam today', href: '/rahu-kalam-today/' },
     { label: 'Amavasya', href: '/amavasya/' },
     { label: 'Pournami', href: '/pournami/' },

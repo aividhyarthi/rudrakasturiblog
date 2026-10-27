@@ -16,6 +16,7 @@ import { WEEKDAY_FEATURE } from '../data/weekday';
 import { SERIES, seriesHref } from '../config';
 import { allTithis, ROUTE } from '../lib/tithi';
 import { allLunations } from '../lib/lunar';
+import { upcomingFestivals } from '../lib/festivals';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -72,7 +73,8 @@ const dayRow = (o: { key: string; observed: { y: number; m: number; d: number };
 const specialDays = [
   ...(['ekadashi', 'sankashti', 'pradosham'] as const).flatMap((k) => allTithis(k).filter((o) => o.key >= nowKey).slice(0, 2).map((o) => dayRow(o, o.name, `/${ROUTE[k]}/${o.slug}/`, 'c-religion'))),
   ...(['amavasya', 'pournami'] as const).flatMap((k) => allLunations(k).filter((o) => o.key >= nowKey).slice(0, 1).map((o) => dayRow(o, o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami'), `/${k}/${o.slug}/`, 'c-religion'))),
-].sort((a, b) => a.key.localeCompare(b.key)).slice(0, 6);
+  ...upcomingFestivals(ymd, 4).map((f) => dayRow({ key: f.key, observed: f.ymd, weekday: f.weekday }, f.name, `/festivals/${f.slug}/`, 'c-religion')),
+].sort((a, b) => a.key.localeCompare(b.key)).slice(0, 8);
 const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
 <Base home image="/covers/home.png">
@@ -92,7 +94,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
   )}
   {specialDays.length > 0 && (
     <section class="wrap" style="padding-top:36px">
-      <div class="sect"><h2>Special days coming up</h2><a href="/calendar/">Calendar 2027 (PDF)</a></div>
+      <div class="sect"><h2>Special days coming up</h2><a href="/festivals/">All festivals</a> <a href="/calendar/">Calendar 2027 (PDF)</a></div>
       <div class="three" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
         {specialDays.map((d) => <a class={d.cls} href={d.href} style="display:block;padding:14px 16px;border:1px solid var(--line,#e5e0d8);border-radius:10px"><b style="display:block">{d.label}</b><span style="color:#6b6b6b;font-size:.92rem">{d.date}</span></a>)}
       </div>

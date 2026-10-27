@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Trijata was an old rakshasi who guarded Sita in Ashoka Vatika. In Sundara Kanda 27 she told the other guards a dream in which Rama triumphs and Lanka falls, and urged them to ask Sita for her protection. She is one of the few in Lanka who treated Sita with kindness. Later tradition calls her Vibhishana's daughter."
-hero: "moon-nakshatra"
+hero: "rama-symbols"
 imageAlt: "The moon over a quiet garden at night"
 tags: ["trijata", "ramayana", "sundara kanda", "ashoka vatika", "sita", "valmiki"]
 faq:

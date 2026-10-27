@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Story"
 tldr: "In a popular tradition, Hanuman freed Shani from Ravana's captivity, and Shani promised not to trouble Hanuman's devotees. The story is from later tradition and is not in Valmiki. It is why many people worship Hanuman on Saturdays, especially during Sade Sati. The practice is a comfort and a discipline. It is not a guarantee."
-hero: "hill-sacred"
+hero: "hanuman-symbols"
 imageAlt: "A hill and a path at dawn"
 tags: ["shani", "hanuman", "saturday", "sade sati", "folk tradition", "devotional"]
 faq:

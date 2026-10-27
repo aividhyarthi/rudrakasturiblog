@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"
 tldr: "Verses 6 to 10 of the Hanuman Chalisa describe Hanuman as an incarnation of Shiva in spirit, a learned and clever devotee eager to serve Rama, one who delights in hearing the Lord's story, and the one who took a tiny form before Sita and a huge form to burn Lanka. Each verse points to an episode in the Sundara Kanda."
-hero: "hill-sacred"
+hero: "hanuman-symbols"
 imageAlt: "A hill in a forest at dawn"
 tags: ["hanuman chalisa", "tuesday", "hanuman", "tulsidas", "meaning", "mangalavaram"]
 faq:

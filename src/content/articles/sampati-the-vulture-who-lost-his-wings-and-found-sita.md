@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Sampati, Jatayu's elder brother, lost his wings protecting his brother from the sun. A sage had told him they would grow back when he helped Rama's cause. When the search party reached him, he used his vulture sight to see Sita in Lanka and told them where she was (Kishkindha Kanda 56 to 63). His wings grew back."
-hero: "ship-sunrise"
+hero: "rama-symbols"
 imageAlt: "Dawn over the southern sea"
 tags: ["sampati", "jatayu", "ramayana", "kishkindha kanda", "sita", "valmiki"]
 faq:

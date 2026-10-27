@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Kabandha, a giant with no head and long arms, grabbed Rama and Lakshmana, who cut off his arms. Freed from a curse, he turned into a radiant being and told Rama to seek Sugriva on Rishyamukha near Pampa, and to visit the hermitage of Matanga on the way (Aranyakanda 69 to 73). The monster was the guide."
-hero: "hill-sacred"
+hero: "rama-symbols"
 imageAlt: "A hill in a forest"
 tags: ["kabandha", "ramayana", "aranyakanda", "pampa", "sugriva", "valmiki"]
 faq:

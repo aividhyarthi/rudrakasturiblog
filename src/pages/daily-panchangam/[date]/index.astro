@@ -3,6 +3,8 @@ import Base from '../../../layouts/Base.astro';
 import Hero from '../../../components/Hero.astro';
 import { dailyDates, dayFacts, otherCities, niceDate, weekdayOf, ymdKey, parseKey, WEEKDAYS } from '../../../lib/daily';
 import { addDays, WEEKDAYS_TE } from '../../../lib/panchang';
+import { festivalsByKey } from '../../../lib/festivals';
+import CalendarCta from '../../../components/CalendarCta.astro';
 export function getStaticPaths() { return dailyDates().map((x) => ({ params: { date: ymdKey(x) }, props: { x } })); }
 const { x } = Astro.props as any;
 const f = dayFacts(x);
@@ -15,10 +17,14 @@ const title = `Panchangam ${nice}: ${tithiName}, ${f.nak.name}`;
 const cities = otherCities(x);
 const heroFor: Record<string, string> = { shiva: 'shiva-symbols', vishnu: 'vishnu-symbols', venkateswara: 'temple-tirumala', durga: 'temple-kanakadurga', lakshmi: 'devi-symbols', surya: 'temple-sunrise' };
 const hero = heroFor[f.main.id] ?? 'panchangam';
+const fest = festivalsByKey().get(ymdKey(x)) ?? [];
 const faq = [
   [`What is the tithi on ${nice}?`, `On ${nice} the tithi at sunrise is ${tithiName}, running until ${t(f.tithi.endsAt)}${p.tithi[1] ? `, followed by ${p.tithi[1].paksha} ${p.tithi[1].name}` : ''} (Hyderabad).`],
   [`What is Rahu Kalam on ${nice}?`, `Rahu Kalam on ${wdName}, ${nice} is ${range(p.rahu)} in Hyderabad. Avoid starting new work in this window.`],
   [`Which god is worshipped on ${wdName}?`, `${wdName} is the day of ${f.main.name}${f.alt ? `, and also of ${f.alt.name}` : ''}.`],
+  [`What is Amrit Kalam (Amrita Ghadiya) on ${nice}?`, p.amrit.length ? `Amrit Kalam on ${nice} is ${p.amrit.map(range).join(' and ')} in Hyderabad, a good window to begin anything auspicious.` : `There is no Amrit Kalam window within this day in Hyderabad.`],
+  [`What is Varjyam on ${nice}?`, p.varjyam.length ? `Varjyam on ${nice} is ${p.varjyam.map(range).join(' and ')} in Hyderabad. Traditionally it is avoided for starting important work.` : `There is no Varjyam window within this day in Hyderabad.`],
+  ...(fest.length ? [[`Which festival is on ${nice}?`, `${fest.map((f) => f.name + (f.alt ? ` (${f.alt})` : '')).join(' and ')} falls on ${wdName}, ${nice}.`]] : []),
   [`What is the nakshatra on ${nice}?`, `The nakshatra is ${f.nak.name} until ${t(f.nak.endsAt)}${p.nakshatra[1] ? `, then ${p.nakshatra[1].name}` : ''}.`],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
@@ -31,6 +37,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     <p class="dek" style="max-width:62ch">{wdName} <span class="te">{WEEKDAYS_TE[f.wd]}</span> is the day of {f.main.name}. The Moon is in {f.nak.name} nakshatra and in {f.moonSign.skt} rashi <span class="te">{f.moonSign.te}</span>.</p>
     <Hero name={hero} alt={`Illustration for the worship of ${f.main.name}`} ratio="16/5" />
     <p>{nice} is a {wdName}. The tithi at sunrise in Hyderabad is <b>{tithiName}</b> and it lasts until <b>{t(f.tithi.endsAt)}</b>{p.tithi[1] && `, after which ${p.tithi[1].paksha} ${p.tithi[1].name} begins`}. The Moon is in <b>{f.nak.name}</b> nakshatra until <b>{t(f.nak.endsAt)}</b>{p.nakshatra[1] && `, then ${p.nakshatra[1].name}`}. The yoga is <b>{p.yoga[0].name}</b> and the karana is <b>{p.karana[0].name}</b>. Sunrise is at {t(p.sunrise)} and sunset at {t(p.sunset)}. Timings below are for Hyderabad; use the <a href="/panchangam/" style="text-decoration:underline">panchangam for your location</a> for your own city.</p>
+    {fest.length > 0 && <div class="fest-today">{fest.map((x) => <a href={`/festivals/${x.slug}/`}><b>{x.name} today</b><span>{x.alt ?? x.god}. Date, tithi timings and how it is observed.</span></a>)}</div>}
     {f.special.length > 0 && <><div class="sect"><h2>Special today</h2></div>{f.special.map((s) => <p set:html={s} />)}</>}
 
     <div class="sect"><h2>Good and bad timings</h2></div>
@@ -38,6 +45,12 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
       <div class="good"><b>Good timings</b><span>{range(p.abhijit)}</span><small>Abhijit Muhurtham: good for beginning important work.</small><span style="display:block;margin-top:14px">{range(p.brahma)}</span><small>Brahma Muhurtham: prayer, study and meditation.</small></div>
       <div class="bad"><b>Timings to avoid</b><span>{range(p.rahu)}</span><small>Rahu Kalam on {wdName}.</small><span style="display:block;margin-top:14px;font-size:18px">Yamagandam {range(p.yama)}</span><span style="display:block;margin-top:8px;font-size:18px">Gulika {range(p.gulika)}</span></div>
     </div>
+
+    <div class="timing">
+      <div class="good"><b>Amrit Kalam (Amrita Ghadiya)</b>{p.amrit.length ? p.amrit.map((r: any) => <span style="display:block">{range(r)}</span>) : <span>None today</span>}<small>A nectar-like window, good for beginning anything auspicious.</small></div>
+      <div class="bad"><b>Varjyam (Tyajyam)</b>{p.varjyam.length ? p.varjyam.map((r: any) => <span style="display:block;font-size:20px">{range(r)}</span>) : <span>None today</span>}<small>Avoid starting important work in this window.</small></div>
+    </div>
+    <CalendarCta />
 
     <div class="sect"><h2>God of the day: {f.main.name} <span class="te">{f.main.te}</span></h2></div>
     <p>{f.main.about}</p>

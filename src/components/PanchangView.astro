@@ -2,6 +2,8 @@
 import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, todayIST, type CityId } from '../lib/panchang';
 import { RASHIS } from '../lib/astro';
 import { guidance } from '../lib/muhurta';
+import CalendarCta from './CalendarCta.astro';
+import { festivalsByKey, upcomingFestivals } from '../lib/festivals';
 const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
 const p = panchangFor(ymd, city);
 const c = CITIES[city];
@@ -11,7 +13,24 @@ const range = (r: { start: Date; end: Date }) => `${t(r.start)} to ${t(r.end)}`;
 const seg = (s: { paksha?: string; name: string; te?: string }) =>
   `${s.paksha ? s.paksha + ' ' : ''}${s.name}`;
 const segTe = (s: { paksha?: string; te?: string }) => (s.te ? `${s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : ''}${s.te}` : '');
+const todayFest = festivalsByKey().get(ymdKey(ymd)) ?? [];
+const nextFest = upcomingFestivals(addDays(ymd, 1), 4);
 const g = guidance(p.nakshatra[0].name, p.tithi[0].name, p.weekday);
+const dName = WEEKDAYS[p.weekday], dPretty = `${ymd.d} ${['January','February','March','April','May','June','July','August','September','October','November','December'][ymd.m - 1]} ${ymd.y}`;
+const t0 = p.tithi[0], n0 = p.nakshatra[0];
+const answer = `On ${dName}, ${dPretty}, the tithi in ${c.name} is ${t0.paksha} ${t0.name} until ${t(t0.endsAt)}, the nakshatra is ${n0.name} until ${t(n0.endsAt)}, sunrise is ${t(p.sunrise)} and sunset ${t(p.sunset)}. Rahu Kalam is ${range(p.rahu)}${p.amrit.length ? ` and Amrit Kalam is ${p.amrit.map(range).join(' and ')}` : ''}.`;
+const answerTe = `${c.name} నేటి పంచాంగం: తిథి ${t0.paksha === 'Shukla' ? 'శుక్ల' : 'కృష్ణ'} ${t0.te ?? ''}, నక్షత్రం ${n0.te ?? n0.name}, రాహుకాలం ${range(p.rahu)}.`;
+const qa: [string, string][] = [
+  [`What is today's tithi in ${c.name}?`, `${t0.paksha} ${t0.name} until ${t(t0.endsAt)}${p.tithi[1] ? `, then ${p.tithi[1].paksha} ${p.tithi[1].name}` : ''}.`],
+  [`What is Rahu Kalam today in ${c.name}?`, `Rahu Kalam on ${dName} in ${c.name} is ${range(p.rahu)}. Avoid starting new work in this window.`],
+  [`What is today's nakshatra?`, `${n0.name} until ${t(n0.endsAt)}${p.nakshatra[1] ? `, then ${p.nakshatra[1].name}` : ''}.`],
+  [`What is Amrit Kalam (Amrita Ghadiya) today?`, p.amrit.length ? `${p.amrit.map(range).join(' and ')}. It is a good window to begin anything auspicious.` : 'There is no Amrit Kalam within this day.'],
+  [`What time is Varjyam today?`, p.varjyam.length ? `${p.varjyam.map(range).join(' and ')}. It is traditionally avoided for new beginnings.` : 'There is no Varjyam within this day.'],
+  [`What time are sunrise and sunset in ${c.name} today?`, `Sunrise is ${t(p.sunrise)} and sunset is ${t(p.sunset)}.`],
+  [`Is today good for travel or joining a new job?`, `${g.rows[0].text} For a new job: ${g.rows[1].text}`],
+  ...(todayFest.length ? [[`Which festival is today?`, `${todayFest.map((f) => f.name).join(' and ')}.`] as [string, string]] : []),
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: qa.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
 const tdy = todayIST();
 const offset = Math.round((Date.UTC(ymd.y, ymd.m - 1, ymd.d) - Date.UTC(tdy.y, tdy.m - 1, tdy.d)) / 86400000);
@@ -25,12 +44,19 @@ const segs = [
   seg2(p.rahu, '#d6382c', 'Rahu Kalam', 'b'), seg2(p.yama, '#f08a24', 'Yamagandam', 'b'), seg2(p.gulika, '#8a8a94', 'Gulika', 'b'),
 ];
 ---
+<script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+<p class="answer"><b>{answer}</b></p>
+<p class="answer te">{answerTe}</p>
 <div class="pgrid">
   <div class="pcard"><b>Sunrise</b><span>{t(p.sunrise)}</span></div>
   <div class="pcard"><b>Sunset</b><span>{t(p.sunset)}</span></div>
   {p.moonrise && <div class="pcard"><b>Moonrise</b><span>{t(p.moonrise)}</span></div>}
   {p.moonset && <div class="pcard"><b>Moonset</b><span>{t(p.moonset)}</span></div>}
 </div>
+
+{todayFest.length > 0 && <div class="fest-today">{todayFest.map((f) => <a href={`/festivals/${f.slug}/`}><b>Today: {f.name}</b><span>{f.alt ?? f.god}</span></a>)}</div>}
+<div class="fest-next"><b>Festivals coming up</b>{nextFest.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small>{WEEKDAYS[f.weekday].slice(0, 3)}, {f.ymd.d} {['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][f.ymd.m - 1]}</small></a>)}<a href="/festivals/">All festivals</a></div>
+<CalendarCta />
 
 <div class="sect"><h2>Your day at a glance</h2></div>
 <div class="tl">
@@ -74,3 +100,6 @@ const segs = [
 
 <p class="disc">Calculated for {c.name}, {c.state}, from astronomical positions of the Sun and Moon (Lahiri ayanamsa, local sunrise). Places a few hundred kilometres away differ by a few minutes. Traditions vary by region and family: for rituals, weddings and muhurthams, please confirm with your family priest or temple.</p>
 <div class="chips">{hasPrev && <a href={`/panchangam/${city}/${prev}/`}>&larr; Previous day</a>}{hasNext && <a href={`/panchangam/${city}/${next}/`}>Next day &rarr;</a>}</div>
+
+<div class="sect" style="margin-top:26px"><h2>Quick answers</h2></div>
+{qa.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}

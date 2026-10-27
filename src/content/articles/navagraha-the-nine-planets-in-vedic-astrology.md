@@ -6,7 +6,7 @@ category: "astrology"
 author: "Southwala Astrology Desk"
 format: "Explainer"
 tldr: "The Navagraha are seven visible bodies and two shadow points, the lunar nodes Rahu and Ketu. Each has a weekday and a set of meanings in Vedic astrology."
-hero: "zodiac-wheel"
+hero: "navagraha-symbols"
 imageAlt: "A zodiac wheel with twelve constellations around the sun and moon"
 tags: ["Navagraha", "planets", "Vedic astrology", "Rahu Ketu"]
 draft: false

@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "The squirrel that helped Rama build the bridge to Lanka, and got three stripes from his fingers, is not in Valmiki. It is a beloved folk and later tradition. Valmiki credits the architect Nala and the vanaras (Yuddha Kanda 22). The telling is useful because it shows how a small, sincere effort lives on, as in the Telugu phrase udata bhakti."
-hero: "ship-sunrise"
+hero: "rama-symbols"
 imageAlt: "Dawn over the sea where the bridge was built"
 tags: ["squirrel", "rama setu", "ramayana", "nala", "udata bhakti", "folk tradition"]
 faq:

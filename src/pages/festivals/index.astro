@@ -1,0 +1,44 @@
+---
+import Base from '../../layouts/Base.astro';
+import CalendarCta from '../../components/CalendarCta.astro';
+import { allFestivals } from '../../lib/festivals';
+import { ymdKey, todayIST, WEEKDAYS } from '../../lib/panchang';
+import { EN_MONTH_NAMES } from '../../lib/lunar';
+const today = ymdKey(todayIST());
+const all = allFestivals().filter((f) => f.key >= today);
+const groups = new Map<string, typeof all>();
+for (const f of all) { const k = `${EN_MONTH_NAMES[f.ymd.m - 1]} ${f.ymd.y}`; groups.set(k, [...(groups.get(k) ?? []), f]); }
+const next = all[0];
+const faq: [string, string][] = [
+  ['What is the next Hindu festival?', next ? `The next festival is ${next.name} on ${WEEKDAYS[next.weekday]}, ${next.ymd.d} ${EN_MONTH_NAMES[next.ymd.m - 1]} ${next.ymd.y}.` : ''],
+  ['When is Deepavali in 2026?', 'Deepavali is on Sunday, 8 November 2026, with Dhanatrayodashi on 6 November and Naraka Chaturdashi on 8 November.'],
+  ['How are festival dates fixed?', 'Most Hindu festivals follow the lunar calendar: each is tied to a tithi in a lunar month, so the English date changes every year. Sankranti festivals follow the Sun and stay close to the same date.'],
+  ['Why do dates differ between regions?', 'The lunar month can be counted from the new moon (amanta, used in the South) or the full moon (purnimanta, used in the North), and some festivals depend on the tithi at a particular time of day, such as midday or midnight.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title="Hindu Festivals Calendar: Dates of Deepavali, Karthika Pournami, Sankranti, Shivaratri and More" description="Dates of Hindu festivals month by month: Deepavali, Karthika Pournami, Makara Sankranti, Maha Shivaratri, Ugadi, Rama Navami, Vinayaka Chaturthi, Navaratri and more, with tithi timings." active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }]} image="/covers/festivals.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>Hindu festivals: dates month by month</h1>
+    <p class="dek">Every major festival of the South Indian calendar, from Ugadi to Karthika Pournami, with the exact date, the tithi timings and what each day is for. Also see the dates of <a href="/ekadashi/" style="text-decoration:underline">Ekadashi</a>, <a href="/pradosham/" style="text-decoration:underline">Pradosham</a>, <a href="/sankashti-chaturthi/" style="text-decoration:underline">Sankashti</a>, <a href="/amavasya/" style="text-decoration:underline">Amavasya</a> and <a href="/pournami/" style="text-decoration:underline">Pournami</a>.</p>
+    <CalendarCta />
+    {[...groups].map(([month, items]) => (
+      <section>
+        <div class="sect"><h2>{month}</h2></div>
+        <div class="cal-month" style="margin:0 0 8px">
+          {items.map((f) => (
+            <a class="cal-row sp" href={`/festivals/${f.slug}/`} style="text-decoration:none;color:inherit">
+              <b>{f.ymd.d}</b><u>{WEEKDAYS[f.weekday].slice(0, 3)}</u>
+              <span>{f.name}<small>{f.alt ?? f.god}</small></span><s></s>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+    <div class="sect"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <p class="disc">Dates are calculated for Hyderabad from the Sun and Moon. Some temples and traditions keep a festival a day earlier or later. Please confirm with your priest for a vratam or ceremony.</p>
+  </div>
+</Base>

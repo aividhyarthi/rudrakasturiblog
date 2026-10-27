@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Anasuya, wife of Sage Atri, gave Sita a divine garland, clothes and ornaments that never fade, and listened as Sita told the story of her marriage (Valmiki, Ayodhya Kanda 117 to 118). She is remembered for austerities that brought food and water to a forest in drought. Her meeting with Sita is a quiet picture of one woman looking after another."
-hero: "river-ganga"
+hero: "rama-symbols"
 imageAlt: "The river Ganga flowing through a forest"
 tags: ["anasuya", "sita", "atri", "ramayana", "chitrakuta", "valmiki"]
 faq:

@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "Surya Arghya is the offering of water to the rising Sun, done facing east with a small vessel, three times, with the Gayatri mantra or simply Om Suryaya Namah. It takes three minutes. Many families do it every morning, and it asks for nothing except that you are up and outside before the day gets loud."
-hero: "yoga-sunrise"
+hero: "surya-symbols"
 imageAlt: "A figure offering water to the rising sun"
 tags: ["surya", "arghya", "sunrise", "morning routine", "gayatri", "sunday"]
 faq:

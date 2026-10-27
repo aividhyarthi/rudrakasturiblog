@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Guide"
 tldr: "Saturday (Shanivaram) is the day of Lord Venkateswara (Balaji), and also of Shani and Hanuman. Telugu families keep a Saturday vratam with a lamp of rice flour and jaggery, a light fast until the evening, Govinda namalu and a sesame oil lamp for Shani. It is a day of discipline and of asking for steadiness."
-hero: "temple-tirumala"
+hero: "hanuman-symbols"
 imageAlt: "The Tirumala hills at dawn"
 tags: ["saturday", "shanivaram", "venkateswara", "balaji", "shani", "hanuman"]
 faq:

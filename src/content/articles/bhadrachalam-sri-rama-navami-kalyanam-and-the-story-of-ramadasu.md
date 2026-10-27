@@ -6,7 +6,7 @@ category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
 tldr: "Bhadrachalam temple in Telangana is the place where families watch the divine wedding of Sita and Rama on Sri Rama Navami in Chaitra. The temple was built by Kancherla Gopanna, Bhakta Ramadasu, who used tax revenue for it and was imprisoned at Golconda for twelve years."
-hero: "temple-sunrise"
+hero: "rama-symbols"
 imageAlt: "A South Indian temple at sunrise with a row of lit lamps"
 tags: ["Bhadrachalam", "Ramadasu", "Rama Navami", "Sitarama Kalyanam"]
 faq:

@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "At the southern shore the vanaras could not cross the sea. The old bear Jambavan reminded Hanuman that he was the son of the wind and could leap the ocean (Valmiki, Kishkindha Kanda 66). Jambavan, who had also circled Vishnu at his Trivikrama form and later fought Krishna over the Syamantaka jewel, is the elder in the Ramayana who sees what others have forgotten."
-hero: "ship-sunrise"
+hero: "hanuman-symbols"
 imageAlt: "Dawn over the southern sea"
 tags: ["jambavan", "hanuman", "ramayana", "kishkindha kanda", "elders", "valmiki"]
 faq:

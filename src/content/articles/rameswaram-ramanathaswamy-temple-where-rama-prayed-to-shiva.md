@@ -6,7 +6,7 @@ category: "temple"
 author: "Southwala Temples Desk"
 format: "Guide"
 tldr: "Rameswaram on Pamban Island is one of the Char Dham and is counted among the twelve Jyotirlingas. Tradition says Rama worshipped Shiva here before crossing to Lanka. Pilgrims bathe in 22 sacred wells inside the temple."
-hero: "gopuram-tn"
+hero: "rama-symbols"
 imageAlt: "A tall gopuram at dusk with lit lamps and a temple tank"
 tags: ["Rameswaram", "Ramanathaswamy", "Jyotirlinga", "Char Dham"]
 faq:

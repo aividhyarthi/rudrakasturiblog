@@ -39,6 +39,8 @@ for (let m = 1; m <= 12; m++) {
   }
   const keyDates = (kind: string) => [...marks].filter(([k, v]) => k.startsWith(`${YEAR}-${String(m).padStart(2, '0')}`) && v.some((x) => x.kind === kind)).map(([k]) => k).sort();
   const list = (kind: string, title: string) => { const ks = keyDates(kind); return ks.length ? `<div class="kd"><b>${title}</b> ${ks.map((k) => `${fmtD(k)}${kind === 'ek' && names.get(k) ? ` (${names.get(k)!.replace(' Ekadashi', '')})` : ''}`).join(', ')}</div>` : ''; };
+  const fes = [...marks].filter(([k]) => k.startsWith(`${YEAR}-${String(m).padStart(2, '0')}`)).flatMap(([k, v]) => v.filter((x) => x.kind === 'fe').map((x) => `${fmtD(k)} ${x.label}`)).sort((a, b) => Number(a.split(' ')[0]) - Number(b.split(' ')[0]));
+  const festList = fes.length ? `<div class="kd fe"><b>Festivals</b><br>${fes.map(esc).join('<br>')}</div>` : '';
   const [ref, skt, eng] = VERSES[m - 1];
   monthPages.push(`<section class="page month" style="--acc:${ACCENT[m - 1]}">
     <aside>
@@ -46,7 +48,7 @@ for (let m = 1; m <= 12; m++) {
       <h1>${EN_MONTH_NAMES[m - 1]}</h1><div class="yr">${YEAR}</div>
       <img class="art" src="${url(`public/heroes/${HEROES[m - 1]}.svg`)}" />
       <div class="verse"><small>Bhagavad Gita ${ref}</small><pre>${esc(skt)}</pre><p>${esc(eng)}</p></div>
-      <div class="kds">${list('ek', 'Ekadashi')}${list('pr', 'Pradosham')}${list('sk', 'Sankashti')}${list('am', 'Amavasya')}${list('po', 'Pournami')}</div>
+      <div class="kds">${list('ek', 'Ekadashi')}${list('pr', 'Pradosham')}${list('sk', 'Sankashti')}${list('am', 'Amavasya')}${list('po', 'Pournami')}${festList}</div>
     </aside>
     <main>
       <div class="dow">${WEEKDAYS.map((w) => `<span class="${w === 'Sunday' ? 'sun' : ''}">${w.slice(0, 3)}</span>`).join('')}</div>
@@ -88,10 +90,10 @@ body{font-family:Inter,sans-serif;color:#1a1a1d;background:#fff}
 .month aside{background:var(--acc);color:#fff;padding:11mm 9mm;display:flex;flex-direction:column}
 .month aside .brand{font-size:16px;opacity:.95}
 .month aside h1{font:700 40px/1 Fraunces,serif;margin-top:6mm}.month aside .yr{font:300 22px Fraunces,serif;opacity:.85;margin-bottom:5mm}
-.month .art{width:100%;height:38mm;object-fit:cover;border-radius:5px}
+.month .art{width:100%;height:30mm;object-fit:cover;border-radius:5px}
 .verse{margin-top:6mm}.verse small{font-size:8px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
 .verse pre{font:italic 400 10.5px/1.45 Serif4,serif;white-space:pre-wrap;margin:5px 0}.verse p{font:400 11px/1.45 Serif4,serif;opacity:.95}
-.kds{margin-top:auto;font-size:8.4px;line-height:1.5}.kd{margin-top:3px}.kd b{display:inline-block;min-width:54px}
+.kds{margin-top:auto;font-size:8.4px;line-height:1.5}.kd{margin-top:3px}.kd.fe{margin-top:5px;font-weight:600;line-height:1.45}.kd b{display:inline-block;min-width:54px}
 .month main{padding:9mm 10mm 6mm 8mm;display:flex;flex-direction:column}
 .dow{display:grid;grid-template-columns:repeat(7,1fr);gap:1.4mm;margin-bottom:1.4mm}
 .dow span{font-size:8.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#6a6a72;padding:0 2px}.dow .sun{color:#c0301f}
@@ -103,7 +105,7 @@ body{font-family:Inter,sans-serif;color:#1a1a1d;background:#fff}
 .cell .k{font-size:6.8px;color:#6a6a72;margin-top:.5mm}
 .cell.special{background:#fff8ec;border-color:var(--acc)}
 .tag{margin-top:.8mm;font-size:6.3px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:1mm;padding:.35mm 1.2mm;color:#fff;align-self:flex-start}
-.tag.ek{background:#2a5db0}.tag.pr{background:#6b3fa0}.tag.sk{background:#d9792b}.tag.am{background:#222}.tag.po{background:#c9971c}
+.tag.ek{background:#2a5db0}.tag.pr{background:#6b3fa0}.tag.sk{background:#d9792b}.tag.am{background:#222}.tag.po{background:#c9971c}.tag.fe{background:#a31650;white-space:normal;line-height:1.15}.tag.fe{background:#a31650}
 .month footer{margin-top:2.5mm;font-size:6.8px;color:#6a6a72;line-height:1.4}
 .keys{padding:14mm 16mm;background:#fff}.keys h1{font:700 36px Fraunces,serif;margin:4mm 0 6mm}
 .keys .cols{display:grid;grid-template-columns:1.1fr 1.2fr 1.2fr;gap:10mm}.keys h2{font:700 15px Fraunces,serif;margin-bottom:2mm;color:#b4530a}
@@ -145,7 +147,7 @@ header .v{font:400 11.5px/1.4 Inter,sans-serif;opacity:.95}header .v small{font-
 .r.sp{background:#fff6e6}
 .r s{text-decoration:none;display:flex;flex-direction:column;gap:.6mm;align-items:flex-end}
 .tag{font-size:9.5px;font-weight:700;border-radius:1mm;padding:.5mm 1.6mm;color:#fff;text-transform:uppercase;letter-spacing:.03em}
-.tag.ek{background:#2a5db0}.tag.pr{background:#6b3fa0}.tag.sk{background:#d9792b}.tag.am{background:#222}.tag.po{background:#c9971c}
+.tag.ek{background:#2a5db0}.tag.pr{background:#6b3fa0}.tag.sk{background:#d9792b}.tag.am{background:#222}.tag.po{background:#c9971c}.tag.fe{background:#a31650;white-space:normal;line-height:1.15}.tag.fe{background:#a31650;text-transform:none;letter-spacing:0}
 .mp footer{margin-top:2mm;font-size:9px;color:#6a6a72;line-height:1.35}
 `;
 const mhtml = `<!doctype html><html><head><meta charset="utf-8"><title>Southwala Panchangam Calendar ${YEAR} (phone edition)</title><style>${mcss}</style></head><body>${mobMonths.join('')}</body></html>`;

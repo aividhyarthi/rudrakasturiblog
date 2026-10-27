@@ -1,12 +1,14 @@
 // "Surprise me": a small button on every page that opens a pop-up with a few random reads and the calendar download.
 // It also opens once on its own after a visitor has stayed a while, at most once every 12 hours.
 const KEY = 'sw_pop_v1';
-const HOURS = 12;
+const HOURS = 6;
 const store = {
   get() { try { return Number(localStorage.getItem(KEY) ?? 0); } catch { return 0; } },
   set() { try { localStorage.setItem(KEY, String(Date.now())); } catch { /* private window */ } },
 };
 
+type Extra = { day: string; horoscope: { line: string; signs: { id: string; n: string }[] }; god: { name: string; line: string; href: string; mantra: string; meaning: string } };
+let extra: Extra | null = null;
 type Item = { t: string; u: string; k: string; g: string };
 let items: Item[] | null = null;
 let modal: HTMLElement | null = null;
@@ -19,6 +21,12 @@ async function load() {
   if (items) return items;
   try { items = await (await fetch('/topics.json')).json(); } catch { items = []; }
   return items!;
+}
+
+async function loadExtra() {
+  if (extra) return extra;
+  try { extra = await (await fetch('/popup.json')).json(); } catch { extra = null; }
+  return extra;
 }
 
 /** Up to n picks, each from a different series or topic, never the page you are on. */
@@ -42,18 +50,19 @@ async function open() {
   if (modal) return;
   lastFocus = document.activeElement;
   store.set();
-  const all = await load();
+  const [all, ex] = await Promise.all([load(), loadExtra()]);
   const shown = new Set<string>();
   const el = document.createElement('div');
   el.className = 'swp';
+  const horo = ex ? `<section class="swp-sec"><small>1. Horoscope today</small><p>${esc(ex.horoscope.line)}</p><div class="swp-signs">${ex.horoscope.signs.map((s) => `<a href="/rasi-phalalu/${esc(s.id)}/">${esc(s.n)}</a>`).join('')}</div><a class="swp-go" href="/daily-horoscope/">Read today's horoscope</a></section>` : '';
+  const god = ex ? `<section class="swp-sec"><small>2. ${esc(ex.day)}: the day's god</small><p><b>${esc(ex.god.name)}.</b> ${esc(ex.god.line)}</p><p class="swp-mantra">${esc(ex.god.mantra)}</p><a class="swp-go" href="${esc(ex.god.href)}">Worship ${esc(ex.day)} the right way</a></section>` : '';
   el.innerHTML = `<div class="swp-back" data-close></div>
   <div class="swp-card" role="dialog" aria-modal="true" aria-labelledby="swp-h">
     <button class="swp-x" data-close aria-label="Close">&times;</button>
-    <h2 id="swp-h">What would you like to read?</h2>
-    <p class="swp-sub">Pick one. Each is a short read.</p>
-    <div class="swp-list"></div>
-    <button class="swp-more" type="button">Show me others</button>
-    <a class="swp-cal" href="/calendar/"><b>Free 2027 Panchangam Calendar</b><span>Every tithi, Ekadashi, Pournami and Amavasya, with a Gita verse for each month. Download the PDF.</span></a>
+    <h2 id="swp-h">Your Southwala today</h2>
+    ${horo}${god}
+    <section class="swp-sec"><small>3. Worth reading now</small><div class="swp-list"></div><button class="swp-more" type="button">Show me others</button></section>
+    <a class="swp-cal" href="/calendar/"><b>Download the Panchangam Calendar 2027 (PDF)</b><span>Every tithi, Ekadashi, Pournami and Amavasya, festivals and a Gita verse for each month. Phone and print editions, free.</span></a>
   </div>`;
   const list = el.querySelector('.swp-list')!;
   const render = () => {
@@ -84,7 +93,7 @@ function init() {
   if (Date.now() - store.get() < HOURS * 3600 * 1000) return;
   let done = false;
   const go = () => { if (!done && !modal) { done = true; open(); } };
-  setTimeout(go, 30000);
-  addEventListener('scroll', () => { if (scrollY > 0.55 * (document.body.scrollHeight - innerHeight) && scrollY > 600) go(); }, { passive: true });
+  setTimeout(go, 12000);
+  addEventListener('scroll', () => { if (scrollY > 0.35 * (document.body.scrollHeight - innerHeight) && scrollY > 500) go(); }, { passive: true });
 }
 if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();

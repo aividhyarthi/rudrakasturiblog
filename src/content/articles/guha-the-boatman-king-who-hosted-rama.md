@@ -6,7 +6,7 @@ category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Ramayana story"
 tldr: "Guha, king of the Nishadas at Shringaverapura, welcomed Rama on the first night of exile, sat awake all night with Lakshmana, and ferried them across the Ganga. When Bharata arrived with an army, Guha suspected him until he saw his grief. It is one of the Ramayana's most human friendships."
-hero: "ship-sunrise"
+hero: "rama-symbols"
 imageAlt: "A boat on the river at sunrise"
 tags: ["guha", "ramayana", "friendship", "shringaverapura", "ganga", "valmiki"]
 faq:

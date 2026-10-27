@@ -2,6 +2,7 @@
 import { panchangFor } from './panchang';
 import { allTithis } from './tithi';
 import { allLunations } from './lunar';
+import { allFestivals } from './festivals';
 
 // ---- special days ----
 type Mark = { kind: string; label: string };
@@ -12,6 +13,7 @@ for (const o of allTithis('pradosham')) add(o.key, { kind: 'pr', label: 'Pradosh
 for (const o of allTithis('sankashti')) add(o.key, { kind: 'sk', label: 'Sankashti' });
 for (const l of allLunations('amavasya')) add(l.key, { kind: 'am', label: 'Amavasya' });
 for (const l of allLunations('pournami')) add(l.key, { kind: 'po', label: 'Pournami' });
+for (const f of allFestivals()) add(f.key, { kind: 'fe', label: f.name });
 export const names = new Map<string, string>();
 for (const o of allTithis('ekadashi')) names.set(o.key, o.name);
 for (const l of allLunations('pournami')) if (l.occasion) names.set(l.key, l.occasion);

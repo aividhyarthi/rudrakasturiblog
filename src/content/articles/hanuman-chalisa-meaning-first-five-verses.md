@@ -6,7 +6,7 @@ category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"
 tldr: "The Hanuman Chalisa has two opening dohas, forty chaupais and a closing doha. Its opening verses praise Hanuman as an ocean of knowledge, Rama\u2019s messenger and a remover of bad thoughts. It is recited on Tuesdays and Saturdays."
-hero: "temple-sunrise"
+hero: "hanuman-symbols"
 imageAlt: "A South Indian temple at sunrise with a row of lit lamps"
 tags: ["Hanuman Chalisa", "Hanuman", "Tulsidas", "Tuesday"]
 draft: false
