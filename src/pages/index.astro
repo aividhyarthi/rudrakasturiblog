@@ -10,10 +10,12 @@ import { allArticles, categoryLabel, fmtDate, sectionCounts, seriesCounts, bylin
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
 import { panchangFor, fmtTime, todayIST, addDays, WEEKDAYS } from '../lib/panchang';
-import { shuffle, diversePick, dayNumber } from '../lib/rotate';
+import { shuffle, diversePick, slotNumber } from '../lib/rotate';
 import { niceDate, ymdKey, dayFacts } from '../lib/daily';
 import { WEEKDAY_FEATURE } from '../data/weekday';
 import { SERIES, seriesHref } from '../config';
+import { allTithis, ROUTE } from '../lib/tithi';
+import { allLunations } from '../lib/lunar';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -24,7 +26,7 @@ const signs = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
 const counts = await sectionCounts();
 // The home page rotates: the same day always gives the same picks, and each daily rebuild shows a fresh mix,
 // so older stories and every series get their turn. Each story appears once.
-const seed = dayNumber();
+const seed = slotNumber();
 const bySlug = new Map(all.map((a) => [a.slug, a]));
 const facts = dayFacts(ymd);
 const wk = WEEKDAY_FEATURE[facts.wd];
@@ -61,6 +63,13 @@ teach.forEach((a) => shownTop.add(a.slug));
 const sc = await seriesCounts();
 const seriesTiles = shuffle(SERIES.filter((s) => sc[s.id]), seed + 9).slice(0, 4).map((s) => ({ s, items: all.filter((a) => a.data.series === s.id).sort((x, y) => x.data.date.getTime() - y.data.date.getTime()) }));
 const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c, i) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: shuffle(all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)), seed + 31 * (i + 1)).slice(0, 3) })).filter((x) => x.items.length);
+// Special days in the next few weeks: Ekadashi, Pradosham, Sankashti, Amavasya and Pournami, each linked to its own date page.
+const nowKey = ymdKey(ymd);
+const dayRow = (o: { key: string; observed: { y: number; m: number; d: number }; weekday: number }, label: string, href: string, cls: string) => ({ key: o.key, label, href, cls, date: `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${niceDate(o.observed).split(' ').find((w) => /^[A-Z][a-z]+$/.test(w) && !WEEKDAYS.includes(w)) ?? ''}` });
+const specialDays = [
+  ...(['ekadashi', 'sankashti', 'pradosham'] as const).flatMap((k) => allTithis(k).filter((o) => o.key >= nowKey).slice(0, 2).map((o) => dayRow(o, o.name, `/${ROUTE[k]}/${o.slug}/`, 'c-religion'))),
+  ...(['amavasya', 'pournami'] as const).flatMap((k) => allLunations(k).filter((o) => o.key >= nowKey).slice(0, 1).map((o) => dayRow(o, o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami'), `/${k}/${o.slug}/`, 'c-religion'))),
+].sort((a, b) => a.key.localeCompare(b.key)).slice(0, 6);
 const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 ---
 <Base home image="/covers/home.png">
@@ -76,6 +85,14 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         <div class="meta">{byline(lead.data)} · {fmtDate(lead.data.date)}</div>
       </a>
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
+    </section>
+  )}
+  {specialDays.length > 0 && (
+    <section class="wrap" style="padding-top:36px">
+      <div class="sect"><h2>Special days coming up</h2><a href="/calendar/">Calendar 2027 (PDF)</a></div>
+      <div class="three" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+        {specialDays.map((d) => <a class={d.cls} href={d.href} style="display:block;padding:14px 16px;border:1px solid var(--line,#e5e0d8);border-radius:10px"><b style="display:block">{d.label}</b><span style="color:#6b6b6b;font-size:.92rem">{d.date}</span></a>)}
+      </div>
     </section>
   )}
   <section class="band band-dev c-religion">
