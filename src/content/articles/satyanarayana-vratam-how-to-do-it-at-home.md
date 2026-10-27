@@ -1,7 +1,7 @@
 ---
 title: "Satyanarayana Vratam: how to do it at home"
 description: "A practical guide to the Satyanarayana Vratam at home: when to do it, what to keep ready, the steps, the five stories, the rava prasadam, and who can perform it."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-11T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

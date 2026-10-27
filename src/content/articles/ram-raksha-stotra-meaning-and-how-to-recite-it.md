@@ -1,7 +1,7 @@
 ---
 title: "Ram Raksha Stotra: meaning and how to recite it"
 description: "What the Ram Raksha Stotra is, why it protects the body limb by limb, who is said to have composed it, and a simple way to recite it at home, with the closing Rama Rama verse."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-02T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

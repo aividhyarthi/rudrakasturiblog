@@ -1,7 +1,7 @@
 ---
 title: "Chandra, the Moon, in the Navagrahas: mind and Monday"
 description: "What Chandra, the Moon, means in Vedic astrology: mind, mother and mood, his Monday, colour, grain and mantra, Daksha's curse, and a simple free practice."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-01T17:00:00+05:30"
 category: "astrology"
 author: "Southwala Devotional Desk"
 format: "Explainer"

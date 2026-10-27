@@ -1,7 +1,7 @@
 ---
 title: "Nataraja: what each part of the dancing Shiva means"
 description: "A guide to the Nataraja image: damaru, fire, raised foot, the dwarf Apasmara, the ring of fire, Chidambaram and the Chola bronzes, and the five acts of the dance."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-10T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

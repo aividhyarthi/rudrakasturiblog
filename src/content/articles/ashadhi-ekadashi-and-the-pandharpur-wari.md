@@ -1,7 +1,7 @@
 ---
 title: "Ashadhi Ekadashi and the Pandharpur wari"
 description: "The Pandharpur wari explained: the palanquins of Dnyaneshwar and Tukaram, the dindis, the abhangs, Ashadhi Ekadashi, and what the long walk means to the warkaris."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-06T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"
@@ -28,11 +28,11 @@ Picture a road in the monsoon. Rain on the fields, red mud on the verge, and as 
 
 *Wari* means a regular journey, a visit that returns each year. The people who make it are called **warkaris**, "those who do the wari". Their goal is Pandharpur, on the Bhima river, where Vitthala stands on his brick. You can read about him in [Vitthala of Pandharpur, the god who waits on a brick](/vitthala-of-pandharpur-the-god-who-waits-on-a-brick/).
 
-Many walk from their own villages. Two great streams, though, gather the largest crowds. The **palanquin (palkhi) of Dnyaneshwar** sets out from Alandi, near Pune, and the **palkhi of Tukaram** from Dehu. Each carries the silver sandals, the padukas, of the saint. Tradition holds that the two processions meet and move together on the road, then arrive in Pandharpur a few days before Ashadhi Ekadashi. The route and dates are published each year by the organising committees and the temple, so check those before you plan to join.
+Many walk from their own villages. Two great streams, though, gather the largest crowds. The **palanquin (palkhi) of Dnyaneshwar** sets out from Alandi, near Pune, and the **palkhi of Tukaram** from Dehu. Each carries the silver sandals, the padukas, of the saint. The two processions travel on their own routes for about two weeks, and both arrive at Pandharpur in time for Ashadhi Ekadashi. The route and dates are published each year by the organising committees and the temple, so check those before you plan to join.
 
 ## The dindi
 
-The warkaris travel in groups called **dindis**, each with its own banner, its own leader, and often its own village. A dindi is something like a travelling family. It has a cook, a singer, someone to look after the elderly. People walk in rows, singing together, and at set places they pause to do a **ringan**, a ring of devotees circling a horse, and to play a kind of simple, joyful game.
+The warkaris travel in groups called **dindis**, each with its own banner, its own leader, and often its own village. A dindi is something like a travelling family. It has a cook, a singer, someone to look after the elderly. People walk in rows, singing together, and at set places they pause to do a **ringan**, a ring of devotees moving in a circle, and to join in simple, joyful devotional play.
 
 The songs are **abhangs**, short devotional poems in Marathi by Dnyaneshwar, Namdev, Eknath, Tukaram and other saints. The language is the language of the field and the market. A warkari may not have studied Sanskrit, but will often know dozens of abhangs by heart.
 
@@ -49,6 +49,10 @@ If you listen to a video of the wari, you will hear a shout rise from thousands 
 ## Chaturmasya begins
 
 With Ashadhi Ekadashi, the four months of **chaturmasya** begin in many traditions, the rainy months when the Lord is said to rest. It is a time for restraint and attention: some families give up a favourite food, some read a sacred text each day, some observe extra fasts. Practice varies greatly by region and family, so follow the way of your own household. The rhythm is that the world slows, the rains come, and the heart turns inward.
+
+## A day on the road
+
+Ask a warkari about a day and you will hear much the same. Rise before dawn, bathe where you can, and walk while it is cool. Sing the morning abhangs. Halt at midday where villagers have prepared food and water, and where nobody counts how many have come. Rest, mend a sandal, rub oil on tired feet. Then walk again, and end the day with a kirtan, a gathering for song and a short talk, under a tree or a borrowed shed. Villages along the way open their homes and fields to the walkers, and this hospitality is part of the devotion, a service given gladly and without any show.
 
 ## What the walk means
 

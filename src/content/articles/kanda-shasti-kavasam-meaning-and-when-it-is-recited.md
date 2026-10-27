@@ -1,7 +1,7 @@
 ---
 title: "Kanda Shasti Kavasam: meaning and when it is recited"
 description: "What the Kanda Shasti Kavasam asks of Murugan, who composed it, when it is recited in Skanda Shashti week, and how to follow it if you do not read Tamil."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-05T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Why Rama is called Maryada Purushottam"
 description: "What Maryada Purushottam means, how Valmiki lists Rama's sixteen qualities, and an honest look at his hardest choices: exile, Sita's trials, Vali and the Uttara Kanda."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-04T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

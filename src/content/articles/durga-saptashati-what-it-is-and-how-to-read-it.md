@@ -1,7 +1,7 @@
 ---
 title: "Durga Saptashati: what it is and how to read it"
 description: "What the Durga Saptashati (Devi Mahatmya) is, its 13 chapters and three stories, the Devi Suktam, Argala, Kilaka and Kavacha, and simple reading plans for Navaratri."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

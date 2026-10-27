@@ -1,7 +1,7 @@
 ---
 title: "Surya, the Sun, in the Navagrahas: what he rules"
 description: "How tradition sees Surya, the first of the nine grahas: what he is said to govern, his Sunday, colour, grain and mantra, and a simple free way to honour him."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-30T17:00:00+05:30"
 category: "astrology"
 author: "Southwala Devotional Desk"
 format: "Explainer"

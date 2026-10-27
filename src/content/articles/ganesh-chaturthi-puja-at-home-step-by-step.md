@@ -1,7 +1,7 @@
 ---
 title: "Ganesh Chaturthi puja at home: step by step"
 description: "A plain, practical guide to Ganesh Chaturthi puja at home: clay idol, kalasha, the 16 upachara steps, 21 durva, offerings, how long to keep him, and visarjan."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"
@@ -59,7 +59,7 @@ The sixteen steps are a way of treating Ganesha as an honoured guest. Families a
 15. **Tambula.** Offer betel leaf and nut.
 16. **Namaskara and aarti.** Show camphor, circle the lamp, bow and offer your prayers.
 
-Many families recite the Ganesha ashtottara (108 names) while offering durva or flowers. You can also read [the Atharvashirsha](/ganapati-atharvashirsha-what-it-says-in-plain-words/) if it is part of your home practice.
+Many families recite the Ganesha ashtottara (108 names) while offering durva or flowers. You can also read [the Atharvashirsha](/ganapati-atharvashirsha-the-upanishad-of-ganesha/) if it is part of your home practice.
 
 ## Setting up on the day
 

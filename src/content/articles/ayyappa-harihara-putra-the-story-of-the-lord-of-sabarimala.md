@@ -1,7 +1,7 @@
 ---
 title: "Ayyappa: the story of the lord of Sabarimala"
 description: "The story of Ayyappa, son of Shiva and Mohini, raised by the Pandalam king as Manikandan: Mahishi, Vavar, the eighteen steps and the Sastha shrines of Kerala."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-06T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Guru (Jupiter) in the Navagrahas: the teacher planet"
 description: "What Guru or Brihaspati, Jupiter, means in Vedic astrology: wisdom, teachers and blessings, his Thursday, yellow, chana dal, mantra, and Guru peyarchi in Tamil calendars."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T17:00:00+05:30"
 category: "astrology"
 author: "Southwala Devotional Desk"
 format: "Explainer"

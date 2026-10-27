@@ -1,7 +1,7 @@
 ---
 title: "Om Namah Shivaya: meaning of the Panchakshari mantra"
 description: "What each syllable of Om Namah Shivaya means in the tradition, where it comes from in the Sri Rudram, and how to chant it on a rudraksha mala without fuss or fear."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-29T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

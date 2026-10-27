@@ -1,7 +1,7 @@
 ---
 title: "Hanuman: birth, strength and devotion"
 description: "The stories of Hanuman: his birth to Anjana and Kesari, Vayu's blessing, the sun-fruit and the curse of forgotten strength, the leap to Lanka, Sanjeevani, and why devotion defines him."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-29T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

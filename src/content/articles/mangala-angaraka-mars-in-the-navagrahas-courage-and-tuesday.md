@@ -1,7 +1,7 @@
 ---
 title: "Mangala (Mars) in the Navagrahas: courage and Tuesday"
 description: "What Mangala or Angaraka, Mars, means in Vedic astrology: courage, energy and Tuesday, colour, grain and mantra, Mangal dosha handled gently, and a free practice."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-03T17:00:00+05:30"
 category: "astrology"
 author: "Southwala Devotional Desk"
 format: "Explainer"

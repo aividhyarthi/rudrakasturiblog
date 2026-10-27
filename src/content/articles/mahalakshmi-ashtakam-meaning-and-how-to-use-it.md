@@ -1,7 +1,7 @@
 ---
 title: "Mahalakshmi Ashtakam: meaning and how to recite it"
 description: "The eight verses of the Mahalakshmi Ashtakam explained in plain words, with the opening line, the phalashruti, and how and when to recite it on a Friday evening."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-02T17:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"
@@ -75,6 +75,6 @@ Many people hesitate because the Sanskrit seems long or hard. It is shorter than
 
 ## An honest line
 
-If you are in financial trouble, this hymn will not solve it. It can steady the mind, and a steady mind makes better decisions. Please keep doing the sensible things as well: work, save, ask for advice. For the old teaching that Lakshmi is more than money, see [Ashtalakshmi: the eight forms of Lakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi/).
+If you are in financial trouble, this hymn will not solve it. It can steady the mind, and a steady mind makes better decisions. Please keep doing the sensible things as well: work, save, ask for advice. For the old teaching that Lakshmi is more than money, see [Ashtalakshmi: the eight forms of Lakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/).
 
 Do you have your own tune for Namastestu mahamaye, passed down from your mother or grandmother? Write to us at hello@southwala.com and tell us how it sounds in your home, and who taught it to you.
