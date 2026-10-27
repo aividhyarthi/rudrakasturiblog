@@ -64,9 +64,17 @@ You do not need to travel. A simple version at home is entirely good.
 
 Expect distractions. A child may laugh, cry, or walk away. Let it be. Saraswati is not strict.
 
+## What to keep ready
+
+It helps to have everything on the tray before the child sits down, because a small child will not wait. Keep ready the rice or sand, a small lamp, flowers, a sweet, a clean slate or notebook, and a picture or idol of Saraswati. A bit of turmeric and kumkum for the tilak is welcome. Some families also keep a new pen. Take a moment to switch off the television and put away the phones. The ceremony is short, perhaps ten to fifteen minutes, but the child will remember the calm of it, the way the grown-ups looked at the child instead of at a screen.
+
 ## Ayudha Puja and books
 
 On the last days of Navaratri, many families place books, pens, musical instruments and tools before the goddess and do not use them for a day. On Vijayadashami they are taken out again with a prayer. For a child, this is a wonderful way to see learning treated with respect. It also teaches, without a lecture, that a book is not an ordinary object.
+
+## Who should guide the finger?
+
+Customs differ. In many families the maternal grandfather or the father does it. In others, it is the family teacher or a priest at the temple. In some homes the mother does it, and nothing in tradition stops her. What matters is that the person is someone the child trusts and the family respects as a learner. If you are not sure, ask the oldest person in the family what was done for you. Their answer will usually be the best guide, and it keeps the thread of the family unbroken.
 
 ## A thought for parents
 

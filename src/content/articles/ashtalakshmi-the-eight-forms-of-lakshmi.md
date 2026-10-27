@@ -50,6 +50,10 @@ Read the list again. It asks: do you have the source of blessing (Adi)? Money (D
 
 A person can have one and lack the others, and know that something is missing. The tradition teaches that a life is called prosperous only when these are held together. A rich man with no peace at home, or a scholar with nothing to eat, is missing a form of Lakshmi. This is a teaching well worth keeping in mind next time you pray for something.
 
+## Lakshmi and the lotus
+
+In most images Lakshmi sits or stands on a lotus, and holds lotuses in her hands. The lotus grows in mud but stays clean, which is a quiet lesson in itself: wealth can come from ordinary, messy work and still be pure if it is earned honestly. Gold coins pour from one hand, showing generosity. Wealth that is only held and never shared is not counted in the tradition as true Lakshmi. Elders often say that the goddess does not stay long where money is hoarded or earned by harming others, and while that is a saying rather than a rule, it carries the sense of the whole teaching.
+
 ## The temple at Besant Nagar
 
 In Chennai, at Elliot's Beach in Besant Nagar, stands a well-known Ashtalakshmi temple, built in the 1970s in the shape of a tall tiered structure facing the sea. Pilgrims move upward through the shrines of the eight forms, one level at a time. The sea breeze, the climb and the quiet make the visit memorable. There are Ashtalakshmi shrines elsewhere too, and many Vishnu and Lakshmi temples show the eight forms in carved panels.
@@ -61,6 +65,10 @@ Friday is Lakshmi's day in most Telugu and Tamil homes. Families clean the house
 Varalakshmi Vratam is the great Friday of the year, held before the full moon of the month of Shravana, usually in July or August. Women set up a kalasam with a coconut and the face of the goddess, offer fruits and sweets, tie a sacred thread, and invite other women to receive tambulam. The exact date changes each year, so please check [the festivals page](/festivals/).
 
 For a wider reading of the goddess, [the eight forms of Lakshmi and what they mean](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/) offers another view.
+
+## Differences in the lists
+
+You may meet a slightly different list in your own family or temple. Some versions give Aishwarya Lakshmi, the goddess of fortune and prosperity, in place of Vijaya. Others place Maha Lakshmi in the first position and treat Adi Lakshmi as a separate, older form. Some Tamil and Telugu hymns use slightly different names for the same figure. None of these is wrong. They are different ways of saying the same thing, that the goddess has many faces and her gifts are many.
 
 ## How to use this in your own prayer
 

@@ -49,6 +49,10 @@ What follows is a short paraphrase, not a translation.
 
 Notice how the hymn moves. It begins with outward things, weapons and ornaments, then turns inward to yoga and the absolute. In this order it quietly teaches that the Lakshmi of the coin and the Lakshmi of the highest knowledge are the same goddess.
 
+## Reading it as a prayer of gratitude
+
+There is a way of reading the hymn that many families find helpful. Indra praises the goddess when he has already been restored, so it is as much a thanksgiving as a request. Try the same on a Friday. Before you ask for anything, say aloud the things you already have: a roof, food, someone who calls you. Then begin the verses. The hymn then becomes a way to see what is already present, and a quiet reminder that Lakshmi is not far away. Even a few lines said with this feeling are enough.
+
 ## The phalashruti
 
 The ending verses say that whoever recites this hymn with devotion will receive the goddess's grace, and then list graduated results: recited once, it destroys sin; recited twice, it brings wealth and grain; recited three times, it destroys great enemies. Many traditional hymns end like this. It is best to read such lines as encouragement, a way of saying that regular practice matters, rather than as a guarantee. A prayer is not a financial plan.
@@ -64,6 +68,10 @@ Friday is the traditional day, and dusk is the natural hour.
 5. Offer a small sweet or fruit and share it at home.
 
 The whole hymn takes about three to five minutes. Some families also recite it on Deepavali evening when Lakshmi puja is performed; see [Deepavali 2026: dates, Dhanteras, Naraka Chaturdashi and Lakshmi puja](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). A fuller guide to the Friday practice is in [Friday Lakshmi worship: mantras and how to do it](/friday-lakshmi-worship-mantras-and-how-to-do-it/).
+
+## If Sanskrit is difficult
+
+Many people hesitate because the Sanskrit seems long or hard. It is shorter than it looks. Learn one verse a week. Listen to the verse, say it with the recording, and then without it. Within two months you will know all eight. Pronunciation will improve slowly, and the goddess is not said to mind. If you prefer, you can recite in the language you pray best in, or simply say her name and the opening line each Friday.
 
 ## An honest line
 

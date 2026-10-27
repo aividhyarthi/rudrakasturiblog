@@ -70,6 +70,10 @@ Ayyappa's story sits within a larger one. Sastha, a guardian deity, was worshipp
 
 Seeing them together, you can read the life of one god in five stages, child, youth, householder, protector, ascetic. This is a way many devotees understand them, not a fixed scheme. Some lists substitute other temples.
 
+## The pilgrim's road
+
+The road to the hill is part of the story. Pilgrims cross the Pampa, climb through the forest, and reach the steps after a hard walk. Along the way, every pilgrim is addressed as Swami, whatever his age or position, and strangers greet one another with the same cry. The vow flattens rank: a clerk and a landlord carry the same bundle, eat the same food and sleep on the same floor. That equality may be one reason the pilgrimage has spread so widely beyond Kerala, to the Telugu country and beyond.
+
 ## Why do people go?
 
 A pilgrim may say: because I promised. Or because my father went. Or because the forty-one days of plain living, with no anger and no alcohol, are a school for the mind. The slogan Swamiye Saranam Ayyappa means, in simple terms, Lord, I take refuge in you. The hill gives no guarantees about worldly life, but many walk away steadier than they came.

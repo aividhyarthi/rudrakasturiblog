@@ -65,6 +65,8 @@ A simple fast is common but not required, and children can help by stringing flo
 
 ## What to remember
 
+Do not let the question of the right date become an argument at the family table. Elders in one village may have kept one day for generations, and a young couple who moved from another state may bring a second. Welcome both.
+
 Dates are the frame. The picture inside it is a servant of Rama, strong and humble, who remembered his purpose when reminded. If you spend the day in that spirit, you have kept Hanuman Jayanti, whichever page of the calendar it fell on.
 
 Which date does your family keep, and who taught you? Write to hello@southwala.com and tell us the village and the temple, so we can add it to our notes.

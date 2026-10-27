@@ -65,7 +65,7 @@ What is clear is this: in Marathi abhang and in Kannada devaranama, a God who st
 
 ## The call of the devotees
 
-Walk near the temple and you will hear one cry above all: Vitthal, Vitthal, or Jai Jai Ram Krishna Hari. It is not a slogan. It is the sound of people who have walked a long way and are glad. In the queue for darshan, the rich and the poor stand in the same line, and when the moment comes, many touch the feet of the image with their forehead, a closeness that few large temples allow. Visitors are told to expect a crowd, especially on Ekadashi, and to follow the temple's own instructions.
+Walk near the temple and you will hear one cry above all: Vitthal, Vitthal, or Jai Jai Ram Krishna Hari. It is not a slogan. It is the sound of people who have walked a long way and are glad. In the queue for darshan, the rich and the poor stand in the same line, and when the moment comes, many hope to bow close to the image, though the arrangements at the temple change with the crowd and the season. Visitors are told to expect a crowd, especially on Ekadashi, and to follow the temple's own instructions.
 
 ## If you cannot go
 
