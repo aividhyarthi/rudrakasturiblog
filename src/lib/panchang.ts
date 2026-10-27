@@ -120,6 +120,32 @@ const RAHU = [8, 2, 7, 5, 6, 4, 3]; // Sun..Sat, 1-indexed eighth of the day
 const YAMA = [5, 4, 3, 2, 1, 7, 6];
 const GULIKA = [7, 6, 5, 4, 3, 2, 1];
 
+// Varjyam and Amrit Kalam: each lasts 4/60 of the nakshatra, starting at these ghatis (of 60) after the nakshatra begins.
+const VARJYAM_AT = [50, 24, 30, 40, 14, 11, 30, 20, 32, 30, 20, 18, 22, 20, 14, 14, 10, 14, 20, 24, 20, 10, 10, 18, 16, 24, 30];
+const AMRIT_AT = [42, 48, 54, 52, 38, 35, 54, 44, 56, 54, 44, 42, 46, 44, 38, 38, 34, 38, 44, 48, 44, 34, 34, 42, 40, 48, 54];
+
+/** Varjyam (avoid) and Amrit Kalam (good) windows that fall on the civil day, from the nakshatras running through it. */
+function nakshatraWindows(dayStart: Date, dayEnd: Date) {
+  const f = angles.nakshatra;
+  const out: { varjyam: { start: Date; end: Date }[]; amrit: { start: Date; end: Date }[] } = { varjyam: [], amrit: [] };
+  let t0 = dayStart.getTime() - 30 * 3600000;
+  // find the start of the nakshatra running at dayStart
+  const idx0 = Math.floor(f(dayStart));
+  let lo = t0, hi = dayStart.getTime();
+  for (let i = 0; i < 40; i++) { const mid = (lo + hi) / 2; if (Math.floor(f(new Date(mid))) === idx0) hi = mid; else lo = mid; }
+  let start = hi, idx = idx0;
+  for (let k = 0; k < 4 && start < dayEnd.getTime(); k++) {
+    const end = nextChange(f, new Date(start + 60000)).getTime();
+    const dur = end - start, n = idx % 27;
+    for (const [list, at] of [[out.varjyam, VARJYAM_AT[n]], [out.amrit, AMRIT_AT[n]]] as const) {
+      const s = start + (dur * at) / 60, e = start + (dur * (at + 4)) / 60;
+      if (e > dayStart.getTime() && s < dayEnd.getTime()) list.push({ start: new Date(s), end: new Date(e) });
+    }
+    start = end; idx = (idx + 1) % 27;
+  }
+  return out;
+}
+
 export type Day = ReturnType<typeof panchangFor>;
 
 /** ymd = local IST calendar date */
@@ -143,6 +169,7 @@ export function panchangFor(ymd: { y: number; m: number; d: number }, cityId: Ci
     rahu: part(RAHU[wd]), yama: part(YAMA[wd]), gulika: part(GULIKA[wd]),
     abhijit: { start: new Date(st.rise.getTime() + 7 * muh), end: new Date(st.rise.getTime() + 8 * muh) },
     brahma: { start: new Date(st.rise.getTime() - 96 * 60000), end: new Date(st.rise.getTime() - 48 * 60000) },
+    ...nakshatraWindows(new Date(st.rise.getTime()), new Date(st.rise.getTime() + 24 * 3600000)),
     moonSign: Math.floor(moonSid(new Date(st.rise.getTime() + len / 2)) / 30),
   };
 }

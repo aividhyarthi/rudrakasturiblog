@@ -147,7 +147,7 @@ p{margin:0 0 1em}
 .prose blockquote{margin:34px 0;padding:6px 0 6px 28px;border-left:4px solid var(--sec);font-family:var(--display);font-size:28px;line-height:1.25;font-weight:600}
 .prose ul,.prose ol{padding-left:24px}.prose li{margin:8px 0}
 .prose strong{font-weight:700}
-.share{display:flex;gap:10px;flex-wrap:wrap;margin:36px 0 8px}
+.share{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:36px 0 8px}.share>span{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}.sh{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;border-radius:50%;border:1px solid var(--line,#e5e0d8);color:var(--ink,#222);transition:.15s}.sh:hover{color:#fff}.sh-wa:hover{background:#25d366;border-color:#25d366}.sh-x:hover{background:#000;border-color:#000}.sh-fb:hover{background:#1877f2;border-color:#1877f2}.sh-tg:hover{background:#229ed9;border-color:#229ed9}
 .notes{max-width:700px;margin:8px auto 0;padding:0 24px;font-size:14.5px;color:var(--ink2)}
 .note{border-top:1px solid var(--hair);padding:16px 0}
 .note h4{font:700 11px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--ink)}
@@ -374,3 +374,43 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .swp-cal{display:block;margin-top:14px;background:#fdf1df;border-radius:10px;padding:13px 14px;text-decoration:none;color:var(--ink)}
 .swp-cal b{display:block;font:700 15px var(--display);margin-bottom:3px}.swp-cal span{font-size:13px;color:var(--ink2);line-height:1.45}
 @media(max-width:640px){.swp-btn{right:12px;bottom:12px;padding:10px 15px}.swp{align-items:flex-end;padding:0}.swp-card{border-radius:16px 16px 0 0;max-width:none}}
+
+/* Good-for-today guidance (panchangam) */
+.gfor{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:8px 0 10px}
+.gf{border:1px solid var(--line,#e5e0d8);border-left:5px solid #c9a24a;border-radius:10px;padding:12px 14px;background:var(--card,#fff)}
+.gf b{display:block;font-size:15px}
+.gf em{font-style:normal;font:700 11px/1 var(--sans);letter-spacing:.1em;text-transform:uppercase;display:inline-block;margin:4px 0 6px}
+.gf small{display:block;font-size:13.5px;color:var(--muted);line-height:1.45}
+.gf.good{border-left-color:#2fa866}.gf.good em{color:#1f7d4d}
+.gf.avoid{border-left-color:#d6382c}.gf.avoid em{color:#b02a20}
+@media (max-width:640px){.gfor{grid-template-columns:1fr}}
+
+/* Phones: horoscope and panchangam blocks become swipeable cards (scroll-snap, no script) */
+@media (max-width:640px){
+  .sign-tiles,.facts,.pgrid,.limbs,.timing,.gfor{display:grid!important;grid-auto-flow:column;grid-template-columns:none!important;grid-template-rows:auto;grid-auto-columns:78%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-24px;margin-right:-24px;padding:4px 24px 12px;scroll-padding:0 24px}
+  .sign-tiles::-webkit-scrollbar,.facts::-webkit-scrollbar,.pgrid::-webkit-scrollbar,.limbs::-webkit-scrollbar,.timing::-webkit-scrollbar,.gfor::-webkit-scrollbar{display:none}
+  .sign-tiles>*,.facts>*,.pgrid>*,.limbs>*,.timing>*,.gfor>*{scroll-snap-align:start}
+  .sign-tiles{grid-auto-columns:38%}
+  .pgrid{grid-auto-columns:46%}
+  .limbs,.timing{grid-auto-columns:84%}
+  .sign-tile{padding:22px 8px 18px}
+  .sign-tile b{font-size:18px}.sign-tile .stars{font-size:14px}
+  .sign-tiles::after,.facts::after,.pgrid::after,.limbs::after,.timing::after,.gfor::after{content:"";width:1px}
+}
+.three.two{grid-template-columns:repeat(2,1fr)}@media(max-width:640px){.three.two{grid-template-columns:1fr}}
+
+/* Calendar page: the whole year as a phone-friendly list */
+.cal-months{display:flex;gap:8px;overflow-x:auto;padding:6px 0 12px;position:sticky;top:0;background:var(--bg,#fff);z-index:5;scrollbar-width:none}
+.cal-months::-webkit-scrollbar{display:none}
+.cal-months a{flex:none;padding:8px 14px;border:1px solid var(--hair);border-radius:99px;font:600 14px var(--sans);text-decoration:none!important}
+.cal-month{margin:26px 0;scroll-margin-top:60px}
+.cal-verse{font-size:14.5px;color:var(--ink2);margin:4px 0 10px}.cal-verse small{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px;margin-right:4px;color:var(--sec)}
+.cal-row{display:grid;grid-template-columns:34px 38px 1fr auto;gap:8px;align-items:center;padding:8px 6px;border-bottom:1px solid var(--hair);line-height:1.25}
+.cal-row b{font:700 20px var(--display);text-align:right}.cal-row u{text-decoration:none;font:600 13px var(--sans);color:var(--muted)}
+.cal-row.sun b,.cal-row.sun u{color:#c0301f}
+.cal-row>span{font-weight:600;font-size:16px}.cal-row>span i{font-style:normal;color:var(--sec);font-size:13px}
+.cal-row small{display:block;font-weight:400;font-size:13.5px;color:var(--muted)}.cal-row em{display:block;font-style:normal;font-size:13px;color:var(--sec);font-weight:600}
+.cal-row.sp{background:#fff6e6}
+.cal-row s{text-decoration:none;display:flex;flex-direction:column;gap:3px;align-items:flex-end}
+.ctag{font:700 11px/1 var(--sans);letter-spacing:.04em;text-transform:uppercase;border-radius:5px;padding:4px 7px;color:#fff}
+.ctag.ek{background:#2a5db0}.ctag.pr{background:#6b3fa0}.ctag.sk{background:#d9792b}.ctag.am{background:#222}.ctag.po{background:#c9971c}

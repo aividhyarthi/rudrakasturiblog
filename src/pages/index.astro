@@ -50,9 +50,12 @@ const dailyExtras = [
 ];
 const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 3);
 const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
-// "Keep reading": stories from different series and topics, rotating daily.
-let grid = diversePick(rest.filter((a) => !shownTop.has(a.slug)), 3, seed);
-if (grid.length < 2) grid = [];
+// "Worth reading again": older stories from different series and topics (Why me?, the Gita, Upanishads, temples, yoga...),
+// a new mix at every refresh, so the page always carries evergreen reading and not only the newest.
+const older = rest.filter((a) => !shownTop.has(a.slug) && Date.now() - a.data.date.getTime() > 2 * 86400000);
+let grid = diversePick(older.length >= 6 ? older : rest.filter((a) => !shownTop.has(a.slug)), 6, seed);
+if (grid.length < 3) grid = [];
+if (grid.length > 3 && grid.length < 6) grid = grid.slice(0, 3);
 grid.forEach((a) => shownTop.add(a.slug));
 // The Gita and the Upanishads: always some of the best teaching on the page.
 const isTeaching = (a: any) => a.data.category === 'gita' || a.data.series === 'read-the-line' || /upanishad/i.test(`${a.data.title} ${(a.data.tags ?? []).join(' ')}`);
@@ -139,15 +142,15 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
 
   {grid.length > 0 && (
     <section class="wrap" style="padding-top:56px;padding-bottom:56px">
-      <div class="sect"><h2>Keep reading</h2></div>
-      <div class="three" style={`grid-template-columns:repeat(${grid.length},1fr)`}>{grid.map((a) => <Card a={a} />)}</div>
+      <div class="sect"><h2>Worth reading again</h2></div>
+      <div class="three" style="row-gap:28px">{grid.map((a) => <Card a={a} />)}</div>
     </section>
   )}
 
   {teach.length > 0 && (
     <section class="wrap" style="padding-bottom:56px">
       <div class="sect"><h2>From the Gita and the Upanishads</h2><a href="/gita-teachings/">More</a></div>
-      <div class="three" style={`grid-template-columns:repeat(${teach.length},1fr)`}>{teach.map((a) => <Card a={a} />)}</div>
+      <div class={teach.length === 3 ? "three" : "three two"}>{teach.map((a) => <Card a={a} />)}</div>
     </section>
   )}
   {seriesTiles.length > 0 && (

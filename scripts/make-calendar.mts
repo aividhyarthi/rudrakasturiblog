@@ -5,6 +5,7 @@ import path from 'node:path';
 import { createRequire } from 'node:module';
 import { panchangFor, WEEKDAYS } from '../src/lib/panchang';
 import { allTithis } from '../src/lib/tithi';
+import { marks, names, VERSES, SHORT_TITHI, monthDays } from '../src/lib/yearcal';
 import { allLunations, EN_MONTH_NAMES } from '../src/lib/lunar';
 
 const YEAR = Number(process.argv[2] ?? 2027);
@@ -12,39 +13,9 @@ const ROOT = process.cwd();
 const url = (p: string) => 'file://' + path.join(ROOT, p);
 const key = (y: number, m: number, d: number) => `${y}-${String(m).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
 
-// ---- special days ----
-type Mark = { kind: string; label: string };
-const marks = new Map<string, Mark[]>();
-const add = (k: string, m: Mark) => marks.set(k, [...(marks.get(k) ?? []), m]);
-for (const o of allTithis('ekadashi')) add(o.key, { kind: 'ek', label: 'Ekadashi' });
-for (const o of allTithis('pradosham')) add(o.key, { kind: 'pr', label: 'Pradosham' });
-for (const o of allTithis('sankashti')) add(o.key, { kind: 'sk', label: 'Sankashti' });
-for (const l of allLunations('amavasya')) add(l.key, { kind: 'am', label: 'Amavasya' });
-for (const l of allLunations('pournami')) add(l.key, { kind: 'po', label: 'Pournami' });
-const names = new Map<string, string>();
-for (const o of allTithis('ekadashi')) names.set(o.key, o.name);
-for (const l of allLunations('pournami')) if (l.occasion) names.set(l.key, l.occasion);
-for (const l of allLunations('amavasya')) if (l.occasion) names.set(l.key, l.occasion);
-
-// ---- a verse for each month ----
-const VERSES = [
-  ['2.47', 'karmaṇy evādhikāras te mā phaleṣu kadācana\nmā karma-phala-hetur bhūr mā te saṅgo \'stv akarmaṇi', 'Your right is to the action alone, never to its fruits. Do not make the fruit your motive, and do not cling to inaction.'],
-  ['6.5', 'uddhared ātmanātmānaṁ nātmānam avasādayet\nātmaiva hy ātmano bandhur ātmaiva ripur ātmanaḥ', 'Lift yourself by yourself. Do not let yourself sink. The self is its own friend and its own enemy.'],
-  ['2.14', 'mātrā-sparśās tu kaunteya śītoṣṇa-sukha-duḥkha-dāḥ\nāgamāpāyino \'nityās tāṁs titikṣasva bhārata', 'Heat and cold, pleasure and pain come and go. They do not stay. Learn to bear them.'],
-  ['4.7', 'yadā yadā hi dharmasya glānir bhavati bhārata\nabhyutthānam adharmasya tadātmānaṁ sṛjāmy aham', 'Whenever dharma fades and adharma rises, then I send myself forth.'],
-  ['6.35', 'asaṁśayaṁ mahā-bāho mano durnigrahaṁ calam\nabhyāsena tu kaunteya vairāgyeṇa ca gṛhyate', 'The mind is restless and hard to hold. But it can be held by practice and by letting go.'],
-  ['9.22', 'ananyāś cintayanto māṁ ye janāḥ paryupāsate\nteṣāṁ nityābhiyuktānāṁ yogakṣemaṁ vahāmy aham', 'To those who think of me alone and worship me steadily, I bring what they lack and keep what they have.'],
-  ['12.13', 'adveṣṭā sarva-bhūtānāṁ maitraḥ karuṇa eva ca\nnirmamo nirahaṅkāraḥ sama-duḥkha-sukhaḥ kṣamī', 'Free from hatred toward all beings, friendly and compassionate, without possessiveness or ego, even in pain and pleasure, patient.'],
-  ['2.22', 'vāsāṁsi jīrṇāni yathā vihāya navāni gṛhṇāti naro \'parāṇi\ntathā śarīrāṇi vihāya jīrṇāny anyāni saṁyāti navāni dehī', 'As one puts on new clothes and sets aside the worn ones, so the embodied self takes new bodies.'],
-  ['9.26', 'patraṁ puṣpaṁ phalaṁ toyaṁ yo me bhaktyā prayacchati\ntad ahaṁ bhakty-upahṛtam aśnāmi prayatātmanaḥ', 'A leaf, a flower, a fruit, water: whoever offers it with devotion, I accept it.'],
-  ['18.66', 'sarva-dharmān parityajya mām ekaṁ śaraṇaṁ vraja\nahaṁ tvāṁ sarva-pāpebhyo mokṣayiṣyāmi mā śucaḥ', 'Let go of every burden and come to me for refuge. I will free you. Do not grieve.'],
-  ['3.35', 'śreyān sva-dharmo viguṇaḥ para-dharmāt sv-anuṣṭhitāt\nsva-dharme nidhanaṁ śreyaḥ para-dharmo bhayāvahaḥ', 'Better your own path, even imperfectly walked, than another\'s path well walked.'],
-  ['18.78', 'yatra yogeśvaraḥ kṛṣṇo yatra pārtho dhanur-dharaḥ\ntatra śrīr vijayo bhūtir dhruvā nītir matir mama', 'Where there is Krishna, the lord of yoga, and Arjuna with his bow, there are fortune, victory and steady wisdom.'],
-];
 const HEROES = ['temple-sunrise', 'kurukshetra-dawn', 'krishna-flute', 'shiva-symbols', 'goddess-temple', 'river-ganga', 'hill-sacred', 'om-lotus', 'moon-nakshatra', 'jyotirlinga-dawn', 'vishnu-symbols', 'temple-tirumala'];
 const ACCENT = ['#b4530a', '#3d3a8f', '#7a5b00', '#8a3b12', '#a31650', '#0e7c7b', '#7a5b00', '#b4530a', '#3d3a8f', '#8a3b12', '#0e7c7b', '#a31650'];
 
-const SHORT_TITHI: Record<string, string> = { Prathama: 'Padyami', Dvitiya: 'Vidiya', Tritiya: 'Tadiya', Chaturthi: 'Chavithi', Panchami: 'Panchami', Shashthi: 'Shashthi', Saptami: 'Saptami', Ashtami: 'Ashtami', Navami: 'Navami', Dashami: 'Dashami', Ekadashi: 'Ekadashi', Dvadashi: 'Dvadashi', Trayodashi: 'Trayodashi', Chaturdashi: 'Chaturdashi', Pournami: 'Pournami', Amavasya: 'Amavasya' };
 
 const fmtD = (k: string) => { const [, m, d] = k.split('-').map(Number); return `${d} ${EN_MONTH_NAMES[m - 1].slice(0, 3)}`; };
 const dim = (y: number, m: number) => new Date(Date.UTC(y, m, 0)).getUTCDate();
@@ -143,6 +114,44 @@ const html = `<!doctype html><html><head><meta charset="utf-8"><title>Southwala 
 const out = path.join(process.env.CAL_TMP ?? '/tmp', `calendar-${YEAR}.html`);
 fs.writeFileSync(out, html);
 
+
+// ---- phone edition: portrait pages, one month per page, a plain list of days in large type ----
+const mobMonths: string[] = [];
+for (let m = 1; m <= 12; m++) {
+  const rows = monthDays(YEAR, m).map((x) => {
+    const tags = x.marks.map((t) => `<span class="tag ${t.kind}">${t.label}</span>`).join('');
+    const nm = x.name && x.marks.length ? `<em>${esc(x.name)}</em>` : '';
+    return `<div class="r ${x.wd === 0 ? 'sun' : ''} ${x.marks.length ? 'sp' : ''}"><b>${x.d}</b><u>${WEEKDAYS[x.wd].slice(0, 3)}</u><span>${esc(x.tithi)} <i>${x.paksha === 'Shukla' ? 'S' : 'K'}</i><small>${esc(x.nak)}</small>${nm}</span><s>${tags}</s></div>`;
+  }).join('');
+  const [ref, skt, eng] = VERSES[m - 1];
+  mobMonths.push(`<section class="mp" style="--acc:${ACCENT[m - 1]}"><header><div class="brand">Southwala<i>.</i></div><h1>${EN_MONTH_NAMES[m - 1]} ${YEAR}</h1><p class="v"><small>Gita ${ref}</small> ${esc(eng)}</p></header>${rows}<footer>Tithi at sunrise, Hyderabad (IST). S = Shukla, K = Krishna paksha. Confirm vratam days with your priest. southwala.com</footer></section>`);
+}
+const mcss = `
+@font-face{font-family:Fraunces;src:url(${url('node_modules/@fontsource-variable/fraunces/files/fraunces-latin-wght-normal.woff2')});font-weight:100 900}
+@font-face{font-family:Inter;src:url(${url('node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')});font-weight:100 900}
+@page{size:110mm 420mm;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,sans-serif;color:#1a1a1d}
+.mp{width:110mm;height:420mm;page-break-after:always;padding:7mm 6mm 4mm;overflow:hidden;background:#fff}
+.brand{font:700 15px Fraunces,serif}.brand i{color:#d63a2a;font-style:normal}
+header{background:var(--acc);color:#fff;margin:-7mm -6mm 3mm;padding:6mm 6mm 4mm}
+header h1{font:700 29px/1.1 Fraunces,serif;margin:3mm 0 2mm}
+header .v{font:400 11.5px/1.4 Inter,sans-serif;opacity:.95}header .v small{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:9.5px;margin-right:4px}
+.r{display:grid;grid-template-columns:8mm 9mm 1fr auto;align-items:center;gap:1.4mm;padding:1.1mm 1mm;border-bottom:.25mm solid #eee;font-size:13px;line-height:1.2}
+.r b{font:700 16px Fraunces,serif;text-align:right}.r u{text-decoration:none;font-size:11px;color:#6a6a72;font-weight:600}
+.r.sun b,.r.sun u{color:#c0301f}
+.r span{font-weight:600}.r span i{font-style:normal;color:var(--acc);font-weight:700;font-size:11px}
+.r small{display:block;font-weight:400;font-size:11px;color:#6a6a72}.r em{display:block;font-style:normal;font-size:10.5px;color:var(--acc);font-weight:600}
+.r.sp{background:#fff6e6}
+.r s{text-decoration:none;display:flex;flex-direction:column;gap:.6mm;align-items:flex-end}
+.tag{font-size:9.5px;font-weight:700;border-radius:1mm;padding:.5mm 1.6mm;color:#fff;text-transform:uppercase;letter-spacing:.03em}
+.tag.ek{background:#2a5db0}.tag.pr{background:#6b3fa0}.tag.sk{background:#d9792b}.tag.am{background:#222}.tag.po{background:#c9971c}
+.mp footer{margin-top:2mm;font-size:9px;color:#6a6a72;line-height:1.35}
+`;
+const mhtml = `<!doctype html><html><head><meta charset="utf-8"><title>Southwala Panchangam Calendar ${YEAR} (phone edition)</title><style>${mcss}</style></head><body>${mobMonths.join('')}</body></html>`;
+const mout = path.join(process.env.CAL_TMP ?? '/tmp', `calendar-${YEAR}-mobile.html`);
+fs.writeFileSync(mout, mhtml);
+
 const require = createRequire('/opt/node22/lib/node_modules/');
 const { chromium } = require('playwright');
 const b = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' }).catch(() => chromium.launch());
@@ -151,5 +160,9 @@ await pg.goto('file://' + out);
 await pg.evaluate(() => document.fonts.ready);
 fs.mkdirSync('public/downloads', { recursive: true });
 await pg.pdf({ path: `public/downloads/southwala-panchangam-calendar-${YEAR}.pdf`, width: '297mm', height: '210mm', printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
+const pm = await b.newPage();
+await pm.goto('file://' + mout);
+await pm.evaluate(() => document.fonts.ready);
+await pm.pdf({ path: `public/downloads/southwala-panchangam-calendar-${YEAR}-phone.pdf`, width: '110mm', height: '420mm', printBackground: true, margin: { top: '0', right: '0', bottom: '0', left: '0' } });
 await b.close();
 console.log('done', YEAR);

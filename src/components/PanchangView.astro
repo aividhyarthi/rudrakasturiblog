@@ -1,6 +1,7 @@
 ---
 import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, todayIST, type CityId } from '../lib/panchang';
 import { RASHIS } from '../lib/astro';
+import { guidance } from '../lib/muhurta';
 const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
 const p = panchangFor(ymd, city);
 const c = CITIES[city];
@@ -10,6 +11,7 @@ const range = (r: { start: Date; end: Date }) => `${t(r.start)} to ${t(r.end)}`;
 const seg = (s: { paksha?: string; name: string; te?: string }) =>
   `${s.paksha ? s.paksha + ' ' : ''}${s.name}`;
 const segTe = (s: { paksha?: string; te?: string }) => (s.te ? `${s.paksha === 'Shukla' ? 'శుక్ల ' : s.paksha === 'Krishna' ? 'కృష్ణ ' : ''}${s.te}` : '');
+const g = guidance(p.nakshatra[0].name, p.tithi[0].name, p.weekday);
 const prev = ymdKey(addDays(ymd, -1)), next = ymdKey(addDays(ymd, 1));
 const tdy = todayIST();
 const offset = Math.round((Date.UTC(ymd.y, ymd.m - 1, ymd.d) - Date.UTC(tdy.y, tdy.m - 1, tdy.d)) / 86400000);
@@ -19,7 +21,7 @@ const dayStart = Date.UTC(ymd.y, ymd.m - 1, ymd.d) - 5.5 * 3600 * 1000;
 const pos = (d: Date) => Math.max(0, Math.min(100, ((d.getTime() - dayStart) / 86400000) * 100));
 const seg2 = (r: { start: Date; end: Date }, color: string, label: string, lane: string) => ({ left: pos(r.start), width: Math.max(0.8, pos(r.end) - pos(r.start)), color, label, lane });
 const segs = [
-  seg2(p.brahma, '#5b8cff', 'Brahma Muhurtham', 'g'), seg2(p.abhijit, '#2fa866', 'Abhijit', 'g'),
+  seg2(p.brahma, '#5b8cff', 'Brahma Muhurtham', 'g'), seg2(p.abhijit, '#2fa866', 'Abhijit', 'g'), ...p.amrit.map((r) => seg2(r, '#1f9d8f', 'Amrit Kalam', 'g')), ...p.varjyam.map((r) => seg2(r, '#b0397a', 'Varjyam', 'b')),
   seg2(p.rahu, '#d6382c', 'Rahu Kalam', 'b'), seg2(p.yama, '#f08a24', 'Yamagandam', 'b'), seg2(p.gulika, '#8a8a94', 'Gulika', 'b'),
 ];
 ---
@@ -44,13 +46,21 @@ const segs = [
   <div class="good"><b>Good timings (manchi samayam)</b>
     <span>{range(p.abhijit)}</span><small>Abhijit Muhurtham: traditionally auspicious for starting work.</small>
     <span style="display:block;margin-top:14px">{range(p.brahma)}</span><small>Brahma Muhurtham: traditionally for prayer, study and meditation.</small>
+    {p.amrit.map((r) => <><span style="display:block;margin-top:14px">{range(r)}</span><small>Amrit Kalam (Amrita Ghadiya): a nectar-like window of about 1.5 hours, good for beginning anything auspicious.</small></>)}
   </div>
   <div class="bad"><b>Timings to avoid</b>
     <span>{range(p.rahu)}</span><small>Rahu Kalam: avoid starting new work or travel.</small>
+    {p.varjyam.map((r) => <><span style="display:block;margin-top:14px;font-size:18px">Varjyam {range(r)}</span><small>Varjyam (Tyajyam): avoid starting anything important.</small></>)}
     <span style="display:block;margin-top:14px;font-size:18px">Yamagandam {range(p.yama)}</span>
     <span style="display:block;margin-top:8px;font-size:18px">Gulika {range(p.gulika)}</span>
   </div>
 </div>
+
+<div class="sect"><h2>Good for today: travel, a new job, a fresh start</h2></div>
+<div class="gfor">
+  {g.rows.map((r) => <div class={`gf ${r.v}`}><b>{r.what}</b><em>{r.v === 'good' ? 'Good' : r.v === 'avoid' ? 'Avoid' : 'Fine'}</em><small>{r.text}</small></div>)}
+</div>
+<p class="disc">{g.note} These are traditional rules of thumb from the nakshatra and tithi; for a wedding, griha pravesham or a major start, please also ask your family priest.</p>
 
 <div class="sect"><h2>The five limbs (Panchangam)</h2></div>
 <div class="limbs">

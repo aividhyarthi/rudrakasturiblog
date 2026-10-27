@@ -1,9 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import { SITE } from '../config';
+import { monthDays, VERSES } from '../lib/yearcal';
+import { EN_MONTH_NAMES } from '../lib/lunar';
+import { WEEKDAYS } from '../lib/panchang';
+const YEAR = 2027;
+const months = Array.from({ length: 12 }, (_, i) => ({ m: i + 1, name: EN_MONTH_NAMES[i], days: monthDays(YEAR, i + 1), verse: VERSES[i] }));
+const phonePdf = '/downloads/southwala-panchangam-calendar-2027-phone.pdf';
 const pdf = '/downloads/southwala-panchangam-calendar-2027.pdf';
 const faq: [string, string][] = [
-  ['Is the calendar free?', 'Yes. Download it, print it and share it with your family. It is an A4 landscape PDF, one month to a page, 14 pages in all.'],
+  ['Is the calendar free?', 'Yes. Download it, print it and share it with your family. There are two PDFs: a phone edition (one tall page per month, large type) and a print edition (A4 landscape, one month to a page). You can also read the whole year right here on this page.'],
   ['What is in it?', 'The tithi and nakshatra for every day of 2027, with Ekadashi, Pradosham, Sankashti Chaturthi, Amavasya and Pournami marked, a Bhagavad Gita verse with its meaning for each month, and a key-dates page for the year.'],
   ['For which city are the timings?', 'Tithi and nakshatra are taken at sunrise in Hyderabad, in Indian Standard Time. The tithi is the same across India. The day a vratam is kept can differ by tradition, so confirm with your family priest or temple.'],
   ['How is it calculated?', 'From the positions of the Sun and Moon using the Lahiri ayanamsa, the same method as our daily panchangam.'],
@@ -14,8 +20,23 @@ const ld = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: f
   <div class="page wide c-religion">
     <div class="kicker"><a href="/religion/">Devotional</a></div>
     <h1>Panchangam Calendar 2027</h1>
-    <p class="dek">A calendar you can print and put on the wall: the tithi and nakshatra for every day, the vratam days marked, and a verse from the Bhagavad Gita for each month.</p>
-    <p style="margin:18px 0"><a class="btn solid" href={pdf} download style="font-size:16px;padding:14px 24px">Download the PDF (1.2 MB)</a></p>
+    <p class="dek">A calendar for your phone and your wall: the tithi and nakshatra for every day, the vratam days marked, and a verse from the Bhagavad Gita for each month.</p>
+    <p style="margin:18px 0;display:flex;gap:10px;flex-wrap:wrap"><a class="btn solid" href={phonePdf} download style="font-size:16px;padding:14px 22px">Phone edition (PDF, 0.4 MB)</a><a class="btn" href={pdf} download style="font-size:16px;padding:14px 22px">Print edition (A4, 1.2 MB)</a></p>
+    <p class="sub" style="margin-top:-6px">Reading on a phone? Use the phone edition, or scroll the months below.</p>
+    <div class="cal-months" role="navigation" aria-label="Jump to a month">{months.map((x) => <a href={`#m${x.m}`}>{x.name.slice(0, 3)}</a>)}</div>
+    {months.map((x) => (
+      <section id={`m${x.m}`} class="cal-month">
+        <h2>{x.name} {YEAR}</h2>
+        <p class="cal-verse"><small>Gita {x.verse[0]}</small> {x.verse[2]}</p>
+        {x.days.map((d) => (
+          <div class={`cal-row${d.wd === 0 ? ' sun' : ''}${d.marks.length ? ' sp' : ''}`}>
+            <b>{d.d}</b><u>{WEEKDAYS[d.wd].slice(0, 3)}</u>
+            <span>{d.tithi} <i>{d.paksha === 'Shukla' ? 'S' : 'K'}</i><small>{d.nak}</small>{d.name && d.marks.length > 0 && <em>{d.name}</em>}</span>
+            <s>{d.marks.map((k) => <span class={`ctag ${k.kind}`}>{k.label}</span>)}</s>
+          </div>
+        ))}
+      </section>
+    ))}
     <img src="/downloads/calendar-2027-cover.jpg" alt="Cover of the Southwala Panchangam Calendar 2027 showing a temple at sunrise" width="1213" height="858" style="width:100%;height:auto;border-radius:10px;margin:8px 0" />
     <div class="sect"><h2>What is inside</h2></div>
     <ul>

@@ -80,3 +80,10 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Publishing: stories now carry real times (07:00, 11:00, 15:00, 19:00 IST) so they go out through the day. The workflow `.github/workflows/daily-rebuild.yml` runs hourly and only commits a new `src/data/build-stamp.txt` when a story has come due or a new India day has started (`scripts/rebuild-if-due.mjs`). Commits are made as the repository owner so Railway treats them like any other push.
 - Calendar: `npx tsx scripts/make-calendar.mts 2027` writes `public/downloads/southwala-panchangam-calendar-2027.pdf` (branded, A4 landscape). Page at `/calendar/`. Regenerate each year.
 - "Surprise me" pop-up: `src/scripts/popups.ts` and `/topics.json`. Opens by itself at most once every 12 hours.
+
+## 2026-10-27
+- Favicon tags simplified (48px ico, 96px png, svg). Google picks favicons slowly; request indexing of the home page in Search Console.
+- Home page now rotates four times a day (each story slot) and shows a "Worth reading again" block of six older stories from different series, plus a "Special days coming up" strip.
+- Panchangam pages now show Amrit Kalam (Amrita Ghadiya), Varjyam, and a "good for today" box for travel, joining a job, starting a business and griha pravesham, from the nakshatra class, tithi and weekday. Amrit/Varjyam checked against Drik Panchang and Prokerala for 26-28 Oct 2026.
+- Calendar: phone edition PDF (tall pages, big type) and the whole year as a scrolling page on /calendar/.
+- Phones: horoscope and panchangam blocks swipe as cards. Share buttons are icons.
