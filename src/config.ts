@@ -121,6 +121,7 @@ export const SERIES = [
   { id: 'which-god', label: 'Which god to pray to', blurb: 'Problem by problem: the gods, the mantras and how to pray for health, money, marriage, exams and more.' },
   { id: 'yoga-for-life', label: 'Yoga for everyday problems', blurb: 'Back pain, anxiety, sleep, breathing and an overthinking mind: gentle practices that help.' },
   { id: 'temples-for-a-reason', label: 'Temples for a reason', blurb: 'Which temple to go to for which need: Kukke Subramanya, Srikalahasti, Vaitheeswaran Koil and more.' },
+  { id: 'our-gods', label: 'Our gods, one by one', blurb: 'Ganesha, Shiva, Vishnu, Venkateswara, Vitthala, Krishna, Rama, Hanuman, Murugan, Ayyappa, the Devi and the Navagrahas: who they are, the stories, the mantras and how to worship.' },
   { id: 'karthika', label: 'Karthika masam', blurb: 'What the month means, who to worship, the lamps, the Mondays and Tripura Pournami.' },
 ] as const;
 export const seriesHref = (id: string) => `/series/${id}/`;
