@@ -123,6 +123,8 @@ export const SERIES = [
   { id: 'yoga-for-life', label: 'Yoga for everyday problems', blurb: 'Back pain, anxiety, sleep, breathing and an overthinking mind: gentle practices that help.' },
   { id: 'temples-for-a-reason', label: 'Temples for a reason', blurb: 'Which temple to go to for which need: Kukke Subramanya, Srikalahasti, Vaitheeswaran Koil and more.' },
   { id: 'our-gods', label: 'Our gods, one by one', blurb: 'Ganesha, Shiva, Vishnu, Venkateswara, Vitthala, Krishna, Rama, Hanuman, Murugan, Ayyappa, the Devi and the Navagrahas: who they are, the stories, the mantras and how to worship.' },
+  { id: 'rishis-and-texts', label: 'Rishis and ancient texts', blurb: 'Agastya, Valmiki, Vasishtha, Narada and the texts they left: Yoga Vasistha, the Avadhuta Gita and more.' },
+  { id: 'saints-of-the-south', label: 'Saints of the South', blurb: 'Annamayya, Kannappa, Purandara Dasa, Ramadasu, Karaikal Ammaiyar and the Siddhars: their lives and their songs.' },
   { id: 'karthika', label: 'Karthika masam', blurb: 'What the month means, who to worship, the lamps, the Mondays and Tripura Pournami.' },
 ] as const;
 export const seriesHref = (id: string) => `/series/${id}/`;
