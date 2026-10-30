@@ -1,7 +1,7 @@
 ---
 title: "The Jain Diwali: the night Mahavira attained liberation"
 description: "How Jains keep Diwali as the night Mahavira attained nirvana at Pavapuri, why lamps are lit for the light of knowledge, Gautama Svami's dawn, and the Jain new year."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T14:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

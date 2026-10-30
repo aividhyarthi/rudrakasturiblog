@@ -1,7 +1,7 @@
 ---
 title: "Dyuta Pratipada: the day Shiva and Parvati played dice"
 description: "The Deepavali day after Amavasya, when tradition says Shiva and Parvati played dice, why cards are played at Diwali, and what the Mahabharata's dice game warns."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-09T10:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

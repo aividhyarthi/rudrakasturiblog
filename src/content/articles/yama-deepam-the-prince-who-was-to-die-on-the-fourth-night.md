@@ -1,7 +1,7 @@
 ---
 title: "Yama Deepam: the prince who was to die on the fourth night"
 description: "The folk story behind the Yama Deepam lamp lit on Dhanatrayodashi: King Hima's son, his clever wife, a snake that listened till dawn, and how to light the lamp."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-05T10:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

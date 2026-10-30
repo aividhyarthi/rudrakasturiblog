@@ -1,7 +1,7 @@
 ---
 title: "Naraka Chaturdashi: Satyabhama, Krishna and the oil bath before dawn"
 description: "Why Deepavali begins with an oil bath in the dark: the story of Narakasura, Krishna and Satyabhama, what the texts say, what is regional tradition, and how to keep the morning."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T10:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

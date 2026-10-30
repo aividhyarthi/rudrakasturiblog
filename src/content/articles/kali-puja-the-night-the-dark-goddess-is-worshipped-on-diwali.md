@@ -1,7 +1,7 @@
 ---
 title: "Kali Puja: the night Bengal worships the dark goddess on Diwali"
 description: "On the Deepavali Amavasya night, Bengal, Odisha and Assam worship Kali, not Lakshmi. Learn the tantric roots, Dakshineswar, Ramprasad's songs and what the night looks like."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T14:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

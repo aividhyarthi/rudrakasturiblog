@@ -1,7 +1,7 @@
 ---
 title: "Bali Padyami: the king who is allowed to return once a year"
 description: "The story of Vamana and King Bali, the three steps, and the tradition that Bali returns each year. Bali Padyami, Bali Pratipada and Onam compared, with what the texts say."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-09T14:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

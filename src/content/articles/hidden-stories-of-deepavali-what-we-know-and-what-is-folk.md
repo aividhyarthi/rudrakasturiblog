@@ -1,7 +1,7 @@
 ---
 title: "Hidden stories of Deepavali: what the texts say and what is folk"
 description: "Ten stories told on Deepavali, from Rama's return to Bandi Chhor Divas, each with a plain verdict: in the texts, Puranic tradition, regional folk, or later popular belief."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-03T10:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Bandi Chhor Divas: the Guru who would not leave without 52 kings"
 description: "Why Sikhs celebrate Diwali as Bandi Chhor Divas: Guru Hargobind, Gwalior Fort, the 52 princes and the cloak with 52 tassels, and what is history and what is tradition."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T10:00:00+05:30"
 category: "devotional"
 author: "Southwala Devotional Desk"
 format: "Explainer"
