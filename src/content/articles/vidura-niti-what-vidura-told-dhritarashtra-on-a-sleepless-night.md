@@ -1,6 +1,6 @@
 ---
 title: "Vidura Niti: what Vidura told Dhritarashtra on a sleepless night"
-description: "The night the blind king could not sleep and sent for Vidura: who is wise, who is a fool, what anger and greed cost, and why the advice went unheard."
+description: "The night the blind king could not sleep and sent for Vidura: who is wise, who is a fool, what anger and greed cost, and why the king's heart did not follow."
 date: "2027-03-01T00:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"

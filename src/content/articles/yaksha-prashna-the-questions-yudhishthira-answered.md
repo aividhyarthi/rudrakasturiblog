@@ -1,6 +1,6 @@
 ---
 title: "Yaksha Prashna: the questions Yudhishthira answered at the lake"
-description: "The Yaksha Prashna from the Vana Parva: four brothers fall at a poisoned lake, and Yudhishthira answers the Yaksha's questions on life, dharma and the world's greatest wonder."
+description: "The Yaksha Prashna from the Vana Parva: four brothers fall at a poisoned lake, and Yudhishthira answers the Yaksha's questions and the greatest wonder."
 date: "2027-03-01T00:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
@@ -34,7 +34,7 @@ Finally Yudhishthira goes himself, finds his brothers lifeless, and hears the sa
 
 ## The questions
 
-The Yaksha asks many questions, sometimes called one hundred and some in popular retellings, though the number differs between editions. Here are the most quoted, in paraphrase.
+The Yaksha asks a great many questions, dozens in most editions, though the number and order differ. Here are the most quoted, in paraphrase.
 
 - What is heavier than the earth? A mother. What is higher than the sky? A father.
 - What is swifter than the wind? The mind. What is more numerous than blades of grass? Worries, or thoughts.
@@ -43,7 +43,7 @@ The Yaksha asks many questions, sometimes called one hundred and some in popular
 - Who is truly a Brahmin? Not birth or learning, Yudhishthira says, but conduct.
 - Who is happy? One who has no debt, is not away from home, and cooks a simple meal in his own house.
 
-Mark how plain these are. No Sanskrit grandeur, no theory. A grown person can hold each one in the mind during a long walk.
+Mark how plain these are, and how each answer turns outward questions into inward ones: not what is the world made of, but what holds a life together. No Sanskrit grandeur, no theory. A grown person can hold each one in the mind during a long walk.
 
 ## The greatest wonder
 
@@ -54,6 +54,8 @@ Notice that he does not say death is bad. He says our response to it is the stra
 ## The question of the path
 
 Another much-quoted answer concerns the way. The Yaksha asks what the true path is. Yudhishthira's reply is a famous one, though its words are rendered in different ways: reasoning has no firm footing, the scriptures disagree, there is no sage whose word settles everything, and the truth of dharma is hidden in a cave, so the path is the one that great people have walked. Some read it as humility, some as a defence of tradition, and others as a call to follow living example rather than argument. Which do you hear?
+
+The pause itself deserves a thought. Four strong men, each in a hurry, drank first and asked later. Yudhishthira alone was patient enough to treat an unseen voice as a person to be answered. Many readers see in this the difference between strength and steadiness: the lake does not test what you can lift, but whether you can wait, listen and tell the truth when you are thirsty and frightened.
 
 ## The choice and the reveal
 
