@@ -62,6 +62,8 @@ At the same time, serious teachers also mention its risk. A text that says "ther
 - If possible, ask a teacher. If you cannot, sit with it and let some lines stay unclear.
 - Keep your ordinary duties. The text is no excuse to neglect a family or a job.
 
+A simple test many teachers offer: after reading, are you kinder and more at ease with people, or more scornful of them? If the second, put the book down for a while. The truth it points to should loosen the grip of pride, not feed it.
+
 ## Where this comes from
 
 The Avadhuta Gita is a free-standing text attributed to Dattatreya, and is not part of the Mahabharata or the Ramayana. The Dattatreya stories of the twenty-four gurus come from the Bhagavata Purana (Skandha 11), where an avadhuta speaks to King Yadu. The two texts have a similar spirit but are different works. Editions and chapter counts differ, so use a reliable translation with a commentary.
