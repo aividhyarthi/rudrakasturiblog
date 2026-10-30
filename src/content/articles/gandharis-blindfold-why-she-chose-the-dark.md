@@ -1,7 +1,7 @@
 ---
 title: "Gandhari's blindfold: why she chose the dark"
 description: "Why Gandhari bound her eyes on marrying a blind king, what the tradition says the blindfold meant, and how it ends in her curse on Krishna after the war."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-10T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

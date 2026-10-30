@@ -1,7 +1,7 @@
 ---
 title: "Tirumular: the yogi who wrote three thousand verses"
 description: "Tirumular, the Siddha yogi behind the Tirumantiram, is said to have entered a cowherd's body to compose 3,000 verses. Read the tradition and what he says about love."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-09T13:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

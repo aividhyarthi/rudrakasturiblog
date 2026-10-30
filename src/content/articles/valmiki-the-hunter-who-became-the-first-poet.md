@@ -1,7 +1,7 @@
 ---
 title: "Valmiki: the hunter who became the first poet"
 description: "Valmiki, the adi kavi: the Ratnakara story and its later origin, the krauncha bird and the first shloka, what he says of himself, and his ashram where Sita found shelter."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-06T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

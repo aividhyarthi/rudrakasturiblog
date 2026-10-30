@@ -1,7 +1,7 @@
 ---
 title: "Ashvatthama: the warrior who was cursed to wander"
 description: "Drona's son, the night attack on the Pandava camp, the Brahmashira weapon, Krishna's curse and the jewel taken from his forehead, and what the Chiranjivi tradition says."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-01T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

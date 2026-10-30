@@ -1,7 +1,7 @@
 ---
 title: "Ravana and Shiva: the Tandava Stotram and the lifted mountain"
 description: "Ravana was a devoted worshipper of Shiva and also a proud king who tried to lift Kailasa. What tradition says about the mountain, the hymn and how both fit in one man."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-05T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

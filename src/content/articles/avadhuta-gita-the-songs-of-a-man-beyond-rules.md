@@ -1,7 +1,7 @@
 ---
 title: "Avadhuta Gita: the songs of a man beyond rules"
 description: "The Avadhuta Gita, attributed to Dattatreya, is the most uncompromising Advaita text. Who an avadhuta is, what the tone is, and how to read it without confusion."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-02T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

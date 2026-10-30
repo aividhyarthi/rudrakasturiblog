@@ -1,7 +1,7 @@
 ---
 title: "Ashtavakra Gita: the dialogue with King Janaka, in plain words"
 description: "What the Ashtavakra Gita is, how Sage Ashtavakra answers King Janaka on freedom and self-knowledge, how it differs from the Bhagavad Gita, and where to begin reading."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-31T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

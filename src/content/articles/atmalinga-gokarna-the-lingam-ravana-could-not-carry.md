@@ -1,7 +1,7 @@
 ---
 title: "The Atmalinga of Gokarna: the lingam Ravana could not carry home"
 description: "The Gokarna legend of the Atmalinga, a boy who was Ganesha, and a lingam set down on the earth. A sthala-purana story, with where tellings differ and how to visit."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-31T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

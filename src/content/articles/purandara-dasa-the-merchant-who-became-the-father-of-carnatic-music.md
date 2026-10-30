@@ -1,7 +1,7 @@
 ---
 title: "Purandara Dasa: the merchant who became the father of Carnatic music"
 description: "Purandara Dasa, the wealthy Karnataka merchant said to have given up everything for Vishnu, is called the father of Carnatic music. Learn the story and his lessons."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T08:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

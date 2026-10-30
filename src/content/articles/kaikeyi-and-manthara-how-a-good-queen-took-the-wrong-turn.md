@@ -1,7 +1,7 @@
 ---
 title: "Kaikeyi and Manthara: how a good queen took the wrong turn"
 description: "Kaikeyi loved Rama before Manthara whispered in her ear. The two boons, her regret, Bharata's refusal, and what the story says about advice that undoes a mind."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-03T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

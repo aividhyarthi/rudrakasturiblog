@@ -1,7 +1,7 @@
 ---
 title: "Yaksha Prashna: the questions Yudhishthira answered at the lake"
 description: "The Yaksha Prashna from the Vana Parva: four brothers fall at a poisoned lake, and Yudhishthira answers the Yaksha's questions and the greatest wonder."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-12T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

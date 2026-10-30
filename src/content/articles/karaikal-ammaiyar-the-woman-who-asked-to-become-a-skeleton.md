@@ -1,7 +1,7 @@
 ---
 title: "Karaikal Ammaiyar: the woman who asked Shiva for a skeleton's form"
 description: "Karaikal Ammaiyar, one of the 63 Nayanmars, asked Shiva for a skeleton's form. Read the mango story, her Tamil hymns and what her radical devotion really asks."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-06T13:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Barbarika: the boy who could have ended the war in a minute"
 description: "Barbarika, Ghatotkacha's son in folk and Skanda Purana tradition, his three arrows, Krishna's request for his head, and the Khatu Shyam temple in Rajasthan."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-05T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

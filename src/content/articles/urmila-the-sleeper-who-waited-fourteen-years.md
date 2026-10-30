@@ -1,7 +1,7 @@
 ---
 title: "Urmila: the sister who slept so Lakshmana could stay awake"
 description: "Sita's sister Urmila, wife of Lakshmana, waited fourteen years. The sleep legend from later retellings, what Valmiki says, and the poets who gave her a voice."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T21:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

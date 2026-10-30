@@ -1,7 +1,7 @@
 ---
 title: "Kannappa: the hunter who gave his eyes to Shiva"
 description: "Kannappa Nayanar of Srikalahasti, from the Periya Puranam to Dhurjati's Telugu telling: the hunter's offering, the eyes, and what the tale asks about devotion."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-04T13:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

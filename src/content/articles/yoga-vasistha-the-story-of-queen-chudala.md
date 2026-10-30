@@ -1,7 +1,7 @@
 ---
 title: "Yoga Vasistha: the story of Queen Chudala"
 description: "The Yoga Vasistha is the long Advaita text Vasishtha tells Rama. Read the story of Queen Chudala, who taught her own husband the king, and what the text is."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-09T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

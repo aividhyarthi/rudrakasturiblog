@@ -1,7 +1,7 @@
 ---
 title: "Agastya: the sage who drank the ocean and carried the South"
 description: "Who was Sage Agastya? The bowed Vindhya, the drunk ocean, Lopamudra, Tamil and Siddha tradition, and his gifts to Rama in the Ramayana, told simply."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-10-31T21:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

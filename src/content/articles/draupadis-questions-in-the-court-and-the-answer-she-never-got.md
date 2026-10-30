@@ -1,7 +1,7 @@
 ---
 title: "Draupadi's questions in the court, and the answer she never got"
 description: "In the Sabha Parva Draupadi asked whether Yudhishthira could stake her after losing himself. Read what the elders said, why Bhishma called dharma subtle, and what it asks of us."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-08T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

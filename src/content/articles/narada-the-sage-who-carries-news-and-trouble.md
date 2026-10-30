@@ -1,7 +1,7 @@
 ---
 title: "Narada: the sage who carries news and trouble"
 description: "Narada, the wandering sage with the veena: his role in the Ramayana and Bhagavata, the Bhakti Sutras attributed to him, and why his mischief always ends in dharma."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-04T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

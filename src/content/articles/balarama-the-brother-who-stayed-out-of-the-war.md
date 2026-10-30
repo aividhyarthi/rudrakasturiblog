@@ -1,7 +1,7 @@
 ---
 title: "Balarama: the brother who stayed out of the Kurukshetra war"
 description: "Why Krishna's elder brother Balarama went on pilgrimage instead of fighting at Kurukshetra, his love for Duryodhana and Bhima, and his anger at the mace duel."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-03T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

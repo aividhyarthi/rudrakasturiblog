@@ -1,7 +1,7 @@
 ---
 title: "Kanika Niti: the minister who taught Dhritarashtra to be ruthless"
 description: "Kanika Bharadvaja's cold advice to Dhritarashtra in the Adi Parva, set beside Vidura's counsel, and why the Mahabharata keeps both voices in the same book."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-10T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

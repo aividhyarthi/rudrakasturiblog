@@ -1,7 +1,7 @@
 ---
 title: "Shakuni: the man who never forgave"
 description: "Who was Shakuni of Gandhara, why the marriage of his sister Gandhari mattered, and what the Mahabharata really says about the dice, apart from the popular folk image."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-11T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Indrajit and Sulochana: the warrior and the wife who followed him"
 description: "Indrajit, Ravana's mighty son, his boon, the Nikumbhila yajna and his death at Lakshmana's hands, and the regional tradition of his wife Sulochana and Dutt's sympathetic poem."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-01T21:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

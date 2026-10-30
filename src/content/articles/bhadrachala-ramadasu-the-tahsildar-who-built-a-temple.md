@@ -1,7 +1,7 @@
 ---
-title: "Ramadasu: the tahsildar who built the Bhadrachalam temple and went to prison"
+title: "Ramadasu: the tahsildar who built the Bhadrachalam temple"
 description: "Kancherla Gopanna, called Bhadrachala Ramadasu, built the Bhadrachalam temple with state funds and spent years in Golconda fort. Read the tradition and his songs."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-02T13:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

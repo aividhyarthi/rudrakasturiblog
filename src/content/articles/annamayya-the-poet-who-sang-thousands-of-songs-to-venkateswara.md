@@ -1,7 +1,7 @@
 ---
 title: "Annamayya: the poet who sang thousands of songs to Venkateswara"
 description: "Who was Annamayya of Tallapaka, what do tradition and the Tirumala copper plates say about his songs, and what do Brahmam Okate and Muddugare Yashoda teach us?"
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-01T08:00:00+05:30"
 category: "faith"
 author: "Southwala Faith Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
 title: "Vasishtha and Vishvamitra: the quarrel that made two sages"
 description: "The old quarrel of two sages: a king, a wish-granting cow, Trishanku, Menaka, and a title won at last. What it teaches about effort, ego and Vasishtha's courtesy."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T21:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

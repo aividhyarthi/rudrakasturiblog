@@ -1,7 +1,7 @@
 ---
 title: "Rukmi: the king both sides turned away"
 description: "Rukmini's proud brother Rukmi offered his army to the Pandavas and then to Duryodhana, and both said no. The story of pride, an old grudge and a wedding that went wrong."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-11T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

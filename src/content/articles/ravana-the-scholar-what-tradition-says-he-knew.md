@@ -1,7 +1,7 @@
 ---
 title: "Ravana the scholar: what tradition says he knew"
 description: "Ravana is called learned in the Vedas, a master of the veena, and the author of many works in tradition. What Valmiki says, what later tellings add, and why learning is not character."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T13:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"

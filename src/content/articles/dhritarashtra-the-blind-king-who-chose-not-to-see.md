@@ -1,7 +1,7 @@
 ---
 title: "Dhritarashtra: the blind king who chose not to see"
 description: "Dhritarashtra's blindness, his love for Duryodhana, his questions to Sanjaya, Vidura's warnings and the iron Bhima: what the Mahabharata asks of a parent who will not look."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-07T08:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
 format: "Explainer"
