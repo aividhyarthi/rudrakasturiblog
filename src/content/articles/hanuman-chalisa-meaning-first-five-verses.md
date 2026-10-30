@@ -1,5 +1,5 @@
 ---
-title: "Hanuman puja on Tuesday: Chalisa meaning, first verses explained"
+title: "Hanuman Chalisa: what Tulsidas does before he asks for anything"
 description: "The Hanuman Chalisa by Tulsidas has forty verses. The opening doha and first four chaupais with transliteration and meaning, and how to recite it on Tuesdays."
 date: "2026-10-24T00:00:48+05:30"
 category: "devotional"

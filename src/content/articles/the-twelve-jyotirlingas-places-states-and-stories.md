@@ -1,5 +1,5 @@
 ---
-title: "The 12 Jyotirlingas: places, states and stories"
+title: "The 12 Jyotirlingas: where they are and the story of each"
 description: "All twelve Jyotirlingas of Shiva with their towns and states, a line on the story of each, and which ones lie in South India, for planning a pilgrimage with your family."
 date: "2026-10-31T09:00:00+05:30"
 category: "gods"

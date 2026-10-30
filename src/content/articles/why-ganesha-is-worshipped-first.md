@@ -1,5 +1,5 @@
 ---
-title: "Ganesha puja on Wednesday: why he is worshipped first"
+title: "Why Ganesha is worshipped first: the head, the tusk and the mouse"
 description: "Ganesha comes before every other god in every puja. The stories behind his elephant head, his broken tusk, his mouse and his love of modak."
 date: "2026-10-24T00:00:50+05:30"
 category: "gods"

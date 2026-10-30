@@ -1,5 +1,5 @@
 ---
-title: "Shukra (Venus) in the Navagrahas: comfort, love and Friday"
+title: "Shukra, Venus: comfort, love and why Friday is his day"
 description: "What Shukra, Venus, means in Vedic astrology: comfort, love, art and Friday, with white, Lakshmi, the Shukracharya story, the mantra and a free practice."
 date: "2026-11-12T09:00:00+05:30"
 category: "astrology"

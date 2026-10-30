@@ -1,5 +1,5 @@
 ---
-title: "Shanivaram: Saturday puja for Venkateswara, Shani and Hanuman"
+title: "Saturday: why Balaji, Shani and Hanuman share one day"
 description: "Saturday is Balaji's day, and the day of Shani and Hanuman. A plain guide to Saturday puja at home: the Venkateswara vratam, the oil lamp, the Sade Sati worry, and what to do."
 date: "2026-10-24T00:00:40+05:30"
 category: "devotional"

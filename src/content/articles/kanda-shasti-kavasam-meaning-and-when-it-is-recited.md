@@ -1,5 +1,5 @@
 ---
-title: "Kanda Shasti Kavasam: meaning and when it is recited"
+title: "Kanda Shasti Kavasam: Murugan's protection prayer, line by line"
 description: "What the Kanda Shasti Kavasam asks of Murugan, who composed it, when it is recited in Skanda Shashti week, and how to follow it if you do not read Tamil."
 date: "2026-11-05T17:00:00+05:30"
 category: "gods"

@@ -10,9 +10,9 @@ import { allArticles, categoryLabel, fmtDate, sectionCounts, seriesCounts, bylin
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
 import { panchangFor, fmtTime, todayIST, addDays, WEEKDAYS } from '../lib/panchang';
-import { shuffle, diversePick, slotNumber } from '../lib/rotate';
+import { shuffle, diversePick, slotNumber, dayNumber } from '../lib/rotate';
 import { niceDate, ymdKey, dayFacts } from '../lib/daily';
-import { WEEKDAY_FEATURE } from '../data/weekday';
+import { WEEKDAY_FEATURE, WEEKDAY_ROTA } from '../data/weekday';
 import { SERIES, seriesHref } from '../config';
 import { allTithis, ROUTE } from '../lib/tithi';
 import { allLunations } from '../lib/lunar';
@@ -31,11 +31,19 @@ const seed = slotNumber();
 const bySlug = new Map(all.map((a) => [a.slug, a]));
 const facts = dayFacts(ymd);
 const wk = WEEKDAY_FEATURE[facts.wd];
-const wkLead = bySlug.get(wk.lead);
-const wkMore = wk.more.map((s) => bySlug.get(s)).filter(Boolean) as typeof all;
+// The weekday's god changes form every week (a different goddess each Friday), and the story is picked from that god's articles.
+const week = Math.floor(dayNumber() / 7);
+const rota = WEEKDAY_ROTA[facts.wd];
+let rotaGod = rota[0], wkLead: (typeof all)[number] | undefined;
+for (let i = 0; i < rota.length && !wkLead; i++) {
+  const g = rota[(week + i) % rota.length];
+  const pool = all.filter((a) => g.kw.some((k) => a.slug.includes(k)));
+  if (pool.length) { rotaGod = g; wkLead = shuffle(pool, week * 7 + facts.wd)[0]; }
+}
+const wkMore: typeof all = [];
 // Lead: the day's own story (Saturday is Balaji), otherwise a rotating pick from the last day and a half.
 const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
-const lead = wkLead ?? (fresh.length ? shuffle(fresh, seed)[0] : all[0]);
+const lead = wkLead && (seed % 2 === 0 || !fresh.length) ? wkLead : fresh.length ? shuffle(fresh, seed)[0] : (wkLead ?? all[0]);
 const rest = all.filter((a) => a !== lead);
 // Today's three daily pages, with titles that say what is in them.
 const tomorrow = addDays(ymd, 1);
@@ -84,7 +92,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
     <section class="wrap lead-grid">
       <a class={`lead c-${lead.data.category}`} href={`/${lead.slug}/`}>
         <div class="imgwrap"><StoryImg slug={lead.slug} alt={lead.data.imageAlt ?? lead.data.title} eager /></div>
-        <span class="kicker">{lead === wkLead ? `${wk.name}: ${wk.gods}` : categoryLabel(lead.data.category)}</span>
+        <span class="kicker">{lead === wkLead ? `${wk.name}: ${rotaGod.god}` : categoryLabel(lead.data.category)}</span>
         <h1>{lead.data.title}</h1>
         <p>{lead.data.description}</p>
         <div class="meta">{byline(lead.data)} · {fmtDate(lead.data.date)}</div>

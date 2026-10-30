@@ -1,5 +1,5 @@
 ---
-title: "Dashavatara: the ten avatars of Vishnu explained"
+title: "The ten avatars of Vishnu: what each one came to fix"
 description: "A plain guide to the ten avatars of Vishnu, from Matsya to Kalki: each story in a few lines, what it teaches, and why different lists name different avatars."
 date: "2026-10-30T09:00:00+05:30"
 category: "gods"

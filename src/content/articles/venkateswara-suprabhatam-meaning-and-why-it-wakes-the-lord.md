@@ -1,5 +1,5 @@
 ---
-title: "Venkateswara Suprabhatam: meaning and why it wakes the lord"
+title: "Why Tirumala wakes Venkateswara with a song every dawn"
 description: "What the Venkateswara Suprabhatam is, who composed it, its four parts, the opening verse, and why devotees wake the Lord of Tirumala every dawn with song."
 date: "2026-10-31T17:00:00+05:30"
 category: "gods"

@@ -1,5 +1,5 @@
 ---
-title: "Friday Lakshmi puja (Shukravaram): mantras and how to do it"
+title: "Struggling with money? What Friday Lakshmi puja really asks of you"
 description: "Friday is Lakshmi's day. A plain guide to Friday Lakshmi puja at home: the lamp, rangoli, offerings, the Sri Suktam and Kanakadhara, and what the goddess really stands for."
 date: "2026-10-22T00:00:08+05:30"
 category: "devotional"

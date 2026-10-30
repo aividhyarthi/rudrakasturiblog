@@ -1,5 +1,5 @@
 ---
-title: "Shiva lingam: what it means and how to worship it"
+title: "What the Shiva lingam stands for, and how to worship it at home"
 description: "What the Shiva lingam stands for, the story of Lingodbhava, its parts, and a simple way to worship it at home with water, milk and bilva on Monday and Pradosham."
 date: "2026-11-05T09:00:00+05:30"
 category: "gods"

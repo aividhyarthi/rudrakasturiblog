@@ -1,5 +1,5 @@
 ---
-title: "Dakshinamurthy: Shiva as the silent teacher"
+title: "Dakshinamurthy: the Shiva who teaches without a word"
 description: "Why Shiva as Dakshinamurthy sits facing south under the banyan and teaches in silence, what Adi Shankara's hymn says, and why Thursday and the south wall belong to him."
 date: "2026-11-03T09:00:00+05:30"
 category: "gods"

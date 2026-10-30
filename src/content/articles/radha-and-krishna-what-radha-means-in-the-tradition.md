@@ -1,5 +1,5 @@
 ---
-title: "Radha and Krishna: what Radha means in the tradition"
+title: "Who is Radha? What the Bhagavata, Jayadeva and the poets say"
 description: "Who is Radha? An honest look at where she appears in the texts, from Gita Govinda to Gaudiya theology, and why devotees see her as the soul's longing for God."
 date: "2026-11-11T09:00:00+05:30"
 category: "gods"

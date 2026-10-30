@@ -1,5 +1,5 @@
 ---
-title: "Vishnu Sahasranama: meaning and how to chant it"
+title: "Vishnu Sahasranama: why a thousand names, and how to chant them"
 description: "What the Vishnu Sahasranama is, where it comes from, what a few of its thousand names mean, and how families chant it, even with imperfect pronunciation."
 date: "2026-11-04T09:00:00+05:30"
 category: "gods"

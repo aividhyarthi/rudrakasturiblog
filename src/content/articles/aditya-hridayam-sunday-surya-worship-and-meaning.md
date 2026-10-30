@@ -1,5 +1,5 @@
 ---
-title: "Sunday Surya puja (Adivaram): Aditya Hridayam and how to do it"
+title: "Rama's battlefield prayer to the Sun: Aditya Hridayam and Sunday"
 description: "Sunday is the day of Surya. A plain guide to Sunday Surya puja at home: the Aditya Hridayam Rama received before facing Ravana, the arghya, mantras and a simple routine."
 date: "2026-10-24T00:00:44+05:30"
 category: "devotional"

@@ -1,5 +1,5 @@
 ---
-title: "Ram Raksha Stotra: meaning and how to recite it"
+title: "Ram Raksha Stotra: the prayer that guards the body part by part"
 description: "What the Ram Raksha Stotra is, why it protects the body limb by limb, who is said to have composed it, and a simple way to recite it at home, with the closing Rama Rama verse."
 date: "2026-11-02T09:00:00+05:30"
 category: "gods"

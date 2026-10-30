@@ -1,7 +1,7 @@
 ---
-title: "Thaipusam and the kavadi: why devotees carry the burden"
+title: "Thaipusam: why devotees carry the kavadi to Murugan"
 description: "Why Murugan devotees carry the kavadi at Thaipusam: the vel from Parvati, the story of Idumban and Palani, kinds of kavadi, vows, and the simple milk-pot offering."
-date: "2026-11-12T17:00:00+05:30"
+date: "2027-01-14T09:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

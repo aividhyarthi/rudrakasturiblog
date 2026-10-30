@@ -1,5 +1,5 @@
 ---
-title: "Mahalakshmi Ashtakam: meaning and how to recite it"
+title: "Mahalakshmi Ashtakam: the eight verses Indra sang to Lakshmi"
 description: "The eight verses of the Mahalakshmi Ashtakam explained in plain words, with the opening line, the phalashruti, and how and when to recite it on a Friday evening."
 date: "2026-11-02T17:00:00+05:30"
 category: "gods"

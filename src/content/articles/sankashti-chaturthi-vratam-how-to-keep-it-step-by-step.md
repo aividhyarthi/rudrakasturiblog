@@ -1,5 +1,5 @@
 ---
-title: "Sankashti Chaturthi vratam: how to keep it"
+title: "Sankashti Chaturthi vratam: the fast that waits for the moon"
 description: "A practical guide to Sankashti Chaturthi: morning fast, evening Ganesha puja, moonrise darshan and arghya, how to break the fast, and Angaraki Sankashti on Tuesday."
 date: "2026-10-28T09:00:00+05:30"
 category: "gods"

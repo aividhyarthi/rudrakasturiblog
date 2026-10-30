@@ -1,5 +1,5 @@
 ---
-title: "Vitthala of Pandharpur: the god who waits on a brick"
+title: "Vitthala: the god who stands on a brick and waits for a devotee"
 description: "Who is Vitthala of Pandharpur? The story of Pundalik and the brick, the image with hands on hips, the warkari saints, and the Vittala of Karnataka, in plain words."
 date: "2026-11-01T09:00:00+05:30"
 category: "gods"

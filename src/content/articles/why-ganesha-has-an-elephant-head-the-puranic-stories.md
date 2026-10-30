@@ -1,5 +1,5 @@
 ---
-title: "Why Ganesha has an elephant head: the stories"
+title: "Why Ganesha has an elephant head: what the Puranas say"
 description: "How Ganesha got his elephant head, as told in the Shiva Purana and other versions, and what the big ears, small eyes, one tusk and mouse are said to teach."
 date: "2026-10-28T17:00:00+05:30"
 category: "gods"

@@ -1,7 +1,7 @@
 ---
-title: "Krishna Janmashtami: how to celebrate at home"
+title: "Krishna Janmashtami at home: midnight puja, tiny footprints, sweets"
 description: "A practical home guide to Krishna Janmashtami: which day to keep, the fast, little footprints, the cradle, midnight puja, offerings like seedai and murukku, and what children can do."
-date: "2026-11-09T09:00:00+05:30"
+date: "2027-08-12T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
-title: "Maha Shivaratri: how to keep the fast and the vigil"
+title: "Maha Shivaratri: how to keep the fast and stay awake the whole night"
 description: "A practical guide to Maha Shivaratri: the day fast, the four praharas of puja, bilva leaves, abhishekam, japa, the jagaran, and breaking the fast, with allowance for the unwell and elderly."
-date: "2026-11-09T17:00:00+05:30"
+date: "2027-02-22T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

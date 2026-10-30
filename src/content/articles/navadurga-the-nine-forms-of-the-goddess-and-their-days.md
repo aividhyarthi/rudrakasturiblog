@@ -1,7 +1,7 @@
 ---
-title: "Navadurga: the nine forms of the Goddess and their days"
+title: "Navadurga: the nine forms of the Goddess, one for each night"
 description: "The nine forms of Durga worshipped on the nine nights of Navaratri, each with her day, her meaning and the colours many families wear, plus the South Indian alankaram tradition."
-date: "2026-11-10T17:00:00+05:30"
+date: "2027-09-23T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,7 +1,7 @@
 ---
-title: "Why Hanuman Jayanti is kept on two dates"
+title: "Why Hanuman Jayanti falls on different dates in different states"
 description: "Why Hanuman Jayanti falls on different days in different regions: Chaitra Pournami, Vaishakha Krishna Dashami and the Margazhi Amavasya with Moola nakshatra, and how to choose for your family."
-date: "2026-11-13T09:00:00+05:30"
+date: "2027-04-12T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

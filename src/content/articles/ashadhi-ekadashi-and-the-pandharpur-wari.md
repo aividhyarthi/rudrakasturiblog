@@ -1,7 +1,7 @@
 ---
-title: "Ashadhi Ekadashi and the Pandharpur wari"
+title: "Ashadhi Ekadashi: when lakhs of people walk to Pandharpur"
 description: "The Pandharpur wari explained: the palanquins of Dnyaneshwar and Tukaram, the dindis, the abhangs, Ashadhi Ekadashi, and what the long walk means to the warkaris."
-date: "2026-11-06T09:00:00+05:30"
+date: "2027-07-08T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

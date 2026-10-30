@@ -1,7 +1,7 @@
 ---
-title: "Ganesh Chaturthi puja at home: step by step"
+title: "Ganesh Chaturthi at home: a clay idol, 21 durva and a simple puja"
 description: "A plain, practical guide to Ganesh Chaturthi puja at home: clay idol, kalasha, the 16 upachara steps, 21 durva, offerings, how long to keep him, and visarjan."
-date: "2026-11-08T09:00:00+05:30"
+date: "2027-08-26T07:00:00+05:30"
 category: "gods"
 author: "Southwala Devotional Desk"
 format: "Explainer"

@@ -1,5 +1,5 @@
 ---
-title: "Budha (Mercury) in the Navagrahas: speech and learning"
+title: "Budha, Mercury: speech, learning and Wednesday"
 description: "What Budha, Mercury, means in Vedic astrology: speech, learning and trade, his Wednesday, green colour, grain and mantra, student prayers and a free practice."
 date: "2026-11-07T09:00:00+05:30"
 category: "astrology"

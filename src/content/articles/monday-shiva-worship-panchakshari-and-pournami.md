@@ -1,5 +1,5 @@
 ---
-title: "Monday is Shiva's day (Somavaram): how to do Shiva puja at home"
+title: "What to offer Shiva on Monday, and what never to offer"
 description: "Monday is Shiva's day. A simple guide to Somavaram puja at home: abhishekam, bilva leaves, Om Namah Shivaya, what to offer, what to avoid, and the special Mondays of the year."
 date: "2026-10-24T00:00:46+05:30"
 category: "devotional"

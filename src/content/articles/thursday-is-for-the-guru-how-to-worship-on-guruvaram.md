@@ -1,5 +1,5 @@
 ---
-title: "Guruvaram: Thursday puja for Sai Baba, Raghavendra and Dattatreya"
+title: "Looking for a guru? Why Thursday is for Sai Baba and Raghavendra"
 description: "Why Thursday belongs to the teacher, and how to honour Dakshinamurthy, Dattatreya, Sai Baba and Raghavendra Swami. A simple routine, one verse and one question for you."
 date: "2026-10-24T00:00:52+05:30"
 category: "devotional"
