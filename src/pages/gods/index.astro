@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+import { GODS, godMatches } from '../../data/gods';
+import { allArticles } from '../../lib/articles';
+const all = await allArticles();
+const rows = GODS.map((g) => ({ g, n: all.filter((a) => godMatches(g, a)).length })).filter((x) => x.n >= 3);
+---
+<Base title="Hindu Gods and Goddesses: Stories, Mantras, Temples and Vows" description="One page for each god and goddess: who they are, the stories, the stotras and mantras, the temples and the vows. Ganesha, Shiva, Vishnu, Venkateswara, Krishna, Rama, Hanuman, Murugan, the Devi and more." breadcrumbs={[{ name: 'Gods', href: '/gods/' }]} rail="religion" active="religion">
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>Our gods and goddesses</h1>
+    <p class="dek">Start with a god. Each page gathers who they are, the stories, the stotras and mantras, the temples and the vows, and grows as we add more.</p>
+    <div class="three">
+      {rows.map(({ g, n }) => <a class="tile" href={`/gods/${g.id}/`} style="display:block;padding:16px;border:1px solid var(--hair);border-radius:12px"><b style="font:700 20px var(--display)">{g.name}</b> <span class="te">{g.te}</span><br /><span class="meta">{n} articles</span></a>)}
+    </div>
+  </div>
+</Base>

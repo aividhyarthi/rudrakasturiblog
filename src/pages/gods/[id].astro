@@ -1,0 +1,53 @@
+---
+import Base from '../../layouts/Base.astro';
+import Card from '../../components/Card.astro';
+import { GODS, godMatches as matches } from '../../data/gods';
+import { allArticles, byline, fmtDate } from '../../lib/articles';
+import { allFestivals } from '../../lib/festivals';
+import { WEEKDAYS } from '../../lib/panchang';
+import { EN_MONTH_NAMES } from '../../lib/lunar';
+import { SITE } from '../../config';
+export async function getStaticPaths() {
+  const all = await allArticles();
+  return GODS.filter((g) => all.filter((a) => matches(g, a)).length >= 3).map((g) => ({ params: { id: g.id }, props: { g } }));
+}
+const { g } = Astro.props as { g: (typeof GODS)[number] };
+const all = (await allArticles()).filter((a) => matches(g, a)).sort((x, y) => y.data.date.getTime() - x.data.date.getTime());
+const isStotra = (a: any) => /stotra|stotram|ashtakam|ashtaka|sahasranama|chalisa|kavasam|suprabhatam|mantra|aarti|sukta|saptashati|atharvashirsha|raksha|bhujangam|hridayam/.test(a.slug);
+const isVow = (a: any) => /vrat|vratam|puja|fast|jayanti|chaturthi|shashti|navami|ashtami|pournami|ekadashi|how-to|at-home|steps/.test(a.slug);
+const temples = all.filter((a) => ['temple', 'sacred'].includes(a.data.category));
+const rest = all.filter((a) => !temples.includes(a));
+const stotras = rest.filter(isStotra);
+const vows = rest.filter((a) => !stotras.includes(a) && isVow(a));
+const stories = rest.filter((a) => !stotras.includes(a) && !vows.includes(a));
+const fests = allFestivals().filter((f) => (g.festivals ?? []).some((id) => f.id === id)).filter((f) => f.key >= new Date().toISOString().slice(0, 10)).slice(0, 4);
+const faq: [string, string][] = [
+  [`Who is ${g.name}?`, g.line],
+  [`Which day is for ${g.name}?`, g.line.match(/(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)[^.]*\./)?.[0] ?? `See the vows and festivals on this page for the days sacred to ${g.name}.`],
+];
+const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: `${g.name} (${g.te})`, description: g.line, url: `${SITE.url}/gods/${g.id}/`, mainEntity: { '@type': 'ItemList', itemListElement: all.slice(0, 50).map((a, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/${a.slug}/`, name: a.data.title })) } };
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+const blocks = [['Stories and meanings', stories], ['Stotras and mantras', stotras], ['Vows, puja and festivals', vows], ['Temples and places', temples]] as const;
+---
+<Base title={`${g.name} (${g.te}): Stories, Mantras, Temples and Vows`} description={`${g.line} All our articles on ${g.name}: stories, stotras, temples and vows.`.slice(0, 300)} jsonLd={ld} breadcrumbs={[{ name: 'Gods', href: '/gods/' }, { name: g.name, href: `/gods/${g.id}/` }]} rail="religion" active="religion">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/gods/">Our gods</a></div>
+    <h1>{g.name} <span class="te">{g.te}</span></h1>
+    <p class="dek">{g.line}</p>
+    <div class="chips">
+      {g.mantras && <a href={`/mantras/${g.mantras}/`}>{g.name} mantras</a>}
+      <a href="/festivals/">Festival dates</a><a href="/temples/">Temples</a><a href="/calendar/">Calendar 2027</a>
+    </div>
+    {fests.length > 0 && <div class="fest-next"><b>Coming up</b>{fests.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small>{WEEKDAYS[f.weekday].slice(0, 3)}, {f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div>}
+    {blocks.filter(([, items]) => items.length > 0).map(([title, items]) => (
+      <section>
+        <div class="sect"><h2>{title}</h2></div>
+        <div class="three" style="row-gap:28px">{items.slice(0, 12).map((a) => <Card a={a} big={false} />)}</div>
+      </section>
+    ))}
+    <p class="sub" style="margin-top:22px">{all.length} articles so far. A new one is added most days. <a href="/gods/">All gods</a> · <a href="/topics/">All topics</a></p>
+    <div class="sect"><h2>Common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+  </div>
+</Base>
