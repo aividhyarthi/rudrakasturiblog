@@ -32,12 +32,12 @@ const faq: [string, string][] = [
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const dup = /-\d+-\d{4}$/.test(l.slug) || (kind === 'ekadashi' && /-\d+$/.test(l.slug));
 const wd3 = WEEKDAYS[l.weekday].slice(0, 3), mon3 = mName.slice(0, 3);
-const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise Time, Vrat${l.name.length > 20 ? '' : ' (Sankatahara)'}` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
+const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise, Vrat` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
 const altNames = kind === 'sankashti' ? ' (Sankatahara Chaturthi, Ganesh Chauth, Chavithi)' : kind === 'ekadashi' ? '' : '';
 const desc = kind === 'sankashti' ? `${l.name}${altNames} in ${mName} ${ymd.y} is on ${prettyDate}.${l.moonrise ? ` Moonrise ${t(l.moonrise)} (Hyderabad).` : ''} Tithi ${dt(l.start)} to ${dt(l.end)} (IST). How to keep the vrat.` : kind === 'ekadashi' ? `${l.name} in ${mName} ${ymd.y} is on ${prettyDate}.${l.parana ? ` Parana ${t(l.parana.from)} to ${t(l.parana.to)}.` : ''} Tithi ${dt(l.start)} to ${dt(l.end)} (IST). Vrat rules and significance.` : `${l.name} in ${mName} ${ymd.y} is on ${prettyDate}.${l.puja ? ` Puja ${t(l.puja.from)} to ${t(l.puja.to)} (Hyderabad).` : ''} Tithi ${dt(l.start)} to ${dt(l.end)} (IST).`;
 const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana.from)} to ${t(l.parana.to)}` : 'Next morning, after sunrise'] : kind === 'sankashti' ? ['Moonrise (Hyderabad)', l.moonrise ? t(l.moonrise) : ''] : ['Puja window (Hyderabad)', l.puja ? `${t(l.puja.from)} to ${t(l.puja.to)}` : ''];
 ---
-<Base rail="religion" title={title} description={desc} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: label(l), href: `/${R}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
+<Base rail="religion" title={title} description={`${l.name} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: label(l), href: `/${R}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href={`/${R}/`}>{c.title} <span class="te">{c.te}</span></a></div>
