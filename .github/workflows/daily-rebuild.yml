@@ -1,7 +1,7 @@
 name: Rebuild when a story is due (and every new day)
 on:
   schedule:
-    - cron: '20 * * * *'   # every hour; the script decides whether anything is due
+    - cron: '3,18,33,48 * * * *'   # every 15 minutes (GitHub skips some runs); the script decides whether anything is due
   workflow_dispatch:
     inputs:
       force:
