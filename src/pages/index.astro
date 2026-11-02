@@ -16,7 +16,8 @@ import { WEEKDAY_FEATURE, WEEKDAY_ROTA } from '../data/weekday';
 import { SERIES, seriesHref } from '../config';
 import { allTithis, ROUTE } from '../lib/tithi';
 import { allLunations } from '../lib/lunar';
-import { upcomingFestivals } from '../lib/festivals';
+import { upcomingFestivals, festivalsByKey } from '../lib/festivals';
+import { GODS, godMatches } from '../data/gods';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -74,7 +75,6 @@ teach.forEach((a) => shownTop.add(a.slug));
 // Series to follow: a few series each day, each showing where to start or what is new.
 const sc = await seriesCounts();
 const seriesTiles = shuffle(SERIES.filter((s) => sc[s.id]), seed + 9).slice(0, 4).map((s) => ({ s, items: all.filter((a) => a.data.series === s.id).sort((x, y) => x.data.date.getTime() - y.data.date.getTime()) }));
-const cols = CATEGORIES.filter((c) => counts.cat[c.id]).map((c, i) => ({ s: { id: c.id, label: c.label, href: catHref(c.id) }, items: shuffle(all.filter((a) => a.data.category === c.id && !shownTop.has(a.slug)), seed + 31 * (i + 1)).slice(0, 3) })).filter((x) => x.items.length);
 // Special days in the next few weeks: Ekadashi, Pradosham, Sankashti, Amavasya and Pournami, each linked to its own date page.
 const nowKey = ymdKey(ymd);
 const dayRow = (o: { key: string; observed: { y: number; m: number; d: number }; weekday: number }, label: string, href: string, cls: string) => ({ key: o.key, label, href, cls, date: `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${niceDate(o.observed).split(' ').find((w) => /^[A-Z][a-z]+$/.test(w) && !WEEKDAYS.includes(w)) ?? ''}` });
@@ -83,7 +83,20 @@ const specialDays = [
   ...(['amavasya', 'pournami'] as const).flatMap((k) => allLunations(k).filter((o) => o.key >= nowKey).slice(0, 1).map((o) => dayRow(o, o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami'), `/${k}/${o.slug}/`, 'c-religion'))),
   ...upcomingFestivals(ymd, 4).map((f) => dayRow({ key: f.key, observed: f.ymd, weekday: f.weekday }, f.name, `/festivals/${f.slug}/`, 'c-religion')),
 ].sort((a, b) => a.key.localeCompare(b.key)).slice(0, 8);
-const leftover = cols.reduce((n, c) => n + c.items.length, 0);
+// Explore by god: every god page that has at least three stories.
+const godTiles = GODS.map((g) => ({ g, n: all.filter((a) => godMatches(g, a)).length })).filter((x) => x.n >= 3);
+// Untold stories of the epics, the rishis and the saints, from the newest series.
+const untoldSeries = ['mahabharata-stories', 'ramayana-stories', 'rishis-and-texts', 'saints-of-the-south', 'goddess-stories', 'deepavali-hidden-stories'];
+let untold = diversePick(all.filter((a) => untoldSeries.includes(a.data.series ?? '') && !shownTop.has(a.slug)), 6, seed + 13);
+if (untold.length < 3) untold = [];
+untold.forEach((a) => shownTop.add(a.slug));
+// "More to read": one mixed block in place of four short columns.
+const more = diversePick(all.filter((a) => !shownTop.has(a.slug)), 8, seed + 21);
+more.forEach((a) => shownTop.add(a.slug));
+const catChips = CATEGORIES.filter((c) => counts.cat[c.id]);
+// A first set for "Keep exploring"; visitors can shuffle for more without waiting for a rebuild.
+const explore0 = diversePick(all.filter((a) => !shownTop.has(a.slug)), 6, seed + 33);
+const todayFest = festivalsByKey().get(nowKey) ?? [];
 ---
 <Base home image="/covers/home.png">
   {!lead ? (
@@ -119,7 +132,10 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
           <div class="fact"><b>Nakshatra</b><span data-local="nakshatra">{p.nakshatra[0].name}</span><small>until {t(p.nakshatra[0].endsAt)}</small></div>
           <div class="fact"><b>Rahu Kalam</b><span data-local="rahu">{t(p.rahu.start)} to {t(p.rahu.end)}</span><small data-local="name">Hyderabad</small></div>
           <div class="fact"><b>Abhijit</b><span data-local="abhijit">{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Good time to begin</small></div>
+          <div class="fact"><b>Amrit Kalam</b><span>{p.amrit.length ? p.amrit.map((r) => `${t(r.start)} to ${t(r.end)}`).join(', ') : 'None today'}</span><small>Amrita Ghadiya, good to begin anything</small></div>
+          <div class="fact"><b>Varjyam</b><span>{p.varjyam.length ? p.varjyam.map((r) => `${t(r.start)} to ${t(r.end)}`).join(', ') : 'None today'}</span><small>Better to avoid new starts</small></div>
         </div>
+        {todayFest.length > 0 && <div class="fest-today">{todayFest.map((f) => <a href={`/festivals/${f.slug}/`}><b>Today: {f.name}</b><span>{f.alt ?? f.god}</span></a>)}</div>}
         <div class="chips">
           <a class="btn solid" href="/panchangam/">Today's panchangam</a>
           <a class="btn" href="/daily-panchangam/">Daily article</a>
@@ -140,6 +156,7 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
         <span class="kicker">Astrology</span>
         <h2>Rasi phalalu for every rashi</h2>
         <p class="lede">Daily, weekly and monthly horoscopes for all twelve rashis, calculated from the day's planetary positions using the classical Vedic transit rules.</p>
+        <p class="lede" style="margin-top:6px"><b>Today, {WEEKDAYS[facts.wd]}:</b> Moon in {facts.moonSign.skt}. A good day for {names(todayRank)}; go slowly if you are {todayRank[11].r.skt}.</p>
       </div>
       <div class="sign-tiles">
         {signs.map(({ r, d }) => (
@@ -150,10 +167,24 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
     </div>
   </section>
 
+  {godTiles.length > 0 && (
+    <section class="wrap" style="padding-top:56px">
+      <div class="sect"><h2>Explore by god</h2><a href="/gods/">All gods</a></div>
+      <div class="godgrid">{godTiles.map(({ g, n }) => <a href={`/gods/${g.id}/`}><b>{g.name}</b><span class="te">{g.te}</span><small>{n} stories</small></a>)}</div>
+    </section>
+  )}
+
   {grid.length > 0 && (
     <section class="wrap" style="padding-top:56px;padding-bottom:56px">
       <div class="sect"><h2>Worth reading again</h2></div>
       <div class="three" style="row-gap:28px">{grid.map((a) => <Card a={a} />)}</div>
+    </section>
+  )}
+
+  {untold.length > 0 && (
+    <section class="wrap" style="padding-bottom:56px">
+      <div class="sect"><h2>Untold stories of the epics, the rishis and the saints</h2><a href="/series/">All series</a></div>
+      <div class="three" style="row-gap:28px">{untold.map((a) => <Card a={a} big={false} />)}</div>
     </section>
   )}
 
@@ -165,23 +196,24 @@ const leftover = cols.reduce((n, c) => n + c.items.length, 0);
   )}
   {seriesTiles.length > 0 && (
     <section class="wrap" style="padding-bottom:56px">
-      <div class="sect"><h2>Series to follow</h2><a href="/topics/">All topics</a></div>
+      <div class="sect"><h2>Series to follow</h2><a href="/series/">All series</a> <a href="/topics/">All topics</a></div>
       <div class="tiles" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px">{seriesTiles.map(({ s, items }) => (
         <a class="tile" href={seriesHref(s.id)}><h3>{s.label}</h3><div class="meta">{s.blurb}</div><div class="meta" style="margin-top:8px">Latest: <b>{items[items.length - 1].data.title}</b> ({items.length} {items.length === 1 ? 'article' : 'articles'})</div></a>
       ))}</div>
     </section>
   )}
 
-  {leftover >= 2 && (
-    <section class="wrap" style="padding-top:56px">
-      <div class="three" style={`grid-template-columns:repeat(${Math.min(cols.length, 3)},1fr)`}>
-        {cols.map(({ s, items }) => (
-          <div class={`c-${s.id}`}>
-            <div class="sect"><h2>{s.label}</h2><a href={s.href}>More</a></div>
-            {items.map((a) => <Row a={a} />)}
-          </div>
-        ))}
-      </div>
+  <section class="wrap" style="padding-bottom:56px">
+    <div class="sect"><h2>Keep exploring</h2><button type="button" class="btn" data-shuffle>Show me others</button></div>
+    <div class="ex-grid" data-explore>{explore0.map((a) => <a href={`/${a.slug}/`}><small>{categoryLabel(a.data.category)}</small><span>{a.data.title}</span></a>)}</div>
+  </section>
+
+  {more.length > 0 && (
+    <section class="wrap" style="padding-bottom:56px">
+      <div class="sect"><h2>More to read</h2><a href="/topics/">All topics</a></div>
+      <div class="two-col">{more.map((a) => <Row a={a} />)}</div>
+      <div class="chips" style="margin-top:18px">{catChips.map((c) => <a href={catHref(c.id)}>{c.label}</a>)}</div>
     </section>
   )}
+  <script>import '../scripts/explore';</script>
 </Base>

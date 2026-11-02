@@ -430,3 +430,14 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .fest-next{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 4px}.fest-next>b{font:700 11px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-right:4px}
 .fest-next a{border:1px solid var(--hair);border-radius:99px;padding:6px 12px;font:600 13.5px var(--sans);text-decoration:none!important;color:var(--ink)}.fest-next a small{font-weight:400;color:var(--muted);margin-left:6px}
 .answer{font-size:17px;line-height:1.5;margin:8px 0 6px}.answer.te{font-size:15px;color:var(--ink2)}
+
+/* Home page: explore by god, keep exploring, more to read */
+.godgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.godgrid a{display:block;border:1px solid var(--hair);border-radius:12px;padding:14px;text-decoration:none!important;color:var(--ink);background:#fff}
+.godgrid a:hover{border-color:var(--ink)}.godgrid b{display:block;font:700 18px var(--display)}.godgrid .te{display:block;font-size:14px;color:var(--ink2)}.godgrid small{display:block;margin-top:4px;color:var(--muted);font-size:12.5px}
+.ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ex-grid a{display:block;border:1px solid var(--hair);border-radius:12px;padding:14px 16px;text-decoration:none!important;color:var(--ink)}
+.ex-grid a:hover{border-color:var(--ink)}.ex-grid small{display:block;font:700 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:#b4530a;margin-bottom:4px}.ex-grid span{font:600 17px/1.3 var(--display)}
+.two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px}
+@media(max-width:900px){.ex-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
+@media(max-width:560px){.ex-grid{grid-template-columns:1fr}}
