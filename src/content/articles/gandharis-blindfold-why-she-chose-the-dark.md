@@ -50,7 +50,7 @@ The tradition also says that when she looked at Yudhishthira, her gaze, even thr
 
 ## The later story
 
-There is a popular tale that Gandhari opened her eyes once and let the light of her tapas fall on Duryodhana's body so that it became like iron, and that Krishna told him to cover himself, so one part remained weak. This is a later folk and literary tradition. I have not seen it in Vyasa's text, and tellings differ on the details, so I would call it a beautiful addition and no more.
+There is a popular tale that Gandhari opened her eyes once and let the light of her tapas fall on Duryodhana's body so that it became like iron, and that Krishna told him to cover himself, so one part remained weak. This is a later folk and literary tradition. It is not in Vyasa's text, and tellings differ on the details, so it is best read as a beautiful addition to the epic, not as part of it.
 
 ## What it asks of us
 

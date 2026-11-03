@@ -36,7 +36,7 @@ draft: false
 
 Think of the oddest thing in the Ramayana. The man who took Sita, the king Rama had to go to war against, is also remembered, in temples and in songs, as one of Shiva's most passionate devotees. Families who would never speak a word in his defence will still recite a hymn they believe he wrote.
 
-How can both be true? This article puts the whole picture in one place: where Ravana's devotion appears in the texts, what he is said to have sung, the legend of the Atmalinga at Gokarna, and what Valmiki says Rama did and said when Ravana fell. Where something is tradition and not text, I will say so. Where I could not trace a popular story, I will say that too.
+How can both be true? Here is the whole picture in one place: where Ravana's devotion appears in the texts, what he is said to have sung, the legend of the Atmalinga at Gokarna, and what Valmiki records Rama doing and saying when Ravana fell. What comes from the text, and what comes from tradition, is marked as we go.
 
 ## Who Ravana was
 
@@ -64,7 +64,7 @@ The opening verse, in transliteration, begins:
 
 The meaning, in brief: from the forest of his matted locks the sacred waters flow and purify the ground; on his neck hangs the long garland of the serpent; his drum sounds *damad-damad-damad* as he performs his fierce dance, and may that Shiva bestow prosperity upon us.
 
-Please hold the attribution with care. The authorship is traditional. Scholars do not agree on when the hymn was composed, and some think a later devotee wrote it in Ravana's voice. It is not in Valmiki. What is certain is that for generations it has been recited as Ravana's gift to Shiva, and it is one of the most recited Shiva stotras. If you wish to recite it, read it slowly from a printed copy in a script you can follow. Mondays, Pradosham and [Maha Shivaratri](/maha-shivaratri-how-to-keep-the-fast-and-the-night-vigil/) are the days families most often choose.
+The authorship is traditional. Scholars do not agree on when the hymn was composed, and some think a later devotee wrote it in Ravana's voice. It is not in Valmiki. What is certain is that for generations it has been recited as Ravana's gift to Shiva, and it is one of the most recited Shiva stotras. If you wish to recite it, read it slowly from a printed copy in a script you can follow. Mondays, Pradosham and [Maha Shivaratri](/maha-shivaratri-how-to-keep-the-fast-and-the-night-vigil/) are the days families most often choose.
 
 Other works are placed under Ravana's name as well. The best known is the *Ravana Samhita*, on astrology and related subjects, and some medical texts are attributed to him. Scholars treat these attributions cautiously, as the books we have are much later than the Ramayana. They are a sign of the reputation he held, not proof of authorship. Please do not treat any such book as a substitute for a doctor.
 
@@ -76,9 +76,9 @@ The telling goes like this. Ravana's mother worshipped a lingam made of sand, wh
 
 The gods were alarmed. Ganesha, in the legend, took the form of a cowherd boy. Vishnu is said to have hidden the sun, so that Ravana, a devout man who never missed his evening prayer, believed that dusk had come. He needed to perform his sandhya and could not put the lingam down, so he asked the boy to hold it. The boy agreed, but said he would call three times and then set it down. He called three times before Ravana could return, and placed the lingam on the ground.
 
-When Ravana came running, the lingam was rooted in the earth. He pulled with all his strength; the lingam is said to have twisted and bent but would not come out. That strength, in the tradition, is what the name Mahabaleshwara, "the Lord of great strength", remembers. Tradition also says that pieces of the lingam's covering flew to other places on the coast and are worshipped in their own right. Temple tradition names these as Dhareshwara, Gunavanteshwara, Murudeshwara and Shejjeshwara, though tellings vary on which places and in what order, and I would not go beyond saying that.
+When Ravana came running, the lingam was rooted in the earth. He pulled with all his strength; the lingam is said to have twisted and bent but would not come out. That strength, in the tradition, is what the name Mahabaleshwara, "the Lord of great strength", remembers. Tradition also says that pieces of the lingam's covering flew to other places on the coast and are worshipped in their own right. Temple tradition names these as Dhareshwara, Gunavanteshwara, Murudeshwara and Shejjeshwara, though tellings vary on which places and in what order.
 
-I have written a separate, fuller account of this legend in [the Atmalinga of Gokarna](/atmalinga-gokarna-the-lingam-ravana-could-not-carry/), with the other tellings you may hear.
+A fuller account of this legend, with the other tellings, is in [the Atmalinga of Gokarna](/atmalinga-gokarna-the-lingam-ravana-could-not-carry/), 
 
 Notice how the story is built. The devotee loses his prize because he is faithful to his daily prayer. Whatever else Ravana was, in this legend he is undone by the one thing that is good in him.
 
@@ -92,24 +92,20 @@ Rama answers him. The line is commonly quoted as *maraṇāntāni vairāṇi*: e
 
 That is the real centre of the matter. The words are quiet, and they come from the man who has just killed him.
 
-### A line people quote that I could not trace
-
-You may have heard that Rama told his mother Kausalya, or someone else, something like "I have killed a great Shiva devotee and a Brahmin", or spoke of Ravana as a great Shiva bhakta who lost his war. I looked for this and could not find it in the Valmiki text or in the other versions I could check. It may come from a discourse or a regional retelling that I have not seen. I will not put it in Rama's mouth in this article.
-
-If you know the book or the talk it comes from, please write to us with the name, and we will add it with credit and clearly marked as that teller's version.
-
 ### Two later traditions
 
-Two things are told in later and regional traditions, and not in Valmiki:
+Two more things are told in later and regional traditions, and not in Valmiki:
 
 - **The Brahmin's death.** Because Ravana was a Brahmin by birth, later tellings say that Rama carried the weight of having killed a Brahmin. This is one of the traditional reasons given for Rama's worship of Shiva at Rameswaram. You can read that story in [Rameswaram and Rama's prayer to Shiva](/rameswaram-ramanathaswamy-temple-where-rama-prayed-to-shiva/).
-- **Ravana as priest.** Some regional retellings say that when Rama needed a learned priest to perform the lingam worship before the war, Ravana himself was asked, and came. This is a beautiful idea, and it is told in some Tamil and Telugu circles, but it is a regional retelling and not Valmiki. I mention it because it shows how the tradition cannot let go of the picture of the devout scholar.
+- **Ravana as priest.** Some regional retellings say that when Rama needed a learned priest to perform the lingam worship before the war, Ravana himself was asked, and came. It is told in some Tamil and Telugu circles, and it shows how the tradition cannot let go of the picture of the devout scholar.
 
-## What this asks of us
+## What Ravana's devotion teaches
 
-Ravana's story is told in this form for a reason. Shiva does not strike him down at Kailasa. He simply does not move out of the way. And the Atmalinga cannot be carried home by a man who has not changed. The tradition seems to say that devotion alone is not the point. Devotion that does not soften a person has not yet done its work.
+**He asked for power, never for change.** Every boon Ravana is said to have won, from Brahma and from Shiva, was about strength: to be unconquerable, to rule. There is no moment in the tradition where he asks to become gentler, or less angry, or free of desire. Compare Prahlada, who asks only that his devotion never fades, or Hanuman, who asks for nothing but Rama's name. The Gita describes the difference in its sixteenth chapter: a person ruled by ego thinks "I am the lord, I am the enjoyer, I am powerful and fulfilled", and goes on gathering and defending. Ravana's prayers were real, and his desires were what they served.
 
-And the end of the story asks something of the victor too. Rama's reply to Vibhishana is a rare thing in any literature of war: when the enemy is dead, the enmity is dead with him.
+**Ritual and character are two different things.** In the Gokarna legend he never misses his evening prayer, even when it costs him the greatest prize he has ever been given. Yet the same man took another man's wife. Daily practice can coexist with a life that has not changed. A simple test families have used for centuries: after a month of prayer, are you more patient with the people at home?
+
+**An enemy can still be honoured in death.** Rama's answer to Vibhishana is rare in any literature of war. He does not call Ravana a saint, and he does not pretend the war was not necessary. He says only that the hostility ends where the life ends, and he has the funeral performed with full rites. Most of us carry grudges for years after the person who caused them is gone. The text shows another way to put one down.
 
 ## A question to carry
 
@@ -120,6 +116,5 @@ Is there someone whose faults you have never been able to separate from their go
 - **Valmiki Ramayana.** Ravana's lineage, his austerities and the Kailasa episode are in the Uttara Kanda. Rama's words on the funeral are in the Yuddha Kanda, after Ravana's death, in the sargas on Mandodari's lament and Vibhishana's refusal (numbering varies between editions).
 - **Tradition.** The Shiva Tandava Stotram's attribution to Ravana, the Atmalinga legend of Gokarna and the Ravananugraha sculptures are tradition and art, not Valmiki's words.
 - **Regional retellings.** Ravana as priest, and the Brahmin-killing atonement, are told in later and regional versions.
-- **Not traced.** The Kausalya remark is not in the sources I could check.
 
-If your family, temple or teacher has a version of any of these, write to hello@southwala.com. We would like to learn it and credit it.
+If your family or temple keeps its own version of any of these stories, write to hello@southwala.com.

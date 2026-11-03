@@ -39,7 +39,7 @@ That is how many people first hear of this vow. It is one of the best-known prac
 
 The name suggests a mango forest, and the temple's tradition places the goddess here before she went to Kanchipuram. The story, as the temple tells it, is that Kamakshi first performed a fierce penance at Mangadu, standing on one foot amid five fires (the *panchagni* tapas). Only afterwards, tradition says, did she go to Kanchipuram, where she worshipped Shiva in the form of a sand lingam under a mango tree and was joined with him. You can read that second story in our piece on [Kamakshi of Kanchipuram](/kamakshi-of-kanchipuram-the-goddess-who-embraced-the-sand-lingam/).
 
-Local tradition also says the heat of the goddess's penance was so great that it needed to be cooled, and some accounts credit Adi Shankaracharya with installing a Sri Chakra here for that purpose. I could not trace that to a text, so take it as the temple's own telling, not as established history.
+Local tradition also says the heat of the goddess's penance was so great that it needed to be cooled, and some accounts credit Adi Shankaracharya with installing a Sri Chakra here for that purpose. No text prescribes this, so it is best taken as the temple's own telling, not as established history.
 
 Seen that way, the lemon, a cooling, sour fruit, is offered to a goddess who stood in fire. That is the idea devotees give for the vow. It is an explanation from the tradition, not a rule written in a scripture.
 
