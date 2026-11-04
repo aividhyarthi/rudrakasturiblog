@@ -32,3 +32,6 @@ export function diversePick<T extends A>(arts: T[], n: number, seed: number): T[
   }
   return out;
 }
+
+/** Pages about one particular date or year (for example a Sankashti of October 2026) stop being useful once the date has passed, so they are not featured as leads. */
+export const isEvergreen = (slug: string) => !/(^|-)((january|february|march|april|may|june|july|august|september|october|november|december)-)?20\d\d(-|$)/.test(slug);

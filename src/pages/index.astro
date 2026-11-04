@@ -10,7 +10,7 @@ import { allArticles, categoryLabel, fmtDate, sectionCounts, seriesCounts, bylin
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
 import { panchangFor, fmtTime, todayIST, addDays, WEEKDAYS } from '../lib/panchang';
-import { shuffle, diversePick, slotNumber, dayNumber } from '../lib/rotate';
+import { shuffle, diversePick, slotNumber, dayNumber, isEvergreen } from '../lib/rotate';
 import { niceDate, ymdKey, dayFacts } from '../lib/daily';
 import { WEEKDAY_FEATURE, WEEKDAY_ROTA } from '../data/weekday';
 import { SERIES, seriesHref } from '../config';
@@ -38,7 +38,7 @@ const rota = WEEKDAY_ROTA[facts.wd];
 let rotaGod = rota[0], wkLead: (typeof all)[number] | undefined;
 for (let i = 0; i < rota.length && !wkLead; i++) {
   const g = rota[(week + i) % rota.length];
-  const pool = all.filter((a) => g.kw.some((k) => a.slug.includes(k)));
+  const pool = all.filter((a) => isEvergreen(a.slug) && g.kw.some((k) => a.slug.includes(k)));
   if (pool.length) { rotaGod = g; wkLead = shuffle(pool, week * 7 + facts.wd)[0]; }
 }
 const wkMore: typeof all = [];

@@ -4,6 +4,7 @@ import Card from '../../components/Card.astro';
 import { GODS, godMatches as matches } from '../../data/gods';
 import { allArticles, byline, fmtDate } from '../../lib/articles';
 import { allFestivals } from '../../lib/festivals';
+import { isEvergreen } from '../../lib/rotate';
 import { WEEKDAYS } from '../../lib/panchang';
 import { EN_MONTH_NAMES } from '../../lib/lunar';
 import { SITE } from '../../config';
@@ -12,7 +13,7 @@ export async function getStaticPaths() {
   return GODS.filter((g) => all.filter((a) => matches(g, a)).length >= 3).map((g) => ({ params: { id: g.id }, props: { g } }));
 }
 const { g } = Astro.props as { g: (typeof GODS)[number] };
-const all = (await allArticles()).filter((a) => matches(g, a)).sort((x, y) => y.data.date.getTime() - x.data.date.getTime());
+const all = (await allArticles()).filter((a) => matches(g, a) && isEvergreen(a.slug)).sort((x, y) => y.data.date.getTime() - x.data.date.getTime());
 const isStotra = (a: any) => /stotra|stotram|ashtakam|ashtaka|sahasranama|chalisa|kavasam|suprabhatam|mantra|aarti|sukta|saptashati|atharvashirsha|raksha|bhujangam|hridayam/.test(a.slug);
 const isVow = (a: any) => /vrat|vratam|puja|fast|jayanti|chaturthi|shashti|navami|ashtami|pournami|ekadashi|how-to|at-home|steps/.test(a.slug);
 const temples = all.filter((a) => ['temple', 'sacred'].includes(a.data.category));
