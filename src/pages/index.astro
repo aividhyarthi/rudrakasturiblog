@@ -78,11 +78,13 @@ const seriesTiles = shuffle(SERIES.filter((s) => sc[s.id]), seed + 9).slice(0, 4
 // Special days in the next few weeks: Ekadashi, Pradosham, Sankashti, Amavasya and Pournami, each linked to its own date page.
 const nowKey = ymdKey(ymd);
 const dayRow = (o: { key: string; observed: { y: number; m: number; d: number }; weekday: number }, label: string, href: string, cls: string) => ({ key: o.key, label, href, cls, date: `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${niceDate(o.observed).split(' ').find((w) => /^[A-Z][a-z]+$/.test(w) && !WEEKDAYS.includes(w)) ?? ''}` });
-const specialDays = [
-  ...(['ekadashi', 'sankashti', 'pradosham'] as const).flatMap((k) => allTithis(k).filter((o) => o.key >= nowKey).slice(0, 2).map((o) => dayRow(o, o.name, `/${ROUTE[k]}/${o.slug}/`, 'c-religion'))),
-  ...(['amavasya', 'pournami'] as const).flatMap((k) => allLunations(k).filter((o) => o.key >= nowKey).slice(0, 1).map((o) => dayRow(o, o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami'), `/${k}/${o.slug}/`, 'c-religion'))),
-  ...upcomingFestivals(ymd, 4).map((f) => dayRow({ key: f.key, observed: f.ymd, weekday: f.weekday }, f.name, `/festivals/${f.slug}/`, 'c-religion')),
-].sort((a, b) => a.key.localeCompare(b.key)).slice(0, 8);
+// The next date of every kind is always shown (Ekadashi, Sankashti, Pradosham, Amavasya, Pournami), then the next festivals fill the strip.
+const nextOf = [
+  ...(['ekadashi', 'sankashti', 'pradosham'] as const).map((k) => { const o = allTithis(k).find((x) => x.key >= nowKey); return o ? dayRow(o, o.name, `/${ROUTE[k]}/${o.slug}/`, 'c-religion') : null; }),
+  ...(['amavasya', 'pournami'] as const).map((k) => { const o = allLunations(k).find((x) => x.key >= nowKey); return o ? dayRow(o, o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami'), `/${k}/${o.slug}/`, 'c-religion') : null; }),
+].filter(Boolean) as ReturnType<typeof dayRow>[];
+const festRows = upcomingFestivals(ymd, 6).map((f) => dayRow({ key: f.key, observed: f.ymd, weekday: f.weekday }, f.name, `/festivals/${f.slug}/`, 'c-religion')).filter((f) => !nextOf.some((n) => n.href === f.href)).slice(0, 4);
+const specialDays = [...nextOf, ...festRows].sort((a, b) => a.key.localeCompare(b.key));
 // Explore by god: every god page that has at least three stories.
 const godTiles = GODS.map((g) => ({ g, n: all.filter((a) => godMatches(g, a)).length })).filter((x) => x.n >= 3);
 // Untold stories of the epics, the rishis and the saints, from the newest series.

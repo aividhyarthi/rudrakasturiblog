@@ -2,6 +2,10 @@ name: Rebuild when a story is due (and every new day)
 on:
   schedule:
     - cron: '3,18,33,48 * * * *'   # every 15 minutes (GitHub skips some runs); the script decides whether anything is due
+  push:
+    branches: [claude/beautiful-newton-lnqky5]
+    paths-ignore:
+      - 'src/data/build-stamp.txt'   # the stamp commit made below must not trigger another run
   workflow_dispatch:
     inputs:
       force:
@@ -22,7 +26,8 @@ jobs:
         id: check
         run: |
           node scripts/rebuild-if-due.mjs | tee /tmp/due.txt
-          if [ "${{ github.event.inputs.force }}" = "true" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else grep '^due=' /tmp/due.txt >> "$GITHUB_OUTPUT"; fi
+          # A push always rebuilds, so changes made by anyone other than the owner account go live straight away.
+          if [ "${{ github.event.inputs.force }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else grep '^due=' /tmp/due.txt >> "$GITHUB_OUTPUT"; fi
       - name: Touch the build stamp so the site rebuilds
         if: steps.check.outputs.due == 'true'
         run: |
