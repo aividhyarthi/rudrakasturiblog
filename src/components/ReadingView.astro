@@ -18,10 +18,10 @@ const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const bandStars: Record<string, number> = { challenging: 2, mixed: 3, good: 4, excellent: 5 };
 const label = { daily: 'Today', weekly: 'This week', monthly: 'This month', tomorrow: 'Tomorrow' }[span];
 const titles = {
-  daily: `${r.skt} Rasi Phalalu Today (${r.te} నేటి రాశి ఫలాలు), ${start.d} ${M[start.m - 1].slice(0, 3)} ${start.y}`,
-  weekly: `${r.skt} Rasi Weekly Horoscope (${r.te} వారఫలాలు), ${today.d}-${addDays(today, 6).d} ${M[addDays(today, 6).m - 1].slice(0, 3)} ${today.y}`,
-  monthly: `${r.skt} Rasi Monthly Horoscope (${r.te} మాస ఫలాలు), ${M[today.m - 1].slice(0, 3)} ${today.y}`,
-  tomorrow: `${r.skt} Rasi Phalalu Tomorrow (${r.te} రేపటి రాశి ఫలాలు), ${start.d} ${M[start.m - 1].slice(0, 3)} ${start.y}`,
+  daily: `${r.skt} Rasi Phalalu Today (${r.en}): ${fd(today)}`,
+  weekly: `${r.skt} Rasi Weekly Horoscope (${r.en}), ${today.d}-${addDays(today, 6).d} ${M[addDays(today, 6).m - 1].slice(0, 3)} ${today.y}`,
+  monthly: `${r.skt} Rasi Monthly Horoscope (${r.en}), ${M[today.m - 1].slice(0, 3)} ${today.y}`,
+  tomorrow: `${r.skt} Rasi Tomorrow Horoscope (${r.en}): ${start.d} ${M[start.m - 1].slice(0, 3)} ${start.y}`,
 };
 const TE_M = ['జనవరి', 'ఫిబ్రవరి', 'మార్చి', 'ఏప్రిల్', 'మే', 'జూన్', 'జూలై', 'ఆగస్టు', 'సెప్టెంబర్', 'అక్టోబర్', 'నవంబర్', 'డిసెంబర్'];
 const TE_RATE = ['', 'ఓర్పు అవసరం', 'జాగ్రత్తగా ఉండాలి', 'మిశ్రమ ఫలితాలు', 'మంచి రోజు', 'అద్భుతమైన రోజు'];
