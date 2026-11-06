@@ -9,10 +9,10 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 /** "Sat 7 Nov 2026" */
 export const shortDate = (x: Ymd) => `${WEEKDAYS[new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay()].slice(0, 3)} ${x.d} ${MON[x.m - 1]} ${x.y}`;
 
-/** "Good for Simha and Kanya, Go Slowly Mesha" for a day, a week or a month */
+/** "Simha and Kanya Good, Mesha Not Good" for a day, a week or a month */
 export function rashiLine(x: Ymd, span: 'daily' | 'weekly' | 'monthly' = 'daily') {
   const rank = RASHIS.map((r, i) => ({ r, s: reading(i, x, span).rating })).sort((a, b) => b.s - a.s);
-  return `Good for ${rank[0].r.skt} and ${rank[1].r.skt}, Go Slowly ${rank[RASHIS.length - 1].r.skt}`;
+  return `${rank[0].r.skt} and ${rank[1].r.skt} Good, ${rank[RASHIS.length - 1].r.skt} Not Good`;
 }
 
 /** "Krishna Chaturdashi, Swati, Rahu Kalam 9:00 AM to 10:30 AM" */
