@@ -10,11 +10,13 @@ const o = dayOverall({ tithi: p.tithi, nakshatra: p.nakshatra, moonSign: p.moonS
 const pretty = `${WEEKDAYS[p.weekday]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const readings = RASHIS.map((r, i) => ({ r, d: reading(i, ymd, 'daily') }));
+import { shortDate, rashiLine } from '../../lib/headlines';
+const headline = `Horoscope Today, ${shortDate(ymd)}: ${rashiLine(ymd)}`;
 ---
-<Base rail="astrology" title="Rasi Phalalu Today: Daily, Weekly, Monthly Horoscope for Every Rashi" description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
+<Base rail="astrology" title={headline} description="Today's rasi phalalu for all twelve rashis, plus weekly and monthly horoscopes, worked out from the day's real planetary positions." active="astrology" breadcrumbs={[{ name: 'Rasi Phalalu', href: '/rasi-phalalu/' }]} image="/covers/rasi-phalalu.png">
   <div class="page wide c-astrology">
     <div class="kicker">Rasi Phalalu</div>
-    <h1>Today's rasi phalalu</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin:0 0 6px">{pretty}</p>
     <p class="sub" style="margin:0 0 10px"><a href={`/daily-horoscope/${ymdKey(ymd)}/`} style="text-decoration:underline"><b>Read today's full horoscope article for all 12 rashis</b></a> &middot; <a href="/daily-panchangam/" style="text-decoration:underline">Daily panchangam</a></p>
     <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" />

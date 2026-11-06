@@ -14,12 +14,14 @@ const faq = [
   ['Why do timings differ between cities?', 'Sunrise and sunset change with location, and every timing in the panchangam is measured from them. Cities a few hundred kilometres apart differ by several minutes.'],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { shortDate, panchLine } from '../../lib/headlines';
+const headline = `Panchangam Today, ${shortDate(ymd)}: ${panchLine(ymd)}`;
 ---
-<Base rail="religion" railNoToday title="Today's Panchangam: Rahu Kalam, Tithi, Nakshatra" description="Today's panchangam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi: sunrise, sunset, tithi, nakshatra, Rahu Kalam and good timings." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }]} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday title={headline} description="Today's panchangam for Hyderabad, Visakhapatnam, Vijayawada, Tirupati, Bengaluru, Chennai and Kochi: sunrise, sunset, tithi, nakshatra, Rahu Kalam and good timings." active="religion" breadcrumbs={[{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }]} image="/covers/panchangam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page" style="max-width:900px">
     <div class="kicker"><a href="/religion/">Religion</a></div>
-    <h1>Today's Panchangam</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin-top:0">{pretty}</p>
     <Hero name="panchangam" alt="A sun, a lotus of five petals and a crescent moon above a palm-leaf manuscript" ratio="16/5" />
     <LocalCard />

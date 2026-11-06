@@ -20,11 +20,15 @@ const ymd = parseKey(date);
 const c = CITIES[city];
 const pretty = `${WEEKDAYS[new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
 const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }, { name: c.name, href: `/panchangam/${city}/` }, { name: pretty, href: `/panchangam/${city}/${date}/` }];
+import { shortDate, panchLine } from '../../../lib/headlines';
+import { todayIST, addDays, ymdKey } from '../../../lib/panchang';
+const dayWord = date === ymdKey(todayIST()) ? 'Today ' : date === ymdKey(addDays(todayIST(), 1)) ? 'Tomorrow ' : '';
+const headline = `Panchangam ${dayWord}${c.name}, ${shortDate(ymd)}: ${panchLine(ymd, city)}`;
 ---
-<Base rail="religion" railNoToday title={`Panchangam ${c.name}, ${pretty.split(', ')[1]}: Rahu Kalam, Tithi`} description={`Panchangam for ${c.name} on ${pretty}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday title={headline} description={`Panchangam for ${c.name} on ${pretty}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
   <div class="page wide">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
-    <h1>Panchangam {c.name}: {pretty}</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin-top:0">{c.name}, {c.state}</p>
         <div class="chips" style="margin:10px 0 22px">
       {Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/${date}/`} class={id === city ? 'on' : ''}>{x.name}</a>)}

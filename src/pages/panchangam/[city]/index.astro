@@ -10,11 +10,13 @@ const ymd = todayIST();
 const key = ymdKey(ymd);
 const pretty = `${WEEKDAYS[new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay()]}, ${ymd.d} ${['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'][ymd.m - 1]} ${ymd.y}`;
 const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', href: '/panchangam/' }, { name: c.name, href: `/panchangam/${city}/` }];
+import { shortDate, panchLine } from '../../../lib/headlines';
+const headline = `Panchangam Today ${c.name}, ${shortDate(ymd)}: ${panchLine(ymd, city)}`;
 ---
-<Base rail="religion" railNoToday title={`Today's Panchangam ${c.name}: Rahu Kalam, Tithi`} description={`Today's panchangam for ${c.name}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday title={headline} description={`Today's panchangam for ${c.name}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
   <div class="page wide">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
-    <h1>Today's Panchangam {c.name}</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin-top:0" id="when">{pretty}</p>
         <div class="chips" style="margin:10px 0 22px">
       {Object.entries(CITIES).map(([id, x]) => <a href={`/panchangam/${id}/`} class={id === city ? 'on' : ''}>{x.name}</a>)}

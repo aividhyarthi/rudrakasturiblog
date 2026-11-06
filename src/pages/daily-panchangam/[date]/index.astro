@@ -28,12 +28,14 @@ const faq = [
   [`What is the nakshatra on ${nice}?`, `The nakshatra is ${f.nak.name} until ${t(f.nak.endsAt)}${p.nakshatra[1] ? `, then ${p.nakshatra[1].name}` : ''}.`],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+
+const headline = `Panchangam ${nice} (${wdName}): ${tithiName}, ${f.nak.name}, Rahu Kalam ${range(p.rahu)}`;
 ---
-<Base rail="religion" railNoToday title={title} description={`${wdName}, ${nice}: ${tithiName} until ${t(f.tithi.endsAt)}, ${f.nak.name} nakshatra, Rahu Kalam ${range(p.rahu)}, Abhijit muhurtham, and the god and mantra of the day.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Daily panchangam', href: '/daily-panchangam/' }, { name: nice, href: `/daily-panchangam/${f.key}/` }]} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday title={headline} description={`${wdName}, ${nice}: ${tithiName} until ${t(f.tithi.endsAt)}, ${f.nak.name} nakshatra, Rahu Kalam ${range(p.rahu)}, Abhijit muhurtham, and the god and mantra of the day.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Daily panchangam', href: '/daily-panchangam/' }, { name: nice, href: `/daily-panchangam/${f.key}/` }]} image="/covers/panchangam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/daily-panchangam/">Daily panchangam</a></div>
-    <h1>Panchangam {nice}: {wdName}, {tithiName}</h1>
+    <h1>{headline}</h1>
     <p class="dek" style="max-width:62ch">{wdName} <span class="te">{WEEKDAYS_TE[f.wd]}</span> is the day of {f.main.name}. The Moon is in {f.nak.name} nakshatra and in {f.moonSign.skt} rashi <span class="te">{f.moonSign.te}</span>.</p>
     <Hero name={hero} alt={`Illustration for the worship of ${f.main.name}`} ratio="16/5" />
     <p>{nice} is a {wdName}. The tithi at sunrise in Hyderabad is <b>{tithiName}</b> and it lasts until <b>{t(f.tithi.endsAt)}</b>{p.tithi[1] && `, after which ${p.tithi[1].paksha} ${p.tithi[1].name} begins`}. The Moon is in <b>{f.nak.name}</b> nakshatra until <b>{t(f.nak.endsAt)}</b>{p.nakshatra[1] && `, then ${p.nakshatra[1].name}`}. The yoga is <b>{p.yoga[0].name}</b> and the karana is <b>{p.karana[0].name}</b>. Sunrise is at {t(p.sunrise)} and sunset at {t(p.sunset)}. Timings below are for Hyderabad; use the <a href="/panchangam/" style="text-decoration:underline">panchangam for your location</a> for your own city.</p>

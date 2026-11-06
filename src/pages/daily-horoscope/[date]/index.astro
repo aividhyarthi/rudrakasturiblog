@@ -23,12 +23,14 @@ const faq = [
   [`Which god should I pray to on ${wdName}?`, `${wdName} is the day of ${f.main.name}. Today's mantra is ${f.mantra.sa.split(',')[0]}.`],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { rashiLine } from '../../../lib/headlines';
+const headline = `Horoscope ${nice} (${wdName}): ${rashiLine(x)}`;
 ---
-<Base rail="astrology" title={`Horoscope ${nice} (${wdName}): Rasi Phalalu for All 12 Rashis`} description={`Horoscope for ${wdName}, ${nice}: rasi phalalu for all twelve rashis with career, money, relationships and health, plus the god, mantra and colour of the day.`} active="astrology" breadcrumbs={[{ name: 'Daily horoscope', href: '/daily-horoscope/' }, { name: nice, href: `/daily-horoscope/${f.key}/` }]} image="/covers/rasi-phalalu.png">
+<Base rail="astrology" title={headline} description={`Horoscope for ${wdName}, ${nice}: rasi phalalu for all twelve rashis with career, money, relationships and health, plus the god, mantra and colour of the day.`} active="astrology" breadcrumbs={[{ name: 'Daily horoscope', href: '/daily-horoscope/' }, { name: nice, href: `/daily-horoscope/${f.key}/` }]} image="/covers/rasi-phalalu.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-astrology">
     <div class="kicker"><a href="/daily-horoscope/">Daily horoscope</a></div>
-    <h1>Horoscope {nice}: rasi phalalu for all 12 rashis</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin:0 0 6px">{wdName} <span class="te">{WEEKDAYS_TE[f.wd]}</span> &middot; {tithiName} &middot; {f.nak.name} nakshatra &middot; Moon in {f.moonSign.skt} <span class="te">{f.moonSign.te}</span></p>
     <Hero name="zodiac-wheel" alt="A zodiac wheel with twelve constellations around the sun and moon on a night sky" ratio="16/5" />
     <p>The Moon is in <b>{f.moonSign.skt}</b> ({f.moonSign.en}) today, passing through <b>{f.nak.name}</b> nakshatra until {f.t(f.nak.endsAt)}. {first.nak} {first.weekday} The tithi is {tithiName}, until {f.t(f.tithi.endsAt)}.</p>

@@ -17,12 +17,14 @@ const faq = [
   ['Is tomorrow\'s horoscope the same for everyone in a rashi?', 'Yes. It is general guidance for the rashi, not a personal prediction. It is for reflection and entertainment, not a substitute for medical, legal or financial advice.'],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { shortDate, rashiLine } from '../../lib/headlines';
+const headline = `Horoscope Tomorrow, ${shortDate(ymd)}: ${rashiLine(ymd)}`;
 ---
-<Base rail="astrology" title={`Horoscope Tomorrow (${ymd.d} ${M[ymd.m - 1].slice(0, 3)} ${ymd.y}): All 12 Rashis`} description={`Tomorrow's horoscope (rasi phalalu) for all twelve rashis for ${pretty}, worked out from tomorrow's real planetary positions.`} active="astrology" breadcrumbs={[{ name: 'Tomorrow\'s horoscope', href: '/horoscope-tomorrow/' }]} image="/covers/rasi-phalalu.png">
+<Base rail="astrology" title={headline} description={`Tomorrow's horoscope (rasi phalalu) for all twelve rashis for ${pretty}, worked out from tomorrow's real planetary positions.`} active="astrology" breadcrumbs={[{ name: 'Tomorrow\'s horoscope', href: '/horoscope-tomorrow/' }]} image="/covers/rasi-phalalu.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-astrology">
     <div class="kicker">Rasi Phalalu</div>
-    <h1>Horoscope tomorrow</h1>
+    <h1>{headline}</h1>
     <p class="meta" style="margin:0 0 6px">{pretty}</p>
     <p class="sub" style="margin:0 0 10px"><a href={`/daily-horoscope/${ymdKey(ymd)}/`} style="text-decoration:underline"><b>Read the full horoscope article for tomorrow</b></a></p>
     <div class="chips" style="margin:0 0 14px"><a href="/rasi-phalalu/">Today</a><a href="/horoscope-tomorrow/" class="on">Tomorrow</a><a href="/rasi-phalalu/mesha/weekly/">Weekly</a><a href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
