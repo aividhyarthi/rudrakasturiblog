@@ -17,11 +17,14 @@ const range = days === 0 ? fd(start) : `${fd(today)} to ${fd(addDays(today, days
 const star = (n: number) => '★'.repeat(n) + '☆'.repeat(5 - n);
 const bandStars: Record<string, number> = { challenging: 2, mixed: 3, good: 4, excellent: 5 };
 const label = { daily: 'Today', weekly: 'This week', monthly: 'This month', tomorrow: 'Tomorrow' }[span];
+const mon = (x: { m: number }) => M[x.m - 1].slice(0, 3);
+const end7 = addDays(today, 6);
+// The page title and the H1 are the same words: the rashi, "Rasi Phalalu", the day and the date.
 const titles = {
-  daily: `${r.skt} Rasi Phalalu Today (${r.en}): ${fd(today)}`,
-  weekly: `${r.skt} Rasi Weekly Horoscope (${r.en}), ${today.d}-${addDays(today, 6).d} ${M[addDays(today, 6).m - 1].slice(0, 3)} ${today.y}`,
-  monthly: `${r.skt} Rasi Monthly Horoscope (${r.en}), ${M[today.m - 1].slice(0, 3)} ${today.y}`,
-  tomorrow: `${r.skt} Rasi Tomorrow Horoscope (${r.en}): ${start.d} ${M[start.m - 1].slice(0, 3)} ${start.y}`,
+  daily: `${r.skt} Rasi Phalalu Today (${r.en} Horoscope Today): ${today.d} ${mon(today)} ${today.y}`,
+  tomorrow: `${r.skt} Rasi Phalalu Tomorrow (${r.en} Horoscope Tomorrow): ${start.d} ${mon(start)} ${start.y}`,
+  weekly: `${r.skt} Rasi Phalalu This Week (${r.en} Weekly Horoscope): ${today.d}-${end7.d} ${mon(end7)} ${today.y}`,
+  monthly: `${r.skt} Rasi Phalalu This Month (${r.en} Monthly Horoscope): ${M[today.m - 1]} ${today.y}`,
 };
 const TE_M = ['జనవరి', 'ఫిబ్రవరి', 'మార్చి', 'ఏప్రిల్', 'మే', 'జూన్', 'జూలై', 'ఆగస్టు', 'సెప్టెంబర్', 'అక్టోబర్', 'నవంబర్', 'డిసెంబర్'];
 const TE_RATE = ['', 'ఓర్పు అవసరం', 'జాగ్రత్తగా ఉండాలి', 'మిశ్రమ ఫలితాలు', 'మంచి రోజు', 'అద్భుతమైన రోజు'];
@@ -34,7 +37,8 @@ const crumbs = span === 'tomorrow' ? [{ name: 'Tomorrow\'s horoscope', href: '/h
 <Base rail="astrology" title={titles[span]} description={`${r.skt} (${r.te}) ${label.toLowerCase()} horoscope (rasi phalalu) for career, money, relationships and health, worked out from planetary transits.`} active="astrology" breadcrumbs={crumbs} image={`/covers/r-${r.id}.png`}>
   <div class="page wide c-astrology">
     <div class="kicker"><a href="/rasi-phalalu/">Rasi Phalalu</a></div>
-    <h1 style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><Glyph id={r.id} size={44} /> <span>{r.skt} Rasi <span class="te" style="font-weight:600">{r.te}</span></span> <span class="sub" style="font-family:var(--sans);font-weight:500;font-size:18px;letter-spacing:0">{r.en}</span></h1>
+    <h1 style="display:flex;align-items:center;gap:14px;flex-wrap:wrap"><Glyph id={r.id} size={44} /> <span>{titles[span]}</span></h1>
+    <p class="sub" style="margin:-6px 0 14px"><span class="te">{r.te}</span> · {r.en}</p>
     <Hero name={`rashi-${r.id}`} alt={`${r.skt} (${r.en}) rashi illustration with its zodiac symbol`} ratio="16/6" />
     <div class="chips" style="margin:0 0 10px">{RASHIS.map((x) => <a href={span === 'tomorrow' ? `/horoscope-tomorrow/${x.id}/` : `/rasi-phalalu/${x.id}/${span === 'daily' ? '' : span + '/'}`} class={x.id === r.id ? 'on' : ''}>{x.skt}</a>)}</div>
     <div class="chips" style="margin:0 0 26px">

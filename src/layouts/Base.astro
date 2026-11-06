@@ -30,7 +30,12 @@ const hasPage = (href: string) => {
   if (href.startsWith('/series/')) return !!sc[href.split('/')[2]];
   return true;
 };
-const subnav = ((active && SUBNAV[active]) || []).filter((s) => hasPage(s.href));
+const RASHI_IDS = ['mesha', 'vrishabha', 'mithuna', 'karkataka', 'simha', 'kanya', 'tula', 'vrischika', 'dhanu', 'makara', 'kumbha', 'meena'];
+const onRashi = Astro.url.pathname.match(/^\/(?:rasi-phalalu|horoscope-tomorrow)\/([a-z]+)\//)?.[1];
+const rid = onRashi && RASHI_IDS.includes(onRashi) ? onRashi : null;
+// On a rashi's page the horoscope menu stays on that rashi: Leo's Tomorrow goes to Leo's tomorrow, not to the general page.
+const toRashi = (h: string) => !rid ? h : h === '/rasi-phalalu/' ? `/rasi-phalalu/${rid}/` : h === '/horoscope-tomorrow/' ? `/horoscope-tomorrow/${rid}/` : h === '/rasi-phalalu/mesha/weekly/' ? `/rasi-phalalu/${rid}/weekly/` : h === '/rasi-phalalu/mesha/monthly/' ? `/rasi-phalalu/${rid}/monthly/` : h;
+const subnav = ((active && SUBNAV[active]) || []).filter((s) => hasPage(s.href)).map((s) => ({ ...s, href: toRashi(s.href) }));
 const exploreCats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts.cat[c.id]);
 const exploreSeries = SERIES.filter((s) => sc[s.id]);
 const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
