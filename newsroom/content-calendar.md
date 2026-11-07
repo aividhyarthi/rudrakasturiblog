@@ -1,17 +1,39 @@
 # Southwala content calendar (draft for planning)
 
-## How many a day
-Now: 6 stories a day to 13 Nov (4 core slots + 2 "Our gods" slots), then 4 a day to 11 Dec. Plus automatic pages every day: horoscope today and tomorrow, daily panchangam, tithi and festival pages.
-Proposal: keep 6 a day, every slot with a fixed theme so each day has a rhythm.
+## How many a day (as scheduled, checked 7 Nov 2026)
+Counted from the `date` in each article file, all times IST:
+- **1 to 12 Nov: 7 to 10 stories a day** (a busy run for Deepavali and Karthika). Usual times: 07:00, 08:00, 09:00, 11:00, 13:00, 15:00, 17:00, 19:00, with 10:00, 14:00 and 21:00 added on festival days.
+- **13 Nov to 11 Dec: 4 stories a day**, at 07:00, 11:00, 15:00 and 19:00. The last scheduled stories are on 11 Dec.
+- **Plus automatic pages every day:** horoscope today and tomorrow, daily panchangam, tithi and festival pages.
 
-| Time | Slot | What goes here | Contributor |
+The hourly rebuild publishes each story at its time; the home page rotates four times a day.
+
+## The 12-day busy run (1 to 12 Nov): slots in use
+| Time | What goes here | Series / category |
+|---|---|---|
+| 07:00 | Day's lead: festival, month or mantra piece (Karthika, Deepavali dates, a stotra) | devotional, karthika, prayer (which-god) |
+| 08:00 | Epics, rishis and saints | mahabharata-stories, rishis-and-texts, saints-of-the-south |
+| 09:00 | A god or graha in depth | our-gods |
+| 10:00 | Festival extra (on festival days) | deepavali-hidden-stories |
+| 11:00 | Teaching | read-the-line, why-me, Gita, dharma explainers |
+| 13:00 | Epics and saints again | ramayana-stories, mahabharata-stories, saints-of-the-south |
+| 14:00 | Festival extra (on festival days) | deepavali-hidden-stories |
+| 15:00 | Untold story | mahabharata-stories, ramayana-stories, karma, faith (Westerners and Hindu tradition) |
+| 17:00 | Vow, planet or god | our-gods (planets: Chandra, Mangala, Budha, Guru, Shukra) |
+| 19:00 | Place or goddess | temple, sacred, goddess-stories |
+| 21:00 | Late epic story (some days) | ramayana-stories, rishis-and-texts |
+
+## The 4-a-day rhythm (13 Nov to 11 Dec)
+Every day has the same four slots, so readers know when to come back:
+
+| Time | Slot | What goes here | Contributor desk |
 |---|---|---|---|
-| 07:00 | Day's god | The weekday god in that week's form (see Friday rota) | Raghunatha Sharma, Lalitha Devi |
-| 09:00 | Our gods / planets | One god or graha in depth: names, stories, mantra, how to worship | Raghunatha Sharma, Siva Pantulu |
-| 11:00 | Teaching | Gita, Upanishad (Read the line), Why me?, Gita for the mind | Partha Sarathi Acharya, Vidyaranya Murthy |
-| 15:00 | Untold story | Ramayana and Mahabharata people nobody writes about, niti texts, Ashtavakra Gita, Ravana and Shiva | Vidyaranya Murthy, Partha Sarathi Acharya |
-| 17:00 | Vow or practice | A vratam with its rules, the 7/9/11/16-week vows, with traditions named honestly | Lalitha Devi, Raghunatha Sharma |
-| 19:00 | Place or practice | Temples, rivers, hills, yoga for everyday problems | Ranganatha Dikshitar, Sri Guru Brahma Sastry |
+| 07:00 | Prayer or god | which-god prayers (exams, children, fear, health, money), a goddess or god profile, festival days (Tulasi Vivaha, Tripura Pournami) | Devotional Desk |
+| 11:00 | Teaching | Gita verse, Read the line (Upanishads), Gita for the mind, Why me?, Sanatana Dharma explainers | Gita Desk, Dharma Desk |
+| 15:00 | Untold story | Ramayana and Mahabharata figures, karma stories, faith (Westerners and Hindu tradition) | Dharma Desk, Gita Desk |
+| 19:00 | Place or practice | temples (temples-for-a-reason), sacred places, goddess-stories, yoga-for-life | Temples Desk, Devotional Desk, Yoga Desk |
+
+Bylines on the site are the desk names (for example Southwala Dharma Desk), never personal names.
 
 ## Weekday gods (home page and 07:00 slot)
 A different form each week; the home page picks from published articles of that form.
