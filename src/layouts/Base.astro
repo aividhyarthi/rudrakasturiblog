@@ -14,6 +14,8 @@ import { istIso } from '../lib/ist';
 import buildStamp from '../data/build-stamp.txt?raw';
 import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
+import { masaOn, masaStartingSoon } from '../lib/masa';
+import { MASA_TEXT } from '../data/masa';
 interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date; imageAlt?: string; imageW?: number; imageH?: number; section?: string; tags?: string[]; author?: string }
 const { railNoToday, rail, railExclude, todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified, imageAlt, imageW = 1200, imageH = 675, section: artSection, tags = [], author } = Astro.props;
 const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
@@ -40,6 +42,9 @@ const exploreCats = CATEGORIES.filter((c) => !NEWS_CATS.includes(c.id) && counts
 const exploreSeries = SERIES.filter((s) => sc[s.id]);
 const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
 const snap = { tithi: `${_p.tithi[0].paksha} ${_p.tithi[0].name}`, nak: _p.nakshatra[0].name, rahu: `${fmtTime(_p.rahu.start, _ref)} to ${fmtTime(_p.rahu.end, _ref)}` };
+const _today = todayIST(), _here = masaOn(_today), _soon = masaStartingSoon(_today, 3);
+const _mt = !_here.adhika && MASA_TEXT[_here.name] ? { t: MASA_TEXT[_here.name], label: `${MASA_TEXT[_here.name].show}, day ${_here.dayNo}` } : _soon && !_soon.masa.adhika && MASA_TEXT[_soon.masa.name] ? { t: MASA_TEXT[_soon.masa.name], label: `${MASA_TEXT[_soon.masa.name].show} ${_soon.inDays === 1 ? 'begins tomorrow' : `begins in ${_soon.inDays} days`}` } : null;
+const masaChip = _mt?.label, masaHref = _mt?.t.links[0].href;
 const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
 const orgLd = home ? [
   { '@context': 'https://schema.org', '@type': 'NewsMediaOrganization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png`, width: 512, height: 512 }, email: SITE.email, publishingPrinciples: `${SITE.url}/editorial-policy/` },
@@ -97,7 +102,7 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
 <body data-sec={active}>
   <div class="topbar"><div class="wrap">
     <span id="today">{SITE.tagline}</span>
-    <span><span data-local="name">Hyderabad</span> today: <span data-local="tithi">{snap.tithi}</span> &middot; <span data-local="nakshatra">{snap.nak}</span> nakshatra &middot; Rahu Kalam <span data-local="rahu">{snap.rahu}</span> &middot; <a href="/panchangam/">Panchangam</a></span>
+    <span>{masaChip && <a class="masa-chip" href={masaHref}>{masaChip}</a>}<span data-local="name">Hyderabad</span> today: <span data-local="tithi">{snap.tithi}</span> &middot; <span data-local="nakshatra">{snap.nak}</span> nakshatra &middot; Rahu Kalam <span data-local="rahu">{snap.rahu}</span> &middot; <a href="/panchangam/">Panchangam</a></span>
   </div></div>
   <header class="mast">
     <a class="logo" href="/" aria-label="Southwala home">Southwala<i>.</i></a>

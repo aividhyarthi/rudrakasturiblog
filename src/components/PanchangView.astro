@@ -3,6 +3,8 @@ import { CITIES, panchangFor, fmtTime, WEEKDAYS, WEEKDAYS_TE, ymdKey, addDays, t
 import { RASHIS } from '../lib/astro';
 import { guidance } from '../lib/muhurta';
 import CalendarCta from './CalendarCta.astro';
+import MasaBanner from './MasaBanner.astro';
+import { masaOn } from '../lib/masa';
 import { festivalsByKey, upcomingFestivals } from '../lib/festivals';
 const { city, ymd } = Astro.props as { city: CityId; ymd: { y: number; m: number; d: number } };
 const p = panchangFor(ymd, city);
@@ -18,7 +20,8 @@ const nextFest = upcomingFestivals(addDays(ymd, 1), 4);
 const g = guidance(p.nakshatra[0].name, p.tithi[0].name, p.weekday);
 const dName = WEEKDAYS[p.weekday], dPretty = `${ymd.d} ${['January','February','March','April','May','June','July','August','September','October','November','December'][ymd.m - 1]} ${ymd.y}`;
 const t0 = p.tithi[0], n0 = p.nakshatra[0];
-const answer = `On ${dName}, ${dPretty}, the tithi in ${c.name} is ${t0.paksha} ${t0.name} until ${t(t0.endsAt)}, the nakshatra is ${n0.name} until ${t(n0.endsAt)}, sunrise is ${t(p.sunrise)} and sunset ${t(p.sunset)}. Rahu Kalam is ${range(p.rahu)}${p.amrit.length ? ` and Amrit Kalam is ${p.amrit.map(range).join(' and ')}` : ''}.`;
+const mo = masaOn(ymd), moName = (mo.adhika ? 'Adhika ' : '') + (mo.name === 'Kartika' ? 'Karthika' : mo.name);
+const answer = `On ${dName}, ${dPretty} (${moName} masam, day ${mo.dayNo}), the tithi in ${c.name} is ${t0.paksha} ${t0.name} until ${t(t0.endsAt)}, the nakshatra is ${n0.name} until ${t(n0.endsAt)}, sunrise is ${t(p.sunrise)} and sunset ${t(p.sunset)}. Rahu Kalam is ${range(p.rahu)}${p.amrit.length ? ` and Amrit Kalam is ${p.amrit.map(range).join(' and ')}` : ''}.`;
 const answerTe = `${c.name} నేటి పంచాంగం: తిథి ${t0.paksha === 'Shukla' ? 'శుక్ల' : 'కృష్ణ'} ${t0.te ?? ''}, నక్షత్రం ${n0.te ?? n0.name}, రాహుకాలం ${range(p.rahu)}.`;
 const qa: [string, string][] = [
   [`What is today's tithi in ${c.name}?`, `${t0.paksha} ${t0.name} until ${t(t0.endsAt)}${p.tithi[1] ? `, then ${p.tithi[1].paksha} ${p.tithi[1].name}` : ''}.`],
@@ -47,6 +50,7 @@ const segs = [
 <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
 <p class="answer"><b>{answer}</b></p>
 <p class="answer te">{answerTe}</p>
+<MasaBanner ymd={ymd} compact />
 <div class="pgrid">
   <div class="pcard"><b>Sunrise</b><span>{t(p.sunrise)}</span></div>
   <div class="pcard"><b>Sunset</b><span>{t(p.sunset)}</span></div>

@@ -18,6 +18,7 @@ import { allTithis, ROUTE } from '../lib/tithi';
 import { allLunations } from '../lib/lunar';
 import { upcomingFestivals, festivalsByKey } from '../lib/festivals';
 import { GODS, godMatches } from '../data/gods';
+import MasaBanner from '../components/MasaBanner.astro';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -115,6 +116,7 @@ const todayFest = festivalsByKey().get(nowKey) ?? [];
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
   )}
+  <MasaBanner ymd={ymd} />
   {specialDays.length > 0 && (
     <section class="wrap" style="padding-top:36px">
       <div class="sect"><h2>Special days coming up</h2><a href="/festivals/">All festivals</a> <a href="/calendar/">Calendar 2027 (PDF)</a></div>

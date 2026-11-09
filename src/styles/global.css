@@ -441,3 +441,23 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .two-col{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 28px}
 @media(max-width:900px){.ex-grid{grid-template-columns:1fr 1fr}.two-col{grid-template-columns:1fr}}
 @media(max-width:560px){.ex-grid{grid-template-columns:1fr}}
+
+/* Month banner: "Today is Karthika Masam" */
+.masa{background:linear-gradient(180deg,#fff1d6,#ffe3b0);border-top:4px solid #b4530a;border-bottom:1px solid #f0c987;padding:34px 0;margin:28px 0 0}
+.masa-kicker{font:700 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:#b4530a}
+.masa h2{font-family:var(--display);font-size:clamp(26px,3.6vw,40px);letter-spacing:-.02em;margin:6px 0 6px;color:#2b1700}
+.masa h2 .te{display:block;font:600 .6em var(--telugu,var(--serif));color:#7a3a05;margin-top:2px;letter-spacing:0}
+.masa-tag{font-size:17px;color:#4a2a07;margin:0 0 18px}
+.masa-body{display:grid;grid-template-columns:1.2fr 1fr;gap:34px}
+.masa-body p{font-family:var(--serif);font-size:17px;line-height:1.55;color:#3a2410;margin:0 0 12px}
+.masa-today{background:#fff;border-left:5px solid #b4530a;border-radius:10px;padding:14px 16px;margin:14px 0}
+.masa-today>b,.masa-h{display:block;font:700 12px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#b4530a;margin-bottom:6px}
+.masa-today p{margin:0 0 8px}.masa-every{font-size:15.5px!important;color:#5a4630!important}
+.masa-links{display:flex;flex-wrap:wrap;gap:8px}.masa-links a{border:1px solid #b4530a;color:#7a3a05;border-radius:99px;padding:7px 13px;font:600 14px var(--sans);text-decoration:none!important;background:#fffaf0}
+.masa-links a:hover{background:#b4530a;color:#fff}
+.masa-dates,.masa-facts{list-style:none;margin:0 0 18px;padding:0}
+.masa-dates li a{display:flex;justify-content:space-between;gap:10px;padding:9px 12px;background:#fff;border-radius:8px;margin-bottom:6px;text-decoration:none!important;color:var(--ink)}
+.masa-dates li a span{font-weight:600}.masa-dates li a small{color:#6b6b6b;white-space:nowrap}
+.masa-facts li{font-size:15.5px;line-height:1.45;padding:6px 0 6px 18px;position:relative;color:#3a2410}.masa-facts li:before{content:"";position:absolute;left:2px;top:13px;width:7px;height:7px;border-radius:50%;background:#e8920f}
+.masa-chip{background:#b4530a;color:#fff!important;border-radius:99px;padding:2px 10px;font-weight:700;text-decoration:none!important;margin-right:8px;white-space:nowrap}
+@media(max-width:760px){.masa-body{grid-template-columns:1fr;gap:18px}.masa{padding:26px 0}}
