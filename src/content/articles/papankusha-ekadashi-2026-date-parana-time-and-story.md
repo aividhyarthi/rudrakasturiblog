@@ -9,7 +9,7 @@ tldr: "Papankusha Ekadashi is on Thursday, 22 October 2026. Ekadashi runs until 
 hero: "temple-tirumala"
 imageAlt: "The Tirumala temple with lamps at dusk"
 tags: ["Papankusha Ekadashi", "Ekadashi", "Vishnu", "fasting"]
-draft: false
+draft: true
 ---
 
 Papankusha Ekadashi is the Ekadashi of the bright fortnight of Ashwayuja, the day after Vijayadashami (Dasara). The name means "the goad that controls sin": the tradition says that devotion on this day keeps a person on the right path, as a goad (ankusha) guides an elephant.

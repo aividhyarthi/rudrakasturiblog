@@ -9,7 +9,7 @@ tldr: "Dhanteras is on Friday, 6 November 2026, Naraka Chaturdashi and Lakshmi P
 hero: "temple-sunrise"
 imageAlt: "A South Indian temple at sunrise with a row of lit lamps"
 tags: ["Deepavali", "Diwali", "Dhanteras", "Lakshmi Puja", "Naraka Chaturdashi"]
-draft: false
+draft: true
 ---
 
 Deepavali, the festival of lights, is celebrated over several days. The dates below are worked out from the tithis in Hyderabad. Calendars differ by a day in some places, so confirm with your local panchangam or temple.

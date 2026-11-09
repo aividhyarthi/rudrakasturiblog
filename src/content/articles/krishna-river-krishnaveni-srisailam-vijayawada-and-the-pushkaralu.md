@@ -42,7 +42,7 @@ Like the Godavari, the Krishna has a Pushkaralu festival, once in twelve years, 
 The Prakasam Barrage at Vijayawada, built in the 1950s, is the lifeline of the Krishna delta. Like the Godavari delta, it is some of the best farmland in the state. Many families in the region say, with a smile, that the Krishna is the reason the rice is so good.
 
 ## Karthika Masam by the river
-In the month of Karthika, women float lamps on rivers, and the Krishna ghats at Vijayawada, Srisailam and Alampur are lit every evening. If you are in the region in November, it is a lovely sight. See the dates in our [Karthika Masam guide](/karthika-masam-2026-dates-deepam-and-fasting/).
+In the month of Karthika, women float lamps on rivers, and the Krishna ghats at Vijayawada, Srisailam and Alampur are lit every evening. If you are in the region in November, it is a lovely sight. See the dates in our [Karthika Masam guide](/masam/karthika/).
 
 ## Related
 Read about the [Godavari](/godavari-the-ganga-of-the-south-and-the-englishman-farmers-still-thank/), and the [Kanaka Durga temple](/temples/kanaka-durga-temple-vijayawada/).

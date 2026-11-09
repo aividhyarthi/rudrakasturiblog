@@ -7,6 +7,7 @@ import CalendarCta from '../../components/CalendarCta.astro';
 import MasaBanner from '../../components/MasaBanner.astro';
 import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals';
 import { allArticles } from '../../lib/articles';
+import { linkExists } from '../../lib/fmt';
 import { FEST_ALL as FEST_CONTENT } from '../../data/festival-all';
 import { fmtTime, panchangFor, todayIST, ymdKey, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
@@ -23,6 +24,8 @@ const dt = (d: Date) => { const r = rnd(d); const x = istParts(r); return `${WEE
 const diff = Math.round((Date.UTC(f.ymd.y, f.ymd.m - 1, f.ymd.d) - Date.UTC(today.y, today.m - 1, today.d)) / 86400000);
 const lead = diff === 0 ? 'Today' : diff === 1 ? 'Tomorrow' : diff > 1 && diff <= 3 ? `In ${diff} days` : diff < 0 ? 'Last held' : 'Next';
 const title = `${f.name} ${f.ymd.y}: Date, Puja Time and Significance`;
+const near = (x: { key: string }) => Math.abs((Date.parse(x.key) - Date.parse(f.key)) / 86400000) <= 6;
+const strip = c?.days ? allFestivals().filter((x) => c.days!.what[x.id] && near(x)).filter((x, i, a) => a.findIndex((y) => y.id === x.id && near(y)) === i).sort((a, b) => a.key.localeCompare(b.key)) : [];
 const nextOnes = all.filter((x) => x.key > f.key && x.id !== f.id).slice(0, 4);
 const sameFest = all.filter((x) => x.id === f.id && x.key >= ymdKey(today)).slice(0, 3);
 const at = (f as any).at as string | undefined;
@@ -39,7 +42,7 @@ const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f
 const read = f.link && pub.has(f.link) ? f.link : null;
 // tiny formatter for the text in festival-content.ts: **bold** and [text](/link/); a link to an unpublished article becomes plain text
 const fmt = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(?<![*\w])\*([^*]+?)\*(?![*\w])/g, '<i>$1</i>').replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_m, txt, href) => pub.has(href.replace(/\//g, '')) || !/^\/[a-z0-9-]+\/$/.test(href) || href.startsWith('/festivals/') ? `<a href="${href}" style="text-decoration:underline">${txt}</a>` : txt);
-const reads = (c?.reads ?? []).filter((r) => pub.has(r.href.replace(/\//g, '')));
+const reads = (c?.reads ?? []).filter((r) => linkExists(r.href, pub));
 const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi at home, samagri and regional customs. ${c.dek}` : `${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`;
 ---
 <Base rail="religion" title={title} description={desc.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: f.name, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd}>
@@ -67,6 +70,12 @@ const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi a
         <p class="sub">{when} We take the day on which the tithi is {atText}. Some temples and families keep the festival a day earlier or later, so please confirm with your own priest or temple.</p>
         {c.source && <p class="sub"><b>Source:</b> {c.source}</p>}
         {c.lead.map((x) => <p set:html={fmt(x)} />)}
+        {strip.length > 0 && c?.days && (
+          <>
+            <div class="sect"><h2>{c.days.title}</h2></div>
+            <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Date</th><th>Day</th></tr></thead><tbody>{strip.map((x) => <tr><td><b>{WEEKDAYS[x.weekday].slice(0, 3)}, {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]}</b></td><td><a href={`/festivals/${x.slug}/`} style="text-decoration:underline"><b>{x.name}</b></a><br /><small>{c.days.what[x.id]}</small></td></tr>)}</tbody></table></div>
+          </>
+        )}
         {c.karthika && <MasaBanner ymd={today} compact />}
         {c.blocks.map((b) => (
           <>

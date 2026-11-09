@@ -2,7 +2,7 @@
 // Telugu, Kannada, Tamil and Malayalam calendars (amanta): a month starts on the first day whose Hyderabad sunrise
 // falls after the new moon that opens it, and is named from the Sun's sidereal sign at that new moon.
 // A month with no sankranti inside it is adhika.
-import { CITIES, sunTimes, sunSid, addDays, ymdKey } from './panchang';
+import { CITIES, sunTimes, sunSid, addDays, ymdKey, todayIST } from './panchang';
 import { phases, MONTHS, MONTHS_TE } from './lunar';
 
 type Ymd = { y: number; m: number; d: number };
@@ -42,6 +42,15 @@ export function masaStartingSoon(x: Ymd, days = 3): { masa: Masa; inDays: number
   for (let n = 1; n <= days; n++) {
     const later = masaOn(addDays(x, n));
     if (later.idx !== here.idx || later.adhika !== here.adhika) return { masa: later, inDays: n };
+  }
+  return null;
+}
+/** The month with this index (not adhika): the one running now or just ended (within 3 days), otherwise the next. */
+export function masaWindow(idx: number): Masa | null {
+  const t = todayIST();
+  for (let off = -3; off < 430; off += 3) {
+    const m = masaOn(addDays(t, off));
+    if (m.idx === idx && !m.adhika) return m;
   }
   return null;
 }

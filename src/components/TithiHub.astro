@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Hero from './Hero.astro';
 import { GUIDE } from '../data/guide-content';
-import { fmt } from '../lib/fmt';
+import { fmt, linkExists } from '../lib/fmt';
 import { allArticles } from '../lib/articles';
 import { permaPages } from '../lib/perma';
 import { fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
@@ -79,7 +79,7 @@ const basis = kind === 'ekadashi' ? 'present at sunrise' : kind === 'sankashti' 
     )}
     <div class="sect"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    {guide && guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
+    {guide && guide.reads.filter((r) => linkExists(r.href, published)).length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{guide.reads.filter((r) => linkExists(r.href, published)).map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
     <div class="chips" style="margin-top:16px">
       {(['ekadashi', 'sankashti', 'pradosham'] as TithiKind[]).filter((k) => k !== kind).map((k) => <a href={`/${ROUTE[k]}/`}>{COPY[k].title} dates</a>)}
       <a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a><a href="/panchangam/">Today's panchangam</a>

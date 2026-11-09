@@ -34,7 +34,7 @@ I will say this plainly: the story is Puranic and folk tradition. I cannot give 
 
 ## What the day is in the calendar
 
-Dyuta Pratipada is Kartika Shukla Pratipada, the first day of the bright half after the new moon. In 2026, Deepavali falls on 8 November, and Govardhan Puja is on 10 November, so check your local panchangam; the pratipada can span two civil days, and families follow the one their calendar names. For the exact timings in your city, see [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/) and the [festivals page](/festivals/).
+Dyuta Pratipada is Kartika Shukla Pratipada, the first day of the bright half after the new moon. In 2026, Deepavali falls on 8 November, and Govardhan Puja is on 10 November, so check your local panchangam; the pratipada can span two civil days, and families follow the one their calendar names. For the exact timings in your city, see [Deepavali 2026 dates](/festivals/deepavali/) and the [festivals page](/festivals/).
 
 Several observances share this day:
 

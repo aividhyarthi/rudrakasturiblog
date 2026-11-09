@@ -57,7 +57,7 @@ Children often ask why the lamp is lit for Yama at all, when we usually pray to 
 
 The same day is honoured as the day Dhanvantari, the physician of the gods, rose from the churning of the ocean holding a pot of amrita. This is why Dhanatrayodashi is tied to health as well as wealth, and why many families remember the healer with a lamp. For which god people pray when health is the worry, see [which god to pray to for health and recovery](/which-god-to-pray-to-for-health-and-recovery-dhanvantari-and-shiva/).
 
-In Telugu homes the day is Dhanatrayodashi (ధనత్రయోదశి), and in Tamil homes it often passes quietly in the Deepavali bustle, with the Yama Deepam observed mostly where a family has inherited the habit. In many South Indian homes the day's main activity is buying a little metal or cleaning the prayer shelf, and the doorstep lamp is the part grandmothers insist on. For this year's dates, see [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/) and our [festivals page](/festivals/).
+In Telugu homes the day is Dhanatrayodashi (ధనత్రయోదశి), and in Tamil homes it often passes quietly in the Deepavali bustle, with the Yama Deepam observed mostly where a family has inherited the habit. In many South Indian homes the day's main activity is buying a little metal or cleaning the prayer shelf, and the doorstep lamp is the part grandmothers insist on. For this year's dates, see [Deepavali 2026 dates](/festivals/deepavali/) and our [festivals page](/festivals/).
 
 ## Where this comes from
 

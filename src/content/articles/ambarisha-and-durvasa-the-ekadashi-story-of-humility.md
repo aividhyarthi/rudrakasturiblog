@@ -74,7 +74,7 @@ In the story, learned advisers say so, and it is the reason the tale is told. Fo
 No. Many people eat fruit and milk, or simple food without grain. If you are ill, pregnant, elderly or on regular medicine, please speak to your doctor and keep the fast gentle. This is not medical advice.
 
 **Which Ekadashi is linked to this story?**
-Ambarisha is remembered on all Ekadashis. For another one in this season, with its own story, see [Papankusha Ekadashi 2026](/papankusha-ekadashi-2026-date-parana-time-and-story/).
+Ambarisha is remembered on all Ekadashis. For another one in this season, with its own story, see [Papankusha Ekadashi 2026](/ekadashi/papankusha-ekadashi/).
 
 If your family tells this story at Ekadashi, or has a different version, we would enjoy hearing it at hello@southwala.com.
 

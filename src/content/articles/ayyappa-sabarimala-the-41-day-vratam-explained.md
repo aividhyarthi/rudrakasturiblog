@@ -78,4 +78,4 @@ You can also read what makes this month special in [why Karthika Masam is specia
 
 If you have kept the vratam and want to share what it taught you, write to hello@southwala.com.
 
-For the broader traditions of the month, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/).
+For the broader traditions of the month, see [Karthika Masam 2026](/masam/karthika/).

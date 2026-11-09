@@ -3,6 +3,7 @@ import type { FestContent } from './festival-content';
 
 export const FEST_KARTHIKA: Record<string, FestContent> = {
   'bhai-dooj': {
+    days: { title: 'Deepavali day by day', what: { 'dhanteras': 'Lakshmi, Kubera and Dhanvantari. Buy something small and new, and light a lamp for Yama at dusk.', 'naraka-chaturdashi': 'The oil bath before sunrise, new clothes and lamps.', 'deepavali': 'Lakshmi Puja on the evening of the new moon, and rows of lamps.', 'govardhan-puja': 'Govardhan Puja, Annakut and Bali Padyami. Karthika Masam begins.', 'bhai-dooj': 'Sisters apply a tilak to their brothers and feed them.' } },
     hero: 'om-lotus', heroAlt: 'A lamp, a plate with kumkum and rice, and sweets for a brother', te: 'భగినీ హస్త భోజనం',
     names: 'Also called Bhagini Hasta Bhojanam, Yama Dwitiya, Bhau Beej and Bhai Phota. It falls on the second day after the Deepavali new moon.',
     dek: 'A sister\'s tilak, a brother\'s promise and a meal cooked by her hand.',
@@ -38,7 +39,7 @@ export const FEST_KARTHIKA: Record<string, FestContent> = {
       ['What should a brother give?', 'Anything given with love: a sari, jewellery, money, books or a treat. There is no fixed gift.'],
       ['Why is it called Yama Dwitiya?', 'Because it is kept on the Dwitiya tithi, and because of the story in which Yama blessed brothers who receive a tilak from their sisters on this day.'],
     ],
-    reads: [{ href: '/yama-deepam-the-prince-who-was-to-die-on-the-fourth-night/', label: 'Yama Deepam: the prince who was to die on the fourth night' }, { href: '/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/', label: 'Deepavali, day by day' }],
+    reads: [{ href: '/yama-deepam-the-prince-who-was-to-die-on-the-fourth-night/', label: 'Yama Deepam: the prince who was to die on the fourth night' }, { href: '/festivals/deepavali/', label: 'Deepavali, day by day' }],
     karthika: true,
   },
 
@@ -148,7 +149,7 @@ export const FEST_KARTHIKA: Record<string, FestContent> = {
       ['Do I need a Shaligrama?', 'No. A picture of Vishnu or Krishna, or an amla branch with a fruit, is common.'],
       ['Can I do it in an apartment?', 'Yes. A potted Tulasi on the balcony or window sill is fine. Decorate the pot and do the puja in the same way.'],
     ],
-    reads: [{ href: '/karthika-masam-2026-dates-deepam-and-fasting/', label: 'Karthika Masam: dates, deepam and fasting' }, { href: '/why-karthika-masam-what-the-month-means-and-who-to-worship/', label: 'Why Karthika Masam matters' }],
+    reads: [{ href: '/masam/karthika/', label: 'Karthika Masam: dates, deepam and fasting' }, { href: '/why-karthika-masam-what-the-month-means-and-who-to-worship/', label: 'Why Karthika Masam matters' }],
     karthika: true,
   },
 
@@ -189,7 +190,7 @@ export const FEST_KARTHIKA: Record<string, FestContent> = {
       ['Do I need to fast?', 'Many families keep a fast until evening. If you are unwell or elderly, a light meal is fine. The lamps and prayer matter most.'],
       ['Can I do it in an apartment?', 'Yes. Light lamps on the balcony or at the home shrine, with a small plate under each, and keep them away from curtains.'],
     ],
-    reads: [{ href: '/tripura-pournami-the-story-of-the-three-cities-and-dev-deepawali/', label: 'Tripura Pournami: the story of the three cities' }, { href: '/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/', label: 'Karthika deepam: how to light the lamp well' }, { href: '/karthika-masam-2026-dates-deepam-and-fasting/', label: 'Karthika Masam: dates, deepam and fasting' }, { href: '/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/', label: 'Arunachala: the hill that is Shiva' }],
+    reads: [{ href: '/tripura-pournami-the-story-of-the-three-cities-and-dev-deepawali/', label: 'Tripura Pournami: the story of the three cities' }, { href: '/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/', label: 'Karthika deepam: how to light the lamp well' }, { href: '/masam/karthika/', label: 'Karthika Masam: dates, deepam and fasting' }, { href: '/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/', label: 'Arunachala: the hill that is Shiva' }],
     karthika: true,
   },
 

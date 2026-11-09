@@ -88,6 +88,6 @@ The Ramayana of Valmiki, the Mahabharata, and the Bhagavata and Vishnu Puranas a
 
 Which Deepavali story do you tell most, and do you know whether it came from a book, from your people, or from your own love for it?
 
-Dates for each day are in [our Deepavali 2026 guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/) and on the [festivals page](/festivals/).
+Dates for each day are in [our Deepavali 2026 guide](/festivals/deepavali/) and on the [festivals page](/festivals/).
 
 If your family tells a Deepavali story that is not on this list, write to hello@southwala.com. We would like to add it to the series.

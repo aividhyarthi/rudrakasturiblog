@@ -82,7 +82,7 @@ You can, but there is no need. Choose the one that feels closest. Many people pr
 Yes. The tradition has always allowed people to pray for their needs. Pray also for wisdom, because the right decisions matter more than a sudden windfall.
 
 **What about Deepavali?**
-Deepavali and Dhanteras are times when many families honour Lakshmi and Kubera, clean the home and settle accounts. If you want the dates, see our [Deepavali 2026 guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/).
+Deepavali and Dhanteras are times when many families honour Lakshmi and Kubera, clean the home and settle accounts. If you want the dates, see our [Deepavali 2026 guide](/festivals/deepavali/).
 
 **What if I owe a family member?**
 Be honest with them early and offer a plan, even a small one. A clear conversation is often kinder than silence, and it protects the relationship.

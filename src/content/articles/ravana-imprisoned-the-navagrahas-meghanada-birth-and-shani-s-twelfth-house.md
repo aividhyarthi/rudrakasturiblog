@@ -143,7 +143,7 @@ Whether you take it as history or as poetry, the tale has a clear idea in it, an
 
 If you are reading this because you are in Sade Sati, or someone told you Shani is against you, take a breath. The same story that shows Shani as a hard planet also shows him as the one who kept a tyrant from getting his way.
 
-Planets are not villains in this telling. If you want the practical side, our [Sade Sati guide](/sade-sati-2026-which-rashis-are-affected/) explains who is affected now and what the traditions suggest. And be careful of anyone who sells fear or an expensive "remedy". The old practices cost almost nothing: a lamp, a few verses, a kind act, honest work.
+Planets are not villains in this telling. If you want the practical side, our [Sade Sati guide](/sade-sati/) explains who is affected now and what the traditions suggest. And be careful of anyone who sells fear or an expensive "remedy". The old practices cost almost nothing: a lamp, a few verses, a kind act, honest work.
 
 ## Where to see the Navagrahas
 

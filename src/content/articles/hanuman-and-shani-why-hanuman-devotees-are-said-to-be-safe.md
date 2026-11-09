@@ -40,7 +40,7 @@ In Vedic astrology Shani is the planet Saturn, the slowest of the visible planet
 - **Be disciplined.** Shani is said to reward honest work and fairness, and to punish carelessness.
 
 ## A balanced view
-If you are in Sade Sati, you may hear frightening things. Be careful of anyone who sells fear. In our [Sade Sati guide](/sade-sati-2026-which-rashis-are-affected/) we have explained which rashis are affected now, and how traditions read it.
+If you are in Sade Sati, you may hear frightening things. Be careful of anyone who sells fear. In our [Sade Sati guide](/sade-sati/) we have explained which rashis are affected now, and how traditions read it.
 
 The honest teaching is this: planets do not act on us as a weather system. What they offer is a language to think about time, patience and work. Many people find that a hard season brought out their best.
 

@@ -4,10 +4,12 @@ export type Block = { h: string; p?: string[]; ul?: string[]; ol?: string[]; not
 export type FestContent = {
   hero?: string; heroAlt?: string; te?: string; names: string; dek: string; source?: string;
   lead: string[]; blocks: Block[]; faqs: [string, string][]; reads: { href: string; label: string }[]; karthika?: boolean;
+  days?: { title: string; what: Record<string, string> }; // a day-by-day strip of the festivals around this one, with dates worked out from the sky
 };
 
 export const FEST_CONTENT: Record<string, FestContent> = {
   'govardhan-puja': {
+    days: { title: 'Deepavali day by day', what: { 'dhanteras': 'Lakshmi, Kubera and Dhanvantari. Buy something small and new, and light a lamp for Yama at dusk.', 'naraka-chaturdashi': 'The oil bath before sunrise, new clothes and lamps.', 'deepavali': 'Lakshmi Puja on the evening of the new moon, and rows of lamps.', 'govardhan-puja': 'Govardhan Puja, Annakut and Bali Padyami. Karthika Masam begins.', 'bhai-dooj': 'Sisters apply a tilak to their brothers and feed them.' } },
     hero: 'krishna-flute', heroAlt: 'A flute, a lamp and a small hill of food offered at dawn', te: 'గోవర్ధన పూజ',
     names: 'Also called Annakut and Bali Padyami. In the Telugu states it is the first day of Karthika Masam.',
     dek: 'The morning after Deepavali: a hill of food for Krishna, a king remembered, and the month of lamps begins.',

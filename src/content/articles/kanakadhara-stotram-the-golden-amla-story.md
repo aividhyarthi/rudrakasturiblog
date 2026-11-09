@@ -64,7 +64,7 @@ No. Read the meaning once, then chant slowly. Understanding grows with repetitio
 3. Read the meaning of a verse or two, then chant.
 4. End with thanks, and give something small to someone who needs it, because that is the lesson of the story.
 
-For the festival of lamps, see [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/), and for the eight forms of the goddess, read [Ashtalakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/).
+For the festival of lamps, see [Deepavali 2026 dates](/festivals/deepavali/), and for the eight forms of the goddess, read [Ashtalakshmi](/ashtalakshmi-the-eight-forms-of-lakshmi-and-what-they-mean/).
 
 ## Reading the story with modern eyes
 It is easy to read this as a tale about sudden wealth. A better reading may be about attention. A boy on his begging round noticed how much it cost one poor woman to give him one dry fruit, and he did not walk past. Most of us have a version of that doorstep: a neighbour, a cook, a driver or a relative who gives more than they can spare. The story asks us to notice them, to thank them properly, and to ask what we can do in return.

@@ -45,7 +45,7 @@ Ganesha is *Vighnaharta*, the remover of obstacles. That is why every puja, ever
 All of these are on our [Ganesha mantras page](/mantras/ganesha/).
 
 ## How to pray
-1. **Pick a time.** Wednesday and Chaturthi are his days. Many start any new venture on a Wednesday. See [Sankashti Chaturthi](/sankashti-chaturthi-october-2026-date-moonrise-and-vrat/).
+1. **Pick a time.** Wednesday and Chaturthi are his days. Many start any new venture on a Wednesday. See [Sankashti Chaturthi](/sankashti-chaturthi/october/).
 2. **Light a lamp** in front of a picture or small idol.
 3. **Offer** durva grass (a bunch of 21), red hibiscus and a sweet, such as a modak or laddu.
 4. **Chant** a mantra above.

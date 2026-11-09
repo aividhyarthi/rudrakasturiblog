@@ -44,7 +44,7 @@ His favourite sweet is the modak, a sweet dumpling. His favourite offerings are 
 
 ## The days to remember
 - **Chaturthi**, the fourth tithi, every fortnight.
-- **Sankashti Chaturthi**, in the dark fortnight, with a fast broken after moonrise. See [this month's date and moonrise time](/sankashti-chaturthi-october-2026-date-moonrise-and-vrat/).
+- **Sankashti Chaturthi**, in the dark fortnight, with a fast broken after moonrise. See [this month's date and moonrise time](/sankashti-chaturthi/october/).
 - **Vinayaka Chavithi**, the big festival, in the month of Bhadrapada.
 
 For mantras and meanings see our [Ganesha page](/mantras/ganesha/).

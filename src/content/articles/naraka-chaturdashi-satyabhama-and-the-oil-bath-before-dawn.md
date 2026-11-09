@@ -79,6 +79,6 @@ The Narakasura story is in the Bhagavata Purana (Book 10), the Vishnu Purana (Bo
 
 Is there someone, or some part of you, that has been shut away for a long time, waiting for a morning to be called back?
 
-For the exact dates, see [our Deepavali 2026 guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/) and the [festivals page](/festivals/). Krishna's next festival is close behind: [Govardhan Puja and Annakut](/govardhan-the-hill-krishna-lifted-and-the-annakut/) falls two days later in 2026.
+For the exact dates, see [our Deepavali 2026 guide](/festivals/deepavali/) and the [festivals page](/festivals/). Krishna's next festival is close behind: [Govardhan Puja and Annakut](/govardhan-the-hill-krishna-lifted-and-the-annakut/) falls two days later in 2026.
 
 If your family has a different way of keeping this morning, or a song your grandmother sang, write to us at hello@southwala.com. We would like to hear it.

@@ -40,7 +40,7 @@ Pilgrims walk around the hill, a path of about 21 km, called Govardhan Parikrama
 ## Govardhan Puja and Annakut
 On the day after Deepavali, the first day of the bright fortnight of Kartika, Govardhan Puja is celebrated. People make a small hill from cow dung or of food and decorate it, then circle it. In temples, a tradition called Annakut, a mountain of food, is offered to Krishna. Dozens or hundreds of dishes are arranged in front of the deity and then shared with devotees as prasad.
 
-In 2026 Govardhan Puja is on **Tuesday, 10 November**, the day after Deepavali Amavasya. The full list of Deepavali dates is in [our Deepavali guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). Bali Padyami, the same day, begins Karthika Masam in the Telugu calendar.
+In 2026 Govardhan Puja is on **Tuesday, 10 November**, the day after Deepavali Amavasya. The full list of Deepavali dates is in [our Deepavali guide](/festivals/deepavali/). Bali Padyami, the same day, begins Karthika Masam in the Telugu calendar.
 
 ## A closer look at the story's source
 The lifting of Govardhana is told in the tenth canto of the Bhagavata Purana, in chapters 24 and 25. It is also recalled in the Harivamsha and in many later poems and songs. In the telling, Krishna is a young boy, and the people of Vraj are simple cowherds. That detail matters. The hero of the story is not a king or a warrior but a child who asks a simple question: why do we do what we do?

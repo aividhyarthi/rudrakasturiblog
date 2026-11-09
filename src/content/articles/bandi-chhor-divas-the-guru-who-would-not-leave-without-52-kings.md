@@ -55,7 +55,7 @@ Sikh tradition holds that Diwali was already a day when Sikhs gathered before th
 
 ## The custom today
 
-At the Golden Temple, thousands of lamps and lights glow around the sarovar, with fireworks in the sky and langar served all night. In gurdwaras elsewhere, including those in Hyderabad, Chennai and Nanded (where the Sikh centre of Hazur Sahib stands), there are kirtan, prayer and langar, and homes are lit. Sweets are shared, and some Sikhs choose to skip loud fireworks. If you are a non-Sikh visitor, the gurdwara welcomes you: cover your head, remove your shoes and sit with the community. For this year's dates, see our [festivals page](/festivals/) and [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/).
+At the Golden Temple, thousands of lamps and lights glow around the sarovar, with fireworks in the sky and langar served all night. In gurdwaras elsewhere, including those in Hyderabad, Chennai and Nanded (where the Sikh centre of Hazur Sahib stands), there are kirtan, prayer and langar, and homes are lit. Sweets are shared, and some Sikhs choose to skip loud fireworks. If you are a non-Sikh visitor, the gurdwara welcomes you: cover your head, remove your shoes and sit with the community. For this year's dates, see our [festivals page](/festivals/) and [Deepavali 2026 dates](/festivals/deepavali/).
 
 ## Where this comes from
 

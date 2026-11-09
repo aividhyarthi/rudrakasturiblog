@@ -28,7 +28,7 @@ The Hindu lunar months are named after the star, the nakshatra, that the Moon is
 This is the same star group that gave Murugan his name Kartikeya. In the story, the six Krittika women raised the six babies who became Subramanya. So Karthika is also linked with him.
 
 ## The dates in 2026
-Karthika Masam, as counted in Andhra, Telangana and the amanta calendar, runs from **10 November to 8 December 2026**. It starts the day after Deepavali Amavasya and ends with Kartika Amavasya. The main days are the four Mondays (16, 23, 30 November and 7 December) and Kartika Pournami on 24 November. For all dates see the [Karthika Masam 2026 guide](/karthika-masam-2026-dates-deepam-and-fasting/).
+Karthika Masam, as counted in Andhra, Telangana and the amanta calendar, runs from **10 November to 8 December 2026**. It starts the day after Deepavali Amavasya and ends with Kartika Amavasya. The main days are the four Mondays (16, 23, 30 November and 7 December) and Kartika Pournami on 24 November. For all dates see the [Karthika Masam 2026 guide](/masam/karthika/).
 
 ## Why is it holy?
 Two gods share this month, and that is unusual.

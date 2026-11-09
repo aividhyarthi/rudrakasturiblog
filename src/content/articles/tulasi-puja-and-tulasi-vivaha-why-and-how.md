@@ -28,7 +28,7 @@ Tradition suggests plucking leaves in the morning after a bath, and avoiding Eka
 ## Tulasi Vivaha 2026
 Tulasi Vivaha is a ceremonial wedding of the Tulasi plant to Vishnu, represented by a Shaligrama, or by an amla branch, and sometimes Krishna. It is held on any day from Prabodhini (Utthana) Ekadashi, when Vishnu is said to wake from his four-month sleep, to Kartika Pournami. In 2026 Prabodhini Ekadashi falls on 20 or 21 November, and Kartika Pournami is on **24 November**, so the ceremony is held between those dates. Check your family's or temple's date.
 
-It marks the end of Chaturmasya and the start of the marriage season in many families. Read about [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/).
+It marks the end of Chaturmasya and the start of the marriage season in many families. Read about [Karthika Masam 2026](/masam/karthika/).
 
 ## How the ceremony goes
 1. Clean the Tulasi platform and decorate it with a canopy, rangoli and flowers.

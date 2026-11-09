@@ -44,7 +44,7 @@ Teachers often read the three cities as the three states of the mind: waking, dr
 - **Matsya Jayanti** in some traditions, remembering Vishnu's fish incarnation.
 
 ## In 2026
-Kartika Pournami is on **Tuesday, 24 November 2026**. The tithi begins on 23 November at 11:42 PM and ends on 24 November at 8:23 PM (Hyderabad). See [the November 2026 Pournami page](/pournami/november-2026/).
+Kartika Pournami is on **Tuesday, 24 November 2026**. The tithi begins on 23 November at 11:42 PM and ends on 24 November at 8:23 PM (Hyderabad). See [the November 2026 Pournami page](/pournami/november/).
 
 ## How to observe it at home
 1. Bathe early, and fast lightly if you wish.

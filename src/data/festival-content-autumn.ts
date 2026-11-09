@@ -162,16 +162,20 @@ export const FEST_AUTUMN: Record<string, FestContent> = {
     lead: ['On this night, many families leave a bowl of sweet milk and rice out under the full moon. In the morning, they eat it. The moon, tradition says, is at its fullest and coolest, and its light is believed to carry something healing.'],
     blocks: [
       { h: 'What the day is', p: ['Sharad Purnima falls on Ashwayuja Pournami, at the end of the monsoon. It is called Kojagara in Bengal and Odisha, from "Ko jagarti?", "who is awake?", the question Lakshmi is said to ask as she walks the earth that night. It is also the night of Krishna\'s Raas Leela, in the Bhagavata tradition.'] },
+      { h: 'The moonlit night and the daytime vratam', p: ['The night of Sharad Purnima is the night when the full moon rises on the day the Pournami tithi covers moonrise. Daytime Pournami vratams, such as the Satyanarayana puja, are usually kept on the day when Pournami is present at sunrise. When the tithi spans two days these can be different days. Some temples and families follow one rule and some the other, so check with yours. Our Pournami page for the month gives the tithi start and end.'] },
       { h: 'How to keep it', ol: ['Bathe, and keep a light fast through the day, if you can.', 'In the evening, worship Lakshmi, with a lamp, flowers and sweets.', 'Make kheer (rice cooked in milk with sugar and cardamom).', 'Place the kheer in a clean vessel in the moonlight for some hours.', 'Offer a portion to Lakshmi, and eat the rest as prasad.', 'Stay awake in the evening if you can, singing or listening to devotional songs.'] },
     ],
     faqs: [
+      ['What else is Sharad Purnima known as?', 'Raas Purnima in the Vaishnava tradition, the night of Krishna\'s Raas with the gopis. Many calendars also keep the birth anniversary of the sage Valmiki, author of the Ramayana, on this Purnima. In parts of Odisha and Karnataka, unmarried girls worship the Moon on this day as Kumara Purnima.'],
+      ['How should the kheer be kept in the moonlight?', 'Keep the vessel covered with a thin cloth against insects, and eat it the next morning as prasad.'],
       ['Why kheer in the moonlight?', 'It is a custom linked to the belief that the Moon\'s light on this night carries healing and nourishment.'],
       ['What is Kojagara?', 'The name in the East, from Lakshmi\'s question "Who is awake?". Those who stay awake and worship her are said to be blessed.'],
     ],
-    reads: [{ href: '/sharad-purnima-2026-date-timings-and-kojagari-lakshmi-puja/', label: 'Sharad Purnima: timings and Kojagari Lakshmi Puja' }, { href: '/friday-lakshmi-worship-mantras-and-how-to-do-it/', label: 'Friday Lakshmi worship' }],
+    reads: [{ href: '/festivals/sharad-purnima/', label: 'Sharad Purnima: timings and Kojagari Lakshmi Puja' }, { href: '/friday-lakshmi-worship-mantras-and-how-to-do-it/', label: 'Friday Lakshmi worship' }],
   },
 
   'dhanteras': {
+    days: { title: 'Deepavali day by day', what: { 'dhanteras': 'Lakshmi, Kubera and Dhanvantari. Buy something small and new, and light a lamp for Yama at dusk.', 'naraka-chaturdashi': 'The oil bath before sunrise, new clothes and lamps.', 'deepavali': 'Lakshmi Puja on the evening of the new moon, and rows of lamps.', 'govardhan-puja': 'Govardhan Puja, Annakut and Bali Padyami. Karthika Masam begins.', 'bhai-dooj': 'Sisters apply a tilak to their brothers and feed them.' } },
     hero: 'om-lotus', heroAlt: 'A brass pot, a small lamp and new utensils', te: 'ధన త్రయోదశి',
     names: 'Also called Dhanatrayodashi. The first day of Deepavali, on the thirteenth day of the dark fortnight of Ashwayuja.',
     dek: 'A new utensil, a lamp for Yama and the birthday of Dhanvantari.',
@@ -186,10 +190,11 @@ export const FEST_AUTUMN: Record<string, FestContent> = {
       ['Do I have to buy gold?', 'No. Anything small and new is enough.'],
       ['Who is Dhanvantari?', 'The physician of the gods, worshipped for health. Many doctors and Ayurveda practitioners honour him on this day.'],
     ],
-    reads: [{ href: '/yama-deepam-the-prince-who-was-to-die-on-the-fourth-night/', label: 'Yama Deepam: the prince who was to die on the fourth night' }, { href: '/which-god-to-pray-to-for-health-and-recovery-dhanvantari-and-shiva/', label: 'Which god to pray to for health' }, { href: '/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/', label: 'Deepavali, day by day' }],
+    reads: [{ href: '/yama-deepam-the-prince-who-was-to-die-on-the-fourth-night/', label: 'Yama Deepam: the prince who was to die on the fourth night' }, { href: '/which-god-to-pray-to-for-health-and-recovery-dhanvantari-and-shiva/', label: 'Which god to pray to for health' }, { href: '/festivals/deepavali/', label: 'Deepavali, day by day' }],
   },
 
   'naraka-chaturdashi': {
+    days: { title: 'Deepavali day by day', what: { 'dhanteras': 'Lakshmi, Kubera and Dhanvantari. Buy something small and new, and light a lamp for Yama at dusk.', 'naraka-chaturdashi': 'The oil bath before sunrise, new clothes and lamps.', 'deepavali': 'Lakshmi Puja on the evening of the new moon, and rows of lamps.', 'govardhan-puja': 'Govardhan Puja, Annakut and Bali Padyami. Karthika Masam begins.', 'bhai-dooj': 'Sisters apply a tilak to their brothers and feed them.' } },
     hero: 'krishna-flute', heroAlt: 'Lamps at dawn, a brass pot of oil and a bar of soap', te: 'నరక చతుర్దశి',
     names: 'Also called Choti Diwali. The day before Deepavali, with an oil bath before dawn.',
     dek: 'An oil bath at four in the morning, and a story of a demon who asked for a festival.',
@@ -203,10 +208,11 @@ export const FEST_AUTUMN: Record<string, FestContent> = {
       ['Why an oil bath?', 'It is said to remove the dirt of the old year and prepare for Lakshmi\'s visit. It is also considered good for health.'],
       ['Why is it called Choti Diwali?', 'In the North it is the "little Diwali", the day before the main Lakshmi Puja.'],
     ],
-    reads: [{ href: '/naraka-chaturdashi-satyabhama-and-the-oil-bath-before-dawn/', label: 'Naraka Chaturdashi: Satyabhama and the oil bath before dawn' }, { href: '/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/', label: 'Deepavali, day by day' }],
+    reads: [{ href: '/naraka-chaturdashi-satyabhama-and-the-oil-bath-before-dawn/', label: 'Naraka Chaturdashi: Satyabhama and the oil bath before dawn' }, { href: '/festivals/deepavali/', label: 'Deepavali, day by day' }],
   },
 
   'deepavali': {
+    days: { title: 'Deepavali day by day', what: { 'dhanteras': 'Lakshmi, Kubera and Dhanvantari. Buy something small and new, and light a lamp for Yama at dusk.', 'naraka-chaturdashi': 'The oil bath before sunrise, new clothes and lamps.', 'deepavali': 'Lakshmi Puja on the evening of the new moon, and rows of lamps.', 'govardhan-puja': 'Govardhan Puja, Annakut and Bali Padyami. Karthika Masam begins.', 'bhai-dooj': 'Sisters apply a tilak to their brothers and feed them.' } },
     hero: 'om-lotus', heroAlt: 'A row of oil lamps, a rangoli and a brass Lakshmi', te: 'దీపావళి',
     names: 'Also called Diwali and Lakshmi Puja. The festival of lights, on the new moon of Ashwayuja.',
     dek: 'A row of lamps, a clean house and Lakshmi welcomed in.',
@@ -218,10 +224,11 @@ export const FEST_AUTUMN: Record<string, FestContent> = {
       { h: 'How it is kept in different places', ul: ['**Telugu states and Karnataka:** Lakshmi Puja and lamps in the evening, with new accounts begun in many shops.', '**Tamil Nadu:** Deepavali morning begins with an oil bath before dawn, and Deepavali Marundhu, a herbal medicine, is taken.', '**North India:** Lakshmi-Ganesh Puja, with rows of diyas and Rama\'s return.', '**Bengal:** Kali Puja on the same night.', '**Jain and Sikh traditions:** Deepavali also marks Mahavira\'s nirvana and Bandi Chhor Divas.'] },
     ],
     faqs: [
+      ['Which day is the main Deepavali?', 'For most families it is the evening of Amavasya, the day of Lakshmi Puja. Many South Indian homes also give great importance to the early morning of Naraka Chaturdashi, with the oil bath and new clothes. Some calendars differ by a day, so confirm with your local panchangam or temple.'],
       ['Is Deepavali on the Amavasya?', 'Yes, it falls on the new moon of Ashwayuja. If the tithi spans two days, the evening of the day when Amavasya is present at dusk is chosen.'],
       ['Why do we light lamps?', 'To welcome Lakshmi and to mark the victory of light over dark.'],
       ['What is Bandi Chhor Divas?', 'The Sikh festival remembering the release of Guru Hargobind and 52 kings, kept on the same day.'],
     ],
-    reads: [{ href: '/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/', label: 'Deepavali, day by day' }, { href: '/hidden-stories-of-deepavali-what-we-know-and-what-is-folk/', label: 'Hidden stories of Deepavali' }, { href: '/bandi-chhor-divas-the-guru-who-would-not-leave-without-52-kings/', label: 'Bandi Chhor Divas' }, { href: '/mahalakshmi-ashtakam-meaning-and-how-to-use-it/', label: 'Mahalakshmi Ashtakam' }],
+    reads: [{ href: '/festivals/deepavali/', label: 'Deepavali, day by day' }, { href: '/hidden-stories-of-deepavali-what-we-know-and-what-is-folk/', label: 'Hidden stories of Deepavali' }, { href: '/bandi-chhor-divas-the-guru-who-would-not-leave-without-52-kings/', label: 'Bandi Chhor Divas' }, { href: '/mahalakshmi-ashtakam-meaning-and-how-to-use-it/', label: 'Mahalakshmi Ashtakam' }],
   },
 };

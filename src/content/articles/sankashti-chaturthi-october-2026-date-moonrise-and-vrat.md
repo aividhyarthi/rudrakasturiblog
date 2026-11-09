@@ -9,7 +9,7 @@ tldr: "Sankashti Chaturthi is on Thursday, 29 October 2026. Krishna Chaturthi ru
 hero: "temple-sunrise"
 imageAlt: "A South Indian temple at sunrise with a row of lit lamps"
 tags: ["Sankashti Chaturthi", "Ganesha", "Chaturthi", "vratam"]
-draft: false
+draft: true
 ---
 
 Sankashti Chaturthi, also called Sankata Hara Chaturthi, is the Chaturthi of the dark fortnight, observed every month in honour of Ganesha. *Sankashti* means deliverance from difficulty.

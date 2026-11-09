@@ -32,7 +32,7 @@ Rahu and Ketu are not bodies in the sky. They are the two points where the Moon'
 
 ## How they are used
 - **Birth chart:** the position of each graha in your chart is read for its sign, house and relationships to the others.
-- **Transits (gochara):** the daily, weekly and monthly [horoscope](/rasi-phalalu/) is worked out from where the grahas are now relative to your Moon sign. For example, [Saturn's current transit](/sade-sati-2026-which-rashis-are-affected/) affects the whole of Sade Sati.
+- **Transits (gochara):** the daily, weekly and monthly [horoscope](/rasi-phalalu/) is worked out from where the grahas are now relative to your Moon sign. For example, [Saturn's current transit](/sade-sati/) affects the whole of Sade Sati.
 - **Dashas:** a time-period system that says which graha is "in charge" at different stages of life.
 
 ## Worship and temples

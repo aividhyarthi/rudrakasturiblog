@@ -70,7 +70,7 @@ Gaja Lakshmi is one of the most familiar images of the goddess. She sits on a lo
 Look at what the picture says. Water is the source of crops, and elephants stand for royal strength and rain-clouds in Indian art. So the image says that prosperity comes when strength and water come together, and that she is bathed and honoured, not grabbed. Many families like to see her at the entrance for that reason: it reminds everyone who walks in that abundance is received with respect.
 
 ## When to remember her through the year
-Friday is her weekly day, but the tradition has bigger moments too. Lakshmi Puja on the night of Deepavali is the most loved. You can read about it in [Deepavali 2026: Dhanteras, Naraka Chaturdashi and Lakshmi Puja](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/), and about the full-moon night when Lakshmi is worshipped in [Sharad Purnima 2026](/sharad-purnima-2026-date-timings-and-kojagari-lakshmi-puja/).
+Friday is her weekly day, but the tradition has bigger moments too. Lakshmi Puja on the night of Deepavali is the most loved. You can read about it in [Deepavali 2026: Dhanteras, Naraka Chaturdashi and Lakshmi Puja](/festivals/deepavali/), and about the full-moon night when Lakshmi is worshipped in [Sharad Purnima 2026](/festivals/sharad-purnima/).
 
 ## A thought to keep
 The Gita has a line that says something similar: *yoga-kshemam vahamy aham*, "I carry what you lack and keep what you have." (9.22) Lakshmi, in the tradition, is the grace in that carrying.

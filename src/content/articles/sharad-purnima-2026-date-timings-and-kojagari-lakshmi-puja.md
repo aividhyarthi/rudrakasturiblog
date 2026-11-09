@@ -9,7 +9,7 @@ tldr: "The Ashwayuja Pournami tithi begins at 11:56 AM on Sunday, 25 October 202
 hero: "moon-nakshatra"
 imageAlt: "The Moon among the stars of the nakshatras"
 tags: ["Sharad Purnima", "Kojagari", "Ashwayuja Pournami", "full moon"]
-draft: false
+draft: true
 ---
 
 Sharad Purnima, the full moon of the Ashwayuja month, is considered the brightest and most beautiful full moon of the year, at the end of the monsoon when the sky is clear. It is a night for moonlight, Lakshmi and kheer.

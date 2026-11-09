@@ -44,7 +44,7 @@ In Vedic astrology Saturday is the day of Shani (Saturn), the slow planet of dis
 - **Charity,** such as food, sesame, black clothes or oil given to someone in need.
 - **Honest effort.** Shani is said to reward work, fairness and patience.
 
-If you are in *Sade Sati*, the seven-and-a-half-year period linked with Saturn, read our [Sade Sati guide](/sade-sati-2026-which-rashis-are-affected/). The honest teaching is that it is a time to be steady, not a time to be afraid.
+If you are in *Sade Sati*, the seven-and-a-half-year period linked with Saturn, read our [Sade Sati guide](/sade-sati/). The honest teaching is that it is a time to be steady, not a time to be afraid.
 
 ## Why Hanuman
 There is a popular story that Hanuman freed Shani from Ravana's captivity and was promised that Shani would not trouble his devotees. This comes from later tradition, not Valmiki. We have told it, and marked it as folk tradition, in [Hanuman and Shani](/hanuman-and-shani-why-hanuman-devotees-are-said-to-be-safe/). Whatever its origin, it is why many families recite the Hanuman Chalisa on Saturdays.

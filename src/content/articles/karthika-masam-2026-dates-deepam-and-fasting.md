@@ -10,7 +10,7 @@ hero: "shiva-symbols"
 imageAlt: "A Shiva lingam with a row of lit oil lamps"
 tags: ["Karthika Masam", "Kartika Pournami", "Karthika Somavaram", "deepam"]
 series: "karthika"
-draft: false
+draft: true
 ---
 
 Karthika Masam is the most lamp-filled month of the Telugu calendar. Homes, temples, rivers and tulasi platforms glow every evening, and the month is considered dear to both Shiva and Vishnu devotees.

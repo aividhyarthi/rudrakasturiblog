@@ -42,4 +42,4 @@ It is a reminder that devotion in India does not only come from scripture. A riv
 ## Rivers and prayer
 The Godavari has many sacred stretches, from Trimbak to Bhadrachalam to Antarvedi, where the river meets the sea, and the famous Lakshmi Narasimha temple stands. If you travel in the delta, a boat ride on the river at sunset is one of the quietest things you can do.
 
-For other rivers in this series, read about [the Ganga](/ganga-why-a-river-is-a-goddess/), and see our [Karthika Masam guide](/karthika-masam-2026-dates-deepam-and-fasting/) for the month in which river lamps are floated.
+For other rivers in this series, read about [the Ganga](/ganga-why-a-river-is-a-goddess/), and see our [Karthika Masam guide](/masam/karthika/) for the month in which river lamps are floated.

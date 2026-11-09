@@ -96,7 +96,7 @@ If an open flame is not safe where you live, a small electric lamp placed with a
 Don't worry. Relight it calmly. A lamp that goes out in a draught is not a bad sign.
 
 **Which lamp do I light on which day?**
-Follow your family's custom. For the dates of the special days, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/), and for the Monday observance, see [Karthika Somavaram](/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/).
+Follow your family's custom. For the dates of the special days, see [Karthika Masam 2026](/masam/karthika/), and for the Monday observance, see [Karthika Somavaram](/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/).
 
 If your family has a special way of lighting Karthika lamps, or a lamp that has been in the house for generations, write to us at hello@southwala.com.
 

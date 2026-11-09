@@ -67,7 +67,7 @@ Friday is the traditional day, and dusk is the natural hour.
 4. Recite the eight verses slowly. If you do not read Sanskrit, use Telugu or English transliteration, and listen to a recording first.
 5. Offer a small sweet or fruit and share it at home.
 
-The whole hymn takes about three to five minutes. Some families also recite it on Deepavali evening when Lakshmi puja is performed; see [Deepavali 2026: dates, Dhanteras, Naraka Chaturdashi and Lakshmi puja](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). A fuller guide to the Friday practice is in [Friday Lakshmi worship: mantras and how to do it](/friday-lakshmi-worship-mantras-and-how-to-do-it/).
+The whole hymn takes about three to five minutes. Some families also recite it on Deepavali evening when Lakshmi puja is performed; see [Deepavali 2026: dates, Dhanteras, Naraka Chaturdashi and Lakshmi puja](/festivals/deepavali/). A fuller guide to the Friday practice is in [Friday Lakshmi worship: mantras and how to do it](/friday-lakshmi-worship-mantras-and-how-to-do-it/).
 
 ## If Sanskrit is difficult
 

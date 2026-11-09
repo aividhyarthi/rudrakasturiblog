@@ -23,7 +23,7 @@ draft: false
 When someone you love is ill, the first thing you do is call the doctor. The second, in a Hindu home, is often to light a lamp. Both are right. Here are the gods that people turn to in illness, and what to say.
 
 ## Dhanvantari: the physician of the gods
-In the story of the churning of the ocean, Dhanvantari rose from the waves carrying a pot of nectar, *amrita*. He is regarded as the divine physician and the source of Ayurveda. His festival, Dhanteras, falls two days before Deepavali (6 November in 2026). See the [Deepavali guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/).
+In the story of the churning of the ocean, Dhanvantari rose from the waves carrying a pot of nectar, *amrita*. He is regarded as the divine physician and the source of Ayurveda. His festival, Dhanteras, falls two days before Deepavali (6 November in 2026). See the [Deepavali guide](/festivals/deepavali/).
 
 **The mantra**
 *Om Namo Bhagavate Vasudevaya Dhanvantaraye Amrita Kalasha Hastaya Sarva Amaya Vinashanaya Trailokya Nathaya Sri Maha Vishnave Swaha.*

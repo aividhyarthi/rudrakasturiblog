@@ -19,6 +19,8 @@ async function items(): Promise<Record<string, Item>> {
     'rasi-phalalu': { kicker: 'Rasi Phalalu', title: "Today's rasi phalalu for every rashi: daily, weekly, monthly" },
     temples: { kicker: 'Religion', title: 'Temples of India: Jyotirlingas, Shakti Peethas, Char Dham and more' },
     festivals: { kicker: 'Devotional', title: 'Hindu festivals: dates of Deepavali, Karthika Pournami, Sankranti, Shivaratri and more' },
+    'sade-sati': { kicker: 'Astrology', title: 'Sade Sati: which rashis are affected now, and when Saturn moves' },
+    'masam-karthika': { kicker: 'Hindu months', title: 'Karthika Masam: dates, Mondays, festivals and how to keep the month' },
     'somavati-amavasya': { kicker: 'Amavasya', title: 'Somavati Amavasya: dates, timings, puja at home and the story' },
     gita: { kicker: 'Bhagavad Gita', title: 'The Bhagavad Gita: all 18 chapters, explained simply' },
   };

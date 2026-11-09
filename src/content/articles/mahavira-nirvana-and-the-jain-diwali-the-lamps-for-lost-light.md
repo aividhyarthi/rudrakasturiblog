@@ -50,7 +50,7 @@ Think for a moment about how unusual this is. Most festivals mark a birth or a v
 
 ## How it sits beside the Hindu festival
 
-The two are not in conflict, though they are not the same. In a Hindu home the night is about Lakshmi, about Rama's return or Krishna's defeat of Naraka, and the victory of light. In a Jain home it is about nirvana and the knowledge that lasts. Both speak of lamps and of dark. A child in a mixed neighbourhood sees the same lights and hears different stories, and that does no harm. For the Hindu dates, see [Deepavali 2026 dates](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/) and our [festivals page](/festivals/).
+The two are not in conflict, though they are not the same. In a Hindu home the night is about Lakshmi, about Rama's return or Krishna's defeat of Naraka, and the victory of light. In a Jain home it is about nirvana and the knowledge that lasts. Both speak of lamps and of dark. A child in a mixed neighbourhood sees the same lights and hears different stories, and that does no harm. For the Hindu dates, see [Deepavali 2026 dates](/festivals/deepavali/) and our [festivals page](/festivals/).
 
 ## What families do
 

@@ -1,0 +1,66 @@
+---
+// One permanent page per Hindu month. It always shows the month running now or the next one, with its dates, Mondays, Ekadashis and festivals worked out from the sky.
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import { MASA_PAGES } from '../../data/masa-pages';
+import { masaWindow } from '../../lib/masa';
+import { allFestivals } from '../../lib/festivals';
+import { allTithis } from '../../lib/tithi';
+import { allArticles } from '../../lib/articles';
+import { fmt, linkExists } from '../../lib/fmt';
+import { todayIST, ymdKey, addDays, WEEKDAYS } from '../../lib/panchang';
+import { EN_MONTH_NAMES } from '../../lib/lunar';
+export function getStaticPaths() { return MASA_PAGES.map((m) => ({ params: { slug: m.slug }, props: { m } })); }
+const { m: page } = Astro.props as { m: (typeof MASA_PAGES)[number] };
+const w = masaWindow(page.idx)!;
+const today = todayIST(), tk = ymdKey(today);
+const published = new Set((await allArticles()).map((a) => a.slug));
+const nice = (x: { y: number; m: number; d: number }) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]} ${x.y}`;
+const wd = (x: { y: number; m: number; d: number }) => WEEKDAYS[new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay()];
+const from = ymdKey(w.start), to = ymdKey(w.end);
+const live = tk >= from && tk <= to;
+const status = live ? `Day ${w.dayNo} of ${w.total}` : tk < from ? `Begins ${wd(w.start)}, ${nice(w.start)}` : 'Just ended';
+const row = (key: string, label: string, href: string) => { const [y, mo, d] = key.split('-').map(Number); return { key, label, href, date: `${wd({ y, m: mo, d }).slice(0, 3)}, ${d} ${EN_MONTH_NAMES[mo - 1]}` }; };
+const fests = allFestivals().filter((f) => f.month === page.idx && f.key >= from && f.key <= to).map((f) => row(f.key, f.name, `/festivals/${f.slug}/`));
+const eks = allTithis('ekadashi').filter((o) => o.key >= from && o.key <= to).map((o) => row(o.key, o.name, `/ekadashi/${o.slug}/`));
+const mondays: ReturnType<typeof row>[] = [];
+for (let x = w.start; ymdKey(x) <= to; x = addDays(x, 1)) if (new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay() === 1) mondays.push(row(ymdKey(x), `${page.name.split(' ')[0]} Somavaram`, '/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/'));
+const dates = [...fests, ...eks, ...mondays].sort((a, b) => a.key.localeCompare(b.key));
+const reads = page.reads.filter((r) => linkExists(r.href, published));
+const faq: [string, string][] = [[`When is ${page.name} in ${w.start.y}?`, `${page.name} ${tk > to ? 'was' : 'is'} from ${wd(w.start)}, ${nice(w.start)} to ${wd(w.end)}, ${nice(w.end)}. ${page.name} begins on the day after the previous new moon, with the sunrise of the first tithi of the bright fortnight.`], ...page.faqs];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+const title = `${page.name} ${w.start.y}: Dates ${w.start.d} ${EN_MONTH_NAMES[w.start.m - 1].slice(0, 3)} to ${w.end.d} ${EN_MONTH_NAMES[w.end.m - 1].slice(0, 3)}, Mondays & Festivals`;
+---
+<Base rail="religion" title={title} description={`${page.name} ${w.start.y} runs from ${nice(w.start)} to ${nice(w.end)}. The Mondays, Ekadashis, Karthika Pournami and festivals, what the month means, and how families observe it.`.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: page.name, href: `/masam/${page.slug}/` }]} image="/covers/masam-karthika.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/festivals/">Hindu months</a></div>
+    <h1>{page.name} <span class="te">{page.te}</span> {w.start.y}: {nice(w.start)} to {nice(w.end)}</h1>
+    <p class="dek" style="margin:0 0 6px">{page.dek}</p>
+    <Hero name={page.hero} alt={page.name} ratio="16/5" />
+    <div class="sect"><h2>{live ? 'Today is' : ''} {page.name} {w.start.y}: dates at a glance</h2></div>
+    <div class="pgrid">
+      <div class="pcard"><b>Status</b><span style="font-size:19px">{status}</span></div>
+      <div class="pcard"><b>Begins</b><span style="font-size:19px">{wd(w.start).slice(0, 3)}, {nice(w.start)}</span></div>
+      <div class="pcard"><b>Ends</b><span style="font-size:19px">{wd(w.end).slice(0, 3)}, {nice(w.end)}</span></div>
+      <div class="pcard"><b>Length</b><span style="font-size:19px">{w.total} days</span></div>
+    </div>
+    <p class="sub">Dates follow the amanta calendar (Hyderabad sunrise). Some families and temples differ by a day, so please confirm with your priest or temple.</p>
+    {page.lead.map((x) => <p set:html={fmt(x, published)} />)}
+    <div class="sect"><h2>Dates to keep in {page.name} {w.start.y}</h2></div>
+    <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Date</th><th>Day</th></tr></thead><tbody>{dates.map((d) => <tr><td><b>{d.date}</b></td><td><a href={d.href} style="text-decoration:underline">{d.label}</a></td></tr>)}</tbody></table></div>
+    {page.sections.map((b) => (
+      <>
+        <div class="sect"><h2>{b.h}</h2></div>
+        {b.p?.map((x) => <p set:html={fmt(x, published)} />)}
+        {b.ul && <ul>{b.ul.map((x) => <li set:html={fmt(x, published)} />)}</ul>}
+        {b.ol && <ol>{b.ol.map((x) => <li set:html={fmt(x, published)} />)}</ol>}
+      </>
+    ))}
+    <div class="sect"><h2>{page.name} {w.start.y}: common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    {reads.length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{reads.map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
+    <div class="chips"><a href="/festivals/">All festivals</a><a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a><a href="/ekadashi/">Ekadashi dates</a><a href="/panchangam/">Today's panchangam</a></div>
+    <p class="disc">Dates are calculated for Hyderabad from the positions of the Sun and Moon. Traditions vary by region and family. For vratams and rituals, confirm with your family priest or temple.</p>
+  </div>
+</Base>

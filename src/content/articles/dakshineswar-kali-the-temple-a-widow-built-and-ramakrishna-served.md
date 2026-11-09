@@ -57,7 +57,7 @@ The temple is on the east bank of the Hooghly, in North Kolkata, easily reached 
 Rani Rasmani lived until 1861, so she saw her temple become a living centre of worship. Ramakrishna's wife, Sarada Devi, later stayed at Dakshineswar too, in the Nahabat, the music tower near the temple. She is revered by his followers as the Holy Mother. Sri Ramakrishna passed away in 1886, and the order founded in his name by Vivekananda continues today.
 
 ## Kali Puja and Deepavali
-In Bengal the great night of Kali is the Amavasya of the Deepavali season, called Kali Puja or Shyama Puja. While much of India lights lamps for Lakshmi on the same night, Bengal honours the dark Mother. This year the Deepavali Amavasya falls on 8 November, as you can see in our [Deepavali 2026 dates guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). Dakshineswar is especially busy at this time.
+In Bengal the great night of Kali is the Amavasya of the Deepavali season, called Kali Puja or Shyama Puja. While much of India lights lamps for Lakshmi on the same night, Bengal honours the dark Mother. This year the Deepavali Amavasya falls on 8 November, as you can see in our [Deepavali 2026 dates guide](/festivals/deepavali/). Dakshineswar is especially busy at this time.
 
 ## Questions people ask
 **Is it right to say Ramakrishna "saw" the goddess?**

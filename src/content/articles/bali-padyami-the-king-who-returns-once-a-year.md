@@ -81,6 +81,6 @@ The Vamana and Bali story is in the Bhagavata Purana (Book 8, the chapters on Ba
 
 When did you last keep a promise that cost you something, and who knew?
 
-For this year's date, see [the festivals page](/festivals/) and [our Deepavali 2026 guide](/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/). The same morning is also [Govardhan Puja](/govardhan-the-hill-krishna-lifted-and-the-annakut/) in many places.
+For this year's date, see [the festivals page](/festivals/) and [our Deepavali 2026 guide](/festivals/deepavali/). The same morning is also [Govardhan Puja](/govardhan-the-hill-krishna-lifted-and-the-annakut/) in many places.
 
 If your village or family keeps Bali in a way we have not mentioned, write to hello@southwala.com and tell us how your grandmother did it.

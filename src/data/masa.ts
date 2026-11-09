@@ -30,7 +30,7 @@ export const MASA_TEXT: Record<string, MasaText> = {
       'Karthika Pournami: a thousand lamps, a dawn dip in a river or tank, and Shiva abhishekam.',
     ],
     links: [
-      { href: '/karthika-masam-2026-dates-deepam-and-fasting/', label: 'Dates, deepam and fasting' },
+      { href: '/masam/karthika/', label: 'Dates, deepam and fasting' },
       { href: '/why-karthika-masam-what-the-month-means-and-who-to-worship/', label: 'What the month means' },
       { href: '/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/', label: 'Karthika Somavaram' },
       { href: '/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/', label: 'How to light the deepam' },

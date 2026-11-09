@@ -106,7 +106,7 @@ export const GUIDE: Record<string, Guide> = {
       ['Can I drink water on Ekadashi?', 'Yes, on all Ekadashis except Nirjala Ekadashi, which is the strictest. Even then it is not meant for the unwell, the elderly, children or pregnant women.'],
       ['Which Ekadashi is the most important?', 'Many say Vaikuntha (Mukkoti) Ekadashi in the South, Nirjala Ekadashi, Devshayani, Prabodhini and Mokshada, which is also Gita Jayanti.'],
     ],
-    reads: [{ href: '/ekadashi-fasting-rules-in-plain-words/', label: 'Ekadashi fasting rules in plain words' }, { href: '/ambarisha-and-durvasa-the-ekadashi-story-of-humility/', label: 'Ambarisha and Durvasa: the Ekadashi story of humility' }, { href: '/papankusha-ekadashi-2026-date-parana-time-and-story/', label: 'Papankusha Ekadashi: date, parana and story' }],
+    reads: [{ href: '/ekadashi-fasting-rules-in-plain-words/', label: 'Ekadashi fasting rules in plain words' }, { href: '/ambarisha-and-durvasa-the-ekadashi-story-of-humility/', label: 'Ambarisha and Durvasa: the Ekadashi story of humility' }],
   },
 
   sankashti: {
@@ -120,6 +120,9 @@ export const GUIDE: Record<string, Guide> = {
         'Break the fast with a light vegetarian meal.',
       ] },
       { h: 'What to keep ready', ul: ['A Ganesha idol or picture', '21 blades of durva grass and red flowers', 'Modak, coconut, fruit and sweets', 'A lamp, incense, camphor, kumkum and turmeric', 'A small vessel of water to offer to the Moon'] },
+      { h: 'Why the Moon', p: ['A popular story says that Ganesha once cursed the Moon for laughing at him, and later relented. The Moon is therefore offered respect on this night. Whatever one makes of the story, the practical rhythm is a day of restraint ending with a calm look at the sky.'] },
+      { h: 'A simple way to plan the day', ul: ['**Morning.** Bathe, light a lamp before Ganesha and take a quiet intention, such as "I will keep this fast with devotion today". Begin your fast in the way that suits your health.', '**Through the day.** Keep your mind light. A few rounds of *Om Gam Ganapataye Namah* help the hours pass gently.', '**Evening.** Clean the puja area and prepare the offerings before moonrise.', '**After moonrise.** Complete the puja, offer water to the Moon, and break the fast with prasad and a simple meal.', '**Before bed.** Thank Ganesha, put the lamp out safely and rest.'] },
+      { h: 'Sankashti and Karwa Chauth', p: ['In the month before Deepavali, the Sankashti Chaturthi falls on the same day as Karwa Chauth in the North Indian calendar, because the two calendars name the months differently.'] },
       { h: 'Why moonrise matters', p: ['The fast is broken after the moon is seen, so the date is chosen by the day on which the Chaturthi tithi is present when the Moon rises that evening. This can differ from the day the tithi begins. Moonrise is a few minutes earlier or later in other cities, so check your own city before you break the fast.'] },
     ],
     faqs: [
@@ -129,7 +132,7 @@ export const GUIDE: Record<string, Guide> = {
       ['Does the moonrise time change by city?', 'Yes. The time shown is for Hyderabad. Moonrise is a few minutes earlier or later elsewhere.'],
       ['Is Sankashti the same as Vinayaka Chaturthi?', 'No. Vinayaka Chaturthi is on the fourth day of the bright fortnight, and the big festival is in Bhadrapada. Sankashti is the fourth day of the dark fortnight, every month.'],
     ],
-    reads: [{ href: '/ganapati-atharvashirsha-the-upanishad-of-ganesha/', label: 'Ganapati Atharvashirsha' }, { href: '/why-ganesha-is-worshipped-first/', label: 'Why Ganesha is worshipped first' }, { href: '/sankashti-chaturthi-october-2026-date-moonrise-and-vrat/', label: 'Sankashti Chaturthi: moonrise and vrat' }, { href: '/which-god-to-pray-to-for-obstacles-and-new-beginnings-ganesha/', label: 'Which god to pray to for obstacles and new beginnings' }],
+    reads: [{ href: '/ganapati-atharvashirsha-the-upanishad-of-ganesha/', label: 'Ganapati Atharvashirsha' }, { href: '/why-ganesha-is-worshipped-first/', label: 'Why Ganesha is worshipped first' }, { href: '/which-god-to-pray-to-for-obstacles-and-new-beginnings-ganesha/', label: 'Which god to pray to for obstacles and new beginnings' }],
   },
 
   pradosham: {

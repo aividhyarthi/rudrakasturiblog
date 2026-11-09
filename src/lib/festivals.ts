@@ -103,7 +103,7 @@ export function allFestivals(): Fest[] {
 
 /** One permanent page per festival: its next date on or after today (or its last known date once the window has passed). */
 export function canonicalFestivals(): Fest[] {
-  const tk = ymdKey(todayIST()), by = new Map<string, Fest>();
+  const tk = ymdKey(addDays(todayIST(), -2)), by = new Map<string, Fest>(); // a date stays on its page for 2 days after it passes
   for (const f of allFestivals()) {
     const cur = by.get(f.slug);
     if (!cur || (cur.key < tk && f.key >= tk) || (cur.key < tk && f.key < tk && f.key > cur.key)) by.set(f.slug, f);

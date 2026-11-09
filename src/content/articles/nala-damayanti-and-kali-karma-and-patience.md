@@ -58,9 +58,9 @@ No. This Kali is the spirit of the age of strife, Kali Yuga, and he is a separat
 Local tradition at Tirunallar tells the story with Shani, the planet Saturn. The Mahabharata names Kali. Both versions agree on the lesson, that a hard time can test a person and then end.
 
 **Should I be afraid of Saturn?**
-No. The story is meant to give courage. If you want to understand how planetary periods are read, our piece on [Sade Sati](/sade-sati-2026-which-rashis-are-affected/) is a calm place to start.
+No. The story is meant to give courage. If you want to understand how planetary periods are read, our piece on [Sade Sati](/sade-sati/) is a calm place to start.
 
 If this story helped you in a hard season, write to us at hello@southwala.com.
 
 ## For today
-Keep the small disciplines: the morning routine, the promise kept, the work finished. They are what holds a life steady when the larger things shake. If you are in a hard period, see our guide to [Saturn's transit and Sade Sati](/sade-sati-2026-which-rashis-are-affected/).
+Keep the small disciplines: the morning routine, the promise kept, the work finished. They are what holds a life steady when the larger things shake. If you are in a hard period, see our guide to [Saturn's transit and Sade Sati](/sade-sati/).

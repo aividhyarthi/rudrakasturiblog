@@ -25,6 +25,13 @@ server {
   # Amavasya, Pournami, Sankashti and Pradosham: one permanent page per month (/amavasya/november/). Old dated addresses redirect there.
   rewrite ^/(amavasya|pournami|sankashti-chaturthi)/(january|february|march|april|may|june|july|august|september|october|november|december)(-[0-9]+)?-20[0-9][0-9]/?$ /$1/$2/ permanent;
   rewrite ^/pradosham/(january|february|march|april|may|june|july|august|september|october|november|december)-[0-9]+-20[0-9][0-9]/?$ /pradosham/$1/ permanent;
+  # Dated articles merged into permanent pages
+  rewrite ^/deepavali-2026-dates-dhanteras-naraka-chaturdashi-lakshmi-puja/?$ /festivals/deepavali/ permanent;
+  rewrite ^/karthika-masam-2026-dates-deepam-and-fasting/?$ /masam/karthika/ permanent;
+  rewrite ^/sharad-purnima-2026-date-timings-and-kojagari-lakshmi-puja/?$ /festivals/sharad-purnima/ permanent;
+  rewrite ^/papankusha-ekadashi-2026-date-parana-time-and-story/?$ /ekadashi/papankusha-ekadashi/ permanent;
+  rewrite ^/sankashti-chaturthi-october-2026-date-moonrise-and-vrat/?$ /sankashti-chaturthi/october/ permanent;
+  rewrite ^/sade-sati-2026-which-rashis-are-affected/?$ /sade-sati/ permanent;
   # Ekadashi: one permanent page per name (/ekadashi/prabodhini-ekadashi/)
   rewrite ^/ekadashi/([a-z-]+-ekadashi)-(january|february|march|april|may|june|july|august|september|october|november|december)-20[0-9][0-9](-[0-9]+)?/?$ /ekadashi/$1/ permanent;
   rewrite ^/festivals/([a-z-]+)-20[0-9][0-9]/?$ /festivals/$1/ permanent;

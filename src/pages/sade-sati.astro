@@ -1,0 +1,81 @@
+---
+// One permanent Sade Sati page. Which rashis are affected, and when Saturn moves, is worked out from the sky every day.
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import { RASHIS } from '../lib/astro';
+import { saturnStays, RASHI_NAME } from '../lib/saturn';
+import { todayIST, ymdKey } from '../lib/panchang';
+import { EN_MONTH_NAMES } from '../lib/lunar';
+const today = todayIST(), tk = ymdKey(today);
+const stays = saturnStays();
+const nowI = stays.findIndex((s) => ymdKey(s.from) <= tk && (!s.to || ymdKey(s.to) > tk));
+const cur = stays[nowI], nxt = stays[nowI + 1];
+const S = cur.sign;
+const r = (i: number) => RASHI_NAME(i);
+const date = (x: { y: number; m: number; d: number }) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]} ${x.y}`;
+const nm = (i: number) => `${r(i).skt} (${r(i).en})`;
+const phases = [
+  { what: 'First phase', rashi: S + 1, note: 'Saturn is in the 12th sign from the Moon.' },
+  { what: 'Middle phase', rashi: S, note: 'Saturn is over the Moon sign itself, which traditions call the most intense stretch.' },
+  { what: 'Last phase', rashi: S - 1, note: 'Saturn is in the 2nd sign from the Moon.' },
+];
+const ashtama = S + 5, ardha = S + 9, good = [S - 2, S - 5, S - 10];
+const upcoming = stays.slice(nowI, nowI + 6);
+const title = `Sade Sati ${today.y}: Which Rashis Are Affected Now (Saturn in ${r(S).skt})`;
+const faq: [string, string][] = [
+  [`Which rashis are in Sade Sati now?`, `Saturn is in ${nm(S)}, so Sade Sati is running for ${nm(S + 1)} (first phase), ${nm(S)} (middle phase) and ${nm(S - 1)} (last phase).`],
+  ['What is Sade Sati?', 'Sade Sati means seven and a half years. It is the period when Saturn passes through the sign before your Moon sign, your Moon sign, and the sign after it. Saturn spends about two and a half years in each sign.'],
+  ['What is my rashi for Sade Sati?', 'It is your janma rashi, the sign the Moon was in when you were born, not your Western Sun sign. Our guide explains how to find it.'],
+  ['Is Sade Sati always bad?', 'Traditional writers describe it as a period that slows things down and asks for patience, effort and honesty, not as a curse. Results are said to depend on the whole birth chart, including the strength of Saturn and the running dasha.'],
+  ['What is Ashtama Shani?', 'When Saturn is in the 8th sign from your Moon sign. Some traditions count it, with less weight than Sade Sati.'],
+  ['Do I need to buy a ring or pay for a remedy?', 'No. Be careful of anyone who asks for large sums to remove Sade Sati. The traditional practices cost almost nothing: a sesame oil lamp on Saturday, Hanuman worship, simple charity and a disciplined routine.'],
+  ['When does Saturn move next?', nxt ? `Saturn moves from ${r(S).skt} to ${r(nxt.sign).skt} on ${date(nxt.from)}.` : 'See the table of Saturn\'s moves on this page.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title={title} description={`Sade Sati today: Saturn is in ${r(S).skt}, so ${r(S + 1).skt}, ${r(S).skt} and ${r(S - 1).skt} rashis are affected. Saturn's next move, what the tradition says and what people do.`} active="astrology" breadcrumbs={[{ name: 'Astrology', href: '/rasi-phalalu/' }, { name: 'Sade Sati', href: '/sade-sati/' }]} image="/covers/sade-sati.png">
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-astrology">
+    <div class="kicker"><a href="/rasi-phalalu/">Astrology</a></div>
+    <h1>Sade Sati {today.y}: which rashis are affected now</h1>
+    <p class="dek" style="margin:0 0 6px">Saturn is in {nm(S)} {nxt ? <>until {date(nxt.from)}</> : ''}. Sade Sati is running for {r(S + 1).skt}, {r(S).skt} and {r(S - 1).skt}.</p>
+    <Hero name="navagraha-symbols" alt="The nine planets, with Saturn" ratio="16/5" />
+    <p class="sub"><b>Source:</b> Vedic astrology, a matter of tradition and belief. This page is for information and reflection, not a prediction about your life.</p>
+
+    <div class="sect"><h2>Who is in Sade Sati now</h2></div>
+    <p>Your rashi here means your <b>janma rashi</b>, the sign your Moon was in at birth, not your Western Sun sign. If you are not sure of it, read <a href="/find-your-janma-rashi-moon-sign/" style="text-decoration:underline">how to find your janma rashi</a>.</p>
+    <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Phase</th><th>Rashi</th></tr></thead><tbody>
+      {phases.map((x) => <tr><td><b>{x.what}</b></td><td><a href={`/rasi-phalalu/${r(x.rashi).id}/`} style="text-decoration:underline"><b>{nm(x.rashi)}</b></a><br /><small>{x.note}</small></td></tr>)}
+    </tbody></table></div>
+    <p>Some traditions also speak of <b>Ashtama Shani</b>, when Saturn is in the 8th sign from the Moon ({nm(ashtama)}), and <b>Ardhashtama Shani</b>, the 4th sign ({nm(ardha)}). Not every astrologer counts these, and they carry less weight than Sade Sati.</p>
+    <p>Under the classical gochara (transit) rules, Saturn in {r(S).skt} is considered favourable for <b>{good.map((i) => r(i).skt).join(', ')}</b>, because it sits in their 3rd, 6th and 11th signs from the Moon. Other rashis see mixed results. Read your daily and weekly horoscope on the <a href="/rasi-phalalu/" style="text-decoration:underline">rasi phalalu page</a>.</p>
+
+    <div class="sect"><h2>Saturn's moves: when Sade Sati begins and ends for each rashi</h2></div>
+    <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Saturn in</th><th>From</th><th>Until</th><th>Sade Sati for</th></tr></thead><tbody>
+      {upcoming.map((x) => <tr><td><b>{nm(x.sign)}</b></td><td>{date(x.from)}</td><td>{x.to ? date(x.to) : 'ongoing'}</td><td>{r(x.sign + 1).skt}, {r(x.sign).skt}, {r(x.sign - 1).skt}</td></tr>)}
+    </tbody></table></div>
+    <p class="sub">Saturn sometimes moves back into the previous sign for a few months (retrograde motion) before moving on. The dates are worked out from the planet's actual position, in the sidereal zodiac (Lahiri).</p>
+
+    <div class="sect"><h2>What Sade Sati is</h2></div>
+    <p><i>Sade Sati</i> means seven and a half years. It is the period when Saturn (Shani) passes through three signs in a row: the sign before your rashi, your rashi itself, and the sign after it. Saturn spends about two and a half years in each sign, so the three phases add up to about seven and a half years. It comes around roughly every twenty-nine and a half years, which is how long Saturn takes to go round the zodiac.</p>
+
+    <div class="sect"><h2>What the texts and tradition actually say</h2></div>
+    <p>Saturn is the planet of discipline, time and consequences. Traditional writers describe Sade Sati as a period that slows things down and asks for patience, effort and honesty, not as a curse. Results are said to depend on the whole horoscope, including the strength of Saturn in your birth chart and the running dasha. Many people say that a hard season brought out their best.</p>
+
+    <div class="sect"><h2>What people traditionally do</h2></div>
+    <ul>
+      <li>Worship on Saturdays: lighting a sesame oil lamp, visiting a Hanuman, Shani or Venkateswara temple.</li>
+      <li>Reading the Hanuman Chalisa or the Shani Chalisa.</li>
+      <li>Giving to those in need: food, black sesame, shoes or umbrellas.</li>
+      <li>Living with discipline: a regular routine, keeping promises, respecting elders and the people who work for you.</li>
+    </ul>
+    <p>Read <a href="/hanuman-and-shani-why-hanuman-devotees-are-said-to-be-safe/" style="text-decoration:underline">Hanuman and Shani</a> and <a href="/saturday-venkateswara-shani-hanuman-how-to-worship/" style="text-decoration:underline">how to worship on Saturday</a>. On Shani Jayanti, see our <a href="/festivals/shani-jayanti/" style="text-decoration:underline">Shani Jayanti guide</a>.</p>
+
+    <div class="sect"><h2>What not to do</h2></div>
+    <p>Do not make big financial or health decisions out of fear because of an astrological period, and do not pay anyone who promises to "remove" Sade Sati. If you have a health, money or legal problem, see a doctor, a financial adviser or a lawyer first.</p>
+
+    <div class="sect"><h2>Questions people ask</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <p class="disc">Astrology is a matter of tradition and belief. This page is for information and reflection, not a prediction about your life.</p>
+  </div>
+</Base>

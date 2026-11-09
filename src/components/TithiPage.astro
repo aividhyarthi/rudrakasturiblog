@@ -5,6 +5,8 @@ import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../l
 import { MONTHS, MONTHS_TE, EN_MONTH_NAMES } from '../lib/lunar';
 import { allTithis, ROUTE, type Obs, type TithiKind } from '../lib/tithi';
 import { COPY, EK_NOTE, WEEKDAY_NOTE } from '../data/tithi-text';
+import { EK_STORY } from '../data/ekadashi-stories';
+import { fmt } from '../lib/fmt';
 const { l, group } = Astro.props as { l: Obs; group?: Obs[] };
 const grp = group && group.length ? group : [l];
 const kind = l.kind, c = COPY[kind], R = ROUTE[kind];
@@ -27,6 +29,7 @@ const monthChips = ['january','february','march','april','may','june','july','au
 const past = l.key < ymdKey(todayIST());
 const monthLine = `${l.adhika ? 'Adhika ' : ''}${MONTHS[l.month]} (${MONTHS_TE[l.month]}), ${l.paksha === 'shukla' ? 'Shukla paksha' : 'Krishna paksha'}`;
 const baseName = l.name.replace(' Ekadashi', '');
+const story = kind === 'ekadashi' ? EK_STORY[baseName] : null;
 const note = [kind === 'ekadashi' ? (EK_NOTE[baseName] ?? `${l.name} is one of the 24 Ekadashis of the year. Devotees fast and worship Vishnu.`) : '', WEEKDAY_NOTE[kind + l.weekday]].filter(Boolean);
 const basis = kind === 'ekadashi' ? 'present at sunrise' : kind === 'sankashti' ? 'present when the Moon rises' : 'present at sunset';
 const faq: [string, string][] = [
@@ -64,6 +67,13 @@ const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. We take the day on which the tithi is {basis}. It falls in {monthLine}. Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
+    {story && (
+      <>
+        <div class="sect"><h2>The story of {l.name}</h2></div>
+        {story.story.map((x) => <p set:html={fmt(x, new Set())} />)}
+        {story.keep && story.keep.length > 0 && <><div class="sect"><h2>How {l.name} is kept</h2></div><ul>{story.keep.map((x) => <li set:html={fmt(x, new Set())} />)}</ul></>}
+      </>
+    )}
     <div class="sect"><h2>{kind === 'ekadashi' ? l.name : c.title} {mName} {ymd.y} timings (Hyderabad)</h2></div>
     <div class="timing">
       <div class="good"><b>Good timings</b><span>{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small><span style="display:block;margin-top:14px">{t(p.brahma.start)} to {t(p.brahma.end)}</span><small>Brahma Muhurtham</small></div>

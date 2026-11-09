@@ -61,7 +61,7 @@ Tuesday is therefore a natural day to light a lamp before Murugan or Hanuman. Th
 
 ## Angaraka Sankashti
 
-When Sankashti Chaturthi, the fourth day after the full moon, falls on a Tuesday, it is called Angaraka Sankashti. In many families it is considered especially auspicious for praying to Ganesha. The two are said to meet there: Ganesha, the remover of obstacles, on the day of the red planet. If you want to see how a Sankashti is usually observed, our note on [Sankashti Chaturthi, its moonrise and vrat](/sankashti-chaturthi-october-2026-date-moonrise-and-vrat/) covers the steps.
+When Sankashti Chaturthi, the fourth day after the full moon, falls on a Tuesday, it is called Angaraka Sankashti. In many families it is considered especially auspicious for praying to Ganesha. The two are said to meet there: Ganesha, the remover of obstacles, on the day of the red planet. If you want to see how a Sankashti is usually observed, our note on [Sankashti Chaturthi, its moonrise and vrat](/sankashti-chaturthi/october/) covers the steps.
 
 Notice what the tradition is really pointing at. Courage is not the same as anger. A protector stands between a child and a danger without raising his voice. When you pray to Mangala, you might ask yourself: where in my life do I need steady courage, and where am I only being loud? Only you can answer that, and it is a better question than any chart can ask.
 

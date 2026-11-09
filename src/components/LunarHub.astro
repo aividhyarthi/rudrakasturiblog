@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Hero from './Hero.astro';
 import { GUIDE } from '../data/guide-content';
-import { fmt } from '../lib/fmt';
+import { fmt, linkExists } from '../lib/fmt';
 import { allArticles } from '../lib/articles';
 import { permaPages } from '../lib/perma';
 import { fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
@@ -81,7 +81,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     )}
     <div class="sect"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    {guide && guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
+    {guide && guide.reads.filter((r) => linkExists(r.href, published)).length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{guide.reads.filter((r) => linkExists(r.href, published)).map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
     <div class="chips" style="margin-top:16px">{nextOther && <a href={`/${other}/`}>Next {COPY[other].title}: {pretty(nextOther)}</a>}<a href="/panchangam/">Today's panchangam</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
     <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For rituals, confirm the day with your family priest or temple.</p>
   </div>

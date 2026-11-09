@@ -40,7 +40,7 @@ It is a tradition that ties together farming, devotion and gratitude, and it is 
 
 ## Other things to do
 - **Maha Shivaratri.** The temple's biggest festival. Devotees keep an all-night vigil with abhishekam and bhajans.
-- **Karthika Masam.** Mondays in the month are especially busy. See [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/).
+- **Karthika Masam.** Mondays in the month are especially busy. See [Karthika Masam 2026](/masam/karthika/).
 - **Nearby shrines:** the Bheemeswara temple and a very old Narasimha temple on the hill, as well as the Bhadrakali shrine.
 - **A tradition of harmony.** The town also has a dargah of Hazrat Bade Sahib, and local people of both faiths visit each other's festivals.
 

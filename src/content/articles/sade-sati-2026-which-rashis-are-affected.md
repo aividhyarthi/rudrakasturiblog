@@ -9,7 +9,7 @@ tldr: "With Saturn in Meena (Pisces) from 29 March 2025 to early June 2027, Sade
 hero: "rashi-meena"
 imageAlt: "The symbol of Meena rashi, two fish, on a night sky"
 tags: ["Sade Sati", "Shani", "Saturn transit", "Meena"]
-draft: false
+draft: true
 ---
 
 Sade Sati is one of the most searched ideas in Vedic astrology. It is worth understanding calmly, because it is often described in frightening terms that traditional texts do not support.

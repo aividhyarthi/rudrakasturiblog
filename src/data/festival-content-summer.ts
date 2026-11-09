@@ -110,7 +110,7 @@ export const FEST_SUMMER: Record<string, FestContent> = {
       ['What helps in Sade Sati?', 'Traditional practices include Hanuman worship, simple charity and discipline. Steady effort matters more than any ritual.'],
       ['Is Shani Jayanti the same as Shani Amavasya?', 'They fall on the same day. Many calendars give both names.'],
     ],
-    reads: [{ href: '/hanuman-and-shani-why-hanuman-devotees-are-said-to-be-safe/', label: 'Hanuman and Shani' }, { href: '/saturday-venkateswara-shani-hanuman-how-to-worship/', label: 'Saturday: Venkateswara, Shani, Hanuman' }, { href: '/sade-sati-2026-which-rashis-are-affected/', label: 'Sade Sati: which rashis are affected' }, { href: '/ravana-imprisoned-the-navagrahas-meghanada-birth-and-shani-s-twelfth-house/', label: 'Ravana chained the nine planets' }],
+    reads: [{ href: '/hanuman-and-shani-why-hanuman-devotees-are-said-to-be-safe/', label: 'Hanuman and Shani' }, { href: '/saturday-venkateswara-shani-hanuman-how-to-worship/', label: 'Saturday: Venkateswara, Shani, Hanuman' }, { href: '/sade-sati/', label: 'Sade Sati: which rashis are affected' }, { href: '/ravana-imprisoned-the-navagrahas-meghanada-birth-and-shani-s-twelfth-house/', label: 'Ravana chained the nine planets' }],
   },
 
   'rath-yatra': {
