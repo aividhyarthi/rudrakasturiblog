@@ -4,17 +4,23 @@ import { masaOn, masaStartingSoon } from '../lib/masa';
 import { MASA_TEXT } from '../data/masa';
 import { festivalsByKey } from '../lib/festivals';
 import { masaDateRows } from '../lib/masadates';
+import { allArticles } from '../lib/articles';
+import { linkExists } from '../lib/fmt';
 import { ymdKey, WEEKDAYS } from '../lib/panchang';
 import { EN_MONTH_NAMES } from '../lib/lunar';
 const { ymd, compact = false } = Astro.props as { ymd: { y: number; m: number; d: number }; compact?: boolean };
 const here = masaOn(ymd);
 const soon = masaStartingSoon(ymd, 3);
-const live = MASA_TEXT[here.name] && !here.adhika ? here : null;
-const next = !live && soon && MASA_TEXT[soon.masa.name] && !soon.masa.adhika ? soon : null;
+const hasText = (x: { name: string; adhika: boolean }) => !!MASA_TEXT[x.name] && !x.adhika;
+const tomorrow = soon && soon.inDays <= 1 && hasText(soon.masa) ? soon : null; // on the last day of a month, say the next month begins tomorrow
+const live = !tomorrow && hasText(here) ? here : null;
+const next = tomorrow ?? (!live && soon && hasText(soon.masa) ? soon : null);
 const m = live ?? next?.masa ?? null;
 const text = m ? MASA_TEXT[m.name] : null;
 const nice = (x: { y: number; m: number; d: number }) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]}`;
 const wdOf = (x: { y: number; m: number; d: number }) => WEEKDAYS[new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay()];
+const published = new Set((await allArticles()).map((a) => a.slug));
+const bannerLinks = (text?.links ?? []).filter((l) => linkExists(l.href, published));
 const dates = m && text ? masaDateRows(m, ymdKey(ymd)).slice(0, compact ? 5 : 9) : [];
 const todayFest = festivalsByKey().get(ymdKey(ymd)) ?? [];
 const wd = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay();
@@ -37,7 +43,7 @@ const status = live ? `Day ${here.dayNo} of ${here.total}` : next ? (next.inDays
             {live && <p class="masa-every">{text.every}</p>}
             {todayFest.length > 0 && <p>{todayFest.map((f) => <a href={`/festivals/${f.slug}/`}><b>Today: {f.name}</b></a>)}</p>}
           </div>
-          <div class="masa-links">{text.links.slice(0, compact ? 3 : 5).map((l) => <a href={l.href}>{l.label}</a>)}</div>
+          <div class="masa-links">{bannerLinks.slice(0, compact ? 3 : 5).map((l) => <a href={l.href}>{l.label}</a>)}</div>
         </div>
         <div>
           <b class="masa-h">Dates to keep</b>

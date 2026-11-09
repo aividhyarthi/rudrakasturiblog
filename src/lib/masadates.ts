@@ -19,14 +19,18 @@ export function masaDateRows(m: Masa, fromKey?: string): DateRow[] {
   const startKey = ymdKey(m.start);
   const rows: DateRow[] = [];
   const seen = new Set<string>();
+  const GENERIC = new Set(['amavasya', 'pournami', 'purnima', 'adhika', 'masam', 'the', 'and']);
+  const toks = (t: string) => new Set(t.toLowerCase().split(/[^a-z]+/).filter((w) => w.length >= 4 && !GENERIC.has(w)));
+  const festToks: { key: string; t: Set<string> }[] = [];
   for (const f of allFestivals()) {
     if (!(f.month === m.idx || f.solar) || !inRange(f.key) || seen.has(f.id + f.key)) continue;
     seen.add(f.id + f.key);
+    festToks.push({ key: f.key, t: toks(`${f.name} ${f.alt ?? ''}`) });
     rows.push(row(f.key, f.key === startKey && page ? `${f.name} (${page.name} begins)` : f.name, `/festivals/${f.slug}/`));
   }
   if (page && startKey >= from && !rows.some((r) => r.key === startKey)) rows.push(row(startKey, `${page.name} begins`, `/masam/${page.slug}/`));
   for (const o of allTithis('ekadashi')) if (inRange(o.key)) rows.push(row(o.key, o.name, `/ekadashi/${o.slug}/`));
-  for (const kind of ['pournami', 'amavasya'] as const) for (const l of allLunations(kind)) if (inRange(l.key) && !rows.some((r) => r.key === l.key && /Pournami|Purnima|Amavasya/.test(r.label))) rows.push(row(l.key, l.occasion ?? (kind === 'pournami' ? 'Pournami' : 'Amavasya'), `/${kind}/${l.slug}/`));
+  for (const kind of ['pournami', 'amavasya'] as const) for (const l of allLunations(kind)) if (inRange(l.key) && !festToks.some((f) => Math.abs((Date.parse(f.key) - Date.parse(l.key)) / 86400000) <= 1 && [...toks(l.occasion ?? '')].some((w) => f.t.has(w)))) rows.push(row(l.key, l.occasion ?? (kind === 'pournami' ? 'Pournami' : 'Amavasya'), `/${kind}/${l.slug}/`));
   for (const v of page?.weekdayVrats ?? []) for (let x: Ymd = m.start; ymdKey(x) <= to; x = addDays(x, 1)) if (ymdKey(x) >= from && wdOf(x) === v.day) rows.push(row(ymdKey(x), v.label, v.href));
   return rows.sort((a, b) => a.key.localeCompare(b.key) || a.label.localeCompare(b.label));
 }

@@ -44,7 +44,9 @@ const exploreSeries = SERIES.filter((s) => sc[s.id]);
 const _y = todayIST(); const _p = panchangFor(_y, 'hyderabad'); const _ref = new Date(Date.UTC(_y.y, _y.m - 1, _y.d));
 const snap = { tithi: `${_p.tithi[0].paksha} ${_p.tithi[0].name}`, nak: _p.nakshatra[0].name, rahu: `${fmtTime(_p.rahu.start, _ref)} to ${fmtTime(_p.rahu.end, _ref)}` };
 const _today = todayIST(), _here = masaOn(_today), _soon = masaStartingSoon(_today, 3);
-const _mt = !_here.adhika && MASA_TEXT[_here.name] ? { t: MASA_TEXT[_here.name], label: `${MASA_TEXT[_here.name].show}, day ${_here.dayNo}` } : _soon && !_soon.masa.adhika && MASA_TEXT[_soon.masa.name] ? { t: MASA_TEXT[_soon.masa.name], label: `${MASA_TEXT[_soon.masa.name].show} ${_soon.inDays === 1 ? 'begins tomorrow' : `begins in ${_soon.inDays} days`}` } : null;
+const _hasT = (x: { name: string; adhika: boolean }) => !x.adhika && !!MASA_TEXT[x.name];
+const _tom = _soon && _soon.inDays <= 1 && _hasT(_soon.masa) ? _soon : null; // last day of a month: say the next one begins tomorrow
+const _mt = _tom ? { t: MASA_TEXT[_tom.masa.name], label: `${MASA_TEXT[_tom.masa.name].show} begins tomorrow` } : _hasT(_here) ? { t: MASA_TEXT[_here.name], label: `${MASA_TEXT[_here.name].show}, day ${_here.dayNo}` } : _soon && _hasT(_soon.masa) ? { t: MASA_TEXT[_soon.masa.name], label: `${MASA_TEXT[_soon.masa.name].show} begins ${_soon.inDays === 1 ? 'tomorrow' : `in ${_soon.inDays} days`}` } : null;
 const masaChip = _mt?.label, masaHref = _mt?.t.links[0].href;
 const crumbLd = breadcrumbs && breadcrumbs.length ? { '@context': 'https://schema.org', '@type': 'BreadcrumbList', '@id': `${canonical}#breadcrumb`, itemListElement: [{ name: 'Home', href: '/' }, ...breadcrumbs].map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c.name, item: new URL(c.href, SITE.url).href })) } : null;
 // ---- structured data: one graph with the organisation, the site, this page and (for evergreen pages) an Article ----
