@@ -1,36 +1,55 @@
 ---
+// One permanent page per festival. It always shows the festival's next date, and the story, puja steps and questions come from
+// src/data/festival-content.ts. Festivals without full content yet use the shorter layout.
 import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
 import CalendarCta from '../../components/CalendarCta.astro';
+import MasaBanner from '../../components/MasaBanner.astro';
 import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals';
 import { allArticles } from '../../lib/articles';
-import { fmtTime, WEEKDAYS, istParts } from '../../lib/panchang';
+import { FEST_CONTENT } from '../../data/festival-content';
+import { fmtTime, panchangFor, todayIST, ymdKey, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
 export function getStaticPaths() { return canonicalFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
 const { f } = Astro.props as { f: Fest };
+const c = FEST_CONTENT[f.id] ?? null;
 const all = allFestivals();
 const pub = new Set((await allArticles()).map((a) => a.slug));
+const today = todayIST();
 const mName = EN_MONTH_NAMES[f.ymd.m - 1];
 const pretty = `${WEEKDAYS[f.weekday]}, ${f.ymd.d} ${mName} ${f.ymd.y}`;
-const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(d)}`; };
+const rnd = (d: Date) => new Date(Math.round(d.getTime() / 60000) * 60000); // tithi times round to the nearest minute
+const dt = (d: Date) => { const r = rnd(d); const x = istParts(r); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(r)}`; };
+const diff = Math.round((Date.UTC(f.ymd.y, f.ymd.m - 1, f.ymd.d) - Date.UTC(today.y, today.m - 1, today.d)) / 86400000);
+const lead = diff === 0 ? 'Today' : diff === 1 ? 'Tomorrow' : diff > 1 && diff <= 3 ? `In ${diff} days` : diff < 0 ? 'Last held' : 'Next';
 const title = `${f.name} ${f.ymd.y}: Date, Puja Time and Significance`;
 const nextOnes = all.filter((x) => x.key > f.key && x.id !== f.id).slice(0, 4);
-const sameFest: Fest[] = [];
-const faq: [string, string][] = [
-  [`When is ${f.name} in ${f.ymd.y}?`, `${f.name} in ${f.ymd.y} is on ${pretty}.${f.start && !f.solar && f.end ? ` The tithi begins ${dt(f.start)} and ends ${dt(f.end)} (IST).` : ''}`],
-  [`What is ${f.name}?`, f.about],
-  [`How is ${f.name} celebrated?`, f.how],
-  [`Which god is worshipped on ${f.name}?`, `${f.god}${f.alt ? `. It is also known as ${f.alt}.` : '.'}`],
-];
+const sameFest = all.filter((x) => x.id === f.id && x.key >= ymdKey(today)).slice(0, 3);
+const at = (f as any).at as string | undefined;
+const atText = at === 'sunrise' ? 'at sunrise' : at === 'midday' ? 'at midday' : at === 'aparahna' ? 'in the afternoon' : at === 'sunset' ? 'at sunset' : at === 'night' ? 'at night' : 'during the day';
+const p = panchangFor(f.ymd, 'hyderabad');
+const ref = new Date(Date.UTC(f.ymd.y, f.ymd.m - 1, f.ymd.d));
+const t = (d: Date) => fmtTime(d, ref);
+const when = `${f.name} in ${f.ymd.y} is on ${pretty}.${f.start && !f.solar && f.end ? ` The tithi begins ${dt(f.start)} and ends ${dt(f.end)} (IST).` : ''}`;
+const faq: [string, string][] = c
+  ? [[`When is ${f.name} in ${f.ymd.y}?`, when], ...c.faqs]
+  : [[`When is ${f.name} in ${f.ymd.y}?`, when], [`What is ${f.name}?`, f.about], [`How is ${f.name} celebrated?`, f.how], [`Which god is worshipped on ${f.name}?`, `${f.god}${f.alt ? `. It is also known as ${f.alt}.` : '.'}`]];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f.name} ${f.ymd.y}`, startDate: f.key, endDate: f.key, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: 'Temples and homes across India', address: 'India' }, description: f.about };
 const read = f.link && pub.has(f.link) ? f.link : null;
+// tiny formatter for the text in festival-content.ts: **bold** and [text](/link/); a link to an unpublished article becomes plain text
+const fmt = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_m, txt, href) => pub.has(href.replace(/\//g, '')) || !/^\/[a-z0-9-]+\/$/.test(href) || href.startsWith('/festivals/') ? `<a href="${href}" style="text-decoration:underline">${txt}</a>` : txt);
+const reads = (c?.reads ?? []).filter((r) => pub.has(r.href.replace(/\//g, '')));
+const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi at home, samagri and regional customs. ${c.dek}` : `${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`;
 ---
-<Base rail="religion" title={title} description={`${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: `${f.name} ${f.ymd.y}`, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd}>
+<Base rail="religion" title={title} description={desc.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: f.name, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/festivals/">Hindu festivals</a></div>
-    <h1>{f.name} {f.ymd.y}: {pretty}</h1>
-    {f.alt && <p class="dek" style="margin:0 0 6px">Also known as {f.alt}</p>}
+    <h1>{f.name} {c?.te && <span class="te">{c.te}</span>} {f.ymd.y}: {pretty}</h1>
+    <p class="dek" style="margin:0 0 6px">{c ? c.names : f.alt ? `Also known as ${f.alt}` : ''}</p>
+    {c?.hero && <Hero name={c.hero} alt={c.heroAlt ?? f.name} ratio="16/5" />}
+    <div class="sect"><h2>{lead}: {f.name} at a glance</h2></div>
     <div class="pgrid">
       <div class="pcard"><b>Date</b><span>{f.ymd.d} {mName.slice(0, 3)} {f.ymd.y}</span><small>{WEEKDAYS[f.weekday]}</small></div>
       {f.start && !f.solar && <div class="pcard"><b>Tithi begins</b><span style="font-size:19px">{dt(f.start)}</span></div>}
@@ -39,18 +58,56 @@ const read = f.link && pub.has(f.link) ? f.link : null;
       {f.solar && f.start && <div class="pcard"><b>Sun enters the sign</b><span style="font-size:19px">{dt(f.start)}</span></div>}
       <div class="pcard"><b>Deity</b><span style="font-size:20px">{f.god}</span></div>
     </div>
-    <h2>What is {f.name}?</h2>
-    <p>{f.about}</p>
-    <h2>How is {f.name} observed?</h2>
-    <p>{f.how}</p>
-    {read && <p>Read more: <a href={`/${read}/`} style="text-decoration:underline">our story on this</a>.</p>}
-    <CalendarCta />
-    <h2>Common questions</h2>
-    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    {sameFest.length > 0 && <p>Other years: {sameFest.map((x, i) => <>{i > 0 ? ', ' : ''}<a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name} {x.ymd.y}</a></>)}.</p>}
+    {c ? (
+      <>
+        <div class="timing">
+          <div class="good"><b>Good timings (Hyderabad)</b><span>Sunrise {t(p.sunrise)}</span><small>The usual time for the puja is the morning</small><span style="display:block;margin-top:14px">{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small></div>
+          <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam on the day</small><span style="display:block;margin-top:14px;font-size:18px">Sunset {t(p.sunset)}</span></div>
+        </div>
+        <p class="sub">{when} We take the day on which the tithi is {atText}. Some temples and families keep the festival a day earlier or later, so please confirm with your own priest or temple.</p>
+        {c.source && <p class="sub"><b>Source:</b> {c.source}</p>}
+        {c.lead.map((x) => <p set:html={fmt(x)} />)}
+        {c.karthika && <MasaBanner ymd={today} compact />}
+        {c.blocks.map((b) => (
+          <>
+            <div class="sect"><h2>{b.h}</h2></div>
+            {b.p?.map((x) => <p set:html={fmt(x)} />)}
+            {b.ul && <ul>{b.ul.map((x) => <li set:html={fmt(x)} />)}</ul>}
+            {b.ol && <ol>{b.ol.map((x) => <li set:html={fmt(x)} />)}</ol>}
+            {b.note && <p class="sub" set:html={fmt(b.note)} />}
+          </>
+        ))}
+        {sameFest.length > 0 && (
+          <>
+            <div class="sect"><h2>{f.name} dates</h2></div>
+            <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Year</th><th>Date</th></tr></thead><tbody>{sameFest.map((x) => <tr><td><b>{x.ymd.y}</b></td><td>{WEEKDAYS[x.weekday]}, {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</td></tr>)}</tbody></table></div>
+          </>
+        )}
+        <div class="sect"><h2>Questions people ask</h2></div>
+        {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+        {reads.length > 0 && (
+          <>
+            <div class="sect"><h2>Read more</h2></div>
+            <ul>{reads.map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul>
+          </>
+        )}
+      </>
+    ) : (
+      <>
+        <div class="sect"><h2>What is {f.name}?</h2></div>
+        <p>{f.about}</p>
+        <div class="sect"><h2>How is {f.name} observed?</h2></div>
+        <p>{f.how}</p>
+        {read && <p>Read more: <a href={`/${read}/`} style="text-decoration:underline">our story on this</a>.</p>}
+        <div class="sect"><h2>Common questions</h2></div>
+        {[faq[0], faq[3]].map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+        {sameFest.length > 1 && <p>Coming years: {sameFest.slice(1).map((x, i) => <>{i > 0 ? ', ' : ''}{x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</>)}.</p>}
+      </>
+    )}
     <div class="sect"><h2>Festivals coming up</h2></div>
     <ul>{nextOnes.map((x) => <li><a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name}</a>, {WEEKDAYS[x.weekday]} {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</li>)}</ul>
     <div class="chips"><a href="/festivals/">All festivals</a><a href="/panchangam/">Today's panchangam</a><a href="/ekadashi/">Ekadashi dates</a><a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a></div>
+    <CalendarCta />
     <p class="disc">Dates are calculated for Hyderabad from the positions of the Sun and Moon. Some temples and traditions keep a festival a day earlier or later. For a vratam or a ceremony, please confirm with your family priest or temple.</p>
   </div>
 </Base>
