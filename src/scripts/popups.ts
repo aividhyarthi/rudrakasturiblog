@@ -54,7 +54,7 @@ async function open() {
   const shown = new Set<string>();
   const el = document.createElement('div');
   el.className = 'swp';
-  const horo = ex ? `<section class="swp-sec"><small>1. Horoscope today</small><p>${esc(ex.horoscope.line)}</p><div class="swp-signs">${ex.horoscope.signs.map((s) => `<a href="/rasi-phalalu/${esc(s.id)}/">${esc(s.n)}</a>`).join('')}</div><a class="swp-go" href="/daily-horoscope/">Read today's horoscope</a></section>` : '';
+  const horo = ex ? `<section class="swp-sec"><small>1. Horoscope today</small><p>${esc(ex.horoscope.line)}</p><div class="swp-signs">${ex.horoscope.signs.map((s) => `<a href="/rasi-phalalu/${esc(s.id)}/">${esc(s.n)}</a>`).join('')}</div><a class="swp-go" href="/rasi-phalalu/">Read today's horoscope</a></section>` : '';
   const god = ex ? `<section class="swp-sec"><small>2. ${esc(ex.day)}: the day's god</small><p><b>${esc(ex.god.name)}.</b> ${esc(ex.god.line)}</p><p class="swp-mantra">${esc(ex.god.mantra)}</p><a class="swp-go" href="${esc(ex.god.href)}">Worship ${esc(ex.day)} the right way</a></section>` : '';
   el.innerHTML = `<div class="swp-back" data-close></div>
   <div class="swp-card" role="dialog" aria-modal="true" aria-labelledby="swp-h">

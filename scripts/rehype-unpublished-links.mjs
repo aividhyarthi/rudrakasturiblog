@@ -5,13 +5,14 @@ import path from 'node:path';
 
 const dir = 'src/content/articles';
 const now = process.env.SW_NOW ? new Date(process.env.SW_NOW).getTime() : Date.now();
+const dayStart = (ms) => Math.floor((ms + 330 * 60000) / 86400000) * 86400000 - 330 * 60000; // stories go live by the day (00:00 IST)
 const hidden = new Set();
 for (const f of fs.readdirSync(dir)) {
   if (!f.endsWith('.md')) continue;
   const t = fs.readFileSync(path.join(dir, f), 'utf8');
   const date = t.match(/^date:\s*"?([^"\n]+)"?/m);
   const draft = /^draft:\s*true/m.test(t);
-  if (draft || (date && new Date(date[1]).getTime() > now + 10 * 60 * 1000)) hidden.add(f.replace(/\.md$/, ''));
+  if (draft || (date && dayStart(new Date(date[1]).getTime()) > now + 10 * 60 * 1000)) hidden.add(f.replace(/\.md$/, ''));
 }
 
 function walk(node) {

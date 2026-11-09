@@ -1,24 +1,14 @@
-// Decides whether the site needs a rebuild: a story has just come due, or a new India day has started
-// (daily panchangam and horoscope pages). Prints due=true or due=false for the workflow.
+// Decides whether the site is due a release: the daily slot (midnight IST, see scripts/slots.mjs) has passed since the last build.
+// Prints due=true or due=false for the workflow.
 import fs from 'node:fs';
-import path from 'node:path';
 
-const dir = 'src/content/articles';
 const stampFile = 'src/data/build-stamp.txt';
 const now = Date.now();
 const last = fs.existsSync(stampFile) ? Date.parse(fs.readFileSync(stampFile, 'utf8').trim()) : 0;
-const istDay = (t) => Math.floor((t + 330 * 60000) / 86400000);
 
-let due = istDay(now) > istDay(last);
-let why = due ? 'new India day' : '';
-if (!due) {
-  for (const f of fs.readdirSync(dir)) {
-    if (!f.endsWith('.md')) continue;
-    const m = fs.readFileSync(path.join(dir, f), 'utf8').match(/^date:\s*"?([^"\n]+)"?/m);
-    if (!m) continue;
-    const t = Date.parse(m[1]);
-    if (t > last && t <= now) { due = true; why = `${f} came due`; break; }
-  }
-}
-console.log(`${why || 'nothing due'}`);
+// One clock: a release is due when a slot (see scripts/slots.mjs) has passed since the last build. Nothing else triggers one.
+import { slotNumber } from './slots.mjs';
+const due = slotNumber(now) > slotNumber(last);
+const why = due ? 'a release slot has passed' : 'nothing due';
+console.log(why);
 console.log(`due=${due}`);

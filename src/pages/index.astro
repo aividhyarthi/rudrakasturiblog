@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { nowMs } from '../lib/now';
 import Card from '../components/Card.astro';
 import Row from '../components/Row.astro';
 import StoryImg from '../components/StoryImg.astro';
@@ -45,9 +46,16 @@ for (let i = 0; i < rota.length && !wkLead; i++) {
 }
 const wkMore: typeof all = [];
 // Lead: the day's own story (Saturday is Balaji), otherwise a rotating pick from the last day and a half.
-const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
+const fresh = all.filter((a) => nowMs() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
 const lead = wkLead && (seed % 2 === 0 || !fresh.length) ? wkLead : fresh.length ? shuffle(fresh, seed)[0] : (wkLead ?? all[0]);
-const rest = all.filter((a) => a !== lead);
+// The lead rotates through the day in the visitor's browser (no rebuild): four candidates, one per six hours of India time.
+// The page itself is built showing the first, so crawlers and no-JavaScript visitors see a normal lead.
+const leadPool: (typeof all)[number][] = [];
+for (const a of [lead, wkLead, ...shuffle(fresh, seed)]) if (a && !leadPool.includes(a)) leadPool.push(a);
+if (leadPool.length < 4) for (const a of diversePick(all.filter((x) => !leadPool.includes(x)), 4 - leadPool.length, seed + 3)) leadPool.push(a);
+const leads = leadPool.slice(0, 4);
+const leadData = leads.map((a) => ({ href: `/${a.slug}/`, img: `/img/${a.slug}/16x9.jpg`, alt: a.data.imageAlt ?? a.data.title, cls: `lead c-${a.data.category}`, kicker: a === wkLead ? `${wk.name}: ${rotaGod.god}` : categoryLabel(a.data.category), title: a.data.title, desc: a.data.description, meta: `${byline(a.data)} · ${fmtDate(a.data.date)}` }));
+const rest = all.filter((a) => !leads.includes(a));
 // Today's three daily pages, with titles that say what is in them.
 const tomorrow = addDays(ymd, 1);
 const tf = dayFacts(tomorrow);
@@ -56,15 +64,15 @@ const todayRank = rank(ymd), tomRank = rank(tomorrow);
 const names = (xs: { r: { skt: string } }[]) => `${xs[0].r.skt} and ${xs[1].r.skt}`;
 const key = ymdKey(ymd);
 const dailyExtras = [
-  { kicker: 'Horoscope today', title: `${WEEKDAYS[facts.wd]}: a good day for ${names(todayRank)}, go slowly if you are ${todayRank[11].r.skt}`, href: `/daily-horoscope/${key}/`, meta: `Moon in ${facts.moonSign.skt}, ${facts.nak.name} nakshatra. All 12 rashis`, cls: 'c-astrology' },
-  { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: `/daily-panchangam/${key}/`, meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
+  { kicker: 'Horoscope today', title: `${WEEKDAYS[facts.wd]}: a good day for ${names(todayRank)}, go slowly if you are ${todayRank[11].r.skt}`, href: '/rasi-phalalu/', meta: `Moon in ${facts.moonSign.skt}, ${facts.nak.name} nakshatra. All 12 rashis`, cls: 'c-astrology' },
+  { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: '/panchangam/', meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
   { kicker: 'Horoscope tomorrow', title: `${WEEKDAYS[tf.wd]}: Moon in ${tf.moonSign.skt}, best for ${names(tomRank)}`, href: '/horoscope-tomorrow/', meta: `${niceDate(tomorrow)}. Plan the day ahead`, cls: 'c-astrology' },
 ];
 const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 3);
-const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
+const shownTop = new Set([...leads.map((a) => a.slug), ...latestArts.map((a) => a.slug)]);
 // "Worth reading again": older stories from different series and topics (Why me?, the Gita, Upanishads, temples, yoga...),
 // a new mix at every refresh, so the page always carries evergreen reading and not only the newest.
-const older = rest.filter((a) => !shownTop.has(a.slug) && Date.now() - a.data.date.getTime() > 2 * 86400000);
+const older = rest.filter((a) => !shownTop.has(a.slug) && nowMs() - a.data.date.getTime() > 2 * 86400000);
 let grid = diversePick(older.length >= 6 ? older : rest.filter((a) => !shownTop.has(a.slug)), 6, seed);
 if (grid.length < 3) grid = [];
 if (grid.length > 3 && grid.length < 6) grid = grid.slice(0, 3);
@@ -118,6 +126,18 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
       </a>
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
+    <script is:inline define:vars={{ leadData }}>
+      try {
+        var h = new Date(Date.now() + 5.5 * 3600 * 1000).getUTCHours();
+        var i = Math.floor(h / 6) % leadData.length, L = leadData[i], a = document.querySelector('a.lead');
+        if (i > 0 && L && a) {
+          a.className = L.cls; a.href = L.href;
+          var im = a.querySelector('img'); if (im) { im.src = L.img; im.alt = L.alt; }
+          a.querySelector('.kicker').textContent = L.kicker; a.querySelector('h1').textContent = L.title;
+          a.querySelector('p').textContent = L.desc; a.querySelector('.meta').textContent = L.meta;
+        }
+      } catch (e) {}
+    </script>
   )}
   {svDays !== null && svDays <= 3 && (
     <section class="wrap" style="padding-top:20px"><div class="fest-today"><a href="/somavati-amavasya/"><b>{svDays === 0 ? 'Today: Somavati Amavasya' : svDays === 1 ? 'Tomorrow: Somavati Amavasya' : `In ${svDays} days: Somavati Amavasya`}</b><span>Amavasya on a Monday, Shiva's day. Timings, puja at home and the story.</span></a></div></section>
@@ -148,7 +168,7 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
         {todayFest.length > 0 && <div class="fest-today">{todayFest.map((f) => <a href={`/festivals/${f.slug}/`}><b>Today: {f.name}</b><span>{f.alt ?? f.god}</span></a>)}</div>}
         <div class="chips">
           <a class="btn solid" href="/panchangam/">Today's panchangam</a>
-          <a class="btn" href="/daily-panchangam/">Daily article</a>
+          <a class="btn" href="/panchangam-tomorrow/">Tomorrow</a>
           <a class="btn" href={`/mantras/${facts.main.id}/`}>{facts.main.name} mantras</a><a class="btn" href="/mantras/">Mantras</a>
           <a class="btn" href="/amavasya/">Amavasya</a>
           <a class="btn" href="/pournami/">Pournami</a>
@@ -173,7 +193,7 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
           <a class="sign-tile" href={`/rasi-phalalu/${r.id}/`}><Glyph id={r.id} size={34} /><b>{r.skt}</b><span class="stars">{star(d.rating)}</span></a>
         ))}
       </div>
-      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/daily-horoscope/">Daily article</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
+      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
     </div>
   </section>
 

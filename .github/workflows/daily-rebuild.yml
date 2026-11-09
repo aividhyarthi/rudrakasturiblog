@@ -1,15 +1,22 @@
-name: Rebuild when a story is due (and every new day)
+name: Release (stories, rebuild and held changes go live together)
+# ONE RELEASE A DAY at midnight India time (scripts/slots.mjs). All of the day's stories go live in one shot, the site
+# rebuilds and held changes ship. Work in progress waits on the `next` branch until the next slot. For an emergency, press
+# "Run workflow" with force = true, or push straight to this branch (Railway deploys any push at once).
+#
+# GitHub may run these lines late, so there are backups through to 05:02 IST. A late release is harmless: the home page
+# rotates by itself in the browser, and nothing links to a story before its page exists (see RELEASE-SCHEDULE.md).
 on:
   schedule:
-    - cron: '3,18,33,48 * * * *'   # every 15 minutes (GitHub skips some runs); the script decides whether anything is due
-  push:
-    branches: [claude/beautiful-newton-lnqky5]
-    paths-ignore:
-      - 'src/data/build-stamp.txt'   # the stamp commit made below must not trigger another run
+    - cron: '32 18 * * *'   # 00:02 IST: the daily release
+    - cron: '32 19 * * *'   # 01:02 IST  } backups: GitHub often runs scheduled jobs late or skips them.
+    - cron: '32 20 * * *'   # 02:02 IST  } A backup does nothing if the release already happened today.
+    - cron: '32 21 * * *'   # 03:02 IST
+    - cron: '32 22 * * *'   # 04:02 IST
+    - cron: '32 23 * * *'   # 05:02 IST
   workflow_dispatch:
     inputs:
       force:
-        description: 'Rebuild even if nothing is due'
+        description: 'Release now even if no slot has passed (emergency)'
         required: false
         default: 'false'
 permissions:
@@ -17,23 +24,45 @@ permissions:
 concurrency:
   group: rebuild
   cancel-in-progress: false
+env:
+  LIVE_BRANCH: claude/beautiful-newton-lnqky5   # the branch Railway deploys
+  HOLD_BRANCH: next                              # work waiting for the next slot
 jobs:
-  stamp:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Is anything due?
+        with: { ref: '${{ env.LIVE_BRANCH }}', fetch-depth: 0 }
+      - name: Is a release due?
         id: check
         run: |
           node scripts/rebuild-if-due.mjs | tee /tmp/due.txt
-          # A push always rebuilds, so changes made by anyone other than the owner account go live straight away.
-          if [ "${{ github.event.inputs.force }}" = "true" ] || [ "${{ github.event_name }}" = "push" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else grep '^due=' /tmp/due.txt >> "$GITHUB_OUTPUT"; fi
-      - name: Touch the build stamp so the site rebuilds
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then echo "due=true" >> "$GITHUB_OUTPUT"; else grep '^due=' /tmp/due.txt >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/setup-node@v4
+        if: steps.check.outputs.due == 'true'
+        with: { node-version: 22, cache: npm }
+      - name: Bring in the held changes
+        if: steps.check.outputs.due == 'true'
+        run: |
+          git config user.name "aividhyarthi"
+          git config user.email "226963610+aividhyarthi@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin "$HOLD_BRANCH" >/dev/null; then
+            git fetch origin "$HOLD_BRANCH"
+            git merge --no-edit "origin/$HOLD_BRANCH"
+          else
+            echo "No $HOLD_BRANCH branch: nothing was held."
+          fi
+      - name: Build and check before going live
+        if: steps.check.outputs.due == 'true'
+        run: |
+          npm ci
+          export SW_NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          npx astro build
+          node scripts/check-release.mjs
+      - name: Go live
         if: steps.check.outputs.due == 'true'
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > src/data/build-stamp.txt
-          # Commit as the repository owner so Railway treats the push like any other deploy from the team.
-          git config user.name "aividhyarthi"
-          git config user.email "226963610+aividhyarthi@users.noreply.github.com"
           git add src/data/build-stamp.txt
-          git commit -m "Rebuild: a story is due or a new day has started" && git push
+          git commit -m "Release: slot reached, held changes and due stories go live"
+          git push origin "HEAD:$LIVE_BRANCH"

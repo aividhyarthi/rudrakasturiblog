@@ -1,5 +1,6 @@
 // Panchangam computed from astronomy (astronomy-engine), Lahiri ayanamsa, Drik-style (true sunrise/sunset).
 import * as A from 'astronomy-engine';
+import { nowDate } from './now';
 
 export const CITIES = {
   hyderabad: { name: 'Hyderabad', state: 'Telangana', lat: 17.385, lon: 78.4867 },
@@ -175,7 +176,7 @@ export function panchangFor(ymd: { y: number; m: number; d: number }, cityId: Ci
 }
 
 export const todayIST = () => {
-  const t = istParts(new Date());
+  const t = istParts(nowDate());
   return { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate() };
 };
 export const addDays = (ymd: { y: number; m: number; d: number }, n: number) => {

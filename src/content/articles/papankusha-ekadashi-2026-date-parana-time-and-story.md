@@ -36,6 +36,6 @@ According to the Padma Purana tradition, Krishna told Yudhishthira about a cruel
 The message the tradition draws is not about magic. It is that sincere effort to turn around is always possible, however long the past, which is also what [our karma series](/karma-stories/) explores every day.
 
 ## The day's timings in your city
-Ekadashi, Dwadashi and sunrise times shift a little between cities. See the [panchangam for your location](/panchangam/) and today's [daily panchangam article](/daily-panchangam/).
+Ekadashi, Dwadashi and sunrise times shift a little between cities. See the [panchangam for your location](/panchangam/) and today's [daily panchangam article](/panchangam/).
 
 *Traditions vary by region and family. Fasting is a personal choice and should not be undertaken against medical advice.*

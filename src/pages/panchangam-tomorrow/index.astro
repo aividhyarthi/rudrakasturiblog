@@ -1,0 +1,5 @@
+---
+import PanchangamDay from '../../components/PanchangamDay.astro';
+import { todayIST, addDays } from '../../lib/panchang';
+---
+<PanchangamDay x={addDays(todayIST(), 1)} when="tomorrow" />

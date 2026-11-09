@@ -1,11 +1,12 @@
 // Daily rotation for the home page: the same day always gives the same picks, and every daily rebuild shows a fresh mix.
 import { todayIST } from './panchang';
+import { nowMs } from './now';
 
 export const dayNumber = () => { const t = todayIST(); return Math.floor(Date.UTC(t.y, t.m - 1, t.d) / 86400000); };
 
 /** Changes four times a day (7, 11, 15 and 19 hrs IST), when a new story goes live and the site is rebuilt. */
 export const slotNumber = () => {
-  const h = new Date(Date.now() + 330 * 60000).getUTCHours();
+  const h = new Date(nowMs() + 330 * 60000).getUTCHours();
   return dayNumber() * 4 + (h < 11 ? 0 : h < 15 ? 1 : h < 19 ? 2 : 3);
 };
 

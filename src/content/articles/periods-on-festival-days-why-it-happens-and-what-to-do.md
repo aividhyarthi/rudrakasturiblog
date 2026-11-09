@@ -59,4 +59,4 @@ The best thing you can do is to make it easy to talk about. A daughter or daught
 ## A last thought
 Many teachers say that God looks at the heart. If you go by that, a woman who sits quietly with her eyes closed and thinks of the Lord on a festival morning is doing what she needs to do. And if your family keeps a rule that you do not agree with, you can follow it for peace and still ask the questions gently.
 
-For more on festival days and what happens on each, see our [daily panchangam](/daily-panchangam/) and the [Karthika Masam guide](/masam/karthika/).
+For more on festival days and what happens on each, see our [daily panchangam](/panchangam/) and the [Karthika Masam guide](/masam/karthika/).

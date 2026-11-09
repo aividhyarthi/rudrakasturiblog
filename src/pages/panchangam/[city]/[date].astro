@@ -1,10 +1,11 @@
 ---
+import { nowMs } from '../../../lib/now';
 import Hero from '../../../components/Hero.astro';
 import Base from '../../../layouts/Base.astro';
 import PanchangView from '../../../components/PanchangView.astro';
 import { CITIES, parseKey, WEEKDAYS, type CityId } from '../../../lib/panchang';
 export function getStaticPaths() {
-  const t = new Date(Date.now() + 5.5 * 3600 * 1000);
+  const t = new Date(nowMs() + 5.5 * 3600 * 1000);
   const today = { y: t.getUTCFullYear(), m: t.getUTCMonth() + 1, d: t.getUTCDate() };
   const out: any[] = [];
   for (const city of ['hyderabad', 'visakhapatnam', 'vijayawada', 'tirupati', 'bengaluru', 'chennai', 'kochi']) {

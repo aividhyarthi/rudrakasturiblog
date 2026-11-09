@@ -1,5 +1,6 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { CATEGORIES, NEWS_ENABLED, NEWS_CATS } from '../config';
+import { nowMs, isPublished } from './now';
 
 export type Article = CollectionEntry<'articles'>;
 
@@ -7,7 +8,7 @@ export type Article = CollectionEntry<'articles'>;
 // News categories stay out of lists while NEWS_ENABLED is false. Pass { includeHidden: true } to build their pages anyway.
 export async function allArticles(opts: { includeHidden?: boolean } = {}): Promise<Article[]> {
   const showDrafts = process.env.SHOW_DRAFTS === '1';
-  const all = await getCollection('articles', ({ data }) => (showDrafts || !data.draft) && data.date.getTime() <= (process.env.SW_NOW ? new Date(process.env.SW_NOW).getTime() : Date.now()) + 10 * 60 * 1000 /* 10-minute margin: a build that starts just before publish time must not miss the article */ && (opts.includeHidden || NEWS_ENABLED || !NEWS_CATS.includes(data.category)));
+  const all = await getCollection('articles', ({ data }) => (showDrafts || !data.draft) && isPublished(data.date.getTime()) /* stories go live by the day (00:00 IST), see lib/now.ts */ && (opts.includeHidden || NEWS_ENABLED || !NEWS_CATS.includes(data.category)));
   return all.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 }
 
