@@ -58,8 +58,8 @@ const basis = kind === 'ekadashi' ? 'present at sunrise' : kind === 'sankashti' 
     </>}
     {guide ? (
       <>
-        <div class="sect" style="margin-top:26px"><h2>{c.title} by month</h2></div>
-        <div class="chips">{monthChips.map((m) => <a href={`/${R}/${m}/`}>{m[0].toUpperCase() + m.slice(1)}</a>)}</div>
+        <div class="sect" style="margin-top:26px"><h2>{kind === 'ekadashi' ? 'Every Ekadashi by name' : `${c.title} by month`}</h2></div>
+        <div class="chips">{kind === 'ekadashi' ? permaPages('ekadashi').sort((a, b) => a.primary.key.localeCompare(b.primary.key)).map((pg) => <a href={`/${R}/${pg.slug}/`}>{(pg.primary as any).name.replace(' Ekadashi', '')}</a>) : monthChips.map((m) => <a href={`/${R}/${m}/`}>{m[0].toUpperCase() + m.slice(1)}</a>)}</div>
         {guide.sections.map((b) => (
           <>
             <div class="sect" style="margin-top:26px"><h2>{b.h}</h2></div>
