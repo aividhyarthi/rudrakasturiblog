@@ -1,7 +1,7 @@
 ---
 import LunarPage from '../../../components/LunarPage.astro';
-import { allLunations } from '../../../lib/lunar';
-export function getStaticPaths() { return allLunations('amavasya').map((l) => ({ params: { slug: l.slug }, props: { l } })); }
-const { l } = Astro.props;
+import { permaPages } from '../../../lib/perma';
+export function getStaticPaths() { return permaPages('amavasya').map((p) => ({ params: { slug: p.slug }, props: { l: p.primary, group: p.group } })); }
+const { l, group } = Astro.props;
 ---
-<LunarPage l={l} />
+<LunarPage l={l} group={group} />

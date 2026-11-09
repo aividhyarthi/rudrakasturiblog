@@ -1,6 +1,10 @@
 ---
 import Base from '../layouts/Base.astro';
 import Hero from './Hero.astro';
+import { GUIDE } from '../data/guide-content';
+import { fmt } from '../lib/fmt';
+import { allArticles } from '../lib/articles';
+import { permaPages } from '../lib/perma';
 import { fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
 import { allLunations, MONTHS, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
 import { COPY } from '../data/lunar-text';
@@ -9,6 +13,10 @@ const { kind } = Astro.props as { kind: 'amavasya' | 'pournami' };
 const c = COPY[kind];
 const other = kind === 'amavasya' ? 'pournami' : 'amavasya';
 const all = allLunations(kind);
+const shown = new Set(permaPages(kind).flatMap((p) => p.group.map((g) => g.key)));
+const guide = GUIDE[kind];
+const published = new Set((await allArticles()).map((a) => a.slug));
+const monthChips = ['january','february','march','april','may','june','july','august','september','october','november','december'];
 const today = todayIST(), tk = ymdKey(today);
 const upcoming = all.filter((x) => x.key >= tk);
 const next = upcoming[0];
@@ -21,6 +29,7 @@ const nextOther = allLunations(other).find((x) => x.key >= tk);
 const faq = [
   [`When is the next ${c.title}?`, next ? `The next ${c.title} is on ${pretty(next)}. The tithi begins ${dt(next.start)} and ends ${dt(next.end)} (IST).` : ''],
   ...c.faq,
+  ...((GUIDE[kind]?.faqs ?? []).filter(([q]) => !c.faq.some(([x]) => x === q))),
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 ---
@@ -42,19 +51,37 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     <div class="sect"><h2>Upcoming {c.title} dates</h2></div>
     <div class="tw"><table class="data">
       <thead><tr><th>Date</th><th>Tithi begins</th><th>Tithi ends</th><th>Lunar month</th><th>Occasion</th></tr></thead>
-      <tbody>{upcoming.slice(0, 12).map((x) => <tr><td><a href={`/${kind}/${x.slug}/`} style="text-decoration:underline"><b>{pretty(x)}</b></a></td><td>{dt(x.start)}</td><td>{dt(x.end)}</td><td>{x.adhika ? 'Adhika ' : ''}{MONTHS[x.month]}</td><td>{x.occasion}</td></tr>)}</tbody>
+      <tbody>{upcoming.slice(0, 12).map((x) => <tr><td>{shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`} style="text-decoration:underline"><b>{pretty(x)}</b></a> : <b>{pretty(x)}</b>}</td><td>{dt(x.start)}</td><td>{dt(x.end)}</td><td>{x.adhika ? 'Adhika ' : ''}{MONTHS[x.month]}</td><td>{x.occasion}</td></tr>)}</tbody>
     </table></div>
     <p class="sub">Times are Indian Standard Time and are the same across India. The date is the day on which the tithi is observed ({kind === 'amavasya' ? 'present in the afternoon' : 'present at sunrise'}). Tap a date for the full guide.</p>
     {thisYear.length > 0 && <>
       <div class="sect" style="margin-top:26px"><h2>All {c.title} dates in {today.y}</h2></div>
-      <div class="chips">{thisYear.map((x) => <a href={`/${kind}/${x.slug}/`}>{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</a>)}</div>
+      <div class="chips">{thisYear.map((x) => shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`}>{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</a> : <span class="chip-off">{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</span>)}</div>
     </>}
-    <div class="sect" style="margin-top:26px"><h2>What people traditionally do</h2></div>
-    <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
-    <div class="sect"><h2>What many avoid</h2></div>
-    <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
+    {guide ? (
+      <>
+        <div class="sect" style="margin-top:26px"><h2>{c.title} by month</h2></div>
+        <div class="chips">{monthChips.map((m) => <a href={`/${kind}/${m}/`}>{m[0].toUpperCase() + m.slice(1)}</a>)}</div>
+        {guide.sections.map((b) => (
+          <>
+            <div class="sect" style="margin-top:26px"><h2>{b.h}</h2></div>
+            {b.p?.map((x) => <p set:html={fmt(x, published)} />)}
+            {b.ul && <ul>{b.ul.map((x) => <li set:html={fmt(x, published)} />)}</ul>}
+            {b.ol && <ol>{b.ol.map((x) => <li set:html={fmt(x, published)} />)}</ol>}
+          </>
+        ))}
+      </>
+    ) : (
+      <>
+        <div class="sect" style="margin-top:26px"><h2>What people traditionally do</h2></div>
+        <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
+        <div class="sect"><h2>What many avoid</h2></div>
+        <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
+      </>
+    )}
     <div class="sect"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    {guide && guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').length > 0 && <><div class="sect"><h2>Read more</h2></div><ul>{guide.reads.filter((r) => published.has(r.href.replace(/\//g, '')) || r.href === '/somavati-amavasya/').map((r) => <li><a href={r.href} style="text-decoration:underline">{r.label}</a></li>)}</ul></>}
     <div class="chips" style="margin-top:16px">{nextOther && <a href={`/${other}/`}>Next {COPY[other].title}: {pretty(nextOther)}</a>}<a href="/panchangam/">Today's panchangam</a><a href="/rahu-kalam-today/">Rahu Kalam today</a></div>
     <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For rituals, confirm the day with your family priest or temple.</p>
   </div>

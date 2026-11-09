@@ -84,10 +84,8 @@ export function lunations(kind: 'amavasya' | 'pournami', from: { y: number; m: n
   }
   const lo = ymdKey(from), hi = ymdKey(to);
   const sel = out.filter((l) => l.key >= lo && l.key <= hi).sort((a, b) => a.key.localeCompare(b.key));
-  const group = (l: Lunation) => `${EN_MONTHS[l.observed.m - 1]}-${l.observed.y}`;
-  const size = new Map<string, number>();
-  for (const l of sel) size.set(group(l), (size.get(group(l)) ?? 0) + 1);
-  for (const l of sel) l.slug = size.get(group(l))! > 1 ? `${EN_MONTHS[l.observed.m - 1]}-${l.observed.d}-${l.observed.y}` : group(l);
+  // One permanent address per calendar month (/amavasya/november/): the page shows that month's next occurrence.
+  for (const l of sel) l.slug = EN_MONTHS[l.observed.m - 1];
   return sel;
 }
 

@@ -5,21 +5,33 @@ import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../l
 import { allLunations, MONTHS, MONTHS_TE, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
 import { MONTH_NOTE, WEEKDAY_NOTE, COPY } from '../data/lunar-text';
 import { somavatiForTithi } from '../lib/somavati';
-const { l } = Astro.props as { l: Lunation };
+import { allFestivals } from '../lib/festivals';
+import { shownOnPage } from '../lib/perma';
+const { l, group } = Astro.props as { l: Lunation; group?: Lunation[] };
+const grp = group && group.length ? group : [l];
 const kind = l.kind, c = COPY[kind];
 const all = allLunations(kind);
-const i = all.findIndex((x) => x.slug === l.slug);
-const prev = all[i - 1], next = all[i + 1];
+const earlier = [...all].reverse().find((x) => x.key < grp[0].key);
+const after = all.find((x) => x.key > grp[grp.length - 1].key);
 const other = kind === 'amavasya' ? 'pournami' : 'amavasya';
 const otherNext = allLunations(other).find((x) => x.key >= l.key);
 const ymd = l.observed;
 const p = panchangFor(ymd, 'hyderabad');
 const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
-const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(d)}`; };
+const rnd = (d: Date) => new Date(Math.round(d.getTime() / 60000) * 60000); // tithi times round to the nearest minute (12:31:58 reads 12:32)
+const dt = (d: Date) => { const r = rnd(d); const x = istParts(r); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(r)}`; };
+const dayName = (d: Date) => { const x = istParts(rnd(d)); return `${WEEKDAYS[x.getUTCDay()]} ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}`; };
+const ymdOf = (d: Date) => { const x = istParts(rnd(d)); return { y: x.getUTCFullYear(), m: x.getUTCMonth() + 1, d: x.getUTCDate() }; };
+const startDay = dayName(l.start), endDay = dayName(l.end);
+const spansTwoDays = startDay !== endDay;
+const riseEnd = panchangFor(ymdOf(l.end), 'hyderabad').sunrise, setStart = panchangFor(ymdOf(l.start), 'hyderabad').sunset;
+const runningAtSunriseOnEndDay = l.start.getTime() < riseEnd.getTime() && l.end.getTime() > riseEnd.getTime();
+const coversEveningOfStartDay = l.start.getTime() < setStart.getTime();
 const prettyDate = `${WEEKDAYS[l.weekday]}, ${ymd.d} ${EN_MONTH_NAMES[ymd.m - 1]} ${ymd.y}`;
 const mName = EN_MONTH_NAMES[ymd.m - 1];
 const label = (x: Lunation) => `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
+const prettyOf = (x: Lunation) => `${WEEKDAYS[x.weekday]}, ${x.observed.d} ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
 const past = l.key < ymdKey(todayIST());
 const monthLine = `${l.adhika ? 'Adhika ' : ''}${MONTHS[l.month]} (${MONTHS_TE[l.month]})`;
 const note = [MONTH_NOTE[kind][l.month], WEEKDAY_NOTE[kind + l.weekday]].filter(Boolean);
@@ -29,16 +41,23 @@ const faq = [
   ...c.faq,
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
-const dup = /-\d+-\d{4}$/.test(l.slug);
-const title = `${c.title} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Tithi Timings, Significance`;
+const several = grp.length > 1;
+const days = grp.map((x) => x.observed.d).join(' and ');
+const title = `${c.title} ${mName} ${ymd.y}: ${several ? days + ' ' + mName + ', ' : ''}Date, Tithi Timings, Significance`;
+const dayDiff = (a: string, b: string) => (Date.parse(a) - Date.parse(b)) / 86400000;
+const allFest = allFestivals().filter((f, i, a) => a.findIndex((x) => x.id === f.id && Math.abs(dayDiff(x.key, f.key)) < 200) === i);
+const aroundFests = allFest.filter((f) => Math.abs(dayDiff(f.key, l.key)) <= 6);
+const upNext = allFest.filter((f) => f.key > l.key && !aroundFests.includes(f)).slice(0, 3);
+const moreDates = all.filter((x) => x.key > grp[grp.length - 1].key).slice(0, 5);
+const monthChips = ['january','february','march','april','may','june','july','august','september','october','november','december'];
 ---
-<Base rail="religion" title={title} description={`${c.title} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }, { name: label(l), href: `/${kind}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
+<Base rail="religion" title={title} description={`${c.title} in ${mName} ${ymd.y} ${several ? 'falls on ' + grp.map(prettyOf).join(' and ') : 'is on ' + prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }, { name: mName, href: `/${kind}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href={`/${kind}/`}>{c.title} <span class="te">{c.te}</span></a></div>
-    <h1>{c.title} {dup ? ymd.d + ' ' : ''}{mName} {ymd.y}: {prettyDate}</h1>
+    <h1>{c.title} {mName} {ymd.y}: {several ? grp.map(prettyOf).join(' and ') : prettyDate}</h1>
     {l.occasion && <p class="dek" style="margin:0 0 6px">{l.occasion}</p>}
-    {past && <p class="sub"><b>This date has passed.</b> {next ? <>The next one is <a href={`/${kind}/${next.slug}/`} style="text-decoration:underline">{label(next)}</a>.</> : null}</p>}
+    {past && <p class="sub"><b>This date has passed.</b> {after ? <>The next one is <a href={`/${kind}/${after.slug}/`} style="text-decoration:underline">{prettyOf(after)}</a>.</> : null}</p>}
     <Hero name="moon-nakshatra" alt="The Moon among the stars of the nakshatras" ratio="16/5" />
     <div class="pgrid">
       <div class="pcard"><b>Date</b><span>{ymd.d} {mName.slice(0, 3)} {ymd.y}</span></div>
@@ -46,11 +65,43 @@ const title = `${c.title} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Tith
       <div class="pcard"><b>Tithi ends</b><span>{dt(l.end)}</span></div>
       <div class="pcard"><b>Lunar month</b><span>{monthLine}</span></div>
     </div>
+    {several && (
+      <>
+        <div class="sect"><h2>{c.title} dates in {mName} {ymd.y}</h2></div>
+        <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Date</th><th>Tithi (IST)</th></tr></thead><tbody>{grp.map((x) => <tr><td><b>{prettyOf(x)}</b></td><td>{dt(x.start)}<br />to {dt(x.end)}</td></tr>)}</tbody></table></div>
+        <p class="sub">A calendar month can hold two {c.title} dates when the lunar and calendar months do not line up. The details below are for {prettyDate}.</p>
+      </>
+    )}
     <div class="sect"><h2>{c.title} on {prettyDate}</h2></div>
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. {kind === 'amavasya' ? 'We take the day on which the tithi is present in the afternoon (aparahna), the time for ancestor rites.' : 'We take the day on which the tithi is present at local sunrise.'} Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
     {somavati && <p class="sub"><b>Somavati Amavasya.</b> This Amavasya is running at sunrise on <b>Monday {somavati.ymd.d} {EN_MONTH_NAMES[somavati.ymd.m - 1]}</b>, which makes it Somavati Amavasya, the new moon on Shiva's day. <a href="/somavati-amavasya/" style="text-decoration:underline">Read the Somavati Amavasya guide</a> for the timings, the puja and the story.</p>}
+    {spansTwoDays && (
+      <>
+        <div class="sect"><h2>{c.title} on {startDay.split(' ').slice(1).join(' ')} or {endDay.split(' ').slice(1).join(' ')}?</h2></div>
+        {kind === 'amavasya' ? (
+          <>
+            <p>You may see both dates, and both are right. The tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b> (IST).</p>
+            <ul>
+              {coversEveningOfStartDay && <li><b>The evening of {startDay}.</b> The tithi is already running after sunset (the Pradosh hours), so the lamp lit at dusk on this day falls within it.</li>}
+              {runningAtSunriseOnEndDay && <li><b>The morning of {endDay}.</b> The tithi is still running at sunrise and ends at {fmtTime(rnd(l.end))}. The morning bath, tarpanam for the ancestors and the day's charity are done on this day, within those hours.</li>}
+            </ul>
+            <p>We list {prettyDate} because we take the day when the tithi is present in the afternoon, the time for ancestor rites. Many families and temples count the tithi at sunrise instead. If your family follows a fixed rule, keep to it.</p>
+          </>
+        ) : (
+          <p>The tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b> (IST), so it spans two days. We list {prettyDate}, the day when the tithi is present at sunrise. For a vratam kept in the evening or at night, such as the Satyanarayana Vratam or an offering when the full moon rises, many families choose the day on which the tithi covers that hour. Please confirm with your priest or temple.</p>
+        )}
+      </>
+    )}
+    <div class="sect"><h2>Panchanga on the day (Hyderabad)</h2></div>
+    <div class="pgrid">
+      {p.tithi.slice(0, 2).map((x) => <div class="pcard"><b>Tithi</b><span style="font-size:19px">{x.paksha} {x.name}</span><small>until {dt(x.endsAt)}</small></div>)}
+      <div class="pcard"><b>Nakshatra</b><span style="font-size:19px">{p.nakshatra[0].name}</span><small>until {dt(p.nakshatra[0].endsAt)}</small></div>
+      <div class="pcard"><b>Weekday</b><span style="font-size:19px">{WEEKDAYS[l.weekday]}</span></div>
+    </div>
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
+    {aroundFests.length > 0 && <><div class="sect"><h2>Festivals in the days around this {c.title}</h2></div><div class="chips">{aroundFests.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}
+    {upNext.length > 0 && <><div class="sect"><h2>Up next</h2></div><div class="chips">{upNext.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}
     <div class="sect"><h2>Timings on the day (Hyderabad)</h2></div>
     <div class="timing">
       <div class="good"><b>Good timings</b><span>{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small><span style="display:block;margin-top:14px">{t(p.brahma.start)} to {t(p.brahma.end)}</span><small>Brahma Muhurtham</small></div>
@@ -63,12 +114,15 @@ const title = `${c.title} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Tith
     <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
     <div class="sect"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    <div class="chips" style="margin-top:18px">
-      {prev && <a href={`/${kind}/${prev.slug}/`}>&larr; {label(prev)}</a>}
-      {next && <a href={`/${kind}/${next.slug}/`}>{label(next)} &rarr;</a>}
-      <a href={`/${kind}/`}>All {c.title} dates</a>
+    {moreDates.length > 0 && <><div class="sect"><h2>More {c.title} dates</h2></div><div class="chips">{moreDates.map((x) => shownOnPage(kind, x) ? <a href={`/${kind}/${x.slug}/`}>{prettyOf(x)}</a> : <span class="chip-off">{prettyOf(x)}</span>)}</div></>}
+    <div class="sect"><h2>{c.title} in other months</h2></div>
+    <div class="chips">{monthChips.map((m) => <a href={`/${kind}/${m}/`}>{m[0].toUpperCase() + m.slice(1, 3)}</a>)}</div>
+    <div class="chips" style="margin-top:12px">
+      {after && <a href={`/${kind}/${after.slug}/`}>Next: {prettyOf(after)} &rarr;</a>}
+      <a href={`/${kind}/`}>All {c.title} dates and the full guide</a>
       {otherNext && <a href={`/${other}/${otherNext.slug}/`}>Next {COPY[other].title}: {label(otherNext)}</a>}
     </div>
+    {earlier && <p class="sub">The previous {c.title} was on {prettyOf(earlier)}.</p>}
     <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For rituals, confirm the day with your family priest or temple.</p>
   </div>
 </Base>

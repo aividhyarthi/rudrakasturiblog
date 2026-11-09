@@ -1,7 +1,7 @@
 ---
 import TithiPage from '../../../components/TithiPage.astro';
-import { allTithis } from '../../../lib/tithi';
-export function getStaticPaths() { return allTithis('sankashti').map((l) => ({ params: { slug: l.slug }, props: { l } })); }
-const { l } = Astro.props;
+import { permaPages } from '../../../lib/perma';
+export function getStaticPaths() { return permaPages('sankashti').map((p) => ({ params: { slug: p.slug }, props: { l: p.primary, group: p.group } })); }
+const { l, group } = Astro.props;
 ---
-<TithiPage l={l} />
+<TithiPage l={l} group={group} />

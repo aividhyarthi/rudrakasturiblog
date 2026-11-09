@@ -4,8 +4,9 @@ import { cardPng } from '../../lib/card';
 import { allArticles, categoryLabel } from '../../lib/articles';
 import { RASHIS } from '../../lib/astro';
 import { CHAPTERS } from '../../data/gita';
-import { allTithis, ROUTE, type TithiKind } from '../../lib/tithi';
-import { allLunations, EN_MONTH_NAMES } from '../../lib/lunar';
+import { ROUTE, type TithiKind } from '../../lib/tithi';
+import { permaPages } from '../../lib/perma';
+import { EN_MONTH_NAMES } from '../../lib/lunar';
 import { WEEKDAYS } from '../../lib/panchang';
 import { canonicalFestivals } from '../../lib/festivals';
 
@@ -23,8 +24,7 @@ async function items(): Promise<Record<string, Item>> {
   };
   for (const a of await allArticles({ includeHidden: true })) out[a.slug] = { kicker: categoryLabel(a.data.category), title: a.data.title };
   const pretty = (o: { observed: { y: number; m: number; d: number }; weekday: number }) => `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${EN_MONTH_NAMES[o.observed.m - 1]} ${o.observed.y}`;
-  for (const k of ['ekadashi', 'sankashti', 'pradosham'] as TithiKind[]) for (const o of allTithis(k)) out[`tl-${k}-${o.slug}`] = { kicker: o.occasion ?? k, title: `${o.name}: ${pretty(o)}. Date and timings` };
-  for (const k of ['amavasya', 'pournami'] as const) for (const o of allLunations(k)) out[`tl-${k}-${o.slug}`] = { kicker: o.occasion ?? k, title: `${o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami')}: ${pretty(o)}. Date and timings` };
+  for (const k of ['ekadashi', 'sankashti', 'pradosham', 'amavasya', 'pournami'] as const) for (const pg of permaPages(k)) { const o = pg.primary as any; out[`tl-${k}-${pg.slug}`] = { kicker: o.occasion ?? k, title: `${o.name ?? o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami')}: ${pretty(o)}. Date and timings` }; }
   for (const f of canonicalFestivals()) out[`fest-${f.slug}`] = { kicker: 'Festival', title: `${f.name}: date, puja vidhi and the story` };
   for (const t of await getCollection('temples')) out[`t-${t.slug}`] = { kicker: 'Temples', title: t.data.name };
   RASHIS.forEach((r) => (out[`r-${r.id}`] = { kicker: 'Rasi Phalalu', title: `${r.skt} Rasi (${r.en}) Phalalu: today, this week, this month` }));

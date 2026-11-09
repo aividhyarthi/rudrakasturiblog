@@ -98,12 +98,8 @@ function build(kind: TithiKind, from: Ymd, to: Ymd): Obs[] {
   }
   const lo = ymdKey(from), hi = ymdKey(to);
   const sel = out.filter((o) => o.key >= lo && o.key <= hi).sort((p, q) => p.key.localeCompare(q.key));
-  const grp = (o: Obs) => `${EN[o.observed.m - 1]}-${o.observed.y}`;
-  const size = new Map<string, number>(); for (const o of sel) size.set(grp(o), (size.get(grp(o)) ?? 0) + 1);
-  for (const o of sel) {
-    const day = `${EN[o.observed.m - 1]}-${o.observed.d}-${o.observed.y}`;
-    o.slug = kind === 'ekadashi' ? `${slugify(o.name)}-${grp(o)}${size.get(grp(o))! > 2 ? `-${o.observed.d}` : ''}` : kind === 'sankashti' ? (size.get(grp(o))! > 1 ? day : grp(o)) : day;
-  }
+  // One permanent address each: Ekadashi by name (/ekadashi/prabodhini-ekadashi/), the others by calendar month (/pradosham/april/).
+  for (const o of sel) o.slug = kind === 'ekadashi' ? slugify(o.name) : EN[o.observed.m - 1];
   return sel;
 }
 

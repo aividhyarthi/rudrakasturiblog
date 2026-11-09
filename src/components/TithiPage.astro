@@ -5,11 +5,13 @@ import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../l
 import { MONTHS, MONTHS_TE, EN_MONTH_NAMES } from '../lib/lunar';
 import { allTithis, ROUTE, type Obs, type TithiKind } from '../lib/tithi';
 import { COPY, EK_NOTE, WEEKDAY_NOTE } from '../data/tithi-text';
-const { l } = Astro.props as { l: Obs };
+const { l, group } = Astro.props as { l: Obs; group?: Obs[] };
+const grp = group && group.length ? group : [l];
 const kind = l.kind, c = COPY[kind], R = ROUTE[kind];
 const all = allTithis(kind);
-const i = all.findIndex((x) => x.slug === l.slug);
-const prev = all[i - 1], next = all[i + 1];
+const earlier = [...all].reverse().find((x) => x.key < grp[0].key && (kind === 'ekadashi' ? true : true));
+const after = all.find((x) => x.key > grp[grp.length - 1].key);
+const sameName = kind === 'ekadashi' ? all.filter((x) => x.slug === l.slug && x.key >= ymdKey(todayIST())).slice(0, 3) : [];
 const ymd = l.observed;
 const p = panchangFor(ymd, 'hyderabad');
 const ref = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d));
@@ -18,6 +20,10 @@ const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay(
 const prettyDate = `${WEEKDAYS[l.weekday]}, ${ymd.d} ${EN_MONTH_NAMES[ymd.m - 1]} ${ymd.y}`;
 const mName = EN_MONTH_NAMES[ymd.m - 1];
 const label = (x: Obs) => kind === 'ekadashi' ? `${x.name}, ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.d}` : `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.d}, ${x.observed.y}`;
+const prettyOf = (x: Obs) => `${WEEKDAYS[x.weekday]}, ${x.observed.d} ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
+const several = grp.length > 1;
+const days = grp.map((x) => x.observed.d).join(', ').replace(/, (\d+)$/, ' and $1');
+const monthChips = ['january','february','march','april','may','june','july','august','september','october','november','december'];
 const past = l.key < ymdKey(todayIST());
 const monthLine = `${l.adhika ? 'Adhika ' : ''}${MONTHS[l.month]} (${MONTHS_TE[l.month]}), ${l.paksha === 'shukla' ? 'Shukla paksha' : 'Krishna paksha'}`;
 const baseName = l.name.replace(' Ekadashi', '');
@@ -30,17 +36,16 @@ const faq: [string, string][] = [
   ...c.faq,
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
-const dup = /-\d+-\d{4}$/.test(l.slug) || (kind === 'ekadashi' && /-\d+$/.test(l.slug));
-const title = kind === 'ekadashi' ? `${l.name} ${mName} ${ymd.y}: Date, Parana Time, Significance` : kind === 'sankashti' ? `${l.name} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Moonrise, Vrat` : `${l.name} ${ymd.d} ${mName} ${ymd.y}: Date, Time, Puja`;
+const title = kind === 'ekadashi' ? `${l.name} ${ymd.y}: ${mName} ${ymd.d}, Date, Parana Time, Significance` : kind === 'sankashti' ? `Sankashti Chaturthi ${mName} ${ymd.y}: ${ymd.d} ${mName}, Date, Moonrise, Vrat` : `Pradosham ${mName} ${ymd.y}: ${days} ${mName}, Dates, Puja Time`;
 const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana.from)} to ${t(l.parana.to)}` : 'Next morning, after sunrise'] : kind === 'sankashti' ? ['Moonrise (Hyderabad)', l.moonrise ? t(l.moonrise) : ''] : ['Puja window (Hyderabad)', l.puja ? `${t(l.puja.from)} to ${t(l.puja.to)}` : ''];
 ---
-<Base rail="religion" title={title} description={`${l.name} in ${mName} ${ymd.y} is on ${prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: label(l), href: `/${R}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
+<Base rail="religion" title={title} description={`${kind === 'pradosham' ? 'Pradosham' : l.name} in ${mName} ${ymd.y} ${several ? 'falls on ' + grp.map(prettyOf).join(' and ') : 'is on ' + prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: kind === 'ekadashi' ? l.name : mName, href: `/${R}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href={`/${R}/`}>{c.title} <span class="te">{c.te}</span></a></div>
-    <h1>{kind === "ekadashi" ? l.name : `${l.name} ${dup ? ymd.d + " " : ""}${mName} ${ymd.y}`}: {prettyDate}</h1>
+    <h1>{kind === "ekadashi" ? `${l.name} ${ymd.y}` : kind === 'pradosham' ? `Pradosham ${mName} ${ymd.y}` : `${l.name} ${mName} ${ymd.y}`}: {several ? grp.map(prettyOf).join(' and ') : prettyDate}</h1>
     <p class="dek" style="margin:0 0 6px">{l.occasion}</p>
-    {past && <p class="sub"><b>This date has passed.</b> {next ? <>The next one is <a href={`/${R}/${next.slug}/`} style="text-decoration:underline">{label(next)}</a>.</> : null}</p>}
+    {past && <p class="sub"><b>This date has passed.</b> {after ? <>The next one is <a href={`/${R}/${after.slug}/`} style="text-decoration:underline">{prettyOf(after)}</a>.</> : null}</p>}
     <Hero name="moon-nakshatra" alt="The Moon among the stars of the nakshatras" ratio="16/5" />
     <div class="pgrid">
       <div class="pcard"><b>Date</b><span>{ymd.d} {mName.slice(0, 3)} {ymd.y}</span></div>
@@ -48,6 +53,13 @@ const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana
       <div class="pcard"><b>Tithi ends</b><span>{dt(l.end)}</span></div>
       <div class="pcard"><b>{extraCard[0]}</b><span>{extraCard[1]}</span></div>
     </div>
+    {several && (
+      <>
+        <div class="sect"><h2>{c.title} dates in {mName} {ymd.y}</h2></div>
+        <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Date</th><th>Tithi (IST)</th></tr></thead><tbody>{grp.map((x) => <tr><td><b>{prettyOf(x)}</b><br /><small>{x.name}</small></td><td>{dt(x.start)}<br />to {dt(x.end)}</td></tr>)}</tbody></table></div>
+        <p class="sub">There is more than one {c.title} in this calendar month. The details below are for {prettyDate}.</p>
+      </>
+    )}
     <div class="sect"><h2>{l.name} on {prettyDate}</h2></div>
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. We take the day on which the tithi is {basis}. It falls in {monthLine}. Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
@@ -64,11 +76,18 @@ const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana
     <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
     <div class="sect"><h2>Common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    <div class="chips" style="margin-top:18px">
-      {prev && <a href={`/${R}/${prev.slug}/`}>&larr; {label(prev)}</a>}
-      {next && <a href={`/${R}/${next.slug}/`}>{label(next)} &rarr;</a>}
-      <a href={`/${R}/`}>All {c.title} dates</a>
+    {kind === 'ekadashi' && sameName.length > 1 && (
+      <>
+        <div class="sect"><h2>{l.name} dates</h2></div>
+        <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Year</th><th>Date</th></tr></thead><tbody>{sameName.map((x) => <tr><td><b>{x.observed.y}</b></td><td>{prettyOf(x)}</td></tr>)}</tbody></table></div>
+      </>
+    )}
+    {kind !== 'ekadashi' && <><div class="sect"><h2>{c.title} in other months</h2></div><div class="chips">{monthChips.map((m) => <a href={`/${R}/${m}/`}>{m[0].toUpperCase() + m.slice(1, 3)}</a>)}</div></>}
+    <div class="chips" style="margin-top:12px">
+      {after && <a href={`/${R}/${after.slug}/`}>Next: {kind === 'ekadashi' ? after.name + ', ' : ''}{prettyOf(after)} &rarr;</a>}
+      <a href={`/${R}/`}>All {c.title} dates and the full guide</a>
     </div>
+    {earlier && kind !== 'ekadashi' && <p class="sub">The previous {c.title} was on {prettyOf(earlier)}.</p>}
     <p class="disc">Calculated from the astronomical positions of the Sun and Moon (Lahiri ayanamsa). Traditions vary by region and family. For vratams, confirm the day with your family priest or temple.</p>
   </div>
 </Base>
