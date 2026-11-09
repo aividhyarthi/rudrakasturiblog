@@ -30,7 +30,7 @@ const wd = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay();
 const status = live ? `Day ${here.dayNo} of ${here.total}` : next ? (next.inDays === 1 ? `Begins tomorrow, ${wdOf(next.masa.start)} ${nice(next.masa.start)}` : `Begins in ${next.inDays} days, ${nice(next.masa.start)}`) : '';
 ---
 {m && text && (
-  <section class="masa" aria-label={text.show}>
+  <section class={compact ? 'masa masa-compact' : 'masa'} aria-label={text.show}>
     <div class="wrap">
       <div class="masa-head">
         <span class="masa-kicker">{live ? 'This month' : 'Coming up'}</span>

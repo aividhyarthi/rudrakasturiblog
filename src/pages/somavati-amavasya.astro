@@ -153,10 +153,10 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     <p>These are traditional customs and they vary by family. Most teachers add that the new moon is not a day to fear. It is a day to slow down.</p>
 
     <div class="sect"><h2>Somavati Amavasya dates</h2></div>
-    <table>
-      <thead><tr><th>Day</th><th>Date</th><th>Amavasya tithi (IST)</th></tr></thead>
-      <tbody>{upcoming.map((s) => <tr><td>Monday</td><td>{s.ymd.d} {EN_MONTH_NAMES[s.ymd.m - 1]} {s.ymd.y}</td><td>{dt(s.start)} to {dt(s.end)}</td></tr>)}</tbody>
-    </table>
+    <div class="tw"><table class="data" style="min-width:0">
+      <thead><tr><th>Date</th><th>Amavasya tithi (IST)</th></tr></thead>
+      <tbody>{upcoming.map((s) => <tr><td><b>Mon, {s.ymd.d} {EN_MONTH_NAMES[s.ymd.m - 1]} {s.ymd.y}</b></td><td>{dt(s.start)}<br />to {dt(s.end)}</td></tr>)}</tbody>
+    </table></div>
     <p class="sub">Dates are calculated from the Sun and Moon (Lahiri ayanamsa) for Hyderabad. For every Amavasya of the year, see our <a href="/amavasya/" style="text-decoration:underline">Amavasya dates</a>.</p>
 
     <div class="sect"><h2>Questions people ask</h2></div>
