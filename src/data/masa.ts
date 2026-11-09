@@ -39,3 +39,27 @@ export const MASA_TEXT: Record<string, MasaText> = {
     before: 'Tonight is Amavasya, the new moon that closes Ashwayuja. Karthika Masam begins with the sunrise tomorrow. Tonight, clean the pooja space, wash your lamps, and get oil, wicks and flowers ready, so that the first dawn lamp can be lit tomorrow.',
   },
 };
+
+// Banner text for the other eleven months comes from their page data (src/data/masa-pages-more.ts), so adding a month there adds its banner too.
+import { MASA_PAGES } from './masa-pages';
+const KEYS = ['Chaitra', 'Vaishakha', 'Jyeshtha', 'Ashadha', 'Shravana', 'Bhadrapada', 'Ashwayuja', 'Kartika', 'Margashira', 'Pushya', 'Magha', 'Phalguna'];
+const WEEKDAY_LINES: Record<number, string> = {
+  0: 'Sunday is Surya\'s day. Offer water to the rising Sun, and keep a quiet hour for prayer.',
+  1: 'Monday is Shiva\'s day. Offer water or a bilva leaf to Shiva, and light a lamp at dusk.',
+  2: 'Tuesday is for Hanuman and Subramanya: courage and a steady mind. Light a lamp at dusk.',
+  3: 'Wednesday is for Vishnu and Ganesha. Begin your work with a short prayer.',
+  4: 'Thursday is the guru\'s day. Remember a teacher, and light a lamp before Vishnu or your guru.',
+  5: 'Friday is Lakshmi\'s day. Light a lamp at dusk and keep the home clean and calm.',
+  6: 'Saturday is for Venkateswara, Hanuman and Shani. Light a sesame oil lamp at dusk.',
+};
+for (const pg of MASA_PAGES) {
+  const key = KEYS[pg.idx];
+  if (MASA_TEXT[key]) continue;
+  const doToday: Record<number, string> = { ...WEEKDAY_LINES };
+  for (const v of pg.weekdayVrats ?? []) doToday[v.day] = `${v.label}. ${WEEKDAY_LINES[v.day]}`;
+  MASA_TEXT[key] = {
+    show: pg.name, te: pg.te, tagline: pg.dek.replace(/\.$/, ''), why: pg.sections[0]?.p ?? [], doToday, every: pg.every ?? '', facts: pg.facts ?? [],
+    links: [{ href: `/masam/${pg.slug}/`, label: `${pg.name}: dates and guide` }, ...pg.reads.slice(0, 4).map((r) => ({ href: r.href, label: r.label }))],
+    before: pg.before ?? `${pg.name} begins with the next sunrise.`,
+  };
+}

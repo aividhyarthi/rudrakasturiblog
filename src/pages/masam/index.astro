@@ -1,0 +1,42 @@
+---
+// All twelve Hindu months on one page. Each month's dates are worked out from the sky and roll forward every year.
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import { MASA_PAGES } from '../../data/masa-pages';
+import { allMasaWindows } from '../../lib/masa';
+import { todayIST, ymdKey, WEEKDAYS } from '../../lib/panchang';
+import { EN_MONTH_NAMES } from '../../lib/lunar';
+const today = todayIST(), tk = ymdKey(today);
+const nice = (x: { y: number; m: number; d: number }) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]} ${x.y}`;
+const rows = MASA_PAGES.map((pg) => ({ pg, w: allMasaWindows().get(pg.idx)! })).filter((r) => r.w).sort((a, b) => ymdKey(a.w.start).localeCompare(ymdKey(b.w.start)));
+const current = rows.find((r) => tk >= ymdKey(r.w.start) && tk <= ymdKey(r.w.end));
+const faq: [string, string][] = [
+  ['How many Hindu months are there?', 'Twelve lunar months, each about 29 and a half days: Chaitra, Vaishakha, Jyeshtha, Ashadha, Shravana, Bhadrapada, Ashwayuja, Kartika, Margashira, Pushya, Magha and Phalguna. About every three years an extra (adhika) month is added so that the lunar calendar stays in step with the seasons.'],
+  ['Which Hindu month is it now?', current ? `It is ${current.pg.name}, from ${nice(current.w.start)} to ${nice(current.w.end)}.` : 'See the table on this page.'],
+  ['Why do the months start on different days in different calendars?', 'In the amanta calendar used in the South and West, a month runs from new moon to new moon. In the purnimanta calendar of North India, it runs from full moon to full moon, so the same festival can fall in different month names.'],
+  ['What is an adhika masa?', 'An extra month added about every three years, because twelve lunar months are about eleven days shorter than a solar year. Festivals are not kept in the adhika month, and it is considered a time for charity and prayer.'],
+  ['Do the dates on this page change every year?', 'Yes, and they update by themselves. Each date is worked out from the positions of the Sun and Moon.'],
+];
+const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+---
+<Base rail="religion" title="Hindu Months: Dates of Chaitra, Shravana, Karthika, Margashira and More" description={`The twelve Hindu months with their exact dates, festivals and customs: Chaitra, Vaishakha, Jyeshtha, Ashadha, Shravana, Bhadrapada, Ashwayuja, Kartika, Margashira, Pushya, Magha and Phalguna.${current ? ` Now: ${current.pg.name}.` : ''}`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Hindu months', href: '/masam/' }]} image="/covers/masam.png" schemaBody={`${rows.map((r) => `${r.pg.name} ${nice(r.w.start)} to ${nice(r.w.end)}. ${r.pg.dek}`).join(' ')} ${faq.map(([q, a]) => `${q} ${a}`).join(' ')}`}>
+  <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>Hindu months: the twelve masams and their dates</h1>
+    <p class="dek" style="margin:0 0 6px">{current ? `Now: ${current.pg.name}, ${nice(current.w.start)} to ${nice(current.w.end)}.` : 'The lunar months, from Chaitra to Phalguna.'}</p>
+    <Hero name="moon-nakshatra" alt="The Moon through its phases" ratio="16/5" />
+    <p>The Hindu year is made of twelve lunar months, each from one new moon to the next. Each month has its own festivals, its own vratas and its own mood: Chaitra with the new year, Shravana with its Mondays and Varalakshmi Vratam, Karthika with its lamps, Magha with its dawn baths. Choose a month to see its exact dates, the festivals and Ekadashis in it, and how families keep it.</p>
+    <div class="sect"><h2>Hindu months and their dates</h2></div>
+    <div class="tw"><table class="data" style="min-width:0"><thead><tr><th>Month</th><th>Dates</th></tr></thead><tbody>
+      {rows.map((r) => <tr><td><a href={`/masam/${r.pg.slug}/`} style="text-decoration:underline"><b>{r.pg.name} {r.w.start.y}</b></a><br /><small>{r.pg.te}</small></td><td>{WEEKDAYS[new Date(Date.UTC(r.w.start.y, r.w.start.m - 1, r.w.start.d)).getUTCDay()].slice(0, 3)}, {nice(r.w.start)}<br />to {WEEKDAYS[new Date(Date.UTC(r.w.end.y, r.w.end.m - 1, r.w.end.d)).getUTCDay()].slice(0, 3)}, {nice(r.w.end)}{current && current.pg.slug === r.pg.slug ? <><br /><b>Now</b></> : ''}</td></tr>)}
+    </tbody></table></div>
+    <p class="sub">Dates follow the amanta calendar used in the Telugu, Kannada, Tamil and Malayalam regions (Hyderabad sunrise). In the North Indian purnimanta calendar, the months begin about two weeks earlier.</p>
+    <div class="sect"><h2>What each month is for</h2></div>
+    <ul>{rows.map((r) => <li><a href={`/masam/${r.pg.slug}/`} style="text-decoration:underline"><b>{r.pg.name}</b></a>: {r.pg.dek}</li>)}</ul>
+    <div class="sect"><h2>Hindu months: common questions</h2></div>
+    {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
+    <div class="chips"><a href="/festivals/">All festivals</a><a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a><a href="/ekadashi/">Ekadashi dates</a><a href="/panchangam/">Today's panchangam</a></div>
+    <p class="disc">Dates are calculated for Hyderabad from the positions of the Sun and Moon. Traditions vary by region and family. For vratams and rituals, confirm with your family priest or temple.</p>
+  </div>
+</Base>

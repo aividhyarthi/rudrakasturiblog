@@ -9,11 +9,13 @@ import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals
 import { allArticles } from '../../lib/articles';
 import { linkExists } from '../../lib/fmt';
 import { joinText } from '../../lib/schemabody';
+import { MASA_PAGES } from '../../data/masa-pages';
 import { FEST_ALL as FEST_CONTENT } from '../../data/festival-all';
 import { fmtTime, panchangFor, todayIST, ymdKey, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
 export function getStaticPaths() { return canonicalFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
 const { f } = Astro.props as { f: Fest };
+const monthPage = f.month !== undefined ? MASA_PAGES.find((x) => x.idx === f.month) : undefined;
 const c = FEST_CONTENT[f.id] ?? null;
 const all = allFestivals();
 const pub = new Set((await allArticles()).map((a) => a.slug));
@@ -55,6 +57,7 @@ const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi a
     <div class="kicker"><a href="/festivals/">Hindu festivals</a></div>
     <h1>{f.name} {c?.te && <span class="te">{c.te}</span>} {f.ymd.y}: {pretty}</h1>
     <p class="dek" style="margin:0 0 6px">{c ? c.names : f.alt ? `Also known as ${f.alt}` : ''}</p>
+    {monthPage && <p class="sub" style="margin:0 0 10px">Observed in <a href={`/masam/${monthPage.slug}/`} style="text-decoration:underline">{monthPage.name} {f.ymd.y}</a>, one of the <a href="/masam/" style="text-decoration:underline">twelve Hindu months</a>.</p>}
     {c?.hero && <Hero name={c.hero} alt={c.heroAlt ?? f.name} ratio="16/5" />}
     <div class="sect"><h2>{lead}: {f.name} at a glance</h2></div>
     <div class="pgrid">

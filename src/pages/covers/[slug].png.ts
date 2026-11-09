@@ -10,6 +10,7 @@ import { EN_MONTH_NAMES } from '../../lib/lunar';
 import { WEEKDAYS } from '../../lib/panchang';
 import { GODS } from '../../data/gods';
 import { SERIES } from '../../config';
+import { MASA_PAGES } from '../../data/masa-pages';
 import { canonicalFestivals } from '../../lib/festivals';
 
 type Item = { kicker: string; title: string };
@@ -24,7 +25,7 @@ async function items(): Promise<Record<string, Item>> {
     gods: { kicker: 'Our gods', title: 'Gods and goddesses: stories, mantras, temples and festivals' },
     series: { kicker: 'Series', title: 'Series to read in order: the epics, the Gita, our gods and more' },
     'sade-sati': { kicker: 'Astrology', title: 'Sade Sati: which rashis are affected now, and when Saturn moves' },
-    'masam-karthika': { kicker: 'Hindu months', title: 'Karthika Masam: dates, Mondays, festivals and how to keep the month' },
+    masam: { kicker: 'Hindu months', title: 'Hindu months: the twelve masams, their dates, festivals and customs' },
     'somavati-amavasya': { kicker: 'Amavasya', title: 'Somavati Amavasya: dates, timings, puja at home and the story' },
     gita: { kicker: 'Bhagavad Gita', title: 'The Bhagavad Gita: all 18 chapters, explained simply' },
   };
@@ -32,6 +33,7 @@ async function items(): Promise<Record<string, Item>> {
   const pretty = (o: { observed: { y: number; m: number; d: number }; weekday: number }) => `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${EN_MONTH_NAMES[o.observed.m - 1]} ${o.observed.y}`;
   for (const k of ['ekadashi', 'sankashti', 'pradosham', 'amavasya', 'pournami'] as const) for (const pg of permaPages(k)) { const o = pg.primary as any; out[`tl-${k}-${pg.slug}`] = { kicker: o.occasion ?? k, title: `${o.name ?? o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami')}: ${pretty(o)}. Date and timings` }; }
   for (const f of canonicalFestivals()) out[`fest-${f.slug}`] = { kicker: 'Festival', title: `${f.name}: date, puja vidhi and the story` };
+  for (const pg of MASA_PAGES) out[`masam-${pg.slug}`] = { kicker: 'Hindu months', title: `${pg.name}: dates, festivals and how to keep the month` };
   for (const g of GODS) out[`god-${g.id}`] = { kicker: 'Our gods', title: `${g.name}: stories, mantras, temples and vows` };
   for (const sr of SERIES) out[`series-${sr.id}`] = { kicker: 'Series', title: sr.label };
   for (const t of await getCollection('temples')) out[`t-${t.slug}`] = { kicker: 'Temples', title: t.data.name };

@@ -7,6 +7,7 @@ import { allTithis, ROUTE, type Obs, type TithiKind } from '../lib/tithi';
 import { permaPages, shownOnPage } from '../lib/perma';
 import { COPY, EK_NOTE, WEEKDAY_NOTE } from '../data/tithi-text';
 import { EK_STORY } from '../data/ekadashi-stories';
+import { MASA_PAGES } from '../data/masa-pages';
 import { fmt } from '../lib/fmt';
 const { l, group } = Astro.props as { l: Obs; group?: Obs[] };
 const grp = group && group.length ? group : [l];
@@ -72,6 +73,7 @@ const schemaBody = joinText(c.what, note, story?.story, story?.keep, c.do, c.avo
     <div class="sect"><h2>{l.name} on {prettyDate}</h2></div>
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. We take the day on which the tithi is {basis}. It falls in {monthLine}. Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
+    {!l.adhika && MASA_PAGES.find((x) => x.idx === l.month) && <p class="sub">This falls in <a href={`/masam/${MASA_PAGES.find((x) => x.idx === l.month)!.slug}/`} style="text-decoration:underline">{MASA_PAGES.find((x) => x.idx === l.month)!.name} {ymd.y}</a>, one of the <a href="/masam/" style="text-decoration:underline">twelve Hindu months</a>.</p>}
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
     {story && (
       <>

@@ -4,6 +4,7 @@ import Hero from './Hero.astro';
 import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
 import { allLunations, MONTHS, MONTHS_TE, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
 import { MONTH_NOTE, WEEKDAY_NOTE, COPY } from '../data/lunar-text';
+import { MASA_PAGES } from '../data/masa-pages';
 import { somavatiForTithi } from '../lib/somavati';
 import { allFestivals } from '../lib/festivals';
 import { shownOnPage, permaPages } from '../lib/perma';
@@ -103,6 +104,7 @@ const schemaBody = joinText(c.what, note, c.do, c.avoid, faq.map(([q, a]) => `${
       <div class="pcard"><b>Nakshatra</b><span style="font-size:19px">{p.nakshatra[0].name}</span><small>until {dt(p.nakshatra[0].endsAt)}</small></div>
       <div class="pcard"><b>Weekday</b><span style="font-size:19px">{WEEKDAYS[l.weekday]}</span></div>
     </div>
+    {!l.adhika && MASA_PAGES.find((x) => x.idx === l.month) && <p class="sub">This falls in <a href={`/masam/${MASA_PAGES.find((x) => x.idx === l.month)!.slug}/`} style="text-decoration:underline">{MASA_PAGES.find((x) => x.idx === l.month)!.name} {ymd.y}</a>, one of the <a href="/masam/" style="text-decoration:underline">twelve Hindu months</a>.</p>}
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
     {aroundFests.length > 0 && <><div class="sect"><h2>Festivals in the days around this {c.title}</h2></div><div class="chips">{aroundFests.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}
     {upNext.length > 0 && <><div class="sect"><h2>Up next</h2></div><div class="chips">{upNext.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}

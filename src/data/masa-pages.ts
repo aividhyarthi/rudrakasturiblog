@@ -4,10 +4,14 @@ export type MasaPage = {
   slug: string; idx: number; name: string; te: string; dek: string; hero: string;
   lead: string[]; sections: { h: string; p?: string[]; ul?: string[]; ol?: string[] }[];
   faqs: [string, string][]; reads: { href: string; label: string }[];
+  // for the banner on every page while the month runs (Karthika has its own richer banner text in masa.ts)
+  every?: string; facts?: string[]; before?: string;
+  weekdayVrats?: { day: number; label: string; href: string }[]; // e.g. Monday: Karthika Somavaram
 };
-export const MASA_PAGES: MasaPage[] = [
+import { MASA_MORE } from './masa-pages-more';
+const KARTHIKA: MasaPage[] = [
   {
-    slug: 'karthika', idx: 7, name: 'Karthika Masam', te: 'కార్తీక మాసం', hero: 'shiva-symbols',
+    slug: 'karthika', idx: 7, weekdayVrats: [{ day: 1, label: 'Karthika Somavaram', href: '/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/' }], name: 'Karthika Masam', te: 'కార్తీక మాసం', hero: 'shiva-symbols',
     dek: 'The month of lamps, dear to Shiva and Vishnu: the deepam, the Mondays and the full moon.',
     lead: [
       'Before sunrise, in the lanes of a Telugu town, small lamps are already burning on doorsteps and at the tulasi. Women are bathing in the cold, children are sleepy, and somewhere a radio is playing a Shiva stotra. This is Karthika Masam, and for the whole month the town is a little quieter and a little brighter than usual.',
@@ -58,3 +62,4 @@ export const MASA_PAGES: MasaPage[] = [
     ],
   },
 ];
+export const MASA_PAGES: MasaPage[] = [...KARTHIKA, ...MASA_MORE].sort((a, b) => a.idx - b.idx);

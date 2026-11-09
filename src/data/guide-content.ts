@@ -103,6 +103,7 @@ export const GUIDE: Record<string, Guide> = {
       ['What is parana?', 'The act of breaking the Ekadashi fast, done on the Dwadashi morning, after sunrise and within the time given for the day. It is not done during the first quarter of Dwadashi (Hari Vasara).'],
       ['Why do some calendars give two dates for Ekadashi?', 'Smarta families keep the day on which Ekadashi is present at sunrise. Many Vaishnava traditions may keep the next day. The dates here follow the first rule, so confirm with your own tradition or temple.'],
       ['How many Ekadashis are there in a year?', 'There are 24, two in every lunar month. A year with an adhika month has 26.'],
+      ['Why do some books name an Ekadashi in a different month?', 'The Krishna paksha Ekadashis are often named by the North Indian month, which begins about two weeks earlier than the South Indian one. So an Ekadashi that a book places in one month can fall in the next month of a South Indian calendar. The dates on this site follow the South Indian (amanta) calendar and are worked out from the sky.'],
       ['Can I drink water on Ekadashi?', 'Yes, on all Ekadashis except Nirjala Ekadashi, which is the strictest. Even then it is not meant for the unwell, the elderly, children or pregnant women.'],
       ['Which Ekadashi is the most important?', 'Many say Vaikuntha (Mukkoti) Ekadashi in the South, Nirjala Ekadashi, Devshayani, Prabodhini and Mokshada, which is also Gita Jayanti.'],
     ],

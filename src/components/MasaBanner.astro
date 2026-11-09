@@ -2,9 +2,9 @@
 // "Today is Karthika Masam" (or whichever month is running): what the month is, why it matters, what today is for, and the dates ahead.
 import { masaOn, masaStartingSoon } from '../lib/masa';
 import { MASA_TEXT } from '../data/masa';
-import { allFestivals, festivalsByKey } from '../lib/festivals';
-import { allTithis } from '../lib/tithi';
-import { ymdKey, addDays, WEEKDAYS } from '../lib/panchang';
+import { festivalsByKey } from '../lib/festivals';
+import { masaDateRows } from '../lib/masadates';
+import { ymdKey, WEEKDAYS } from '../lib/panchang';
 import { EN_MONTH_NAMES } from '../lib/lunar';
 const { ymd, compact = false } = Astro.props as { ymd: { y: number; m: number; d: number }; compact?: boolean };
 const here = masaOn(ymd);
@@ -15,16 +15,7 @@ const m = live ?? next?.masa ?? null;
 const text = m ? MASA_TEXT[m.name] : null;
 const nice = (x: { y: number; m: number; d: number }) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]}`;
 const wdOf = (x: { y: number; m: number; d: number }) => WEEKDAYS[new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay()];
-let dates: { key: string; label: string; href: string; date: string }[] = [];
-if (m && text) {
-  const from = ymdKey(ymd < m.start ? m.start : ymd), to = ymdKey(m.end);
-  const row = (key: string, label: string, href: string) => { const [y, mo, d] = key.split('-').map(Number); const x = { y, m: mo, d }; return { key, label, href, date: `${wdOf(x).slice(0, 3)}, ${nice(x)}` }; };
-  const fests = allFestivals().filter((f) => ['govardhan-puja', 'nagula-chavithi', 'skanda-shashti', 'tulasi-vivaha', 'karthika-pournami'].includes(f.id) && f.key >= from && f.key <= to).map((f) => row(f.key, f.id === 'govardhan-puja' ? 'Karthika Masam begins (Bali Padyami)' : f.name, `/festivals/${f.slug}/`));
-  const ek = allTithis('ekadashi').filter((o) => /Prabodhini/.test(o.name) && o.key >= from && o.key <= to).map((o) => row(o.key, /Ekadashi/.test(o.name) ? o.name : o.name + ' Ekadashi', `/ekadashi/${o.slug}/`));
-  const mondays: typeof dates = [];
-  for (let x = m.start; ymdKey(x) <= to; x = addDays(x, 1)) if (ymdKey(x) >= from && new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay() === 1) mondays.push(row(ymdKey(x), 'Karthika Somavaram', '/karthika-somavaram-the-monday-fast-and-the-worship-of-shiva/'));
-  dates = [...fests, ...ek, ...mondays].sort((a, b) => a.key.localeCompare(b.key)).slice(0, compact ? 5 : 9);
-}
+const dates = m && text ? masaDateRows(m, ymdKey(ymd)).slice(0, compact ? 5 : 9) : [];
 const todayFest = festivalsByKey().get(ymdKey(ymd)) ?? [];
 const wd = new Date(Date.UTC(ymd.y, ymd.m - 1, ymd.d)).getUTCDay();
 const status = live ? `Day ${here.dayNo} of ${here.total}` : next ? (next.inDays === 1 ? `Begins tomorrow, ${wdOf(next.masa.start)} ${nice(next.masa.start)}` : `Begins in ${next.inDays} days, ${nice(next.masa.start)}`) : '';

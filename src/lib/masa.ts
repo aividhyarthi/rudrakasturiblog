@@ -45,13 +45,16 @@ export function masaStartingSoon(x: Ymd, days = 3): { masa: Masa; inDays: number
   }
   return null;
 }
-/** The month with this index (not adhika): the one running now or just ended (within 3 days), otherwise the next. */
-export function masaWindow(idx: number): Masa | null {
-  const t = todayIST();
-  for (let off = -3; off < 430; off += 3) {
+let windows: Map<number, Masa> | null = null;
+/** For each of the twelve months, the one running now (or just ended, within 3 days), otherwise the next. One scan, cached. */
+export function allMasaWindows(): Map<number, Masa> {
+  if (windows) return windows;
+  const t = todayIST(), out = new Map<number, Masa>();
+  for (let off = -3; off < 430 && out.size < 12; off += 3) {
     const m = masaOn(addDays(t, off));
-    if (m.idx === idx && !m.adhika) return m;
+    if (!m.adhika && !out.has(m.idx)) out.set(m.idx, m);
   }
-  return null;
+  return (windows = out);
 }
+export const masaWindow = (idx: number): Masa | null => allMasaWindows().get(idx) ?? null;
 export { ymdKey };
