@@ -19,6 +19,7 @@ import { allLunations } from '../lib/lunar';
 import { upcomingFestivals, festivalsByKey } from '../lib/festivals';
 import { GODS, godMatches } from '../data/gods';
 import MasaBanner from '../components/MasaBanner.astro';
+import { nextSomavati } from '../lib/somavati';
 const all = await allArticles();
 const ymd = todayIST();
 const p = panchangFor(ymd, 'hyderabad');
@@ -100,6 +101,8 @@ const catChips = CATEGORIES.filter((c) => counts.cat[c.id]);
 // A first set for "Keep exploring"; visitors can shuffle for more without waiting for a rebuild.
 const explore0 = diversePick(all.filter((a) => !shownTop.has(a.slug)), 6, seed + 33);
 const todayFest = festivalsByKey().get(nowKey) ?? [];
+const sv = nextSomavati(ymd);
+const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Date.UTC(ymd.y, ymd.m - 1, ymd.d)) / 86400000) : null;
 ---
 <Base home image="/covers/home.png">
   {!lead ? (
@@ -115,6 +118,9 @@ const todayFest = festivalsByKey().get(nowKey) ?? [];
       </a>
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
+  )}
+  {svDays !== null && svDays <= 3 && (
+    <section class="wrap" style="padding-top:20px"><div class="fest-today"><a href="/somavati-amavasya/"><b>{svDays === 0 ? 'Today: Somavati Amavasya' : svDays === 1 ? 'Tomorrow: Somavati Amavasya' : `In ${svDays} days: Somavati Amavasya`}</b><span>Amavasya on a Monday, Shiva's day. Timings, puja at home and the story.</span></a></div></section>
   )}
   <MasaBanner ymd={ymd} />
   {specialDays.length > 0 && (

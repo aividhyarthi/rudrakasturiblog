@@ -4,6 +4,7 @@ import Hero from './Hero.astro';
 import { fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
 import { allLunations, MONTHS, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
 import { COPY } from '../data/lunar-text';
+import { nextSomavati } from '../lib/somavati';
 const { kind } = Astro.props as { kind: 'amavasya' | 'pournami' };
 const c = COPY[kind];
 const other = kind === 'amavasya' ? 'pournami' : 'amavasya';
@@ -15,6 +16,7 @@ const thisYear = all.filter((x) => x.observed.y === today.y);
 const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()].slice(0, 3)}, ${fmtTime(d)}`; };
 const pretty = (x: Lunation) => `${WEEKDAYS[x.weekday]}, ${x.observed.d} ${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
 const label = (x: Lunation) => `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed.y}`;
+const sv = kind === 'amavasya' ? nextSomavati(today) : null;
 const nextOther = allLunations(other).find((x) => x.key >= tk);
 const faq = [
   [`When is the next ${c.title}?`, next ? `The next ${c.title} is on ${pretty(next)}. The tithi begins ${dt(next.start)} and ends ${dt(next.end)} (IST).` : ''],
@@ -28,6 +30,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
     <div class="kicker"><a href="/religion/">Devotional</a></div>
     <h1>{c.title} <span class="te">{c.te}</span> dates {today.y}</h1>
     <Hero name="moon-nakshatra" alt="The Moon among the stars of the nakshatras" ratio="16/5" />
+    {sv && <p class="sub">Amavasya on a Monday is <b>Somavati Amavasya</b>. The next one is <a href="/somavati-amavasya/" style="text-decoration:underline">Monday {sv.ymd.d} {EN_MONTH_NAMES[sv.ymd.m - 1]} {sv.ymd.y}</a>: timings, puja at home and the story.</p>}
     {next && (
       <a class="rcard" href={`/${kind}/${next.slug}/`} style="display:block;margin:0 0 26px;text-decoration:none;color:inherit">
         <small style="text-transform:uppercase;letter-spacing:.06em;color:#6b6b6b">Next {c.title}</small>

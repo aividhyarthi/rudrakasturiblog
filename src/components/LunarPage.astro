@@ -4,6 +4,7 @@ import Hero from './Hero.astro';
 import { panchangFor, fmtTime, todayIST, ymdKey, WEEKDAYS, istParts } from '../lib/panchang';
 import { allLunations, MONTHS, MONTHS_TE, EN_MONTH_NAMES, type Lunation } from '../lib/lunar';
 import { MONTH_NOTE, WEEKDAY_NOTE, COPY } from '../data/lunar-text';
+import { somavatiForTithi } from '../lib/somavati';
 const { l } = Astro.props as { l: Lunation };
 const kind = l.kind, c = COPY[kind];
 const all = allLunations(kind);
@@ -22,6 +23,7 @@ const label = (x: Lunation) => `${EN_MONTH_NAMES[x.observed.m - 1]} ${x.observed
 const past = l.key < ymdKey(todayIST());
 const monthLine = `${l.adhika ? 'Adhika ' : ''}${MONTHS[l.month]} (${MONTHS_TE[l.month]})`;
 const note = [MONTH_NOTE[kind][l.month], WEEKDAY_NOTE[kind + l.weekday]].filter(Boolean);
+const somavati = kind === 'amavasya' ? somavatiForTithi(l.start, l.end) : null;
 const faq = [
   [`When is ${c.title} in ${mName} ${ymd.y}?`, `${c.title} in ${mName} ${ymd.y} is observed on ${prettyDate}. The tithi begins ${dt(l.start)} and ends ${dt(l.end)} (IST).`],
   ...c.faq,
@@ -47,6 +49,7 @@ const title = `${c.title} ${dup ? ymd.d + ' ' : ''}${mName} ${ymd.y}: Date, Tith
     <div class="sect"><h2>{c.title} on {prettyDate}</h2></div>
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. {kind === 'amavasya' ? 'We take the day on which the tithi is present in the afternoon (aparahna), the time for ancestor rites.' : 'We take the day on which the tithi is present at local sunrise.'} Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
+    {somavati && <p class="sub"><b>Somavati Amavasya.</b> This Amavasya is running at sunrise on <b>Monday {somavati.ymd.d} {EN_MONTH_NAMES[somavati.ymd.m - 1]}</b>, which makes it Somavati Amavasya, the new moon on Shiva's day. <a href="/somavati-amavasya/" style="text-decoration:underline">Read the Somavati Amavasya guide</a> for the timings, the puja and the story.</p>}
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
     <div class="sect"><h2>Timings on the day (Hyderabad)</h2></div>
     <div class="timing">

@@ -44,6 +44,7 @@ export function dayFacts(x: Ymd, city: CityId = 'hyderabad') {
   if (tithiNo === 8) special.push(krishna ? 'Krishna Ashtami (Kalashtami). Observed for Kalabhairava and, in the month of Shravana, as Krishna Janmashtami.' : 'Shukla Ashtami. A day associated with Durga worship.');
   if (tithiNo === 6) special.push('Shashthi. A day for Subramanya (Kartikeya), especially loved in the Telugu and Tamil country.');
   if (tithi.index === 29 || p.tithi.some((s) => s.index === 29)) special.push('Amavasya, the new moon, is the day to remember ancestors. See the <a href="/amavasya/">Amavasya dates and timings</a>.');
+  if (tithi.index === 29 && wd === 1) special.push('Somavati Amavasya. The new moon falls on a Monday, Shiva\'s day. See the <a href="/somavati-amavasya/">Somavati Amavasya guide</a>.');
   if (tithi.index === 14 || p.tithi.some((s) => s.index === 14)) special.push('Pournami, the full moon. A day for Satyanarayana vratam and charity. See the <a href="/pournami/">Pournami dates and timings</a>.');
   const moonSign = RASHIS[p.moonSign];
   const overall = dayOverall({ tithi: p.tithi, nakshatra: p.nakshatra, moonSign: p.moonSign, weekday: wd });
