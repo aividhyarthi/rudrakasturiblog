@@ -9,7 +9,7 @@ tldr: "Tulasi is worshipped daily with water at dawn and a lamp at dusk. Tulasi 
 hero: "vishnu-symbols"
 imageAlt: "A conch, discus, mace and lotus, the symbols of Vishnu"
 tags: ["Tulasi", "Tulasi Vivaha", "Vishnu", "Karthika"]
-draft: false
+draft: true
 ---
 
 A Tulasi (holy basil) plant on a raised platform, called Tulasi katte or brindavan, stands in front of many South Indian homes. It is worshipped as a form of Lakshmi and as the beloved of Vishnu.

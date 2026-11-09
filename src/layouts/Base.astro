@@ -23,6 +23,7 @@ const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
 const nav = SECTIONS.filter((s) => s.always || (NEWS_ENABLED && counts.cat[s.id]));
 const section = SECTIONS.find((s) => s.id === active);
+const onFestivals = Astro.url.pathname.startsWith('/festivals');
 const sc = await seriesCounts();
 // Hide links to topic and series pages that do not exist yet (a page is built once it has a published article).
 const hasPage = (href: string) => {
@@ -110,7 +111,8 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   </header>
   <nav class="nav" aria-label="Sections"><div class="wrap">
     <a href="/" class={!active ? 'on' : ''}>Home</a>
-    {nav.map((c) => <a href={c.href} class={active === c.id ? 'on' : ''} style={`--navc:${c.accent}`}>{c.label}</a>)}
+    {nav.map((c) => <a href={c.href} class={active === c.id && !onFestivals ? 'on' : ''} style={`--navc:${c.accent}`}>{c.label}</a>)}
+    <a href="/festivals/" class={onFestivals ? 'on' : ''} style="--navc:#b4530a">Festivals</a>
     <a href="/topics/" class={Astro.url.pathname.startsWith('/topics') || Astro.url.pathname.startsWith('/series') ? 'on' : ''} style="--navc:#444">Topics</a>
   </div></nav>
   {section && (

@@ -7,7 +7,7 @@ import CalendarCta from '../../components/CalendarCta.astro';
 import MasaBanner from '../../components/MasaBanner.astro';
 import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals';
 import { allArticles } from '../../lib/articles';
-import { FEST_CONTENT } from '../../data/festival-content';
+import { FEST_ALL as FEST_CONTENT } from '../../data/festival-all';
 import { fmtTime, panchangFor, todayIST, ymdKey, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
 export function getStaticPaths() { return canonicalFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
@@ -38,7 +38,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
 const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f.name} ${f.ymd.y}`, startDate: f.key, endDate: f.key, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: 'Temples and homes across India', address: 'India' }, description: f.about };
 const read = f.link && pub.has(f.link) ? f.link : null;
 // tiny formatter for the text in festival-content.ts: **bold** and [text](/link/); a link to an unpublished article becomes plain text
-const fmt = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_m, txt, href) => pub.has(href.replace(/\//g, '')) || !/^\/[a-z0-9-]+\/$/.test(href) || href.startsWith('/festivals/') ? `<a href="${href}" style="text-decoration:underline">${txt}</a>` : txt);
+const fmt = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(?<![*\w])\*([^*]+?)\*(?![*\w])/g, '<i>$1</i>').replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_m, txt, href) => pub.has(href.replace(/\//g, '')) || !/^\/[a-z0-9-]+\/$/.test(href) || href.startsWith('/festivals/') ? `<a href="${href}" style="text-decoration:underline">${txt}</a>` : txt);
 const reads = (c?.reads ?? []).filter((r) => pub.has(r.href.replace(/\//g, '')));
 const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi at home, samagri and regional customs. ${c.dek}` : `${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`;
 ---
