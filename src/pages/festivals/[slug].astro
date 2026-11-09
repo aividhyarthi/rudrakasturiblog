@@ -31,7 +31,7 @@ const sameFest = all.filter((x) => x.id === f.id && x.key >= ymdKey(today)).slic
 const at = (f as any).at as string | undefined;
 const atText = at === 'sunrise' ? 'at sunrise' : at === 'midday' ? 'at midday' : at === 'aparahna' ? 'in the afternoon' : at === 'sunset' ? 'at sunset' : at === 'night' ? 'at night' : 'during the day';
 const p = panchangFor(f.ymd, 'hyderabad');
-const pujaHint = at === 'sunset' ? 'The puja is usually done in the evening, around sunset' : at === 'night' ? 'The puja is usually done at night' : at === 'midday' ? 'The puja is usually done around midday' : at === 'aparahna' ? 'The puja is usually done in the afternoon' : 'The puja is usually done in the morning, after sunrise';
+const pujaHint = f.id === 'naraka-chaturdashi' ? 'The oil bath is traditionally taken before sunrise' : at === 'sunset' ? 'The puja is usually done in the evening, around sunset' : at === 'night' ? 'The puja is usually done at night' : at === 'midday' ? 'The puja is usually done around midday' : at === 'aparahna' ? 'The puja is usually done in the afternoon' : 'The puja is usually done in the morning, after sunrise';
 const eveningFest = at === 'sunset' || at === 'night';
 const ref = new Date(Date.UTC(f.ymd.y, f.ymd.m - 1, f.ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
