@@ -8,6 +8,7 @@ import MasaBanner from '../../components/MasaBanner.astro';
 import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals';
 import { allArticles } from '../../lib/articles';
 import { linkExists } from '../../lib/fmt';
+import { joinText } from '../../lib/schemabody';
 import { FEST_ALL as FEST_CONTENT } from '../../data/festival-all';
 import { fmtTime, panchangFor, todayIST, ymdKey, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
@@ -40,14 +41,15 @@ const faq: [string, string][] = c
   ? [[`When is ${f.name} in ${f.ymd.y}?`, when], ...c.faqs]
   : [[`When is ${f.name} in ${f.ymd.y}?`, when], [`What is ${f.name}?`, f.about], [`How is ${f.name} celebrated?`, f.how], [`Which god is worshipped on ${f.name}?`, `${f.god}${f.alt ? `. It is also known as ${f.alt}.` : '.'}`]];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
-const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f.name} ${f.ymd.y}`, startDate: f.key, endDate: f.key, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', location: { '@type': 'Place', name: 'Temples and homes across India', address: 'India' }, description: f.about };
+const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${f.name} ${f.ymd.y}`, alternateName: f.alt, startDate: f.key, endDate: f.key, eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', isAccessibleForFree: true, inLanguage: 'en-IN', url: `https://www.southwala.com/festivals/${f.slug}/`, image: [`https://www.southwala.com/covers/fest-${f.slug}.png`], location: { '@type': 'Place', name: 'Temples and homes across India', address: { '@type': 'PostalAddress', addressCountry: 'IN' } }, organizer: { '@type': 'Organization', name: 'Southwala', url: 'https://www.southwala.com' }, description: f.about };
+const schemaBody = joinText(c?.lead, c?.blocks.flatMap((b) => [b.h, b.p, b.ul, b.ol]), f.about, f.how, faq.map(([q, a]) => `${q} ${a}`));
 const read = f.link && pub.has(f.link) ? f.link : null;
 // tiny formatter for the text in festival-content.ts: **bold** and [text](/link/); a link to an unpublished article becomes plain text
 const fmt = (s: string) => s.replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/(?<![*\w])\*([^*]+?)\*(?![*\w])/g, '<i>$1</i>').replace(/\[([^\]]+)\]\((\/[^)]+)\)/g, (_m, txt, href) => pub.has(href.replace(/\//g, '')) || !/^\/[a-z0-9-]+\/$/.test(href) || href.startsWith('/festivals/') ? `<a href="${href}" style="text-decoration:underline">${txt}</a>` : txt);
 const reads = (c?.reads ?? []).filter((r) => linkExists(r.href, pub));
 const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi at home, samagri and regional customs. ${c.dek}` : `${f.name}${f.alt ? ` (${f.alt})` : ''} in ${f.ymd.y} is on ${pretty}. ${f.about.split('. ')[0]}.`;
 ---
-<Base rail="religion" title={title} description={desc.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: f.name, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd}>
+<Base rail="religion" title={title} description={desc.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Festivals', href: '/festivals/' }, { name: f.name, href: `/festivals/${f.slug}/` }]} image={`/covers/fest-${f.slug}.png`} jsonLd={eventLd} schemaBody={schemaBody}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/festivals/">Hindu festivals</a></div>

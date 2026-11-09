@@ -30,8 +30,10 @@ const reads = page.reads.filter((r) => linkExists(r.href, published));
 const faq: [string, string][] = [[`When is ${page.name} in ${w.start.y}?`, `${page.name} ${tk > to ? 'was' : 'is'} from ${wd(w.start)}, ${nice(w.start)} to ${wd(w.end)}, ${nice(w.end)}. ${page.name} begins on the day after the previous new moon, with the sunrise of the first tithi of the bright fortnight.`], ...page.faqs];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const title = `${page.name} ${w.start.y}: ${w.start.d} ${EN_MONTH_NAMES[w.start.m - 1].slice(0, 3)} to ${w.end.d} ${EN_MONTH_NAMES[w.end.m - 1].slice(0, 3)}, Mondays & Festivals`;
+import { joinText } from '../../lib/schemabody';
+const schemaBody = joinText(page.lead, page.sections.flatMap((b) => [b.h, b.p, b.ul, b.ol]), dates.map((d) => `${d.date} ${d.label}`), faq.map(([q, a]) => `${q} ${a}`));
 ---
-<Base rail="religion" title={title} description={`${page.name} ${w.start.y} runs from ${nice(w.start)} to ${nice(w.end)}. The Mondays, Ekadashis, Karthika Pournami and festivals, what the month means, and how families observe it.`.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: page.name, href: `/masam/${page.slug}/` }]} image="/covers/masam-karthika.png">
+<Base rail="religion" title={title} description={`${page.name} ${w.start.y} runs from ${nice(w.start)} to ${nice(w.end)}. The Mondays, Ekadashis, Karthika Pournami and festivals, what the month means, and how families observe it.`.slice(0, 300)} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: page.name, href: `/masam/${page.slug}/` }]} image="/covers/masam-karthika.png" schemaBody={schemaBody}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/festivals/">Hindu months</a></div>

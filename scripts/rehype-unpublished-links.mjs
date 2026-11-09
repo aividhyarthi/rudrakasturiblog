@@ -11,7 +11,7 @@ for (const f of fs.readdirSync(dir)) {
   const t = fs.readFileSync(path.join(dir, f), 'utf8');
   const date = t.match(/^date:\s*"?([^"\n]+)"?/m);
   const draft = /^draft:\s*true/m.test(t);
-  if (draft || (date && new Date(date[1]).getTime() > now)) hidden.add(f.replace(/\.md$/, ''));
+  if (draft || (date && new Date(date[1]).getTime() > now + 10 * 60 * 1000)) hidden.add(f.replace(/\.md$/, ''));
 }
 
 function walk(node) {

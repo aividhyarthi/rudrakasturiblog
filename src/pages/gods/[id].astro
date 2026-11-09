@@ -30,7 +30,7 @@ const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const blocks = [['Stories and meanings', stories], ['Stotras and mantras', stotras], ['Vows, puja and festivals', vows], ['Temples and places', temples]] as const;
 ---
-<Base title={`${g.name} (${g.te}): Stories, Mantras, Temples and Vows`} description={`${g.line} All our articles on ${g.name}: stories, stotras, temples and vows.`.slice(0, 300)} jsonLd={ld} breadcrumbs={[{ name: 'Gods', href: '/gods/' }, { name: g.name, href: `/gods/${g.id}/` }]} rail="religion" active="religion">
+<Base title={`${g.name} (${g.te}): Stories, Mantras, Temples and Vows`} description={`${g.line} All our articles on ${g.name}: stories, stotras, temples and vows.`.slice(0, 300)} jsonLd={ld} breadcrumbs={[{ name: 'Gods', href: '/gods/' }, { name: g.name, href: `/gods/${g.id}/` }]} rail="religion" active="religion" image={`/covers/god-${g.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/gods/">Our gods</a></div>

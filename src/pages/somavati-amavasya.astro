@@ -47,8 +47,10 @@ const faq: [string, string][] = [
   ['When is the next Somavati Amavasya after this one?', upcoming[1] ? `${upcoming[1].ymd.d} ${EN_MONTH_NAMES[upcoming[1].ymd.m - 1]} ${upcoming[1].ymd.y}, a Monday.` : 'See the dates table on this page.'],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { joinText } from '../lib/schemabody';
+const schemaBody = joinText(desc, title, `Amavasya begins ${dt(n.start)} and ends ${dt(n.end)}. Month ${month}.`, faq.map(([q, a]) => `${q} ${a}`));
 ---
-<Base rail="religion" title={title} description={desc} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Amavasya', href: '/amavasya/' }, { name: 'Somavati Amavasya', href: '/somavati-amavasya/' }]} image="/covers/somavati-amavasya.png">
+<Base rail="religion" title={title} description={desc} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: 'Amavasya', href: '/amavasya/' }, { name: 'Somavati Amavasya', href: '/somavati-amavasya/' }]} image="/covers/somavati-amavasya.png" schemaBody={schemaBody}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/amavasya/">Amavasya <span class="te">అమావాస్య</span></a></div>

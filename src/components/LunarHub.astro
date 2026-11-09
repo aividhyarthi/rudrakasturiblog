@@ -32,8 +32,10 @@ const faq = [
   ...((GUIDE[kind]?.faqs ?? []).filter(([q]) => !c.faq.some(([x]) => x === q))),
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { joinText } from '../lib/schemabody';
+const schemaBody = joinText(c.what, guide?.sections.flatMap((b) => [b.h, b.p, b.ul, b.ol]), faq.map(([q, a]) => `${q} ${a}`));
 ---
-<Base rail="religion" title={`${c.title} ${today.y} Dates: Next ${next ? next.observed.d + ' ' + EN_MONTH_NAMES[next.observed.m - 1].slice(0, 3) : ''}, All Months & Timings`} description={`${c.title} dates for ${today.y} with exact tithi start and end times (IST), the lunar month and festival for each. Next ${c.title}: ${next ? pretty(next) : ''}.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }]} image="/covers/panchangam.png">
+<Base rail="religion" title={`${c.title} ${today.y} Dates: Next ${next ? next.observed.d + ' ' + EN_MONTH_NAMES[next.observed.m - 1].slice(0, 3) : ''}, All Months & Timings`} description={`${c.title} dates for ${today.y} with exact tithi start and end times (IST), the lunar month and festival for each. Next ${c.title}: ${next ? pretty(next) : ''}.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${kind}/` }]} image="/covers/panchangam.png" schemaBody={schemaBody}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/religion/">Devotional</a></div>

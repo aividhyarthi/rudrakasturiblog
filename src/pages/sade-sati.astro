@@ -32,8 +32,10 @@ const faq: [string, string][] = [
   ['When does Saturn move next?', nxt ? `Saturn moves from ${r(S).skt} to ${r(nxt.sign).skt} on ${date(nxt.from)}.` : 'See the table of Saturn\'s moves on this page.'],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
+import { joinText } from '../lib/schemabody';
+const schemaBody = joinText(title, `Saturn is in ${nm(S)}. Sade Sati is running for ${nm(S + 1)}, ${nm(S)} and ${nm(S - 1)}.`, phases.map((x) => `${x.what}: ${nm(x.rashi)}. ${x.note}`), upcoming.map((x) => `Saturn in ${nm(x.sign)} from ${date(x.from)}${x.to ? ' until ' + date(x.to) : ''}`), faq.map(([q, a]) => `${q} ${a}`));
 ---
-<Base rail="religion" title={title} description={`Sade Sati today: Saturn is in ${r(S).skt}, so ${r(S + 1).skt}, ${r(S).skt} and ${r(S - 1).skt} rashis are affected. Saturn's next move, what the tradition says and what people do.`} active="astrology" breadcrumbs={[{ name: 'Astrology', href: '/rasi-phalalu/' }, { name: 'Sade Sati', href: '/sade-sati/' }]} image="/covers/sade-sati.png">
+<Base rail="religion" title={title} description={`Sade Sati today: Saturn is in ${r(S).skt}, so ${r(S + 1).skt}, ${r(S).skt} and ${r(S - 1).skt} rashis are affected. Saturn's next move, what the tradition says and what people do.`} active="astrology" breadcrumbs={[{ name: 'Astrology', href: '/rasi-phalalu/' }, { name: 'Sade Sati', href: '/sade-sati/' }]} image="/covers/sade-sati.png" schemaBody={schemaBody}>
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-astrology">
     <div class="kicker"><a href="/rasi-phalalu/">Astrology</a></div>
