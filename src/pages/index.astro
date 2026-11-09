@@ -48,7 +48,14 @@ const wkMore: typeof all = [];
 // Lead: the day's own story (Saturday is Balaji), otherwise a rotating pick from the last day and a half.
 const fresh = all.filter((a) => nowMs() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
 const lead = wkLead && (seed % 2 === 0 || !fresh.length) ? wkLead : fresh.length ? shuffle(fresh, seed)[0] : (wkLead ?? all[0]);
-const rest = all.filter((a) => a !== lead);
+// The lead rotates through the day in the visitor's browser (no rebuild): four candidates, one per six hours of India time.
+// The page itself is built showing the first, so crawlers and no-JavaScript visitors see a normal lead.
+const leadPool: (typeof all)[number][] = [];
+for (const a of [lead, wkLead, ...shuffle(fresh, seed)]) if (a && !leadPool.includes(a)) leadPool.push(a);
+if (leadPool.length < 4) for (const a of diversePick(all.filter((x) => !leadPool.includes(x)), 4 - leadPool.length, seed + 3)) leadPool.push(a);
+const leads = leadPool.slice(0, 4);
+const leadData = leads.map((a) => ({ href: `/${a.slug}/`, img: `/img/${a.slug}/16x9.jpg`, alt: a.data.imageAlt ?? a.data.title, cls: `lead c-${a.data.category}`, kicker: a === wkLead ? `${wk.name}: ${rotaGod.god}` : categoryLabel(a.data.category), title: a.data.title, desc: a.data.description, meta: `${byline(a.data)} · ${fmtDate(a.data.date)}` }));
+const rest = all.filter((a) => !leads.includes(a));
 // Today's three daily pages, with titles that say what is in them.
 const tomorrow = addDays(ymd, 1);
 const tf = dayFacts(tomorrow);
@@ -62,7 +69,7 @@ const dailyExtras = [
   { kicker: 'Horoscope tomorrow', title: `${WEEKDAYS[tf.wd]}: Moon in ${tf.moonSign.skt}, best for ${names(tomRank)}`, href: '/horoscope-tomorrow/', meta: `${niceDate(tomorrow)}. Plan the day ahead`, cls: 'c-astrology' },
 ];
 const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 3);
-const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
+const shownTop = new Set([...leads.map((a) => a.slug), ...latestArts.map((a) => a.slug)]);
 // "Worth reading again": older stories from different series and topics (Why me?, the Gita, Upanishads, temples, yoga...),
 // a new mix at every refresh, so the page always carries evergreen reading and not only the newest.
 const older = rest.filter((a) => !shownTop.has(a.slug) && nowMs() - a.data.date.getTime() > 2 * 86400000);
@@ -119,6 +126,18 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
       </a>
       <LatestList items={latestArts} extras={dailyExtras} title="Latest" />
     </section>
+    <script is:inline define:vars={{ leadData }}>
+      try {
+        var h = new Date(Date.now() + 5.5 * 3600 * 1000).getUTCHours();
+        var i = Math.floor(h / 6) % leadData.length, L = leadData[i], a = document.querySelector('a.lead');
+        if (i > 0 && L && a) {
+          a.className = L.cls; a.href = L.href;
+          var im = a.querySelector('img'); if (im) { im.src = L.img; im.alt = L.alt; }
+          a.querySelector('.kicker').textContent = L.kicker; a.querySelector('h1').textContent = L.title;
+          a.querySelector('p').textContent = L.desc; a.querySelector('.meta').textContent = L.meta;
+        }
+      } catch (e) {}
+    </script>
   )}
   {svDays !== null && svDays <= 3 && (
     <section class="wrap" style="padding-top:20px"><div class="fest-today"><a href="/somavati-amavasya/"><b>{svDays === 0 ? 'Today: Somavati Amavasya' : svDays === 1 ? 'Tomorrow: Somavati Amavasya' : `In ${svDays} days: Somavati Amavasya`}</b><span>Amavasya on a Monday, Shiva's day. Timings, puja at home and the story.</span></a></div></section>

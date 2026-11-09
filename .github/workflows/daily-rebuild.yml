@@ -1,16 +1,18 @@
 name: Release (stories, rebuild and held changes go live together)
-# ONE CLOCK. Stories go live, the site rebuilds and held changes ship at the same moments: the slots in scripts/slots.mjs
-# (7, 11, 15 and 19 hrs IST). Work in progress waits on the `next` branch until the next slot. For an emergency, press
+# ONE RELEASE A DAY at midnight India time (scripts/slots.mjs). All of the day's stories go live in one shot, the site
+# rebuilds and held changes ship. Work in progress waits on the `next` branch until the next slot. For an emergency, press
 # "Run workflow" with force = true, or push straight to this branch (Railway deploys any push at once).
 #
-# The cron lines below are only a backup: GitHub runs scheduled workflows hours late. The reliable start is an outside
-# timer calling this workflow at each slot (see RELEASE-SCHEDULE.md).
+# GitHub may run these lines late, so there are backups through to 05:02 IST. A late release is harmless: the home page
+# rotates by itself in the browser, and nothing links to a story before its page exists (see RELEASE-SCHEDULE.md).
 on:
   schedule:
-    - cron: '32 1 * * *'    # 07:02 IST
-    - cron: '32 5 * * *'    # 11:02 IST
-    - cron: '32 9 * * *'    # 15:02 IST
-    - cron: '32 13 * * *'   # 19:02 IST
+    - cron: '32 18 * * *'   # 00:02 IST: the daily release
+    - cron: '32 19 * * *'   # 01:02 IST  } backups: GitHub often runs scheduled jobs late or skips them.
+    - cron: '32 20 * * *'   # 02:02 IST  } A backup does nothing if the release already happened today.
+    - cron: '32 21 * * *'   # 03:02 IST
+    - cron: '32 22 * * *'   # 04:02 IST
+    - cron: '32 23 * * *'   # 05:02 IST
   workflow_dispatch:
     inputs:
       force:

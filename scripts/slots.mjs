@@ -1,6 +1,7 @@
-// THE release clock. Stories go live, the site rebuilds, and held changes ship only at these India-time hours.
+// THE release clock: ONE release a day at midnight India time. All of the day's stories go live together, the site
+// rebuilds, and held changes ship. (The home page rotates its lead through the day in the browser, with no rebuild.)
 // Change the list here and nothing else: the rebuild workflow and the release check both read it.
-export const SLOT_HOURS_IST = [7, 11, 15, 19];
+export const SLOT_HOURS_IST = [0];
 const IST = 330 * 60000;
 /** A number that goes up by one each time a slot passes. */
 export const slotNumber = (ms) => {

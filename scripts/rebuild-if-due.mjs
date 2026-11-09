@@ -1,4 +1,4 @@
-// Decides whether the site is due a release: a release slot (7, 11, 15, 19 IST) has passed since the last build.
+// Decides whether the site is due a release: the daily slot (midnight IST, see scripts/slots.mjs) has passed since the last build.
 // Prints due=true or due=false for the workflow.
 import fs from 'node:fs';
 
