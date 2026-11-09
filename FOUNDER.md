@@ -87,3 +87,11 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Panchangam pages now show Amrit Kalam (Amrita Ghadiya), Varjyam, and a "good for today" box for travel, joining a job, starting a business and griha pravesham, from the nakshatra class, tithi and weekday. Amrit/Varjyam checked against Drik Panchang and Prokerala for 26-28 Oct 2026.
 - Calendar: phone edition PDF (tall pages, big type) and the whole year as a scrolling page on /calendar/.
 - Phones: horoscope and panchangam blocks swipe as cards. Share buttons are icons.
+
+## Update 2026-11-09 (permanent pages for recurring days)
+- Rule: every recurring thing has ONE permanent address that always shows its next date, so nothing needs redoing each month or year. The year changes by itself in the title and heading at the daily rebuild.
+- Festivals: `/festivals/<festival>/` (46). Full text lives in `src/data/festival-content*.ts` (no years in the text). Old per-year addresses 301 to these in `nginx.conf.template`.
+- Amavasya, Pournami, Sankashti, Pradosham: `/<type>/<month>/` (12 each). A month page shows that month's next date(s) and keeps showing a date for a few days after it passes (grace in `src/lib/perma.ts`). Ekadashi: `/ekadashi/<name>-ekadashi/` (26). Somavati Amavasya: `/somavati-amavasya/`.
+- The full guide (story, steps, samagri, customs, FAQ) sits once on each main page (`/amavasya/` etc.), text in `src/data/guide-content.ts`, so month pages are not copies of each other.
+- Menu now has Festivals. Dates in the sky are computed by the site; nothing is typed by hand.
+- Still to do: merge the overlapping dated articles (Deepavali 2026, Karthika Masam 2026, Sharad Purnima 2026, Papankusha Ekadashi 2026, Sankashti October 2026, Sade Sati 2026) into their permanent pages and redirect; per-name Ekadashi stories; horoscope title fixes; a permanent Karthika masam page (`/masam/karthika/`).
