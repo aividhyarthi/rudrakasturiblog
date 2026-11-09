@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CalendarCta from '../../components/CalendarCta.astro';
-import { allFestivals, type Fest } from '../../lib/festivals';
+import { allFestivals, canonicalFestivals, type Fest } from '../../lib/festivals';
 import { allArticles } from '../../lib/articles';
 import { fmtTime, WEEKDAYS, istParts } from '../../lib/panchang';
 import { EN_MONTH_NAMES, MONTHS } from '../../lib/lunar';
-export function getStaticPaths() { return allFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
+export function getStaticPaths() { return canonicalFestivals().map((f) => ({ params: { slug: f.slug }, props: { f } })); }
 const { f } = Astro.props as { f: Fest };
 const all = allFestivals();
 const pub = new Set((await allArticles()).map((a) => a.slug));
@@ -14,7 +14,7 @@ const pretty = `${WEEKDAYS[f.weekday]}, ${f.ymd.d} ${mName} ${f.ymd.y}`;
 const dt = (d: Date) => { const x = istParts(d); return `${WEEKDAYS[x.getUTCDay()].slice(0, 3)}, ${x.getUTCDate()} ${EN_MONTH_NAMES[x.getUTCMonth()]}, ${fmtTime(d)}`; };
 const title = `${f.name} ${f.ymd.y}: Date, Puja Time and Significance`;
 const nextOnes = all.filter((x) => x.key > f.key && x.id !== f.id).slice(0, 4);
-const sameFest = all.filter((x) => x.id === f.id && x.slug !== f.slug);
+const sameFest: Fest[] = [];
 const faq: [string, string][] = [
   [`When is ${f.name} in ${f.ymd.y}?`, `${f.name} in ${f.ymd.y} is on ${pretty}.${f.start && !f.solar && f.end ? ` The tithi begins ${dt(f.start)} and ends ${dt(f.end)} (IST).` : ''}`],
   [`What is ${f.name}?`, f.about],

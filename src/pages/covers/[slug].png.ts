@@ -7,7 +7,7 @@ import { CHAPTERS } from '../../data/gita';
 import { allTithis, ROUTE, type TithiKind } from '../../lib/tithi';
 import { allLunations, EN_MONTH_NAMES } from '../../lib/lunar';
 import { WEEKDAYS } from '../../lib/panchang';
-import { allFestivals } from '../../lib/festivals';
+import { canonicalFestivals } from '../../lib/festivals';
 
 type Item = { kicker: string; title: string };
 async function items(): Promise<Record<string, Item>> {
@@ -25,7 +25,7 @@ async function items(): Promise<Record<string, Item>> {
   const pretty = (o: { observed: { y: number; m: number; d: number }; weekday: number }) => `${WEEKDAYS[o.weekday]}, ${o.observed.d} ${EN_MONTH_NAMES[o.observed.m - 1]} ${o.observed.y}`;
   for (const k of ['ekadashi', 'sankashti', 'pradosham'] as TithiKind[]) for (const o of allTithis(k)) out[`tl-${k}-${o.slug}`] = { kicker: o.occasion ?? k, title: `${o.name}: ${pretty(o)}. Date and timings` };
   for (const k of ['amavasya', 'pournami'] as const) for (const o of allLunations(k)) out[`tl-${k}-${o.slug}`] = { kicker: o.occasion ?? k, title: `${o.occasion ?? (k === 'amavasya' ? 'Amavasya' : 'Pournami')}: ${pretty(o)}. Date and timings` };
-  for (const f of allFestivals()) out[`fest-${f.slug}`] = { kicker: 'Festival', title: `${f.name} ${f.ymd.y}: ${WEEKDAYS[f.weekday]}, ${f.ymd.d} ${EN_MONTH_NAMES[f.ymd.m - 1]}` };
+  for (const f of canonicalFestivals()) out[`fest-${f.slug}`] = { kicker: 'Festival', title: `${f.name}: date, puja vidhi and the story` };
   for (const t of await getCollection('temples')) out[`t-${t.slug}`] = { kicker: 'Temples', title: t.data.name };
   RASHIS.forEach((r) => (out[`r-${r.id}`] = { kicker: 'Rasi Phalalu', title: `${r.skt} Rasi (${r.en}) Phalalu: today, this week, this month` }));
   CHAPTERS.forEach((c) => (out[`g-${c.n}`] = { kicker: 'Bhagavad Gita', title: `Bhagavad Gita Chapter ${c.n}: ${c.en}` }));

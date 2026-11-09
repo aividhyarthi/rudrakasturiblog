@@ -67,18 +67,18 @@ export function allFestivals(): Fest[] {
       pick ??= istYmd(start);
       const key = ymdKey(pick);
       if (key < lo || key > hi) continue;
-      out.push({ ...r, key, ymd: pick, weekday: wdOf(pick), slug: `${r.id}-${pick.y}`, start, end, month: idx, tithi: r.t });
+      out.push({ ...r, key, ymd: pick, weekday: wdOf(pick), slug: r.id, start, end, month: idx, tithi: r.t });
     }
   }
   // Varalakshmi Vratam: the Friday on or just before Shravana Pournami
   for (const p of out.filter((f) => f.id === 'raksha-bandhan')) {
     let x = p.ymd; while (wdOf(x) !== 5) x = addDays(x, -1);
-    out.push({ id: 'varalakshmi-vratam', name: 'Varalakshmi Vratam', god: 'Lakshmi', about: 'Married women worship Varalakshmi, the boon-giving form of Lakshmi, on the Friday before Shravana Pournami. It is widely observed in Andhra Pradesh, Telangana, Karnataka and Tamil Nadu.', how: 'A kalasha with a coconut and a silk cloth, the Varalakshmi puja with a yellow thread tied on the wrist, and a feast for family and neighbours.', key: ymdKey(x), ymd: x, weekday: 5, slug: `varalakshmi-vratam-${x.y}`, month: 4 });
+    out.push({ id: 'varalakshmi-vratam', name: 'Varalakshmi Vratam', god: 'Lakshmi', about: 'Married women worship Varalakshmi, the boon-giving form of Lakshmi, on the Friday before Shravana Pournami. It is widely observed in Andhra Pradesh, Telangana, Karnataka and Tamil Nadu.', how: 'A kalasha with a coconut and a silk cloth, the Varalakshmi puja with a yellow thread tied on the wrist, and a feast for family and neighbours.', key: ymdKey(x), ymd: x, weekday: 5, slug: 'varalakshmi-vratam', month: 4 });
   }
   // Holi is the day after Holika Dahan
   for (const h of out.filter((f) => f.id === 'holika-dahan')) {
     const x = addDays(h.ymd, 1);
-    out.push({ id: 'holi', name: 'Holi', alt: 'Vasanthotsavam, Dolotsavam', god: 'Krishna', about: 'The festival of colours, on the day after Holika Dahan, the beginning of spring.', how: 'Colours, sweets and visits to family and friends.', key: ymdKey(x), ymd: x, weekday: wdOf(x), slug: `holi-${x.y}`, month: 11 });
+    out.push({ id: 'holi', name: 'Holi', alt: 'Vasanthotsavam, Dolotsavam', god: 'Krishna', about: 'The festival of colours, on the day after Holika Dahan, the beginning of spring.', how: 'Colours, sweets and visits to family and friends.', key: ymdKey(x), ymd: x, weekday: wdOf(x), slug: 'holi', month: 11 });
   }
   // Solar festivals
   for (const s of SANKRANTIS) {
@@ -92,7 +92,7 @@ export function allFestivals(): Fest[] {
         let day = istYmd(new Date(b));
         if (b > sunOf(day).set.getTime()) day = addDays(day, 1);
         const key = ymdKey(day);
-        if (key >= lo && key <= hi) out.push({ id: s.id, name: s.name, alt: s.alt, god: s.god, about: s.about, how: s.how, key, ymd: day, weekday: wdOf(day), slug: `${s.id}-${day.y}`, start: new Date(b), solar: true });
+        if (key >= lo && key <= hi) out.push({ id: s.id, name: s.name, alt: s.alt, god: s.god, about: s.about, how: s.how, key, ymd: day, weekday: wdOf(day), slug: s.id, start: new Date(b), solar: true });
       }
       prev = cur;
     }
@@ -101,6 +101,15 @@ export function allFestivals(): Fest[] {
   return cache;
 }
 
+/** One permanent page per festival: its next date on or after today (or its last known date once the window has passed). */
+export function canonicalFestivals(): Fest[] {
+  const tk = ymdKey(todayIST()), by = new Map<string, Fest>();
+  for (const f of allFestivals()) {
+    const cur = by.get(f.slug);
+    if (!cur || (cur.key < tk && f.key >= tk) || (cur.key < tk && f.key < tk && f.key > cur.key)) by.set(f.slug, f);
+  }
+  return [...by.values()].sort((a, b) => a.key.localeCompare(b.key));
+}
 export const festivalsByKey = () => { const m = new Map<string, Fest[]>(); for (const f of allFestivals()) m.set(f.key, [...(m.get(f.key) ?? []), f]); return m; };
 export const upcomingFestivals = (from: Ymd, n: number) => allFestivals().filter((f) => f.key >= ymdKey(from)).slice(0, n);
 export const festivalName = (f: Fest) => f.name;

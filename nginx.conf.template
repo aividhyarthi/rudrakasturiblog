@@ -20,6 +20,9 @@ server {
   location = /feed/ { return 301 /rss.xml; }
 
   # Old addresses -> clean addresses (safe to keep forever)
+  # Festival pages now have one permanent address each (/festivals/govardhan-puja/); the old per-year addresses redirect there.
+  rewrite ^/festivals/govardhan-20[0-9][0-9]/?$ /festivals/govardhan-puja/ permanent;
+  rewrite ^/festivals/([a-z-]+)-20[0-9][0-9]/?$ /festivals/$1/ permanent;
   rewrite ^/category/ott/?$ /tv-ott/ permanent;
   rewrite ^/category/(movies|trending|news|sports|politics)/?$ /$1/ permanent;
   rewrite ^/state/ap/?$ /andhra-pradesh/ permanent;
