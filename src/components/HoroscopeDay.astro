@@ -7,7 +7,7 @@ import Glyph from './Glyph.astro';
 import { dayFacts, niceDate, WEEKDAYS } from '../lib/daily';
 import { WEEKDAYS_TE } from '../lib/panchang';
 import { RASHIS, reading } from '../lib/astro';
-import { shortDate, rashiLine } from '../lib/headlines';
+import { shortDate, dayLine } from '../lib/headlines';
 const { x, when } = Astro.props as { x: { y: number; m: number; d: number }; when: 'today' | 'tomorrow' };
 const isTom = when === 'tomorrow';
 const word = isTom ? 'Tomorrow' : 'Today';
@@ -29,7 +29,7 @@ const faq = [
   [`Is ${word.toLowerCase()}'s horoscope the same for everyone in a rashi?`, 'Yes. It is general guidance for the rashi, not a personal prediction. It is for reflection and entertainment, not a substitute for medical, legal or financial advice.'],
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
-const headline = `Horoscope ${word}, ${shortDate(x)}: ${rashiLine(x)}`;
+const headline = `Horoscope ${word}, ${shortDate(x)}: ${dayLine(x)}`;
 const crumbs = [{ name: isTom ? 'Tomorrow\'s horoscope' : 'Rasi Phalalu', href: base }];
 ---
 <Base rail="astrology" title={headline} description={`${word}'s horoscope (rasi phalalu) for ${wdName}, ${nice}: all twelve rashis with career, money, relationships and health, plus the god, mantra and colour of the day.`} active="astrology" breadcrumbs={crumbs} image="/covers/rasi-phalalu.png">
