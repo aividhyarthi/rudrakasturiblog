@@ -53,17 +53,17 @@ const schemaBody = joinText(c.what, guide?.sections.flatMap((b) => [b.h, b.p, b.
     <div class="sect"><h2>Upcoming {c.title} dates</h2></div>
     <div class="tw"><table class="data">
       <thead><tr><th>Date</th><th>Tithi begins</th><th>Tithi ends</th><th>Lunar month</th><th>Occasion</th></tr></thead>
-      <tbody>{upcoming.slice(0, 12).map((x) => <tr><td>{shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`} style="text-decoration:underline"><b>{pretty(x)}</b></a> : <b>{pretty(x)}</b>}</td><td>{dt(x.start)}</td><td>{dt(x.end)}</td><td>{x.adhika ? 'Adhika ' : ''}{MONTHS[x.month]}</td><td>{x.occasion}</td></tr>)}</tbody>
+      <tbody>{upcoming.slice(0, 12).map((x) => <tr><td>{shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`} style="text-decoration:underline"><b>{kind === 'ekadashi' ? x.name : c.title} {kind === 'ekadashi' ? '' : EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</b></a> : <b>{kind === 'ekadashi' ? x.name : c.title} {kind === 'ekadashi' ? '' : EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</b>}<br /><small>{pretty(x)}</small></td><td>{dt(x.start)}</td><td>{dt(x.end)}</td><td>{x.adhika ? 'Adhika ' : ''}{MONTHS[x.month]}</td><td>{x.occasion}</td></tr>)}</tbody>
     </table></div>
     <p class="sub">Times are Indian Standard Time and are the same across India. The date is the day on which the tithi is observed ({kind === 'amavasya' ? 'present in the afternoon' : 'present at sunrise'}). Tap a date for the full guide.</p>
     {thisYear.length > 0 && <>
       <div class="sect" style="margin-top:26px"><h2>All {c.title} dates in {today.y}</h2></div>
-      <div class="chips">{thisYear.map((x) => shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`}>{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</a> : <span class="chip-off">{EN_MONTH_NAMES[x.observed.m - 1].slice(0, 3)} {x.observed.d}</span>)}</div>
+      <div class="chips">{thisYear.map((x) => shown.has(x.key) ? <a href={`/${kind}/${x.slug}/`}>{kind === 'ekadashi' ? x.name : c.title} {x.observed.d} {EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</a> : <span class="chip-off">{kind === 'ekadashi' ? x.name : c.title} {x.observed.d} {EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</span>)}</div>
     </>}
     {guide ? (
       <>
         <div class="sect" style="margin-top:26px"><h2>{c.title} by month</h2></div>
-        <div class="chips">{monthChips.map((m) => <a href={`/${kind}/${m}/`}>{m[0].toUpperCase() + m.slice(1)}</a>)}</div>
+        <div class="chips">{permaPages(kind).sort((a, b) => a.primary.key.localeCompare(b.primary.key)).map((pg) => <a href={`/${kind}/${pg.slug}/`}>{c.title} {EN_MONTH_NAMES[pg.primary.observed.m - 1]} {pg.primary.observed.y}</a>)}</div>
         {guide.sections.map((b) => (
           <>
             <div class="sect" style="margin-top:26px"><h2>{b.h}</h2></div>

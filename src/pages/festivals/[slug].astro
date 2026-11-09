@@ -118,7 +118,7 @@ const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi a
       </>
     )}
     <div class="sect"><h2>Festivals coming up</h2></div>
-    <ul>{nextOnes.map((x) => <li><a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name}</a>, {WEEKDAYS[x.weekday]} {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</li>)}</ul>
+    <ul>{nextOnes.map((x) => <li><a href={`/festivals/${x.slug}/`} style="text-decoration:underline">{x.name} {x.ymd.d} {EN_MONTH_NAMES[x.ymd.m - 1]} {x.ymd.y}</a> ({WEEKDAYS[x.weekday]})</li>)}</ul>
     <div class="chips"><a href="/festivals/">All festivals</a><a href="/panchangam/">Today's panchangam</a><a href="/ekadashi/">Ekadashi dates</a><a href="/amavasya/">Amavasya dates</a><a href="/pournami/">Pournami dates</a></div>
     <CalendarCta />
     <p class="disc">Dates are calculated for Hyderabad from the positions of the Sun and Moon. Some temples and traditions keep a festival a day earlier or later. For a vratam or a ceremony, please confirm with your family priest or temple.</p>

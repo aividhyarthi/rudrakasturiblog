@@ -6,7 +6,7 @@ import { allLunations, MONTHS, MONTHS_TE, EN_MONTH_NAMES, type Lunation } from '
 import { MONTH_NOTE, WEEKDAY_NOTE, COPY } from '../data/lunar-text';
 import { somavatiForTithi } from '../lib/somavati';
 import { allFestivals } from '../lib/festivals';
-import { shownOnPage } from '../lib/perma';
+import { shownOnPage, permaPages } from '../lib/perma';
 const { l, group } = Astro.props as { l: Lunation; group?: Lunation[] };
 const grp = group && group.length ? group : [l];
 const kind = l.kind, c = COPY[kind];
@@ -49,7 +49,7 @@ const allFest = allFestivals().filter((f, i, a) => a.findIndex((x) => x.id === f
 const aroundFests = allFest.filter((f) => Math.abs(dayDiff(f.key, l.key)) <= 6);
 const upNext = allFest.filter((f) => f.key > l.key && !aroundFests.includes(f)).slice(0, 3);
 const moreDates = all.filter((x) => x.key > grp[grp.length - 1].key).slice(0, 5);
-const monthChips = ['january','february','march','april','may','june','july','august','september','october','november','december'];
+const monthPages = permaPages(kind).sort((a, b) => a.primary.key.localeCompare(b.primary.key));
 import { istIso } from '../lib/ist';
 import { joinText } from '../lib/schemabody';
 const eventLd = { '@context': 'https://schema.org', '@type': 'Event', name: `${c.title} ${mName} ${ymd.y}`, startDate: istIso(l.start), endDate: istIso(l.end), eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode', isAccessibleForFree: true, inLanguage: 'en-IN', description: `${c.title} in ${mName} ${ymd.y}: tithi from ${dt(l.start)} to ${dt(l.end)} (IST).`, image: [`https://www.southwala.com/covers/tl-${kind}-${l.slug}.png`], url: `https://www.southwala.com/${kind}/${l.slug}/`, location: { '@type': 'Place', name: 'Homes and temples across India', address: { '@type': 'PostalAddress', addressCountry: 'IN' } }, organizer: { '@type': 'Organization', name: 'Southwala', url: 'https://www.southwala.com' } };
@@ -118,11 +118,11 @@ const schemaBody = joinText(c.what, note, c.do, c.avoid, faq.map(([q, a]) => `${
     <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
     <div class="sect"><h2>{c.title} {mName} {ymd.y}: common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
-    {moreDates.length > 0 && <><div class="sect"><h2>More {c.title} dates</h2></div><div class="chips">{moreDates.map((x) => shownOnPage(kind, x) ? <a href={`/${kind}/${x.slug}/`}>{prettyOf(x)}</a> : <span class="chip-off">{prettyOf(x)}</span>)}</div></>}
+    {moreDates.length > 0 && <><div class="sect"><h2>More {c.title} dates</h2></div><div class="chips">{moreDates.map((x) => shownOnPage(kind, x) ? <a href={`/${kind}/${x.slug}/`}>{c.title} {x.observed.d} {EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</a> : <span class="chip-off">{c.title} {x.observed.d} {EN_MONTH_NAMES[x.observed.m - 1]} {x.observed.y}</span>)}</div></>}
     <div class="sect"><h2>{c.title} in other months</h2></div>
-    <div class="chips">{monthChips.map((m) => <a href={`/${kind}/${m}/`}>{m[0].toUpperCase() + m.slice(1, 3)}</a>)}</div>
+    <div class="chips">{monthPages.map((pg) => <a href={`/${kind}/${pg.slug}/`}>{c.title} {EN_MONTH_NAMES[pg.primary.observed.m - 1]} {pg.primary.observed.y}</a>)}</div>
     <div class="chips" style="margin-top:12px">
-      {after && <a href={`/${kind}/${after.slug}/`}>Next: {prettyOf(after)} &rarr;</a>}
+      {after && <a href={`/${kind}/${after.slug}/`}>Next {c.title}: {prettyOf(after)} &rarr;</a>}
       <a href={`/${kind}/`}>All {c.title} dates and the full guide</a>
       {otherNext && <a href={`/${other}/${otherNext.slug}/`}>Next {COPY[other].title}: {label(otherNext)}</a>}
     </div>
