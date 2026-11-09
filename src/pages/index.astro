@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import { nowMs } from '../lib/now';
 import Card from '../components/Card.astro';
 import Row from '../components/Row.astro';
 import StoryImg from '../components/StoryImg.astro';
@@ -45,7 +46,7 @@ for (let i = 0; i < rota.length && !wkLead; i++) {
 }
 const wkMore: typeof all = [];
 // Lead: the day's own story (Saturday is Balaji), otherwise a rotating pick from the last day and a half.
-const fresh = all.filter((a) => Date.now() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
+const fresh = all.filter((a) => nowMs() - a.data.date.getTime() < 36 * 3600000 && a !== wkLead);
 const lead = wkLead && (seed % 2 === 0 || !fresh.length) ? wkLead : fresh.length ? shuffle(fresh, seed)[0] : (wkLead ?? all[0]);
 const rest = all.filter((a) => a !== lead);
 // Today's three daily pages, with titles that say what is in them.
@@ -64,7 +65,7 @@ const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice
 const shownTop = new Set([lead?.slug, ...latestArts.map((a) => a.slug)]);
 // "Worth reading again": older stories from different series and topics (Why me?, the Gita, Upanishads, temples, yoga...),
 // a new mix at every refresh, so the page always carries evergreen reading and not only the newest.
-const older = rest.filter((a) => !shownTop.has(a.slug) && Date.now() - a.data.date.getTime() > 2 * 86400000);
+const older = rest.filter((a) => !shownTop.has(a.slug) && nowMs() - a.data.date.getTime() > 2 * 86400000);
 let grid = diversePick(older.length >= 6 ? older : rest.filter((a) => !shownTop.has(a.slug)), 6, seed);
 if (grid.length < 3) grid = [];
 if (grid.length > 3 && grid.length < 6) grid = grid.slice(0, 3);

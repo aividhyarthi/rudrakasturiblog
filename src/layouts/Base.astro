@@ -1,4 +1,5 @@
 ---
+import { nowDate } from '../lib/now';
 import '@fontsource-variable/fraunces/wght.css';
 import '@fontsource-variable/inter/wght.css';
 import '@fontsource-variable/source-serif-4/wght.css';
@@ -59,7 +60,7 @@ const hasArticle = jsonTypes.some((t: any) => /Article/.test(String(t)));
 const EVERGREEN = /^\/(festivals|amavasya|pournami|sankashti-chaturthi|pradosham|ekadashi|somavati-amavasya|sade-sati|masam|rasi-phalalu|horoscope-tomorrow|panchangam-tomorrow|mantras|gods|temples|series|topics|calendar|rahu-kalam-today|religion|panchangam)(\/|$)/;
 const isDatedPanchangamPage = /^\/panchangam\/[a-z]+\/\d{4}-\d{2}-\d{2}\//.test(Astro.url.pathname);
 const isEvergreen = evergreen ?? (!home && type !== 'article' && !hasArticle && !isDatedPanchangamPage && EVERGREEN.test(Astro.url.pathname));
-const nowIso = istIso(new Date());
+const nowIso = istIso(nowDate());
 const LAUNCH = '2026-10-20T00:00:00+05:30';
 const pageImage = { '@type': 'ImageObject', '@id': `${canonical}#primaryimage`, url: new URL(image ?? '/covers/home.png', SITE.url).href, contentUrl: new URL(image ?? '/covers/home.png', SITE.url).href, width: imageW, height: imageH, caption: imageAlt ?? title ?? SITE.name };
 const sectionName = artSection ?? (breadcrumbs && breadcrumbs[0]?.name) ?? SITE.name;
