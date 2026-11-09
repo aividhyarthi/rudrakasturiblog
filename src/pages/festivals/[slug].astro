@@ -31,6 +31,8 @@ const sameFest = all.filter((x) => x.id === f.id && x.key >= ymdKey(today)).slic
 const at = (f as any).at as string | undefined;
 const atText = at === 'sunrise' ? 'at sunrise' : at === 'midday' ? 'at midday' : at === 'aparahna' ? 'in the afternoon' : at === 'sunset' ? 'at sunset' : at === 'night' ? 'at night' : 'during the day';
 const p = panchangFor(f.ymd, 'hyderabad');
+const pujaHint = at === 'sunset' ? 'The puja is usually done in the evening, around sunset' : at === 'night' ? 'The puja is usually done at night' : at === 'midday' ? 'The puja is usually done around midday' : at === 'aparahna' ? 'The puja is usually done in the afternoon' : 'The puja is usually done in the morning, after sunrise';
+const eveningFest = at === 'sunset' || at === 'night';
 const ref = new Date(Date.UTC(f.ymd.y, f.ymd.m - 1, f.ymd.d));
 const t = (d: Date) => fmtTime(d, ref);
 const when = `${f.name} in ${f.ymd.y} is on ${pretty}.${f.start && !f.solar && f.end ? ` The tithi begins ${dt(f.start)} and ends ${dt(f.end)} (IST).` : ''}`;
@@ -64,8 +66,8 @@ const desc = c ? `${f.name} on ${pretty}. Tithi timings, the story, puja vidhi a
     {c ? (
       <>
         <div class="timing">
-          <div class="good"><b>Good timings (Hyderabad)</b><span>Sunrise {t(p.sunrise)}</span><small>The usual time for the puja is the morning</small><span style="display:block;margin-top:14px">{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small></div>
-          <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam on the day</small><span style="display:block;margin-top:14px;font-size:18px">Sunset {t(p.sunset)}</span></div>
+          <div class="good"><b>Good timings (Hyderabad)</b><span>{eveningFest ? `Sunset ${t(p.sunset)}` : `Sunrise ${t(p.sunrise)}`}</span><small>{pujaHint}</small><span style="display:block;margin-top:14px">{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small></div>
+          <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam on the day</small><span style="display:block;margin-top:14px;font-size:18px">{eveningFest ? `Sunrise ${t(p.sunrise)}` : `Sunset ${t(p.sunset)}`}</span></div>
         </div>
         <p class="sub">{when} We take the day on which the tithi is {atText}. Some temples and families keep the festival a day earlier or later, so please confirm with your own priest or temple.</p>
         {c.source && <p class="sub"><b>Source:</b> {c.source}</p>}
