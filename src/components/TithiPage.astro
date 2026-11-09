@@ -36,7 +36,7 @@ const faq: [string, string][] = [
   ...c.faq,
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
-const title = kind === 'ekadashi' ? `${l.name} ${ymd.y}: ${mName} ${ymd.d}, Date, Parana Time, Significance` : kind === 'sankashti' ? `Sankashti Chaturthi ${mName} ${ymd.y}: ${ymd.d} ${mName}, Date, Moonrise, Vrat` : `Pradosham ${mName} ${ymd.y}: ${days} ${mName}, Dates, Puja Time`;
+const title = kind === 'ekadashi' ? `${l.name} ${ymd.y}: ${ymd.d} ${mName}, Date & Parana Time` : kind === 'sankashti' ? `Sankashti Chaturthi ${mName} ${ymd.y}: ${ymd.d} ${mName.slice(0, 3)}, Moonrise & Vrat` : `Pradosham ${mName} ${ymd.y}: ${days} ${mName}, Dates, Puja Time`;
 const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana.from)} to ${t(l.parana.to)}` : 'Next morning, after sunrise'] : kind === 'sankashti' ? ['Moonrise (Hyderabad)', l.moonrise ? t(l.moonrise) : ''] : ['Puja window (Hyderabad)', l.puja ? `${t(l.puja.from)} to ${t(l.puja.to)}` : ''];
 ---
 <Base rail="religion" title={title} description={`${kind === 'pradosham' ? 'Pradosham' : l.name} in ${mName} ${ymd.y} ${several ? 'falls on ' + grp.map(prettyOf).join(' and ') : 'is on ' + prettyDate}. Tithi: ${dt(l.start)} to ${dt(l.end)} (IST).`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }, { name: kind === 'ekadashi' ? l.name : mName, href: `/${R}/${l.slug}/` }]} image={`/covers/tl-${kind}-${l.slug}.png`}>
@@ -64,17 +64,17 @@ const extraCard = kind === 'ekadashi' ? ['Parana time', l.parana ? `${t(l.parana
     <p>{c.what}</p>
     <p>On this occasion the tithi begins on <b>{dt(l.start)}</b> and ends on <b>{dt(l.end)}</b>, Indian Standard Time. We take the day on which the tithi is {basis}. It falls in {monthLine}. Some temples and families follow a different rule, so confirm with your priest or temple for a vratam.</p>
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
-    <div class="sect"><h2>Timings on the day (Hyderabad)</h2></div>
+    <div class="sect"><h2>{kind === 'ekadashi' ? l.name : c.title} {mName} {ymd.y} timings (Hyderabad)</h2></div>
     <div class="timing">
       <div class="good"><b>Good timings</b><span>{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small><span style="display:block;margin-top:14px">{t(p.brahma.start)} to {t(p.brahma.end)}</span><small>Brahma Muhurtham</small></div>
       <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam</small><span style="display:block;margin-top:14px;font-size:18px">Sunrise {t(p.sunrise)}, sunset {t(p.sunset)}</span></div>
     </div>
     <p class="sub">For your own city see <a href="/panchangam/" style="text-decoration:underline">today's panchangam</a>. Tithi start and end times are the same across India; sunrise, sunset and moonrise shift by a few minutes between cities.</p>
-    <div class="sect"><h2>What people traditionally do</h2></div>
+    <div class="sect"><h2>What to do on {kind === 'ekadashi' ? l.name : c.title} {mName} {ymd.y}</h2></div>
     <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
-    <div class="sect"><h2>What many avoid</h2></div>
+    <div class="sect"><h2>What many avoid on {kind === 'ekadashi' ? l.name : c.title} {mName} {ymd.y}</h2></div>
     <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
-    <div class="sect"><h2>Common questions</h2></div>
+    <div class="sect"><h2>{kind === 'ekadashi' ? l.name : c.title} {mName} {ymd.y}: common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
     {kind === 'ekadashi' && sameName.length > 1 && (
       <>

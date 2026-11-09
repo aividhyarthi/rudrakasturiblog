@@ -42,8 +42,8 @@ const faq = [
 ];
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const several = grp.length > 1;
-const days = grp.map((x) => x.observed.d).join(' and ');
-const title = `${c.title} ${mName} ${ymd.y}: ${several ? days + ' ' + mName + ', ' : ''}Date, Tithi Timings, Significance`;
+const days = grp.map((x) => x.observed.d).join(' & ');
+const title = `${c.title} ${mName} ${ymd.y}: ${several ? days : ymd.d} ${mName}, Date & Tithi Timings`;
 const dayDiff = (a: string, b: string) => (Date.parse(a) - Date.parse(b)) / 86400000;
 const allFest = allFestivals().filter((f, i, a) => a.findIndex((x) => x.id === f.id && Math.abs(dayDiff(x.key, f.key)) < 200) === i);
 const aroundFests = allFest.filter((f) => Math.abs(dayDiff(f.key, l.key)) <= 6);
@@ -102,17 +102,17 @@ const monthChips = ['january','february','march','april','may','june','july','au
     {note.length > 0 && <><div class="sect"><h2>Why this one matters</h2></div>{note.map((n) => <p>{n}</p>)}</>}
     {aroundFests.length > 0 && <><div class="sect"><h2>Festivals in the days around this {c.title}</h2></div><div class="chips">{aroundFests.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}
     {upNext.length > 0 && <><div class="sect"><h2>Up next</h2></div><div class="chips">{upNext.map((f) => <a href={`/festivals/${f.slug}/`}>{f.name}<small style="font-weight:400;color:var(--muted);margin-left:6px">{f.ymd.d} {EN_MONTH_NAMES[f.ymd.m - 1].slice(0, 3)}</small></a>)}</div></>}
-    <div class="sect"><h2>Timings on the day (Hyderabad)</h2></div>
+    <div class="sect"><h2>{c.title} {mName} {ymd.y} timings (Hyderabad)</h2></div>
     <div class="timing">
       <div class="good"><b>Good timings</b><span>{t(p.abhijit.start)} to {t(p.abhijit.end)}</span><small>Abhijit Muhurtham</small><span style="display:block;margin-top:14px">{t(p.brahma.start)} to {t(p.brahma.end)}</span><small>Brahma Muhurtham</small></div>
       <div class="bad"><b>Timings to avoid</b><span>{t(p.rahu.start)} to {t(p.rahu.end)}</span><small>Rahu Kalam</small><span style="display:block;margin-top:14px;font-size:18px">Sunrise {t(p.sunrise)}, sunset {t(p.sunset)}</span></div>
     </div>
     <p class="sub">For your own city see <a href="/panchangam/" style="text-decoration:underline">today's panchangam</a>. Tithi start and end times are the same across India; sunrise-based timings shift by a few minutes between cities.</p>
-    <div class="sect"><h2>What people traditionally do</h2></div>
+    <div class="sect"><h2>What to do on {c.title} ({mName} {ymd.y})</h2></div>
     <ul>{c.do.map((x) => <li>{x}</li>)}</ul>
-    <div class="sect"><h2>What many avoid</h2></div>
+    <div class="sect"><h2>What many avoid on {c.title} ({mName} {ymd.y})</h2></div>
     <ul>{c.avoid.map((x) => <li>{x}</li>)}</ul>
-    <div class="sect"><h2>Common questions</h2></div>
+    <div class="sect"><h2>{c.title} {mName} {ymd.y}: common questions</h2></div>
     {faq.map(([q, a]) => <><h3 style="margin-bottom:2px">{q}</h3><p style="margin-top:0">{a}</p></>)}
     {moreDates.length > 0 && <><div class="sect"><h2>More {c.title} dates</h2></div><div class="chips">{moreDates.map((x) => shownOnPage(kind, x) ? <a href={`/${kind}/${x.slug}/`}>{prettyOf(x)}</a> : <span class="chip-off">{prettyOf(x)}</span>)}</div></>}
     <div class="sect"><h2>{c.title} in other months</h2></div>

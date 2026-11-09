@@ -32,7 +32,7 @@ const faq: [string, string][] = [
 const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) };
 const basis = kind === 'ekadashi' ? 'present at sunrise' : kind === 'sankashti' ? 'present at moonrise' : 'present at sunset';
 ---
-<Base rail="religion" title={`${c.title} ${today.y} Dates: Next ${c.title} and Tithi Timings`} description={`${c.title} dates for ${today.y} with exact tithi start and end times (IST) and ${extraHead.toLowerCase()}. Next ${c.title}: ${next ? pretty(next) : ''}.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }]} image="/covers/panchangam.png">
+<Base rail="religion" title={`${c.title} ${today.y} Dates: Next ${next ? next.observed.d + ' ' + EN_MONTH_NAMES[next.observed.m - 1].slice(0, 3) : ''}, All Months & Timings`} description={`${c.title} dates for ${today.y} with exact tithi start and end times (IST) and ${extraHead.toLowerCase()}. Next ${c.title}: ${next ? pretty(next) : ''}.`} active="religion" breadcrumbs={[{ name: 'Devotional', href: '/religion/' }, { name: c.title, href: `/${R}/` }]} image="/covers/panchangam.png">
   <script type="application/ld+json" set:html={JSON.stringify(faqLd)} />
   <div class="page wide c-religion">
     <div class="kicker"><a href="/religion/">Devotional</a></div>
