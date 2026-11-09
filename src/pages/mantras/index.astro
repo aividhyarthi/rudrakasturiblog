@@ -26,7 +26,7 @@ const faqLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity
         <tr class={i === wd ? 'on' : ''}><td><b>{WEEKDAYS[i]}</b>{i === wd && ' (today)'}</td><td><a href={`/mantras/${w.main}/`} style="text-decoration:underline">{deity(w.main).name}</a></td><td><a href={`/mantras/${w.alt}/`} style="text-decoration:underline">{deity(w.alt).name}</a></td><td>{deity(w.main).colour}</td></tr>
       ))}</tbody>
     </table></div>
-    <p class="sub">Other days: Ekadashi for Vishnu, Chaturthi for Ganesha, Shashthi for Subramanya, Ashtami for Durga, and Trayodashi (Pradosham) and Chaturdashi for Shiva. Each daily <a href="/daily-panchangam/" style="text-decoration:underline">panchangam article</a> names the god of that day.</p>
+    <p class="sub">Other days: Ekadashi for Vishnu, Chaturthi for Ganesha, Shashthi for Subramanya, Ashtami for Durga, and Trayodashi (Pradosham) and Chaturdashi for Shiva. Each daily <a href="/panchangam/" style="text-decoration:underline">panchangam</a> names the god of that day.</p>
     <div class="sect" style="margin-top:26px"><h2>Mantras by deity</h2></div>
     <div class="tiles" style="grid-template-columns:repeat(3,1fr)">
       {DEITIES.map((d) => <a class="tile" href={`/mantras/${d.id}/`}><h3 style="margin-top:0;font-size:20px">{d.name} <span class="te">{d.te}</span></h3><div class="meta">{d.day} &middot; {d.mantras.length} mantras</div></a>)}

@@ -50,7 +50,7 @@ These are customs. They cost nothing, and they do no harm.
 ## If you want to know more
 If you want to see where Budha is in your own birth chart, you need your date, time and place of birth, and a good astrologer. Be careful of anyone who frightens you or asks for large sums for a remedy. A trustworthy teacher will explain, not scare.
 
-To find your rashi first, see [how to find your janma rashi](/find-your-janma-rashi-moon-sign/), and for the week ahead read the [daily horoscope](/daily-horoscope/).
+To find your rashi first, see [how to find your janma rashi](/find-your-janma-rashi-moon-sign/), and for the week ahead read the [daily horoscope](/rasi-phalalu/).
 
 ## The story of Budha
 In the Puranas, Budha is the son of Soma, the Moon, and Tara, the wife of Brihaspati, the teacher of the gods. His birth is the cause of a great quarrel, which is settled when Brahma declares that the child belongs to Soma. Budha later marries Ila, and their son Pururavas is the ancestor of the lunar dynasty. Notice that the planet of intellect is born of a moral tangle. The tradition does not hide that clever people can also get into trouble.

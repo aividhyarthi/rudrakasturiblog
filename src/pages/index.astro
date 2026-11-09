@@ -56,8 +56,8 @@ const todayRank = rank(ymd), tomRank = rank(tomorrow);
 const names = (xs: { r: { skt: string } }[]) => `${xs[0].r.skt} and ${xs[1].r.skt}`;
 const key = ymdKey(ymd);
 const dailyExtras = [
-  { kicker: 'Horoscope today', title: `${WEEKDAYS[facts.wd]}: a good day for ${names(todayRank)}, go slowly if you are ${todayRank[11].r.skt}`, href: `/daily-horoscope/${key}/`, meta: `Moon in ${facts.moonSign.skt}, ${facts.nak.name} nakshatra. All 12 rashis`, cls: 'c-astrology' },
-  { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: `/daily-panchangam/${key}/`, meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
+  { kicker: 'Horoscope today', title: `${WEEKDAYS[facts.wd]}: a good day for ${names(todayRank)}, go slowly if you are ${todayRank[11].r.skt}`, href: '/rasi-phalalu/', meta: `Moon in ${facts.moonSign.skt}, ${facts.nak.name} nakshatra. All 12 rashis`, cls: 'c-astrology' },
+  { kicker: 'Panchangam today', title: `${WEEKDAYS[facts.wd]}: ${facts.tithi.paksha} ${facts.tithi.name}, Rahu Kalam ${facts.range(facts.p.rahu)}`, href: '/panchangam/', meta: `Abhijit ${facts.range(facts.p.abhijit)}. The god and mantra of the day`, cls: 'c-religion' },
   { kicker: 'Horoscope tomorrow', title: `${WEEKDAYS[tf.wd]}: Moon in ${tf.moonSign.skt}, best for ${names(tomRank)}`, href: '/horoscope-tomorrow/', meta: `${niceDate(tomorrow)}. Plan the day ahead`, cls: 'c-astrology' },
 ];
 const latestArts = [...wkMore, ...rest.filter((a) => !wkMore.includes(a))].slice(0, 3);
@@ -148,7 +148,7 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
         {todayFest.length > 0 && <div class="fest-today">{todayFest.map((f) => <a href={`/festivals/${f.slug}/`}><b>Today: {f.name}</b><span>{f.alt ?? f.god}</span></a>)}</div>}
         <div class="chips">
           <a class="btn solid" href="/panchangam/">Today's panchangam</a>
-          <a class="btn" href="/daily-panchangam/">Daily article</a>
+          <a class="btn" href="/panchangam-tomorrow/">Tomorrow</a>
           <a class="btn" href={`/mantras/${facts.main.id}/`}>{facts.main.name} mantras</a><a class="btn" href="/mantras/">Mantras</a>
           <a class="btn" href="/amavasya/">Amavasya</a>
           <a class="btn" href="/pournami/">Pournami</a>
@@ -173,7 +173,7 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
           <a class="sign-tile" href={`/rasi-phalalu/${r.id}/`}><Glyph id={r.id} size={34} /><b>{r.skt}</b><span class="stars">{star(d.rating)}</span></a>
         ))}
       </div>
-      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/daily-horoscope/">Daily article</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
+      <div class="chips"><a class="btn solid" href="/rasi-phalalu/">Today</a><a class="btn" href="/horoscope-tomorrow/">Tomorrow</a><a class="btn" href="/rasi-phalalu/mesha/weekly/">Weekly</a><a class="btn" href="/rasi-phalalu/mesha/monthly/">Monthly</a></div>
     </div>
   </section>
 

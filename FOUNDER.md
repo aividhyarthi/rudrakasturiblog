@@ -66,7 +66,7 @@ Founder says what they saw and want. Claude returns what the data says, what to 
 - Articles are scheduled by the `date` in each file. A story with a future date is not built until that date; the 00:05 IST daily rebuild publishes it. Links to not-yet-published stories are dropped automatically (`scripts/rehype-unpublished-links.mjs`).
 - Test a future day: `SW_NOW=2026-11-06 npx astro build`.
 - Series: gods, dharma (Advaita and Shankara), temple (Tamil Nadu), sacred (rivers and hills), faith (Westerners and Hindu tradition), karma, plus devotional, astrology, gita, spiritual.
-- Daily generated pages: `/daily-horoscope/<date>/`, `/daily-panchangam/<date>/`, Amavasya and Pournami pages, mantras section.
+- Daily pages: `/rasi-phalalu/` (today) and `/horoscope-tomorrow/`, `/panchangam/` (today) and `/panchangam-tomorrow/` (the old dated `/daily-*` URLs 301-redirect to today), Amavasya and Pournami pages, mantras section.
 - Discover: images are 1600x900, 1200x900 and 1200x1200 PNGs per article (`/img/<slug>/`), `max-image-preview:large` on every page, Article and FAQPage schema.
 - Copy rule: no AI mentions anywhere on the site. Desk bylines only.
 

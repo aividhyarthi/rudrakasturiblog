@@ -48,7 +48,8 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
     { label: 'Ekadashi', href: '/ekadashi/' },
     { label: 'Sankashti', href: '/sankashti-chaturthi/' },
     { label: 'Pradosham', href: '/pradosham/' },
-    { label: 'Daily panchangam', href: '/daily-panchangam/' },
+    { label: 'Panchangam today', href: '/panchangam/' },
+    { label: 'Panchangam tomorrow', href: '/panchangam-tomorrow/' },
     { label: 'Mantras', href: '/mantras/' },
     { label: 'Gods & Goddesses', href: '/gods-and-goddesses/' },
     { label: 'Prayer & Mantras', href: '/prayer-and-mantras/' },
@@ -81,7 +82,6 @@ export const SUBNAV: Record<string, { label: string; href: string }[]> = {
   astrology: [
     { label: 'Today', href: '/rasi-phalalu/' },
     { label: 'Tomorrow', href: '/horoscope-tomorrow/' },
-    { label: 'Daily article', href: '/daily-horoscope/' },
     { label: 'Weekly', href: '/rasi-phalalu/mesha/weekly/' },
     { label: 'Monthly', href: '/rasi-phalalu/mesha/monthly/' },
   ],

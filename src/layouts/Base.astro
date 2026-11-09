@@ -56,7 +56,7 @@ const orgNode = { '@type': ['Organization', 'NewsMediaOrganization'], '@id': ORG
 const siteNode = { '@type': 'WebSite', '@id': SITE_ID, name: SITE.name, alternateName: 'Southwala.com', url: SITE.url, description: SITE.description, inLanguage: 'en-IN', publisher: { '@id': ORG_ID } };
 const jsonTypes = [jsonLd].flat().filter(Boolean).map((j: any) => j['@type']);
 const hasArticle = jsonTypes.some((t: any) => /Article/.test(String(t)));
-const EVERGREEN = /^\/(festivals|amavasya|pournami|sankashti-chaturthi|pradosham|ekadashi|somavati-amavasya|sade-sati|masam|daily-panchangam|daily-horoscope|rasi-phalalu|horoscope-tomorrow|mantras|gods|temples|series|topics|calendar|rahu-kalam-today|religion|panchangam)(\/|$)/;
+const EVERGREEN = /^\/(festivals|amavasya|pournami|sankashti-chaturthi|pradosham|ekadashi|somavati-amavasya|sade-sati|masam|rasi-phalalu|horoscope-tomorrow|panchangam-tomorrow|mantras|gods|temples|series|topics|calendar|rahu-kalam-today|religion|panchangam)(\/|$)/;
 const isDatedPanchangamPage = /^\/panchangam\/[a-z]+\/\d{4}-\d{2}-\d{2}\//.test(Astro.url.pathname);
 const isEvergreen = evergreen ?? (!home && type !== 'article' && !hasArticle && !isDatedPanchangamPage && EVERGREEN.test(Astro.url.pathname));
 const nowIso = istIso(new Date());

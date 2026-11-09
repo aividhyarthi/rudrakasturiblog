@@ -5,15 +5,7 @@ import { DEITIES, WEEKDAY_DEITY, TITHI_DEITY, NAKSHATRA_DEITY, deity, type Mantr
 import { EN_MONTH_NAMES } from './lunar';
 
 export type Ymd = { y: number; m: number; d: number };
-export const DAILY_START: Ymd = { y: 2026, m: 10, d: 20 };
 
-/** Every date that has a daily article: from the launch day to two days ahead of today. */
-export function dailyDates(): Ymd[] {
-  const end = addDays(todayIST(), 2);
-  const out: Ymd[] = [];
-  for (let x = DAILY_START; ymdKey(x) <= ymdKey(end); x = addDays(x, 1)) out.push(x);
-  return out;
-}
 export const niceDate = (x: Ymd) => `${x.d} ${EN_MONTH_NAMES[x.m - 1]} ${x.y}`;
 export const weekdayOf = (x: Ymd) => new Date(Date.UTC(x.y, x.m - 1, x.d)).getUTCDay();
 const hash = (s: string) => { let h = 2166136261; for (const ch of s) h = Math.imul(h ^ ch.charCodeAt(0), 16777619) >>> 0; return h; };
