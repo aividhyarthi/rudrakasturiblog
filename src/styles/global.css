@@ -491,3 +491,19 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .vplay:after{content:"";position:absolute;left:27px;top:19px;border-left:23px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent}
 .vplayer iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 @media(max-width:640px){.vgrid{grid-template-columns:1fr 1fr}.vcard b{font-size:14px}}
+
+/* DevLok video pages: spacing, lyrics, short lists */
+.vpage h1{margin-bottom:6px}
+.vpage .vlede{font-size:1.18rem;line-height:1.6;margin:18px 0 6px;max-width:760px}
+.vsection{margin-top:38px}.vsection h2,.vbody h2{margin:38px 0 12px;font-size:1.45rem}
+.vsection:first-of-type h2{margin-top:0}
+.vbody{max-width:760px}.vbody p,.vbody li{line-height:1.7}.vbody ul,.vbody ol{padding-left:1.3em;margin:10px 0 16px}.vbody li{margin:8px 0}
+.vbody h2:first-child{margin-top:34px}
+.lyrics{white-space:pre-wrap;word-break:break-word;font-family:'Noto Serif Telugu','Source Serif 4',serif;font-size:1.08rem;line-height:2;background:#fbf6ea;border-left:4px solid #c2570c;border-radius:8px;padding:20px 24px;margin:12px 0 8px;max-width:760px;overflow-wrap:anywhere}
+.vsrc{font-size:.86rem;color:var(--muted);margin:6px 0;max-width:760px}
+.vfaq{max-width:760px}.vfaq h3{font:700 1.05rem var(--sans);margin:18px 0 4px}.vfaq p{margin:0 0 6px;line-height:1.65}
+.rlist{list-style:none;padding:0;margin:8px 0 0;max-width:760px}.rlist li{border-top:1px solid var(--hair)}.rlist li:last-child{border-bottom:1px solid var(--hair)}
+.rlist a{display:block;padding:13px 2px;text-decoration:none!important;color:var(--ink)}.rlist b{display:block;font:600 1.02rem/1.35 var(--display)}.rlist small{color:var(--muted);font-size:.82rem}.rlist a:hover b{text-decoration:underline}
+.vfoot{margin-top:34px}
+.vpage .vgrid{margin:14px 0 6px}
+@media(max-width:640px){.lyrics{padding:16px 16px;font-size:1.02rem;line-height:1.9;margin-left:-4px;margin-right:-4px}.vsection{margin-top:30px}.vsection h2,.vbody h2{font-size:1.3rem}.vpage .vlede{font-size:1.08rem}}
