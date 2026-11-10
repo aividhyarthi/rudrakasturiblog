@@ -1,0 +1,30 @@
+---
+import Base from '../../layouts/Base.astro';
+import { VIDEOS, CHANNEL_URL, thumb, videoTitle, teluguTitle, deityOf, kindOf, godName } from '../../lib/videos';
+import { GODS } from '../../data/gods';
+const withMeta = VIDEOS.map((v) => ({ v, god: deityOf(v), kind: kindOf(v) }));
+const groups = GODS.map((g) => ({ g, items: withMeta.filter((x) => x.god === g.id) })).filter((x) => x.items.length > 0).sort((a, b) => b.items.length - a.items.length);
+const other = withMeta.filter((x) => !x.god);
+const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'DevLok videos: Telugu stotrams, mantras and namavalis', url: 'https://www.southwala.com/videos/', mainEntity: { '@type': 'ItemList', itemListElement: VIDEOS.slice(0, 50).map((v, i) => ({ '@type': 'ListItem', position: i + 1, url: `https://www.southwala.com/videos/${v.slug}/`, name: videoTitle(v) })) } };
+---
+<Base title="DevLok Videos: Telugu Stotrams, Mantras and Namavalis" description={`${VIDEOS.length} Telugu devotional videos from the DevLok channel: ashtottara shatanamavalis, stotrams, mantras, aartis and short stories, grouped by god.`} breadcrumbs={[{ name: 'Videos', href: '/videos/' }]} rail="religion" active="religion" jsonLd={ld}>
+  <div class="page wide c-religion">
+    <div class="kicker"><a href="/religion/">Devotional</a></div>
+    <h1>DevLok videos</h1>
+    <p class="dek">{VIDEOS.length} Telugu stotrams, mantras, namavalis and short stories from our YouTube channel, DevLok by Southwala, grouped by god. Play each one on its own page, or follow the channel.</p>
+    <p><a class="btn solid" href={CHANNEL_URL} rel="noopener" target="_blank">Subscribe on YouTube</a></p>
+    <div class="chips">{groups.map(({ g, items }) => <a href={`#${g.id}`}>{g.name} ({items.length})</a>)}{other.length > 0 && <a href="#more">More ({other.length})</a>}</div>
+    {groups.map(({ g, items }) => (
+      <section id={g.id} class="vsec">
+        <div class="sect"><h2>{g.name} <span class="te">{g.te}</span></h2></div>
+        <div class="vgrid">{items.map(({ v, kind }) => <a class="vcard" href={`/videos/${v.slug}/`}><span class="vthumb"><img src={thumb(v.id)} alt="" loading="lazy" width="320" height="180" /><i>{v.dur}</i></span><b>{videoTitle(v)}</b><small>{kind.label}</small></a>)}</div>
+      </section>
+    ))}
+    {other.length > 0 && (
+      <section id="more" class="vsec">
+        <div class="sect"><h2>Stories and more</h2></div>
+        <div class="vgrid">{other.map(({ v, kind }) => <a class="vcard" href={`/videos/${v.slug}/`}><span class="vthumb"><img src={thumb(v.id)} alt="" loading="lazy" width="320" height="180" /><i>{v.dur}</i></span><b>{videoTitle(v)}</b><small>{kind.label}</small></a>)}</div>
+      </section>
+    )}
+  </div>
+</Base>

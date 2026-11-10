@@ -11,6 +11,7 @@ import { allArticles, categoryLabel, fmtDate, sectionCounts, seriesCounts, bylin
 import { CATEGORIES, catHref } from '../config';
 import { RASHIS, reading } from '../lib/astro';
 import { panchangFor, fmtTime, todayIST, addDays, WEEKDAYS } from '../lib/panchang';
+import { VIDEOS, thumb, videoTitle, kindOf } from '../lib/videos';
 import { shuffle, diversePick, slotNumber, dayNumber, isEvergreen } from '../lib/rotate';
 import { niceDate, ymdKey, dayFacts } from '../lib/daily';
 import { WEEKDAY_FEATURE, WEEKDAY_ROTA } from '../data/weekday';
@@ -108,6 +109,7 @@ more.forEach((a) => shownTop.add(a.slug));
 const catChips = CATEGORIES.filter((c) => counts.cat[c.id]);
 // A first set for "Keep exploring"; visitors can shuffle for more without waiting for a rebuild.
 const explore0 = diversePick(all.filter((a) => !shownTop.has(a.slug)), 6, seed + 33);
+const homeVideos = shuffle([...VIDEOS], seed + 51).slice(0, 4);
 const todayFest = festivalsByKey().get(nowKey) ?? [];
 const sv = nextSomavati(ymd);
 const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Date.UTC(ymd.y, ymd.m - 1, ymd.d)) / 86400000) : null;
@@ -151,6 +153,10 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
       </div>
     </section>
   )}
+  <section class="wrap" style="padding-top:36px">
+    <div class="sect"><h2>Watch and chant</h2><span class="sect-links"><a href="/videos/">All {VIDEOS.length} videos</a></span></div>
+    <div class="vgrid">{homeVideos.map((v) => <a class="vcard" href={`/videos/${v.slug}/`}><span class="vthumb"><img src={thumb(v.id)} alt="" loading="lazy" width="320" height="180" /><i>{v.dur}</i></span><b>{videoTitle(v)}</b><small>{kindOf(v).label}</small></a>)}</div>
+  </section>
   <section class="band band-dev c-religion">
     <div class="wrap">
       <div>
