@@ -1,6 +1,6 @@
 ---
 title: "Karna, Bhanumati and the broken necklace: why Duryodhana trusted him"
-description: "A popular regional story says Duryodhana found Karna holding his wife's pearls and chose trust over suspicion. What is folk, what is in the epic, and why Karna stayed to the end."
+description: "A popular regional story says Duryodhana found Karna holding his wife's pearls and chose trust over suspicion. What the epic says and what later tellings add, and why Karna stayed to the end."
 date: "2026-11-10T07:00:00+05:30"
 category: "dharma"
 author: "Southwala Dharma Desk"
