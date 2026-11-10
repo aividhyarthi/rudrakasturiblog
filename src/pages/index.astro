@@ -145,9 +145,9 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
   <MasaBanner ymd={ymd} />
   {specialDays.length > 0 && (
     <section class="wrap" style="padding-top:36px">
-      <div class="sect"><h2>Special days coming up</h2><a href="/festivals/">All festivals</a> <a href="/calendar/">Calendar 2027 (PDF)</a></div>
-      <div class="three" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-        {specialDays.map((d) => <a class={d.cls} href={d.href} style="display:block;padding:14px 16px;border:1px solid var(--line,#e5e0d8);border-radius:10px"><b style="display:block">{d.label}</b><span style="color:#6b6b6b;font-size:.92rem">{d.date}</span></a>)}
+      <div class="sect"><h2>Special days coming up</h2><span class="sect-links"><a href="/festivals/">All festivals</a><a href="/calendar/">Calendar 2027 (PDF)</a></span></div>
+      <div class="daygrid">
+        {specialDays.map((d) => <a class={d.cls} href={d.href}><b>{d.label}</b><span>{d.date}</span></a>)}
       </div>
     </section>
   )}
@@ -200,7 +200,7 @@ const svDays = sv ? Math.round((Date.UTC(sv.ymd.y, sv.ymd.m - 1, sv.ymd.d) - Dat
   {godTiles.length > 0 && (
     <section class="wrap" style="padding-top:56px">
       <div class="sect"><h2>Explore by god</h2><a href="/gods/">All gods</a></div>
-      <div class="godgrid">{godTiles.map(({ g, n }) => <a href={`/gods/${g.id}/`}><b>{g.name}</b><span class="te">{g.te}</span><small>{n} stories</small></a>)}</div>
+      <div class="godgrid">{godTiles.map(({ g, n }) => <a href={`/gods/${g.id}/`}><b>{g.name.replace(/^The /, '')}</b><span class="te">{g.te}</span><small>{n} stories</small></a>)}</div>
     </section>
   )}
 

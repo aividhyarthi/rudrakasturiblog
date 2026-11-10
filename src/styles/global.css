@@ -432,7 +432,7 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .answer{font-size:17px;line-height:1.5;margin:8px 0 6px}.answer.te{font-size:15px;color:var(--ink2)}
 
 /* Home page: explore by god, keep exploring, more to read */
-.godgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.godgrid{display:flex;flex-wrap:wrap;gap:10px}.godgrid a{flex:1 1 150px}
 .godgrid a{display:block;border:1px solid var(--hair);border-radius:12px;padding:14px;text-decoration:none!important;color:var(--ink);background:#fff}
 .godgrid a:hover{border-color:var(--ink)}.godgrid b{display:block;font:700 18px var(--display)}.godgrid .te{display:block;font-size:14px;color:var(--ink2)}.godgrid small{display:block;margin-top:4px;color:var(--muted);font-size:12.5px}
 .ex-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -469,3 +469,10 @@ table.data thead th{font:700 11px/1 var(--sans);letter-spacing:.12em;text-transf
 .page.wide .sect:first-child,.page.wide .kicker+.sect{margin-top:0}
 
 .chip-off{display:inline-block;border:1px solid var(--hair);border-radius:99px;padding:6px 12px;font:600 13.5px var(--sans);color:var(--muted)}
+
+/* Home: special days strip, even cards and one gap size; header links grouped on the right */
+.sect-links{display:flex;gap:18px;align-items:baseline}
+.daygrid{display:flex;flex-wrap:wrap;gap:12px}
+.daygrid a{flex:1 1 190px;display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--hair);border-radius:10px;text-decoration:none!important;color:var(--ink);background:#fff}
+.daygrid a:hover{border-color:var(--ink)}.daygrid b{font:700 15px var(--sans)}.daygrid span{color:var(--muted);font-size:14px}
+@media(max-width:640px){.daygrid{gap:10px}.daygrid a{flex-basis:150px}.sect-links{gap:12px;font-size:12px}}
