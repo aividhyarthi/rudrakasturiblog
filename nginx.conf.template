@@ -51,6 +51,7 @@ server {
   rewrite ^/astrology/?$ /rasi-phalalu/ permanent;
   rewrite ^/astrology/([a-z]+)/?$ /rasi-phalalu/$1/ permanent;
 
-  location / { try_files $uri $uri/ =404; }
+  # Pages are rebuilt every day: phones must check for a fresh copy instead of reusing an old one.
+  location / { add_header Cache-Control "no-cache"; try_files $uri $uri/ =404; }
   error_page 404 /404.html;
 }
