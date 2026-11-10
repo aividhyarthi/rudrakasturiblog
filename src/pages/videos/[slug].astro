@@ -1,9 +1,9 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Card from '../../components/Card.astro';
-import { VIDEOS, CHANNEL_URL, thumb, videoTitle, teluguTitle, deityOf, kindOf, godName, secs } from '../../lib/videos';
+import { getEntry } from 'astro:content';
+import { VIDEOS, CHANNEL_URL, thumb, videoTitle, teluguTitle, deityOf, kindOf, secs } from '../../lib/videos';
 import { GODS, godMatches } from '../../data/gods';
-import { allArticles } from '../../lib/articles';
+import { allArticles, categoryLabel, fmtDate } from '../../lib/articles';
 export function getStaticPaths() { return VIDEOS.map((v) => ({ params: { slug: v.slug }, props: { v } })); }
 const { v } = Astro.props as { v: (typeof VIDEOS)[number] };
 const kind = kindOf(v);
@@ -11,42 +11,59 @@ const godId = deityOf(v);
 const god = GODS.find((g) => g.id === godId);
 const articles = await allArticles();
 const godPage = god && articles.filter((a) => godMatches(god, a)).length >= 3;
-const stories = god ? articles.filter((a) => godMatches(god, a)).slice(0, 3) : [];
-const more = VIDEOS.filter((x) => x.id !== v.id && deityOf(x) === godId && godId).slice(0, 6);
+const stories = god ? articles.filter((a) => godMatches(god, a)).slice(0, 4) : [];
+const more = VIDEOS.filter((x) => x.id !== v.id && godId && deityOf(x) === godId).slice(0, 6);
 const fallbackMore = more.length ? more : VIDEOS.filter((x) => x.id !== v.id && kindOf(x).id === kind.id).slice(0, 6);
-const title = videoTitle(v);
+const page = await getEntry('videos', v.slug);
+const rich = page ? page.data : null;
+const Body = page ? (await page.render()).Content : null;
+const title = rich ? rich.title : videoTitle(v);
 const te = teluguTitle(v);
-const desc = `${title}${te ? ` (${te})` : ''}: watch and listen to this Telugu ${kind.label.toLowerCase()} video, ${v.dur} long, from the DevLok channel.`;
-const ld = {
-  '@context': 'https://schema.org', '@type': 'VideoObject', name: title, description: desc,
-  thumbnailUrl: thumb(v.id), embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`, contentUrl: `https://www.youtube.com/watch?v=${v.id}`,
-  duration: `PT${Math.floor(secs(v.dur) / 60)}M${secs(v.dur) % 60}S`, inLanguage: 'te',
-  ...(v.date ? { uploadDate: v.date } : {}),
-  publisher: { '@type': 'Organization', name: 'Southwala', url: 'https://www.southwala.com' },
-};
+const desc = rich ? rich.description : `${videoTitle(v)}${te ? ` (${te})` : ''}: watch and listen to this Telugu ${kind.label.toLowerCase()} video, ${v.dur} long, from the DevLok channel.`;
+const dur = `PT${Math.floor(secs(v.dur) / 60)}M${secs(v.dur) % 60}S`;
+const videoLd = { '@context': 'https://schema.org', '@type': 'VideoObject', name: title, description: desc, thumbnailUrl: thumb(v.id), embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`, contentUrl: `https://www.youtube.com/watch?v=${v.id}`, duration: dur, inLanguage: 'te', uploadDate: v.date, publisher: { '@type': 'Organization', name: 'Southwala', url: 'https://www.southwala.com', logo: { '@type': 'ImageObject', url: 'https://www.southwala.com/logo.png' } } };
+const faqLd = rich && rich.faq.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: rich.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) } : null;
+const ld = [v.date ? videoLd : null, faqLd].filter(Boolean);
 ---
-<Base title={title} description={desc} breadcrumbs={[{ name: 'Videos', href: '/videos/' }, { name: title, href: `/videos/${v.slug}/` }]} rail="religion" active="religion" image={thumb(v.id)} jsonLd={v.date ? ld : undefined}>
+<Base title={title} description={desc} breadcrumbs={[{ name: 'Videos', href: '/videos/' }, { name: videoTitle(v), href: `/videos/${v.slug}/` }]} rail="religion" active="religion" image={thumb(v.id)} jsonLd={ld.length ? ld : undefined}>
   <article class="page wide c-religion vpage">
     <div class="kicker"><a href="/videos/">DevLok videos</a> · {kind.label}{god && <> · {god.name}</>}</div>
-    <h1>{title}</h1>
+    <h1>{rich ? rich.title : title}</h1>
     {te && <p class="dek te">{te}</p>}
     <div class="vplayer" data-id={v.id}>
-      <button type="button" aria-label={`Play ${title}`}><img src={thumb(v.id)} alt={title} width="480" height="360" loading="eager" /><span class="vplay"></span></button>
+      <button type="button" aria-label={`Play ${videoTitle(v)}`}><img src={thumb(v.id)} alt={videoTitle(v)} width="480" height="360" loading="eager" /><span class="vplay"></span></button>
       <noscript><a href={`https://www.youtube.com/watch?v=${v.id}`}>Watch on YouTube</a></noscript>
     </div>
     <p class="meta">{v.dur} · Telugu · <a href={`https://www.youtube.com/watch?v=${v.id}`} rel="noopener" target="_blank">Watch on YouTube</a> · <a href={CHANNEL_URL} rel="noopener" target="_blank">DevLok by Southwala</a></p>
-    <h2>About this {kind.label.toLowerCase()}</h2>
-    <p>{kind.about}</p>
-    {god && <p>{godPage ? <>Read more about {god.name}: <a href={`/gods/${god.id}/`}>stories, mantras, temples and vows for {god.name}</a>.</> : <>{god.line}</>}</p>}
-    {stories.length > 0 && <>
-      <h2>Read next</h2>
-      <div class="three">{stories.map((a) => <Card a={a} big={false} />)}</div>
-    </>}
-    {fallbackMore.length > 0 && <>
-      <h2>More {god ? `${god.name} ` : ''}videos</h2>
+
+    {rich ? (<>
+      <p class="vlede">{rich.intro}</p>
+      {rich.lyrics && <section class="vsection">
+        <h2>{rich.lyricsTitle}</h2>
+        <pre class="lyrics te" lang="te">{rich.lyrics}</pre>
+        {rich.lyricsSource && <p class="vsrc">Text: <a href={rich.lyricsSource.url} rel="noopener nofollow" target="_blank">{rich.lyricsSource.label}</a>, licensed {rich.lyricsSource.license}.</p>}
+        {rich.note && <p class="vsrc">{rich.note}</p>}
+      </section>}
+      <div class="vbody">{Body && <Body />}</div>
+      {rich.faq.length > 0 && <section class="vsection vfaq">
+        <h2>Questions people ask</h2>
+        {rich.faq.map((f) => <div><h3>{f.q}</h3><p>{f.a}</p></div>)}
+      </section>}
+    </>) : (<section class="vsection">
+      <h2>About this {kind.label.toLowerCase()}</h2>
+      <p>{kind.about}</p>
+      {god && <p>{godPage ? <>Read more about {god.name}: <a href={`/gods/${god.id}/`}>stories, mantras, temples and vows for {god.name}</a>.</> : <>{god.line}</>}</p>}
+    </section>)}
+
+    {stories.length > 0 && <section class="vsection">
+      <h2>Read next{god ? ` about ${god.name}` : ''}</h2>
+      <ul class="rlist">{stories.map((a) => <li><a href={`/${a.slug}/`}><b>{a.data.title}</b><small>{categoryLabel(a.data.category)} · {fmtDate(a.data.date)}</small></a></li>)}</ul>
+    </section>}
+    {fallbackMore.length > 0 && <section class="vsection">
+      <h2>{more.length ? `More ${god?.name ?? ''} videos` : `More ${kind.label.toLowerCase()} videos`}</h2>
       <div class="vgrid">{fallbackMore.map((x) => <a class="vcard" href={`/videos/${x.slug}/`}><span class="vthumb"><img src={thumb(x.id)} alt="" loading="lazy" width="320" height="180" /><i>{x.dur}</i></span><b>{videoTitle(x)}</b><small>{kindOf(x).label}</small></a>)}</div>
-    </>}
-    <p><a href="/videos/">All DevLok videos</a> · <a href={CHANNEL_URL} rel="noopener" target="_blank">Subscribe on YouTube</a></p>
+    </section>}
+    <p class="vfoot"><a href="/videos/">All DevLok videos</a> · <a href={CHANNEL_URL} rel="noopener" target="_blank">Subscribe on YouTube</a></p>
   </article>
   <script is:inline>
     document.querySelectorAll('.vplayer').forEach(function (el) {

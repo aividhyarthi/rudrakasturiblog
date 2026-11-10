@@ -44,4 +44,18 @@ const temples = defineCollection({
   }),
 });
 
-export const collections = { articles, temples };
+const videos = defineCollection({
+  type: 'content', // file name = the video's page name in src/data/videos.json
+  schema: z.object({
+    title: z.string(),
+    description: z.string(),
+    intro: z.string(),
+    lyricsTitle: z.string().default('Lyrics in Telugu'),
+    lyrics: z.string().optional(),
+    lyricsSource: z.object({ label: z.string(), url: z.string().url(), license: z.string() }).optional(),
+    note: z.string().optional(),
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+  }),
+});
+
+export const collections = { articles, temples, videos };
