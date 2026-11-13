@@ -1,7 +1,7 @@
 ---
 title: "When Yogam Lifts You, Remember It Can Also Bring You Down"
 description: "What our past deeds, the Mahabharata and the nature of time teach us about success, pride, karma and responsibility."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-13T19:35:00+05:30"
 category: "karma"
 author: "Southwala Desk"
 format: "Essay"

@@ -1,7 +1,7 @@
 ---
 title: "The Money You Earn Today May Become Your Family's Burden Tomorrow"
 description: "What Indian traditions teach about dishonest wealth, Lakshmi, Saraswati, karma and the price of earning money through the wrong means."
-date: "2027-03-01T00:00:00+05:30"
+date: "2026-11-13T19:35:00+05:30"
 category: "karma"
 author: "Southwala Desk"
 format: "Essay"
