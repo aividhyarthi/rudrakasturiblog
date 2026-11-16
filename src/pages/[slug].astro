@@ -50,6 +50,7 @@ if (isArticle) {
     editor: { '@type': 'Organization', name: EDITORIAL_DESK, url: `${SITE.url}/team/` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.tldr'] },
   };
   crumbs = [{ name: categoryLabel(d.category), href: catHref(d.category) }, { name: d.title, href: `/${a.slug}/` }];
 }
@@ -63,7 +64,7 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.jpg`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={byline(d)} type="article" jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.jpg`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={byline(d)} type="article" markdown={`/${a.slug}.md`} jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>
@@ -72,7 +73,7 @@ const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[prop
       <div class="by">
         {who ? <img class="avatar" src={`/authors/${who.id}.svg`} alt="" width="40" height="40" style="border-radius:50%;object-fit:cover" /> : <span class="avatar" aria-hidden="true">{initials}</span>}
         <span>By <a href={byUrl}><b>{byline(d)}</b></a>{who && <> &nbsp;·&nbsp; Reviewed by <a href="/team/">{EDITORIAL_DESK}</a></>}</span>
-        <span>{fmtDate(d.date)}{d.updated ? `, updated ${fmtDate(d.updated)}` : ''}</span>
+        <span><time datetime={istIso(d.date)}>{fmtDate(d.date)}</time>{d.updated ? <>, updated <time datetime={istIso(d.updated)}>{fmtDate(d.updated)}</time></> : ''}</span>
         <span>{mins} min read</span>
       </div>
     </header>

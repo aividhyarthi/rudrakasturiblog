@@ -17,8 +17,8 @@ import { panchangFor, fmtTime, todayIST } from '../lib/panchang';
 import SideRail from '../components/SideRail.astro';
 import { masaOn, masaStartingSoon } from '../lib/masa';
 import { MASA_TEXT } from '../data/masa';
-interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; published?: Date; modified?: Date; imageAlt?: string; imageW?: number; imageH?: number; section?: string; tags?: string[]; author?: string; evergreen?: boolean; schemaBody?: string; webPageType?: string }
-const { railNoToday, rail, railExclude, todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, published, modified, imageAlt, imageW = 1200, imageH = 675, section: artSection, tags = [], author, evergreen, schemaBody, webPageType } = Astro.props;
+interface Props { railNoToday?: boolean; rail?: string; railExclude?: string; todayBar?: boolean; breadcrumbs?: { name: string; href: string }[]; home?: boolean; title?: string; description?: string; image?: string; type?: 'website' | 'article'; jsonLd?: object; active?: string; noindex?: boolean; markdown?: string; published?: Date; modified?: Date; imageAlt?: string; imageW?: number; imageH?: number; section?: string; tags?: string[]; author?: string; evergreen?: boolean; schemaBody?: string; webPageType?: string }
+const { railNoToday, rail, railExclude, todayBar, breadcrumbs, home, title, description = SITE.description, image, type = 'website', jsonLd, active, noindex, markdown, published, modified, imageAlt, imageW = 1200, imageH = 675, section: artSection, tags = [], author, evergreen, schemaBody, webPageType } = Astro.props;
 const fullTitle = title ? (title.length + SITE.name.length + 3 <= 62 ? `${title} | ${SITE.name}` : title) : `${SITE.name}: ${SITE.tagline}`;
 const canonical = new URL(Astro.url.pathname, SITE.url).href;
 const counts = await sectionCounts();
@@ -112,6 +112,8 @@ const ogImage = image ? new URL(image, SITE.url).href : new URL('/covers/home.pn
   {isEvergreen && <meta property="article:published_time" content={LAUNCH} />}
   {isEvergreen && <meta property="article:section" content={sectionName} />}
   <link rel="alternate" type="application/rss+xml" title={SITE.name} href="/rss.xml" />
+  {markdown && <link rel="alternate" type="text/markdown" href={markdown} />}
+  <link rel="alternate" type="text/plain" title="llms.txt" href="/llms.txt" />
   <link rel="icon" href="/favicon.ico" sizes="48x48" />
   <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any" />
