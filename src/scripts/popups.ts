@@ -1,4 +1,4 @@
-// "Surprise me": a small button on every page that opens a pop-up with a few random reads and the calendar download.
+// A pop-up with today's horoscope, the day's god, a few reads and the calendar download. It opens by itself once in a while (no button).
 // It also opens once on its own after a visitor has stayed a while, at most once every 12 hours.
 const KEY = 'sw_pop_v1';
 const HOURS = 6;
@@ -82,12 +82,6 @@ async function open() {
 }
 
 function init() {
-  if (document.querySelector('.swp-btn')) return;
-  const b = document.createElement('button');
-  b.className = 'swp-btn'; b.type = 'button'; b.textContent = 'Surprise me';
-  b.setAttribute('aria-label', 'Show me something to read');
-  b.addEventListener('click', open);
-  document.body.appendChild(b);
   if (here().startsWith('/calendar')) return;
   // Open by itself once in a while: after a pause on the page, and only if it has been a while since the last time.
   if (Date.now() - store.get() < HOURS * 3600 * 1000) return;
