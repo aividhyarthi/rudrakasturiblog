@@ -47,10 +47,9 @@ if (isArticle) {
     inLanguage: 'en-IN', isAccessibleForFree: true, wordCount: (a.body ?? '').split(/\s+/).filter(Boolean).length,
     keywords: (d.tags ?? []).join(', '), datePublished: istIso(d.date), dateModified: istIso(d.updated ?? d.date), articleBody: plainBody(a.body ?? ''),
     author: who ? { '@type': 'Person', name: who.name, jobTitle: who.role, url: `${SITE.url}${byUrl}`, image: `${SITE.url}/authors/${who.id}.png`, description: who.bio, worksFor: { '@type': 'Organization', name: SITE.name } } : { '@type': 'Organization', name: d.author, url: `${SITE.url}${byUrl}` },
-    editor: { '@type': 'Organization', name: EDITORIAL_DESK, url: `${SITE.url}/team/` },
     publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url, logo: { '@type': 'ImageObject', url: `${SITE.url}/logo.png` } },
     mainEntityOfPage: url, articleSection: categoryLabel(d.category),
-    speakable: { '@type': 'SpeakableSpecification', cssSelector: ['h1', '.tldr'] },
+    speakable: { '@type': 'SpeakableSpecification', cssSelector: d.tldr ? ['h1', '.tldr'] : ['h1'] },
   };
   crumbs = [{ name: categoryLabel(d.category), href: catHref(d.category) }, { name: d.title, href: `/${a.slug}/` }];
 }
@@ -64,7 +63,7 @@ const items = isArticle ? [] : all.filter((x) => (isCat ? x.data.category === pr
 const blurb = isCat ? cat!.blurb : `Politics, cinema and OTT from ${REGIONS[props.code as keyof typeof REGIONS]}, with sources.`;
 ---
 {isArticle ? (
-<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.jpg`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={byline(d)} type="article" markdown={`/${a.slug}.md`} jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
+<Base rail={CAT_RAIL[d.category]} railExclude={a.slug} breadcrumbs={crumbs} title={d.title} description={d.description} image={d.image ?? `/img/${a.slug}/16x9.jpg`} imageW={d.image ? 1200 : 1600} imageH={d.image ? 675 : 900} imageAlt={d.imageAlt ?? d.title} section={categoryLabel(d.category)} tags={d.tags} author={byline(d)} type="article" markdown={`/${a.slug}.md`} speakable={d.tldr ? ['h1', '.tldr'] : ['h1']} jsonLd={jsonLd} active={CAT_SECTION[d.category]} noindex={d.draft} published={d.date} modified={d.updated ?? d.date}>
   <article class={`c-${d.category}`}>
     <header class="story-head">
       <span class="kicker"><a href={catHref(d.category)}>{categoryLabel(d.category)}</a>{d.format && <> &nbsp;·&nbsp; {d.format}</>} {isNews && <> &nbsp;·&nbsp; {d.region !== 'south' ? <a href={stateHref(d.region)}>{REGIONS[d.region as keyof typeof REGIONS]}</a> : REGIONS[d.region as keyof typeof REGIONS]}</>}</span>

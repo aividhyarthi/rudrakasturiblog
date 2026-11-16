@@ -13,7 +13,7 @@ const crumbs = [{ name: 'Religion', href: '/religion/' }, { name: 'Panchangam', 
 import { shortDate, panchLine } from '../../../lib/headlines';
 const headline = `Panchangam Today ${c.name}, ${shortDate(ymd)}: ${panchLine(ymd, city)}`;
 ---
-<Base rail="religion" railNoToday title={headline} description={`Today's panchangam for ${c.name}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
+<Base rail="religion" railNoToday speakable={['h1', '.answer']} title={headline} description={`Today's panchangam for ${c.name}: sunrise, sunset, tithi, nakshatra, yoga, karana, Rahu Kalam, Yamagandam, Gulika, Abhijit and Brahma Muhurtham.`} active="religion" breadcrumbs={crumbs} image="/covers/panchangam.png">
   <div class="page wide">
     <div class="kicker"><a href="/religion/">Religion</a> &nbsp;/&nbsp; <a href="/panchangam/">Panchangam</a></div>
     <h1>{headline}</h1>
