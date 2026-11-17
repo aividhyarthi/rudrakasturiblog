@@ -3,7 +3,7 @@ title: "Jada Bharata: The King Who Lost His Kingdom but Could Not Escape Attachm
 description: "The story of Bharata Maharaja shows how attachment can follow a person even after he leaves behind power and possessions."
 date: "2026-11-17T10:00:00+05:30"
 category: "spiritual"
-author: "Southwala Devotional Desk"
+author: "Vidyaranya Murthy"
 format: "Story"
 tldr: "Bharata Maharaja renounces his kingdom to pursue spiritual life, but becomes deeply attached to a young deer. The Bhagavatam uses his experience to explain why inner attachment matters more than outward renunciation."
 hero: "jada-bharata-the-king-who-could-not-escape-attachment"
