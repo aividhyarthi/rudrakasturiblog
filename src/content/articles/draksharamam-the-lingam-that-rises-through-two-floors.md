@@ -1,6 +1,6 @@
 ---
-title: "Draksharamam: the Shiva Lingam that rises through two floors"
-description: "At Draksharamam in Andhra Pradesh, a remarkable two-storey sanctum and a local tradition about a growing Shiva Lingam make this Pancharama temple unlike any other."
+title: "Draksharamam: The Mystery of the Shiva Lingam That Reaches Beyond the Sanctum"
+description: "Discover the sacred tradition behind the unusual two-level sanctum and the Shiva Lingam at Draksharamam, one of Andhra Pradesh's revered Pancharama Kshetras."
 date: "2026-11-17T09:00:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
