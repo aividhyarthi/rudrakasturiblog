@@ -3,7 +3,7 @@ title: "Draksharamam: The Mystery of the Shiva Lingam That Reaches Beyond the Sa
 description: "Discover the sacred tradition behind the unusual two-level sanctum and the Shiva Lingam at Draksharamam, one of Andhra Pradesh's revered Pancharama Kshetras."
 date: "2026-11-17T09:00:00+05:30"
 category: "temple"
-author: "Southwala Temples Desk"
+author: "Ranganatha Dikshitar"
 format: "Story"
 tldr: "Draksharamam is one of the five Pancharama Kshetras. Its Bhimeswara Swamy shrine is known for a two-level sanctum and a local belief that the Shiva Lingam grew so tall that a nail was fixed to restrain it. The story belongs to temple tradition; the unusual architecture is what visitors can see."
 hero: "draksharamam-temple"
