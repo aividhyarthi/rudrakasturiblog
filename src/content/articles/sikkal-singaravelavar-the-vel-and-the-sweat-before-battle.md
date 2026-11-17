@@ -1,6 +1,6 @@
 ---
-title: "Sikkal Singaravelavar: the Vel, the battle and the drops of sweat"
-description: "At Sikkal in Tamil Nadu, the festival tradition says Murugan receives the Vel from his mother and appears to perspire before setting out to battle Surapadman."
+title: "Sikkal Murugan: The Divine Moment When Lord Murugan Received His Sacred Vel"
+description: "Discover the Sikkal temple tradition in which Goddess Parvati gives Lord Murugan the Vel before his battle with Surapadman."
 date: "2026-11-17T09:20:00+05:30"
 category: "temple"
 author: "Southwala Temples Desk"
