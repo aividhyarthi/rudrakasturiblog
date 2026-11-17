@@ -1,6 +1,6 @@
 ---
-title: "Gandi Anjaneya: the image Lord Rama is believed to have left on the rock"
-description: "At Gandi Kshetram in Andhra Pradesh, devotees worship a striking image of Lord Anjaneya associated with Lord Rama, a forest journey and a story carved into local memory."
+title: "Gandi Anjaneya: The Sacred Image That Lord Rama Is Believed to Have Drawn Himself"
+description: "Discover the local tradition that connects Lord Rama, Lord Anjaneya and the sacred rock at Gandi Kshetram in Kadapa."
 date: "2026-11-17T09:10:00+05:30"
 category: "temple"
 author: "Southwala Devotional Desk"
