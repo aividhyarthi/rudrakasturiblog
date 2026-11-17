@@ -3,7 +3,7 @@ title: "Sikkal Murugan: The Divine Moment When Lord Murugan Received His Sacred 
 description: "Discover the Sikkal temple tradition in which Goddess Parvati gives Lord Murugan the Vel before his battle with Surapadman."
 date: "2026-11-17T09:20:00+05:30"
 category: "temple"
-author: "Southwala Temples Desk"
+author: "Ranganatha Dikshitar"
 format: "Story"
 tldr: "Sikkal Singaravelavar temple is famous for the Skanda Sashti sequence in which Goddess Parvati gives the Vel to Murugan. Devotees describe drops of moisture appearing on the deity after the event as sweat before battle. This is a ritual observation and devotional belief, not a scientifically established miracle."
 hero: "sikkal-singaravelavar"
