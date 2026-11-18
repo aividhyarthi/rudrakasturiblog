@@ -1,7 +1,7 @@
 ---
 title: "Vaikuntha Ekadashi 2026: Date, Story and the Meaning of the Northern Gate"
 description: "Vaikuntha Ekadashi is listed on 20 December 2026 in the Hyderabad calendar. Learn why Vishnu temples open the Vaikuntha Dwaram, the story behind the observance and how devotees prepare."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "festivals"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
