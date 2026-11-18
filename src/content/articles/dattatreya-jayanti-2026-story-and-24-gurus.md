@@ -1,7 +1,7 @@
 ---
 title: "Dattatreya Jayanti 2026: The Story of the Sage Who Learned from 24 Gurus"
 description: "Dattatreya Jayanti is listed on 23 December 2026 in the Hyderabad calendar. Discover the story of Dattatreya, his 24 teachers and the meaning of learning from the world around us."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "festivals"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
