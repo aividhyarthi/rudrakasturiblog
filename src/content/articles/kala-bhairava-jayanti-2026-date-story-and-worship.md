@@ -1,7 +1,7 @@
 ---
 title: "Kala Bhairava Jayanti 2026: The Story of Shiva's Guardian of Time"
 description: "Kala Bhairava Jayanti falls on 1 December 2026. Learn the story of Bhairava, why he guards Kashi, what devotees do on the day and how traditions differ."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "festivals"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
