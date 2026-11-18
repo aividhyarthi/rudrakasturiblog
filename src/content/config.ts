@@ -7,7 +7,8 @@ const articles = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
-    category: z.enum(['politics', 'movies', 'ott', 'devotional', 'astrology', 'gita', 'spiritual', 'karma', 'gods', 'dharma', 'temple', 'sacred', 'faith', 'questions', 'prayer']),
+    // Festival guides are filed under devotional, so a story marked 'festivals' does not stop the release build.
+    category: z.preprocess((c) => (c === 'festivals' ? 'devotional' : c), z.enum(['politics', 'movies', 'ott', 'devotional', 'astrology', 'gita', 'spiritual', 'karma', 'gods', 'dharma', 'temple', 'sacred', 'faith', 'questions', 'prayer'])),
     hero: z.string().optional(), // name of an illustration in public/heroes
     faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     region: z.enum(['tn', 'kl', 'ka', 'ap', 'ts', 'south']).default('south'),
@@ -17,8 +18,14 @@ const articles = defineCollection({
     imageAlt: z.string().optional(),
     author: z.string().default('Southwala Desk'),
     tags: z.array(z.string()).default([]),
+    // A source may be a full entry or just a link; a bare link gets its site name as title and publisher.
     sources: z
-      .array(z.object({ title: z.string(), url: z.string().url(), publisher: z.string() }))
+      .array(
+        z.union([
+          z.object({ title: z.string(), url: z.string().url(), publisher: z.string() }),
+          z.string().url().transform((url) => { const h = new URL(url).hostname.replace(/^www\./, ''); return { title: h, url, publisher: h }; }),
+        ]),
+      )
       .default([]),
     draft: z.boolean().default(false),
     reviewNote: z.string().optional(), // why a human should look before publishing
