@@ -1,7 +1,7 @@
 ---
 title: "Vivah Panchami 2026: The Wedding of Rama and Sita"
 description: "Vivah Panchami falls on 14 December 2026. Read the Ramayana story of Rama and Sita's wedding in Mithila, its meaning and how devotees observe the day."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "festivals"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
