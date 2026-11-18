@@ -1,9 +1,9 @@
 ---
 title: "Subrahmanya Sashti 2026: The Story of Murugan and the Victory Over Surapadman"
 description: "Subrahmanya Sashti, also called Skanda Sashti in many traditions, falls on 15 December 2026. Learn the story of Murugan, the sacred Vel and the meaning of the observance."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "festivals"
-author: "Raghunatha Sharma"
+author: "Ranganatha Dikshitar"
 format: "Festival Guide"
 tldr: "Subrahmanya Sashti honours Lord Murugan, also known as Skanda, Kartikeya and Subrahmanya. In the Hyderabad calendar it falls on 15 December 2026. Devotees remember his victory over Surapadman and worship with prayer, fasting and temple visits."
 hero: "murugan-vel"
