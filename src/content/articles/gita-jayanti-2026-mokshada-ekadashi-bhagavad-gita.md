@@ -1,7 +1,7 @@
 ---
 title: "Gita Jayanti 2026: Why the Bhagavad Gita Was Spoken on Mokshada Ekadashi"
 description: "Gita Jayanti and Mokshada Ekadashi fall on 20 December 2026 in major calendar references. Understand the setting of the Gita, its central teaching and simple ways to observe the day."
-date: "2026-11-18T00:00:00+05:30"
+date: "2026-11-18T07:00:00+05:30"
 category: "gita"
 author: "Partha Sarathi Acharya"
 format: "Festival and Text Guide"
