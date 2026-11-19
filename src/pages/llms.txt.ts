@@ -24,7 +24,7 @@ export async function GET() {
     'Time zone: Indian Standard Time (IST). Panchangam times are calculated for each city from sunrise, using the Lahiri ayanamsa.',
     `Contact: ${SITE.email}`,
     '',
-    'Each article is also available as plain Markdown at the same address with .md added (for example ' + `${U}/${all[0]?.slug ?? 'article'}.md). The full text of every published article is in ${U}/llms-full.txt.`,
+    'Each article is also available as plain Markdown at the same address with .md added (for example ' + `${U}/${all[0]?.slug ?? 'article'}.md). The full text of every published article is paginated, starting at ${U}/llms-full.txt (each page links to the next).`,
     '',
     '## Daily pages (updated every day)',
     '',

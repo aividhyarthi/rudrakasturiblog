@@ -39,3 +39,28 @@ export function articleMarkdown(a: Article): string {
   const sources = d.sources?.length ? ['', '## Sources', '', ...d.sources.map((s) => `- [${s.title}](${s.url}), ${s.publisher}`)] : [];
   return [...head, ...faq, ...sources, '', `Canonical page: ${url}`, ''].join('\n');
 }
+
+/**
+ * llms-full.txt keeps growing as articles are added, and a single multi-megabyte file is too large for
+ * some AI tools to fetch reliably. Split it into pages, each capped around MAX_PAGE_BYTES, without
+ * cutting an article in half (one oversized article still gets its own page).
+ */
+const MAX_PAGE_BYTES = 250_000;
+
+export function paginateArticles(all: Article[], maxBytes = MAX_PAGE_BYTES): Article[][] {
+  const pages: Article[][] = [];
+  let page: Article[] = [];
+  let bytes = 0;
+  for (const a of all) {
+    const size = articleMarkdown(a).length;
+    if (page.length && bytes + size > maxBytes) {
+      pages.push(page);
+      page = [];
+      bytes = 0;
+    }
+    page.push(a);
+    bytes += size;
+  }
+  if (page.length) pages.push(page);
+  return pages;
+}
