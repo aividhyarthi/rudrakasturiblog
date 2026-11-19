@@ -6,5 +6,5 @@ export async function getStaticPaths() {
 }
 
 export function GET({ props }: { props: { a: Awaited<ReturnType<typeof allArticles>>[number] } }) {
-  return new Response(articleMarkdown(props.a), { headers: { 'Content-Type': 'text/markdown; charset=utf-8' } });
+  return new Response(articleMarkdown(props.a), { headers: { 'Content-Type': 'text/plain; charset=utf-8' } });
 }

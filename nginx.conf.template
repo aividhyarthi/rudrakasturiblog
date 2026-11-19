@@ -16,7 +16,7 @@ server {
   location = /healthz { access_log off; default_type text/plain; return 200 "ok"; }
   location /_astro/ { expires 1y; add_header Cache-Control "public, immutable"; }
   location ~ ^/(favicon.*|apple-touch-icon\.png|icon-.*\.png|site\.webmanifest)$ { add_header Cache-Control "no-cache"; }
-  location ~ \.md$ { default_type text/markdown; charset utf-8; add_header Cache-Control "no-cache"; }
+  location ~ \.md$ { default_type text/plain; charset utf-8; add_header Cache-Control "no-cache"; }
   location ~ ^/(llms|llms-full|robots)\.txt$ { default_type text/plain; charset utf-8; add_header Cache-Control "no-cache"; }
   location ~ ^/llms-full/[0-9]+\.txt$ { default_type text/plain; charset utf-8; add_header Cache-Control "no-cache"; }
   location /covers/ { expires 7d; }
