@@ -5,13 +5,13 @@ date: "2026-11-20T07:15:00+05:30"
 category: "spiritual"
 author: "Southwala Devotional Desk"
 format: "Festival Explainer"
-tldr: "Guru Nanak Jayanti, also called Gurpurab, is observed on Kartik Purnima. In 2026 it falls on Tuesday, 24 November. It commemorates Guru Nanak, the founder of the Sikh tradition, and his teachings on the one Divine, truthful living, honest work and sharing with others."
+tldr: "Guru Nanak's Parkash Gurpurab falls on Tuesday, 24 November 2026, corresponding to 9 Maghar in the SGPC Nanakshahi calendar. This date also coincides with Kartik Purnima in the Hindu calendar. The day commemorates the birth of Guru Nanak and his teachings on the one Divine, honest work and sharing."
 hero: "temple-sunrise"
 imageAlt: "A peaceful view of a gurdwara illuminated for Guru Nanak Gurpurab"
 tags: ["Guru Nanak Jayanti 2026", "Gurpurab", "Sikhism", "Kartik Purnima", "Guru Nanak"]
 faq:
   - q: "When is Guru Nanak Jayanti in 2026?"
-    a: "It falls on Tuesday, 24 November 2026, on Kartik Purnima, according to the New Delhi calendar."
+    a: "The SGPC Nanakshahi calendar lists Guru Nanak Dev Ji's Parkash Gurpurab on Tuesday, 24 November 2026, or 9 Maghar 558. It coincides with Kartik Purnima in the Hindu calendar."
   - q: "Which birth anniversary is celebrated in 2026?"
     a: "It is commonly marked as the 557th birth anniversary of Guru Nanak, who was born in 1469."
   - q: "What are the main teachings of Guru Nanak?"
@@ -19,7 +19,8 @@ faq:
   - q: "How is Gurpurab observed?"
     a: "Common observances include prayers, kirtan, readings from the Guru Granth Sahib, processions in some places and langar, the community kitchen."
 sources:
-  - "https://www.drikpanchang.com/calendars/indian/sikh-festivals/jayanti/guru-nanak-jayanti-date.html?lang=en"
+  - "https://www.goldentempleamritsar.org/sikh-nanakshahi-calendar/2026-2027/samvat-558/calendar-2026-2027-nanakshahi-558.php"
+  - "https://sikhnet.com/pages/sikh-gurpurab-calendar"
   - "https://www.cambridge.org/core/elements/sikh-ethics/931645585C0461FFC33D034EF558360C"
   - "https://www.sikhmissionarysociety.org/sms/smspublications/thesikhsandtheirwayoflife/chapter2/"
 draft: true
@@ -52,7 +53,7 @@ The three-part summary is widely used in Sikh education and community life. Scho
 
 ## Why is Guru Nanak Jayanti on Kartik Purnima?
 
-Guru Nanak's birth anniversary is traditionally observed on Kartik Purnima, the full moon day of the Kartik month in the Hindu lunar calendar. The date changes each year in the Gregorian calendar.
+The SGPC Nanakshahi calendar lists Guru Nanak Dev Ji's Parkash Gurpurab on 9 Maghar. In 2026, that date falls on 24 November and coincides with Kartik Purnima in the Hindu calendar. Sikh communities follow the calendar and practices recognised by their own institutions and local gurdwaras. The Gregorian date can change from year to year.
 
 In 2026, the New Delhi panchang lists the full moon on 24 November. Sikh communities around the world observe Gurpurab with their own calendar and local programmes. For exact event timings, check the nearest gurdwara.
 
