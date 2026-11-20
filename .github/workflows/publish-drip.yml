@@ -4,9 +4,21 @@ name: Drip-release reviewed drafts
 # sensitivity (today's Kartika festival guides first, then the evergreen temple/scripture stories), so with
 # 24 drafts queued this naturally spreads them 8 today, 8 tomorrow, 8 the day after. Does nothing once the
 # queue is empty.
+#
+# The 8 one-off entries pinned to 20 Nov (1:00pm-4:30pm IST / 07:30-11:00 UTC) cover today only: the
+# 7:45-11:15am window was already missed the day this went live, so today's batch runs in the afternoon
+# instead. They harmlessly do nothing on any other 20 November.
 on:
   schedule:
     - cron: '15,45 2-5 * * *'
+    - cron: '30 7 20 11 *'
+    - cron: '0 8 20 11 *'
+    - cron: '30 8 20 11 *'
+    - cron: '0 9 20 11 *'
+    - cron: '30 9 20 11 *'
+    - cron: '0 10 20 11 *'
+    - cron: '30 10 20 11 *'
+    - cron: '0 11 20 11 *'
   workflow_dispatch: {}
 permissions:
   contents: write
