@@ -5,6 +5,16 @@
 import fs from 'node:fs';
 
 const RELEASE_QUEUE = [
+  // Kartika-month festival guides, most time-sensitive first (Bhishma Panchak starts today; the Nov 23-24 ones have a few days' buffer).
+  'bhishma-panchak-2026-five-days-of-kartika',
+  'kansa-vadh-2026-krishna-mathura-story',
+  'kartika-snan-meaning-dawn-bath-traditions',
+  'guru-nanak-jayanti-2026-date-life-and-teachings',
+  'manikarnika-snan-2026-kashi-kartik-chaturdashi',
+  'vaikuntha-chaturdashi-2026-shiva-vishnu-worship',
+  'karthigai-deepam-2026-tiruvannamalai-maha-deepam-guide',
+  'srisailam-jwala-thoranam-2026-kartika-purnima',
+  // Evergreen scripture/temple stories.
   'draksharamam-the-lingam-that-rises-through-two-floors',
   'dhruva-the-boy-whose-devotion-brought-vishnu-before-him',
   'gandi-anjaneya-the-image-lord-rama-left-on-the-rock',
