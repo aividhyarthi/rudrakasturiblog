@@ -19,8 +19,8 @@ faq:
   - q: "Should visitors expect normal darshan arrangements?"
     a: "No. Special festival days can bring crowd controls and changes to sevas or darshan. Check the Devasthanam's latest notice before travelling."
 sources:
-  - "https://www.headlinne.com/articles/srisailam-gears-up-for-karthika-masam-festivities-from-november-10-the-hindu"
-  - "https://www.andhravani.com/article/srisailam-begins-month-long-karthika-festival-koti-deepotsavam-on-november-20-sparsha-darshan-only-tuesday-to-friday"
+  - "https://www.deccanchronicle.com/southern-states/andhra-pradesh/grand-kartika-festivities-begin-at-srisailam-2002996"
+  - "https://srisailamguide.com/karthika-masam-2026-at-srisailam-koti-deepotsavam-jwala-thoranam-laksha-deepotsavam-and-shiva-deeksha-dates/"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
 draft: true
 reviewNote: "Festival date and venue are based on news reports quoting the Devasthanam programme. Recheck the temple's official notice for exact timings, venue changes and crowd restrictions before publication."
@@ -28,7 +28,7 @@ reviewNote: "Festival date and venue are based on news reports quoting the Devas
 
 At Srisailam, Kartika Purnima is marked not only by rows of lamps but also by a ritual involving fire. It is known as *Jwala Thoranam*. The name describes a ceremonial arch of flame, and the observance is associated with the worship of Lord Mallikarjuna during the sacred month of Kartika.
 
-Reports on the Srisailam Devasthanam's 2026 programme list Jwala Thoranam for **Tuesday, 24 November**, on Kartika Purnima, at Gangadhara Mandapam. The exact time and any changes to the arrangements should be confirmed with the temple before travelling.
+A Deccan Chronicle report dated 9 November 2026 says the temple's Jwalanthoranotsavam is scheduled for **Tuesday, 24 November**, on Kartika Purnima. A separate report on the Srisailam programme identifies Gangadhara Mandapam as the venue. Confirm the latest timings and arrangements with the Devasthanam before travelling.
 
 ## What is Jwala Thoranam?
 
@@ -46,7 +46,7 @@ Jwala Thoranam is part of this larger calendar. It should not be confused with t
 
 ## Jwala Thoranam 2026: what is known
 
-The Srisailam festival programme reported by local news outlets lists:
+The Srisailam programme reported by Deccan Chronicle and the temple-focused Srisailam Guide lists:
 
 - **Date:** Tuesday, 24 November 2026.
 - **Occasion:** Kartika Purnima.
