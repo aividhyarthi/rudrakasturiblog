@@ -20,6 +20,7 @@ faq:
     a: "No. Special festival days can bring crowd controls and changes to sevas or darshan. Check the Devasthanam's latest notice before travelling."
 sources:
   - "https://www.deccanchronicle.com/southern-states/andhra-pradesh/grand-kartika-festivities-begin-at-srisailam-2002996"
+  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
   - "https://srisailamguide.com/karthika-masam-2026-at-srisailam-koti-deepotsavam-jwala-thoranam-laksha-deepotsavam-and-shiva-deeksha-dates/"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
 draft: true
