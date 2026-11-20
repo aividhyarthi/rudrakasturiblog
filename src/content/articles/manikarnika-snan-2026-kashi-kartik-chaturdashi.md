@@ -20,13 +20,14 @@ sources:
   - "https://www.drikpanchang.com/panchang/month-panchang.html?geoname-id=1253405"
   - "https://kashi.gov.in/listing-details/manikarnika-ghat"
   - "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
+  - "https://panchangtime.com/festivals/manikarnika-snan/varanasi"
 draft: true
 reviewNote: "Sensitive subject. Keep tone respectful and avoid sensational descriptions or photography advice. The 23 November date is from the Varanasi calendar. Verify local bathing arrangements and public access before publication."
 ---
 
 Kashi is a city where prayer, daily life and the presence of death sit close to one another. At Manikarnika Ghat, the Ganga flows beside one of Hindu tradition's most important cremation grounds. The same place is also connected with pilgrimage bathing and sacred stories about Shiva and Vishnu.
 
-Drik Panchang lists **Monday, 23 November 2026** as Manikarnika Snan in the Varanasi calendar, on the day of Vaikuntha Chaturdashi. The date should be checked against the local panchang and any instructions issued by the city administration.
+Drik Panchang's Varanasi calendar lists **Monday, 23 November 2026** for Manikarnika Snan, on Kartika Shukla Chaturdashi. A separate Varanasi festival calendar gives the same date. This confirms the calendar observance, not the availability of a particular bathing area or any temporary access arrangements. Check local notices before visiting.
 
 ## What is Manikarnika Ghat?
 
