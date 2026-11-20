@@ -20,6 +20,7 @@ faq:
     a: "Common observances include prayers, kirtan, readings from the Guru Granth Sahib, processions in some places and langar, the community kitchen."
 sources:
   - "https://www.goldentempleamritsar.org/sikh-nanakshahi-calendar/2026-2027/samvat-558/calendar-2026-2027-nanakshahi-558.php"
+  - "https://gurdwaras.com/calendar"
   - "https://sikhnet.com/pages/sikh-gurpurab-calendar"
   - "https://www.cambridge.org/core/elements/sikh-ethics/931645585C0461FFC33D034EF558360C"
   - "https://www.sikhmissionarysociety.org/sms/smspublications/thesikhsandtheirwayoflife/chapter2/"
