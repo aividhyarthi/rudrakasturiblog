@@ -76,6 +76,6 @@ Yes. The text describes Balarama defeating Mushtika, while Krishna fights Chanur
 
 No. It is especially associated with the Braj region and Mathura. Other regions may remember the episode within the wider Krishna story.
 
-Read more about [Krishna's life and teachings](/krishna-the-cowherd-the-king-and-the-teacher/), [why Krishna is called the cowherd, king and teacher](/krishna-the-cowherd-the-king-and-the-teacher/) and the [Bhagavad Gita](/which-bhagavad-gita-chapter-to-read-first/).
+Read more about [Krishna's life and teachings](/krishna-the-cowherd-the-king-and-the-teacher/) and the [Bhagavad Gita](/which-bhagavad-gita-chapter-to-read-first/).
 
 *The story above follows the Bhagavata Purana. Regional retellings may include additional details.*
