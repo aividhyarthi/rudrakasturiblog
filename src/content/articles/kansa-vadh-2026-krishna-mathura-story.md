@@ -1,7 +1,7 @@
 ---
 title: "Kansa Vadh 2026: the story of how Krishna ended Kansa's rule"
 description: "Kansa Vadh remembers Krishna's return to Mathura, the tyrant's fear of a prophecy, the wrestling arena and the release of Devaki and Vasudeva."
-date: "2026-11-20T07:05:00+05:30"
+date: "2026-11-20T18:13:31+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Festival Story"
@@ -22,8 +22,8 @@ sources:
   - "https://www.drikpanchang.com/festivals/kansa-vadh/kansa-vadh-date-time.html?year=2026"
   - "https://www.srimadbhagavatam.org/pdf/canto10-eng.pdf"
   - "https://www.vanisource.org/wiki/SB_10.44.37"
-draft: true
-reviewNote: "Date is for New Delhi per Drik Panchang. Verify any Mathura-specific event schedule before adding venue or programme details. Narrative follows Bhagavata Purana Canto 10, especially Chapters 1 and 43 to 44. Keep regional retellings distinct."
+draft: false
+reviewNote: ""
 ---
 
 Kansa has arranged a wrestling festival in Mathura. The strongest fighters in his kingdom are waiting in the arena. A powerful elephant has been placed at the entrance. The king expects the two young visitors from Gokul to be killed before they can reach him. Instead, the arena becomes the place where his rule ends.
