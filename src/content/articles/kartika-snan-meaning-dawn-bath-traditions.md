@@ -19,9 +19,9 @@ faq:
   - q: "Should older adults or people with health conditions bathe in cold water before sunrise?"
     a: "No one should put their health at risk for a ritual. Use comfortable water and seek medical advice if cold exposure may be unsafe."
 sources:
-  - "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2026"
-  - "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
+  - "https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc371645.html"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
+  - "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
 draft: true
 reviewNote: "This is a broad practice guide. Keep all bathing advice non-medical and avoid implying cold-water bathing has proven health benefits. Regional rules should be attributed to the relevant community."
 ---
@@ -34,7 +34,7 @@ For some families, the bath is taken every morning. Others choose particular day
 
 *Snan* means bathing. Kartika Snan refers to a ritual bath during the month of Kartika, often taken before sunrise. In many traditions, the bath is followed by prayer, lighting a lamp, offering water to the Sun or remembering Shiva and Vishnu.
 
-The practice is not identical across India. The lunar month is counted differently in amanta and purnimanta calendars, and the exact start and end dates can therefore differ between regions. The Telugu and Kannada traditions commonly follow an amanta reckoning, while many northern calendars use a purnimanta reckoning.
+The practice is not identical across India. The lunar month is counted differently in amanta and purnimanta calendars, and the exact start and end dates can therefore differ between regions. The Telugu and Kannada traditions commonly follow an amanta reckoning, while many northern calendars use a purnimanta reckoning. The Skanda Purana's Karttika Mahatmya includes a chapter specifically describing the procedure for Karttika Snana, including an early morning bath and prayers to Vishnu.
 
 ## Why is the bath taken before sunrise?
 
@@ -65,7 +65,7 @@ Some families add a visit to a Shiva or Vishnu temple, recitation of a stotra or
 
 ## Which days are considered important?
 
-The dates depend on the regional calendar. In the 2026 New Delhi calendar, important observances near the end of Kartika include Kansa Vadh and the beginning of Bhishma Panchak on 20 November, Vaikuntha Chaturdashi and Manikarnika Snan on 23 November, and Kartika Purnima on 24 November.
+The dates depend on the regional calendar. In the Varanasi calendar for 2026, important observances near the end of Kartika include Kansa Vadh and the beginning of Bhishma Panchak on 20 November, Vaikuntha Chaturdashi and Manikarnika Snan on 23 November, and Kartika Purnima on 24 November. These are Varanasi dates, not a universal timetable for every region.
 
 In Andhra Pradesh and Telangana, Karthika Somavaram and Karthika Pournami are especially important. Many families also observe Tulasi Vivaha and light lamps through the month.
 
