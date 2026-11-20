@@ -89,6 +89,6 @@ The observance is especially important in Vaishnava traditions. The exact prayer
 
 Yes. Prayer, reading, restraint and charity are meaningful parts of the observance. Follow your family's practice and your health needs.
 
-For the wider festival calendar, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/) and our guide to [Karthika Deepam](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/).
+For the wider festival calendar, see [Karthika Masam 2026](/karthika-masam-2026-dates-deepam-and-fasting/), our guide to [Karthika Deepam](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/) and the story of [Bhishma on the bed of arrows](/bhishma-on-the-bed-of-arrows-what-karma-did-he-carry/).
 
 *Dates and customs can differ by location, panchang and sampradaya. Confirm local timings with your temple.*
