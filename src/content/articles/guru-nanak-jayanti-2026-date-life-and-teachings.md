@@ -1,7 +1,7 @@
 ---
 title: "Guru Nanak Jayanti 2026: the life and teachings of the first Sikh Guru"
 description: "Guru Nanak Jayanti falls on 24 November 2026. Learn the story of Guru Nanak's life, his travels, the message of one Creator, honest work and sharing."
-date: "2026-11-20T07:15:00+05:30"
+date: "2026-11-20T18:13:53+05:30"
 category: "spiritual"
 author: "Southwala Devotional Desk"
 format: "Festival Explainer"
@@ -23,8 +23,8 @@ sources:
   - "https://www.goldentempleamritsar.org/sikh-nanakshahi-calendar/2026-2027/samvat-558/calendar-2026-2027-nanakshahi-558.php"
   - "https://www.cambridge.org/core/elements/sikh-ethics/931645585C0461FFC33D034EF558360C"
   - "https://www.sikhmissionarysociety.org/sms/smspublications/thesikhsandtheirwayoflife/chapter2/"
-draft: true
-reviewNote: "Respect Sikh tradition and terminology. Ask a Sikh subject-matter reviewer to check historical framing, spelling and local Gurpurab practices before publication. Avoid presenting the Hindu lunar date as the reason for Sikh theology."
+draft: false
+reviewNote: ""
 ---
 
 A community kitchen serves a meal to anyone who arrives. People sit together, share the same food and are not asked about their wealth, caste or social position. This practice, known as *langar*, expresses one of the central ideas associated with Guru Nanak: every human being deserves dignity.
