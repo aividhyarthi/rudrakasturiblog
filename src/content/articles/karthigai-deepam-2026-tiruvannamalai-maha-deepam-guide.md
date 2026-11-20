@@ -1,6 +1,6 @@
 ---
 title: "Karthigai Deepam 2026: Tiruvannamalai Maha Deepam and the fire-lamp story"
-description: "Karthigai Deepam falls on 24 November 2026. Learn why the Maha Deepam is lit on Arunachala hill, what Bharani Deepam means and what visitors should check."
+description: "Karthigai Deepam is observed on 24 November 2026. Learn why the Maha Deepam is lit on Arunachala hill, what Bharani Deepam means and what visitors should check before travelling."
 date: "2026-11-20T07:20:00+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
@@ -21,7 +21,7 @@ faq:
 sources:
   - "https://sanatanbodh.in/en/festivals/karthigai-deepam/"
   - "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2026"
-  - "https://www.livechennai.com/detailnews.asp?catid=26&newsid=83221"
+  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
 draft: true
 reviewNote: "The 24 November date is supported by multiple calendars. Exact Bharani/Maha Deepam timings and access to the hill must be confirmed from the Arunachaleswarar temple's current notice; do not state approximate timings as official."
 ---
