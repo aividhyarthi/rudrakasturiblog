@@ -33,13 +33,13 @@ The central message of the day is the closeness of the two forms of the divine. 
 
 A well-known story explains the observance through an offering made by Vishnu to Shiva. Vishnu wishes to worship Shiva with a thousand lotuses. As he counts the flowers, one is found missing. Vishnu offers one of his own eyes in its place, because his eyes are often compared to lotus petals. Shiva is moved by the devotion and blesses him.
 
-The story is told in devotional traditions in more than one form. Its focus is not the number of flowers. It is the willingness to offer what is most precious.
+The story is presented in devotional traditions in more than one form. Drik Panchang also identifies the day with Vishnu offering a thousand lotuses to Shiva. Its focus is not the number of flowers. It is the willingness to offer what is most precious.
 
 ## What does the name mean?
 
 *Vaikuntha* is the abode of Vishnu. *Chaturdashi* is the fourteenth tithi of the lunar fortnight. The name connects the day with Vishnu, while the worship of Shiva is central to the shared ritual tradition.
 
-The observance is particularly noted in places such as Varanasi, where the relationship between Shiva and Vishnu has a long place in the city's sacred stories and temple life. Local temple practices are not identical, so follow the instructions of the shrine you visit.
+The observance is particularly noted in places such as Varanasi, where the relationship between Shiva and Vishnu has a long place in the city's sacred stories and temple life. This is a broad devotional association, not a claim that every temple follows the same ritual. Local temple practices are not identical, so follow the instructions of the shrine you visit.
 
 ## How devotees observe the day
 
