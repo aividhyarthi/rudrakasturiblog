@@ -1,11 +1,11 @@
 ---
-title: "Karthigai Deepam 2026: Tiruvannamalai Maha Deepam and the fire-lamp story"
-description: "Karthigai Deepam is observed on 24 November 2026. Learn why the Maha Deepam is lit on Arunachala hill, what Bharani Deepam means and what visitors should check before travelling."
+title: "Karthigai Deepam 2026: Tiruvannamalai Maha Deepam and the story of the fire column"
+description: "Karthigai Deepam is observed on 24 November 2026. Read the story of Shiva's endless column of fire, the meaning of Bharani Deepam and what visitors should check."
 date: "2026-11-20T07:20:00+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
-tldr: "Karthigai Deepam is on Tuesday, 24 November 2026, when the Moon is in Krittika nakshatra during the Tamil month of Karthigai. At Tiruvannamalai, the festival is centred on Arunachaleswarar and the Maha Deepam lit on Arunachala hill. Confirm exact timings and access rules with the temple."
+tldr: "Karthigai Deepam is on Tuesday, 24 November 2026, when the Moon is in Krittika nakshatra during the Tamil month of Karthigai. At Tiruvannamalai, the festival recalls Shiva's manifestation as an endless column of fire. The Maha Deepam is lit on Arunachala hill. Confirm timings and access rules with the temple."
 hero: "temple-sunrise"
 imageAlt: "The sacred Maha Deepam flame glowing on Arunachala hill at Tiruvannamalai"
 tags: ["Karthigai Deepam 2026", "Tiruvannamalai", "Arunachala", "Maha Deepam", "Shiva"]
@@ -13,60 +13,65 @@ faq:
   - q: "When is Karthigai Deepam in 2026?"
     a: "It falls on Tuesday, 24 November 2026 in India."
   - q: "When is the Maha Deepam lit?"
-    a: "It is traditionally lit at dusk on Arunachala hill. The temple's official notice should be checked for the exact 2026 time."
+    a: "It is traditionally lit at dusk on Arunachala hill. Check the temple's official notice for the exact 2026 time."
   - q: "What is Bharani Deepam?"
-    a: "It is a lamp lit inside the Arunachaleswarar temple before dawn on the festival day, according to the temple tradition."
+    a: "It is a lamp lit inside the Arunachaleswarar temple before dawn on the festival day, according to temple tradition."
   - q: "Are Karthigai Deepam and Kartika Purnima the same?"
     a: "They fall on the same date in 2026, but they are calculated by different calendar markers and do not coincide every year."
 sources:
+  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
+  - "https://www.tamilnadutourism.tn.gov.in/destinations/thiruvannamalai"
+  - "https://telanganatoday.com/karthigai-deepam-devotees-can-apply-online-for-free-darshan-tickets"
   - "https://sanatanbodh.in/en/festivals/karthigai-deepam/"
-  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
-  - "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2026"
-  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
 draft: true
-reviewNote: "The 24 November date is supported by multiple calendars. Exact Bharani/Maha Deepam timings and access to the hill must be confirmed from the Arunachaleswarar temple's current notice; do not state approximate timings as official."
+reviewNote: "The 24 November date is supported by calendars and current reporting. Ticket allocation and access details are time-sensitive; recheck the temple's official notice before publication. Do not state approximate timings as official."
 ---
 
-On one evening in Tiruvannamalai, a flame is lit high above the town. It can be seen from a distance, on the summit of Arunachala hill. For devotees, the light is not simply a festival display. It recalls Shiva appearing as a column of fire, without beginning or end.
+On the evening of Karthigai Deepam, people across Tiruvannamalai look towards Arunachala hill. A great flame is lit on the summit. From different parts of the town, devotees pause to see it and offer prayers. For them, the light is not simply a festival display. It recalls the story of Shiva appearing as a column of fire without beginning or end.
 
-Karthigai Deepam falls on **Tuesday, 24 November 2026**. The date is based on the Krittika nakshatra during the Tamil month of Karthigai. In 2026 it coincides with Kartika Purnima, although the two observances are calculated differently and do not fall together every year.
+Karthigai Deepam falls on **Tuesday, 24 November 2026**. The date is linked to the Krittika nakshatra during the Tamil month of Karthigai. It coincides with Kartika Purnima in 2026, although the two observances are calculated differently and do not fall together every year.
 
-## Why is Karthigai Deepam important?
+## The story of the endless column of fire
 
-The festival is especially associated with Lord Shiva as Arunachaleswarar at Tiruvannamalai in Tamil Nadu. Arunachala is revered as the fire form among the Pancha Bhoota Sthalams, the five sacred Shiva temples associated with the elements.
+A well-known account tells of a dispute between Brahma and Vishnu. Each is described as trying to establish who is supreme. Their disagreement grows until Shiva appears between them as an immense column of fire. It stretches beyond what either deity can see.
 
-A well-known story tells of Brahma and Vishnu arguing about who was supreme. Shiva appeared between them as a limitless pillar of fire. Vishnu travelled downwards to find its base, while Brahma travelled upwards to find its top. Neither could find an end. The story teaches that the Divine cannot be measured by pride or by the limits of the human mind.
+A voice or challenge asks them to find the beginning and the end of the column. Vishnu takes the form of a boar and travels downwards, searching for its base. Brahma takes the form of a swan and flies upwards, trying to find its summit. They travel for an immense distance, but neither can discover an end.
 
-In the Arunachala tradition, the hill itself is regarded as a form of Shiva. The festival flame on the summit recalls that column of light.
+In some tellings, Brahma meets a flower falling from above and returns claiming that he has seen the top. Vishnu, by contrast, admits that he could not find the base. Shiva reveals the truth and exposes the false claim. The story is a lesson about humility. The infinite cannot be measured by pride, position or intellectual power.
+
+The manifestation is remembered as the *Lingodbhava*, the appearance of the linga as a column of light. At Tiruvannamalai, Arunachala itself is revered as Shiva in the form of fire. The hill is not merely a backdrop for the festival. It is the sacred form at the centre of the tradition.
+
+## Why Tiruvannamalai is linked with fire
+
+Tiruvannamalai in Tamil Nadu is one of the Pancha Bhoota Sthalams, the five sacred Shiva temples associated with the elements. Arunachaleswarar represents fire, while the other sites are associated with earth, water, air and space.
+
+The Arunachaleswarar temple stands at the foot of Arunachala hill. Devotees regard the hill as a manifestation of Shiva. The practice of walking around the hill, known as Girivalam or Giripradakshina, is undertaken throughout the year, with large numbers visiting on full moon days and during Karthigai Deepam.
+
+The hill's spiritual importance is expressed in the belief that seeing Arunachala itself is a form of worship. The festival flame on the summit makes the story of Shiva's column of fire visible to the town.
 
 ## Bharani Deepam and Maha Deepam
 
 Two lamps are central to the Tiruvannamalai observance.
 
-**Bharani Deepam** is traditionally lit inside the Arunachaleswarar temple before dawn on the festival day. It is an important ritual within the temple.
+**Bharani Deepam** is traditionally lit inside the Arunachaleswarar temple before dawn on the festival day. It is a temple ritual and marks the beginning of the day's main Deepam observances.
 
-**Maha Deepam** is lit on the summit of Arunachala at dusk. A large vessel is filled with ghee and a wick is prepared for the flame. Devotees gather across the town to witness the light and offer prayers.
+**Maha Deepam** is lit on the summit of Arunachala at dusk. A large vessel is prepared with ghee and a wick, and the flame is raised where devotees across the town can see it. The lighting is the central public moment of the festival.
 
-The temple's announcement is the authority for the exact timings, arrangements and access rules in 2026. Published calendars identify 24 November as the festival date, but visitors should not treat an approximate time found online as an official schedule.
+The exact 2026 timings and access rules must come from the temple's current announcement. A news report published on 18 November 2026 says the temple administration announced 3,000 free admission tickets for the Bharani Deepam and Maha Deepam ceremonies, with online registration and selection arrangements. Ticket rules and availability can change, so use the official temple portal rather than relying on an old social media post.
 
 ## Karthigai Deepam 2026: what visitors should know
 
-Tiruvannamalai becomes very busy around the festival. If you plan to visit:
+Tiruvannamalai becomes extremely busy around the festival. If you plan to visit, check the Arunachaleswarar temple's latest notice before travelling. Confirm darshan arrangements, crowd restrictions, ticket requirements and whether access to the hill is permitted. Book accommodation early and allow extra time for transport.
 
-- Check the Arunachaleswarar temple's latest notice before travelling.
-- Confirm darshan arrangements, crowd restrictions and whether access to the hill is permitted.
-- Book accommodation early and plan transport with extra time.
-- Follow police and temple instructions around Girivalam and the hill.
-- Do not attempt to climb restricted areas or follow unofficial routes.
-- Carry water and avoid leaving waste on the hill or temple streets.
+Follow police and temple instructions around Girivalam and the hill. Do not attempt to climb restricted areas or follow unofficial routes. Carry water, keep children and older family members close and avoid leaving waste on the hill or temple streets.
 
-The circumambulation of Arunachala, known as Girivalam or Giripradakshina, is a separate devotional practice that draws pilgrims throughout the year. Festival-day access can be regulated for safety, so check current instructions rather than assuming the route is open.
+The circumambulation of Arunachala is a separate devotional practice. Festival-day access can be regulated for safety, so do not assume the route is open in the usual way.
 
 ## How families celebrate at home
 
 Karthigai Deepam is also a home festival. Families light rows of small clay lamps at the entrance, around the courtyard and near the prayer space. In Tamil homes, the evening lamps are often accompanied by a simple offering and prayers to Shiva.
 
-If you cannot light an open flame safely, use a safe electric lamp. Keep oil lamps away from curtains, dry leaves and children, and never leave a flame unattended.
+The lamp represents the movement from darkness to light. In the context of the Arunachala story, it recalls the light that has no boundary. If you cannot light an open flame safely, use an electric lamp. Keep oil lamps away from curtains, dry leaves and children, and never leave a flame unattended.
 
 Southwala has a separate practical guide to [Karthika Deepam and lighting lamps at home](/karthika-deepam-why-we-light-lamps-and-how-to-do-it-well/).
 
@@ -86,4 +91,4 @@ Do not assume that access is allowed. Follow the temple and local administration
 
 For the story of the hill itself, read [Arunachala: the hill that is Shiva](/arunachala-the-hill-that-is-shiva-and-the-walk-around-it/).
 
-*Festival arrangements can change. Confirm all travel, darshan and hill-access information with the temple and local administration.*
+*The story of the endless column of fire is a traditional Shaiva narrative. Southwala is explaining the religious account and is not the author or original researcher of the source texts. For the full story, consult the relevant Shaiva Puranic traditions and the temple's own publications. Festival timings, ticketing and access arrangements should be confirmed through the [Arunachaleswarar Temple's official portal](https://annamalaiyar.hrce.tn.gov.in/).*
