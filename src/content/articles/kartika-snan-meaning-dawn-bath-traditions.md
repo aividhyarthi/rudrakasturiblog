@@ -1,7 +1,7 @@
 ---
 title: "Kartika Snan: why devotees bathe before sunrise in the sacred month"
 description: "Kartika Snan is a dawn-bathing tradition observed in many Hindu communities. Understand its scriptural background, the story and symbolism of the ritual, common practices and regional differences."
-date: "2026-11-20T07:30:00+05:30"
+date: "2026-11-20T18:13:43+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Practice Guide"
@@ -22,8 +22,8 @@ sources:
   - "https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc371645.html"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
   - "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
-draft: true
-reviewNote: "This is a broad practice guide. Keep all bathing advice non-medical and avoid implying cold-water bathing has proven health benefits. Attribute scriptural descriptions and regional rules carefully."
+draft: false
+reviewNote: ""
 ---
 
 Before the sun rises, some homes are already awake. A bath is taken, a lamp is lit and a short prayer is offered. In many Hindu communities, this is part of *Kartika Snan*, the ritual bathing practice associated with the month of Kartika.
