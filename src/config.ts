@@ -14,7 +14,7 @@ export const SITE = {
 export const GSC_VERIFICATION = 'Rhuille4vEfUa02m0sblM7KPAXxHnfp5gmT_aWH9aLs';
 export const ADSENSE_CLIENT = 'ca-pub-2121262893172079';
 // Paste your Google Analytics 4 id, e.g. 'G-XXXXXXXXXX'. Empty = no analytics.
-export const GA_ID = '';
+export const GA_ID = 'G-F7LP934S44';
 
 // URL helpers: clean, keyword-friendly addresses.
 export const REGION_SLUG = { ap: 'andhra-pradesh', ts: 'telangana', ka: 'karnataka', tn: 'tamil-nadu', kl: 'kerala' } as const;
