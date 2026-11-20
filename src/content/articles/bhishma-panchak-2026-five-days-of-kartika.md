@@ -1,7 +1,7 @@
 ---
 title: "Bhishma Panchak 2026: five days from Ekadashi to Purnima"
 description: "Bhishma Panchak is the five-day observance at the close of Kartika. Learn the story of Bhishma, its connection with Vishnu, the 2026 dates and how traditions differ."
-date: "2026-11-20T07:00:00+05:30"
+date: "2026-11-20T18:12:07+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
@@ -19,8 +19,8 @@ faq:
   - q: "When does Bhishma Panchak end?"
     a: "It ends on Kartika Purnima, which falls on 24 November 2026 in the New Delhi calendar."
 series: "karthika"
-draft: true
-reviewNote: "Date checked against Drik Panchang and mypanchang for North India. Verify local observance and sampradaya-specific rules before publication. Distinguish the Mahabharata narrative from later vrata descriptions."
+draft: false
+reviewNote: ""
 sources:
   - "https://www.drikpanchang.com/panchang/month-panchang.html?date=20%2F11%2F2026"
   - "https://www.mypanchang.com/bhishmapanchaka/delhi"
