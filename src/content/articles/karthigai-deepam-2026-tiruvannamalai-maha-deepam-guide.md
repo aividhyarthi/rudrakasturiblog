@@ -20,6 +20,7 @@ faq:
     a: "They fall on the same date in 2026, but they are calculated by different calendar markers and do not coincide every year."
 sources:
   - "https://sanatanbodh.in/en/festivals/karthigai-deepam/"
+  - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
   - "https://www.drikpanchang.com/calendars/hindu/hinducalendar.html?year=2026"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
 draft: true
