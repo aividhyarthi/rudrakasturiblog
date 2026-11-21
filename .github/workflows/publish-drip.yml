@@ -1,24 +1,17 @@
 name: Drip-release reviewed drafts
-# Every 30 minutes from 7:45am to 11:15am IST (02:15-05:45 UTC), release the next reviewed draft in
-# scripts/release-next-draft.mjs's queue, one at a time: 8 releases a day. The queue is ordered by time
-# sensitivity (today's Kartika festival guides first, then the evergreen temple/scripture stories), so with
-# 24 drafts queued this naturally spreads them 8 today, 8 tomorrow, 8 the day after. Does nothing once the
-# queue is empty.
+# Fires every ~10 minutes through the 7:45-11:15am IST window (02:15-05:45 UTC, with a little bleed on
+# each side), but scripts/release-next-draft.mjs itself caps releases at 8/day (DAILY_LIMIT), so most of
+# these firings are a no-op. The firing is deliberately more frequent than the daily quota needs: GitHub's
+# scheduled triggers are not perfectly punctual and occasionally skip a tick under load, so this is
+# redundancy against a missed tick, not extra releases - if one firing is late or skipped, the next one in
+# the same window still gets the day's quota out, same day.
 #
-# The 8 one-off entries pinned to 20 Nov (1:00pm-4:30pm IST / 07:30-11:00 UTC) cover today only: the
-# 7:45-11:15am window was already missed the day this went live, so today's batch runs in the afternoon
-# instead. They harmlessly do nothing on any other 20 November.
+# The commit/push step also retries against pushes from the site's other automated bots (newsroom,
+# editorial QA, the daily release workflow) landing on the same branch: it rebases onto the latest remote
+# commit and retries a few times instead of failing outright on a race.
 on:
   schedule:
-    - cron: '15,45 2-5 * * *'
-    - cron: '30 7 20 11 *'
-    - cron: '0 8 20 11 *'
-    - cron: '30 8 20 11 *'
-    - cron: '0 9 20 11 *'
-    - cron: '30 9 20 11 *'
-    - cron: '0 10 20 11 *'
-    - cron: '30 10 20 11 *'
-    - cron: '0 11 20 11 *'
+    - cron: '5,15,25,35,45,55 2-5 * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -37,9 +30,19 @@ jobs:
         with: { node-version: 22 }
       - name: Release the next due draft
         run: node scripts/release-next-draft.mjs
-      - name: Commit and push if something was released
+      - name: Commit and push if something was released (retrying past races with other bots)
         run: |
           git config user.name "Southwala Editor"
           git config user.email "editor@southwala.com"
           git add -A
-          git diff --cached --quiet || (git commit -m "Drip-release: next reviewed draft goes live" && git push origin "HEAD:$LIVE_BRANCH")
+          git diff --cached --quiet && exit 0
+          git commit -m "Drip-release: next reviewed draft goes live"
+          for i in 1 2 3 4 5; do
+            if git push origin "HEAD:$LIVE_BRANCH"; then exit 0; fi
+            echo "Push rejected (attempt $i/5), rebasing onto latest $LIVE_BRANCH and retrying..."
+            git fetch origin "$LIVE_BRANCH"
+            git rebase "origin/$LIVE_BRANCH"
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push after 5 attempts; this draft's flip was not published. It stays draft:true upstream, so the next scheduled run will simply try it again."
+          exit 1
