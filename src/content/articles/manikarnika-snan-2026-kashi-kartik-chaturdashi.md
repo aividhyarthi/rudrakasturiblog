@@ -1,7 +1,7 @@
 ---
 title: "Manikarnika Snan 2026: the stories and sacred meaning of Kashi's ghat"
 description: "Manikarnika Snan is listed on 23 November 2026 in Varanasi. Explore the stories of Parvati's earring, Vishnu's meditation, Shiva's promise and the meaning of pilgrimage bathing."
-date: "2026-11-20T07:25:00+05:30"
+date: "2026-11-21T15:28:13+05:30"
 category: "temple"
 author: "Ranganatha Dikshitar"
 format: "Pilgrimage Explainer"
@@ -21,8 +21,8 @@ sources:
   - "https://kashi.gov.in/listing-details/manikarnika-ghat"
   - "https://www.incredibleindia.gov.in/en/uttar-pradesh/varanasi/manikarnika-ghat"
   - "https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc371677.html"
-draft: true
-reviewNote: "Sensitive subject. Keep tone respectful and avoid sensational descriptions or photography advice. The 23 November date is from the Varanasi calendar. Verify local bathing arrangements and public access before publication. Distinguish local legends from historical claims."
+draft: false
+reviewNote: ""
 ---
 
 Kashi is a city where prayer, daily life and the presence of death sit close to one another. At Manikarnika Ghat, the Ganga flows beside one of Hindu tradition's most important cremation grounds. The same sacred landscape is also connected with pilgrimage bathing, the worship of Shiva and Vishnu, and stories about the origin of the ghat.
