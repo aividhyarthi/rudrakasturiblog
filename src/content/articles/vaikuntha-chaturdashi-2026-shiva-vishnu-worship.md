@@ -1,7 +1,7 @@
 ---
 title: "Vaikuntha Chaturdashi 2026: the story of Vishnu's thousand lotuses and Shiva"
 description: "Vaikuntha Chaturdashi falls just before Kartika Purnima. Read the Skanda Purana story of Vishnu's offering to Shiva, the meaning of the missing lotus and the 2026 date."
-date: "2026-11-20T07:10:00+05:30"
+date: "2026-11-22T15:08:28+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
@@ -20,8 +20,8 @@ sources:
   - "https://www.drikpanchang.com/festivals/vaikuntha-chaturdashi/vaikuntha-chaturdashi-date-time.html?year=2026"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
   - "https://www.wisdomlib.org/hinduism/book/the-skanda-purana/d/doc371677.html"
-draft: true
-reviewNote: "Story is sourced to Skanda Purana, Karttikamasa-mahatmya, Chapter 35. Verify exact local puja sequence with temple authorities. Date and tithi are New Delhi values from Drik Panchang."
+draft: false
+reviewNote: ""
 ---
 
 There is a moment in the story of Vaikuntha Chaturdashi when Vishnu discovers that one lotus is missing from the thousand he has gathered for Shiva. He does not stop the worship or leave to find another flower. Instead, he remembers that he is called *Pundarikaksha*, the lotus-eyed one, and decides to offer one of his own eyes.
