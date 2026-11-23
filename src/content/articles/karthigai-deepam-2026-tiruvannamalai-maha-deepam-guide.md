@@ -1,7 +1,7 @@
 ---
 title: "Karthigai Deepam 2026: Tiruvannamalai Maha Deepam and the story of the fire column"
 description: "Karthigai Deepam is observed on 24 November 2026. Read the story of Shiva's endless column of fire, the meaning of Bharani Deepam and what visitors should check."
-date: "2026-11-20T07:20:00+05:30"
+date: "2026-11-23T16:07:55+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Festival Guide"
@@ -23,8 +23,8 @@ sources:
   - "https://www.tamilnadutourism.tn.gov.in/destinations/thiruvannamalai"
   - "https://telanganatoday.com/karthigai-deepam-devotees-can-apply-online-for-free-darshan-tickets"
   - "https://sanatanbodh.in/en/festivals/karthigai-deepam/"
-draft: true
-reviewNote: "The 24 November date is supported by calendars and current reporting. Ticket allocation and access details are time-sensitive; recheck the temple's official notice before publication. Do not state approximate timings as official."
+draft: false
+reviewNote: ""
 ---
 
 On the evening of Karthigai Deepam, people across Tiruvannamalai look towards Arunachala hill. A great flame is lit on the summit. From different parts of the town, devotees pause to see it and offer prayers. For them, the light is not simply a festival display. It recalls the story of Shiva appearing as a column of fire without beginning or end.
