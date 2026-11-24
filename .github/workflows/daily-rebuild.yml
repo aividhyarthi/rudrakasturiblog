@@ -59,10 +59,18 @@ jobs:
           export SW_NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
           npx astro build
           node scripts/check-release.mjs
-      - name: Go live
+      - name: Go live (retrying past races with other bots)
         if: steps.check.outputs.due == 'true'
         run: |
           date -u +"%Y-%m-%dT%H:%M:%SZ" > src/data/build-stamp.txt
           git add src/data/build-stamp.txt
           git commit -m "Release: slot reached, held changes and due stories go live"
-          git push origin "HEAD:$LIVE_BRANCH"
+          for i in 1 2 3 4 5; do
+            if git push origin "HEAD:$LIVE_BRANCH"; then exit 0; fi
+            echo "Push rejected (attempt $i/5), rebasing onto latest $LIVE_BRANCH and retrying..."
+            git fetch origin "$LIVE_BRANCH"
+            git rebase "origin/$LIVE_BRANCH"
+            sleep $((i * 5))
+          done
+          echo "::error::Could not push after 5 attempts; today's release did not go live. It will be retried at the next backup slot."
+          exit 1
