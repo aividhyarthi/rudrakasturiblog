@@ -13,7 +13,7 @@
 // left to do and exit cleanly.
 import fs from 'node:fs';
 
-const DAILY_LIMIT = 8;
+const DAILY_LIMIT = 10;
 
 const RELEASE_QUEUE = [
   // Kartika-month festival guides, most time-sensitive first (Bhishma Panchak starts today; the Nov 23-24 ones have a few days' buffer).

@@ -1,17 +1,16 @@
 name: Drip-release reviewed drafts
-# Fires every ~10 minutes through the 7:45-11:15am IST window (02:15-05:45 UTC, with a little bleed on
-# each side), but scripts/release-next-draft.mjs itself caps releases at 8/day (DAILY_LIMIT), so most of
-# these firings are a no-op. The firing is deliberately more frequent than the daily quota needs: GitHub's
-# scheduled triggers are not perfectly punctual and occasionally skip a tick under load, so this is
-# redundancy against a missed tick, not extra releases - if one firing is late or skipped, the next one in
-# the same window still gets the day's quota out, same day.
+# Checks every 2 hours, all day. scripts/release-next-draft.mjs releases however many due drafts are
+# needed to reach today's quota (DAILY_LIMIT) in whichever run actually does it, so this loses nothing
+# even though GitHub won't reliably grant all 12 of these daily firings - whichever one goes first each
+# day brings the count up to quota. Note this means releases usually land in one burst on the first firing
+# of the day rather than evenly spread across it; total daily delivery is guaranteed, exact pacing isn't.
 #
 # The commit/push step also retries against pushes from the site's other automated bots (newsroom,
 # editorial QA, the daily release workflow) landing on the same branch: it rebases onto the latest remote
 # commit and retries a few times instead of failing outright on a race.
 on:
   schedule:
-    - cron: '5,15,25,35,45,55 2-5 * * *'
+    - cron: '15 */2 * * *'
   workflow_dispatch: {}
 permissions:
   contents: write
