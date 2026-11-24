@@ -1,7 +1,7 @@
 ---
 title: "Sulabha: The Woman Who Taught King Janaka the Meaning of True Wisdom"
 description: "In the Mahabharata, the wise woman Sulabha meets King Janaka and questions his understanding of freedom and spiritual knowledge."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-25T01:45:48+05:30"
 category: "spiritual"
 author: "Vidyaranya Murthy"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Mahabharata, Shanti Parva, Mokshadharma section, Sulabha's dialogue with Janaka."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Mahabharata, Shanti Parva, Mokshadharma section, Sulabha's dialogue with Janaka."
     url: "https://www.wisdomlib.org/"

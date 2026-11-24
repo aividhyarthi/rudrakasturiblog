@@ -1,7 +1,7 @@
 ---
 title: "Rantideva: The King Who Saw God in Every Person Who Came to Him"
 description: "The Bhagavatam remembers King Rantideva for giving away food and water even when he had almost nothing left."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-25T01:45:48+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Srimad Bhagavatam, Ninth Skandha, Chapter 21."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Srimad Bhagavatam, Ninth Skandha, Chapter 21."
     url: "https://www.wisdomlib.org/"

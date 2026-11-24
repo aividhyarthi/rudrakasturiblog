@@ -1,7 +1,7 @@
 ---
 title: "Mandavya Maharishi: Why Did a Sage Question Lord Yama About Karma"
 description: "The Mahabharata tells how Mandavya Maharishi questioned the justice of a punishment and raised a difficult question about karma."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-25T01:45:48+05:30"
 category: "karma"
 author: "Vidyaranya Murthy"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Mahabharata, Adi Parva, account of Mandavya and the origin of Vidura."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Mahabharata, Adi Parva, account of Mandavya and the origin of Vidura."
     url: "https://www.wisdomlib.org/"

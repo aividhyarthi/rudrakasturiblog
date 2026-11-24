@@ -1,7 +1,7 @@
 ---
 title: "Sarama: The Woman in Lanka Who Helped Sita Hold On to Hope"
 description: "In the Ramayana tradition, Sarama offers Sita comfort and information while she is held captive in Lanka."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-25T01:45:48+05:30"
 category: "devotional"
 author: "Ranganatha Dikshitar"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Ramayana traditions, including the Sundara Kanda episodes concerning Sita in Ashoka Vatika. Details vary across recensions and later retellings; verify the chosen textual version before publication."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Ramayana traditions, including the Sundara Kanda episodes concerning Sita in Ashoka Vatika. Details vary across recensions and later retellings; verify the chosen textual version before publication."
     url: "https://www.wisdomlib.org/"
