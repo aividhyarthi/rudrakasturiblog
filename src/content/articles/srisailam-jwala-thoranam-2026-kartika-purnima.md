@@ -1,7 +1,7 @@
 ---
 title: "Srisailam Jwala Thoranam 2026: the story and meaning of the fire arch"
 description: "Srisailam's Jwala Thoranam is scheduled for 24 November 2026. Learn the Kartika lamp tradition, the story behind the fire offering, the reported venue and what pilgrims should check."
-date: "2026-11-20T07:35:00+05:30"
+date: "2026-11-24T07:21:18+05:30"
 category: "temple"
 author: "Ranganatha Dikshitar"
 format: "Temple Festival Guide"
@@ -22,8 +22,8 @@ sources:
   - "https://www.deccanchronicle.com/southern-states/andhra-pradesh/grand-kartika-festivities-begin-at-srisailam-2002996"
   - "https://srisailamguide.com/karthika-masam-2026-at-srisailam-koti-deepotsavam-jwala-thoranam-laksha-deepotsavam-and-shiva-deeksha-dates/"
   - "https://www.drikpanchang.com/festivals/month/festivals-november.html?lang=en&year=2026"
-draft: true
-reviewNote: "Festival date and venue are based on reports quoting the Devasthanam programme. Recheck the temple's official notice for exact timings, venue changes and crowd restrictions before publication. Do not invent a scriptural origin for the fire-arch ritual."
+draft: false
+reviewNote: ""
 ---
 
 At Srisailam, Kartika Purnima is marked not only by rows of lamps but also by a ritual involving fire. It is known as *Jwala Thoranam*. The name describes a ceremonial arch of flame, and the observance is associated with the worship of Lord Mallikarjuna during the sacred month of Kartika.
