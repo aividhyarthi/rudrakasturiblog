@@ -1,7 +1,7 @@
 ---
 title: "Gandi Anjaneya: The Sacred Image That Lord Rama Is Believed to Have Drawn Himself"
 description: "Discover the local tradition that connects Lord Rama, Lord Anjaneya and the sacred rock at Gandi Kshetram in Kadapa."
-date: "2026-11-17T09:10:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "temple"
 author: "Ranganatha Dikshitar"
 format: "Story"
@@ -16,8 +16,8 @@ faq:
     a: "Local tradition says Lord Rama left an image of Lord Anjaneya on a rock at this place. Devotees also associate the shrine with the sacred landscape of Rama's forest journey."
   - q: "Is the image believed to have been drawn by Lord Rama?"
     a: "That is the local devotional account associated with the shrine. It should be described as a sthala-purana tradition rather than a documented historical event."
-draft: true
-reviewNote: "Editorial draft. Confirm the exact local account, temple name, image details and any unfinished-finger story with the temple administration or a knowledgeable local source. Do not state oral legend as established history."
+draft: false
+reviewNote: ""
 sources:
   - title: "Kadapa District"
     url: "https://kadapa.ap.gov.in/"

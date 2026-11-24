@@ -1,7 +1,7 @@
 ---
 title: "Jada Bharata: The King Who Lost His Kingdom but Could Not Escape Attachment"
 description: "The story of Bharata Maharaja shows how attachment can follow a person even after he leaves behind power and possessions."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "spiritual"
 author: "Vidyaranya Murthy"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Srimad Bhagavatam, Fifth Skandha, chapters 7 to 14."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Srimad Bhagavatam, Fifth Skandha, chapters 7 to 14."
     url: "https://www.wisdomlib.org/"

@@ -1,7 +1,7 @@
 ---
 title: "Sikkal Murugan: The Divine Moment When Lord Murugan Received His Sacred Vel"
 description: "Discover the Sikkal temple tradition in which Goddess Parvati gives Lord Murugan the Vel before his battle with Surapadman."
-date: "2026-11-17T09:20:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "temple"
 author: "Ranganatha Dikshitar"
 format: "Story"
@@ -16,8 +16,8 @@ faq:
     a: "After the Vel ceremony, devotees and temple tradition describe moisture or drops appearing on the deity. They interpret this as Murugan perspiring before battle. It is a devotional interpretation of an observed ritual phenomenon."
   - q: "Which form of Murugan is worshipped at Sikkal?"
     a: "The temple is known for Singaravelavar, the form of Murugan associated with receiving the Vel from Goddess Parvati."
-draft: true
-reviewNote: "Editorial draft. Verify the annual ritual sequence and the reported perspiration with the temple administration and current-year reporting before publication. Avoid presenting moisture as proof of a supernatural event."
+draft: false
+reviewNote: ""
 sources:
   - title: "Sikkal Singaravelavar Temple"
     url: "https://www.tamilnadutourism.tn.gov.in/"

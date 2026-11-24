@@ -1,7 +1,7 @@
 ---
 title: "Svayamprabha: The Woman Who Helped Hanuman Find His Way"
 description: "A lesser-known Ramayana episode tells how Svayamprabha helped Hanuman and the search party leave a mysterious cave."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "devotional"
 author: "Ranganatha Dikshitar"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Valmiki Ramayana, Kishkindha Kanda, the episode of the search party and Svayamprabha."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Valmiki Ramayana, Kishkindha Kanda, the episode of the search party and Svayamprabha."
     url: "https://www.wisdomlib.org/"

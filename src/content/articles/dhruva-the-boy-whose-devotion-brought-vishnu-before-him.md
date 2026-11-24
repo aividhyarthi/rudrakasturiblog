@@ -1,7 +1,7 @@
 ---
 title: "Dhruva: The Boy Whose Devotion Brought Lord Vishnu Before Him"
 description: "The Bhagavatam tells how a young boy's hurt turned into unwavering devotion and brought him the darshan of Lord Vishnu."
-date: "2026-11-17T10:00:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "devotional"
 author: "Raghunatha Sharma"
 format: "Story"
@@ -14,8 +14,8 @@ faq:
     a: "Srimad Bhagavatam, Fourth Skandha, chapters 8 to 12."
   - q: "What is the main lesson of this story?"
     a: "The article explores devotion, dharma, humility and the spiritual meaning of the character's choices."
-draft: true
-reviewNote: "Editorial draft. Verify the exact episode against a reliable edition of the cited scripture before publication. Check verse or chapter numbering across editions, distinguish the primary text from later retellings, and obtain a subject-matter review."
+draft: false
+reviewNote: ""
 sources:
   - title: "Srimad Bhagavatam, Fourth Skandha, chapters 8 to 12."
     url: "https://www.wisdomlib.org/"

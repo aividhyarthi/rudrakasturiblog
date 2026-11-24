@@ -1,7 +1,7 @@
 ---
 title: "Draksharamam: The Mystery of the Shiva Lingam That Reaches Beyond the Sanctum"
 description: "Discover the sacred tradition behind the unusual two-level sanctum and the Shiva Lingam at Draksharamam, one of Andhra Pradesh's revered Pancharama Kshetras."
-date: "2026-11-17T09:00:00+05:30"
+date: "2026-11-24T17:46:27+05:30"
 category: "temple"
 author: "Ranganatha Dikshitar"
 format: "Story"
@@ -16,8 +16,8 @@ faq:
     a: "The Bhimeswara Swamy shrine is notable for its unusual two-level structure, which is part of the temple's distinctive architecture and worship tradition."
   - q: "Is Draksharamam one of the Pancharama temples?"
     a: "Yes. Draksharamam is traditionally counted among the five Pancharama Kshetras dedicated to Shiva in Andhra Pradesh."
-draft: true
-reviewNote: "Editorial draft. Verify the current temple timings, access rules and local sthala-purana wording with the temple administration before publication. Keep the growing-Lingam account clearly attributed to local tradition."
+draft: false
+reviewNote: ""
 sources:
   - title: "Draksharamam Bhimeswara Swamy Temple"
     url: "https://eastgodavari.ap.gov.in/"
