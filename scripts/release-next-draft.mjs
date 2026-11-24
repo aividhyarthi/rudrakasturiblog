@@ -1,14 +1,16 @@
-// Drip-release: on each run, publish the next not-yet-released article in RELEASE_QUEUE (flip draft:false,
-// clear reviewNote, stamp the current time as its date) and stop, unless today's quota (DAILY_LIMIT) is
-// already met. Runs on a schedule (see .github/workflows/publish-drip.yml) so a batch of reviewed drafts
-// goes live one at a time through the day instead of all at once.
+// Drip-release: on each run, publish enough not-yet-released articles from RELEASE_QUEUE (flip draft:false,
+// clear reviewNote, stamp the current time as each one's date) to bring today's release count up to
+// DAILY_LIMIT, then stop. Runs on a schedule (see .github/workflows/publish-drip.yml) so a batch of
+// reviewed drafts goes live gradually through the day rather than all at once.
 //
-// The workflow fires every 10 minutes through the release window, well more often than DAILY_LIMIT needs,
-// on purpose: GitHub's scheduled triggers are not perfectly punctual and can occasionally skip a tick under
-// load, so the extra firings are redundancy, not extra releases. The daily cap below (by counting how many
-// queued articles already carry today's date) is what actually controls the pace, not the cron frequency -
-// so a skipped tick just means a later one in the same window picks up the slack; nothing is lost or late.
-// Harmless to run again once the queue is empty, or once today's quota is met: it just does nothing.
+// The workflow is scheduled every 10 minutes through the release window so releases land spread through
+// the morning on a normal day. But GitHub does not actually grant anywhere near that many firings for a
+// schedule this frequent - in practice this workflow was observed firing only ~once a day, not ~24 times,
+// so a version of this script that released just one article per run and relied on later firings to catch
+// up left most of the queue stuck (confirmed: 8 released over 5 days against a 25-article backlog). This
+// version instead releases however many articles are needed to reach DAILY_LIMIT in whichever runs do
+// fire, so one firing a day is enough to keep pace; extra firings on a day GitHub behaves just find nothing
+// left to do and exit cleanly.
 import fs from 'node:fs';
 
 const DAILY_LIMIT = 8;
@@ -65,7 +67,9 @@ if (releasedToday >= DAILY_LIMIT) {
   process.exit(0);
 }
 
+let releasedThisRun = 0;
 for (const slug of RELEASE_QUEUE) {
+  if (releasedToday >= DAILY_LIMIT) break;
   const file = `${dir}/${slug}.md`;
   if (!fs.existsSync(file)) continue;
   const t = fs.readFileSync(file, 'utf8');
@@ -75,7 +79,12 @@ for (const slug of RELEASE_QUEUE) {
     .replace(/^draft:\s*true$/m, 'draft: false')
     .replace(/^reviewNote:\s*.*$/m, 'reviewNote: ""');
   fs.writeFileSync(file, next);
-  console.log(`Released: ${slug} (${releasedToday + 1}/${DAILY_LIMIT} today)`);
-  process.exit(0);
+  releasedToday++;
+  releasedThisRun++;
+  console.log(`Released: ${slug} (${releasedToday}/${DAILY_LIMIT} today)`);
 }
-console.log('Nothing due: no draft left in the release queue.');
+if (releasedThisRun === 0) {
+  console.log('Nothing due: no draft left in the release queue.');
+} else {
+  console.log(`Released ${releasedThisRun} article(s) this run to catch up to today's quota.`);
+}
